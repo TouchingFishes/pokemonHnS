@@ -3014,13 +3014,13 @@ extern const u32 gMonStillFrontPic_Togekiss[];
 extern const u8 gMonIcon_Togekiss[];
 extern const u8 gMonFootprint_Togekiss[];
 
-extern const u32 gMonFrontPic_Bonsly[];
-extern const u32 gMonPalette_Bonsly[];
-extern const u32 gMonBackPic_Bonsly[];
-extern const u32 gMonShinyPalette_Bonsly[];
-extern const u32 gMonStillFrontPic_Bonsly[];
-extern const u8 gMonIcon_Bonsly[];
-extern const u8 gMonFootprint_Bonsly[];
+extern const u32 gMonFrontPic_Tinkatink[];
+extern const u32 gMonPalette_Tinkatink[];
+extern const u32 gMonBackPic_Tinkatink[];
+extern const u32 gMonShinyPalette_Tinkatink[];
+extern const u32 gMonStillFrontPic_Tinkatink[];
+extern const u8 gMonIcon_Tinkatink[];
+extern const u8 gMonFootprint_Tinkatink[];
 
 extern const u32 gMonFrontPic_Decibelle[];
 extern const u32 gMonPalette_Decibelle[];
@@ -3102,13 +3102,13 @@ extern const u32 gMonStillFrontPic_PorygonZ[];
 extern const u8 gMonIcon_PorygonZ[];
 extern const u8 gMonFootprint_PorygonZ[];
 
-extern const u32 gMonFrontPic_Budew[];
-extern const u32 gMonPalette_Budew[];
-extern const u32 gMonBackPic_Budew[];
-extern const u32 gMonShinyPalette_Budew[];
-extern const u32 gMonStillFrontPic_Budew[];
-extern const u8 gMonIcon_Budew[];
-extern const u8 gMonFootprint_Budew[];
+extern const u32 gMonFrontPic_Tinkatuff[];
+extern const u32 gMonPalette_Tinkatuff[];
+extern const u32 gMonBackPic_Tinkatuff[];
+extern const u32 gMonShinyPalette_Tinkatuff[];
+extern const u32 gMonStillFrontPic_Tinkatuff[];
+extern const u8 gMonIcon_Tinkatuff[];
+extern const u8 gMonFootprint_Tinkatuff[];
 
 extern const u32 gMonFrontPic_Roserade[];
 extern const u32 gMonPalette_Roserade[];
@@ -3126,13 +3126,13 @@ extern const u32 gMonStillFrontPic_Dusknoir[];
 extern const u8 gMonIcon_Dusknoir[];
 extern const u8 gMonFootprint_Dusknoir[];
 
-extern const u32 gMonFrontPic_Chingling[];
-extern const u32 gMonPalette_Chingling[];
-extern const u32 gMonBackPic_Chingling[];
-extern const u32 gMonShinyPalette_Chingling[];
-extern const u32 gMonStillFrontPic_Chingling[];
-extern const u8 gMonIcon_Chingling[];
-extern const u8 gMonFootprint_Chingling[];
+extern const u32 gMonFrontPic_Tinkaton[];
+extern const u32 gMonPalette_Tinkaton[];
+extern const u32 gMonBackPic_Tinkaton[];
+extern const u32 gMonShinyPalette_Tinkaton[];
+extern const u32 gMonStillFrontPic_Tinkaton[];
+extern const u8 gMonIcon_Tinkaton[];
+extern const u8 gMonFootprint_Tinkaton[];
 
 extern const u32 gMonFrontPic_Froslass[];
 extern const u32 gMonPalette_Froslass[];

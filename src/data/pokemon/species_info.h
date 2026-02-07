@@ -11870,7 +11870,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
     },
-    [SPECIES_BONSLY] =
+    [SPECIES_TINKATINK] =
     {
         .baseHP        = 50,
         .baseAttack    = 80,
@@ -11898,7 +11898,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_BROWN,
         .noFlip = FALSE,
     },
-    [SPECIES_BUDEW] =
+    [SPECIES_TINKATUFF] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -11927,7 +11927,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = TRUE,
     },
 
-    [SPECIES_CHINGLING] =
+    [SPECIES_TINKATON] =
     {
         .baseHP        = 45,
         .baseAttack    = 30,

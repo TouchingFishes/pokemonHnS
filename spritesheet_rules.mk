@@ -2077,13 +2077,13 @@ $(OBJEVENTGFXDIR)/pokemon/followers/decibelle.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/arceus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
-$(OBJEVENTGFXDIR)/pokemon/followers/budew.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/tinkatuff.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/bonsly.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/tinkatink.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/chingling.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/tinkaton.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/deoxys_attack.4bpp: %.4bpp: %.png

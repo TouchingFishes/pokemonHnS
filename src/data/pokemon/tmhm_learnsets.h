@@ -10314,7 +10314,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } }, 
 
-    [SPECIES_BONSLY] = { .learnset = {
+    [SPECIES_TINKATINK] = { .learnset = {
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
@@ -10337,7 +10337,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
-    [SPECIES_BUDEW] = { .learnset = {
+    [SPECIES_TINKATUFF] = { .learnset = {
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
         .HIDDEN_POWER = TRUE,
@@ -10358,7 +10358,7 @@ const union {
         .CUT = TRUE,
     } }, 
 
-    [SPECIES_CHINGLING] = { .learnset = {
+    [SPECIES_TINKATON] = { .learnset = {
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,

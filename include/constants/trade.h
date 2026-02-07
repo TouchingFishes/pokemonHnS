@@ -16,7 +16,7 @@
 #define INGAME_TRADE_HAUNTER 8
 #define INGAME_TRADE_PIKACHU 9
 #define INGAME_TRADE_BELDUM 10
-#define INGAME_TRADE_BONSLY 11
+#define INGAME_TRADE_TINKATINK 11
 #define INGAME_TRADE_STEELIX 12
 
 // Return values for CanTradeSelectedMon and CanSpinTradeMon

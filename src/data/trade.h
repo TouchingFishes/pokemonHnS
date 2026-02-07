@@ -998,7 +998,7 @@ static const struct InGameTrade sIngameTrades[] =
     [INGAME_TRADE_SEEDOT] =
     {
         .nickname = _("BUDDY"),
-        .species = SPECIES_BUDEW,
+        .species = SPECIES_TINKATUFF,
         .ivs31 = {31, 31, 31, 31, 31, 31},
         .ivs = {5, 4, 5, 4, 4, 4},
         .abilityNum = 0,
@@ -1182,10 +1182,10 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_FORRETRESS
     },
-    [INGAME_TRADE_BONSLY] =
+    [INGAME_TRADE_TINKATINK] =
     {
         .nickname = _("WOODY"),
-        .species = SPECIES_BONSLY,
+        .species = SPECIES_TINKATINK,
         .ivs31 = {31, 31, 31, 31, 31, 31},
         .ivs = {4, 4, 4, 5, 5, 4},
         .abilityNum = 0,

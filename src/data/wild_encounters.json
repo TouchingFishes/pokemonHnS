@@ -5491,7 +5491,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 14,
@@ -5645,7 +5645,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 14,
@@ -5799,7 +5799,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 14,
@@ -5953,7 +5953,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 14,
@@ -14654,7 +14654,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 28,
@@ -14962,7 +14962,7 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_TINKATUFF"
               },
               {
                 "min_level": 28,
@@ -15471,7 +15471,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_CHINGLING"
+                "species": "SPECIES_TINKATON"
               },
               {
                 "min_level": 27,
@@ -27713,12 +27713,12 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 34,
@@ -27867,12 +27867,12 @@
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_BONSLY"
+                "species": "SPECIES_TINKATINK"
               },
               {
                 "min_level": 34,

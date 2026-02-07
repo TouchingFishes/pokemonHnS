@@ -4704,36 +4704,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 2,
     },
 
-    [NATIONAL_DEX_BONSLY] =
+    [NATIONAL_DEX_TINKATINK] =
     {
         .categoryName = _("BONSAI"),
         .height = 5,
         .weight = 150,
-        .description = gBonslyPokedexText,
+        .description = gTinkatinkPokedexText,
         .pokemonScale = 451,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BUDEW] =
+    [NATIONAL_DEX_TINKATUFF] =
     {
         .categoryName = _("BUD"),
         .height = 2,
         .weight = 12,
-        .description = gBudewPokedexText,
+        .description = gTinkatuffPokedexText,
         .pokemonScale = 451,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_CHINGLING] =
+    [NATIONAL_DEX_TINKATON] =
     {
         .categoryName = _("BELL"),
         .height = 2,
         .weight = 6,
-        .description = gChinglingPokedexText,
+        .description = gTinkatonPokedexText,
         .pokemonScale = 451,
         .pokemonOffset = 0,
         .trainerScale = 256,

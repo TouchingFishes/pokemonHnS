@@ -5,17 +5,17 @@ AquaHideout_UnusedRubyMap3_MapScripts::
 AquaHideout_UnusedRubyMap3_OnTransition::
 	end
 
-AquaHideout_UnusedRubyMap3_BonslyMunchEvo::
-	msgbox AquaHideout_UnusedRubyMap3_BonslyMunchEvo_Text, MSGBOX_NPC
+AquaHideout_UnusedRubyMap3_TinkatinkMunchEvo::
+	msgbox AquaHideout_UnusedRubyMap3_TinkatinkMunchEvo_Text, MSGBOX_NPC
 	end
 
-AquaHideout_UnusedRubyMap3_BonslyMunchEvo_Text:
+AquaHideout_UnusedRubyMap3_TinkatinkMunchEvo_Text:
 	.string "Have you see those strange moving\n"
 	.string "trees? They are a POKéMON named\l"
 	.string "SUDOWOODO! Did you know that?\p"
 	.string "It's a POKéMON that disguises itself\n"
 	.string "as a small tree.\p"
-	.string "And there's also BONSLY, which does\n"
+	.string "And there's also TINKATINK, which does\n"
 	.string "the same… but doesn't look as\l"
 	.string "realistic, or so I think.\p"
 	.string "Speaking of which, I've seen them evolve\n"

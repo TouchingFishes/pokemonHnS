@@ -4823,7 +4823,7 @@ static const union AnimCmd sAnim_Arceus_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bonsly_1[] =
+static const union AnimCmd sAnim_Tinkatink_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -4833,7 +4833,7 @@ static const union AnimCmd sAnim_Bonsly_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Chingling_1[] =
+static const union AnimCmd sAnim_Tinkaton_1[] =
 {
     ANIMCMD_FRAME(1, 12),
     ANIMCMD_FRAME(0, 12),
@@ -5175,7 +5175,7 @@ static const union AnimCmd sAnim_Regieleki_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Budew_1[] =
+static const union AnimCmd sAnim_Tinkatuff_1[] =
 {
     ANIMCMD_FRAME(0, 30),
     ANIMCMD_FRAME(1, 30),
@@ -5718,9 +5718,9 @@ SINGLE_ANIMATION(UnownEMark);
 SINGLE_ANIMATION(UnownQMark);
 SINGLE_ANIMATION(Arceus);
 SINGLE_ANIMATION(Decibelle);
-SINGLE_ANIMATION(Bonsly);
-SINGLE_ANIMATION(Budew);
-SINGLE_ANIMATION(Chingling);
+SINGLE_ANIMATION(Tinkatink);
+SINGLE_ANIMATION(Tinkatuff);
+SINGLE_ANIMATION(Tinkaton);
 DOUBLE_ANIMATION(DeoxysA);
 DOUBLE_ANIMATION(DeoxysD);
 DOUBLE_ANIMATION(DeoxysS);
@@ -6224,13 +6224,13 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DUSKNOIR] = sAnims_Dusknoir,
     [SPECIES_FROSLASS] = sAnims_Froslass,
     [SPECIES_ARCEUS] = sAnims_Arceus,
-    [SPECIES_BUDEW] = sAnims_Budew,
+    [SPECIES_TINKATUFF] = sAnims_Tinkatuff,
     [SPECIES_ROSERADE] = sAnims_Roserade,
     [SPECIES_DECIBELLE] = sAnims_Decibelle,
     [SPECIES_MISMAGIUS] = sAnims_Mismagius,
     [SPECIES_HONCHKROW] = sAnims_Honchkrow,
-    [SPECIES_CHINGLING] = sAnims_Chingling,
-    [SPECIES_BONSLY] = sAnims_Bonsly,
+    [SPECIES_TINKATON] = sAnims_Tinkaton,
+    [SPECIES_TINKATINK] = sAnims_Tinkatink,
     [SPECIES_DEINO] = sAnims_Deino,
     [SPECIES_HAPPINY] = sAnims_Happiny,
     [SPECIES_ZWEILOUS] = sAnims_Zweilous,

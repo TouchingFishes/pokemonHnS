@@ -6188,22 +6188,22 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_JOLLY
     },
-    [FRONTIER_MON_BONSLY_1] = {
-        .species = SPECIES_BONSLY,
+    [FRONTIER_MON_TINKATINK_1] = {
+        .species = SPECIES_TINKATINK,
         .moves = {MOVE_ROCK_TOMB, MOVE_FAKE_TEARS, MOVE_MIMIC, MOVE_COUNTER},
         .itemTableId = BATTLE_FRONTIER_ITEM_HARD_STONE,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_HARDY
     },
-    [FRONTIER_MON_BUDEW_1] = {
-        .species = SPECIES_BUDEW,
+    [FRONTIER_MON_TINKATUFF_1] = {
+        .species = SPECIES_TINKATUFF,
         .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_GRASS_WHISTLE, MOVE_LEECH_SEED},
         .itemTableId = BATTLE_FRONTIER_ITEM_PECHA_BERRY,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_CHINGLING_1] = {
-        .species = SPECIES_CHINGLING,
+    [FRONTIER_MON_TINKATON_1] = {
+        .species = SPECIES_TINKATON,
         .moves = {MOVE_WRAP, MOVE_CONFUSION, MOVE_GROWL, MOVE_SAFEGUARD},
         .itemTableId = BATTLE_FRONTIER_ITEM_TWISTED_SPOON,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
@@ -12625,22 +12625,22 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_JOLLY
     },
-    [FRONTIER_MON_BONSLY_1] = {
-        .species = SPECIES_BONSLY,
+    [FRONTIER_MON_TINKATINK_1] = {
+        .species = SPECIES_TINKATINK,
         .moves = {MOVE_ROCK_TOMB, MOVE_FAKE_TEARS, MOVE_MIMIC, MOVE_COUNTER},
         .itemTableId = BATTLE_FRONTIER_ITEM_HARD_STONE,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_HARDY
     },
-    [FRONTIER_MON_BUDEW_1] = {
-        .species = SPECIES_BUDEW,
+    [FRONTIER_MON_TINKATUFF_1] = {
+        .species = SPECIES_TINKATUFF,
         .moves = {MOVE_MEGA_DRAIN, MOVE_TOXIC, MOVE_GRASS_WHISTLE, MOVE_LEECH_SEED},
         .itemTableId = BATTLE_FRONTIER_ITEM_PECHA_BERRY,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_CHINGLING_1] = {
-        .species = SPECIES_CHINGLING,
+    [FRONTIER_MON_TINKATON_1] = {
+        .species = SPECIES_TINKATON,
         .moves = {MOVE_WRAP, MOVE_CONFUSION, MOVE_GROWL, MOVE_SAFEGUARD},
         .itemTableId = BATTLE_FRONTIER_ITEM_TWISTED_SPOON,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,

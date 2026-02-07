@@ -379,7 +379,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Daisy[] = {
     {
     .iv = 0,
     .lvl = 14,
-    .species = SPECIES_BUDEW,
+    .species = SPECIES_TINKATUFF,
     }
 };
 
@@ -387,7 +387,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose1[] = {
     {
     .iv = 0,
     .lvl = 14,
-    .species = SPECIES_BUDEW,
+    .species = SPECIES_TINKATUFF,
     },
     {
     .iv = 0,
@@ -6041,7 +6041,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lydia1[] = {
     {
     .iv = 0,
     .lvl = 11,
-    .species = SPECIES_BUDEW,
+    .species = SPECIES_TINKATUFF,
     },
     {
     .iv = 0,
@@ -8208,7 +8208,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Celina[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_BUDEW,
+    .species = SPECIES_TINKATUFF,
     }
 };
 

@@ -6981,7 +6981,7 @@ static const u16 sArceusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(99, MOVE_BATON_PASS),
     LEVEL_UP_END};
 
-static const u16 sBonslyLevelUpLearnset[] = {
+static const u16 sTinkatinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE(1, MOVE_MIMIC),
     LEVEL_UP_MOVE(4, MOVE_FLAIL),
@@ -6997,7 +6997,7 @@ static const u16 sBonslyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_POWER_GEM),
     LEVEL_UP_END};
 
-static const u16 sBudewLevelUpLearnset[] = {
+static const u16 sTinkatuffLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_ABSORB),
     LEVEL_UP_MOVE(4, MOVE_GROWTH),
     LEVEL_UP_MOVE(7, MOVE_WATER_SPORT),
@@ -7007,7 +7007,7 @@ static const u16 sBudewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(16, MOVE_LEECH_SEED),
     LEVEL_UP_END};
 
-static const u16 sChinglingLevelUpLearnset[] = {
+static const u16 sTinkatonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_WRAP),
     LEVEL_UP_MOVE(6, MOVE_GROWL),
     LEVEL_UP_MOVE(9, MOVE_ASTONISH),

@@ -1947,16 +1947,16 @@ Cry_Arceus::
 	.incbin "sound/direct_sound_samples/cries/arceus.bin"
 
 	.align 2
-Cry_Bonsly::
-	.incbin "sound/direct_sound_samples/cries/bonsly.bin"
+Cry_Tinkatink::
+	.incbin "sound/direct_sound_samples/cries/tinkatink.bin"
 	
 	.align 2
-Cry_Budew::
-	.incbin "sound/direct_sound_samples/cries/budew.bin"
+Cry_Tinkatuff::
+	.incbin "sound/direct_sound_samples/cries/tinkatuff.bin"
 
 	.align 2
-Cry_Chingling::
-	.incbin "sound/direct_sound_samples/cries/chingling.bin"
+Cry_Tinkaton::
+	.incbin "sound/direct_sound_samples/cries/tinkaton.bin"
 
 	.align 2
 Cry_DeoxysA::

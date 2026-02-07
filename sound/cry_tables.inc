@@ -390,9 +390,9 @@ gCryTable::
 	cry Cry_Chimecho
 	cry Cry_Decibelle
 	cry Cry_Arceus
-	cry Cry_Bonsly
-	cry Cry_Budew
-	cry Cry_Chingling
+	cry Cry_Tinkatink
+	cry Cry_Tinkatuff
+	cry Cry_Tinkaton
 	cry Cry_DeoxysA
 	cry Cry_DeoxysD
 	cry Cry_DeoxysS
@@ -825,9 +825,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Chimecho
 	cry_reverse Cry_Decibelle
 	cry_reverse Cry_Arceus
-	cry_reverse Cry_Bonsly
-	cry_reverse Cry_Budew
-	cry_reverse Cry_Chingling
+	cry_reverse Cry_Tinkatink
+	cry_reverse Cry_Tinkatuff
+	cry_reverse Cry_Tinkaton
 	cry_reverse Cry_DeoxysA
 	cry_reverse Cry_DeoxysD
 	cry_reverse Cry_DeoxysS

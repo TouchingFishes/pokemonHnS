@@ -803,7 +803,7 @@ const u16 gEggMoves[] = {
               MOVE_SUPERSONIC,
               MOVE_SUBSTITUTE),
 
-    egg_moves(BONSLY,
+    egg_moves(TINKATINK,
               MOVE_DEFENSE_CURL,
               MOVE_HARDEN,
               MOVE_HEADBUTT,
@@ -1521,7 +1521,7 @@ const u16 gEggMoves[] = {
               MOVE_MEMENTO,
               MOVE_FAINT_ATTACK),
 
-    egg_moves(BUDEW,
+    egg_moves(TINKATUFF,
               MOVE_COTTON_SPORE,
               MOVE_EXTRASENSORY,
               MOVE_MIND_READER,
@@ -1702,7 +1702,7 @@ const u16 gEggMoves[] = {
               MOVE_TWISTER,
               MOVE_DRAGON_DANCE),
 
-    egg_moves(CHINGLING,
+    egg_moves(TINKATON,
               MOVE_DISABLE,
               MOVE_CURSE,
               MOVE_HYPNOSIS,
@@ -3038,7 +3038,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_HYPNOSIS,
               MOVE_DREAM_EATER),
     
-    egg_moves(CHINGLING,
+    egg_moves(TINKATON,
               MOVE_DISABLE,
               MOVE_CURSE,
               MOVE_HYPNOSIS,
@@ -3047,7 +3047,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_WISH,
               MOVE_DREAM_EATER), 
 
-    egg_moves(BUDEW,
+    egg_moves(TINKATUFF,
               MOVE_COTTON_SPORE,
               MOVE_EXTRASENSORY,
               MOVE_MIND_READER,
@@ -3089,7 +3089,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_SUBSTITUTE,
               MOVE_FOCUS_BLAST),
 
-    egg_moves(BONSLY,
+    egg_moves(TINKATINK,
               MOVE_DEFENSE_CURL,
               MOVE_HARDEN,
               MOVE_HEADBUTT,

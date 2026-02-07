@@ -2332,19 +2332,19 @@ const u8 gArceusPokedexText[] = _(
     "yet this particular specimen does not\n"
     "look very strong. Its voice is ethereal.");
 
-const u8 gBonslyPokedexText[] = _(
-    "BONSLY prefers an arid atmosphere.\n"
+const u8 gTinkatinkPokedexText[] = _(
+    "TINKATINK prefers an arid atmosphere.\n"
     "In order to adjust the level of fluids\n"
     "in its body, it exudes water from its eyes.\n"
     "This makes it appear to be crying.");
 
-const u8 gBudewPokedexText[] = _(
+const u8 gTinkatuffPokedexText[] = _(
     "Over the winter, it closes its bud and\n"
     "endures the cold. Sensitive to changing\n"
     "temperature, the bud is said to bloom\n"
     "when it feels the sun's warm touch.");
 
-const u8 gChinglingPokedexText[] = _(
+const u8 gTinkatonPokedexText[] = _(
     "There is an orb inside its mouth.\n"
     "When it hops, the orb bounces all\n"
     "over and makes a ringing sound.\n"
