@@ -466,7 +466,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_CLAYDOL, 
     SPECIES_NOSEPASS, 
     SPECIES_TORKOAL, 
-    SPECIES_SABLEYE, 
+    SPECIES_MIMIKYU, 
     SPECIES_BARBOACH, 
     SPECIES_WHISCASH, 
     SPECIES_LUVDISC, 

@@ -362,7 +362,7 @@ gCryTable::
 	cry Cry_Poochyena
 	cry Cry_Mightyena
 	cry Cry_Dusclops
-	cry Cry_Sableye
+	cry Cry_Mimikyu
 	cry Cry_Mawile
 	cry Cry_Aron
 	cry Cry_Lairon
@@ -797,7 +797,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Poochyena
 	cry_reverse Cry_Mightyena
 	cry_reverse Cry_Dusclops
-	cry_reverse Cry_Sableye
+	cry_reverse Cry_Mimikyu
 	cry_reverse Cry_Mawile
 	cry_reverse Cry_Aron
 	cry_reverse Cry_Lairon

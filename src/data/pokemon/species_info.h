@@ -9093,7 +9093,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SABLEYE] = //modified
+    [SPECIES_MIMIKYU] = //modified
     {
         .baseHP        = 80, //+30
         .baseHP_old        = 50,

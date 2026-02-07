@@ -493,7 +493,7 @@ const u8 DecorDesc_SPIN_CUSHION[] = _(
         "or a desk.");
 
 const u8 DecorDesc_DIAMOND_CUSHION[] = _(
-    "A SABLEYE cushion.\n"
+    "A MIMIKYU cushion.\n"
         "Place it on a mat\n"
         "or a desk.");
 

@@ -3459,7 +3459,7 @@ static const union AnimCmd sAnim_Torkoal_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sableye_1[] =
+static const union AnimCmd sAnim_Mimikyu_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5593,7 +5593,7 @@ SINGLE_ANIMATION(Baltoy);
 SINGLE_ANIMATION(Claydol);
 SINGLE_ANIMATION(Nosepass);
 SINGLE_ANIMATION(Torkoal);
-SINGLE_ANIMATION(Sableye);
+SINGLE_ANIMATION(Mimikyu);
 SINGLE_ANIMATION(Barboach);
 SINGLE_ANIMATION(Whiscash);
 SINGLE_ANIMATION(Luvdisc);
@@ -6085,7 +6085,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_CLAYDOL]     = sAnims_Claydol,
     [SPECIES_NOSEPASS]    = sAnims_Nosepass,
     [SPECIES_TORKOAL]     = sAnims_Torkoal,
-    [SPECIES_SABLEYE]     = sAnims_Sableye,
+    [SPECIES_MIMIKYU]     = sAnims_Mimikyu,
     [SPECIES_BARBOACH]    = sAnims_Barboach,
     [SPECIES_WHISCASH]    = sAnims_Whiscash,
     [SPECIES_LUVDISC]     = sAnims_Luvdisc,

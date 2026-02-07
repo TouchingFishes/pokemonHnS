@@ -5338,7 +5338,7 @@ static const u16 sTorkoalLevelUpLearnset[] = {
     LEVEL_UP_MOVE(64, MOVE_ERUPTION),
     LEVEL_UP_END};
 
-static const u16 sSableyeLevelUpLearnset[] = {
+static const u16 sMimikyuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_LEER),
     LEVEL_UP_MOVE(1, MOVE_SCRATCH),
     LEVEL_UP_MOVE(5, MOVE_FORESIGHT),

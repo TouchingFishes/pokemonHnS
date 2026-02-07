@@ -1810,10 +1810,10 @@ const u8 gDelcattyPokedexText[] = _(
     "sleeps there. It is nocturnal and becomes\n"
     "active at dusk.");
 
-const u8 gSableyePokedexText[] = _(
+const u8 gMimikyuPokedexText[] = _(
     "It digs branching holes in caves using its\n"
     "sharp claws in search of food--raw gems.\n"
-    "A SABLEYE lurks in darkness and is seen\n"
+    "A MIMIKYU lurks in darkness and is seen\n"
     "only rarely.");
 
 const u8 gMawilePokedexText[] = _(

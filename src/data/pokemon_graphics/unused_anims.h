@@ -427,13 +427,13 @@ static const union AnimCmd sUnusedAnim_Nosepass_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Sableye_1[] =
+static const union AnimCmd sUnusedAnim_Mimikyu_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Sableye_2[] =
+static const union AnimCmd sUnusedAnim_Mimikyu_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -1261,7 +1261,7 @@ static const union AnimCmd *const sUnusedAnims_Baltoy[] = {sAnim_GeneralFrame0, 
 static const union AnimCmd *const sUnusedAnims_Claydol[] = {sAnim_GeneralFrame0, sUnusedAnim_Claydol_1};
 static const union AnimCmd *const sUnusedAnims_Nosepass[] = {sAnim_GeneralFrame0, sUnusedAnim_Nosepass_1};
 static const union AnimCmd *const sUnusedAnims_Torkoal[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Sableye[] = {sAnim_GeneralFrame0, sUnusedAnim_Sableye_1, sUnusedAnim_Sableye_2};
+static const union AnimCmd *const sUnusedAnims_Mimikyu[] = {sAnim_GeneralFrame0, sUnusedAnim_Mimikyu_1, sUnusedAnim_Mimikyu_2};
 static const union AnimCmd *const sUnusedAnims_Barboach[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Whiscash[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Luvdisc[] = {sAnim_GeneralFrame0, sUnusedAnim_Luvdisc_1, sUnusedAnim_Luvdisc_2};
@@ -1703,7 +1703,7 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_CLAYDOL] = sUnusedAnims_Claydol,
     [SPECIES_NOSEPASS] = sUnusedAnims_Nosepass,
     [SPECIES_TORKOAL] = sUnusedAnims_Torkoal,
-    [SPECIES_SABLEYE] = sUnusedAnims_Sableye,
+    [SPECIES_MIMIKYU] = sUnusedAnims_Mimikyu,
     [SPECIES_BARBOACH] = sUnusedAnims_Barboach,
     [SPECIES_WHISCASH] = sUnusedAnims_Whiscash,
     [SPECIES_LUVDISC] = sUnusedAnims_Luvdisc,

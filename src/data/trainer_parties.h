@@ -976,7 +976,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jennifer[] = {
     {
     .iv = 200,
     .lvl = 30,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     }
 };
 
@@ -1105,7 +1105,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie1[] = {
     {
     .iv = 0,
     .lvl = 32,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     }
 };
 
@@ -1121,7 +1121,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie2[] = {
     {
     .iv = 100,
     .lvl = 45,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     },
     {
     .iv = 100,
@@ -1139,7 +1139,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie3[] = {
     {
     .iv = 200,
     .lvl = 55,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     }
 };
 
@@ -1157,7 +1157,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie4[] = {
     {
     .iv = 255,
     .lvl = 65,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     },
     {
     .iv = 255,
@@ -1175,7 +1175,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie5[] = {
     {
     .iv = 255,
     .lvl = 72,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     },
     {
     .iv = 255,
@@ -2583,7 +2583,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     {
     .iv = 250,
     .lvl = 50,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_BALL, MOVE_DOUBLE_TEAM, MOVE_NIGHT_SHADE, MOVE_FAINT_ATTACK}
     },
@@ -6059,7 +6059,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Halle[] = {
     {
     .iv = 0,
     .lvl = 43,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     },
     {
     .iv = 0,
@@ -11449,7 +11449,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe2[] = {
     {
     .iv = 255,
     .lvl = 86,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_SHADOW_BALL, MOVE_TOXIC, MOVE_RECOVER, MOVE_SEISMIC_TOSS}
     },
@@ -19415,7 +19415,7 @@ static const struct TrainerMonItemCustomMoves sParty_Morty2[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 64,
-    .species = SPECIES_SABLEYE,
+    .species = SPECIES_MIMIKYU,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_CLAW, MOVE_POWER_GEM, MOVE_MEAN_LOOK, MOVE_DETECT}
     },

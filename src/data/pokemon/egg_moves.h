@@ -1342,7 +1342,7 @@ const u16 gEggMoves[] = {
               MOVE_SLEEP_TALK,
               MOVE_YAWN),
 
-    egg_moves(SABLEYE,
+    egg_moves(MIMIKYU,
               MOVE_PSYCH_UP,
               MOVE_RECOVER,
               MOVE_MOONLIGHT),
@@ -2765,7 +2765,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_SLEEP_TALK,
               MOVE_YAWN),
 
-    egg_moves(SABLEYE,
+    egg_moves(MIMIKYU,
               MOVE_PSYCH_UP,
               MOVE_RECOVER,
               MOVE_MOONLIGHT),

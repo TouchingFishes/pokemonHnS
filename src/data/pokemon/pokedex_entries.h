@@ -3624,12 +3624,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SABLEYE] =
+    [NATIONAL_DEX_MIMIKYU] =
     {
         .categoryName = _("DARKNESS"),
         .height = 5,
         .weight = 110,
-        .description = gSableyePokedexText,
+        .description = gMimikyuPokedexText,
         .pokemonScale = 451,
         .pokemonOffset = 17,
         .trainerScale = 256,

@@ -7787,7 +7787,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_SABLEYE] = { .learnset = {
+    [SPECIES_MIMIKYU] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .CALM_MIND = TRUE,

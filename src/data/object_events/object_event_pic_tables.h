@@ -4931,13 +4931,13 @@ static const struct SpriteFrameImage sPicTable_Delcatty[] = {
     overworld_frame(gObjectEventPic_Delcatty, 4, 4, 4),
     overworld_frame(gObjectEventPic_Delcatty, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Sableye[] = {
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Sableye, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Mimikyu[] = {
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Mimikyu, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Mawile[] = {
     overworld_frame(gObjectEventPic_Mawile, 4, 4, 0),
