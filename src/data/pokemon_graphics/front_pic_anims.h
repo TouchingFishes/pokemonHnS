@@ -4039,7 +4039,7 @@ static const union AnimCmd sAnim_Tropius_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Whismur_1[] =
+static const union AnimCmd sAnim_Axew_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 9),
@@ -4054,7 +4054,7 @@ static const union AnimCmd sAnim_Whismur_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Loudred_1[] =
+static const union AnimCmd sAnim_Fraxure_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 9),
@@ -4064,7 +4064,7 @@ static const union AnimCmd sAnim_Loudred_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Exploud_1[] =
+static const union AnimCmd sAnim_Haxorus_1[] =
 {
     ANIMCMD_FRAME(0, 9),
     ANIMCMD_FRAME(1, 44),
@@ -5641,9 +5641,9 @@ SINGLE_ANIMATION(Slaking);
 SINGLE_ANIMATION(Gulpin);
 SINGLE_ANIMATION(Swalot);
 SINGLE_ANIMATION(Tropius);
-SINGLE_ANIMATION(Whismur);
-SINGLE_ANIMATION(Loudred);
-SINGLE_ANIMATION(Exploud);
+SINGLE_ANIMATION(Axew);
+SINGLE_ANIMATION(Fraxure);
+SINGLE_ANIMATION(Haxorus);
 SINGLE_ANIMATION(Clamperl);
 SINGLE_ANIMATION(Huntail);
 SINGLE_ANIMATION(Gorebyss);
@@ -6133,9 +6133,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_GULPIN]      = sAnims_Gulpin,
     [SPECIES_SWALOT]      = sAnims_Swalot,
     [SPECIES_TROPIUS]     = sAnims_Tropius,
-    [SPECIES_WHISMUR]     = sAnims_Whismur,
-    [SPECIES_LOUDRED]     = sAnims_Loudred,
-    [SPECIES_EXPLOUD]     = sAnims_Exploud,
+    [SPECIES_AXEW]     = sAnims_Axew,
+    [SPECIES_FRAXURE]     = sAnims_Fraxure,
+    [SPECIES_HAXORUS]     = sAnims_Haxorus,
     [SPECIES_CLAMPERL]    = sAnims_Clamperl,
     [SPECIES_HUNTAIL]     = sAnims_Huntail,
     [SPECIES_GOREBYSS]    = sAnims_Gorebyss,

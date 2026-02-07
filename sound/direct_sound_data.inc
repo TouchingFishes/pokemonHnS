@@ -1903,20 +1903,20 @@ Cry_Zigzagoon::
 	.incbin "sound/direct_sound_samples/cries/zigzagoon.bin"
 
 	.align 2
-Cry_Exploud::
-	.incbin "sound/direct_sound_samples/cries/exploud.bin"
+Cry_Haxorus::
+	.incbin "sound/direct_sound_samples/cries/haxorus.bin"
 
 	.align 2
-Cry_Loudred::
-	.incbin "sound/direct_sound_samples/cries/loudred.bin"
+Cry_Fraxure::
+	.incbin "sound/direct_sound_samples/cries/fraxure.bin"
 
 	.align 2
 Cry_Wailord::
 	.incbin "sound/direct_sound_samples/cries/wailord.bin"
 
 	.align 2
-Cry_Whismur::
-	.incbin "sound/direct_sound_samples/cries/whismur.bin"
+Cry_Axew::
+	.incbin "sound/direct_sound_samples/cries/axew.bin"
 
 	.align 2
 Cry_Snorunt::

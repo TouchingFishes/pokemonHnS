@@ -327,7 +327,7 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_EXPLOUD,
+        .species = SPECIES_HAXORUS,
         .trainerPose = 0,
     },
     {

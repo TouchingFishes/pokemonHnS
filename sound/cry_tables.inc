@@ -379,10 +379,10 @@ gCryTable::
 	cry Cry_Tropius
 	cry Cry_Wailmer
 	cry Cry_Zigzagoon
-	cry Cry_Exploud
-	cry Cry_Loudred
+	cry Cry_Haxorus
+	cry Cry_Fraxure
 	cry Cry_Wailord
-	cry Cry_Whismur
+	cry Cry_Axew
 	cry Cry_Snorunt
 	cry Cry_Latios
 	cry Cry_Jirachi
@@ -814,10 +814,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Tropius
 	cry_reverse Cry_Wailmer
 	cry_reverse Cry_Zigzagoon
-	cry_reverse Cry_Exploud
-	cry_reverse Cry_Loudred
+	cry_reverse Cry_Haxorus
+	cry_reverse Cry_Fraxure
 	cry_reverse Cry_Wailord
-	cry_reverse Cry_Whismur
+	cry_reverse Cry_Axew
 	cry_reverse Cry_Snorunt
 	cry_reverse Cry_Latios
 	cry_reverse Cry_Jirachi

@@ -6211,7 +6211,7 @@ static const u16 sTropiusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_DRAGON_PULSE),
     LEVEL_UP_END};
 
-static const u16 sWhismurLevelUpLearnset[] = {
+static const u16 sAxewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(5, MOVE_UPROAR),
     LEVEL_UP_MOVE(11, MOVE_ASTONISH),
@@ -6225,7 +6225,7 @@ static const u16 sWhismurLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_HYPER_VOICE),
     LEVEL_UP_END};
 
-static const u16 sLoudredLevelUpLearnset[] = {
+static const u16 sFraxureLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(1, MOVE_UPROAR),
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
@@ -6243,7 +6243,7 @@ static const u16 sLoudredLevelUpLearnset[] = {
     LEVEL_UP_MOVE(57, MOVE_HYPER_VOICE),
     LEVEL_UP_END};
 
-static const u16 sExploudLevelUpLearnset[] = {
+static const u16 sHaxorusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(1, MOVE_UPROAR),
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),

@@ -2964,7 +2964,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_WHISMUR] = {
+    [SPECIES_AXEW] = {
         { .songLengthId = 17 },
         { .songLengthId = 48 },
         { .songLengthId = 51 },
@@ -2972,7 +2972,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_LOUDRED] = {
+    [SPECIES_FRAXURE] = {
         { .songLengthId = 33 },
         { .songLengthId = 9 },
         { .songLengthId = 51 },
@@ -2980,7 +2980,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_EXPLOUD] = {
+    [SPECIES_HAXORUS] = {
         { .songLengthId = 9 },
         { .songLengthId = 33 },
         { .songLengthId = 51 },

@@ -9582,7 +9582,8 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_MANECTRIC] =
     {
         .baseHP        = 70,
-        .baseAttack    = 75,
+        .baseAttack    = 85, //+10
+        .baseAttack_old = 75,
         .baseDefense   = 60,
         .baseSpeed     = 105,
         .baseSpAttack  = 105,
@@ -10548,7 +10549,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_WHISMUR] =
+    [SPECIES_AXEW] =
     {
         .baseHP        = 64,
         .baseAttack    = 51,
@@ -10578,7 +10579,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LOUDRED] =
+    [SPECIES_FRAXURE] =
     {
         .baseHP        = 84,
         .baseAttack    = 71,
@@ -10608,7 +10609,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_EXPLOUD] = //modified
+    [SPECIES_HAXORUS] = //modified
     {
         .baseHP        = 104,
         .baseAttack    = 91,

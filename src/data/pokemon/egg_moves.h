@@ -1569,7 +1569,7 @@ const u16 gEggMoves[] = {
               MOVE_LEECH_SEED,
               MOVE_NATURE_POWER),
 
-    egg_moves(WHISMUR,
+    egg_moves(AXEW,
               MOVE_TAKE_DOWN,
               MOVE_ENDEAVOR,
               MOVE_SMOKESCREEN,
@@ -2933,7 +2933,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_LEECH_SEED,
               MOVE_NATURE_POWER),
 
-    egg_moves(WHISMUR,
+    egg_moves(AXEW,
               MOVE_TAKE_DOWN,
               MOVE_SNORE,
               MOVE_SWAGGER,

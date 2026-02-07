@@ -3516,36 +3516,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WHISMUR] =
+    [NATIONAL_DEX_AXEW] =
     {
         .categoryName = _("WHISPER"),
         .height = 6,
         .weight = 163,
-        .description = gWhismurPokedexText,
+        .description = gAxewPokedexText,
         .pokemonScale = 373,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LOUDRED] =
+    [NATIONAL_DEX_FRAXURE] =
     {
         .categoryName = _("BIG VOICE"),
         .height = 10,
         .weight = 405,
-        .description = gLoudredPokedexText,
+        .description = gFraxurePokedexText,
         .pokemonScale = 356,
         .pokemonOffset = 10,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_EXPLOUD] =
+    [NATIONAL_DEX_HAXORUS] =
     {
         .categoryName = _("LOUD NOISE"),
         .height = 15,
         .weight = 840,
-        .description = gExploudPokedexText,
+        .description = gHaxorusPokedexText,
         .pokemonScale = 284,
         .pokemonOffset = 1,
         .trainerScale = 256,

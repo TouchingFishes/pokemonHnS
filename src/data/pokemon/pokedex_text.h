@@ -1756,19 +1756,19 @@ const u8 gShedinjaPokedexText[] = _(
     "The inside of its body is hollow and\n"
     "utterly dark.");
 
-const u8 gWhismurPokedexText[] = _(
+const u8 gAxewPokedexText[] = _(
     "Its cries equal a jet plane in volume.\n"
     "It inhales through its ear canals. Because\n"
     "of this system, it can cry continually\n"
     "without having to catch its breath.");
 
-const u8 gLoudredPokedexText[] = _(
+const u8 gFraxurePokedexText[] = _(
     "It positions the round speakers on its\n"
     "head to assail foes with ultrasonic waves\n"
     "at massive volume. It builds power by\n"
     "stomping the ground.");
 
-const u8 gExploudPokedexText[] = _(
+const u8 gHaxorusPokedexText[] = _(
     "It has sound-generating organs all over\n"
     "its body. It communicates with others by\n"
     "adjusting the tone and volume of the cries\n"

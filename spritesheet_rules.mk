@@ -1780,13 +1780,13 @@ $(OBJEVENTGFXDIR)/pokemon/ninjask.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/shedinja.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/whismur.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/axew.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/loudred.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/fraxure.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/exploud.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/haxorus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/makuhita.4bpp: %.4bpp: %.png
@@ -2473,9 +2473,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0283_surskit.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0284_masquerain.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0295_exploud.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
 $(OBJEVENTGFXDIR)/pokemon/surfable/0296_makuhita.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
@@ -2815,9 +2812,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0283_surskit_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0284_masquerain_shiny.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/pokemon/surfable/0295_exploud_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0296_makuhita_shiny.4bpp: %.4bpp: %.png

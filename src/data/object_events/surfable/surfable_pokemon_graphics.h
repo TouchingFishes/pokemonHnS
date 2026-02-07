@@ -416,11 +416,6 @@ const u32 gSurfableShinyPokemonPic_Masquerain[] = INCBIN_U32("graphics/object_ev
 const u16 gSurfablePokemonPalette_Masquerain[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0284_masquerain.gbapal");
 const u16 gSurfablePokemonShinyPalette_Masquerain[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0284_masquerain_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Exploud[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0295_exploud.4bpp");
-const u32 gSurfableShinyPokemonPic_Exploud[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0295_exploud_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Exploud[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0295_exploud.gbapal");
-const u16 gSurfablePokemonShinyPalette_Exploud[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0295_exploud_shiny.gbapal");
-
 const u32 gSurfablePokemonPic_Makuhita[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0296_makuhita.4bpp");
 const u32 gSurfableShinyPokemonPic_Makuhita[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0296_makuhita_shiny.4bpp");
 const u16 gSurfablePokemonPalette_Makuhita[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0296_makuhita.gbapal");

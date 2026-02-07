@@ -596,7 +596,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy1[] = {
     {
     .iv = 50,
     .lvl = 17,
-    .species = SPECIES_WHISMUR,
+    .species = SPECIES_AXEW,
     }
 };
 
@@ -609,7 +609,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy2[] = {
     {
     .iv = 100,
     .lvl = 27,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -622,7 +622,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy3[] = {
     {
     .iv = 150,
     .lvl = 30,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -635,7 +635,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy4[] = {
     {
     .iv = 200,
     .lvl = 46,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     }
 };
 
@@ -648,7 +648,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_GabbyAndTy5[] = {
     {
     .iv = 255,
     .lvl = 58,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     }
 };
 
@@ -662,7 +662,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_GabbyAndTy6[] = {
     {
     .iv = 255,
     .lvl = 65,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     .moves = {MOVE_ASTONISH, MOVE_STOMP, MOVE_SUPERSONIC, MOVE_HYPER_VOICE}
     }
 };
@@ -1830,7 +1830,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fernando1[] = {
     {
     .iv = 0,
     .lvl = 30,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -1843,7 +1843,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton1[] = {
     {
     .iv = 0,
     .lvl = 15,
-    .species = SPECIES_WHISMUR,
+    .species = SPECIES_AXEW,
     }
 };
 
@@ -1856,7 +1856,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton2[] = {
     {
     .iv = 10,
     .lvl = 25,
-    .species = SPECIES_WHISMUR,
+    .species = SPECIES_AXEW,
     },
     {
     .iv = 10,
@@ -1874,7 +1874,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton3[] = {
     {
     .iv = 200,
     .lvl = 38,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 200,
@@ -1892,7 +1892,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton4[] = {
     {
     .iv = 255,
     .lvl = 46,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 255,
@@ -1910,7 +1910,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dalton5[] = {
     {
     .iv = 255,
     .lvl = 60,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 255,
@@ -3007,7 +3007,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Karen3[] = {
     {
     .iv = 100,
     .lvl = 37,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -3020,7 +3020,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Karen4[] = {
     {
     .iv = 150,
     .lvl = 45,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -3033,7 +3033,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Karen5[] = {
     {
     .iv = 255,
     .lvl = 58,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 255,
@@ -5838,7 +5838,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isaac1[] = {
     {
     .iv = 0,
     .lvl = 11,
-    .species = SPECIES_WHISMUR,
+    .species = SPECIES_AXEW,
     },
     {
     .iv = 0,
@@ -5894,7 +5894,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isaac2[] = {
     {
     .iv = 10,
     .lvl = 30,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 10,
@@ -5927,7 +5927,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isaac3[] = {
     {
     .iv = 20,
     .lvl = 40,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 20,
@@ -5960,7 +5960,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isaac4[] = {
     {
     .iv = 30,
     .lvl = 50,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 30,
@@ -5993,7 +5993,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Isaac5[] = {
     {
     .iv = 140,
     .lvl = 59,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 140,
@@ -6725,7 +6725,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jonathan[] = {
     {
     .iv = 0,
     .lvl = 33,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -8899,7 +8899,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin1[] = {
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 100,
@@ -10768,7 +10768,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin2[] = {
     {
     .iv = 110,
     .lvl = 35,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 110,
@@ -10786,7 +10786,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin3[] = {
     {
     .iv = 120,
     .lvl = 47,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 130,
@@ -10804,7 +10804,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin4[] = {
     {
     .iv = 130,
     .lvl = 57,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     },
     {
     .iv = 200,
@@ -10822,7 +10822,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin5[] = {
     {
     .iv = 200,
     .lvl = 61,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 255,
@@ -10850,7 +10850,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fernando2[] = {
     {
     .iv = 10,
     .lvl = 35,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -10868,7 +10868,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fernando3[] = {
     {
     .iv = 80,
     .lvl = 47,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -10886,7 +10886,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fernando4[] = {
     {
     .iv = 200,
     .lvl = 59,
-    .species = SPECIES_LOUDRED,
+    .species = SPECIES_FRAXURE,
     }
 };
 
@@ -10904,7 +10904,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Fernando5[] = {
     {
     .iv = 250,
     .lvl = 61,
-    .species = SPECIES_EXPLOUD,
+    .species = SPECIES_HAXORUS,
     },
     {
     .iv = 255,

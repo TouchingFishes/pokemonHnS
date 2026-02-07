@@ -1936,7 +1936,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_LOUDRED,
+                                            .species = SPECIES_FRAXURE,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_UPROAR, MOVE_TAUNT, MOVE_ATTRACT, MOVE_STOMP},
                                             .hpEV = 6,
@@ -1951,7 +1951,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0xA,
-                                            .nickname = _("LOUDRED"),
+                                            .nickname = _("FRAXURE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
@@ -4344,7 +4344,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_EXPLOUD,
+                                            .species = SPECIES_HAXORUS,
                                             .heldItem = ITEM_CHESTO_BERRY,
                                             .moves = {MOVE_HYPER_VOICE, MOVE_COUNTER, MOVE_REST, MOVE_EARTHQUAKE},
                                             .hpEV = 250,
@@ -4359,7 +4359,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x85,
-                                            .nickname = _("EXPLOUD"),
+                                            .nickname = _("HAXORUS"),
                                             .friendship = 0,
                                         },
                                     [2] =

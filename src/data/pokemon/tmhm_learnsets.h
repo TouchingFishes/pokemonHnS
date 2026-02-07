@@ -9022,7 +9022,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_WHISMUR] = { .learnset = {
+    [SPECIES_AXEW] = { .learnset = {
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -9046,7 +9046,7 @@ const union {
         .ATTRACT = TRUE,
     } },
 
-    [SPECIES_LOUDRED] = { .learnset = {
+    [SPECIES_FRAXURE] = { .learnset = {
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -9077,7 +9077,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_EXPLOUD] = { .learnset = {
+    [SPECIES_HAXORUS] = { .learnset = {
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
