@@ -7318,7 +7318,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_TAILLOW] = { .learnset = {
+    [SPECIES_VOLTREL] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -7337,7 +7337,7 @@ const union {
         .FLY = TRUE,
     } },
 
-    [SPECIES_SWELLOW] = { .learnset = {
+    [SPECIES_VOLTREAN] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,

@@ -3261,7 +3261,7 @@ static const union AnimCmd sAnim_Shedinja_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Taillow_1[] =
+static const union AnimCmd sAnim_Voltrel_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 15),
@@ -3275,7 +3275,7 @@ static const union AnimCmd sAnim_Taillow_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swellow_1[] =
+static const union AnimCmd sAnim_Voltrean_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 18),
@@ -5573,8 +5573,8 @@ SINGLE_ANIMATION(Shiftry);
 SINGLE_ANIMATION(Nincada);
 SINGLE_ANIMATION(Ninjask);
 SINGLE_ANIMATION(Shedinja);
-SINGLE_ANIMATION(Taillow);
-SINGLE_ANIMATION(Swellow);
+SINGLE_ANIMATION(Voltrel);
+SINGLE_ANIMATION(Voltrean);
 SINGLE_ANIMATION(Shroomish);
 SINGLE_ANIMATION(Breloom);
 static const union AnimCmd *const sAnims_Spinda[] ={
@@ -6067,8 +6067,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_NINCADA]     = sAnims_Nincada,
     [SPECIES_NINJASK]     = sAnims_Ninjask,
     [SPECIES_SHEDINJA]    = sAnims_Shedinja,
-    [SPECIES_TAILLOW]     = sAnims_Taillow,
-    [SPECIES_SWELLOW]     = sAnims_Swellow,
+    [SPECIES_VOLTREL]     = sAnims_Voltrel,
+    [SPECIES_VOLTREAN]     = sAnims_Voltrean,
     [SPECIES_SHROOMISH]   = sAnims_Shroomish,
     [SPECIES_BRELOOM]     = sAnims_Breloom,
     [SPECIES_SPINDA]      = sAnims_Spinda,

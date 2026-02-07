@@ -4723,21 +4723,21 @@ static const struct SpriteFrameImage sPicTable_Shiftry[] = {
     overworld_frame(gObjectEventPic_Shiftry, 4, 4, 4),
     overworld_frame(gObjectEventPic_Shiftry, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Taillow[] = {
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Taillow, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Voltrel[] = {
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Voltrel, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Swellow[] = {
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Swellow, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Voltrean[] = {
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Voltrean, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Wingull[] = {
     overworld_frame(gObjectEventPic_Wingull, 4, 4, 0),

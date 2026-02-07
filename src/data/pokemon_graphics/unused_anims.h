@@ -197,13 +197,13 @@ static const union AnimCmd sUnusedAnim_Shiftry_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Taillow_1[] =
+static const union AnimCmd sUnusedAnim_Voltrel_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Swellow_1[] =
+static const union AnimCmd sUnusedAnim_Voltrean_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
@@ -1243,8 +1243,8 @@ static const union AnimCmd *const sUnusedAnims_Shiftry[] = {sAnim_GeneralFrame0,
 static const union AnimCmd *const sUnusedAnims_Nincada[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Ninjask[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Shedinja[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Taillow[] = {sAnim_GeneralFrame0, sUnusedAnim_Taillow_1};
-static const union AnimCmd *const sUnusedAnims_Swellow[] = {sAnim_GeneralFrame0, sUnusedAnim_Swellow_1};
+static const union AnimCmd *const sUnusedAnims_Voltrel[] = {sAnim_GeneralFrame0, sUnusedAnim_Voltrel_1};
+static const union AnimCmd *const sUnusedAnims_Voltrean[] = {sAnim_GeneralFrame0, sUnusedAnim_Voltrean_1};
 static const union AnimCmd *const sUnusedAnims_Shroomish[] = {sAnim_GeneralFrame0, sUnusedAnim_Shroomish_1};
 static const union AnimCmd *const sUnusedAnims_Breloom[] = {sAnim_GeneralFrame0, sUnusedAnim_Breloom_1};
 static const union AnimCmd *const sUnusedAnims_Spinda[] = {sAnim_GeneralFrame0};
@@ -1685,8 +1685,8 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_NINCADA] = sUnusedAnims_Nincada,
     [SPECIES_NINJASK] = sUnusedAnims_Ninjask,
     [SPECIES_SHEDINJA] = sUnusedAnims_Shedinja,
-    [SPECIES_TAILLOW] = sUnusedAnims_Taillow,
-    [SPECIES_SWELLOW] = sUnusedAnims_Swellow,
+    [SPECIES_VOLTREL] = sUnusedAnims_Voltrel,
+    [SPECIES_VOLTREAN] = sUnusedAnims_Voltrean,
     [SPECIES_SHROOMISH] = sUnusedAnims_Shroomish,
     [SPECIES_BRELOOM] = sUnusedAnims_Breloom,
     [SPECIES_SPINDA] = sUnusedAnims_Spinda,

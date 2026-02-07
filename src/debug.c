@@ -4713,7 +4713,7 @@ static void DebugAction_Sound_MUS_SelectId(u8 taskId)
     X(SE_EXP_MAX               , "SE-EXP-MAX"               ) \
     X(SE_ROULETTE_BALL         , "SE-ROULETTE-BALL"         ) \
     X(SE_ROULETTE_BALL2        , "SE-ROULETTE-BALL2"        ) \
-    X(SE_TAILLOW_WING_FLAP     , "SE-TAILLOW-WING-FLAP"     ) \
+    X(SE_VOLTREL_WING_FLAP     , "SE-VOLTREL-WING-FLAP"     ) \
     X(SE_SHOP                  , "SE-SHOP"                  ) \
     X(SE_CONTEST_HEART         , "SE-CONTEST-HEART"         ) \
     X(SE_CONTEST_CURTAIN_RISE  , "SE-CONTEST-CURTAIN-RISE"  ) \

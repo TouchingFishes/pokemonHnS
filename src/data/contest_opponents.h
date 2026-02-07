@@ -332,7 +332,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_MADISON] = {
-        .species = SPECIES_TAILLOW,
+        .species = SPECIES_VOLTREL,
         .nickname = _("TATAY"),
         .trainerName = _("MADISON"),
         .trainerGfxId = OBJ_EVENT_GFX_PICNICKER,
@@ -1648,7 +1648,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_JADE] = {
-        .species = SPECIES_SWELLOW,
+        .species = SPECIES_VOLTREAN,
         .nickname = _("WELOW"),
         .trainerName = _("JADE"),
         .trainerGfxId = OBJ_EVENT_GFX_WOMAN_3,

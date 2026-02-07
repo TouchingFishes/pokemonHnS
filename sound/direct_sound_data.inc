@@ -1451,12 +1451,12 @@ Cry_Unused265::
 	.incbin "sound/direct_sound_samples/cries/unused_265.bin"
 
 	.align 2
-Cry_Taillow::
-	.incbin "sound/direct_sound_samples/cries/taillow.bin"
+Cry_Voltrel::
+	.incbin "sound/direct_sound_samples/cries/voltrel.bin"
 
 	.align 2
-Cry_Swellow::
-	.incbin "sound/direct_sound_samples/cries/swellow.bin"
+Cry_Voltrean::
+	.incbin "sound/direct_sound_samples/cries/voltrean.bin"
 
 	.align 2
 Cry_Unused268::

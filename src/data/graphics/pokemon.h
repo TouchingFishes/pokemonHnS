@@ -1948,19 +1948,19 @@ const u32 gMonShinyPalette_Shedinja[] = INCBIN_U32("graphics/pokemon/shedinja/sh
 const u8 gMonIcon_Shedinja[] = INCBIN_U8("graphics/pokemon/shedinja/icon.4bpp");
 const u8 gMonFootprint_Shedinja[] = INCBIN_U8("graphics/pokemon/shedinja/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/front.4bpp.lz");
-const u32 gMonPalette_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/normal.gbapal.lz");
-const u32 gMonBackPic_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/back.4bpp.lz");
-const u32 gMonShinyPalette_Taillow[] = INCBIN_U32("graphics/pokemon/taillow/shiny.gbapal.lz");
-const u8 gMonIcon_Taillow[] = INCBIN_U8("graphics/pokemon/taillow/icon.4bpp");
-const u8 gMonFootprint_Taillow[] = INCBIN_U8("graphics/pokemon/taillow/footprint.1bpp");
+const u32 gMonStillFrontPic_Voltrel[] = INCBIN_U32("graphics/pokemon/voltrel/front.4bpp.lz");
+const u32 gMonPalette_Voltrel[] = INCBIN_U32("graphics/pokemon/voltrel/normal.gbapal.lz");
+const u32 gMonBackPic_Voltrel[] = INCBIN_U32("graphics/pokemon/voltrel/back.4bpp.lz");
+const u32 gMonShinyPalette_Voltrel[] = INCBIN_U32("graphics/pokemon/voltrel/shiny.gbapal.lz");
+const u8 gMonIcon_Voltrel[] = INCBIN_U8("graphics/pokemon/voltrel/icon.4bpp");
+const u8 gMonFootprint_Voltrel[] = INCBIN_U8("graphics/pokemon/voltrel/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/front.4bpp.lz");
-const u32 gMonPalette_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/normal.gbapal.lz");
-const u32 gMonBackPic_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/back.4bpp.lz");
-const u32 gMonShinyPalette_Swellow[] = INCBIN_U32("graphics/pokemon/swellow/shiny.gbapal.lz");
-const u8 gMonIcon_Swellow[] = INCBIN_U8("graphics/pokemon/swellow/icon.4bpp");
-const u8 gMonFootprint_Swellow[] = INCBIN_U8("graphics/pokemon/swellow/footprint.1bpp");
+const u32 gMonStillFrontPic_Voltrean[] = INCBIN_U32("graphics/pokemon/voltrean/front.4bpp.lz");
+const u32 gMonPalette_Voltrean[] = INCBIN_U32("graphics/pokemon/voltrean/normal.gbapal.lz");
+const u32 gMonBackPic_Voltrean[] = INCBIN_U32("graphics/pokemon/voltrean/back.4bpp.lz");
+const u32 gMonShinyPalette_Voltrean[] = INCBIN_U32("graphics/pokemon/voltrean/shiny.gbapal.lz");
+const u8 gMonIcon_Voltrean[] = INCBIN_U8("graphics/pokemon/voltrean/icon.4bpp");
+const u8 gMonFootprint_Voltrean[] = INCBIN_U8("graphics/pokemon/voltrean/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Shroomish[] = INCBIN_U32("graphics/pokemon/shroomish/front.4bpp.lz");
 const u32 gMonPalette_Shroomish[] = INCBIN_U32("graphics/pokemon/shroomish/normal.gbapal.lz");

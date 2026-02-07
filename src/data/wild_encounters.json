@@ -1623,12 +1623,12 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 4,
@@ -1782,7 +1782,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 4,
@@ -1792,7 +1792,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 3,
@@ -1931,7 +1931,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 5,
@@ -2090,7 +2090,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 4,
@@ -5230,17 +5230,17 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
@@ -5299,17 +5299,17 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
@@ -5373,12 +5373,12 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
@@ -5447,7 +5447,7 @@
               {
                 "min_level": 8,
                 "max_level": 8,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 7,
@@ -7109,7 +7109,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 5,
@@ -7119,7 +7119,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 6,
@@ -11384,7 +11384,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
@@ -11394,17 +11394,17 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SWELLOW"
+                "species": "SPECIES_VOLTREAN"
               },
               {
                 "min_level": 24,
@@ -11548,17 +11548,17 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SWELLOW"
+                "species": "SPECIES_VOLTREAN"
               },
               {
                 "min_level": 24,
@@ -11692,7 +11692,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
@@ -11702,7 +11702,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 25,
@@ -14828,7 +14828,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SWELLOW"
+                "species": "SPECIES_VOLTREAN"
               },
               {
                 "min_level": 28,
@@ -57664,7 +57664,7 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 6,
@@ -57853,7 +57853,7 @@
               {
                 "min_level": 3,
                 "max_level": 7,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 3,

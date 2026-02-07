@@ -99,7 +99,7 @@
 #define SE_EXP_MAX                         91 // SE_EXPMAX
 #define SE_ROULETTE_BALL                   92 // SE_TAMAKORO
 #define SE_ROULETTE_BALL2                  93 // SE_TAMAKORO_E
-#define SE_TAILLOW_WING_FLAP               94 // SE_BASABASA
+#define SE_VOLTREL_WING_FLAP               94 // SE_BASABASA
 #define SE_SHOP                            95 // SE_REGI
 #define SE_CONTEST_HEART                   96 // SE_C_GAJI
 #define SE_CONTEST_CURTAIN_RISE            97 // SE_C_MAKU_U

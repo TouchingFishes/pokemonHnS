@@ -266,8 +266,8 @@ gCryTable::
 	cry Cry_Swablu
 	cry Cry_Altaria
 	cry Cry_Unused265
-	cry Cry_Taillow
-	cry Cry_Swellow
+	cry Cry_Voltrel
+	cry Cry_Voltrean
 	cry Cry_Unused268
 	cry Cry_Spinda
 	cry Cry_Torchic
@@ -701,8 +701,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria
 	cry_reverse Cry_Unused265
-	cry_reverse Cry_Taillow
-	cry_reverse Cry_Swellow
+	cry_reverse Cry_Voltrel
+	cry_reverse Cry_Voltrean
 	cry_reverse Cry_Unused268
 	cry_reverse Cry_Spinda
 	cry_reverse Cry_Torchic

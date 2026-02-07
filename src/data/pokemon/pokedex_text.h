@@ -1654,14 +1654,14 @@ const u8 gShiftryPokedexText[] = _(
     "forests, this POKéMON lives in a deep\n"
     "forest where people do not venture.");
 
-const u8 gTaillowPokedexText[] = _(
+const u8 gVoltrelPokedexText[] = _(
     "Although it is small, it is very courageous.\n"
     "It will take on a larger SKARMORY on an\n"
     "equal footing. However, its will weakens if\n"
     "it becomes hungry.");
 
-const u8 gSwellowPokedexText[] = _(
-    "A SWELLOW dives upon prey from far above.\n"
+const u8 gVoltreanPokedexText[] = _(
+    "A VOLTREAN dives upon prey from far above.\n"
     "It never misses its targets. It takes to\n"
     "the skies in search of lands with a warm\n"
     "climate.");

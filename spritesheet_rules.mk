@@ -1729,10 +1729,10 @@ $(OBJEVENTGFXDIR)/pokemon/nuzleaf.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/shiftry.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/taillow.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/voltrel.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/swellow.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/voltrean.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/wingull.4bpp: %.4bpp: %.png

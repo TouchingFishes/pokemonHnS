@@ -1253,7 +1253,7 @@ const u16 gEggMoves[] = {
               MOVE_GUST,
               MOVE_SILVER_WIND),
 
-    egg_moves(TAILLOW,
+    egg_moves(VOLTREL,
               MOVE_PURSUIT,
               MOVE_SUPERSONIC,
               MOVE_WHIRLWIND,
@@ -2690,7 +2690,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_GUST,
               MOVE_SILVER_WIND),
 
-    egg_moves(TAILLOW,
+    egg_moves(VOLTREL,
               MOVE_PURSUIT,
               MOVE_SUPERSONIC,
               MOVE_REFRESH,

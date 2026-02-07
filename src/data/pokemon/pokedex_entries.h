@@ -3312,24 +3312,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_TAILLOW] =
+    [NATIONAL_DEX_VOLTREL] =
     {
         .categoryName = _("TINYSWALLOW"),
         .height = 3,
         .weight = 23,
-        .description = gTaillowPokedexText,
+        .description = gVoltrelPokedexText,
         .pokemonScale = 465,
         .pokemonOffset = 21,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SWELLOW] =
+    [NATIONAL_DEX_VOLTREAN] =
     {
         .categoryName = _("SWALLOW"),
         .height = 7,
         .weight = 198,
-        .description = gSwellowPokedexText,
+        .description = gVoltreanPokedexText,
         .pokemonScale = 428,
         .pokemonOffset = 15,
         .trainerScale = 256,

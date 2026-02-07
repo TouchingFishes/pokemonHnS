@@ -574,10 +574,10 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/surskit.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swablu.aif sound/direct_sound_samples/cries/swablu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swalot.aif sound/direct_sound_samples/cries/swalot.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swampert.aif sound/direct_sound_samples/cries/swampert.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swellow.aif sound/direct_sound_samples/cries/swellow.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltrean.aif sound/direct_sound_samples/cries/voltrean.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swinub.aif sound/direct_sound_samples/cries/swinub.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sylveon.aif sound/direct_sound_samples/cries/sylveon.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/taillow.aif sound/direct_sound_samples/cries/taillow.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltrel.aif sound/direct_sound_samples/cries/voltrel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tangela.aif sound/direct_sound_samples/cries/tangela.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tangrowth.aif sound/direct_sound_samples/cries/tangrowth.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tauros.aif sound/direct_sound_samples/cries/tauros.bin --compress
@@ -1995,7 +1995,7 @@ tools/mid2agb/mid2agb sound/songs/midi/se_success.mid sound/songs/midi/se_succes
 tools/mid2agb/mid2agb sound/songs/midi/se_sudowoodo_shake.mid sound/songs/midi/se_sudowoodo_shake.s -E -G129 -V077 -P5
 tools/mid2agb/mid2agb sound/songs/midi/se_super_effective.mid sound/songs/midi/se_super_effective.s -E -G127 -V110 -P5
 tools/mid2agb/mid2agb sound/songs/midi/se_switch.mid sound/songs/midi/se_switch.s -E -G127 -V100 -P4
-tools/mid2agb/mid2agb sound/songs/midi/se_taillow_wing_flap.mid sound/songs/midi/se_taillow_wing_flap.s -E -G128 -V105 -P5
+tools/mid2agb/mid2agb sound/songs/midi/se_voltrel_wing_flap.mid sound/songs/midi/se_voltrel_wing_flap.s -E -G128 -V105 -P5
 tools/mid2agb/mid2agb sound/songs/midi/se_thunder.mid sound/songs/midi/se_thunder.s -E -G128 -V110 -P3
 tools/mid2agb/mid2agb sound/songs/midi/se_thunder2.mid sound/songs/midi/se_thunder2.s -E -G128 -V110 -P3
 tools/mid2agb/mid2agb sound/songs/midi/se_thunderstorm.mid sound/songs/midi/se_thunderstorm.s -E -G128 -V080 -P2

@@ -5013,7 +5013,7 @@ static const u16 sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_GRUDGE),
     LEVEL_UP_END};
 
-static const u16 sTaillowLevelUpLearnset[] = {
+static const u16 sVoltrelLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_PECK),
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(4, MOVE_FOCUS_ENERGY),
@@ -5027,7 +5027,7 @@ static const u16 sTaillowLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_REVERSAL),
     LEVEL_UP_END};
 
-static const u16 sSwellowLevelUpLearnset[] = {
+static const u16 sVoltreanLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_PECK),
     LEVEL_UP_MOVE(1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE(1, MOVE_GROWL),

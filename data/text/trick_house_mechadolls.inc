@@ -4,8 +4,8 @@ gTrickHouse_Mechadoll_Oddish::
 gTrickHouse_Mechadoll_Poochyena::
 	.string "POOCHYENA$"
 
-gTrickHouse_Mechadoll_Taillow::
-	.string "TAILLOW$"
+gTrickHouse_Mechadoll_Voltrel::
+	.string "VOLTREL$"
 
 gTrickHouse_Mechadoll_Solosis::
 	.string "SOLOSIS$"

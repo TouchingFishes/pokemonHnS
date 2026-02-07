@@ -95,7 +95,7 @@ gSongTable::
 	song se_exp_max, 1, 1
 	song se_roulette_ball, 2, 2
 	song se_roulette_ball2, 2, 2
-	song se_taillow_wing_flap, 1, 1
+	song se_voltrel_wing_flap, 1, 1
 	song se_shop, 1, 1
 	song se_contest_heart, 1, 1
 	song se_contest_curtain_rise, 1, 1
