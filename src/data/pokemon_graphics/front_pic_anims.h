@@ -3721,7 +3721,7 @@ static const union AnimCmd sAnim_Walrein_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cacnea_1[] =
+static const union AnimCmd sAnim_Pawniard_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -3737,7 +3737,7 @@ static const union AnimCmd sAnim_Cacnea_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cacturne_1[] =
+static const union AnimCmd sAnim_Bisharp_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5615,8 +5615,8 @@ SINGLE_ANIMATION(Camerupt);
 SINGLE_ANIMATION(Spheal);
 SINGLE_ANIMATION(Sealeo);
 SINGLE_ANIMATION(Walrein);
-SINGLE_ANIMATION(Cacnea);
-SINGLE_ANIMATION(Cacturne);
+SINGLE_ANIMATION(Pawniard);
+SINGLE_ANIMATION(Bisharp);
 SINGLE_ANIMATION(Snorunt);
 SINGLE_ANIMATION(Glalie);
 DOUBLE_ANIMATION(Lunatone);
@@ -6107,8 +6107,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_SPHEAL]      = sAnims_Spheal,
     [SPECIES_SEALEO]      = sAnims_Sealeo,
     [SPECIES_WALREIN]     = sAnims_Walrein,
-    [SPECIES_CACNEA]      = sAnims_Cacnea,
-    [SPECIES_CACTURNE]    = sAnims_Cacturne,
+    [SPECIES_PAWNIARD]      = sAnims_Pawniard,
+    [SPECIES_BISHARP]    = sAnims_Bisharp,
     [SPECIES_SNORUNT]     = sAnims_Snorunt,
     [SPECIES_GLALIE]      = sAnims_Glalie,
     [SPECIES_LUNATONE]    = sAnims_Lunatone,

@@ -1695,12 +1695,12 @@ Cry_Flygon::
 	.incbin "sound/direct_sound_samples/cries/flygon.bin"
 
 	.align 2
-Cry_Cacnea::
-	.incbin "sound/direct_sound_samples/cries/cacnea.bin"
+Cry_Pawniard::
+	.incbin "sound/direct_sound_samples/cries/pawniard.bin"
 
 	.align 2
-Cry_Cacturne::
-	.incbin "sound/direct_sound_samples/cries/cacturne.bin"
+Cry_Bisharp::
+	.incbin "sound/direct_sound_samples/cries/bisharp.bin"
 
 	.align 2
 Cry_Baltoy::

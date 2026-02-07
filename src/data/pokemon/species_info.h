@@ -9759,7 +9759,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CACNEA] =
+    [SPECIES_PAWNIARD] =
     {
         .baseHP        = 50,
         .baseAttack    = 85,
@@ -9789,7 +9789,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CACTURNE] =
+    [SPECIES_BISHARP] =
     {
         .baseHP        = 70,
         .baseAttack    = 115,

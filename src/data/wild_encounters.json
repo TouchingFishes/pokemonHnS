@@ -3226,17 +3226,17 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               }
             ]
           },
@@ -3375,7 +3375,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 21,
@@ -3415,12 +3415,12 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               }
             ]
           },
@@ -3594,17 +3594,17 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               }
             ]
           },
@@ -3748,7 +3748,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 19,
@@ -66787,7 +66787,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_CACNEA"
+                "species": "SPECIES_PAWNIARD"
               },
               {
                 "min_level": 20,

@@ -4739,7 +4739,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
-    [SPECIES_CACNEA]           = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_PAWNIARD]           = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -4756,7 +4756,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_THUNDER_PUNCH)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_CACTURNE]         = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_BISHARP]         = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)

@@ -8353,7 +8353,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_CACNEA] = { .learnset = {
+    [SPECIES_PAWNIARD] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
@@ -8374,7 +8374,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_CACTURNE] = { .learnset = {
+    [SPECIES_BISHARP] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,

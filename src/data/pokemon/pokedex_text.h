@@ -1984,13 +1984,13 @@ const u8 gFlygonPokedexText[] = _(
     "it hides itself by flapping up a cloud of\n"
     "desert sand.");
 
-const u8 gCacneaPokedexText[] = _(
-    "CACNEA live in deserts with virtually no\n"
+const u8 gPawniardPokedexText[] = _(
+    "PAWNIARD live in deserts with virtually no\n"
     "rainfall. It battles by swinging its thick,\n"
     "spiked arms. Once a year, a yellow flower\n"
     "blooms.");
 
-const u8 gCacturnePokedexText[] = _(
+const u8 gBisharpPokedexText[] = _(
     "After spending thousands of years in\n"
     "harsh deserts, its blood transformed into\n"
     "the same substances as sand. It is\n"

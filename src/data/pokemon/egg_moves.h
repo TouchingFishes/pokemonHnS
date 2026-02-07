@@ -1441,7 +1441,7 @@ const u16 gEggMoves[] = {
               MOVE_CURSE,
               MOVE_FISSURE),
 
-    egg_moves(CACNEA,
+    egg_moves(PAWNIARD,
               MOVE_GRASS_WHISTLE,
               MOVE_ACID,
               MOVE_LOW_KICK,
@@ -2841,7 +2841,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_CURSE,
               MOVE_FISSURE),
 
-    egg_moves(CACNEA,
+    egg_moves(PAWNIARD,
               MOVE_GRASS_WHISTLE,
               MOVE_ACID,
               MOVE_TEETER_DANCE,

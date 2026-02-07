@@ -1894,10 +1894,10 @@ $(OBJEVENTGFXDIR)/pokemon/vibrava.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/flygon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/cacnea.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/pawniard.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/cacturne.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/bisharp.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/swablu.4bpp: %.4bpp: %.png

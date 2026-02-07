@@ -3972,24 +3972,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 1,
     },
 
-    [NATIONAL_DEX_CACNEA] =
+    [NATIONAL_DEX_PAWNIARD] =
     {
         .categoryName = _("CACTUS"),
         .height = 4,
         .weight = 513,
-        .description = gCacneaPokedexText,
+        .description = gPawniardPokedexText,
         .pokemonScale = 455,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_CACTURNE] =
+    [NATIONAL_DEX_BISHARP] =
     {
         .categoryName = _("SCARECROW"),
         .height = 13,
         .weight = 774,
-        .description = gCacturnePokedexText,
+        .description = gBisharpPokedexText,
         .pokemonScale = 327,
         .pokemonOffset = 5,
         .trainerScale = 256,

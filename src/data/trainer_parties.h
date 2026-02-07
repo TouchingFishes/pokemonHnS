@@ -6238,7 +6238,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sebastian[] = {
     {
     .iv = 50,
     .lvl = 39,
-    .species = SPECIES_CACTURNE,
+    .species = SPECIES_BISHARP,
     }
 };
 
@@ -11390,7 +11390,7 @@ static const struct TrainerMonItemCustomMoves sParty_Sidney2[] = {
     {
     .iv = 255,
     .lvl = 86,
-    .species = SPECIES_CACTURNE,
+    .species = SPECIES_BISHARP,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_LEECH_SEED, MOVE_SPIKES, MOVE_NEEDLE_ARM, MOVE_COTTON_SPORE}
     },

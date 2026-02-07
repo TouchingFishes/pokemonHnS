@@ -4581,7 +4581,7 @@ static const u16 sWalreinLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sCacneaLevelUpLearnset_Original[] = {
+static const u16 sPawniardLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 5, MOVE_ABSORB),
@@ -4598,7 +4598,7 @@ static const u16 sCacneaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sCacturneLevelUpLearnset_Original[] = {
+static const u16 sBisharpLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),

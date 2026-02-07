@@ -327,8 +327,8 @@ gCryTable::
 	cry Cry_Trapinch
 	cry Cry_Vibrava
 	cry Cry_Flygon
-	cry Cry_Cacnea
-	cry Cry_Cacturne
+	cry Cry_Pawniard
+	cry Cry_Bisharp
 	cry Cry_Baltoy
 	cry Cry_Claydol
 	cry Cry_Lunatone
@@ -762,8 +762,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Trapinch
 	cry_reverse Cry_Vibrava
 	cry_reverse Cry_Flygon
-	cry_reverse Cry_Cacnea
-	cry_reverse Cry_Cacturne
+	cry_reverse Cry_Pawniard
+	cry_reverse Cry_Bisharp
 	cry_reverse Cry_Baltoy
 	cry_reverse Cry_Claydol
 	cry_reverse Cry_Lunatone
