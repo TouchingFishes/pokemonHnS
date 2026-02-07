@@ -4222,7 +4222,7 @@ static const union AnimCmd sAnim_Castform_3[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Volbeat_1[] =
+static const union AnimCmd sAnim_Krolucada_1[] =
 {
     ANIMCMD_FRAME(0, 11),
     ANIMCMD_FRAME(1, 11),
@@ -4234,7 +4234,7 @@ static const union AnimCmd sAnim_Volbeat_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Illumise_1[] =
+static const union AnimCmd sAnim_Krolucard_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -5662,8 +5662,8 @@ static const union AnimCmd *const sAnims_Castform[] ={
     sAnim_Castform_2,
     sAnim_Castform_3,
 };
-SINGLE_ANIMATION(Volbeat);
-SINGLE_ANIMATION(Illumise);
+SINGLE_ANIMATION(Krolucada);
+SINGLE_ANIMATION(Krolucard);
 SINGLE_ANIMATION(Lileep);
 SINGLE_ANIMATION(Cradily);
 SINGLE_ANIMATION(Anorith);
@@ -6149,8 +6149,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_LAIRON]      = sAnims_Lairon,
     [SPECIES_AGGRON]      = sAnims_Aggron,
     [SPECIES_CASTFORM]    = sAnims_Castform,
-    [SPECIES_VOLBEAT]     = sAnims_Volbeat,
-    [SPECIES_ILLUMISE]    = sAnims_Illumise,
+    [SPECIES_KROLUCADA]     = sAnims_Krolucada,
+    [SPECIES_KROLUCARD]    = sAnims_Krolucard,
     [SPECIES_LILEEP]      = sAnims_Lileep,
     [SPECIES_CRADILY]     = sAnims_Cradily,
     [SPECIES_ANORITH]     = sAnims_Anorith,

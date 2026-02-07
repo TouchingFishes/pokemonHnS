@@ -5234,7 +5234,7 @@ static const u16 sCastformLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVolbeatLevelUpLearnset_Original[] = {
+static const u16 sKrolucadaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE( 9, MOVE_DOUBLE_TEAM),
@@ -5248,7 +5248,7 @@ static const u16 sVolbeatLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sIllumiseLevelUpLearnset_Original[] = {
+static const u16 sKrolucardLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_SWEET_SCENT),
     LEVEL_UP_MOVE( 9, MOVE_CHARM),

@@ -3756,24 +3756,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_VOLBEAT] =
+    [NATIONAL_DEX_KROLUCADA] =
     {
         .categoryName = _("FIREFLY"),
         .height = 7,
         .weight = 177,
-        .description = gVolbeatPokedexText,
+        .description = gKrolucadaPokedexText,
         .pokemonScale = 442,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ILLUMISE] =
+    [NATIONAL_DEX_KROLUCARD] =
     {
         .categoryName = _("FIREFLY"),
         .height = 6,
         .weight = 177,
-        .description = gIllumisePokedexText,
+        .description = gKrolucardPokedexText,
         .pokemonScale = 572,
         .pokemonOffset = 19,
         .trainerScale = 256,

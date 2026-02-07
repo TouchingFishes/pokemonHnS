@@ -867,13 +867,13 @@ static const union AnimCmd sUnusedAnim_Castform_4[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Volbeat_1[] =
+static const union AnimCmd sUnusedAnim_Krolucada_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Illumise_1[] =
+static const union AnimCmd sUnusedAnim_Krolucard_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
@@ -1325,8 +1325,8 @@ static const union AnimCmd *const sUnusedAnims_Aron[] = {sAnim_GeneralFrame0, sU
 static const union AnimCmd *const sUnusedAnims_Lairon[] = {sAnim_GeneralFrame0, sUnusedAnim_Lairon_1};
 static const union AnimCmd *const sUnusedAnims_Aggron[] = {sAnim_GeneralFrame0, sUnusedAnim_Aggron_1};
 static const union AnimCmd *const sUnusedAnims_Castform[] = {sAnim_GeneralFrame0, sUnusedAnim_Castform_1, sUnusedAnim_Castform_2, sUnusedAnim_Castform_3, sUnusedAnim_Castform_4};
-static const union AnimCmd *const sUnusedAnims_Volbeat[] = {sAnim_GeneralFrame0, sUnusedAnim_Volbeat_1};
-static const union AnimCmd *const sUnusedAnims_Illumise[] = {sAnim_GeneralFrame0, sUnusedAnim_Illumise_1};
+static const union AnimCmd *const sUnusedAnims_Krolucada[] = {sAnim_GeneralFrame0, sUnusedAnim_Krolucada_1};
+static const union AnimCmd *const sUnusedAnims_Krolucard[] = {sAnim_GeneralFrame0, sUnusedAnim_Krolucard_1};
 static const union AnimCmd *const sUnusedAnims_Lileep[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Cradily[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Anorith[] = {sAnim_GeneralFrame0};
@@ -1767,8 +1767,8 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_LAIRON] = sUnusedAnims_Lairon,
     [SPECIES_AGGRON] = sUnusedAnims_Aggron,
     [SPECIES_CASTFORM] = sUnusedAnims_Castform,
-    [SPECIES_VOLBEAT] = sUnusedAnims_Volbeat,
-    [SPECIES_ILLUMISE] = sUnusedAnims_Illumise,
+    [SPECIES_KROLUCADA] = sUnusedAnims_Krolucada,
+    [SPECIES_KROLUCARD] = sUnusedAnims_Krolucard,
     [SPECIES_LILEEP] = sUnusedAnims_Lileep,
     [SPECIES_CRADILY] = sUnusedAnims_Cradily,
     [SPECIES_ANORITH] = sUnusedAnims_Anorith,

@@ -11031,7 +11031,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_VOLBEAT] = //modified
+    [SPECIES_KROLUCADA] = //modified
     {
         .baseHP        = 65,
         .baseAttack    = 73,
@@ -11063,7 +11063,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_ILLUMISE] = //modified
+    [SPECIES_KROLUCARD] = //modified
     {
         .baseHP        = 65,
         .baseAttack    = 47,

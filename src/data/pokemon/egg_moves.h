@@ -1653,14 +1653,14 @@ const u16 gEggMoves[] = {
               MOVE_DISABLE,
               MOVE_PSYCH_UP),
 
-    egg_moves(VOLBEAT,
+    egg_moves(KROLUCADA,
               MOVE_BATON_PASS,
               MOVE_BUG_BUZZ,
               MOVE_ENCORE,
               MOVE_SILVER_WIND,
               MOVE_TRICK),
 
-    egg_moves(ILLUMISE,
+    egg_moves(KROLUCARD,
               MOVE_BATON_PASS,
               MOVE_BUG_BUZZ,
               MOVE_ENCORE,
@@ -2995,12 +2995,12 @@ const u16 gEggMoves_Old[] = {
               MOVE_FUTURE_SIGHT,
               MOVE_PSYCH_UP),
 
-    egg_moves(VOLBEAT,
+    egg_moves(KROLUCADA,
               MOVE_BATON_PASS,
               MOVE_SILVER_WIND,
               MOVE_TRICK),
 
-    egg_moves(ILLUMISE,
+    egg_moves(KROLUCARD,
               MOVE_BATON_PASS,
               MOVE_SILVER_WIND,
               MOVE_GROWTH),

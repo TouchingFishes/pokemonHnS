@@ -1204,15 +1204,15 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_VOLBEAT_1] = {
-        .species = SPECIES_VOLBEAT,
+    [FRONTIER_MON_KROLUCADA_1] = {
+        .species = SPECIES_KROLUCADA,
         .moves = {MOVE_SILVER_WIND, MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_HELPING_HAND},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIECHI_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_ILLUMISE_1] = {
-        .species = SPECIES_ILLUMISE,
+    [FRONTIER_MON_KROLUCARD_1] = {
+        .species = SPECIES_KROLUCARD,
         .moves = {MOVE_SILVER_WIND, MOVE_WISH, MOVE_QUICK_ATTACK, MOVE_HELPING_HAND},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIECHI_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
@@ -1939,15 +1939,15 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_VOLBEAT_2] = {
-        .species = SPECIES_VOLBEAT,
+    [FRONTIER_MON_KROLUCADA_2] = {
+        .species = SPECIES_KROLUCADA,
         .moves = {MOVE_SIGNAL_BEAM, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_TAIL_GLOW},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_ILLUMISE_2] = {
-        .species = SPECIES_ILLUMISE,
+    [FRONTIER_MON_KROLUCARD_2] = {
+        .species = SPECIES_KROLUCARD,
         .moves = {MOVE_SILVER_WIND, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_GIGA_DRAIN},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
@@ -7641,15 +7641,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_VOLBEAT_1] = {
-        .species = SPECIES_VOLBEAT,
+    [FRONTIER_MON_KROLUCADA_1] = {
+        .species = SPECIES_KROLUCADA,
         .moves = {MOVE_SILVER_WIND, MOVE_CONFUSE_RAY, MOVE_QUICK_ATTACK, MOVE_HELPING_HAND},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIECHI_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_ILLUMISE_1] = {
-        .species = SPECIES_ILLUMISE,
+    [FRONTIER_MON_KROLUCARD_1] = {
+        .species = SPECIES_KROLUCARD,
         .moves = {MOVE_SILVER_WIND, MOVE_WISH, MOVE_QUICK_ATTACK, MOVE_HELPING_HAND},
         .itemTableId = BATTLE_FRONTIER_ITEM_LIECHI_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
@@ -8376,15 +8376,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
     },
-    [FRONTIER_MON_VOLBEAT_2] = {
-        .species = SPECIES_VOLBEAT,
+    [FRONTIER_MON_KROLUCADA_2] = {
+        .species = SPECIES_KROLUCADA,
         .moves = {MOVE_SIGNAL_BEAM, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_TAIL_GLOW},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_ILLUMISE_2] = {
-        .species = SPECIES_ILLUMISE,
+    [FRONTIER_MON_KROLUCARD_2] = {
+        .species = SPECIES_KROLUCARD,
         .moves = {MOVE_SILVER_WIND, MOVE_THUNDERBOLT, MOVE_ICE_PUNCH, MOVE_GIGA_DRAIN},
         .itemTableId = BATTLE_FRONTIER_ITEM_PETAYA_BERRY,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,

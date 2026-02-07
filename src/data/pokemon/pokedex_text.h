@@ -1876,15 +1876,15 @@ const u8 gMinunPokedexText[] = _(
     "electricity from a PLUSLE and MINUN will\n"
     "promote circulation and boost vitality.");
 
-const u8 gVolbeatPokedexText[] = _(
-    "With their taillights lit, VOLBEAT fly in\n"
+const u8 gKrolucadaPokedexText[] = _(
+    "With their taillights lit, KROLUCADA fly in\n"
     "a swarm, drawing geometric designs in the\n"
     "night sky. They move their nests if their\n"
     "pond water becomes dirty.");
 
-const u8 gIllumisePokedexText[] = _(
+const u8 gKrolucardPokedexText[] = _(
     "A nocturnal POKéMON that becomes active\n"
-    "upon nightfall. It leads a VOLBEAT swarm\n"
+    "upon nightfall. It leads a KROLUCADA swarm\n"
     "to draw patterns in the night sky. Over 200\n"
     "different patterns have been confirmed.");
 

@@ -1815,12 +1815,12 @@ Cry_Castform::
 	.incbin "sound/direct_sound_samples/cries/castform.bin"
 
 	.align 2
-Cry_Volbeat::
-	.incbin "sound/direct_sound_samples/cries/volbeat.bin"
+Cry_Krolucada::
+	.incbin "sound/direct_sound_samples/cries/krolucada.bin"
 
 	.align 2
-Cry_Illumise::
-	.incbin "sound/direct_sound_samples/cries/illumise.bin"
+Cry_Krolucard::
+	.incbin "sound/direct_sound_samples/cries/krolucard.bin"
 
 	.align 2
 Cry_Poochyena::

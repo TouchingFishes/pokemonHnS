@@ -5442,7 +5442,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
-    [SPECIES_VOLBEAT]          = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_KROLUCADA]          = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -5463,7 +5463,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_THUNDER_PUNCH)),
 
-    [SPECIES_ILLUMISE]         = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_KROLUCARD]         = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)

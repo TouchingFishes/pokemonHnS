@@ -852,7 +852,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [3] =
                     {
-                        .species = SPECIES_ILLUMISE,
+                        .species = SPECIES_KROLUCARD,
                         .heldItem = ITEM_BRIGHT_POWDER,
                         .moves = {MOVE_WISH, MOVE_ENCORE, MOVE_CHARM, MOVE_SIGNAL_BEAM},
                         .hpEV = 252,
@@ -867,12 +867,12 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x10,
-                        .nickname = _("ILLUMISE"),
+                        .nickname = _("KROLUCARD"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =
                     {
-                        .species = SPECIES_VOLBEAT,
+                        .species = SPECIES_KROLUCADA,
                         .heldItem = ITEM_BRIGHT_POWDER,
                         .moves = {MOVE_TAIL_GLOW, MOVE_HELPING_HAND, MOVE_QUICK_ATTACK, MOVE_SIGNAL_BEAM},
                         .hpEV = 252,
@@ -887,7 +887,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x8,
-                        .nickname = _("VOLBEAT"),
+                        .nickname = _("KROLUCADA"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [5] =

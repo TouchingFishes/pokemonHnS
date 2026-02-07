@@ -1840,10 +1840,10 @@ $(OBJEVENTGFXDIR)/pokemon/plusle.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/minun.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/volbeat.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/krolucada.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/illumise.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/krolucard.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/roselia.4bpp: %.4bpp: %.png

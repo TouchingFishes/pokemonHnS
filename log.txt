@@ -364,7 +364,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/houndour.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/huntail.aif sound/direct_sound_samples/cries/huntail.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/hypno.aif sound/direct_sound_samples/cries/hypno.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/igglybuff.aif sound/direct_sound_samples/cries/igglybuff.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/illumise.aif sound/direct_sound_samples/cries/illumise.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/krolucard.aif sound/direct_sound_samples/cries/krolucard.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ivysaur.aif sound/direct_sound_samples/cries/ivysaur.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/jigglypuff.aif sound/direct_sound_samples/cries/jigglypuff.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/jirachi.aif sound/direct_sound_samples/cries/jirachi.bin --compress
@@ -609,7 +609,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vibrava.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/victreebel.aif sound/direct_sound_samples/cries/victreebel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vigoroth.aif sound/direct_sound_samples/cries/vigoroth.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vileplume.aif sound/direct_sound_samples/cries/vileplume.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/volbeat.aif sound/direct_sound_samples/cries/volbeat.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/krolucada.aif sound/direct_sound_samples/cries/krolucada.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltorb.aif sound/direct_sound_samples/cries/voltorb.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vulpix.aif sound/direct_sound_samples/cries/vulpix.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wailmer.aif sound/direct_sound_samples/cries/wailmer.bin --compress

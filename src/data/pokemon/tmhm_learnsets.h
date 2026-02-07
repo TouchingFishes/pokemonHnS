@@ -9487,7 +9487,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_VOLBEAT] = { .learnset = {
+    [SPECIES_KROLUCADA] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
@@ -9515,7 +9515,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_ILLUMISE] = { .learnset = {
+    [SPECIES_KROLUCARD] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,

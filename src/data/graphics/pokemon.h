@@ -2522,19 +2522,19 @@ const u32 gMonShinyPalette_Castform[] = INCBIN_U32("graphics/pokemon/castform/sh
 const u8 gMonIcon_Castform[] = INCBIN_U8("graphics/pokemon/castform/icon.4bpp");
 const u8 gMonFootprint_Castform[] = INCBIN_U8("graphics/pokemon/castform/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/front.4bpp.lz");
-const u32 gMonPalette_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/normal.gbapal.lz");
-const u32 gMonBackPic_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/back.4bpp.lz");
-const u32 gMonShinyPalette_Volbeat[] = INCBIN_U32("graphics/pokemon/volbeat/shiny.gbapal.lz");
-const u8 gMonIcon_Volbeat[] = INCBIN_U8("graphics/pokemon/volbeat/icon.4bpp");
-const u8 gMonFootprint_Volbeat[] = INCBIN_U8("graphics/pokemon/volbeat/footprint.1bpp");
+const u32 gMonStillFrontPic_Krolucada[] = INCBIN_U32("graphics/pokemon/krolucada/front.4bpp.lz");
+const u32 gMonPalette_Krolucada[] = INCBIN_U32("graphics/pokemon/krolucada/normal.gbapal.lz");
+const u32 gMonBackPic_Krolucada[] = INCBIN_U32("graphics/pokemon/krolucada/back.4bpp.lz");
+const u32 gMonShinyPalette_Krolucada[] = INCBIN_U32("graphics/pokemon/krolucada/shiny.gbapal.lz");
+const u8 gMonIcon_Krolucada[] = INCBIN_U8("graphics/pokemon/krolucada/icon.4bpp");
+const u8 gMonFootprint_Krolucada[] = INCBIN_U8("graphics/pokemon/krolucada/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/front.4bpp.lz");
-const u32 gMonPalette_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/normal.gbapal.lz");
-const u32 gMonBackPic_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/back.4bpp.lz");
-const u32 gMonShinyPalette_Illumise[] = INCBIN_U32("graphics/pokemon/illumise/shiny.gbapal.lz");
-const u8 gMonIcon_Illumise[] = INCBIN_U8("graphics/pokemon/illumise/icon.4bpp");
-const u8 gMonFootprint_Illumise[] = INCBIN_U8("graphics/pokemon/illumise/footprint.1bpp");
+const u32 gMonStillFrontPic_Krolucard[] = INCBIN_U32("graphics/pokemon/krolucard/front.4bpp.lz");
+const u32 gMonPalette_Krolucard[] = INCBIN_U32("graphics/pokemon/krolucard/normal.gbapal.lz");
+const u32 gMonBackPic_Krolucard[] = INCBIN_U32("graphics/pokemon/krolucard/back.4bpp.lz");
+const u32 gMonShinyPalette_Krolucard[] = INCBIN_U32("graphics/pokemon/krolucard/shiny.gbapal.lz");
+const u8 gMonIcon_Krolucard[] = INCBIN_U8("graphics/pokemon/krolucard/icon.4bpp");
+const u8 gMonFootprint_Krolucard[] = INCBIN_U8("graphics/pokemon/krolucard/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/front.4bpp.lz");
 const u32 gMonPalette_Lileep[] = INCBIN_U32("graphics/pokemon/lileep/normal.gbapal.lz");
