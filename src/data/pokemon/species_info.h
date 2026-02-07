@@ -10821,7 +10821,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SEVIPER] =
+    [SPECIES_SKORUPI] =
     {
         .baseHP        = 73,
         .baseAttack    = 100,
@@ -10851,7 +10851,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = TRUE,
     },
 
-    [SPECIES_ZANGOOSE] =
+    [SPECIES_DRAPION] =
     {
         .baseHP        = 73,
         .baseAttack    = 115,

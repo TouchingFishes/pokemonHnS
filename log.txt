@@ -530,7 +530,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sealeo.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seedot.aif sound/direct_sound_samples/cries/seedot.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seel.aif sound/direct_sound_samples/cries/seel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sentret.aif sound/direct_sound_samples/cries/sentret.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seviper.aif sound/direct_sound_samples/cries/seviper.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/skorupi.aif sound/direct_sound_samples/cries/skorupi.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sharpedo.aif sound/direct_sound_samples/cries/sharpedo.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/shedinja.aif sound/direct_sound_samples/cries/shedinja.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/shelgon.aif sound/direct_sound_samples/cries/shelgon.bin --compress
@@ -631,7 +631,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wynaut.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/xatu.aif sound/direct_sound_samples/cries/xatu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/yanma.aif sound/direct_sound_samples/cries/yanma.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/yanmega.aif sound/direct_sound_samples/cries/yanmega.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/zangoose.aif sound/direct_sound_samples/cries/zangoose.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/drapion.aif sound/direct_sound_samples/cries/drapion.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/zapdos.aif sound/direct_sound_samples/cries/zapdos.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/zigzagoon.aif sound/direct_sound_samples/cries/zigzagoon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/zubat.aif sound/direct_sound_samples/cries/zubat.bin --compress

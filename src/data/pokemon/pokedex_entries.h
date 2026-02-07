@@ -4020,24 +4020,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ZANGOOSE] =
+    [NATIONAL_DEX_DRAPION] =
     {
         .categoryName = _("CAT FERRET"),
         .height = 13,
         .weight = 403,
-        .description = gZangoosePokedexText,
+        .description = gDrapionPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SEVIPER] =
+    [NATIONAL_DEX_SKORUPI] =
     {
         .categoryName = _("FANG SNAKE"),
         .height = 27,
         .weight = 525,
-        .description = gSeviperPokedexText,
+        .description = gSkorupiPokedexText,
         .pokemonScale = 275,
         .pokemonOffset = 7,
         .trainerScale = 256,

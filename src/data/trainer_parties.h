@@ -1324,7 +1324,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica1[] = {
     {
     .iv = 0,
     .lvl = 29,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1339,7 +1339,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica2[] = {
     {
     .iv = 80,
     .lvl = 38,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1354,7 +1354,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica3[] = {
     {
     .iv = 200,
     .lvl = 46,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     }
 };
@@ -1369,13 +1369,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica4[] = {
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     },
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_ZANGOOSE,
+    .species = SPECIES_DRAPION,
     .moves = {MOVE_SLASH, MOVE_SWORDS_DANCE, MOVE_CRUSH_CLAW, MOVE_DETECT}
     }
 };
@@ -1390,13 +1390,13 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica5[] = {
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     .moves = {MOVE_POISON_TAIL, MOVE_SCREECH, MOVE_GLARE, MOVE_CRUNCH}
     },
     {
     .iv = 255,
     .lvl = 65,
-    .species = SPECIES_ZANGOOSE,
+    .species = SPECIES_DRAPION,
     .moves = {MOVE_FURY_CUTTER, MOVE_SWORDS_DANCE, MOVE_CRUSH_CLAW, MOVE_DETECT}
     }
 };
@@ -5452,12 +5452,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Hector[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_ZANGOOSE,
+    .species = SPECIES_DRAPION,
     },
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_SEVIPER,
+    .species = SPECIES_SKORUPI,
     }
 };
 

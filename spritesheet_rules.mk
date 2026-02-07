@@ -1906,10 +1906,10 @@ $(OBJEVENTGFXDIR)/pokemon/swablu.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/altaria.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/zangoose.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/drapion.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/seviper.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/skorupi.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/lunatone.4bpp: %.4bpp: %.png
@@ -2494,9 +2494,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0319_sharpedo.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0320_wailmer.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
-$(OBJEVENTGFXDIR)/pokemon/surfable/0335_zangoose.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-	
 $(OBJEVENTGFXDIR)/pokemon/surfable/0339_barboach.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
@@ -2839,9 +2836,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0319_sharpedo_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
 $(OBJEVENTGFXDIR)/pokemon/surfable/0320_wailmer_shiny.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-	
-$(OBJEVENTGFXDIR)/pokemon/surfable/0335_zangoose_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
 $(OBJEVENTGFXDIR)/pokemon/surfable/0339_barboach_shiny.4bpp: %.4bpp: %.png

@@ -1608,14 +1608,14 @@ const u16 gEggMoves[] = {
               MOVE_ASTONISH,
               MOVE_IMPRISON),
 
-    egg_moves(SEVIPER,
+    egg_moves(SKORUPI,
               MOVE_STOCKPILE,
               MOVE_SCARY_FACE,
               MOVE_SWALLOW,
               MOVE_SPIT_UP,
               MOVE_BODY_SLAM),
 
-    egg_moves(ZANGOOSE,
+    egg_moves(DRAPION,
               MOVE_FLAIL,
               MOVE_DISABLE,
               MOVE_FURY_SWIPES,
@@ -2963,13 +2963,13 @@ const u16 gEggMoves_Old[] = {
               MOVE_ASTONISH,
               MOVE_IMPRISON),
 
-    egg_moves(SEVIPER,
+    egg_moves(SKORUPI,
               MOVE_STOCKPILE,
               MOVE_SWALLOW,
               MOVE_SPIT_UP,
               MOVE_BODY_SLAM),
 
-    egg_moves(ZANGOOSE,
+    egg_moves(DRAPION,
               MOVE_FLAIL,
               MOVE_DOUBLE_KICK,
               MOVE_RAZOR_WIND,

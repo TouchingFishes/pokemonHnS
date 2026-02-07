@@ -2008,15 +2008,15 @@ const u8 gAltariaPokedexText[] = _(
     "sky. It launches intensely hot fireballs\n"
     "from its mouth.");
 
-const u8 gZangoosePokedexText[] = _(
+const u8 gDrapionPokedexText[] = _(
     "When it battles, it stands on its hind legs\n"
     "and attacks with its sharply clawed\n"
     "forelegs. Its fur bristles if it encounters\n"
-    "any SEVIPER.");
+    "any SKORUPI.");
 
-const u8 gSeviperPokedexText[] = _(
-    "SEVIPER and ZANGOOSE are eternal rivals.\n"
-    "It counters a ZANGOOSE's dazzling agility\n"
+const u8 gSkorupiPokedexText[] = _(
+    "SKORUPI and DRAPION are eternal rivals.\n"
+    "It counters a DRAPION's dazzling agility\n"
     "with its swordlike tail, which also oozes\n"
     "a horrible poison.");
 

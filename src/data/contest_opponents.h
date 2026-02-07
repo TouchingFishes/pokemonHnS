@@ -191,7 +191,7 @@ const struct ContestWinner gDefaultContestWinners[] =
     [CONTEST_WINNER_HALL_6 - 1] = {
         .personality = 0,
         .trainerId = CONTEST_AI_TRAINER_ID,
-        .species = SPECIES_ZANGOOSE,
+        .species = SPECIES_DRAPION,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .monName = _("GOOZAN"),
         .trainerName = _("HANA"),
@@ -1844,7 +1844,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_DARRYL] = {
-        .species = SPECIES_SEVIPER,
+        .species = SPECIES_SKORUPI,
         .nickname = _("VIPES"),
         .trainerName = _("DARRYL"),
         .trainerGfxId = OBJ_EVENT_GFX_OLD_MAN_2,

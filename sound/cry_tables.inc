@@ -259,9 +259,9 @@ gCryTable::
 	cry Cry_Duskull
 	cry Cry_Latias
 	cry Cry_Wynaut
-	cry Cry_Seviper
+	cry Cry_Skorupi
 	cry Cry_Sharpedo
-	cry Cry_Zangoose
+	cry Cry_Drapion
 	cry Cry_Solosis
 	cry Cry_Swablu
 	cry Cry_Altaria
@@ -694,9 +694,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Duskull
 	cry_reverse Cry_Latias
 	cry_reverse Cry_Wynaut
-	cry_reverse Cry_Seviper
+	cry_reverse Cry_Skorupi
 	cry_reverse Cry_Sharpedo
-	cry_reverse Cry_Zangoose
+	cry_reverse Cry_Drapion
 	cry_reverse Cry_Solosis
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria

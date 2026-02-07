@@ -2473,19 +2473,19 @@ const u32 gMonShinyPalette_Banette[] = INCBIN_U32("graphics/pokemon/banette/shin
 const u8 gMonIcon_Banette[] = INCBIN_U8("graphics/pokemon/banette/icon.4bpp");
 const u8 gMonFootprint_Banette[] = INCBIN_U8("graphics/pokemon/banette/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/front.4bpp.lz");
-const u32 gMonPalette_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/normal.gbapal.lz");
-const u32 gMonBackPic_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/back.4bpp.lz");
-const u32 gMonShinyPalette_Seviper[] = INCBIN_U32("graphics/pokemon/seviper/shiny.gbapal.lz");
-const u8 gMonIcon_Seviper[] = INCBIN_U8("graphics/pokemon/seviper/icon.4bpp");
-const u8 gMonFootprint_Seviper[] = INCBIN_U8("graphics/pokemon/seviper/footprint.1bpp");
+const u32 gMonStillFrontPic_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/front.4bpp.lz");
+const u32 gMonPalette_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/normal.gbapal.lz");
+const u32 gMonBackPic_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/back.4bpp.lz");
+const u32 gMonShinyPalette_Skorupi[] = INCBIN_U32("graphics/pokemon/skorupi/shiny.gbapal.lz");
+const u8 gMonIcon_Skorupi[] = INCBIN_U8("graphics/pokemon/skorupi/icon.4bpp");
+const u8 gMonFootprint_Skorupi[] = INCBIN_U8("graphics/pokemon/skorupi/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Zangoose[] = INCBIN_U32("graphics/pokemon/zangoose/front.4bpp.lz");
-const u32 gMonPalette_Zangoose[] = INCBIN_U32("graphics/pokemon/zangoose/normal.gbapal.lz");
-const u32 gMonBackPic_Zangoose[] = INCBIN_U32("graphics/pokemon/zangoose/back.4bpp.lz");
-const u32 gMonShinyPalette_Zangoose[] = INCBIN_U32("graphics/pokemon/zangoose/shiny.gbapal.lz");
-const u8 gMonIcon_Zangoose[] = INCBIN_U8("graphics/pokemon/zangoose/icon.4bpp");
-const u8 gMonFootprint_Zangoose[] = INCBIN_U8("graphics/pokemon/zangoose/footprint.1bpp");
+const u32 gMonStillFrontPic_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/front.4bpp.lz");
+const u32 gMonPalette_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/normal.gbapal.lz");
+const u32 gMonBackPic_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/back.4bpp.lz");
+const u32 gMonShinyPalette_Drapion[] = INCBIN_U32("graphics/pokemon/drapion/shiny.gbapal.lz");
+const u8 gMonIcon_Drapion[] = INCBIN_U8("graphics/pokemon/drapion/icon.4bpp");
+const u8 gMonFootprint_Drapion[] = INCBIN_U8("graphics/pokemon/drapion/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Relicanth[] = INCBIN_U32("graphics/pokemon/relicanth/front.4bpp.lz");
 const u32 gMonPalette_Relicanth[] = INCBIN_U32("graphics/pokemon/relicanth/normal.gbapal.lz");

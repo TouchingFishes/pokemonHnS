@@ -1453,7 +1453,7 @@ const u16 gEasyChatWordsByLetter_S[] = {
     EC_WORD_SERIOUS,
     EC_WORD_SERIOUSLY,
     EC_WORD_SERVICE,
-    EC_POKEMON(SEVIPER),
+    EC_POKEMON(SKORUPI),
     EC_MOVE(SHADOW_BALL),
     EC_MOVE(SHADOW_PUNCH),
     EC_WORD_SHADOW_TAG,
@@ -1991,7 +1991,7 @@ const u16 gEasyChatWordsByLetter_Y[] = {
 };
 
 const u16 gEasyChatWordsByLetter_Z[] = {
-    EC_POKEMON(ZANGOOSE),
+    EC_POKEMON(DRAPION),
     EC_MOVE2(ZAP_CANNON),
     EC_POKEMON_NATIONAL(ZAPDOS),
     EC_POKEMON(ZIGZAGOON),

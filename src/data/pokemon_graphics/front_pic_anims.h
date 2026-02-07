@@ -4136,7 +4136,7 @@ static const union AnimCmd sAnim_Banette_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Seviper_1[] =
+static const union AnimCmd sAnim_Skorupi_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4148,7 +4148,7 @@ static const union AnimCmd sAnim_Seviper_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Zangoose_1[] =
+static const union AnimCmd sAnim_Drapion_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5650,8 +5650,8 @@ SINGLE_ANIMATION(Gorebyss);
 SINGLE_ANIMATION(Absol);
 SINGLE_ANIMATION(Shuppet);
 SINGLE_ANIMATION(Banette);
-SINGLE_ANIMATION(Seviper);
-SINGLE_ANIMATION(Zangoose);
+SINGLE_ANIMATION(Skorupi);
+SINGLE_ANIMATION(Drapion);
 SINGLE_ANIMATION(Relicanth);
 SINGLE_ANIMATION(Aron);
 SINGLE_ANIMATION(Lairon);
@@ -6142,8 +6142,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_ABSOL]       = sAnims_Absol,
     [SPECIES_SHUPPET]     = sAnims_Shuppet,
     [SPECIES_BANETTE]     = sAnims_Banette,
-    [SPECIES_SEVIPER]     = sAnims_Seviper,
-    [SPECIES_ZANGOOSE]    = sAnims_Zangoose,
+    [SPECIES_SKORUPI]     = sAnims_Skorupi,
+    [SPECIES_DRAPION]    = sAnims_Drapion,
     [SPECIES_RELICANTH]   = sAnims_Relicanth,
     [SPECIES_ARON]        = sAnims_Aron,
     [SPECIES_LAIRON]      = sAnims_Lairon,

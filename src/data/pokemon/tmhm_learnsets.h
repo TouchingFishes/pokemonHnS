@@ -9273,7 +9273,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_SEVIPER] = { .learnset = {
+    [SPECIES_SKORUPI] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -9299,7 +9299,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_ZANGOOSE] = { .learnset = {
+    [SPECIES_DRAPION] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,

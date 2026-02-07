@@ -4504,17 +4504,17 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 17,
@@ -4688,17 +4688,17 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 17,
@@ -4872,17 +4872,17 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 17,
@@ -5056,17 +5056,17 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 17,
@@ -47930,7 +47930,7 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_ZANGOOSE"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 10,
@@ -48114,7 +48114,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68470,7 +68470,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68500,7 +68500,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68520,7 +68520,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68538,7 +68538,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68568,7 +68568,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68588,7 +68588,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68606,7 +68606,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68636,7 +68636,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68656,7 +68656,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68674,7 +68674,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68704,7 +68704,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,
@@ -68724,7 +68724,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_SKORUPI"
               },
               {
                 "min_level": 5,

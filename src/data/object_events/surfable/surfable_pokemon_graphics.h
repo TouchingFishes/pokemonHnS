@@ -456,11 +456,6 @@ const u32 gSurfableShinyPokemonPic_Wailord[] = INCBIN_U32("graphics/object_event
 const u16 gSurfablePokemonPalette_Wailord[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0321_wailord.gbapal");
 const u16 gSurfablePokemonShinyPalette_Wailord[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0321_wailord_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Zangoose[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0335_zangoose.4bpp");
-const u32 gSurfableShinyPokemonPic_Zangoose[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0335_zangoose_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Zangoose[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0335_zangoose.gbapal");
-const u16 gSurfablePokemonShinyPalette_Zangoose[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0335_zangoose_shiny.gbapal");
-
 const u32 gSurfablePokemonPic_Barboach[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0339_barboach.4bpp");
 const u32 gSurfableShinyPokemonPic_Barboach[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0339_barboach_shiny.4bpp");
 const u16 gSurfablePokemonPalette_Barboach[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0339_barboach.gbapal");

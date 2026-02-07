@@ -1423,16 +1423,16 @@ Cry_Wynaut::
 	.incbin "sound/direct_sound_samples/cries/wynaut.bin"
 
 	.align 2
-Cry_Seviper::
-	.incbin "sound/direct_sound_samples/cries/seviper.bin"
+Cry_Skorupi::
+	.incbin "sound/direct_sound_samples/cries/skorupi.bin"
 
 	.align 2
 Cry_Sharpedo::
 	.incbin "sound/direct_sound_samples/cries/sharpedo.bin"
 
 	.align 2
-Cry_Zangoose::
-	.incbin "sound/direct_sound_samples/cries/zangoose.bin"
+Cry_Drapion::
+	.incbin "sound/direct_sound_samples/cries/drapion.bin"
 
 	.align 2
 Cry_Solosis::

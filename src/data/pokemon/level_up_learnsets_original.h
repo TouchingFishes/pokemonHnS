@@ -5124,7 +5124,7 @@ static const u16 sBanetteLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sSeviperLevelUpLearnset_Original[] = {
+static const u16 sSkorupiLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_WRAP),
     LEVEL_UP_MOVE( 7, MOVE_LICK),
     LEVEL_UP_MOVE(10, MOVE_BITE),
@@ -5138,7 +5138,7 @@ static const u16 sSeviperLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sZangooseLevelUpLearnset_Original[] = {
+static const u16 sDrapionLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 4, MOVE_LEER),
     LEVEL_UP_MOVE( 7, MOVE_QUICK_ATTACK),

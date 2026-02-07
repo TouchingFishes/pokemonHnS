@@ -1619,24 +1619,6 @@ const struct SpriteFrameImage gSurfingOverworldPicTable_Wailord[] = {
     overworld_frame(gSurfablePokemonPic_Wailord, 8, 8, 7),
 };
 
-const struct SpriteFrameImage gSurfingOverworldPicTable_Zangoose[] = {
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 0),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 1),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 2),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 3),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 4),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 5),
-};
-
-const struct SpriteFrameImage gSurfingOverlayPicTable_Zangoose[] = {
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 6),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 7),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 8),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 9),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 10),
-    overworld_frame(gSurfablePokemonPic_Zangoose, 4, 4, 11),
-};
-
 const struct SpriteFrameImage gSurfingOverworldPicTable_Barboach[] = {
     overworld_frame(gSurfablePokemonPic_Barboach, 4, 4, 0),
     overworld_frame(gSurfablePokemonPic_Barboach, 4, 4, 1),
@@ -3663,24 +3645,6 @@ const struct SpriteFrameImage gSurfingOverworldShinyPicTable_Wailord[] = {
     overworld_frame(gSurfableShinyPokemonPic_Wailord, 8, 8, 5),
     overworld_frame(gSurfableShinyPokemonPic_Wailord, 8, 8, 6),
     overworld_frame(gSurfableShinyPokemonPic_Wailord, 8, 8, 7),
-};
-
-const struct SpriteFrameImage gSurfingOverworldShinyPicTable_Zangoose[] = {
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 0),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 1),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 2),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 3),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 4),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 5),
-};
-
-const struct SpriteFrameImage gSurfingOverlayShinyPicTable_Zangoose[] = {
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 6),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 7),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 8),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 9),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 10),
-    overworld_frame(gSurfableShinyPokemonPic_Zangoose, 4, 4, 11),
 };
 
 const struct SpriteFrameImage gSurfingOverworldShinyPicTable_Barboach[] = {
