@@ -2019,32 +2019,32 @@ Cry_Magnezone::
 	.incbin "sound/direct_sound_samples/cries/magnezone.bin"
 
 	.align 2
-Cry_Mamoswine::
-	.incbin "sound/direct_sound_samples/cries/mamoswine.bin"
+Cry_Larvesta::
+	.incbin "sound/direct_sound_samples/cries/larvesta.bin"
 
 	.align 2
-Cry_Mantyke::
-	.incbin "sound/direct_sound_samples/cries/mantyke.bin"
+Cry_Volcarona::
+	.incbin "sound/direct_sound_samples/cries/volcarona.bin"
 
 	.align 2
 Cry_Mismagius::
 	.incbin "sound/direct_sound_samples/cries/mismagius.bin"
 
 	.align 2
-Cry_MimeJr::
-	.incbin "sound/direct_sound_samples/cries/mime_jr.bin"
+Cry_Deino::
+	.incbin "sound/direct_sound_samples/cries/deino.bin"
 
 	.align 2
-Cry_Munchlax::
-	.incbin "sound/direct_sound_samples/cries/munchlax.bin"
+Cry_Zweilous::
+	.incbin "sound/direct_sound_samples/cries/zweilous.bin"
 
 	.align 2
-Cry_PorygonZ::
+Cry_Hydreigon::
+	.incbin "sound/direct_sound_samples/cries/hydreigon.bin"
+
+	.align 2
+Cry_Porygon_z::
 	.incbin "sound/direct_sound_samples/cries/porygon_z.bin"
-
-	.align 2
-Cry_Probopass::
-	.incbin "sound/direct_sound_samples/cries/probopass.bin"
 
 	.align 2
 Cry_Regidrago::
@@ -2091,12 +2091,12 @@ Cry_Annihilape::
 	.incbin "sound/direct_sound_samples/cries/annihilape.bin"
 
 	.align 2
-Cry_Farigiraf::
-	.incbin "sound/direct_sound_samples/cries/farigiraf.bin"
+Cry_Dundrag::
+	.incbin "sound/direct_sound_samples/cries/dundrag.bin"
 
 	.align 2
-Cry_Dudunsparce::
-	.incbin "sound/direct_sound_samples/cries/dudunsparce.bin"
+Cry_Dunlong::
+	.incbin "sound/direct_sound_samples/cries/dunlong.bin"
 
 	.align 2
 Cry_Wyrdeer::

@@ -10861,7 +10861,7 @@ const union {
         .FLASH = TRUE,
     } }, 
         
-    [SPECIES_MAMOSWINE] = { .learnset = {
+    [SPECIES_LARVESTA] = { .learnset = {
         .ROAR = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -10888,7 +10888,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
         
-    [SPECIES_MANTYKE] = { .learnset = {
+    [SPECIES_VOLCARONA] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -10938,7 +10938,7 @@ const union {
         .FLASH = TRUE
     } }, 
         
-    [SPECIES_MIME_JR] = { .learnset = {
+    [SPECIES_DEINO] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
@@ -10972,7 +10972,7 @@ const union {
         .FLASH = TRUE
     } }, 
         
-    [SPECIES_MUNCHLAX] = { .learnset = {
+    [SPECIES_ZWEILOUS] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
@@ -11007,7 +11007,7 @@ const union {
         .ROCK_SMASH = TRUE
     } }, 
         
-    [SPECIES_PORYGON_Z] = { .learnset = {
+    [SPECIES_HYDREIGON] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -11034,29 +11034,31 @@ const union {
         .FLASH = TRUE
     } }, 
         
-    [SPECIES_PROBOPASS] = { .learnset = {
+    [SPECIES_PORYGON_Z] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
-        .TAUNT = TRUE,
+        .ICE_BEAM = TRUE,
+        .BLIZZARD = TRUE,
         .HYPER_BEAM = TRUE,
         .PROTECT = TRUE,
+        .RAIN_DANCE = TRUE,
         .FRUSTRATION = TRUE,
+        .SOLAR_BEAM = TRUE,
+        .IRON_TAIL = TRUE,
         .THUNDERBOLT = TRUE,
         .THUNDER = TRUE,
-        .EARTHQUAKE = TRUE,
         .RETURN = TRUE,
+        .PSYCHIC = TRUE,
+        .SHADOW_BALL = TRUE,
         .DOUBLE_TEAM = TRUE,
         .SHOCK_WAVE = TRUE,
-        .SANDSTORM = TRUE,
-        .ROCK_TOMB = TRUE,
-        .TORMENT = TRUE,
+        .AERIAL_ACE = TRUE,
         .FACADE = TRUE,
         .SECRET_POWER = TRUE,
         .REST = TRUE,
-        .ATTRACT = TRUE,
-        .STRENGTH = TRUE,
-        .ROCK_SMASH = TRUE
+        .THIEF = TRUE,
+        .FLASH = TRUE
     } }, 
         
     [SPECIES_REGIDRAGO] = { .learnset = {
@@ -11372,7 +11374,7 @@ const union {
         .ROCK_SMASH = TRUE
     } },                                  
 
-    [SPECIES_FARIGIRAF] = { .learnset = {
+    [SPECIES_DUNDRAG] = { .learnset = {
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
@@ -11402,7 +11404,7 @@ const union {
         .ROCK_SMASH = TRUE
     } }, 
 
-    [SPECIES_DUDUNSPARCE] = { .learnset = {
+    [SPECIES_DUNLONG] = { .learnset = {
         .WATER_PULSE = TRUE,
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,

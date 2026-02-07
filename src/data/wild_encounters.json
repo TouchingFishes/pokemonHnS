@@ -714,7 +714,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_MUNCHLAX"
+                "species": "SPECIES_ZWEILOUS"
               },
               {
                 "min_level": 4,
@@ -868,7 +868,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_MIME_JR"
+                "species": "SPECIES_DEINO"
               },
               {
                 "min_level": 4,
@@ -23446,7 +23446,7 @@
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_PROBOPASS"
+                "species": "SPECIES_PORYGON_Z"
               }
             ]
           }
@@ -23545,7 +23545,7 @@
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_PROBOPASS"
+                "species": "SPECIES_PORYGON_Z"
               }
             ]
           }
@@ -27758,7 +27758,7 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 25,
@@ -27768,7 +27768,7 @@
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 35,
@@ -27912,17 +27912,17 @@
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 35,
@@ -28234,7 +28234,7 @@
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_MUNCHLAX"
+                "species": "SPECIES_ZWEILOUS"
               },
               {
                 "min_level": 37,
@@ -28333,7 +28333,7 @@
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_MUNCHLAX"
+                "species": "SPECIES_ZWEILOUS"
               },
               {
                 "min_level": 37,
@@ -39694,7 +39694,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 20,
@@ -39848,7 +39848,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 20,
@@ -40002,7 +40002,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 20,
@@ -40156,7 +40156,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_MANTYKE"
+                "species": "SPECIES_VOLCARONA"
               },
               {
                 "min_level": 20,
@@ -64294,7 +64294,7 @@
               {
                 "min_level": 68,
                 "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 68,
@@ -64363,7 +64363,7 @@
               {
                 "min_level": 68,
                 "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 68,
@@ -64432,7 +64432,7 @@
               {
                 "min_level": 68,
                 "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 68,
@@ -64501,7 +64501,7 @@
               {
                 "min_level": 68,
                 "max_level": 68,
-                "species": "SPECIES_MAMOSWINE"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 68,

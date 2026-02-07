@@ -2468,7 +2468,7 @@ static void InitDomeTrainers(void)
                 || species == SPECIES_GARDEVOIR
                 || species == SPECIES_AZURILL
                 || species == SPECIES_MAWILE
-                || species == SPECIES_MIME_JR
+                || species == SPECIES_DEINO
                 || species == SPECIES_TOGEKISS))
                 {
                     monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[0]];

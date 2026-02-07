@@ -439,11 +439,11 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_MUNCHLAX,
+        .species = SPECIES_ZWEILOUS,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_MANTYKE,
+        .species = SPECIES_VOLCARONA,
         .trainerPose = 0,
     },
     {

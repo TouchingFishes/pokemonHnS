@@ -556,15 +556,10 @@ const u32 gSurfableShinyPokemonPic_Rayquaza[] = INCBIN_U32("graphics/object_even
 const u16 gSurfablePokemonPalette_Rayquaza[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0384_rayquaza.gbapal");
 const u16 gSurfablePokemonShinyPalette_Rayquaza[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0384_rayquaza_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Munchlax[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0446_munchlax.4bpp");
-const u32 gSurfableShinyPokemonPic_Munchlax[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0446_munchlax_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Munchlax[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0446_munchlax.gbapal");
-const u16 gSurfablePokemonShinyPalette_Munchlax[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0446_munchlax_shiny.gbapal");
-
-const u32 gSurfablePokemonPic_Mantyke[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0458_mantyke.4bpp");
-const u32 gSurfableShinyPokemonPic_Mantyke[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0458_mantyke_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Mantyke[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0458_mantyke.gbapal");
-const u16 gSurfablePokemonShinyPalette_Mantyke[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0458_mantyke_shiny.gbapal");
+//const u32 gSurfablePokemonPic_Zweilous[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0446_zweilous.4bpp");
+//const u32 gSurfableShinyPokemonPic_Zweilous[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0446_zweilous_shiny.4bpp");
+//const u16 gSurfablePokemonPalette_Zweilous[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0446_zweilous.gbapal");
+//const u16 gSurfablePokemonShinyPalette_Zweilous[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0446_zweilous_shiny.gbapal");
 
 const u32 gSurfablePokemonPic_Weavile[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0461_weavile.4bpp");
 const u32 gSurfableShinyPokemonPic_Weavile[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0461_weavile_shiny.4bpp");

@@ -277,9 +277,9 @@ static const u16 sIsValidSpecies[] =
     SPECIES_BUDEW,
     SPECIES_CHINGLING,
     SPECIES_HAPPINY,
-    SPECIES_MANTYKE,
-    SPECIES_MIME_JR,
-    SPECIES_MUNCHLAX,
+    SPECIES_VOLCARONA,
+    SPECIES_DEINO,
+    SPECIES_ZWEILOUS,
 };
 
 static const u16 sIsValidSpeciesVanilla[] =
@@ -608,7 +608,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             else if (partnerSpecies == SPECIES_MEOWTH_ALOLAN && partnerLevel >= 28)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             else if ((partnerSpecies == SPECIES_GOLBAT || partnerSpecies == SPECIES_CHANSEY
-                   || partnerSpecies == SPECIES_MUNCHLAX) && partnerLevel >= 35)
+                   || partnerSpecies == SPECIES_ZWEILOUS) && partnerLevel >= 35)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
         case EVO_LEVEL:
@@ -944,7 +944,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             if ((species == SPECIES_PICHU || species == SPECIES_CLEFFA || species == SPECIES_IGGLYBUFF
               || species == SPECIES_TOGEPI || species == SPECIES_AZURILL || species == SPECIES_BUDEW) && level >= 16)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
-            else if ((species == SPECIES_GOLBAT || species == SPECIES_CHANSEY  || species == SPECIES_MUNCHLAX) && level >= 35)
+            else if ((species == SPECIES_GOLBAT || species == SPECIES_CHANSEY  || species == SPECIES_ZWEILOUS) && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
         case EVO_LEVEL:

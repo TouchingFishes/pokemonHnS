@@ -845,7 +845,7 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL || *species == SPECIES_BUDEW || *species == SPECIES_CHINGLING || *species == SPECIES_BONSLY || *species == SPECIES_MIME_JR || *species == SPECIES_HAPPINY || *species == SPECIES_MUNCHLAX || *species == SPECIES_MANTYKE)
+    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL || *species == SPECIES_BUDEW || *species == SPECIES_CHINGLING || *species == SPECIES_BONSLY || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
@@ -874,7 +874,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
             *species = SPECIES_SUDOWOODO;
         }
 
-        if (*species == SPECIES_MIME_JR && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        if (*species == SPECIES_DEINO && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
         {
             *species = SPECIES_MR_MIME;
         }
@@ -884,12 +884,12 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
             *species = SPECIES_CHANSEY;
         }
 
-        if (*species == SPECIES_MUNCHLAX && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        if (*species == SPECIES_ZWEILOUS && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
         {
             *species = SPECIES_SNORLAX;
         }
 
-        if (*species == SPECIES_MANTYKE && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+        if (*species == SPECIES_VOLCARONA && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
         {
             *species = SPECIES_MANTINE;
         }

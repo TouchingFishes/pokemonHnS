@@ -1,4 +1,4 @@
-.set LOCALID_MANTYKEMAN, 7
+.set LOCALID_VOLCARONAMAN, 7
 
 SafariZone_Southeast_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
@@ -16,24 +16,24 @@ SafariZone_Southeast_GliscorEvo_Text:
 	.string "They evolve only at night,\n"
 	.string "just like SNEASEL and MURKROW.$"
 
-SafariZone_Southeast_MantykeEvo::
-	msgbox SafariZone_Southeast_MantykeEvo_Text, MSGBOX_SIGN
+SafariZone_Southeast_VolcaronaEvo::
+	msgbox SafariZone_Southeast_VolcaronaEvo_Text, MSGBOX_SIGN
 	waitmessage
-	msgbox SafariZone_Southeast_MantykeEvo_Text2, MSGBOX_NPC
-	applymovement LOCALID_MANTYKEMAN, SafariZone_Southeast_MantykeEvoMoves
+	msgbox SafariZone_Southeast_VolcaronaEvo_Text2, MSGBOX_NPC
+	applymovement LOCALID_VOLCARONAMAN, SafariZone_Southeast_VolcaronaEvoMoves
 	waitmovement 0
 	end
 
-SafariZone_Southeast_MantykeEvoMoves:
+SafariZone_Southeast_VolcaronaEvoMoves:
 	face_right
 	step_end
 
-SafariZone_Southeast_MantykeEvo_Text:
+SafariZone_Southeast_VolcaronaEvo_Text:
 	.string "OH!$"
 
-SafariZone_Southeast_MantykeEvo_Text2:
+SafariZone_Southeast_VolcaronaEvo_Text2:
 	.string "HAVE YOU SEEN THAT?\p"
-	.string "That MANTYKE was trying to evolve,\n"
+	.string "That VOLCARONA was trying to evolve,\n"
 	.string "so it was using WATER PULSE!\l"
 	.string "Nature is beautiful!$"
 

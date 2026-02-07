@@ -23,5 +23,5 @@ AquaHideout_UnusedRubyMap3_BonslyMunchEvo_Text:
 	.string "Is that how they evolve?\p"
 	.string "If I'm not mistaken, MIME JR. also evolve\n"
 	.string "IMITATING other POKéMON.\p"
-	.string "Very different from my MUNCHLAX, who\n"
+	.string "Very different from my ZWEILOUS, who\n"
 	.string "evolved by FRIENDSHIP, don't you think?$"

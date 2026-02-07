@@ -9063,7 +9063,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne4[] = {
     {
     .iv = 255,
     .lvl = 80,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_PORYGON_Z,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_EXPLOSION, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -9108,7 +9108,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_PORYGON_Z,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DOUBLE_TEAM, MOVE_FIRE_PUNCH, MOVE_PROTECT, MOVE_ROCK_SLIDE}
     }
@@ -9776,7 +9776,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman4[] = {
     {
     .iv = 255,
     .lvl = 80,
-    .species = SPECIES_DUDUNSPARCE,
+    .species = SPECIES_DUNLONG,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_ROCK_SLIDE, MOVE_HEADBUTT, MOVE_BODY_SLAM, MOVE_DRILL_PECK}
     },
@@ -9821,7 +9821,7 @@ static const struct TrainerMonItemCustomMoves sParty_Norman5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_DUDUNSPARCE,
+    .species = SPECIES_DUNLONG,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_SKULL_BASH, MOVE_THUNDER_WAVE, MOVE_DRILL_PECK, MOVE_ROCK_SLIDE}
     },
@@ -10108,7 +10108,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza4[] = {
     {
     .iv = 255,
     .lvl = 80,
-    .species = SPECIES_FARIGIRAF,
+    .species = SPECIES_DUNDRAG,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_CALM_MIND, MOVE_BATON_PASS, MOVE_PSYCHIC, MOVE_AGILITY}
     },
@@ -10153,7 +10153,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_FARIGIRAF,
+    .species = SPECIES_DUNDRAG,
     .heldItem = ITEM_SALAC_BERRY,
     .moves = {MOVE_CALM_MIND, MOVE_BATON_PASS, MOVE_PSYCHIC, MOVE_AGILITY}
     },
@@ -10511,7 +10511,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Andres4[] = {
     {
     .iv = 80,
     .lvl = 55,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_PORYGON_Z,
     },
     {
     .iv = 100,
@@ -10529,7 +10529,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Andres5[] = {
     {
     .iv = 200,
     .lvl = 62,
-    .species = SPECIES_PROBOPASS,
+    .species = SPECIES_PORYGON_Z,
     },
     {
     .iv = 220,
@@ -11508,7 +11508,7 @@ static const struct TrainerMonItemCustomMoves sParty_Glacia2[] = {
     {
     .iv = 255,
     .lvl = 86,
-    .species = SPECIES_MAMOSWINE,
+    .species = SPECIES_LARVESTA,
     .heldItem = ITEM_CHOICE_BAND,
     .moves = {MOVE_DOUBLE_EDGE, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_ICE_BEAM}
     },
@@ -12505,7 +12505,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bridget[] = { //LassGrou
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_MUNCHLAX,
+    .species = SPECIES_ZWEILOUS,
     },
 };
 
@@ -19560,7 +19560,7 @@ static const struct TrainerMonItemCustomMoves sParty_Pryce_3[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 38,
-    .species = SPECIES_MAMOSWINE,
+    .species = SPECIES_LARVESTA,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_HEADBUTT, MOVE_EARTHQUAKE, MOVE_ROCK_SMASH, MOVE_BLIZZARD}
     },
@@ -19599,7 +19599,7 @@ static const struct TrainerMonItemCustomMoves sParty_Pryce2[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 65,
-    .species = SPECIES_MAMOSWINE,
+    .species = SPECIES_LARVESTA,
     .heldItem = ITEM_SOFT_SAND,
     .moves = {MOVE_STRENGTH, MOVE_EARTHQUAKE, MOVE_ROCK_SMASH, MOVE_BLIZZARD}
     },
@@ -19957,7 +19957,7 @@ static const struct TrainerMonItemCustomMoves sParty_Clair[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 44,
-    .species = SPECIES_DUDUNSPARCE,
+    .species = SPECIES_DUNLONG,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_GLARE, MOVE_ANCIENT_POWER, MOVE_REST, MOVE_POISON_JAB}
     },
@@ -19989,7 +19989,7 @@ static const struct TrainerMonItemCustomMoves sParty_Clair2[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 63,
-    .species = SPECIES_DUDUNSPARCE,
+    .species = SPECIES_DUNLONG,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_REST, MOVE_GLARE, MOVE_POISON_JAB, MOVE_SKULL_BASH}
     },
@@ -21757,7 +21757,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Archer_2[] = { //RocketAd
     {
     .iv = 255,
     .lvl = 39,
-    .species = SPECIES_PORYGON_Z,
+    .species = SPECIES_HYDREIGON,
     .moves = {MOVE_TRI_ATTACK, MOVE_ZAP_CANNON, MOVE_FLAMETHROWER, MOVE_ICE_BEAM}
     },
     {
@@ -21939,7 +21939,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Devin[] = { //HikerGroup
     {
     .iv = 0,
     .lvl = 27,
-    .species = SPECIES_DUDUNSPARCE,
+    .species = SPECIES_DUNLONG,
     },
 };
 

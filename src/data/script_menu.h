@@ -845,7 +845,7 @@ static const struct MenuAction MultichoiceList_PrizeMons[] =
 {
     {gText_Abra},
     {gText_Clefairy},
-    {gText_Munchlax},
+    {gText_Zweilous},
     {gText_Dratini},
     {gText_Porygon},
     {gText_Exit},

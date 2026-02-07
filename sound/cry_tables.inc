@@ -408,13 +408,13 @@ gCryTable::
 	cry Cry_Lickilicky
 	cry Cry_Magmortar
 	cry Cry_Magnezone
-	cry Cry_Mamoswine
-	cry Cry_Mantyke
+	cry Cry_Larvesta
+	cry Cry_Volcarona
 	cry Cry_Mismagius
-	cry Cry_MimeJr
-	cry Cry_Munchlax
-	cry Cry_PorygonZ
-	cry Cry_Probopass
+	cry Cry_Deino
+	cry Cry_Zweilous
+	cry Cry_Hydreigon
+	cry Cry_Porygon_z
 	cry Cry_Regidrago
 	cry Cry_Regieleki
 	cry Cry_Regigigas
@@ -426,8 +426,8 @@ gCryTable::
 	cry Cry_Weavile
 	cry Cry_Yanmega
 	cry Cry_Annihilape
-	cry Cry_Farigiraf
-	cry Cry_Dudunsparce
+	cry Cry_Dundrag
+	cry Cry_Dunlong
 	cry Cry_Wyrdeer
 	cry Cry_Ursaluna
 	cry Cry_Ursaluna_BloodMoon
@@ -843,13 +843,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Lickilicky
 	cry_reverse Cry_Magmortar
 	cry_reverse Cry_Magnezone
-	cry_reverse Cry_Mamoswine
-	cry_reverse Cry_Mantyke
+	cry_reverse Cry_Larvesta
+	cry_reverse Cry_Volcarona
 	cry_reverse Cry_Mismagius
-	cry_reverse Cry_MimeJr
-	cry_reverse Cry_Munchlax
-	cry_reverse Cry_PorygonZ
-	cry_reverse Cry_Probopass
+	cry_reverse Cry_Deino
+	cry_reverse Cry_Zweilous
+	cry_reverse Cry_Hydreigon
+	cry_reverse Cry_Porygon_z
 	cry_reverse Cry_Regidrago
 	cry_reverse Cry_Regieleki
 	cry_reverse Cry_Regigigas
@@ -861,8 +861,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Weavile
 	cry_reverse Cry_Yanmega
 	cry_reverse Cry_Annihilape
-	cry_reverse Cry_Farigiraf
-	cry_reverse Cry_Dudunsparce
+	cry_reverse Cry_Dundrag
+	cry_reverse Cry_Dunlong
 	cry_reverse Cry_Wyrdeer
 	cry_reverse Cry_Ursaluna
 	cry_reverse Cry_Ursaluna_BloodMoon

@@ -2422,13 +2422,13 @@ const u8 gMagnezonePokedexText[] = _(
     "of unknown origin, while transmitting its\n"
     "own signals of unknown purpose.");
 
-const u8 gMamoswinePokedexText[] = _(
-    "A frozen MAMOSWINE was dug from ice\n"
+const u8 gLarvestaPokedexText[] = _(
+    "A frozen LARVESTA was dug from ice\n"
     "dating back 10,000 years. It woke up to\n"
     "much amazement. This POKéMON has been\n"
     "around for a long, long, long time.");
 
-const u8 gMantykePokedexText[] = _(
+const u8 gVolcaronaPokedexText[] = _(
     "When it swims close to the surface\n"
     "of the ocean, people aboard ships are\n"
     "able to observe the pattern on its back.\n"
@@ -2440,29 +2440,29 @@ const u8 gMismagiusPokedexText[] = _(
     "headaches and hallucinations.\n"
     "It appears where you least expect it.");
 
-const u8 gMimeJrPokedexText[] = _(
+const u8 gDeinoPokedexText[] = _(
     "In an attempt to confuse its enemy,\n"
     "it mimics the enemy's movements.\n"
     "Once mimicked, the foe cannot take\n"
     "its eyes off this POKéMON.");
 
-const u8 gMunchlaxPokedexText[] = _(
+const u8 gZweilousPokedexText[] = _(
     "When it finds something that looks like\n"
     "it might be edible, it goes right ahead\n"
     "and swallows it whole. That's why it gets\n"
     "fatter day by day.");
+
+const u8 gHydreigonPokedexText[] = _(
+    "In order to create a more advanced\n"
+    "POKéMON, an additional program was\n"
+    "installed, but apparently it contained a\n"
+    "defect that made it move oddly.");
 
 const u8 gPorygonZPokedexText[] = _(
     "In order to create a more advanced\n"
     "POKéMON, an additional program was\n"
     "installed, but apparently it contained a\n"
     "defect that made it move oddly.");
-
-const u8 gProbopassPokedexText[] = _(
-    "It freely controls three units called\n"
-    "Mini-Noses using magnetic force.\n"
-    "With them, it can attack its foes from\n"
-    "three directions.");
 
 const u8 gRegidragoPokedexText[] = _(
     "An academic theory proposes that\n"
@@ -2530,13 +2530,13 @@ const u8 gAnnihilapePokedexText[] = _(
     "is unfettered by the limits of its\n"
     "physical body.");
 
-const u8 gFarigirafPokedexText[] = _(
+const u8 gDundragPokedexText[] = _(
     "The hardened head from the tail\n"
     "protects the head of the main body\n" 
-    "as FARIGIRAF whips its long neck\n"
+    "as DUNDRAG whips its long neck\n"
     "around to headbutt enemies.");
 
-const u8 gDudunsparcePokedexText[] = _(
+const u8 gDunlongPokedexText[] = _(
     "It drives enemies out of its nest by\n"
     "sucking in enough air to fill its long,\n"
     "narrow lungs, then releasing the air\n"

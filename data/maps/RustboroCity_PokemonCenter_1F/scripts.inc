@@ -10,11 +10,11 @@ RustboroCity_PokemonCenter_1F_OnTransition:
 	call Common_EventScript_UpdateBrineyLocation
 	end
 
-RustboroCity_PokemonCenter_1F_ProbopassEvo::
-	msgbox RustboroCity_PokemonCenter_1F_ProbopassEvo_Text, MSGBOX_NPC
+RustboroCity_PokemonCenter_1F_PorygonZEvo::
+	msgbox RustboroCity_PokemonCenter_1F_PorygonZEvo_Text, MSGBOX_NPC
 	end
 
-RustboroCity_PokemonCenter_1F_ProbopassEvo_Text:
+RustboroCity_PokemonCenter_1F_PorygonZEvo_Text:
 	.string "NOSEPASS evolves and changes\n"
 	.string "its typing to ROCK and STEEL.\p"
 	.string "But in order to evolve, it needs\n"

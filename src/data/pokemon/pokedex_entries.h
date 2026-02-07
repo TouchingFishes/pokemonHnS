@@ -4884,24 +4884,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_MAMOSWINE] =
+    [NATIONAL_DEX_LARVESTA] =
     {
         .categoryName = _("TWIN TUSK"),
         .height = 25,
         .weight = 2910,
-        .description = gMamoswinePokedexText,
+        .description = gLarvestaPokedexText,
         .pokemonScale = 257,
         .pokemonOffset = 0,
         .trainerScale = 423,
         .trainerOffset = 8,
     },
 
-    [NATIONAL_DEX_MANTYKE] =
+    [NATIONAL_DEX_VOLCARONA] =
     {
         .categoryName = _("KITE"),
         .height = 10,
         .weight = 650,
-        .description = gMantykePokedexText,
+        .description = gVolcaronaPokedexText,
         .pokemonScale = 316,
         .pokemonOffset = 7,
         .trainerScale = 256,
@@ -4920,50 +4920,50 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_MIME_JR] =
+    [NATIONAL_DEX_DEINO] =
     {
         .categoryName = _("MIME"),
         .height = 6,
         .weight = 130,
-        .description = gMimeJrPokedexText,
+        .description = gDeinoPokedexText,
         .pokemonScale = 484,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_MUNCHLAX] =
+    [NATIONAL_DEX_ZWEILOUS] =
     {
         .categoryName = _("BIG EATER"),
         .height = 6,
         .weight = 1050,
-        .description = gMunchlaxPokedexText,
+        .description = gZweilousPokedexText,
         .pokemonScale = 484,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_PORYGON_Z] =
+    [NATIONAL_DEX_HYDREIGON] =
     {
         .categoryName = _("VIRTUAL"),
         .height = 9,
         .weight = 340,
-        .description = gPorygonZPokedexText,
+        .description = gHydreigonPokedexText,
         .pokemonScale = 358,
         .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_PROBOPASS] =
+    [NATIONAL_DEX_PORYGON_Z] =
     {
-        .categoryName = _("COMPASS"),
-        .height = 14,
-        .weight = 3400,
-        .description = gProbopassPokedexText,
-        .pokemonScale = 316,
-        .pokemonOffset = 4,
+         .categoryName = _("VIRTUAL"),
+        .height = 9,
+        .weight = 340,
+        .description = gPorygonZPokedexText,
+        .pokemonScale = 358,
+        .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
@@ -5098,23 +5098,23 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-    [NATIONAL_DEX_FARIGIRAF] =
+    [NATIONAL_DEX_DUNDRAG] =
     {
         .categoryName = _("LONG NECK"),
         .height = 32,
         .weight = 1600,
-        .description = gFarigirafPokedexText,
+        .description = gDundragPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 515,
         .trainerOffset = 14,
     },
-    [NATIONAL_DEX_DUDUNSPARCE] =
+    [NATIONAL_DEX_DUNLONG] =
     {
         .categoryName = _("LAND SNAKE"),
         .height = 34,
         .weight = 864,
-        .description = gDudunsparcePokedexText,
+        .description = gDunlongPokedexText,
         .pokemonScale = 316,
         .pokemonOffset = 13,
         .trainerScale = 256,

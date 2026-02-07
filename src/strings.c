@@ -1443,7 +1443,7 @@ const u8 gText_LevelBall[] =    _("LEVEL  / PERSIM / (NRM/FLY/ICE)");
 
 const u8 gText_Abra[] = _("ABRA{CLEAR_TO 0x40}120 COINS");
 const u8 gText_Clefairy[] = _("CLEFAIRY{CLEAR_TO 0x40}500 COINS");
-const u8 gText_Munchlax[] = _("MUNCHLAX{CLEAR_TO 0x40}2,800 COINS");
+const u8 gText_Zweilous[] = _("ZWEILOUS{CLEAR_TO 0x40}2,800 COINS");
 const u8 gText_Dratini[] = _("DRATINI{CLEAR_TO 0x40}5,500 COINS");
 const u8 gText_Porygon[] = _("PORYGON{CLEAR_TO 0x40}6,500 COINS");
 

@@ -515,7 +515,7 @@ const u16 gEggMoves[] = {
               MOVE_SLEEP_TALK,
               MOVE_MUD_SPORT),
 
-    egg_moves(MIME_JR,
+    egg_moves(DEINO,
               MOVE_CHARM,
               MOVE_CONFUSE_RAY,
               MOVE_TEETER_DANCE,
@@ -609,7 +609,7 @@ const u16 gEggMoves[] = {
               MOVE_DRAGON_BREATH,
               MOVE_CURSE),
 
-    egg_moves(MUNCHLAX,
+    egg_moves(ZWEILOUS,
               MOVE_WHIRLWIND,
               MOVE_COUNTER,
               MOVE_LICK,
@@ -1055,7 +1055,7 @@ const u16 gEggMoves[] = {
               MOVE_RAPID_SPIN,
               MOVE_ICE_BALL),
 
-    egg_moves(MANTYKE,
+    egg_moves(VOLCARONA,
               MOVE_TWISTER,
               MOVE_MIRROR_COAT,
               MOVE_SPLASH,
@@ -3066,7 +3066,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_AROMATHERAPY,
               MOVE_SUBSTITUTE),
 
-    egg_moves(MIME_JR,
+    egg_moves(DEINO,
               MOVE_CHARM,
               MOVE_CONFUSE_RAY,
               MOVE_TEETER_DANCE,
@@ -3077,7 +3077,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_FAKE_OUT,
               MOVE_TRICK),
     
-    egg_moves(MUNCHLAX,
+    egg_moves(ZWEILOUS,
               MOVE_WHIRLWIND,
               MOVE_COUNTER,
               MOVE_LICK,
@@ -3097,7 +3097,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_SAND_TOMB,
               MOVE_SELF_DESTRUCT),
 
-    egg_moves(MANTYKE,
+    egg_moves(VOLCARONA,
               MOVE_TWISTER,
               MOVE_MIRROR_COAT,
               MOVE_SPLASH,
