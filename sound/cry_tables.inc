@@ -262,7 +262,7 @@ gCryTable::
 	cry Cry_Seviper
 	cry Cry_Sharpedo
 	cry Cry_Zangoose
-	cry Cry_Azurill
+	cry Cry_Solosis
 	cry Cry_Swablu
 	cry Cry_Altaria
 	cry Cry_Unused265
@@ -322,8 +322,8 @@ gCryTable::
 	cry Cry_Whiscash
 	cry Cry_Corphish
 	cry Cry_Crawdaunt
-	cry Cry_Spoink
-	cry Cry_Grumpig
+	cry Cry_Duosion
+	cry Cry_Reuniclus
 	cry Cry_Trapinch
 	cry Cry_Vibrava
 	cry Cry_Flygon
@@ -697,7 +697,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Seviper
 	cry_reverse Cry_Sharpedo
 	cry_reverse Cry_Zangoose
-	cry_reverse Cry_Azurill
+	cry_reverse Cry_Solosis
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria
 	cry_reverse Cry_Unused265
@@ -757,8 +757,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Whiscash
 	cry_reverse Cry_Corphish
 	cry_reverse Cry_Crawdaunt
-	cry_reverse Cry_Spoink
-	cry_reverse Cry_Grumpig
+	cry_reverse Cry_Duosion
+	cry_reverse Cry_Reuniclus
 	cry_reverse Cry_Trapinch
 	cry_reverse Cry_Vibrava
 	cry_reverse Cry_Flygon

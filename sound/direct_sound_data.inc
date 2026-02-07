@@ -1435,8 +1435,8 @@ Cry_Zangoose::
 	.incbin "sound/direct_sound_samples/cries/zangoose.bin"
 
 	.align 2
-Cry_Azurill::
-	.incbin "sound/direct_sound_samples/cries/azurill.bin"
+Cry_Solosis::
+	.incbin "sound/direct_sound_samples/cries/solosis.bin"
 
 	.align 2
 Cry_Swablu::
@@ -1675,12 +1675,12 @@ Cry_Crawdaunt::
 	.incbin "sound/direct_sound_samples/cries/crawdaunt.bin"
 
 	.align 2
-Cry_Spoink::
-	.incbin "sound/direct_sound_samples/cries/spoink.bin"
+Cry_Duosion::
+	.incbin "sound/direct_sound_samples/cries/duosion.bin"
 
 	.align 2
-Cry_Grumpig::
-	.incbin "sound/direct_sound_samples/cries/grumpig.bin"
+Cry_Reuniclus::
+	.incbin "sound/direct_sound_samples/cries/reuniclus.bin"
 
 	.align 2
 Cry_Trapinch::

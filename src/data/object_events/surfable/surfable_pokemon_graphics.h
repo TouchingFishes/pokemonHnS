@@ -431,11 +431,6 @@ const u32 gSurfableShinyPokemonPic_Hariyama[] = INCBIN_U32("graphics/object_even
 const u16 gSurfablePokemonPalette_Hariyama[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0297_hariyama.gbapal");
 const u16 gSurfablePokemonShinyPalette_Hariyama[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0297_hariyama_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Azurill[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0298_azurill.4bpp");
-const u32 gSurfableShinyPokemonPic_Azurill[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0298_azurill_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Azurill[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0298_azurill.gbapal");
-const u16 gSurfablePokemonShinyPalette_Azurill[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0298_azurill_shiny.gbapal");
-
 const u32 gSurfablePokemonPic_Aggron[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0306_aggron.4bpp");
 const u32 gSurfableShinyPokemonPic_Aggron[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0306_aggron_shiny.4bpp");
 const u16 gSurfablePokemonPalette_Aggron[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0306_aggron.gbapal");

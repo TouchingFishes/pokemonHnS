@@ -536,9 +536,6 @@ $(OBJEVENTGFXDIR)/people/cycling_triathlete_m.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/azumarill_old.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
-$(OBJEVENTGFXDIR)/pokemon/azurill_old.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 2 -mheight 2
-
 $(OBJEVENTGFXDIR)/pokemon/deoxys_old.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
@@ -1798,7 +1795,7 @@ $(OBJEVENTGFXDIR)/pokemon/makuhita.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/hariyama.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/azurill.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/solosis.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/nosepass.4bpp: %.4bpp: %.png
@@ -1879,10 +1876,10 @@ $(OBJEVENTGFXDIR)/pokemon/camerupt.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/torkoal.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/spoink.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/duosion.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/grumpig.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/reuniclus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/spinda.4bpp: %.4bpp: %.png
@@ -2484,9 +2481,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0296_makuhita.4bpp: %.4bpp: %.png
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0297_hariyama.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/pokemon/surfable/0298_azurill.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
 $(OBJEVENTGFXDIR)/pokemon/surfable/0306_aggron.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
@@ -2833,9 +2827,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0296_makuhita_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0297_hariyama_shiny.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/pokemon/surfable/0298_azurill_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 	
 $(OBJEVENTGFXDIR)/pokemon/surfable/0306_aggron_shiny.4bpp: %.4bpp: %.png

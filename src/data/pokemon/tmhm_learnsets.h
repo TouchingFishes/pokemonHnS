@@ -8500,7 +8500,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_AZURILL] = { .learnset = {
+    [SPECIES_SOLOSIS] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -8521,7 +8521,7 @@ const union {
         .WATERFALL = TRUE,
     } },
 
-    [SPECIES_SPOINK] = { .learnset = {
+    [SPECIES_DUOSION] = { .learnset = {
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
@@ -8549,7 +8549,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_GRUMPIG] = { .learnset = {
+    [SPECIES_REUNICLUS] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,

@@ -109,22 +109,22 @@ PacifidlogTown_House2_EventScript_ComeBackInXDays::
 	release
 	end
 
-PacifidlogTown_House2_EventScript_HappyAzurill::
+PacifidlogTown_House2_EventScript_HappySolosis::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, CRY_MODE_NORMAL
+	playmoncry SPECIES_SOLOSIS, CRY_MODE_NORMAL
 	msgbox PacifidlogTown_House2_Text_Rurii, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_VeryFriendlyWithTrainer, MSGBOX_DEFAULT
 	release
 	end
 
-PacifidlogTown_House2_EventScript_UnhappyAzurill::
+PacifidlogTown_House2_EventScript_UnhappySolosis::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_AZURILL, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SOLOSIS, CRY_MODE_ENCOUNTER
 	msgbox PacifidlogTown_House2_Text_Rururi, MSGBOX_DEFAULT
 	waitmoncry
 	msgbox PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch, MSGBOX_DEFAULT
@@ -173,14 +173,14 @@ PacifidlogTown_House2_Text_GetGoodTMInXDays:
 	.string "your POKéMON.$"
 
 PacifidlogTown_House2_Text_Rurii:
-	.string "AZURILL: Rurii.$"
+	.string "SOLOSIS: Rurii.$"
 
 PacifidlogTown_House2_Text_VeryFriendlyWithTrainer:
 	.string "It appears to be very friendly with the\n"
 	.string "TRAINER.$"
 
 PacifidlogTown_House2_Text_Rururi:
-	.string "AZURILL: Rururi!$"
+	.string "SOLOSIS: Rururi!$"
 
 PacifidlogTown_House2_Text_DoesntLikeTrainerVeryMuch:
 	.string "It doesn't appear to like the TRAINER\n"

@@ -2804,7 +2804,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_AZURILL] = {
+    [SPECIES_SOLOSIS] = {
         { .songLengthId = 6 },
         { .songLengthId = 39 },
         { .songLengthId = 15 },
@@ -2812,7 +2812,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_SPOINK] = {
+    [SPECIES_DUOSION] = {
         { .songLengthId = 30 },
         { .songLengthId = 51 },
         { .songLengthId = 51 },
@@ -2820,7 +2820,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_GRUMPIG] = {
+    [SPECIES_REUNICLUS] = {
         { .songLengthId = 44 },
         { .songLengthId = 17 },
         { .songLengthId = 51 },

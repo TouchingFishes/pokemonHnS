@@ -599,7 +599,7 @@ static const union AnimCmd sUnusedAnim_Walrein_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Azurill_1[] =
+static const union AnimCmd sUnusedAnim_Solosis_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(2, 5),
@@ -619,7 +619,7 @@ static const union AnimCmd sUnusedAnim_Azurill_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Azurill_2[] =
+static const union AnimCmd sUnusedAnim_Solosis_2[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -632,7 +632,7 @@ static const union AnimCmd sUnusedAnim_Azurill_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Azurill_3[] =
+static const union AnimCmd sUnusedAnim_Solosis_3[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(5, 12),
@@ -641,25 +641,25 @@ static const union AnimCmd sUnusedAnim_Azurill_3[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Azurill_4[] =
+static const union AnimCmd sUnusedAnim_Solosis_4[] =
 {
     ANIMCMD_FRAME(7, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Spoink_1[] =
+static const union AnimCmd sUnusedAnim_Duosion_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Spoink_2[] =
+static const union AnimCmd sUnusedAnim_Duosion_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Grumpig_1[] =
+static const union AnimCmd sUnusedAnim_Reuniclus_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
@@ -1289,9 +1289,9 @@ static const union AnimCmd *const sUnusedAnims_Snorunt[] = {sAnim_GeneralFrame0}
 static const union AnimCmd *const sUnusedAnims_Glalie[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Lunatone[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Solrock[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Azurill[] = {sAnim_GeneralFrame0, sUnusedAnim_Azurill_1, sUnusedAnim_Azurill_2, sUnusedAnim_Azurill_3, sUnusedAnim_Azurill_4};
-static const union AnimCmd *const sUnusedAnims_Spoink[] = {sAnim_GeneralFrame0, sUnusedAnim_Spoink_1, sUnusedAnim_Spoink_2};
-static const union AnimCmd *const sUnusedAnims_Grumpig[] = {sAnim_GeneralFrame0, sUnusedAnim_Grumpig_1};
+static const union AnimCmd *const sUnusedAnims_Solosis[] = {sAnim_GeneralFrame0, sUnusedAnim_Solosis_1, sUnusedAnim_Solosis_2, sUnusedAnim_Solosis_3, sUnusedAnim_Solosis_4};
+static const union AnimCmd *const sUnusedAnims_Duosion[] = {sAnim_GeneralFrame0, sUnusedAnim_Duosion_1, sUnusedAnim_Duosion_2};
+static const union AnimCmd *const sUnusedAnims_Reuniclus[] = {sAnim_GeneralFrame0, sUnusedAnim_Reuniclus_1};
 static const union AnimCmd *const sUnusedAnims_Plusle[] = {sAnim_GeneralFrame0, sUnusedAnim_Plusle_1};
 static const union AnimCmd *const sUnusedAnims_Minun[] = {sAnim_GeneralFrame0, sUnusedAnim_Minun_1};
 static const union AnimCmd *const sUnusedAnims_Mawile[] = {sAnim_GeneralFrame0, sUnusedAnim_Mawile_1};
@@ -1731,9 +1731,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_GLALIE] = sUnusedAnims_Glalie,
     [SPECIES_LUNATONE] = sUnusedAnims_Lunatone,
     [SPECIES_SOLROCK] = sUnusedAnims_Solrock,
-    [SPECIES_AZURILL] = sUnusedAnims_Azurill,
-    [SPECIES_SPOINK] = sUnusedAnims_Spoink,
-    [SPECIES_GRUMPIG] = sUnusedAnims_Grumpig,
+    [SPECIES_SOLOSIS] = sUnusedAnims_Solosis,
+    [SPECIES_DUOSION] = sUnusedAnims_Duosion,
+    [SPECIES_REUNICLUS] = sUnusedAnims_Reuniclus,
     [SPECIES_PLUSLE] = sUnusedAnims_Plusle,
     [SPECIES_MINUN] = sUnusedAnims_Minun,
     [SPECIES_MAWILE] = sUnusedAnims_Mawile,

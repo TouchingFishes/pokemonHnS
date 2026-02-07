@@ -9943,7 +9943,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_AZURILL] =
+    [SPECIES_SOLOSIS] =
     {
         .baseHP        = 50,
         .baseAttack    = 20,
@@ -9974,7 +9974,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SPOINK] =
+    [SPECIES_DUOSION] =
     {
         .baseHP        = 60,
         .baseAttack    = 25,
@@ -10004,7 +10004,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GRUMPIG] =
+    [SPECIES_REUNICLUS] =
     {
         .baseHP        = 80,
         .baseAttack    = 45,

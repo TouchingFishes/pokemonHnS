@@ -3576,12 +3576,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 7,
     },
 
-    [NATIONAL_DEX_AZURILL] =
+    [NATIONAL_DEX_SOLOSIS] =
     {
         .categoryName = _("POLKA DOT"),
         .height = 2,
         .weight = 20,
-        .description = gAzurillPokedexText,
+        .description = gSolosisPokedexText,
         .pokemonScale = 603,
         .pokemonOffset = 23,
         .trainerScale = 256,
@@ -3900,24 +3900,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SPOINK] =
+    [NATIONAL_DEX_DUOSION] =
     {
         .categoryName = _("BOUNCE"),
         .height = 7,
         .weight = 306,
-        .description = gSpoinkPokedexText,
+        .description = gDuosionPokedexText,
         .pokemonScale = 423,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GRUMPIG] =
+    [NATIONAL_DEX_REUNICLUS] =
     {
         .categoryName = _("MANIPULATE"),
         .height = 9,
         .weight = 715,
-        .description = gGrumpigPokedexText,
+        .description = gReuniclusPokedexText,
         .pokemonScale = 358,
         .pokemonOffset = 10,
         .trainerScale = 256,

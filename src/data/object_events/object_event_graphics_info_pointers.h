@@ -159,7 +159,6 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DuskullDoll
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WynautDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaltoyDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KecleonDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AzurillDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkittyDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SwabluDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GulpinDoll;
@@ -213,7 +212,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azumarill;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wingull;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KecleonBridgeShadow;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azurill;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Solosis;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay;
@@ -427,7 +426,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_WYNAUT_DOLL] =              &gObjectEventGraphicsInfo_WynautDoll,
     [OBJ_EVENT_GFX_BALTOY_DOLL] =              &gObjectEventGraphicsInfo_BaltoyDoll,
     [OBJ_EVENT_GFX_KECLEON_DOLL] =             &gObjectEventGraphicsInfo_KecleonDoll,
-    [OBJ_EVENT_GFX_AZURILL_DOLL] =             &gObjectEventGraphicsInfo_AzurillDoll,
     [OBJ_EVENT_GFX_SKITTY_DOLL] =              &gObjectEventGraphicsInfo_SkittyDoll,
     [OBJ_EVENT_GFX_SWABLU_DOLL] =              &gObjectEventGraphicsInfo_SwabluDoll,
     [OBJ_EVENT_GFX_GULPIN_DOLL] =              &gObjectEventGraphicsInfo_GulpinDoll,
@@ -481,7 +479,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL] =                  &gObjectEventGraphicsInfo_Wingull,
     [OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_KecleonBridgeShadow,
     [OBJ_EVENT_GFX_TUBER_M_WATER] =         &gObjectEventGraphicsInfo_TuberMSwimming,
-    [OBJ_EVENT_GFX_AZURILL] =                  &gObjectEventGraphicsInfo_Azurill,
+    [OBJ_EVENT_GFX_SOLOSIS] =                  &gObjectEventGraphicsInfo_Solosis,
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_BRENDAN] =             &gObjectEventGraphicsInfo_LinkBrendan,
     [OBJ_EVENT_GFX_LINK_MAY] =                 &gObjectEventGraphicsInfo_LinkMay,

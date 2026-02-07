@@ -246,8 +246,8 @@ static const u16 sIsValidSpecies[] =
     SPECIES_SNORUNT,
     SPECIES_LUNATONE,
     SPECIES_SOLROCK,
-    SPECIES_AZURILL,
-    SPECIES_SPOINK,
+    SPECIES_SOLOSIS,
+    SPECIES_DUOSION,
     SPECIES_PLUSLE,
     SPECIES_MINUN,
     SPECIES_MAWILE,
@@ -348,8 +348,8 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_SNORUNT,
     SPECIES_LUNATONE,
     SPECIES_SOLROCK,
-    SPECIES_AZURILL,
-    SPECIES_SPOINK,
+    SPECIES_SOLOSIS,
+    SPECIES_DUOSION,
     SPECIES_PLUSLE,
     SPECIES_MINUN,
     SPECIES_MAWILE,
@@ -601,7 +601,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         {
         case EVO_FRIENDSHIP:
             if ((partnerSpecies == SPECIES_PICHU || partnerSpecies == SPECIES_CLEFFA || partnerSpecies == SPECIES_IGGLYBUFF
-              || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_AZURILL || partnerSpecies == SPECIES_BUDEW
+              || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_SOLOSIS || partnerSpecies == SPECIES_BUDEW
               || partnerSpecies == SPECIES_BUNEARY || partnerSpecies == SPECIES_SWOOBAT || partnerSpecies == SPECIES_SWADLOON)
               && partnerLevel >= 16)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
@@ -942,7 +942,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         {
         case EVO_FRIENDSHIP:
             if ((species == SPECIES_PICHU || species == SPECIES_CLEFFA || species == SPECIES_IGGLYBUFF
-              || species == SPECIES_TOGEPI || species == SPECIES_AZURILL || species == SPECIES_BUDEW) && level >= 16)
+              || species == SPECIES_TOGEPI || species == SPECIES_SOLOSIS || species == SPECIES_BUDEW) && level >= 16)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             else if ((species == SPECIES_GOLBAT || species == SPECIES_CHANSEY  || species == SPECIES_ZWEILOUS) && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;

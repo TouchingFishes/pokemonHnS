@@ -1786,7 +1786,7 @@ const u8 gHariyamaPokedexText[] = _(
     "It's been known to stand on train tracks\n"
     "and stop trains using forearm thrusts.");
 
-const u8 gAzurillPokedexText[] = _(
+const u8 gSolosisPokedexText[] = _(
     "Its tail, which is packed with nutrition,\n"
     "is very bouncy like a rubber ball. On sunny\n"
     "days they gather at the edge of water and\n"
@@ -1948,13 +1948,13 @@ const u8 gTorkoalPokedexText[] = _(
     "nostrils, it lets off a sound that is\n"
     "similar to a locomotive's horn.");
 
-const u8 gSpoinkPokedexText[] = _(
+const u8 gDuosionPokedexText[] = _(
     "A POKéMON that manipulates psychic power\n"
     "at will. It doesn't stop bouncing even when\n"
     "it is asleep. It loves eating mushrooms\n"
     "that grow underground.");
 
-const u8 gGrumpigPokedexText[] = _(
+const u8 gReuniclusPokedexText[] = _(
     "It stores power in the black pearls on its\n"
     "forehead. When it uses psychic power, it\n"
     "performs an odd dance step. Its style of\n"

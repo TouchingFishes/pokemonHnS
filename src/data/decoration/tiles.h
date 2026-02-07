@@ -538,10 +538,6 @@ const u16 DecorGfx_KECLEON_DOLL[] = {
     OBJ_EVENT_GFX_KECLEON_DOLL
 };
 
-const u16 DecorGfx_AZURILL_DOLL[] = {
-    OBJ_EVENT_GFX_AZURILL_DOLL
-};
-
 const u16 DecorGfx_SKITTY_DOLL[] = {
     OBJ_EVENT_GFX_KECLEON_DOLL
 };

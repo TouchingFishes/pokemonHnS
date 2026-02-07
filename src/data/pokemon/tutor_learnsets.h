@@ -4829,7 +4829,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
-    [SPECIES_AZURILL]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_SOLOSIS]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
@@ -4843,7 +4843,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
-    [SPECIES_SPOINK]           = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_DUOSION]           = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_DREAM_EATER)
@@ -4856,7 +4856,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)),
 
-    [SPECIES_GRUMPIG]          = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_REUNICLUS]          = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)

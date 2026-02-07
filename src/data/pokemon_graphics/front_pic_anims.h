@@ -3805,7 +3805,7 @@ static const union AnimCmd sAnim_Solrock_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Azurill_1[] =
+static const union AnimCmd sAnim_Solosis_1[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 12),
@@ -3817,7 +3817,7 @@ static const union AnimCmd sAnim_Azurill_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Spoink_1[] =
+static const union AnimCmd sAnim_Duosion_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 10),
@@ -3833,7 +3833,7 @@ static const union AnimCmd sAnim_Spoink_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Grumpig_1[] =
+static const union AnimCmd sAnim_Reuniclus_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5621,9 +5621,9 @@ SINGLE_ANIMATION(Snorunt);
 SINGLE_ANIMATION(Glalie);
 DOUBLE_ANIMATION(Lunatone);
 DOUBLE_ANIMATION(Solrock);
-SINGLE_ANIMATION(Azurill);
-SINGLE_ANIMATION(Spoink);
-SINGLE_ANIMATION(Grumpig);
+SINGLE_ANIMATION(Solosis);
+SINGLE_ANIMATION(Duosion);
+SINGLE_ANIMATION(Reuniclus);
 SINGLE_ANIMATION(Plusle);
 SINGLE_ANIMATION(Minun);
 SINGLE_ANIMATION(Mawile);
@@ -6113,9 +6113,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_GLALIE]      = sAnims_Glalie,
     [SPECIES_LUNATONE]    = sAnims_Lunatone,
     [SPECIES_SOLROCK]     = sAnims_Solrock,
-    [SPECIES_AZURILL]     = sAnims_Azurill,
-    [SPECIES_SPOINK]      = sAnims_Spoink,
-    [SPECIES_GRUMPIG]     = sAnims_Grumpig,
+    [SPECIES_SOLOSIS]     = sAnims_Solosis,
+    [SPECIES_DUOSION]      = sAnims_Duosion,
+    [SPECIES_REUNICLUS]     = sAnims_Reuniclus,
     [SPECIES_PLUSLE]      = sAnims_Plusle,
     [SPECIES_MINUN]       = sAnims_Minun,
     [SPECIES_MAWILE]      = sAnims_Mawile,

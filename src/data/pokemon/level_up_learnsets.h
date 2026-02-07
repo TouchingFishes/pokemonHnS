@@ -5853,7 +5853,7 @@ static const u16 sSolrockLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_HYPNOSIS),
     LEVEL_UP_END};
 
-static const u16 sAzurillLevelUpLearnset[] = {
+static const u16 sSolosisLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_SPLASH),
     LEVEL_UP_MOVE(3, MOVE_HELPING_HAND),
     LEVEL_UP_MOVE(3, MOVE_CHARM),
@@ -5865,7 +5865,7 @@ static const u16 sAzurillLevelUpLearnset[] = {
     LEVEL_UP_MOVE(23, MOVE_BOUNCE),
     LEVEL_UP_END};
 
-static const u16 sSpoinkLevelUpLearnset[] = {
+static const u16 sDuosionLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_SPLASH),
     LEVEL_UP_MOVE(1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(7, MOVE_PSYWAVE),
@@ -5882,7 +5882,7 @@ static const u16 sSpoinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_FLASH_CANNON),
     LEVEL_UP_END};
 
-static const u16 sGrumpigLevelUpLearnset[] = {
+static const u16 sReuniclusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(1, MOVE_PSYWAVE),
     LEVEL_UP_MOVE(1, MOVE_YAWN),

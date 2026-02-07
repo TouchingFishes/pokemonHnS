@@ -1458,7 +1458,7 @@ const u16 gEggMoves[] = {
               MOVE_WEATHER_BALL,
               MOVE_SPIKES),
 
-    egg_moves(AZURILL,
+    egg_moves(SOLOSIS,
               MOVE_ENCORE,
               MOVE_BODY_SLAM,
               MOVE_FAKE_TEARS,
@@ -1467,7 +1467,7 @@ const u16 gEggMoves[] = {
               MOVE_SLAM,
               MOVE_TICKLE),
 
-    egg_moves(SPOINK,
+    egg_moves(DUOSION,
               MOVE_FUTURE_SIGHT,
               MOVE_AMNESIA,
               MOVE_MIRROR_COAT,
@@ -2852,14 +2852,14 @@ const u16 gEggMoves_Old[] = {
               MOVE_BLOCK,
               MOVE_SPIKES),
 
-    egg_moves(AZURILL,
+    egg_moves(SOLOSIS,
               MOVE_ENCORE,
               MOVE_SING,
               MOVE_REFRESH,
               MOVE_SLAM,
               MOVE_TICKLE),
 
-    egg_moves(SPOINK,
+    egg_moves(DUOSION,
               MOVE_FUTURE_SIGHT,
               MOVE_EXTRASENSORY,
               MOVE_SUBSTITUTE,

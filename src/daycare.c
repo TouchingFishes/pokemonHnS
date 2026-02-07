@@ -845,7 +845,7 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_AZURILL || *species == SPECIES_BUDEW || *species == SPECIES_CHINGLING || *species == SPECIES_BONSLY || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
+    if (*species == SPECIES_WYNAUT || *species == SPECIES_SOLOSIS || *species == SPECIES_BUDEW || *species == SPECIES_CHINGLING || *species == SPECIES_BONSLY || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
@@ -854,7 +854,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
             *species = SPECIES_WOBBUFFET;
         }
 
-        if (*species == SPECIES_AZURILL && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+        if (*species == SPECIES_SOLOSIS && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
         {
             *species = SPECIES_MARILL;
         }

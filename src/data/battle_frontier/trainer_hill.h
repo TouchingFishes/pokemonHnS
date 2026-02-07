@@ -297,7 +297,7 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                         .friendship = MAX_FRIENDSHIP
                     },
                     [4] = {
-                        .species = SPECIES_SPOINK,
+                        .species = SPECIES_DUOSION,
                         .heldItem = ITEM_PERSIM_BERRY,
                         .moves = { MOVE_PSYWAVE, MOVE_FUTURE_SIGHT, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT },
                         .hpEV = 100,
@@ -400,7 +400,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [1] =
                     {
-                        .species = SPECIES_GRUMPIG,
+                        .species = SPECIES_REUNICLUS,
                         .heldItem = ITEM_LEFTOVERS,
                         .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_THUNDER_WAVE, MOVE_REFLECT},
                         .hpEV = 255,
@@ -415,7 +415,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0xC,
-                        .nickname = _("GRUMPIG"),
+                        .nickname = _("REUNICLUS"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [2] =
@@ -892,7 +892,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [5] =
                     {
-                        .species = SPECIES_AZURILL,
+                        .species = SPECIES_SOLOSIS,
                         .heldItem = ITEM_LEFTOVERS,
                         .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_ATTRACT, MOVE_TOXIC},
                         .hpEV = 252,
@@ -907,7 +907,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x30,
-                        .nickname = _("AZURILL"),
+                        .nickname = _("SOLOSIS"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                 },
