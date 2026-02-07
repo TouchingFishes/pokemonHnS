@@ -1939,8 +1939,8 @@ Cry_Chimecho::
 	.incbin "sound/direct_sound_samples/cries/chimecho.bin"
 
 	.align 2
-Cry_Ambipom::
-	.incbin "sound/direct_sound_samples/cries/ambipom.bin"
+Cry_Decibelle::
+	.incbin "sound/direct_sound_samples/cries/decibelle.bin"
 
 	.align 2
 Cry_Arceus::

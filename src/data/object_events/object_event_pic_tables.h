@@ -5643,13 +5643,13 @@ static const struct SpriteFrameImage sPicTable_Deoxys[] = {
     overworld_frame(gObjectEventPic_Deoxys, 4, 4, 4),
     overworld_frame(gObjectEventPic_Deoxys, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Ambipom[] = {
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Ambipom, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Decibelle[] = {
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Decibelle, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Arceus[] = {
     overworld_frame(gObjectEventPic_Arceus, 8, 8, 0),

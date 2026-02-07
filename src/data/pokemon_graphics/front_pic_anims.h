@@ -4807,7 +4807,7 @@ static const union AnimCmd sAnim_UnownQMark_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ambipom_1[] =
+static const union AnimCmd sAnim_Decibelle_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 25),
@@ -5717,7 +5717,7 @@ SINGLE_ANIMATION(UnownZ);
 SINGLE_ANIMATION(UnownEMark);
 SINGLE_ANIMATION(UnownQMark);
 SINGLE_ANIMATION(Arceus);
-SINGLE_ANIMATION(Ambipom);
+SINGLE_ANIMATION(Decibelle);
 SINGLE_ANIMATION(Bonsly);
 SINGLE_ANIMATION(Budew);
 SINGLE_ANIMATION(Chingling);
@@ -6226,7 +6226,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_ARCEUS] = sAnims_Arceus,
     [SPECIES_BUDEW] = sAnims_Budew,
     [SPECIES_ROSERADE] = sAnims_Roserade,
-    [SPECIES_AMBIPOM] = sAnims_Ambipom,
+    [SPECIES_DECIBELLE] = sAnims_Decibelle,
     [SPECIES_MISMAGIUS] = sAnims_Mismagius,
     [SPECIES_HONCHKROW] = sAnims_Honchkrow,
     [SPECIES_CHINGLING] = sAnims_Chingling,

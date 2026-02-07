@@ -10223,7 +10223,7 @@ const union {
         .FLASH = TRUE,
     } },    
 
-    [SPECIES_AMBIPOM] = { .learnset = {
+    [SPECIES_DECIBELLE] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .HIDDEN_POWER = TRUE,

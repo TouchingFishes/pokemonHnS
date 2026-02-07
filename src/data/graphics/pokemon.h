@@ -2949,12 +2949,12 @@ const u32 gMonShinyPalette_Bonsly[] = INCBIN_U32("graphics/pokemon/bonsly/shiny.
 const u8 gMonIcon_Bonsly[] = INCBIN_U8("graphics/pokemon/bonsly/icon.4bpp");
 const u8 gMonFootprint_Bonsly[] = INCBIN_U8("graphics/pokemon/bonsly/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/anim_front.4bpp.lz");
-const u32 gMonPalette_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/normal.gbapal.lz");
-const u32 gMonBackPic_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/back.4bpp.lz");
-const u32 gMonShinyPalette_Ambipom[] = INCBIN_U32("graphics/pokemon/ambipom/shiny.gbapal.lz");
-const u8 gMonIcon_Ambipom[] = INCBIN_U8("graphics/pokemon/ambipom/icon.4bpp");
-const u8 gMonFootprint_Ambipom[] = INCBIN_U8("graphics/pokemon/ambipom/footprint.1bpp");
+const u32 gMonStillFrontPic_Decibelle[] = INCBIN_U32("graphics/pokemon/decibelle/front.4bpp.lz");
+const u32 gMonPalette_Decibelle[] = INCBIN_U32("graphics/pokemon/decibelle/normal.gbapal.lz");
+const u32 gMonBackPic_Decibelle[] = INCBIN_U32("graphics/pokemon/decibelle/back.4bpp.lz");
+const u32 gMonShinyPalette_Decibelle[] = INCBIN_U32("graphics/pokemon/decibelle/shiny.gbapal.lz");
+const u8 gMonIcon_Decibelle[] = INCBIN_U8("graphics/pokemon/decibelle/icon.4bpp");
+const u8 gMonFootprint_Decibelle[] = INCBIN_U8("graphics/pokemon/decibelle/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Yanmega[] = INCBIN_U32("graphics/pokemon/yanmega/anim_front.4bpp.lz");
 const u32 gMonPalette_Yanmega[] = INCBIN_U32("graphics/pokemon/yanmega/normal.gbapal.lz");

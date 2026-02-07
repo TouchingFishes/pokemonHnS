@@ -217,7 +217,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/aggron.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/aipom.aif sound/direct_sound_samples/cries/aipom.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/alakazam.aif sound/direct_sound_samples/cries/alakazam.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/altaria.aif sound/direct_sound_samples/cries/altaria.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ambipom.aif sound/direct_sound_samples/cries/ambipom.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/decibelle.aif sound/direct_sound_samples/cries/decibelle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ampharos.aif sound/direct_sound_samples/cries/ampharos.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/annihilape.aif sound/direct_sound_samples/cries/annihilape.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/anorith.aif sound/direct_sound_samples/cries/anorith.bin --compress

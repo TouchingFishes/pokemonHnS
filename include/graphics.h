@@ -3022,13 +3022,13 @@ extern const u32 gMonStillFrontPic_Bonsly[];
 extern const u8 gMonIcon_Bonsly[];
 extern const u8 gMonFootprint_Bonsly[];
 
-extern const u32 gMonFrontPic_Ambipom[];
-extern const u32 gMonPalette_Ambipom[];
-extern const u32 gMonBackPic_Ambipom[];
-extern const u32 gMonShinyPalette_Ambipom[];
-extern const u32 gMonStillFrontPic_Ambipom[];
-extern const u8 gMonIcon_Ambipom[];
-extern const u8 gMonFootprint_Ambipom[];
+extern const u32 gMonFrontPic_Decibelle[];
+extern const u32 gMonPalette_Decibelle[];
+extern const u32 gMonBackPic_Decibelle[];
+extern const u32 gMonShinyPalette_Decibelle[];
+extern const u32 gMonStillFrontPic_Decibelle[];
+extern const u8 gMonIcon_Decibelle[];
+extern const u8 gMonFootprint_Decibelle[];
 
 extern const u32 gMonFrontPic_Yanmega[];
 extern const u32 gMonPalette_Yanmega[];

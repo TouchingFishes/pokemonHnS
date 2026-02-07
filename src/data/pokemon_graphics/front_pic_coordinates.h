@@ -444,7 +444,7 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_UNOWN_Z]     = { .size = MON_COORDS_SIZE(24, 32), .y_offset = 16 },
     [SPECIES_UNOWN_EMARK] = { .size = MON_COORDS_SIZE(24, 40), .y_offset = 15 },
     [SPECIES_UNOWN_QMARK] = { .size = MON_COORDS_SIZE(24, 40), .y_offset = 13 },
-    [SPECIES_AMBIPOM]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  1 },
+    [SPECIES_DECIBELLE]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  1 },
     [SPECIES_ARCEUS]                       = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_BONSLY]                       = { .size = MON_COORDS_SIZE(32, 48), .y_offset =  9 },
     [SPECIES_BUDEW]                        = { .size = MON_COORDS_SIZE(32, 40), .y_offset = 14 },

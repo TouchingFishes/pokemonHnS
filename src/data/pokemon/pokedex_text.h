@@ -2320,10 +2320,10 @@ const u8 gDeoxysPokedexText[] = _(
     "beam. Its body is configured for superior\n"
     "agility and speed.");
 
-const u8 gAmbipomPokedexText[] = _(
+const u8 gDecibellePokedexText[] = _(
     "They live on large trees. Split into two,\n"
     "the tails are so adept at handling and\n"
-    "doing things, Ambipom rarely uses\n"
+    "doing things, Decibelle rarely uses\n"
     "its hands now.");
 
 const u8 gArceusPokedexText[] = _(

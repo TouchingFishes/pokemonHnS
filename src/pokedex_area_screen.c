@@ -555,7 +555,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     //SPECIES_BUDEW, 
     //SPECIES_ROSERADE, 
     SPECIES_DUSKNOIR, 
-    SPECIES_AMBIPOM, 
+    SPECIES_DECIBELLE, 
     SPECIES_ELECTIVIRE, 
     SPECIES_FROSLASS, 
     SPECIES_GALLADE, 

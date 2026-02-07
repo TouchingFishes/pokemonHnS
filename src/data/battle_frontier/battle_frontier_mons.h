@@ -6174,15 +6174,15 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_AMBIPOM_1] = {
-        .species = SPECIES_AMBIPOM,
+    [FRONTIER_MON_DECIBELLE_1] = {
+        .species = SPECIES_DECIBELLE,
         .moves = {MOVE_FURY_SWIPES, MOVE_SAND_ATTACK, MOVE_BATON_PASS, MOVE_AGILITY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILK_SCARF,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_RELAXED
     },
-    [FRONTIER_MON_AMBIPOM_2] = {
-        .species = SPECIES_AMBIPOM,
+    [FRONTIER_MON_DECIBELLE_2] = {
+        .species = SPECIES_DECIBELLE,
         .moves = {MOVE_SKULL_BASH, MOVE_KNOCK_OFF, MOVE_BATON_PASS, MOVE_AGILITY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILK_SCARF,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
@@ -12611,15 +12611,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_AMBIPOM_1] = {
-        .species = SPECIES_AMBIPOM,
+    [FRONTIER_MON_DECIBELLE_1] = {
+        .species = SPECIES_DECIBELLE,
         .moves = {MOVE_FURY_SWIPES, MOVE_SAND_ATTACK, MOVE_BATON_PASS, MOVE_AGILITY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILK_SCARF,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_RELAXED
     },
-    [FRONTIER_MON_AMBIPOM_2] = {
-        .species = SPECIES_AMBIPOM,
+    [FRONTIER_MON_DECIBELLE_2] = {
+        .species = SPECIES_DECIBELLE,
         .moves = {MOVE_SKULL_BASH, MOVE_KNOCK_OFF, MOVE_BATON_PASS, MOVE_AGILITY},
         .itemTableId = BATTLE_FRONTIER_ITEM_SILK_SCARF,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,

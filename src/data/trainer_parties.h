@@ -3133,7 +3133,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_AnnaAndMeg5[] = {
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_AMBIPOM,
+    .species = SPECIES_DECIBELLE,
     .moves = {MOVE_DOUBLE_SLAP, MOVE_TICKLE, MOVE_ROCK_SMASH, MOVE_BELLY_DRUM}
     },
     {

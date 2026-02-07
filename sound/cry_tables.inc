@@ -388,7 +388,7 @@ gCryTable::
 	cry Cry_Jirachi
 	cry Cry_Deoxys
 	cry Cry_Chimecho
-	cry Cry_Ambipom
+	cry Cry_Decibelle
 	cry Cry_Arceus
 	cry Cry_Bonsly
 	cry Cry_Budew
@@ -823,7 +823,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Jirachi
 	cry_reverse Cry_Deoxys
 	cry_reverse Cry_Chimecho
-	cry_reverse Cry_Ambipom
+	cry_reverse Cry_Decibelle
 	cry_reverse Cry_Arceus
 	cry_reverse Cry_Bonsly
 	cry_reverse Cry_Budew

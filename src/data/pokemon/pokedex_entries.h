@@ -4644,12 +4644,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 2,
     },
 
-    [NATIONAL_DEX_AMBIPOM] =
+    [NATIONAL_DEX_DECIBELLE] =
     {
         .categoryName = _("LONG TAIL"),
         .height = 12,
         .weight = 203,
-        .description = gAmbipomPokedexText,
+        .description = gDecibellePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

@@ -5625,7 +5625,7 @@ static const u16 sChimechoLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sAmbipomLevelUpLearnset_Original[] = {
+static const u16 sDecibelleLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),

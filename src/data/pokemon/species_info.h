@@ -11821,7 +11821,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_AMBIPOM] =
+    [SPECIES_DECIBELLE] =
     {
         .baseHP        = 75,
         .baseAttack    = 100,
