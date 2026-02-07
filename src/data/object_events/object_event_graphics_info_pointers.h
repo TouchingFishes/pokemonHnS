@@ -212,7 +212,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Azumarill;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Wingull;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KecleonBridgeShadow;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TuberMSwimming;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Solosis;
+//extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Solosis;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Mom;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkBrendan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_LinkMay;
@@ -467,7 +467,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TRAIN_MID] =                 &gObjectEventGraphicsInfo_TrainMid, //gObjectEventGraphicsInfo_Regirock
     // [OBJ_EVENT_GFX_REGICE] =                   &gObjectEventGraphicsInfo_Regice,
     [OBJ_EVENT_GFX_TRAIN_BACK] =                &gObjectEventGraphicsInfo_TrainBack, //gObjectEventGraphicsInfo_Registeel
-    //[OBJ_EVENT_GFX_KECLEON] =                   &gObjectEventGraphicsInfo_Skitty, 
+    // [OBJ_EVENT_GFX_KECLEON] =                   &gObjectEventGraphicsInfo_Skitty, 
     [OBJ_EVENT_GFX_KECLEON] =                  &gObjectEventGraphicsInfo_Kecleon,
     [OBJ_EVENT_GFX_KYOGRE_ASLEEP] =            &gObjectEventGraphicsInfo_KyogreAsleep,
     [OBJ_EVENT_GFX_GROUDON_ASLEEP] =           &gObjectEventGraphicsInfo_GroudonAsleep,
@@ -479,7 +479,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SLOWPOKE_NO_TAIL] =                  &gObjectEventGraphicsInfo_Wingull,
     [OBJ_EVENT_GFX_KECLEON_BRIDGE_SHADOW] =    &gObjectEventGraphicsInfo_KecleonBridgeShadow,
     [OBJ_EVENT_GFX_TUBER_M_WATER] =         &gObjectEventGraphicsInfo_TuberMSwimming,
-    [OBJ_EVENT_GFX_SOLOSIS] =                  &gObjectEventGraphicsInfo_Solosis,
+    // [OBJ_EVENT_GFX_SOLOSIS] =                  &gObjectEventGraphicsInfo_Solosis,
     [OBJ_EVENT_GFX_MOM] =                      &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_LINK_BRENDAN] =             &gObjectEventGraphicsInfo_LinkBrendan,
     [OBJ_EVENT_GFX_LINK_MAY] =                 &gObjectEventGraphicsInfo_LinkMay,
@@ -489,7 +489,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_KYOGRE_SIDE] =              &gObjectEventGraphicsInfo_KyogreSide,
     [OBJ_EVENT_GFX_GROUDON_SIDE] =             &gObjectEventGraphicsInfo_GroudonSide,
     [OBJ_EVENT_GFX_MYSTERY_GIFT_MAN] =         &gObjectEventGraphicsInfo_MysteryEventDeliveryman,
-    //[OBJ_EVENT_GFX_TUBER_F] =       &gObjectEventGraphicsInfo_Statue,
+    // [OBJ_EVENT_GFX_TUBER_F] =       &gObjectEventGraphicsInfo_Statue,
     [OBJ_EVENT_GFX_NURSE_CHANSEY] =                   &gObjectEventGraphicsInfo_Kirlia,
     [OBJ_EVENT_GFX_DUSCLOPS] =                 &gObjectEventGraphicsInfo_Dusclops,
     [OBJ_EVENT_GFX_RED_NORMAL] =         &gObjectEventGraphicsInfo_UnionRoomAttendant,

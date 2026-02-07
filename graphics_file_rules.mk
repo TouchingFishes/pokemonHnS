@@ -442,7 +442,7 @@ $(ROULETTEGFXDIR)/roulette_tilt.4bpp: $(ROULETTEGFXDIR)/shroomish.4bpp \
 	@cat $^ >$@
 
 $(ROULETTEGFXDIR)/wheel_icons.4bpp: $(ROULETTEGFXDIR)/wynaut.4bpp \
-                                    $(ROULETTEGFXDIR)/solosis.4bpp \
+                                    $(ROULETTEGFXDIR)/azurill.4bpp \
                                     $(ROULETTEGFXDIR)/skitty.4bpp \
                                     $(ROULETTEGFXDIR)/makuhita.4bpp
 	@cat $^ >$@
