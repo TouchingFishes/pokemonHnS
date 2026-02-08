@@ -3180,72 +3180,72 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WURMPLE] =
+    [NATIONAL_DEX_IMPIDIMP] =
     {
         .categoryName = _("WORM"),
         .height = 3,
         .weight = 36,
-        .description = gWurmplePokedexText,
+        .description = gImpidimpPokedexText,
         .pokemonScale = 711,
         .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SILCOON] =
+    [NATIONAL_DEX_MORGREM] =
     {
         .categoryName = _("COCOON"),
         .height = 6,
         .weight = 100,
-        .description = gSilcoonPokedexText,
+        .description = gMorgremPokedexText,
         .pokemonScale = 431,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BEAUTIFLY] =
+    [NATIONAL_DEX_GRIMMSNARL] =
     {
         .categoryName = _("BUTTERFLY"),
         .height = 10,
         .weight = 284,
-        .description = gBeautiflyPokedexText,
+        .description = gGrimmsnarlPokedexText,
         .pokemonScale = 298,
         .pokemonOffset = -1,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_CASCOON] =
+    [NATIONAL_DEX_FLABEBE] =
     {
         .categoryName = _("COCOON"),
         .height = 7,
         .weight = 115,
-        .description = gCascoonPokedexText,
+        .description = gFlabebePokedexText,
         .pokemonScale = 391,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_DUSTOX] =
+    [NATIONAL_DEX_FLOETTE] =
     {
         .categoryName = _("POISON MOTH"),
         .height = 12,
         .weight = 316,
-        .description = gDustoxPokedexText,
+        .description = gFloettePokedexText,
         .pokemonScale = 269,
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LOTAD] =
+    [NATIONAL_DEX_FLORGES] =
     {
         .categoryName = _("WATER WEED"),
         .height = 5,
         .weight = 26,
-        .description = gLotadPokedexText,
+        .description = gFlorgesPokedexText,
         .pokemonScale = 406,
         .pokemonOffset = 19,
         .trainerScale = 256,

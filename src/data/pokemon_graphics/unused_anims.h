@@ -95,61 +95,61 @@ static const union AnimCmd sUnusedAnim_Linoone_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Wurmple_1[] =
+static const union AnimCmd sUnusedAnim_Impidimp_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Wurmple_2[] =
+static const union AnimCmd sUnusedAnim_Impidimp_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Silcoon_1[] =
+static const union AnimCmd sUnusedAnim_Morgrem_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Silcoon_2[] =
+static const union AnimCmd sUnusedAnim_Morgrem_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Beautifly_1[] =
+static const union AnimCmd sUnusedAnim_Grimmsnarl_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Beautifly_2[] =
+static const union AnimCmd sUnusedAnim_Grimmsnarl_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Cascoon_1[] =
+static const union AnimCmd sUnusedAnim_Flabebe_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Cascoon_2[] =
+static const union AnimCmd sUnusedAnim_Flabebe_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Dustox_1[] =
+static const union AnimCmd sUnusedAnim_Floette_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Dustox_2[] =
+static const union AnimCmd sUnusedAnim_Floette_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -1229,12 +1229,12 @@ static const union AnimCmd *const sUnusedAnims_Poochyena[] = {sAnim_GeneralFrame
 static const union AnimCmd *const sUnusedAnims_Mightyena[] = {sAnim_GeneralFrame0, sUnusedAnim_Mightyena_1};
 static const union AnimCmd *const sUnusedAnims_Zigzagoon[] = {sAnim_GeneralFrame0, sUnusedAnim_Zigzagoon_1};
 static const union AnimCmd *const sUnusedAnims_Linoone[] = {sAnim_GeneralFrame0, sUnusedAnim_Linoone_1};
-static const union AnimCmd *const sUnusedAnims_Wurmple[] = {sAnim_GeneralFrame0, sUnusedAnim_Wurmple_1, sUnusedAnim_Wurmple_2};
-static const union AnimCmd *const sUnusedAnims_Silcoon[] = {sAnim_GeneralFrame0, sUnusedAnim_Silcoon_1, sUnusedAnim_Silcoon_2};
-static const union AnimCmd *const sUnusedAnims_Beautifly[] = {sAnim_GeneralFrame0, sUnusedAnim_Beautifly_1, sUnusedAnim_Beautifly_2};
-static const union AnimCmd *const sUnusedAnims_Cascoon[] = {sAnim_GeneralFrame0, sUnusedAnim_Cascoon_1, sUnusedAnim_Cascoon_2};
-static const union AnimCmd *const sUnusedAnims_Dustox[] = {sAnim_GeneralFrame0, sUnusedAnim_Dustox_1, sUnusedAnim_Dustox_2};
-static const union AnimCmd *const sUnusedAnims_Lotad[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Impidimp[] = {sAnim_GeneralFrame0, sUnusedAnim_Impidimp_1, sUnusedAnim_Impidimp_2};
+static const union AnimCmd *const sUnusedAnims_Morgrem[] = {sAnim_GeneralFrame0, sUnusedAnim_Morgrem_1, sUnusedAnim_Morgrem_2};
+static const union AnimCmd *const sUnusedAnims_Grimmsnarl[] = {sAnim_GeneralFrame0, sUnusedAnim_Grimmsnarl_1, sUnusedAnim_Grimmsnarl_2};
+static const union AnimCmd *const sUnusedAnims_Flabebe[] = {sAnim_GeneralFrame0, sUnusedAnim_Flabebe_1, sUnusedAnim_Flabebe_2};
+static const union AnimCmd *const sUnusedAnims_Floette[] = {sAnim_GeneralFrame0, sUnusedAnim_Floette_1, sUnusedAnim_Floette_2};
+static const union AnimCmd *const sUnusedAnims_Florges[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Lombre[] = {sAnim_GeneralFrame0, sUnusedAnim_Lombre_1};
 static const union AnimCmd *const sUnusedAnims_Ludicolo[] = {sAnim_GeneralFrame0, sUnusedAnim_Ludicolo_1, sUnusedAnim_Ludicolo_2};
 static const union AnimCmd *const sUnusedAnims_Seedot[] = {sAnim_GeneralFrame0, sUnusedAnim_Seedot_1};
@@ -1671,12 +1671,12 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_MIGHTYENA] = sUnusedAnims_Mightyena,
     [SPECIES_ZIGZAGOON] = sUnusedAnims_Zigzagoon,
     [SPECIES_LINOONE] = sUnusedAnims_Linoone,
-    [SPECIES_WURMPLE] = sUnusedAnims_Wurmple,
-    [SPECIES_SILCOON] = sUnusedAnims_Silcoon,
-    [SPECIES_BEAUTIFLY] = sUnusedAnims_Beautifly,
-    [SPECIES_CASCOON] = sUnusedAnims_Cascoon,
-    [SPECIES_DUSTOX] = sUnusedAnims_Dustox,
-    [SPECIES_LOTAD] = sUnusedAnims_Lotad,
+    [SPECIES_IMPIDIMP] = sUnusedAnims_Impidimp,
+    [SPECIES_MORGREM] = sUnusedAnims_Morgrem,
+    [SPECIES_GRIMMSNARL] = sUnusedAnims_Grimmsnarl,
+    [SPECIES_FLABEBE] = sUnusedAnims_Flabebe,
+    [SPECIES_FLOETTE] = sUnusedAnims_Floette,
+    [SPECIES_FLORGES] = sUnusedAnims_Florges,
     [SPECIES_LOMBRE] = sUnusedAnims_Lombre,
     [SPECIES_LUDICOLO] = sUnusedAnims_Ludicolo,
     [SPECIES_SEEDOT] = sUnusedAnims_Seedot,

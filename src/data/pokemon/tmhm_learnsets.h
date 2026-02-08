@@ -7029,13 +7029,13 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_WURMPLE] = { .learnset = {
+    [SPECIES_IMPIDIMP] = { .learnset = {
     } },
 
-    [SPECIES_SILCOON] = { .learnset = {
+    [SPECIES_MORGREM] = { .learnset = {
     } },
 
-    [SPECIES_BEAUTIFLY] = { .learnset = {
+    [SPECIES_GRIMMSNARL] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -7058,10 +7058,10 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_CASCOON] = { .learnset = {
+    [SPECIES_FLABEBE] = { .learnset = {
     } },
 
-    [SPECIES_DUSTOX] = { .learnset = {
+    [SPECIES_FLOETTE] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -7085,7 +7085,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_LOTAD] = { .learnset = {
+    [SPECIES_FLORGES] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,

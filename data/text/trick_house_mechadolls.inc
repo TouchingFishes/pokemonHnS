@@ -10,14 +10,14 @@ gTrickHouse_Mechadoll_Voltrel::
 gTrickHouse_Mechadoll_Solosis::
 	.string "SOLOSIS$"
 
-gTrickHouse_Mechadoll_Lotad::
-	.string "LOTAD$"
+gTrickHouse_Mechadoll_Florges::
+	.string "FLORGES$"
 
 gTrickHouse_Mechadoll_Wingull::
 	.string "WINGULL$"
 
-gTrickHouse_Mechadoll_Dustox::
-	.string "DUSTOX$"
+gTrickHouse_Mechadoll_Floette::
+	.string "FLOETTE$"
 
 gTrickHouse_Mechadoll_Zubat::
 	.string "ZUBAT$"

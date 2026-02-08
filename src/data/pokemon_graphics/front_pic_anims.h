@@ -3068,7 +3068,7 @@ static const union AnimCmd sAnim_Linoone_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wurmple_1[] =
+static const union AnimCmd sAnim_Impidimp_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 35),
@@ -3076,7 +3076,7 @@ static const union AnimCmd sAnim_Wurmple_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Silcoon_1[] =
+static const union AnimCmd sAnim_Morgrem_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 25),
@@ -3084,13 +3084,13 @@ static const union AnimCmd sAnim_Silcoon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Silcoon_2[] =
+static const union AnimCmd sAnim_Morgrem_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Beautifly_1[] =
+static const union AnimCmd sAnim_Grimmsnarl_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 2),
@@ -3104,13 +3104,13 @@ static const union AnimCmd sAnim_Beautifly_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Beautifly_2[] =
+static const union AnimCmd sAnim_Grimmsnarl_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cascoon_1[] =
+static const union AnimCmd sAnim_Flabebe_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3120,13 +3120,13 @@ static const union AnimCmd sAnim_Cascoon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Cascoon_2[] =
+static const union AnimCmd sAnim_Flabebe_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dustox_1[] =
+static const union AnimCmd sAnim_Floette_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 1),
@@ -3146,13 +3146,13 @@ static const union AnimCmd sAnim_Dustox_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dustox_2[] =
+static const union AnimCmd sAnim_Floette_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lotad_1[] =
+static const union AnimCmd sAnim_Florges_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 55),
@@ -5559,12 +5559,12 @@ SINGLE_ANIMATION(Poochyena);
 SINGLE_ANIMATION(Mightyena);
 SINGLE_ANIMATION(Zigzagoon);
 SINGLE_ANIMATION(Linoone);
-SINGLE_ANIMATION(Wurmple);
-DOUBLE_ANIMATION(Silcoon);
-DOUBLE_ANIMATION(Beautifly);
-DOUBLE_ANIMATION(Cascoon);
-DOUBLE_ANIMATION(Dustox);
-SINGLE_ANIMATION(Lotad);
+SINGLE_ANIMATION(Impidimp);
+DOUBLE_ANIMATION(Morgrem);
+DOUBLE_ANIMATION(Grimmsnarl);
+DOUBLE_ANIMATION(Flabebe);
+DOUBLE_ANIMATION(Floette);
+SINGLE_ANIMATION(Florges);
 SINGLE_ANIMATION(Lombre);
 SINGLE_ANIMATION(Ludicolo);
 SINGLE_ANIMATION(Seedot);
@@ -6053,12 +6053,12 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MIGHTYENA]   = sAnims_Mightyena,
     [SPECIES_ZIGZAGOON]   = sAnims_Zigzagoon,
     [SPECIES_LINOONE]     = sAnims_Linoone,
-    [SPECIES_WURMPLE]     = sAnims_Wurmple,
-    [SPECIES_SILCOON]     = sAnims_Silcoon,
-    [SPECIES_BEAUTIFLY]   = sAnims_Beautifly,
-    [SPECIES_CASCOON]     = sAnims_Cascoon,
-    [SPECIES_DUSTOX]      = sAnims_Dustox,
-    [SPECIES_LOTAD]       = sAnims_Lotad,
+    [SPECIES_IMPIDIMP]     = sAnims_Impidimp,
+    [SPECIES_MORGREM]     = sAnims_Morgrem,
+    [SPECIES_GRIMMSNARL]   = sAnims_Grimmsnarl,
+    [SPECIES_FLABEBE]     = sAnims_Flabebe,
+    [SPECIES_FLOETTE]      = sAnims_Floette,
+    [SPECIES_FLORGES]       = sAnims_Florges,
     [SPECIES_LOMBRE]      = sAnims_Lombre,
     [SPECIES_LUDICOLO]    = sAnims_Ludicolo,
     [SPECIES_SEEDOT]      = sAnims_Seedot,

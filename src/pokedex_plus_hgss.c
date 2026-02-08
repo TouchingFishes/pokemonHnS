@@ -6894,13 +6894,13 @@ static u8 PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 depth,
             ConvertIntToDecimalStringN(gStringVar2, gEvolutionTable[species][i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
             StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_ATK_LT_DEF );
             break;
-        case EVO_LEVEL_SILCOON:
+        case EVO_LEVEL_MORGREM:
             ConvertIntToDecimalStringN(gStringVar2, gEvolutionTable[species][i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
-            StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_SILCOON );
+            StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_MORGREM );
             break;
-        case EVO_LEVEL_CASCOON:
+        case EVO_LEVEL_FLABEBE:
             ConvertIntToDecimalStringN(gStringVar2, gEvolutionTable[species][i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level
-            StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_CASCOON );
+            StringExpandPlaceholders(gStringVar4, gText_EVO_LEVEL_FLABEBE );
             break;
         case EVO_LEVEL_NINJASK:
             ConvertIntToDecimalStringN(gStringVar2, gEvolutionTable[species][i].param, STR_CONV_MODE_LEADING_ZEROS, EVO_SCREEN_LVL_DIGITS); //level

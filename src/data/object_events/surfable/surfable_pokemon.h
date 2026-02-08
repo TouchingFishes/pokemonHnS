@@ -299,7 +299,7 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_LOTAD,
+        .species = SPECIES_FLORGES,
         .trainerPose = 0,
     },
     {

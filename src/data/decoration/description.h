@@ -457,10 +457,10 @@ const u8 DecorDesc_GULPIN_DOLL[] = _(
         "Place it on a mat\n"
         "or a desk.");
 
-const u8 DecorDesc_LOTAD_DOLL[] = _(
-    "A LOTAD doll.\n"
+/*const u8 DecorDesc_FLORGES_DOLL[] = _(
+    "A FLORGES doll.\n"
         "Place it on a mat\n"
-        "or a desk.");
+        "or a desk.");*/
 
 const u8 DecorDesc_SEEDOT_DOLL[] = _(
     "A SEEDOT doll.\n"

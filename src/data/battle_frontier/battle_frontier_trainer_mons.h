@@ -4,7 +4,7 @@
     FRONTIER_MON_SOLOSIS,       \
     FRONTIER_MON_CATERPIE,      \
     FRONTIER_MON_WEEDLE,        \
-    FRONTIER_MON_WURMPLE,       \
+    FRONTIER_MON_IMPIDIMP,       \
     FRONTIER_MON_RALTS,         \
     FRONTIER_MON_MAGIKARP,      \
     FRONTIER_MON_FEEBAS,        \
@@ -15,7 +15,7 @@
     FRONTIER_MON_SENTRET,       \
     FRONTIER_MON_CLEFFA,        \
     FRONTIER_MON_SEEDOT,        \
-    FRONTIER_MON_LOTAD,         \
+    FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_POOCHYENA,     \
     FRONTIER_MON_SHEDINJA,      \
     FRONTIER_MON_MAKUHITA,      \
@@ -160,7 +160,7 @@
     FRONTIER_MON_NIDORINA,      \
     FRONTIER_MON_NIDORINO,      \
     FRONTIER_MON_BEEDRILL,      \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_ARIADOS,       \
 	FRONTIER_MON_ZWEILOUS_1,\
     -1
@@ -213,8 +213,8 @@
     FRONTIER_MON_BEEDRILL,      \
     FRONTIER_MON_POLIWHIRL,     \
     FRONTIER_MON_ONIX,          \
-    FRONTIER_MON_BEAUTIFLY,     \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_GRIMMSNARL,     \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_LEDIAN,        \
     FRONTIER_MON_ARIADOS,       \
     FRONTIER_MON_YANMA,         \
@@ -232,7 +232,7 @@
     FRONTIER_MON_MAGIKARP,      \
     FRONTIER_MON_FEEBAS,        \
     FRONTIER_MON_WOOPER,        \
-    FRONTIER_MON_LOTAD,         \
+    FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_MARILL,        \
     FRONTIER_MON_WYNAUT,        \
     FRONTIER_MON_SURSKIT,       \
@@ -421,7 +421,7 @@
     FRONTIER_MON_SENTRET,       \
     FRONTIER_MON_CLEFFA,        \
     FRONTIER_MON_SEEDOT,        \
-    FRONTIER_MON_LOTAD,         \
+    FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_POOCHYENA,     \
     FRONTIER_MON_AXEW,       \
     FRONTIER_MON_ZIGZAGOON,     \
@@ -463,7 +463,7 @@
 #define FRONTIER_MONS_BUG_CATCHER_1 \
     FRONTIER_MON_CATERPIE,      \
     FRONTIER_MON_WEEDLE,        \
-    FRONTIER_MON_WURMPLE,       \
+    FRONTIER_MON_IMPIDIMP,       \
     FRONTIER_MON_SHEDINJA,      \
     FRONTIER_MON_SPINARAK,      \
     FRONTIER_MON_DIGLETT,       \
@@ -479,8 +479,8 @@
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_BUTTERFREE,    \
     FRONTIER_MON_BEEDRILL,      \
-    FRONTIER_MON_BEAUTIFLY,     \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_GRIMMSNARL,     \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_LEDIAN,        \
     FRONTIER_MON_ARIADOS,       \
     FRONTIER_MON_YANMA,         \
@@ -490,7 +490,7 @@
 #define FRONTIER_MONS_BUG_CATCHER_1_EXTRA(species1, species2) \
     FRONTIER_MON_CATERPIE,      \
     FRONTIER_MON_WEEDLE,        \
-    FRONTIER_MON_WURMPLE,       \
+    FRONTIER_MON_IMPIDIMP,       \
     FRONTIER_MON_##species1,    \
     FRONTIER_MON_##species2,    \
     FRONTIER_MON_SHEDINJA,      \
@@ -508,8 +508,8 @@
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_BUTTERFREE,    \
     FRONTIER_MON_BEEDRILL,      \
-    FRONTIER_MON_BEAUTIFLY,     \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_GRIMMSNARL,     \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_LEDIAN,        \
     FRONTIER_MON_ARIADOS,       \
     FRONTIER_MON_YANMA,         \
@@ -559,8 +559,8 @@
     FRONTIER_MON_NIDORINO,      \
     FRONTIER_MON_BUTTERFREE,    \
     FRONTIER_MON_BEEDRILL,      \
-    FRONTIER_MON_BEAUTIFLY,     \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_GRIMMSNARL,     \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_LEDIAN,        \
     FRONTIER_MON_ARIADOS,       \
     FRONTIER_MON_YANMA,         \
@@ -593,8 +593,8 @@
     FRONTIER_MON_ANORITH,       \
     FRONTIER_MON_BUTTERFREE,    \
     FRONTIER_MON_BEEDRILL,      \
-    FRONTIER_MON_BEAUTIFLY,     \
-    FRONTIER_MON_DUSTOX,        \
+    FRONTIER_MON_GRIMMSNARL,     \
+    FRONTIER_MON_FLOETTE,        \
     FRONTIER_MON_LEDIAN,        \
     FRONTIER_MON_ARIADOS,       \
     FRONTIER_MON_YANMA,         \
@@ -652,7 +652,7 @@
 #define FRONTIER_MONS_PARASOL_LADY_1 \
     FRONTIER_MON_SUNKERN,       \
     FRONTIER_MON_WOOPER,        \
-    FRONTIER_MON_LOTAD,         \
+    FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_MARILL,        \
     FRONTIER_MON_SURSKIT,       \
     FRONTIER_MON_TRAPINCH,      \
@@ -672,7 +672,7 @@
     FRONTIER_MON_SUNKERN,       \
     FRONTIER_MON_RALTS,         \
     FRONTIER_MON_SEEDOT,        \
-    FRONTIER_MON_LOTAD,         \
+    FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_HOPPIP,        \
     FRONTIER_MON_WYNAUT,        \
     FRONTIER_MON_KIRLIA,        \
@@ -6737,7 +6737,7 @@ const u16 gBattleFrontierTrainerMons_Lewis[] =
 
 const u16 gBattleFrontierTrainerMons_Yoshi[] =
 {
-    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(SILCOON, CASCOON)
+    FRONTIER_MONS_BUG_CATCHER_1_EXTRA(MORGREM, FLABEBE)
 };
 
 const u16 gBattleFrontierTrainerMons_Destin[] =

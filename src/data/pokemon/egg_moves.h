@@ -1229,7 +1229,7 @@ const u16 gEggMoves[] = {
               MOVE_TICKLE,
               MOVE_TRICK),
 
-    egg_moves(LOTAD,
+    egg_moves(FLORGES,
               MOVE_SYNTHESIS,
               MOVE_COUNTER,
               MOVE_RAZOR_LEAF,
@@ -2668,7 +2668,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_TICKLE,
               MOVE_TRICK),
 
-    egg_moves(LOTAD,
+    egg_moves(FLORGES,
               MOVE_SYNTHESIS,
               MOVE_RAZOR_LEAF,
               MOVE_SWEET_SCENT,

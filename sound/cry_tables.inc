@@ -283,18 +283,18 @@ gCryTable::
 	cry Cry_Wingull
 	cry Cry_Banette
 	cry Cry_Shuppet
-	cry Cry_Lotad
+	cry Cry_Florges
 	cry Cry_Lombre
 	cry Cry_Ludicolo
 	cry Cry_Seedot
 	cry Cry_Nuzleaf
 	cry Cry_Shiftry
 	cry Cry_Carvanha
-	cry Cry_Wurmple
-	cry Cry_Silcoon
-	cry Cry_Beautifly
-	cry Cry_Cascoon
-	cry Cry_Dustox
+	cry Cry_Impidimp
+	cry Cry_Morgrem
+	cry Cry_Grimmsnarl
+	cry Cry_Flabebe
+	cry Cry_Floette
 	cry Cry_Ralts
 	cry Cry_Kirlia
 	cry Cry_Gardevoir
@@ -718,18 +718,18 @@ gCryTable_Reverse::
 	cry_reverse Cry_Wingull
 	cry_reverse Cry_Banette
 	cry_reverse Cry_Shuppet
-	cry_reverse Cry_Lotad
+	cry_reverse Cry_Florges
 	cry_reverse Cry_Lombre
 	cry_reverse Cry_Ludicolo
 	cry_reverse Cry_Seedot
 	cry_reverse Cry_Nuzleaf
 	cry_reverse Cry_Shiftry
 	cry_reverse Cry_Carvanha
-	cry_reverse Cry_Wurmple
-	cry_reverse Cry_Silcoon
-	cry_reverse Cry_Beautifly
-	cry_reverse Cry_Cascoon
-	cry_reverse Cry_Dustox
+	cry_reverse Cry_Impidimp
+	cry_reverse Cry_Morgrem
+	cry_reverse Cry_Grimmsnarl
+	cry_reverse Cry_Flabebe
+	cry_reverse Cry_Floette
 	cry_reverse Cry_Ralts
 	cry_reverse Cry_Kirlia
 	cry_reverse Cry_Gardevoir

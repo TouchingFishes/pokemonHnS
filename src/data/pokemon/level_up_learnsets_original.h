@@ -3805,20 +3805,20 @@ static const u16 sLinooneLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sWurmpleLevelUpLearnset_Original[] = {
+static const u16 sImpidimpLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_STRING_SHOT),
     LEVEL_UP_MOVE( 5, MOVE_POISON_STING),
     LEVEL_UP_END
 };
 
-static const u16 sSilcoonLevelUpLearnset_Original[] = {
+static const u16 sMorgremLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_HARDEN),
     LEVEL_UP_END
 };
 
-static const u16 sBeautiflyLevelUpLearnset_Original[] = {
+static const u16 sGrimmsnarlLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE(10, MOVE_ABSORB),
     LEVEL_UP_MOVE(13, MOVE_GUST),
@@ -3832,13 +3832,13 @@ static const u16 sBeautiflyLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sCascoonLevelUpLearnset_Original[] = {
+static const u16 sFlabebeLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_HARDEN),
     LEVEL_UP_END
 };
 
-static const u16 sDustoxLevelUpLearnset_Original[] = {
+static const u16 sFloetteLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_CONFUSION),
     LEVEL_UP_MOVE(13, MOVE_GUST),
@@ -3852,7 +3852,7 @@ static const u16 sDustoxLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sLotadLevelUpLearnset_Original[] = {
+static const u16 sFlorgesLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_ABSORB),

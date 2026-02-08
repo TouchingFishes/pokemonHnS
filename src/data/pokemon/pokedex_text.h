@@ -1588,37 +1588,37 @@ const u8 gLinoonePokedexText[] = _(
     "dwelling prey underwater, it quickly leaps\n"
     "in and catches it with its sharp claws.");
 
-const u8 gWurmplePokedexText[] = _(
+const u8 gImpidimpPokedexText[] = _(
     "It sticks to tree branches and eats\n"
     "leaves. The thread it spits from its mouth,\n"
     "which becomes gooey when it touches\n"
     "air, slows the movement of its foes.");
 
-const u8 gSilcoonPokedexText[] = _(
+const u8 gMorgremPokedexText[] = _(
     "It prepares for evolution using the\n"
-    "energy it stored while it was a WURMPLE.\n"
+    "energy it stored while it was a IMPIDIMP.\n"
     "It keeps watch over the surroundings with\n"
     "its two eyes.");
 
-const u8 gBeautiflyPokedexText[] = _(
+const u8 gGrimmsnarlPokedexText[] = _(
     "Its colorfully patterned wings are its\n"
     "most prominent feature. It flies through\n"
     "flower-covered fields collecting pollen.\n"
     "It attacks ferociously when angered.");
 
-const u8 gCascoonPokedexText[] = _(
+const u8 gFlabebePokedexText[] = _(
     "To avoid detection by its enemies, it hides\n"
     "motionlessly beneath large leaves and in\n"
     "the gaps of branches. It also attaches\n"
     "dead leaves to its body for camouflage.");
 
-const u8 gDustoxPokedexText[] = _(
+const u8 gFloettePokedexText[] = _(
     "It is a nocturnal POKéMON that flies from\n"
     "fields and mountains to the attraction of\n"
     "streetlights at night. It looses highly\n"
     "toxic powder from its wings.");
 
-const u8 gLotadPokedexText[] = _(
+const u8 gFlorgesPokedexText[] = _(
     "This POKéMON lives in ponds with clean\n"
     "water. It is known to ferry small POKéMON\n"
     "across ponds by carrying them on the\n"

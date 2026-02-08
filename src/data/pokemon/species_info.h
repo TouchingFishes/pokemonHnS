@@ -8117,7 +8117,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_WURMPLE] =
+    [SPECIES_IMPIDIMP] =
     {
         .baseHP        = 45,
         .baseAttack    = 45,
@@ -8147,7 +8147,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SILCOON] =
+    [SPECIES_MORGREM] =
     {
         .baseHP        = 50,
         .baseAttack    = 35,
@@ -8177,7 +8177,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_BEAUTIFLY] = //modified
+    [SPECIES_GRIMMSNARL] = //modified
     {
         .baseHP        = 60,
         .baseAttack    = 70,
@@ -8208,7 +8208,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CASCOON] =
+    [SPECIES_FLABEBE] =
     {
         .baseHP        = 50,
         .baseAttack    = 35,
@@ -8238,7 +8238,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_DUSTOX] = //modified
+    [SPECIES_FLOETTE] = //modified
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -8269,7 +8269,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LOTAD] =
+    [SPECIES_FLORGES] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -11025,7 +11025,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_KROLUCADA] = //modified
+    [SPECIES_KROLUCADA] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -11868,86 +11868,86 @@ const struct SpeciesInfo gSpeciesInfo[] =
     [SPECIES_TINKATINK] =
     {
         .baseHP        = 50,
-        .baseAttack    = 80,
-        .baseDefense   = 95,
-        .baseSpeed     = 10,
-        .baseSpAttack  = 10,
-        .baseSpDefense = 45,
-        .types = { TYPE_ROCK, TYPE_ROCK},
-        .catchRate = 255,
+        .baseAttack    = 45,
+        .baseDefense   = 45,
+        .baseSpeed     = 58,
+        .baseSpAttack  = 35,
+        .baseSpDefense = 64,
+        .types = { TYPE_STEEL, TYPE_STEEL},
+        .catchRate = 190,
         .expYield = 58,
         .evYield_HP        = 0,
         .evYield_Attack    = 0,
-        .evYield_Defense   = 1,
+        .evYield_Defense   = 0,
         .evYield_Speed     = 0,
         .evYield_SpAttack  = 0,
-        .evYield_SpDefense = 0,
+        .evYield_SpDefense = 1,
         .itemCommon = ITEM_NONE,
-        .itemRare   = ITEM_NONE,
-        .genderRatio = PERCENT_FEMALE(50),
+        .itemRare = ITEM_NONE,
+        .genderRatio = MON_FEMALE, 
         .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_MEDIUM_FAST,
-        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
-        .abilities = {ABILITY_STURDY, ABILITY_ROCK_HEAD},
-        .bodyColor = BODY_COLOR_BROWN,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_FAIRY},
+        .abilities = {ABILITY_PICKUP, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },
     [SPECIES_TINKATUFF] =
     {
-        .baseHP        = 40,
-        .baseAttack    = 30,
-        .baseDefense   = 35,
-        .baseSpeed     = 55,
-        .baseSpAttack  = 50,
-        .baseSpDefense = 70,
-        .types = { TYPE_GRASS, TYPE_POISON},
-        .catchRate = 255,
-        .expYield = 56,
+        .baseHP        = 65,
+        .baseAttack    = 55,
+        .baseDefense   = 55,
+        .baseSpeed     = 78,
+        .baseSpAttack  = 45,
+        .baseSpDefense = 82,
+        .types = { TYPE_STEEL, TYPE_STEEL},
+        .catchRate = 90,
+        .expYield = 123,
         .evYield_HP        = 0,
         .evYield_Attack    = 0,
         .evYield_Defense   = 0,
         .evYield_Speed     = 0,
-        .evYield_SpAttack  = 1,
-        .evYield_SpDefense = 0,
+        .evYield_SpAttack  = 0,
+        .evYield_SpDefense = 2,
         .itemCommon = ITEM_NONE,
-        .itemRare   = ITEM_POISON_BARB,
-        .genderRatio = PERCENT_FEMALE(50),
+        .itemRare = ITEM_NONE,
+        .genderRatio = MON_FEMALE, 
         .eggCycles = 20,
         .friendship = 70,
         .growthRate = GROWTH_MEDIUM_SLOW,
-        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
-        .abilities = {ABILITY_NATURAL_CURE, ABILITY_POISON_POINT},
-        .bodyColor = BODY_COLOR_GREEN,
-        .noFlip = TRUE,
+        .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_FAIRY},
+        .abilities = {ABILITY_PICKUP, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_PINK,
+        .noFlip = FALSE,
     },
 
     [SPECIES_TINKATON] =
     {
-        .baseHP        = 45,
-        .baseAttack    = 30,
-        .baseDefense   = 50,
-        .baseSpeed     = 45,
-        .baseSpAttack  = 65,
-        .baseSpDefense = 50,
-        .types = { TYPE_PSYCHIC, TYPE_PSYCHIC},
-        .catchRate = 120,
-        .expYield = 57,
+        .baseHP        = 85,
+        .baseAttack    = 75,
+        .baseDefense   = 77,
+        .baseSpeed     = 94,
+        .baseSpAttack  = 70,
+        .baseSpDefense = 105,
+        .types = { TYPE_STEEL, TYPE_STEEL},
+        .catchRate = 45,
+        .expYield = 174,
         .evYield_HP        = 0,
         .evYield_Attack    = 0,
         .evYield_Defense   = 0,
-        .evYield_Speed     = 0,
-        .evYield_SpAttack  = 1,
+        .evYield_Speed     = 3,
+        .evYield_SpAttack  = 0,
         .evYield_SpDefense = 0,
         .itemCommon = ITEM_NONE,
-        .itemRare = ITEM_CLEANSE_TAG,
-        .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 25,
+        .itemRare = ITEM_NONE,
+        .genderRatio = MON_FEMALE, 
+        .eggCycles = 20,
         .friendship = 70,
-        .growthRate = GROWTH_FAST,
-        .eggGroups = { EGG_GROUP_NO_EGGS_DISCOVERED, EGG_GROUP_NO_EGGS_DISCOVERED },
-        .abilities = {ABILITY_LEVITATE, ABILITY_NONE},
-        .bodyColor = BODY_COLOR_YELLOW,
+        .growthRate = GROWTH_MEDIUM_SLOW,
+        .eggGroups = {EGG_GROUP_FAIRY, EGG_GROUP_FAIRY},
+        .abilities = {ABILITY_PICKUP, ABILITY_NONE},
+        .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
     },
 

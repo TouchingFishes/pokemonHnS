@@ -1519,8 +1519,8 @@ Cry_Shuppet::
 	.incbin "sound/direct_sound_samples/cries/shuppet.bin"
 
 	.align 2
-Cry_Lotad::
-	.incbin "sound/direct_sound_samples/cries/lotad.bin"
+Cry_Florges::
+	.incbin "sound/direct_sound_samples/cries/florges.bin"
 
 	.align 2
 Cry_Lombre::
@@ -1547,24 +1547,24 @@ Cry_Carvanha::
 	.incbin "sound/direct_sound_samples/cries/carvanha.bin"
 
 	.align 2
-Cry_Wurmple::
-	.incbin "sound/direct_sound_samples/cries/wurmple.bin"
+Cry_Impidimp::
+	.incbin "sound/direct_sound_samples/cries/impidimp.bin"
 
 	.align 2
-Cry_Silcoon::
-	.incbin "sound/direct_sound_samples/cries/silcoon.bin"
+Cry_Morgrem::
+	.incbin "sound/direct_sound_samples/cries/morgrem.bin"
 
 	.align 2
-Cry_Beautifly::
-	.incbin "sound/direct_sound_samples/cries/beautifly.bin"
+Cry_Grimmsnarl::
+	.incbin "sound/direct_sound_samples/cries/grimmsnarl.bin"
 
 	.align 2
-Cry_Cascoon::
-	.incbin "sound/direct_sound_samples/cries/cascoon.bin"
+Cry_Flabebe::
+	.incbin "sound/direct_sound_samples/cries/flabebe.bin"
 
 	.align 2
-Cry_Dustox::
-	.incbin "sound/direct_sound_samples/cries/dustox.bin"
+Cry_Floette::
+	.incbin "sound/direct_sound_samples/cries/floette.bin"
 
 	.align 2
 Cry_Ralts::

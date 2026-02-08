@@ -34,7 +34,7 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SmallSeedot::
 	end
 
 SootopolisCity_LotadAndSeedotHouse_EventScript_BigSeedot::
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad, MSGBOX_DEFAULT
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanFlorges, MSGBOX_DEFAULT
 	giveitem ITEM_ELIXIR
 	goto_if_eq VAR_RESULT, FALSE, SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir1
 	closemessage
@@ -46,39 +46,39 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir1::
 	release
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_LotadBrother::
-	special GetLotadSizeRecordInfo
+SootopolisCity_LotadAndSeedotHouse_EventScript_FlorgesBrother::
+	special GetFlorgesSizeRecordInfo
 	lock
 	faceplayer
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad, MSGBOX_DEFAULT
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigFlorges, MSGBOX_DEFAULT
 	special ChoosePartyMon
 	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
-	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowLotad
-	special CompareLotadSize
+	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowFlorges
+	special CompareFlorgesSize
 	bufferunitsystemtext UNIT_TEXT_LENGTH_SMALL_PLURAL, 1
-	goto_if_eq VAR_RESULT, 1, SootopolisCity_LotadAndSeedotHouse_EventScript_NotLotad
-	goto_if_eq VAR_RESULT, 2, SootopolisCity_LotadAndSeedotHouse_EventScript_SmallLotad
-	goto_if_eq VAR_RESULT, 3, SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad
+	goto_if_eq VAR_RESULT, 1, SootopolisCity_LotadAndSeedotHouse_EventScript_NotFlorges
+	goto_if_eq VAR_RESULT, 2, SootopolisCity_LotadAndSeedotHouse_EventScript_SmallFlorges
+	goto_if_eq VAR_RESULT, 3, SootopolisCity_LotadAndSeedotHouse_EventScript_BigFlorges
 	release
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowLotad::
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad, MSGBOX_DEFAULT
+SootopolisCity_LotadAndSeedotHouse_EventScript_CancelShowFlorges::
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigFlorges, MSGBOX_DEFAULT
 	release
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_NotLotad::
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad, MSGBOX_DEFAULT
+SootopolisCity_LotadAndSeedotHouse_EventScript_NotFlorges::
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotFlorges, MSGBOX_DEFAULT
 	release
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_SmallLotad::
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad, MSGBOX_DEFAULT
+SootopolisCity_LotadAndSeedotHouse_EventScript_SmallFlorges::
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerFlorges, MSGBOX_DEFAULT
 	release
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_BigLotad::
+SootopolisCity_LotadAndSeedotHouse_EventScript_BigFlorges::
 	msgbox SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot, MSGBOX_DEFAULT
 	giveitem ITEM_ELIXIR
 	goto_if_eq VAR_RESULT, FALSE, SootopolisCity_LotadAndSeedotHouse_EventScript_NoRoomForElixir2
@@ -99,11 +99,11 @@ SootopolisCity_LotadAndSeedotHouse_EventScript_SeedotSizeRecord::
 	releaseall
 	end
 
-SootopolisCity_LotadAndSeedotHouse_EventScript_LotadSizeRecord::
-	special GetLotadSizeRecordInfo
+SootopolisCity_LotadAndSeedotHouse_EventScript_FlorgesSizeRecord::
+	special GetFlorgesSizeRecordInfo
 	lockall
 	bufferunitsystemtext UNIT_TEXT_LENGTH_SMALL_SINGLE, 1
-	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory, MSGBOX_DEFAULT
+	msgbox SootopolisCity_LotadAndSeedotHouse_Text_BiggestFlorgesInHistory, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -113,16 +113,16 @@ SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigSeedot:
 	.string "Anyway, I love big SEEDOT.\n"
 	.string "The bigger the better.\p"
 	.string "But my younger brother, he says that\n"
-	.string "LOTAD is bigger.\p"
+	.string "FLORGES is bigger.\p"
 	.string "That's silly.\n"
 	.string "SEEDOT has to be bigger than that!\p"
 	.string "Huh? Do you have a SEEDOT with you?\n"
 	.string "P-p-please, show me!$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanLotad:
+SootopolisCity_LotadAndSeedotHouse_Text_GoshMightBeBiggerThanFlorges:
 	.string "{STR_VAR_2} {STR_VAR_1}!\n"
 	.string "Oh, my gosh, this is a big one!\p"
-	.string "It might even beat the big LOTAD\n"
+	.string "It might even beat the big FLORGES\n"
 	.string "my younger brother saw!\p"
 	.string "Thanks for showing me.\n"
 	.string "This is my thanks!$"
@@ -153,18 +153,18 @@ SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigSeedot:
 SootopolisCity_LotadAndSeedotHouse_Text_BiggestSeedotInHistory:
 	.string "The biggest SEEDOT in history!\n"
 	.string "{STR_VAR_2}'s {STR_VAR_3}-{STR_VAR_1} giant!\p"
-	.string "A SEEDOT bigger than a LOTAD\n"
+	.string "A SEEDOT bigger than a FLORGES\n"
 	.string "always wanted!$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigLotad:
-	.string "Do you know the POKéMON LOTAD?\n"
+SootopolisCity_LotadAndSeedotHouse_Text_PleaseShowMeBigFlorges:
+	.string "Do you know the POKéMON FLORGES?\n"
 	.string "It's rarely seen in SOOTOPOLIS.\p"
-	.string "I love, I mean love, big LOTAD!\p"
+	.string "I love, I mean love, big FLORGES!\p"
 	.string "My big brother says that SEEDOT is\n"
 	.string "bigger.\p"
 	.string "But that's wrong! Everyone knows that\n"
-	.string "LOTAD is a lot bigger.\p"
-	.string "Hunh? Do you have a LOTAD?\n"
+	.string "FLORGES is a lot bigger.\p"
+	.string "Hunh? Do you have a FLORGES?\n"
 	.string "P-p-please show me!$"
 
 SootopolisCity_LotadAndSeedotHouse_Text_WowMightBeBiggerThanSeedot:
@@ -183,23 +183,23 @@ SootopolisCity_LotadAndSeedotHouse_Text_BagCrammedFull2:
 	.string "Hunh?\n"
 	.string "Your BAG is crammed full.$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerLotad:
+SootopolisCity_LotadAndSeedotHouse_Text_SeenBiggerFlorges:
 	.string "{STR_VAR_2} {STR_VAR_1}?\p"
-	.string "Hmm… I've seen a bigger LOTAD\n"
+	.string "Hmm… I've seen a bigger FLORGES\n"
 	.string "than this one here.$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotLotad:
+SootopolisCity_LotadAndSeedotHouse_Text_ThatsNotFlorges:
 	.string "Well, isn't this something!\n"
-	.string "But it's no LOTAD!$"
+	.string "But it's no FLORGES!$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigLotad:
-	.string "Don't you have a big LOTAD?\n"
+SootopolisCity_LotadAndSeedotHouse_Text_DontHaveBigFlorges:
+	.string "Don't you have a big FLORGES?\n"
 	.string "How disappointing…\p"
-	.string "If you get a big LOTAD, please\n"
+	.string "If you get a big FLORGES, please\n"
 	.string "come show me!$"
 
-SootopolisCity_LotadAndSeedotHouse_Text_BiggestLotadInHistory:
-	.string "The biggest LOTAD in history!\n"
+SootopolisCity_LotadAndSeedotHouse_Text_BiggestFlorgesInHistory:
+	.string "The biggest FLORGES in history!\n"
 	.string "{STR_VAR_2}'s {STR_VAR_3}-{STR_VAR_1} colossus!\p"
-	.string "A LOTAD bigger than a SEEDOT\n"
+	.string "A FLORGES bigger than a SEEDOT\n"
 	.string "always wanted!$"

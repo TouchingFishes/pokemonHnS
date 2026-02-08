@@ -216,8 +216,8 @@ static const u16 sIsValidSpecies[] =
     SPECIES_MUDKIP,
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
-    SPECIES_WURMPLE,
-    SPECIES_LOTAD,
+    SPECIES_IMPIDIMP,
+    SPECIES_FLORGES,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -318,8 +318,8 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_MUDKIP,
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
-    SPECIES_WURMPLE,
-    SPECIES_LOTAD,
+    SPECIES_IMPIDIMP,
+    SPECIES_FLORGES,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -658,11 +658,11 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                     targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_SILCOON:
+        case EVO_LEVEL_MORGREM:
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
-        case EVO_LEVEL_CASCOON:
+        case EVO_LEVEL_FLABEBE:
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
@@ -981,11 +981,11 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                     targetSpecies = gEvolutionTable[species][i].targetSpecies;
             }
             break;
-        case EVO_LEVEL_SILCOON:
+        case EVO_LEVEL_MORGREM:
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
-        case EVO_LEVEL_CASCOON:
+        case EVO_LEVEL_FLABEBE:
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
