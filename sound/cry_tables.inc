@@ -279,8 +279,8 @@ gCryTable::
 	cry Cry_Mudkip
 	cry Cry_Marshtomp
 	cry Cry_Swampert
-	cry Cry_Pelipper
-	cry Cry_Wingull
+	cry Cry_Braviary
+	cry Cry_Rufflet
 	cry Cry_Banette
 	cry Cry_Shuppet
 	cry Cry_Florges
@@ -714,8 +714,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mudkip
 	cry_reverse Cry_Marshtomp
 	cry_reverse Cry_Swampert
-	cry_reverse Cry_Pelipper
-	cry_reverse Cry_Wingull
+	cry_reverse Cry_Braviary
+	cry_reverse Cry_Rufflet
 	cry_reverse Cry_Banette
 	cry_reverse Cry_Shuppet
 	cry_reverse Cry_Florges

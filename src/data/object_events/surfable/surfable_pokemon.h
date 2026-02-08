@@ -311,11 +311,11 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_WINGULL,
+        .species = SPECIES_RUFFLET,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_PELIPPER,
+        .species = SPECIES_BRAVIARY,
         .trainerPose = 0,
     },
     {

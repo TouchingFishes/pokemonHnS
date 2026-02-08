@@ -8695,7 +8695,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = TRUE,
     },
 
-    [SPECIES_WINGULL] =
+    [SPECIES_RUFFLET] =
     {
         .baseHP        = 40,
         .baseAttack    = 30,
@@ -8725,7 +8725,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_PELIPPER] = //modified
+    [SPECIES_BRAVIARY] = //modified
     {
         .baseHP        = 60,
         .baseAttack    = 50,

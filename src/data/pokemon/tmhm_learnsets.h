@@ -7438,7 +7438,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_WINGULL] = { .learnset = {
+    [SPECIES_RUFFLET] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -7462,7 +7462,7 @@ const union {
         .SURF = TRUE,
     } },
 
-    [SPECIES_PELIPPER] = { .learnset = {
+    [SPECIES_BRAVIARY] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,

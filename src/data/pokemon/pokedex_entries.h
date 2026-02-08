@@ -3336,24 +3336,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WINGULL] =
+    [NATIONAL_DEX_RUFFLET] =
     {
         .categoryName = _("SEAGULL"),
         .height = 6,
         .weight = 95,
-        .description = gWingullPokedexText,
+        .description = gRuffletPokedexText,
         .pokemonScale = 295,
         .pokemonOffset = -2,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_PELIPPER] =
+    [NATIONAL_DEX_BRAVIARY] =
     {
         .categoryName = _("WATER BIRD"),
         .height = 12,
         .weight = 280,
-        .description = gPelipperPokedexText,
+        .description = gBraviaryPokedexText,
         .pokemonScale = 288,
         .pokemonOffset = 1,
         .trainerScale = 256,

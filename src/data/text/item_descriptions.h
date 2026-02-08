@@ -495,7 +495,7 @@ static const u8 sOrangeMailDesc[] = _(
     "a POKéMON.");
 
 static const u8 sHarborMailDesc[] = _(
-    "A WINGULL-print\n"
+    "A RUFFLET-print\n"
     "MAIL to be held by\n"
     "a POKéMON.");
 

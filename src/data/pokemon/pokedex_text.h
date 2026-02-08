@@ -1666,13 +1666,13 @@ const u8 gVoltreanPokedexText[] = _(
     "the skies in search of lands with a warm\n"
     "climate.");
 
-const u8 gWingullPokedexText[] = _(
+const u8 gRuffletPokedexText[] = _(
     "It makes its nest on a sheer cliff at the\n"
     "edge of the sea. It has trouble keeping\n"
     "its wings flapping in flight. Instead, it\n"
     "soars on updrafts.");
 
-const u8 gPelipperPokedexText[] = _(
+const u8 gBraviaryPokedexText[] = _(
     "It skims the tops of waves as it flies.\n"
     "When it spots prey, it uses its large beak\n"
     "to scoop up the victim with water.\n"

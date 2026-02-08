@@ -110,7 +110,7 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                     [1] = DUMMY_HILL_MON,
                     [2] = DUMMY_HILL_MON,
                     [3] = {
-                        .species = SPECIES_WINGULL,
+                        .species = SPECIES_RUFFLET,
                         .heldItem = ITEM_CHERI_BERRY,
                         .moves = { MOVE_WATER_GUN, MOVE_WING_ATTACK, MOVE_GROWL, MOVE_SUPERSONIC },
                         .hpEV = 110,
@@ -2727,7 +2727,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                         [4] =
                                         {
-                                            .species = SPECIES_PELIPPER,
+                                            .species = SPECIES_BRAVIARY,
                                             .heldItem = ITEM_MYSTIC_TICKET,
                                             .moves = {MOVE_RAIN_DANCE, MOVE_SURF, MOVE_ICE_BEAM, MOVE_PROTECT},
                                             .hpEV = 252,
@@ -2742,7 +2742,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 20,
                                             .abilityNum = 0,
                                             .personality = 0x14,
-                                            .nickname = _("PELIPPER"),
+                                            .nickname = _("BRAVIARY"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                         [5] =
@@ -3503,7 +3503,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_PELIPPER,
+                                            .species = SPECIES_BRAVIARY,
                                             .heldItem = ITEM_MYSTIC_WATER,
                                             .moves = {MOVE_SURF, MOVE_AERIAL_ACE, MOVE_PROTECT, MOVE_STOCKPILE},
                                             .hpEV = 252,
@@ -3518,7 +3518,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 0,
                                             .personality = 0x8A,
-                                            .nickname = _("PELIPPER"),
+                                            .nickname = _("BRAVIARY"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

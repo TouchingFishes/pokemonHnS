@@ -5097,7 +5097,7 @@ static const u16 sSpindaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_THRASH),
     LEVEL_UP_END};
 
-static const u16 sWingullLevelUpLearnset[] = {
+static const u16 sRuffletLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(7, MOVE_SUPERSONIC),
@@ -5111,7 +5111,7 @@ static const u16 sWingullLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_AGILITY),
     LEVEL_UP_END};
 
-static const u16 sPelipperLevelUpLearnset[] = {
+static const u16 sBraviaryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(1, MOVE_WATER_GUN),
     LEVEL_UP_MOVE(1, MOVE_QUICK_ATTACK),

@@ -1,4 +1,4 @@
-.set LOCALID_WINGULL, 3
+.set LOCALID_RUFFLET, 3
 
 FortreeCity_House4_MapScripts::
 	.byte 0
@@ -10,29 +10,29 @@ FortreeCity_House4_EventScript_Woman::
 FortreeCity_House4_EventScript_Boy::
 	lockall
 	goto_if_set FLAG_RECEIVED_MENTAL_HERB, FortreeCity_House4_EventScript_ReceivedMentalHerb
-	goto_if_set FLAG_WINGULL_DELIVERED_MAIL, FortreeCity_House4_EventScript_WingullReturned
-	goto_if_set FLAG_WINGULL_SENT_ON_ERRAND, FortreeCity_House4_EventScript_WingullOnErrand
+	goto_if_set FLAG_RUFFLET_DELIVERED_MAIL, FortreeCity_House4_EventScript_RuffletReturned
+	goto_if_set FLAG_RUFFLET_SENT_ON_ERRAND, FortreeCity_House4_EventScript_RuffletOnErrand
 	msgbox FortreeCity_House4_Text_GoBirdPokemon, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_WINGULL_SENT_ON_ERRAND
+	setflag FLAG_RUFFLET_SENT_ON_ERRAND
 	clearflag FLAG_GARBAGEFLAG
-	applymovement LOCALID_WINGULL, FortreeCity_House4_Movement_WingullExit
+	applymovement LOCALID_RUFFLET, FortreeCity_House4_Movement_RuffletExit
 	waitmovement 0
-	removeobject LOCALID_WINGULL
+	removeobject LOCALID_RUFFLET
 	releaseall
 	end
 
-FortreeCity_House4_EventScript_WingullOnErrand::
+FortreeCity_House4_EventScript_RuffletOnErrand::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox FortreeCity_House4_Text_AskedWingullToRunErrand, MSGBOX_DEFAULT
+	msgbox FortreeCity_House4_Text_AskedRuffletToRunErrand, MSGBOX_DEFAULT
 	releaseall
 	end
 
-FortreeCity_House4_EventScript_WingullReturned::
+FortreeCity_House4_EventScript_RuffletReturned::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb, MSGBOX_DEFAULT
+	msgbox FortreeCity_House4_Text_WelcomeRuffletTakeMentalHerb, MSGBOX_DEFAULT
 	giveitem ITEM_MENTAL_HERB
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_MENTAL_HERB
@@ -42,11 +42,11 @@ FortreeCity_House4_EventScript_WingullReturned::
 FortreeCity_House4_EventScript_ReceivedMentalHerb::
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToWingull, MSGBOX_DEFAULT
+	msgbox FortreeCity_House4_Text_FriendsFarAwayThanksToRufflet, MSGBOX_DEFAULT
 	releaseall
 	end
 
-FortreeCity_House4_Movement_WingullExit:
+FortreeCity_House4_Movement_RuffletExit:
 	walk_fast_down
 	walk_fast_down
 	walk_fast_right
@@ -54,12 +54,12 @@ FortreeCity_House4_Movement_WingullExit:
 	delay_8
 	step_end
 
-FortreeCity_House4_EventScript_Wingull::
+FortreeCity_House4_EventScript_Rufflet::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_WINGULL, CRY_MODE_NORMAL
-	msgbox FortreeCity_House4_Text_Wingull, MSGBOX_DEFAULT
+	playmoncry SPECIES_RUFFLET, CRY_MODE_NORMAL
+	msgbox FortreeCity_House4_Text_Rufflet, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -74,13 +74,13 @@ FortreeCity_House4_Text_GoBirdPokemon:
 	.string "There!\n"
 	.string "Go, BIRD POKéMON!$"
 
-FortreeCity_House4_Text_AskedWingullToRunErrand:
-	.string "Heheh, I asked my WINGULL to run\n"
+FortreeCity_House4_Text_AskedRuffletToRunErrand:
+	.string "Heheh, I asked my RUFFLET to run\n"
 	.string "an errand for me.$"
 
-FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
+FortreeCity_House4_Text_WelcomeRuffletTakeMentalHerb:
 	.string "Good!\n"
-	.string "Welcome back, WINGULL!\p"
+	.string "Welcome back, RUFFLET!\p"
 	.string "Huh? What is this?\n"
 	.string "What is it holding?\p"
 	.string "A MENTAL HERB?\n"
@@ -88,10 +88,10 @@ FortreeCity_House4_Text_WelcomeWingullTakeMentalHerb:
 	.string "But I'm not a TRAINER, so you can\n"
 	.string "have it.$"
 
-FortreeCity_House4_Text_FriendsFarAwayThanksToWingull:
-	.string "Thanks to my WINGULL, I have friends\n"
+FortreeCity_House4_Text_FriendsFarAwayThanksToRufflet:
+	.string "Thanks to my RUFFLET, I have friends\n"
 	.string "who live far away.$"
 
-FortreeCity_House4_Text_Wingull:
-	.string "WINGULL: Pihyoh!$"
+FortreeCity_House4_Text_Rufflet:
+	.string "RUFFLET: Pihyoh!$"
 

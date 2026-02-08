@@ -4253,7 +4253,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_THUNDER_PUNCH)
                                 | TUTOR(MOVE_FIRE_PUNCH)),
 
-    [SPECIES_WINGULL]          = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_RUFFLET]          = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
@@ -4264,7 +4264,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)),
 
-    [SPECIES_PELIPPER]         = (TUTOR(MOVE_DOUBLE_EDGE)
+    [SPECIES_BRAVIARY]         = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)

@@ -1983,19 +1983,19 @@ const u32 gMonShinyPalette_Spinda[] = INCBIN_U32("graphics/pokemon/spinda/shiny.
 const u8 gMonIcon_Spinda[] = INCBIN_U8("graphics/pokemon/spinda/icon.4bpp");
 const u8 gMonFootprint_Spinda[] = INCBIN_U8("graphics/pokemon/spinda/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/front.4bpp.lz");
-const u32 gMonPalette_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/normal.gbapal.lz");
-const u32 gMonBackPic_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/back.4bpp.lz");
-const u32 gMonShinyPalette_Wingull[] = INCBIN_U32("graphics/pokemon/wingull/shiny.gbapal.lz");
-const u8 gMonIcon_Wingull[] = INCBIN_U8("graphics/pokemon/wingull/icon.4bpp");
-const u8 gMonFootprint_Wingull[] = INCBIN_U8("graphics/pokemon/wingull/footprint.1bpp");
+const u32 gMonStillFrontPic_Rufflet[] = INCBIN_U32("graphics/pokemon/rufflet/front.4bpp.lz");
+const u32 gMonPalette_Rufflet[] = INCBIN_U32("graphics/pokemon/rufflet/normal.gbapal.lz");
+const u32 gMonBackPic_Rufflet[] = INCBIN_U32("graphics/pokemon/rufflet/back.4bpp.lz");
+const u32 gMonShinyPalette_Rufflet[] = INCBIN_U32("graphics/pokemon/rufflet/shiny.gbapal.lz");
+const u8 gMonIcon_Rufflet[] = INCBIN_U8("graphics/pokemon/rufflet/icon.4bpp");
+const u8 gMonFootprint_Rufflet[] = INCBIN_U8("graphics/pokemon/rufflet/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/front.4bpp.lz");
-const u32 gMonPalette_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/normal.gbapal.lz");
-const u32 gMonBackPic_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/back.4bpp.lz");
-const u32 gMonShinyPalette_Pelipper[] = INCBIN_U32("graphics/pokemon/pelipper/shiny.gbapal.lz");
-const u8 gMonIcon_Pelipper[] = INCBIN_U8("graphics/pokemon/pelipper/icon.4bpp");
-const u8 gMonFootprint_Pelipper[] = INCBIN_U8("graphics/pokemon/pelipper/footprint.1bpp");
+const u32 gMonStillFrontPic_Braviary[] = INCBIN_U32("graphics/pokemon/braviary/front.4bpp.lz");
+const u32 gMonPalette_Braviary[] = INCBIN_U32("graphics/pokemon/braviary/normal.gbapal.lz");
+const u32 gMonBackPic_Braviary[] = INCBIN_U32("graphics/pokemon/braviary/back.4bpp.lz");
+const u32 gMonShinyPalette_Braviary[] = INCBIN_U32("graphics/pokemon/braviary/shiny.gbapal.lz");
+const u8 gMonIcon_Braviary[] = INCBIN_U8("graphics/pokemon/braviary/icon.4bpp");
+const u8 gMonFootprint_Braviary[] = INCBIN_U8("graphics/pokemon/braviary/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/front.4bpp.lz");
 const u32 gMonPalette_Surskit[] = INCBIN_U32("graphics/pokemon/surskit/normal.gbapal.lz");

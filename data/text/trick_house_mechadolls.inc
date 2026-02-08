@@ -13,8 +13,8 @@ gTrickHouse_Mechadoll_Solosis::
 gTrickHouse_Mechadoll_Florges::
 	.string "FLORGES$"
 
-gTrickHouse_Mechadoll_Wingull::
-	.string "WINGULL$"
+gTrickHouse_Mechadoll_Rufflet::
+	.string "RUFFLET$"
 
 gTrickHouse_Mechadoll_Floette::
 	.string "FLOETTE$"

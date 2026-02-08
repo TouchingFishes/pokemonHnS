@@ -469,7 +469,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/omastar.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/onix.aif sound/direct_sound_samples/cries/onix.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/paras.aif sound/direct_sound_samples/cries/paras.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/parasect.aif sound/direct_sound_samples/cries/parasect.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pelipper.aif sound/direct_sound_samples/cries/pelipper.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/braviary.aif sound/direct_sound_samples/cries/braviary.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/persian.aif sound/direct_sound_samples/cries/persian.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/phanpy.aif sound/direct_sound_samples/cries/phanpy.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pichu.aif sound/direct_sound_samples/cries/pichu.bin --compress
@@ -623,7 +623,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/weezing.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/whiscash.aif sound/direct_sound_samples/cries/whiscash.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/axew.aif sound/direct_sound_samples/cries/axew.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wigglytuff.aif sound/direct_sound_samples/cries/wigglytuff.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wingull.aif sound/direct_sound_samples/cries/wingull.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/rufflet.aif sound/direct_sound_samples/cries/rufflet.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wobbuffet.aif sound/direct_sound_samples/cries/wobbuffet.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wooper.aif sound/direct_sound_samples/cries/wooper.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/impidimp.aif sound/direct_sound_samples/cries/impidimp.bin --compress

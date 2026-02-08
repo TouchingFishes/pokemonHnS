@@ -1503,12 +1503,12 @@ Cry_Swampert::
 	.incbin "sound/direct_sound_samples/cries/swampert.bin"
 
 	.align 2
-Cry_Pelipper::
-	.incbin "sound/direct_sound_samples/cries/pelipper.bin"
+Cry_Braviary::
+	.incbin "sound/direct_sound_samples/cries/braviary.bin"
 
 	.align 2
-Cry_Wingull::
-	.incbin "sound/direct_sound_samples/cries/wingull.bin"
+Cry_Rufflet::
+	.incbin "sound/direct_sound_samples/cries/rufflet.bin"
 
 	.align 2
 Cry_Banette::

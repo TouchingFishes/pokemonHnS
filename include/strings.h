@@ -1258,7 +1258,7 @@ extern const u8 gTrickHouse_Mechadoll_Poochyena[];
 extern const u8 gTrickHouse_Mechadoll_Voltrel[];
 extern const u8 gTrickHouse_Mechadoll_Solosis[];
 extern const u8 gTrickHouse_Mechadoll_Florges[];
-extern const u8 gTrickHouse_Mechadoll_Wingull[];
+extern const u8 gTrickHouse_Mechadoll_Rufflet[];
 extern const u8 gTrickHouse_Mechadoll_Floette[];
 extern const u8 gTrickHouse_Mechadoll_Zubat[];
 extern const u8 gTrickHouse_Mechadoll_Nincada[];

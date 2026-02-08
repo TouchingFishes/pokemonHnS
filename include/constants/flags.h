@@ -246,9 +246,9 @@
 #define FLAG_NEVER_SET_0x0DC                 0xDC // This flag is read, but never written to
 
 #define FLAG_RECEIVED_GO_GOGGLES             0xDD
-#define FLAG_WINGULL_SENT_ON_ERRAND          0xDE
+#define FLAG_RUFFLET_SENT_ON_ERRAND          0xDE
 #define FLAG_RECEIVED_MENTAL_HERB            0xDF
-#define FLAG_WINGULL_DELIVERED_MAIL          0xE0
+#define FLAG_RUFFLET_DELIVERED_MAIL          0xE0
 #define FLAG_RECEIVED_20_COINS               0xE1
 #define FLAG_RECEIVED_STARTER_DOLL           0xE2
 #define FLAG_RECEIVED_GOOD_ROD               0xE3

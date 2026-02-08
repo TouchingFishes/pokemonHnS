@@ -590,7 +590,7 @@ $(OBJEVENTGFXDIR)/pokemon/sudowoodo_tree.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/vigoroth_mover.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/wingull_old.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/slowpoke_no_tail.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/zigzagoon_old.4bpp: %.4bpp: %.png
@@ -1735,10 +1735,10 @@ $(OBJEVENTGFXDIR)/pokemon/voltrel.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/voltrean.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/wingull.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/rufflet.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/pelipper.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/braviary.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/ralts.4bpp: %.4bpp: %.png
@@ -2461,10 +2461,10 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0271_lombre.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0272_ludicolo.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0278_wingull.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0278_rufflet.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0279_pelipper.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0279_braviary.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0283_surskit.4bpp: %.4bpp: %.png
@@ -2793,10 +2793,10 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0271_lombre_shiny.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0272_ludicolo_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0278_wingull_shiny.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0278_rufflet_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0279_pelipper_shiny.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0279_braviary_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0283_surskit_shiny.4bpp: %.4bpp: %.png

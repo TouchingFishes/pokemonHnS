@@ -3309,7 +3309,7 @@ static const union AnimCmd sAnim_Breloom_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wingull_1[] =
+static const union AnimCmd sAnim_Rufflet_1[] =
 {
     ANIMCMD_FRAME(0, 17),
     ANIMCMD_FRAME(1, 23),
@@ -3317,7 +3317,7 @@ static const union AnimCmd sAnim_Wingull_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pelipper_1[] =
+static const union AnimCmd sAnim_Braviary_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5580,8 +5580,8 @@ SINGLE_ANIMATION(Breloom);
 static const union AnimCmd *const sAnims_Spinda[] ={
     sAnim_GeneralFrame0,
 };
-SINGLE_ANIMATION(Wingull);
-SINGLE_ANIMATION(Pelipper);
+SINGLE_ANIMATION(Rufflet);
+SINGLE_ANIMATION(Braviary);
 DOUBLE_ANIMATION(Surskit);
 DOUBLE_ANIMATION(Masquerain);
 SINGLE_ANIMATION(Wailmer);
@@ -6072,8 +6072,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_SHROOMISH]   = sAnims_Shroomish,
     [SPECIES_BRELOOM]     = sAnims_Breloom,
     [SPECIES_SPINDA]      = sAnims_Spinda,
-    [SPECIES_WINGULL]     = sAnims_Wingull,
-    [SPECIES_PELIPPER]    = sAnims_Pelipper,
+    [SPECIES_RUFFLET]     = sAnims_Rufflet,
+    [SPECIES_BRAVIARY]    = sAnims_Braviary,
     [SPECIES_SURSKIT]     = sAnims_Surskit,
     [SPECIES_MASQUERAIN]  = sAnims_Masquerain,
     [SPECIES_WAILMER]     = sAnims_Wailmer,
