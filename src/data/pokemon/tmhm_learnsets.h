@@ -8272,7 +8272,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_SPHEAL] = { .learnset = {
+    [SPECIES_TYNAMO] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -8298,7 +8298,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_SEALEO] = { .learnset = {
+    [SPECIES_EELEKTRIK] = { .learnset = {
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -8325,7 +8325,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_WALREIN] = { .learnset = {
+    [SPECIES_EELEKTROSS] = { .learnset = {
         .WATER_PULSE = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,

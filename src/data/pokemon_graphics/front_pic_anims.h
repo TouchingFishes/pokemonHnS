@@ -3688,7 +3688,7 @@ static const union AnimCmd sAnim_Camerupt_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Spheal_1[] =
+static const union AnimCmd sAnim_Tynamo_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 43),
@@ -3701,7 +3701,7 @@ static const union AnimCmd sAnim_Spheal_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sealeo_1[] =
+static const union AnimCmd sAnim_Eelektrik_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -3711,7 +3711,7 @@ static const union AnimCmd sAnim_Sealeo_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Walrein_1[] =
+static const union AnimCmd sAnim_Eelektross_1[] =
 {
     ANIMCMD_FRAME(0, 2),
     ANIMCMD_FRAME(1, 10),
@@ -5612,9 +5612,9 @@ SINGLE_ANIMATION(Electrike);
 SINGLE_ANIMATION(Manectric);
 SINGLE_ANIMATION(Numel);
 SINGLE_ANIMATION(Camerupt);
-SINGLE_ANIMATION(Spheal);
-SINGLE_ANIMATION(Sealeo);
-SINGLE_ANIMATION(Walrein);
+SINGLE_ANIMATION(Tynamo);
+SINGLE_ANIMATION(Eelektrik);
+SINGLE_ANIMATION(Eelektross);
 SINGLE_ANIMATION(Pawniard);
 SINGLE_ANIMATION(Bisharp);
 SINGLE_ANIMATION(Snorunt);
@@ -6104,9 +6104,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MANECTRIC]   = sAnims_Manectric,
     [SPECIES_NUMEL]       = sAnims_Numel,
     [SPECIES_CAMERUPT]    = sAnims_Camerupt,
-    [SPECIES_SPHEAL]      = sAnims_Spheal,
-    [SPECIES_SEALEO]      = sAnims_Sealeo,
-    [SPECIES_WALREIN]     = sAnims_Walrein,
+    [SPECIES_TYNAMO]      = sAnims_Tynamo,
+    [SPECIES_EELEKTRIK]      = sAnims_Eelektrik,
+    [SPECIES_EELEKTROSS]     = sAnims_Eelektross,
     [SPECIES_PAWNIARD]      = sAnims_Pawniard,
     [SPECIES_BISHARP]    = sAnims_Bisharp,
     [SPECIES_SNORUNT]     = sAnims_Snorunt,

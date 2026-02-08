@@ -4531,7 +4531,7 @@ static const u16 sCameruptLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sSphealLevelUpLearnset_Original[] = {
+static const u16 sTynamoLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -4547,7 +4547,7 @@ static const u16 sSphealLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sSealeoLevelUpLearnset_Original[] = {
+static const u16 sEelektrikLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),
@@ -4564,7 +4564,7 @@ static const u16 sSealeoLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sWalreinLevelUpLearnset_Original[] = {
+static const u16 sEelektrossLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_POWDER_SNOW),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_WATER_GUN),

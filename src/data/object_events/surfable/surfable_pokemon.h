@@ -391,15 +391,15 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_SPHEAL,
+        .species = SPECIES_TYNAMO,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_SEALEO,
+        .species = SPECIES_EELEKTRIK,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_WALREIN,
+        .species = SPECIES_EELEKTROSS,
         .trainerPose = 0,
     },
     {

@@ -4356,36 +4356,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SPHEAL] =
+    [NATIONAL_DEX_TYNAMO] =
     {
         .categoryName = _("CLAP"),
         .height = 8,
         .weight = 395,
-        .description = gSphealPokedexText,
+        .description = gTynamoPokedexText,
         .pokemonScale = 315,
         .pokemonOffset = 16,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SEALEO] =
+    [NATIONAL_DEX_EELEKTRIK] =
     {
         .categoryName = _("BALL ROLL"),
         .height = 11,
         .weight = 876,
-        .description = gSealeoPokedexText,
+        .description = gEelektrikPokedexText,
         .pokemonScale = 338,
         .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WALREIN] =
+    [NATIONAL_DEX_EELEKTROSS] =
     {
         .categoryName = _("ICE BREAK"),
         .height = 14,
         .weight = 1506,
-        .description = gWalreinPokedexText,
+        .description = gEelektrossPokedexText,
         .pokemonScale = 316,
         .pokemonOffset = 4,
         .trainerScale = 256,

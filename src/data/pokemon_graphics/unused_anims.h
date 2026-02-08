@@ -565,19 +565,19 @@ static const union AnimCmd sUnusedAnim_Camerupt_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Spheal_1[] =
+static const union AnimCmd sUnusedAnim_Tynamo_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Sealeo_1[] =
+static const union AnimCmd sUnusedAnim_Eelektrik_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Walrein_1[] =
+static const union AnimCmd sUnusedAnim_Eelektross_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 18),
@@ -588,7 +588,7 @@ static const union AnimCmd sUnusedAnim_Walrein_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Walrein_2[] =
+static const union AnimCmd sUnusedAnim_Eelektross_2[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(2, 18),
@@ -1280,9 +1280,9 @@ static const union AnimCmd *const sUnusedAnims_Electrike[] = {sAnim_GeneralFrame
 static const union AnimCmd *const sUnusedAnims_Manectric[] = {sAnim_GeneralFrame0, sUnusedAnim_Manectric_1};
 static const union AnimCmd *const sUnusedAnims_Numel[] = {sAnim_GeneralFrame0, sUnusedAnim_Numel_1, sUnusedAnim_Numel_2};
 static const union AnimCmd *const sUnusedAnims_Camerupt[] = {sAnim_GeneralFrame0, sUnusedAnim_Camerupt_1};
-static const union AnimCmd *const sUnusedAnims_Spheal[] = {sAnim_GeneralFrame0, sUnusedAnim_Spheal_1};
-static const union AnimCmd *const sUnusedAnims_Sealeo[] = {sAnim_GeneralFrame0, sUnusedAnim_Sealeo_1};
-static const union AnimCmd *const sUnusedAnims_Walrein[] = {sAnim_GeneralFrame0, sUnusedAnim_Walrein_1, sUnusedAnim_Walrein_2};
+static const union AnimCmd *const sUnusedAnims_Tynamo[] = {sAnim_GeneralFrame0, sUnusedAnim_Tynamo_1};
+static const union AnimCmd *const sUnusedAnims_Eelektrik[] = {sAnim_GeneralFrame0, sUnusedAnim_Eelektrik_1};
+static const union AnimCmd *const sUnusedAnims_Eelektross[] = {sAnim_GeneralFrame0, sUnusedAnim_Eelektross_1, sUnusedAnim_Eelektross_2};
 static const union AnimCmd *const sUnusedAnims_Pawniard[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Bisharp[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Snorunt[] = {sAnim_GeneralFrame0};
@@ -1722,9 +1722,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_MANECTRIC] = sUnusedAnims_Manectric,
     [SPECIES_NUMEL] = sUnusedAnims_Numel,
     [SPECIES_CAMERUPT] = sUnusedAnims_Camerupt,
-    [SPECIES_SPHEAL] = sUnusedAnims_Spheal,
-    [SPECIES_SEALEO] = sUnusedAnims_Sealeo,
-    [SPECIES_WALREIN] = sUnusedAnims_Walrein,
+    [SPECIES_TYNAMO] = sUnusedAnims_Tynamo,
+    [SPECIES_EELEKTRIK] = sUnusedAnims_Eelektrik,
+    [SPECIES_EELEKTROSS] = sUnusedAnims_Eelektross,
     [SPECIES_PAWNIARD] = sUnusedAnims_Pawniard,
     [SPECIES_BISHARP] = sUnusedAnims_Bisharp,
     [SPECIES_SNORUNT] = sUnusedAnims_Snorunt,

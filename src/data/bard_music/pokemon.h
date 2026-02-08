@@ -2732,7 +2732,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_SPHEAL] = {
+    [SPECIES_TYNAMO] = {
         { .songLengthId = 14 },
         { .songLengthId = 51 },
         { .songLengthId = 51 },
@@ -2740,7 +2740,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_SEALEO] = {
+    [SPECIES_EELEKTRIK] = {
         { .songLengthId = 12 },
         { .songLengthId = 12 },
         { .songLengthId = 24 },
@@ -2748,7 +2748,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_WALREIN] = {
+    [SPECIES_EELEKTROSS] = {
         { .songLengthId = 27 },
         { .songLengthId =  3 },
         { .songLengthId = 51 },

@@ -338,9 +338,9 @@ gCryTable::
 	cry Cry_Absol
 	cry Cry_Meditite
 	cry Cry_Medicham
-	cry Cry_Spheal
-	cry Cry_Sealeo
-	cry Cry_Walrein
+	cry Cry_Tynamo
+	cry Cry_Eelektrik
+	cry Cry_Eelektross
 	cry Cry_Clamperl
 	cry Cry_Huntail
 	cry Cry_Gorebyss
@@ -773,9 +773,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Absol
 	cry_reverse Cry_Meditite
 	cry_reverse Cry_Medicham
-	cry_reverse Cry_Spheal
-	cry_reverse Cry_Sealeo
-	cry_reverse Cry_Walrein
+	cry_reverse Cry_Tynamo
+	cry_reverse Cry_Eelektrik
+	cry_reverse Cry_Eelektross
 	cry_reverse Cry_Clamperl
 	cry_reverse Cry_Huntail
 	cry_reverse Cry_Gorebyss

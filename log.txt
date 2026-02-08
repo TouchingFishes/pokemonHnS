@@ -526,7 +526,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/scizor.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/scyther.aif sound/direct_sound_samples/cries/scyther.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seadra.aif sound/direct_sound_samples/cries/seadra.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seaking.aif sound/direct_sound_samples/cries/seaking.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sealeo.aif sound/direct_sound_samples/cries/sealeo.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/eelektrik.aif sound/direct_sound_samples/cries/eelektrik.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seedot.aif sound/direct_sound_samples/cries/seedot.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seel.aif sound/direct_sound_samples/cries/seel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sentret.aif sound/direct_sound_samples/cries/sentret.bin --compress
@@ -557,7 +557,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/snorunt.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/snubbull.aif sound/direct_sound_samples/cries/snubbull.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/solrock.aif sound/direct_sound_samples/cries/solrock.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/spearow.aif sound/direct_sound_samples/cries/spearow.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/spheal.aif sound/direct_sound_samples/cries/spheal.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tynamo.aif sound/direct_sound_samples/cries/tynamo.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/spinarak.aif sound/direct_sound_samples/cries/spinarak.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/spinda.aif sound/direct_sound_samples/cries/spinda.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/duosion.aif sound/direct_sound_samples/cries/duosion.bin --compress
@@ -614,7 +614,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltorb.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vulpix.aif sound/direct_sound_samples/cries/vulpix.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wailmer.aif sound/direct_sound_samples/cries/wailmer.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wailord.aif sound/direct_sound_samples/cries/wailord.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/walrein.aif sound/direct_sound_samples/cries/walrein.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/eelektross.aif sound/direct_sound_samples/cries/eelektross.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wartortle.aif sound/direct_sound_samples/cries/wartortle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/weavile.aif sound/direct_sound_samples/cries/weavile.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/weedle.aif sound/direct_sound_samples/cries/weedle.bin --compress

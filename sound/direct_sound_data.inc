@@ -1739,16 +1739,16 @@ Cry_Medicham::
 	.incbin "sound/direct_sound_samples/cries/medicham.bin"
 
 	.align 2
-Cry_Spheal::
-	.incbin "sound/direct_sound_samples/cries/spheal.bin"
+Cry_Tynamo::
+	.incbin "sound/direct_sound_samples/cries/tynamo.bin"
 
 	.align 2
-Cry_Sealeo::
-	.incbin "sound/direct_sound_samples/cries/sealeo.bin"
+Cry_Eelektrik::
+	.incbin "sound/direct_sound_samples/cries/eelektrik.bin"
 
 	.align 2
-Cry_Walrein::
-	.incbin "sound/direct_sound_samples/cries/walrein.bin"
+Cry_Eelektross::
+	.incbin "sound/direct_sound_samples/cries/eelektross.bin"
 
 	.align 2
 Cry_Clamperl::

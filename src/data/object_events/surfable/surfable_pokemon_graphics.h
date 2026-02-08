@@ -481,21 +481,6 @@ const u32 gSurfableShinyPokemonPic_Milotic[] = INCBIN_U32("graphics/object_event
 const u16 gSurfablePokemonPalette_Milotic[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0350_milotic.gbapal");
 const u16 gSurfablePokemonShinyPalette_Milotic[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0350_milotic_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Spheal[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0363_spheal.4bpp");
-const u32 gSurfableShinyPokemonPic_Spheal[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0363_spheal_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Spheal[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0363_spheal.gbapal");
-const u16 gSurfablePokemonShinyPalette_Spheal[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0363_spheal_shiny.gbapal");
-
-const u32 gSurfablePokemonPic_Sealeo[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0364_sealeo.4bpp");
-const u32 gSurfableShinyPokemonPic_Sealeo[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0364_sealeo_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Sealeo[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0364_sealeo.gbapal");
-const u16 gSurfablePokemonShinyPalette_Sealeo[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0364_sealeo_shiny.gbapal");
-
-const u32 gSurfablePokemonPic_Walrein[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0365_walrein.4bpp");
-const u32 gSurfableShinyPokemonPic_Walrein[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0365_walrein_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Walrein[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0365_walrein.gbapal");
-const u16 gSurfablePokemonShinyPalette_Walrein[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0365_walrein_shiny.gbapal");
-
 const u32 gSurfablePokemonPic_Clamperl[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0366_clamperl.4bpp");
 const u32 gSurfableShinyPokemonPic_Clamperl[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0366_clamperl_shiny.4bpp");
 const u16 gSurfablePokemonPalette_Clamperl[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0366_clamperl.gbapal");

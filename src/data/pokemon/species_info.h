@@ -9670,7 +9670,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SPHEAL] =
+    [SPECIES_TYNAMO] =
     {
         .baseHP        = 70,
         .baseAttack    = 40,
@@ -9700,7 +9700,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SEALEO] =
+    [SPECIES_EELEKTRIK] =
     {
         .baseHP        = 90,
         .baseAttack    = 60,
@@ -9730,7 +9730,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_WALREIN] =
+    [SPECIES_EELEKTROSS] =
     {
         .baseHP        = 110,
         .baseAttack    = 80,

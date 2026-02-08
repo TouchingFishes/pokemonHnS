@@ -2176,19 +2176,19 @@ const u8 gGlaliePokedexText[] = _(
     "A dazzling cloud of diamondlike ice\n"
     "crystals forms around its body.");
 
-const u8 gSphealPokedexText[] = _(
+const u8 gTynamoPokedexText[] = _(
     "It is completely covered with plushy fur.\n"
     "As a result, it never feels the cold even\n"
     "when it is rolling about on ice floes or\n"
     "diving in the sea.");
 
-const u8 gSealeoPokedexText[] = _(
-    "SEALEO live in herds on ice floes. Using its\n"
+const u8 gEelektrikPokedexText[] = _(
+    "EELEKTRIK live in herds on ice floes. Using its\n"
     "powerful flippers, it shatters ice.\n"
     "It dives into the sea to hunt prey five\n"
     "times a day.");
 
-const u8 gWalreinPokedexText[] = _(
+const u8 gEelektrossPokedexText[] = _(
     "To protect its herd, the leader battles\n"
     "anything that invades its territory, even\n"
     "at the cost of its life. Its tusks may snap\n"

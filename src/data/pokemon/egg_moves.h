@@ -1430,7 +1430,7 @@ const u16 gEggMoves[] = {
               MOVE_DEFENSE_CURL,
               MOVE_STOMP),
 
-    egg_moves(SPHEAL,
+    egg_moves(TYNAMO,
               MOVE_WATER_SPORT,
               MOVE_SIGNAL_BEAM,
               MOVE_STOCKPILE,
@@ -2831,7 +2831,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_DEFENSE_CURL,
               MOVE_STOMP),
 
-    egg_moves(SPHEAL,
+    egg_moves(TYNAMO,
               MOVE_WATER_SPORT,
               MOVE_STOCKPILE,
               MOVE_SWALLOW,
