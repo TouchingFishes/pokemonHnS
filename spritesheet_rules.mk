@@ -1810,7 +1810,7 @@ $(OBJEVENTGFXDIR)/pokemon/delcatty.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/mimikyu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/mawile.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/talonflame.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/aron.4bpp: %.4bpp: %.png
@@ -1834,10 +1834,10 @@ $(OBJEVENTGFXDIR)/pokemon/electrike.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/manectric.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/plusle.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/fletchling.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/minun.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/fletchadin.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/krolucada.4bpp: %.4bpp: %.png

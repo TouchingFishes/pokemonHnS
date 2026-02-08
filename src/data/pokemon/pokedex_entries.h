@@ -3636,12 +3636,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_MAWILE] =
+    [NATIONAL_DEX_TALONFLAME] =
     {
         .categoryName = _("DECEIVER"),
         .height = 6,
         .weight = 115,
-        .description = gMawilePokedexText,
+        .description = gTalonflamePokedexText,
         .pokemonScale = 466,
         .pokemonOffset = 17,
         .trainerScale = 256,
@@ -3732,24 +3732,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_PLUSLE] =
+    [NATIONAL_DEX_FLETCHLING] =
     {
         .categoryName = _("CHEERING"),
         .height = 4,
         .weight = 42,
-        .description = gPluslePokedexText,
+        .description = gFletchlingPokedexText,
         .pokemonScale = 515,
         .pokemonOffset = -9,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_MINUN] =
+    [NATIONAL_DEX_FLETCHADIN] =
     {
         .categoryName = _("CHEERING"),
         .height = 4,
         .weight = 42,
-        .description = gMinunPokedexText,
+        .description = gFletchadinPokedexText,
         .pokemonScale = 512,
         .pokemonOffset = -7,
         .trainerScale = 256,

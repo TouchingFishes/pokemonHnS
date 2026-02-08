@@ -1816,7 +1816,7 @@ const u8 gMimikyuPokedexText[] = _(
     "A MIMIKYU lurks in darkness and is seen\n"
     "only rarely.");
 
-const u8 gMawilePokedexText[] = _(
+const u8 gTalonflamePokedexText[] = _(
     "Its giant jaws are actually steel horns\n"
     "that transformed. It fools foes into\n"
     "complacency with its adorable gestures,\n"
@@ -1864,16 +1864,16 @@ const u8 gManectricPokedexText[] = _(
     "from lightning. In battle, they create\n"
     "thunderclouds.");
 
-const u8 gPluslePokedexText[] = _(
+const u8 gFletchlingPokedexText[] = _(
     "It has the trait of cheering on its fellow\n"
     "POKéMON. By shorting out the electricity\n"
     "it releases from its paws, it creates\n"
     "pom-poms for cheering.");
 
-const u8 gMinunPokedexText[] = _(
+const u8 gFletchadinPokedexText[] = _(
     "At a meeting of POKéMON academics, it was\n"
     "announced that simultaneous exposure to\n"
-    "electricity from a PLUSLE and MINUN will\n"
+    "electricity from a FLETCHLING and FLETCHADIN will\n"
     "promote circulation and boost vitality.");
 
 const u8 gKrolucadaPokedexText[] = _(

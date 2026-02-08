@@ -2585,7 +2585,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
@@ -2595,7 +2595,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
@@ -2615,12 +2615,12 @@
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               }
             ]
           },
@@ -2739,7 +2739,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
@@ -2749,7 +2749,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
@@ -2769,12 +2769,12 @@
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               }
             ]
           },
@@ -2893,7 +2893,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
@@ -2903,7 +2903,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
@@ -2923,12 +2923,12 @@
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               }
             ]
           },
@@ -3047,7 +3047,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
@@ -3057,7 +3057,7 @@
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 13,
@@ -3077,12 +3077,12 @@
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 13,
                 "max_level": 13,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               }
             ]
           },
@@ -23208,7 +23208,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,
@@ -23218,7 +23218,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           },
@@ -23307,7 +23307,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,
@@ -23317,7 +23317,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           },
@@ -23406,7 +23406,7 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,
@@ -23416,7 +23416,7 @@
               {
                 "min_level": 46,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           },
@@ -23505,12 +23505,12 @@
               {
                 "min_level": 44,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,
@@ -23604,7 +23604,7 @@
               {
                 "min_level": 45,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 44,
@@ -23614,7 +23614,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           },
@@ -23758,7 +23758,7 @@
               {
                 "min_level": 45,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 44,
@@ -23768,7 +23768,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           },
@@ -23912,7 +23912,7 @@
               {
                 "min_level": 45,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 47,
@@ -24066,7 +24066,7 @@
               {
                 "min_level": 45,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 47,
@@ -33782,7 +33782,7 @@
               {
                 "min_level": 45,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 44,
@@ -33792,7 +33792,7 @@
               {
                 "min_level": 47,
                 "max_level": 47,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               }
             ]
           }
@@ -48661,12 +48661,12 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 15,
@@ -48845,12 +48845,12 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_PLUSLE"
+                "species": "SPECIES_FLETCHLING"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_MINUN"
+                "species": "SPECIES_FLETCHADIN"
               },
               {
                 "min_level": 15,
@@ -50724,7 +50724,7 @@
               {
                 "min_level": 46,
                 "max_level": 46,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 45,
@@ -50873,7 +50873,7 @@
               {
                 "min_level": 42,
                 "max_level": 45,
-                "species": "SPECIES_MAWILE"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 46,

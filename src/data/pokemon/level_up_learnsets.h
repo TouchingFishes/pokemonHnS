@@ -5904,7 +5904,7 @@ static const u16 sReuniclusLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_BOUNCE),
     LEVEL_UP_END};
 
-static const u16 sPlusleLevelUpLearnset[] = {
+static const u16 sFletchlingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(4, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
@@ -5920,7 +5920,7 @@ static const u16 sPlusleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_AGILITY),
     LEVEL_UP_END};
 
-static const u16 sMinunLevelUpLearnset[] = {
+static const u16 sFletchadinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(4, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
@@ -5935,7 +5935,7 @@ static const u16 sMinunLevelUpLearnset[] = {
     LEVEL_UP_MOVE(47, MOVE_AGILITY),
     LEVEL_UP_END};
 
-static const u16 sMawileLevelUpLearnset[] = {
+static const u16 sTalonflameLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
     LEVEL_UP_MOVE(1, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(1, MOVE_DARK_PULSE),

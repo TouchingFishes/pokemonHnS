@@ -308,8 +308,8 @@ gCryTable::
 	cry Cry_Hariyama
 	cry Cry_Nosepass
 	cry Cry_Glalie
-	cry Cry_Plusle
-	cry Cry_Minun
+	cry Cry_Fletchling
+	cry Cry_Fletchadin
 	cry Cry_Surskit
 	cry Cry_Masquerain
 	cry Cry_Skitty
@@ -363,7 +363,7 @@ gCryTable::
 	cry Cry_Mightyena
 	cry Cry_Dusclops
 	cry Cry_Mimikyu
-	cry Cry_Mawile
+	cry Cry_Talonflame
 	cry Cry_Aron
 	cry Cry_Lairon
 	cry Cry_Aggron
@@ -743,8 +743,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Hariyama
 	cry_reverse Cry_Nosepass
 	cry_reverse Cry_Glalie
-	cry_reverse Cry_Plusle
-	cry_reverse Cry_Minun
+	cry_reverse Cry_Fletchling
+	cry_reverse Cry_Fletchadin
 	cry_reverse Cry_Surskit
 	cry_reverse Cry_Masquerain
 	cry_reverse Cry_Skitty
@@ -798,7 +798,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Mightyena
 	cry_reverse Cry_Dusclops
 	cry_reverse Cry_Mimikyu
-	cry_reverse Cry_Mawile
+	cry_reverse Cry_Talonflame
 	cry_reverse Cry_Aron
 	cry_reverse Cry_Lairon
 	cry_reverse Cry_Aggron

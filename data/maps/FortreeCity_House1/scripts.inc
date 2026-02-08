@@ -87,7 +87,7 @@ FortreeCity_House1_Text_YouWontTradeMe:
 FortreeCity_House1_Text_GoingToMakeKrolucadaStrong:
 	.string "I'm going to make KROLUCADA super\n"
 	.string "strong from this moment on!\p"
-	.string "I hope you do the same with PLUSLE!$"
+	.string "I hope you do the same with FLETCHLING!$"
 
 FortreeCity_House1_Text_TradingMemoriesWithOthers:
 	.string "Trading POKéMON with others…\p"

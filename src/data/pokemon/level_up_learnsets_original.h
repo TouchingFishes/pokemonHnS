@@ -4721,7 +4721,7 @@ static const u16 sReuniclusLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sPlusleLevelUpLearnset_Original[] = {
+static const u16 sFletchlingLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
@@ -4736,7 +4736,7 @@ static const u16 sPlusleLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMinunLevelUpLearnset_Original[] = {
+static const u16 sFletchadinLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 4, MOVE_THUNDER_WAVE),
     LEVEL_UP_MOVE(10, MOVE_QUICK_ATTACK),
@@ -4751,7 +4751,7 @@ static const u16 sMinunLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sMawileLevelUpLearnset_Original[] = {
+static const u16 sTalonflameLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 6, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE(11, MOVE_BITE),

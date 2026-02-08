@@ -8580,7 +8580,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_PLUSLE] = { .learnset = {
+    [SPECIES_FLETCHLING] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .LIGHT_SCREEN = TRUE,
@@ -8600,7 +8600,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_MINUN] = { .learnset = {
+    [SPECIES_FLETCHADIN] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .LIGHT_SCREEN = TRUE,
@@ -8620,7 +8620,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_MAWILE] = { .learnset = {
+    [SPECIES_TALONFLAME] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,

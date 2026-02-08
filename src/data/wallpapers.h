@@ -334,7 +334,7 @@ static const u32 sWallpaperIcon_Luvdisc[]      = INCBIN_U32("graphics/pokemon_st
 static const u32 sWallpaperIcon_StarInCircle[] = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/star_in_circle.4bpp.lz");
 static const u32 sWallpaperIcon_Spinda[]       = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/spinda.4bpp.lz");
 static const u32 sWallpaperIcon_Latis[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/latis.4bpp.lz");
-static const u32 sWallpaperIcon_Minun[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/minun.4bpp.lz");
+//static const u32 sWallpaperIcon_Fletchadin[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/fletchadin.4bpp.lz");
 static const u32 sWallpaperIcon_Togepi[]       = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/togepi.4bpp.lz");
 static const u32 sWallpaperIcon_Magma[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/magma.4bpp.lz");
 
@@ -386,8 +386,8 @@ static const u32 *const sWaldaWallpaperIcons[] =
     sWallpaperIcon_StarInCircle,
     sWallpaperIcon_Spinda,
     sWallpaperIcon_Latis,
-    gWallpaperIcon_Plusle,
-    sWallpaperIcon_Minun,
+    //gWallpaperIcon_Fletchling,
+    //sWallpaperIcon_Fletchadin,
     sWallpaperIcon_Togepi,
     sWallpaperIcon_Magma,
 };

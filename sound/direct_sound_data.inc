@@ -1619,12 +1619,12 @@ Cry_Glalie::
 	.incbin "sound/direct_sound_samples/cries/glalie.bin"
 
 	.align 2
-Cry_Plusle::
-	.incbin "sound/direct_sound_samples/cries/plusle.bin"
+Cry_Fletchling::
+	.incbin "sound/direct_sound_samples/cries/fletchling.bin"
 
 	.align 2
-Cry_Minun::
-	.incbin "sound/direct_sound_samples/cries/minun.bin"
+Cry_Fletchadin::
+	.incbin "sound/direct_sound_samples/cries/fletchadin.bin"
 
 	.align 2
 Cry_Surskit::
@@ -1839,8 +1839,8 @@ Cry_Mimikyu::
 	.incbin "sound/direct_sound_samples/cries/mimikyu.bin"
 
 	.align 2
-Cry_Mawile::
-	.incbin "sound/direct_sound_samples/cries/mawile.bin"
+Cry_Talonflame::
+	.incbin "sound/direct_sound_samples/cries/talonflame.bin"
 
 	.align 2
 Cry_Aron::

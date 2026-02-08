@@ -425,7 +425,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/marill.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/marowak.aif sound/direct_sound_samples/cries/marowak.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/marshtomp.aif sound/direct_sound_samples/cries/marshtomp.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/masquerain.aif sound/direct_sound_samples/cries/masquerain.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mawile.aif sound/direct_sound_samples/cries/mawile.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/talonflame.aif sound/direct_sound_samples/cries/talonflame.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/medicham.aif sound/direct_sound_samples/cries/medicham.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/meditite.aif sound/direct_sound_samples/cries/meditite.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/meganium.aif sound/direct_sound_samples/cries/meganium.bin --compress
@@ -439,7 +439,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mightyena.aif sound/direc
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/milotic.aif sound/direct_sound_samples/cries/milotic.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/miltank.aif sound/direct_sound_samples/cries/miltank.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/deino.aif sound/direct_sound_samples/cries/deino.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/minun.aif sound/direct_sound_samples/cries/minun.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/fletchadin.aif sound/direct_sound_samples/cries/fletchadin.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/misdreavus.aif sound/direct_sound_samples/cries/misdreavus.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mismagius.aif sound/direct_sound_samples/cries/mismagius.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/moltres.aif sound/direct_sound_samples/cries/moltres.bin --compress
@@ -480,7 +480,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pikachu.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/piloswine.aif sound/direct_sound_samples/cries/piloswine.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pineco.aif sound/direct_sound_samples/cries/pineco.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pinsir.aif sound/direct_sound_samples/cries/pinsir.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/plusle.aif sound/direct_sound_samples/cries/plusle.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/fletchling.aif sound/direct_sound_samples/cries/fletchling.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/politoed.aif sound/direct_sound_samples/cries/politoed.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/poliwag.aif sound/direct_sound_samples/cries/poliwag.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/poliwhirl.aif sound/direct_sound_samples/cries/poliwhirl.bin --compress

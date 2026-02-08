@@ -4878,7 +4878,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_THUNDER_PUNCH)
                                 | TUTOR(MOVE_FIRE_PUNCH)),
 
-    [SPECIES_PLUSLE]           = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_FLETCHLING]           = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -4899,7 +4899,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_THUNDER_PUNCH)),
 
-    [SPECIES_MINUN]            = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_FLETCHADIN]            = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
@@ -4920,7 +4920,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_THUNDER_PUNCH)),
 
-    [SPECIES_MAWILE]           = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_TALONFLAME]           = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)

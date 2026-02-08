@@ -1,13 +1,13 @@
 static const struct PyramidWildMon sOpenLevelWildMons_Round1[] =
 {
     {
-        .species = SPECIES_PLUSLE,
+        .species = SPECIES_FLETCHLING,
         .lvl = 15,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_THUNDER_WAVE, MOVE_SPARK, MOVE_ENCORE, MOVE_NONE}
     },
     {
-        .species = SPECIES_MINUN,
+        .species = SPECIES_FLETCHADIN,
         .lvl = 15,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_QUICK_ATTACK, MOVE_NONE}
@@ -833,7 +833,7 @@ static const struct PyramidWildMon sOpenLevelWildMons_Round16[] =
 static const struct PyramidWildMon sOpenLevelWildMons_Round17[] =
 {
     {
-        .species = SPECIES_MAWILE,
+        .species = SPECIES_TALONFLAME,
         .lvl = 10,
         .abilityNum = ABILITY_RANDOM,
         .moves = {MOVE_CRUNCH, MOVE_TOXIC, MOVE_ICE_BEAM, MOVE_NONE}

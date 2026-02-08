@@ -665,19 +665,19 @@ static const union AnimCmd sUnusedAnim_Reuniclus_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Plusle_1[] =
+static const union AnimCmd sUnusedAnim_Fletchling_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Minun_1[] =
+static const union AnimCmd sUnusedAnim_Fletchadin_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Mawile_1[] =
+static const union AnimCmd sUnusedAnim_Talonflame_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
@@ -1292,9 +1292,9 @@ static const union AnimCmd *const sUnusedAnims_Solrock[] = {sAnim_GeneralFrame0}
 static const union AnimCmd *const sUnusedAnims_Solosis[] = {sAnim_GeneralFrame0, sUnusedAnim_Solosis_1, sUnusedAnim_Solosis_2, sUnusedAnim_Solosis_3, sUnusedAnim_Solosis_4};
 static const union AnimCmd *const sUnusedAnims_Duosion[] = {sAnim_GeneralFrame0, sUnusedAnim_Duosion_1, sUnusedAnim_Duosion_2};
 static const union AnimCmd *const sUnusedAnims_Reuniclus[] = {sAnim_GeneralFrame0, sUnusedAnim_Reuniclus_1};
-static const union AnimCmd *const sUnusedAnims_Plusle[] = {sAnim_GeneralFrame0, sUnusedAnim_Plusle_1};
-static const union AnimCmd *const sUnusedAnims_Minun[] = {sAnim_GeneralFrame0, sUnusedAnim_Minun_1};
-static const union AnimCmd *const sUnusedAnims_Mawile[] = {sAnim_GeneralFrame0, sUnusedAnim_Mawile_1};
+static const union AnimCmd *const sUnusedAnims_Fletchling[] = {sAnim_GeneralFrame0, sUnusedAnim_Fletchling_1};
+static const union AnimCmd *const sUnusedAnims_Fletchadin[] = {sAnim_GeneralFrame0, sUnusedAnim_Fletchadin_1};
+static const union AnimCmd *const sUnusedAnims_Talonflame[] = {sAnim_GeneralFrame0, sUnusedAnim_Talonflame_1};
 static const union AnimCmd *const sUnusedAnims_Meditite[] = {sAnim_GeneralFrame0, sUnusedAnim_Meditite_1};
 static const union AnimCmd *const sUnusedAnims_Medicham[] = {sAnim_GeneralFrame0, sUnusedAnim_Medicham_1};
 static const union AnimCmd *const sUnusedAnims_Swablu[] = {sAnim_GeneralFrame0, sUnusedAnim_Swablu_1, sUnusedAnim_Swablu_2};
@@ -1734,9 +1734,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_SOLOSIS] = sUnusedAnims_Solosis,
     [SPECIES_DUOSION] = sUnusedAnims_Duosion,
     [SPECIES_REUNICLUS] = sUnusedAnims_Reuniclus,
-    [SPECIES_PLUSLE] = sUnusedAnims_Plusle,
-    [SPECIES_MINUN] = sUnusedAnims_Minun,
-    [SPECIES_MAWILE] = sUnusedAnims_Mawile,
+    [SPECIES_FLETCHLING] = sUnusedAnims_Fletchling,
+    [SPECIES_FLETCHADIN] = sUnusedAnims_Fletchadin,
+    [SPECIES_TALONFLAME] = sUnusedAnims_Talonflame,
     [SPECIES_MEDITITE] = sUnusedAnims_Meditite,
     [SPECIES_MEDICHAM] = sUnusedAnims_Medicham,
     [SPECIES_SWABLU] = sUnusedAnims_Swablu,

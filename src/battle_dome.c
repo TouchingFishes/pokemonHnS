@@ -2467,7 +2467,7 @@ static void InitDomeTrainers(void)
                 || species == SPECIES_KIRLIA
                 || species == SPECIES_GARDEVOIR
                 || species == SPECIES_SOLOSIS
-                || species == SPECIES_MAWILE
+                || species == SPECIES_TALONFLAME
                 || species == SPECIES_DEINO
                 || species == SPECIES_TOGEKISS))
                 {

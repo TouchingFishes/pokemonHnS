@@ -1475,19 +1475,19 @@ const u16 gEggMoves[] = {
               MOVE_SUBSTITUTE,
               MOVE_TRICK),
 
-    egg_moves(PLUSLE,
+    egg_moves(FLETCHLING,
               MOVE_SUBSTITUTE,
               MOVE_SING,
               MOVE_SWEET_KISS,
               MOVE_WISH),
 
-    egg_moves(MINUN,
+    egg_moves(FLETCHADIN,
               MOVE_SUBSTITUTE,
               MOVE_SING,
               MOVE_SWEET_KISS,
               MOVE_WISH),
 
-    egg_moves(MAWILE,
+    egg_moves(TALONFLAME,
               MOVE_SWORDS_DANCE,
               MOVE_FALSE_SWIPE,
               MOVE_POISON_FANG,
@@ -2865,15 +2865,15 @@ const u16 gEggMoves_Old[] = {
               MOVE_SUBSTITUTE,
               MOVE_TRICK),
 
-    egg_moves(PLUSLE,
+    egg_moves(FLETCHLING,
               MOVE_SUBSTITUTE,
               MOVE_WISH),
 
-    egg_moves(MINUN,
+    egg_moves(FLETCHADIN,
               MOVE_SUBSTITUTE,
               MOVE_WISH),
 
-    egg_moves(MAWILE,
+    egg_moves(TALONFLAME,
               MOVE_SWORDS_DANCE,
               MOVE_FALSE_SWIPE,
               MOVE_POISON_FANG,

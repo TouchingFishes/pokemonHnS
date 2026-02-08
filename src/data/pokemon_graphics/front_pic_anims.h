@@ -3843,7 +3843,7 @@ static const union AnimCmd sAnim_Reuniclus_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Plusle_1[] =
+static const union AnimCmd sAnim_Fletchling_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3853,7 +3853,7 @@ static const union AnimCmd sAnim_Plusle_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Minun_1[] =
+static const union AnimCmd sAnim_Fletchadin_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3863,7 +3863,7 @@ static const union AnimCmd sAnim_Minun_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Mawile_1[] =
+static const union AnimCmd sAnim_Talonflame_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5624,9 +5624,9 @@ DOUBLE_ANIMATION(Solrock);
 SINGLE_ANIMATION(Solosis);
 SINGLE_ANIMATION(Duosion);
 SINGLE_ANIMATION(Reuniclus);
-SINGLE_ANIMATION(Plusle);
-SINGLE_ANIMATION(Minun);
-SINGLE_ANIMATION(Mawile);
+SINGLE_ANIMATION(Fletchling);
+SINGLE_ANIMATION(Fletchadin);
+SINGLE_ANIMATION(Talonflame);
 SINGLE_ANIMATION(Meditite);
 SINGLE_ANIMATION(Medicham);
 DOUBLE_ANIMATION(Swablu);
@@ -6116,9 +6116,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_SOLOSIS]     = sAnims_Solosis,
     [SPECIES_DUOSION]      = sAnims_Duosion,
     [SPECIES_REUNICLUS]     = sAnims_Reuniclus,
-    [SPECIES_PLUSLE]      = sAnims_Plusle,
-    [SPECIES_MINUN]       = sAnims_Minun,
-    [SPECIES_MAWILE]      = sAnims_Mawile,
+    [SPECIES_FLETCHLING]      = sAnims_Fletchling,
+    [SPECIES_FLETCHADIN]       = sAnims_Fletchadin,
+    [SPECIES_TALONFLAME]      = sAnims_Talonflame,
     [SPECIES_MEDITITE]    = sAnims_Meditite,
     [SPECIES_MEDICHAM]    = sAnims_Medicham,
     [SPECIES_SWABLU]      = sAnims_Swablu,
