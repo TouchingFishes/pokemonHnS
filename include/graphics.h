@@ -2918,13 +2918,13 @@ extern const u32 gMonStillFrontPic_Lickilicky[];
 extern const u8 gMonIcon_Lickilicky[];
 extern const u8 gMonFootprint_Lickilicky[];
 
-extern const u32 gMonFrontPic_Rhyperior[];
-extern const u32 gMonPalette_Rhyperior[];
-extern const u32 gMonBackPic_Rhyperior[];
-extern const u32 gMonShinyPalette_Rhyperior[];
-extern const u32 gMonStillFrontPic_Rhyperior[];
-extern const u8 gMonIcon_Rhyperior[];
-extern const u8 gMonFootprint_Rhyperior[];
+extern const u32 gMonFrontPic_Snover[];
+extern const u32 gMonPalette_Snover[];
+extern const u32 gMonBackPic_Snover[];
+extern const u32 gMonShinyPalette_Snover[];
+extern const u32 gMonStillFrontPic_Snover[];
+extern const u8 gMonIcon_Snover[];
+extern const u8 gMonFootprint_Snover[];
 
 extern const u32 gMonFrontPic_Happiny[];
 extern const u32 gMonPalette_Happiny[];
@@ -3110,21 +3110,21 @@ extern const u32 gMonStillFrontPic_Tinkatuff[];
 extern const u8 gMonIcon_Tinkatuff[];
 extern const u8 gMonFootprint_Tinkatuff[];
 
-extern const u32 gMonFrontPic_Roserade[];
-extern const u32 gMonPalette_Roserade[];
-extern const u32 gMonBackPic_Roserade[];
-extern const u32 gMonShinyPalette_Roserade[];
-extern const u32 gMonStillFrontPic_Roserade[];
-extern const u8 gMonIcon_Roserade[];
-extern const u8 gMonFootprint_Roserade[];
+extern const u32 gMonFrontPic_Abomasnow[];
+extern const u32 gMonPalette_Abomasnow[];
+extern const u32 gMonBackPic_Abomasnow[];
+extern const u32 gMonShinyPalette_Abomasnow[];
+extern const u32 gMonStillFrontPic_Abomasnow[];
+extern const u8 gMonIcon_Abomasnow[];
+extern const u8 gMonFootprint_Abomasnow[];
 
-extern const u32 gMonFrontPic_Dusknoir[];
-extern const u32 gMonPalette_Dusknoir[];
-extern const u32 gMonBackPic_Dusknoir[];
-extern const u32 gMonShinyPalette_Dusknoir[];
-extern const u32 gMonStillFrontPic_Dusknoir[];
-extern const u8 gMonIcon_Dusknoir[];
-extern const u8 gMonFootprint_Dusknoir[];
+extern const u32 gMonFrontPic_Spiritomb[];
+extern const u32 gMonPalette_Spiritomb[];
+extern const u32 gMonBackPic_Spiritomb[];
+extern const u32 gMonShinyPalette_Spiritomb[];
+extern const u32 gMonStillFrontPic_Spiritomb[];
+extern const u8 gMonIcon_Spiritomb[];
+extern const u8 gMonFootprint_Spiritomb[];
 
 extern const u32 gMonFrontPic_Tinkaton[];
 extern const u32 gMonPalette_Tinkaton[];

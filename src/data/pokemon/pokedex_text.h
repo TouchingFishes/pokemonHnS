@@ -2350,7 +2350,7 @@ const u8 gTinkatonPokedexText[] = _(
     "over and makes a ringing sound.\n"
     "It can cry for an awfully long time.");
 
-const u8 gDusknoirPokedexText[] = _(
+const u8 gSpiritombPokedexText[] = _(
     "This feared POKéMON is said to travel to\n"
     "worlds unknown. Some even believe that\n"
     "it takes lost spirits into its pliant body\n"
@@ -2482,13 +2482,13 @@ const u8 gRegigigasPokedexText[] = _(
     "REGICE, and REGISTEEL out of clay, ice,\n"
     "and magma.");
 
-const u8 gRhyperiorPokedexText[] = _(
+const u8 gSnoverPokedexText[] = _(
     "It can launch a rock held in its hand\n"
     "like a missile by tightening and then\n"
     "expanding its muscles instantaneously.\n"
     "Geodude are shot at rare times.");
 
-const u8 gRoseradePokedexText[] = _(
+const u8 gAbomasnowPokedexText[] = _(
     "Its sweet aroma attracts prey.\n"
     "With the movements of a dancer,\n"
     "it strikes with whips that are densely\n"

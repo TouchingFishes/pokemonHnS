@@ -12040,7 +12040,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_RED,
         .noFlip = TRUE,
     },
-    [SPECIES_DUSKNOIR] =
+    [SPECIES_SPIRITOMB] =
     {
         .baseHP        = 45,
         .baseAttack    = 100,
@@ -12663,7 +12663,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
     },
-    [SPECIES_RHYPERIOR] =
+    [SPECIES_SNOVER] =
     {
         .baseHP        = 115,
         .baseAttack    = 140,
@@ -12691,7 +12691,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
     },
-    [SPECIES_ROSERADE] = //modified
+    [SPECIES_ABOMASNOW] = //modified
     {
         .baseHP        = 60,
         .baseAttack    = 70,

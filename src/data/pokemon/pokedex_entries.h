@@ -4740,12 +4740,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_DUSKNOIR] =
+    [NATIONAL_DEX_SPIRITOMB] =
     {
         .categoryName = _("GRIPPER"),
         .height = 22,
         .weight = 1066,
-        .description = gDusknoirPokedexText,
+        .description = gSpiritombPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 309,
@@ -5004,24 +5004,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 17,
     },
 
-    [NATIONAL_DEX_RHYPERIOR] =
+    [NATIONAL_DEX_SNOVER] =
     {
         .categoryName = _("DRILL"),
         .height = 24,
         .weight = 2828,
-        .description = gRhyperiorPokedexText,
+        .description = gSnoverPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 360,
         .trainerOffset = 7,
     },
 
-    [NATIONAL_DEX_ROSERADE] =
+    [NATIONAL_DEX_ABOMASNOW] =
     {
         .categoryName = _("BOUQUET"),
         .height = 9,
         .weight = 145,
-        .description = gRoseradePokedexText,
+        .description = gAbomasnowPokedexText,
         .pokemonScale = 358,
         .pokemonOffset = 13,
         .trainerScale = 256,

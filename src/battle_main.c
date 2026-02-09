@@ -2601,13 +2601,13 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                             SetMonData(&party[i], MON_DATA_HELD_ITEM, &helditem); 
                         }
                         
-                        if (partyData[i].species == SPECIES_DUSKNOIR && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
+                        if (partyData[i].species == SPECIES_SPIRITOMB && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
                         && gTrainers[trainerNum].trainerClass == TRAINER_CLASS_ELITE_FOUR && (FlagGet(FLAG_PHOEBE_REMATCH) == FALSE))
                         {
                             helditem = ITEM_072;  //no modifier
                             SetMonData(&party[i], MON_DATA_HELD_ITEM, &helditem);
                         }
-                        else if (partyData[i].species == SPECIES_DUSKNOIR && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
+                        else if (partyData[i].species == SPECIES_SPIRITOMB && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
                         && gTrainers[trainerNum].trainerClass == TRAINER_CLASS_ELITE_FOUR && (FlagGet(FLAG_PHOEBE_REMATCH) == TRUE))
                         {
                             helditem = ITEM_075;  //leftoverse modifier

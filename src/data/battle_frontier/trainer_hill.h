@@ -1388,7 +1388,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [2] =
                     {
-                        .species = SPECIES_ROSERADE,
+                        .species = SPECIES_ABOMASNOW,
                         .heldItem = ITEM_SITRUS_BERRY,
                         .moves = {MOVE_TOXIC, MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_PROTECT},
                         .hpEV = 252,
@@ -1403,7 +1403,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 20,
                         .abilityNum = 1,
                         .personality = 0x12,
-                        .nickname = _("ROSERADE"),
+                        .nickname = _("ABOMASNOW"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [3] =
@@ -4237,7 +4237,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_DUSKNOIR,
+                                            .species = SPECIES_SPIRITOMB,
                                             .heldItem = ITEM_LEFTOVERS,
                                             .moves = {MOVE_SHADOW_PUNCH, MOVE_WILL_O_WISP, MOVE_PROTECT, MOVE_ATTRACT},
                                             .hpEV = 252,
@@ -4252,7 +4252,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x82,
-                                            .nickname = _("DUSKNOIR"),
+                                            .nickname = _("SPIRITOMB"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =
@@ -4404,7 +4404,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_ROSERADE,
+                                            .species = SPECIES_ABOMASNOW,
                                             .heldItem = ITEM_POISON_BARB,
                                             .moves = {MOVE_SLUDGE_BOMB, MOVE_WEATHER_BALL, MOVE_SUNNY_DAY, MOVE_SPIKES},
                                             .hpEV = 6,
@@ -4419,7 +4419,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xB7,
-                                            .nickname = _("ROSERADE"),
+                                            .nickname = _("ABOMASNOW"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =

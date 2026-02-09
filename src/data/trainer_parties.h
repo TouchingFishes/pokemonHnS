@@ -479,7 +479,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose4[] = {
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     }
 };
 
@@ -502,7 +502,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose5[] = {
     {
     .iv = 255,
     .lvl = 66,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     }
 };
 
@@ -1053,7 +1053,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brooke5[] = {
     {
     .iv = 255,
     .lvl = 62,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     },
     {
     .iv = 255,
@@ -1185,7 +1185,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie5[] = {
     {
     .iv = 255,
     .lvl = 74,
-    .species = SPECIES_DUSKNOIR,
+    .species = SPECIES_SPIRITOMB,
     },
 };
 
@@ -1256,7 +1256,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Naomi[] = {
     {
     .iv = 100,
     .lvl = 45,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .heldItem = ITEM_NUGGET
     }
 };
@@ -1541,7 +1541,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Steve5[] = {
     {
     .iv = 255,
     .lvl = 62,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_SNOVER,
     }
 };
 
@@ -2597,7 +2597,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe[] = {
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_DUSKNOIR,
+    .species = SPECIES_SPIRITOMB,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE}
     }
@@ -3492,7 +3492,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Quincy[] = {
     {
     .iv = 100,
     .lvl = 43,
-    .species = SPECIES_DUSKNOIR,
+    .species = SPECIES_SPIRITOMB,
     .moves = {MOVE_SKILL_SWAP, MOVE_PROTECT, MOVE_WILL_O_WISP, MOVE_TOXIC}
     }
 };
@@ -4790,7 +4790,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Madeline4[] = {
     {
     .iv = 200,
     .lvl = 56,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_LEECH_SEED, MOVE_MEGA_DRAIN, MOVE_GRASS_WHISTLE, MOVE_SUNNY_DAY}
     },
     {
@@ -4805,7 +4805,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Madeline5[] = {
     {
     .iv = 255,
     .lvl = 65,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_SOLAR_BEAM, MOVE_SUNNY_DAY}
     },
     {
@@ -6194,7 +6194,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lydia5[] = {
     {
     .iv = 140,
     .lvl = 60,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     },
     {
     .iv = 140,
@@ -6371,7 +6371,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Catherine5[] = {
     {
     .iv = 200,
     .lvl = 60,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     }
 };
 
@@ -6421,7 +6421,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven2[] = {
     {
     .iv = 255,
     .lvl = 100,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_SNOVER,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE, MOVE_SWORDS_DANCE, MOVE_SUBSTITUTE}
     },
@@ -7458,7 +7458,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR2[] = {
     {
     .iv = 150,
     .lvl = 50,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
     },
     {
@@ -7491,7 +7491,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR3[] = {
     {
     .iv = 150,
     .lvl = 56,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
     },
     {
@@ -7524,7 +7524,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR4[] = {
     {
     .iv = 150,
     .lvl = 62,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
     },
     {
@@ -7563,7 +7563,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR5[] = {
     {
     .iv = 150,
     .lvl = 70,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
     },
     {
@@ -9049,7 +9049,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne4[] = {
     {
     .iv = 255,
     .lvl = 80,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_SNOVER,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SWORDS_DANCE, MOVE_EXPLOSION, MOVE_SUBSTITUTE, MOVE_ROCK_SLIDE}
     },
@@ -9094,7 +9094,7 @@ static const struct TrainerMonItemCustomMoves sParty_Roxanne5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_SNOVER,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_SWORDS_DANCE, MOVE_MEGAHORN, MOVE_ROCK_SLIDE, MOVE_SUBSTITUTE}
     },
@@ -11435,7 +11435,7 @@ static const struct TrainerMonItemCustomMoves sParty_Phoebe2[] = {
     {
     .iv = 255,
     .lvl = 86,
-    .species = SPECIES_DUSKNOIR,
+    .species = SPECIES_SPIRITOMB,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_REST, MOVE_SHADOW_BALL, MOVE_SLEEP_TALK, MOVE_WILL_O_WISP}
     },
@@ -19450,7 +19450,7 @@ static const struct TrainerMonItemCustomMoves sParty_Morty2[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 65,
-    .species = SPECIES_DUSKNOIR,
+    .species = SPECIES_SPIRITOMB,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_PUNCH, MOVE_FIRE_PUNCH, MOVE_WILL_O_WISP, MOVE_DARK_PULSE}
     },
@@ -20166,7 +20166,7 @@ static const struct TrainerMonItemCustomMoves sParty_Erika[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 60,
-    .species = SPECIES_ROSERADE,
+    .species = SPECIES_ABOMASNOW,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SYNTHESIS, MOVE_GRASS_WHISTLE, MOVE_TOXIC, MOVE_PETAL_DANCE}
     },
@@ -20343,7 +20343,7 @@ static const struct TrainerMonItemCustomMoves sParty_Blue[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 69,
-    .species = SPECIES_RHYPERIOR,
+    .species = SPECIES_SNOVER,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_REST, MOVE_TOXIC}
     },

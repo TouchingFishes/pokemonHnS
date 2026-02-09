@@ -396,7 +396,7 @@ gCryTable::
 	cry Cry_DeoxysA
 	cry Cry_DeoxysD
 	cry Cry_DeoxysS
-	cry Cry_Dusknoir
+	cry Cry_Spiritomb
 	cry Cry_Electivire
 	cry Cry_Froslass
 	cry Cry_Gallade
@@ -418,8 +418,8 @@ gCryTable::
 	cry Cry_Regidrago
 	cry Cry_Regieleki
 	cry Cry_Regigigas
-	cry Cry_Rhyperior
-	cry Cry_Roserade
+	cry Cry_Snover
+	cry Cry_Abomasnow
 	cry Cry_Sylveon
 	cry Cry_Tangrowth
 	cry Cry_Togekiss
@@ -831,7 +831,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_DeoxysA
 	cry_reverse Cry_DeoxysD
 	cry_reverse Cry_DeoxysS
-	cry_reverse Cry_Dusknoir
+	cry_reverse Cry_Spiritomb
 	cry_reverse Cry_Electivire
 	cry_reverse Cry_Froslass
 	cry_reverse Cry_Gallade
@@ -853,8 +853,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Regidrago
 	cry_reverse Cry_Regieleki
 	cry_reverse Cry_Regigigas
-	cry_reverse Cry_Rhyperior
-	cry_reverse Cry_Roserade
+	cry_reverse Cry_Snover
+	cry_reverse Cry_Abomasnow
 	cry_reverse Cry_Sylveon
 	cry_reverse Cry_Tangrowth
 	cry_reverse Cry_Togekiss

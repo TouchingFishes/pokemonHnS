@@ -9,11 +9,11 @@ FortreeCity_PokemonCenter_1F_OnTransition:
 	setrespawn HEAL_LOCATION_FORTREE_CITY
 	end
 
-FortreeCity_PokemonCenter_1F_RhyperiorEvo::
-	msgbox FortreeCity_PokemonCenter_1F_RhyperiorEvo_Text, MSGBOX_NPC
+FortreeCity_PokemonCenter_1F_SnoverEvo::
+	msgbox FortreeCity_PokemonCenter_1F_SnoverEvo_Text, MSGBOX_NPC
 	end
 
-FortreeCity_PokemonCenter_1F_RhyperiorEvo_Text:
+FortreeCity_PokemonCenter_1F_SnoverEvo_Text:
 	.string "RHYDON evolves by trading.\n"
 	.string "But only if it is traded with an object.\p"
 	.string "Which object, you might ask?\p"

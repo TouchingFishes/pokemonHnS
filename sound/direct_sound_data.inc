@@ -1971,8 +1971,8 @@ Cry_DeoxysS::
 	.incbin "sound/direct_sound_samples/cries/deoxys.bin"
 
 	.align 2
-Cry_Dusknoir::
-	.incbin "sound/direct_sound_samples/cries/dusknoir.bin"
+Cry_Spiritomb::
+	.incbin "sound/direct_sound_samples/cries/spiritomb.bin"
 
 	.align 2
 Cry_Electivire::
@@ -2059,12 +2059,12 @@ Cry_Regigigas::
 	.incbin "sound/direct_sound_samples/cries/regigigas.bin"
 
 	.align 2
-Cry_Rhyperior::
-	.incbin "sound/direct_sound_samples/cries/rhyperior.bin"
+Cry_Snover::
+	.incbin "sound/direct_sound_samples/cries/snover.bin"
 
 	.align 2
-Cry_Roserade::
-	.incbin "sound/direct_sound_samples/cries/roserade.bin"
+Cry_Abomasnow::
+	.incbin "sound/direct_sound_samples/cries/abomasnow.bin"
 
 	.align 2
 Cry_Sylveon::

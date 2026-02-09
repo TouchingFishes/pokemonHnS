@@ -5751,7 +5751,7 @@ static const u16 sDeoxysSLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sDusknoirLevelUpLearnset_Original[] = {
+static const u16 sSpiritombLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_BIND),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_FIRE_PUNCH),
@@ -6154,7 +6154,7 @@ static const u16 sRegielekiLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sRhyperiorLevelUpLearnset_Original[] = {
+static const u16 sSnoverLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_HORN_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_STOMP),
@@ -6170,7 +6170,7 @@ static const u16 sRhyperiorLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sRoseradeLevelUpLearnset_Original[] = {
+static const u16 sAbomasnowLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 1, MOVE_GROWTH),
     LEVEL_UP_MOVE( 1, MOVE_POISON_STING),

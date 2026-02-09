@@ -2095,7 +2095,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/deoxys_defense.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/deoxys_speed.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/dusknoir.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/spiritomb.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/electivire.4bpp: %.4bpp: %.png
@@ -2161,10 +2161,10 @@ $(OBJEVENTGFXDIR)/pokemon/followers/regidrago.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/regieleki.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/roserade.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/abomasnow.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/rhyperior.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/snover.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/sylveon.4bpp: %.4bpp: %.png
@@ -2550,9 +2550,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0461_weavile.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0463_lickilicky.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0464_rhyperior.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
 $(OBJEVENTGFXDIR)/pokemon/surfable/0493_arceus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
@@ -2880,9 +2877,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0461_weavile_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0463_lickilicky_shiny.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/pokemon/surfable/0464_rhyperior_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0493_arceus_shiny.4bpp: %.4bpp: %.png

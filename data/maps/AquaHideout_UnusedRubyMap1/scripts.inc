@@ -115,71 +115,71 @@ AquaHideout_UnusedRubyMap1_EventScript_RanFromRegidrago::
 	goto Common_EventScript_LegendaryFlewAway
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButton::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButton::
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, AquaHideout_UnusedRubyMap1_Movement
 	waitmovement 0
-	goto_if_set FLAG_DEFEATED_DUSKNOIR, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonFinished
-	msgbox AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText, MSGBOX_YESNO
+	goto_if_set FLAG_DEFEATED_SPIRITOMB, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonFinished
+	msgbox AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText, MSGBOX_YESNO
 	waitmessage
 	switch VAR_RESULT
-	case NO, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonNo
-	case YES, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonYes
-	case MULTI_B_PRESSED, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonNo
+	case NO, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonNo
+	case YES, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonYes
+	case MULTI_B_PRESSED, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonNo
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonFinished::
-	msgbox AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText3, MSGBOX_DEFAULT
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonFinished::
+	msgbox AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText3, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonYes::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonYes::
 	waitse
-	playmoncry SPECIES_DUSKNOIR, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SPIRITOMB, CRY_MODE_ENCOUNTER
 	waitmoncry
-	msgbox AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText2, MSGBOX_DEFAULT
+	msgbox AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText2, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_DUSKNOIR, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SPIRITOMB, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	goto AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle
+	goto AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle
 	
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle::
 	faceplayer
-	setwildbattle SPECIES_DUSKNOIR, 65
+	setwildbattle SPECIES_SPIRITOMB, 65
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_SYS_NO_BAG_USE
 	dowildbattle
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Won
-	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Won
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Ran
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Ran
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Won
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Won
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Ran
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Ran
 	releaseall
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Won::
-	setflag FLAG_DEFEATED_DUSKNOIR
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Won::
+	setflag FLAG_DEFEATED_SPIRITOMB
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_SYS_NO_BAG_USE
 	callnative UpdateFollowingPokemon
 	goto AquaHideout_UnusedRubyMap1_EventScript_OpenRegiEntrance
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonBattle_Ran::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonBattle_Ran::
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_SYS_NO_BAG_USE
 	callnative UpdateFollowingPokemon
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonNo::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonNo::
 	releaseall
 	callnative UpdateFollowingPokemon
 	end
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText:
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText:
 	.string "There should be a button\n"
 	.string "around here…\p"
 	.string "…\l"
@@ -188,14 +188,14 @@ AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText:
 	.string "There it is!\p"
 	.string "Should I press it?$"
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText2:
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText2:
 	.string "You tried pressing\n"
 	.string "the button…\p"
 	.string "But a cold hand started\n"
 	.string "touching you!\p"
 	.string "Its grip is very strong!$"
 
-AquaHideout_UnusedRubyMap1_EventScript_DusknoirButtonText3::
+AquaHideout_UnusedRubyMap1_EventScript_SpiritombButtonText3::
 	.string "The button has been pressed.$"
 
 AquaHideout_UnusedRubyMap1_Movement:

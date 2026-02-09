@@ -16,11 +16,11 @@ Route116_OnTransition:
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather
 	end
 
-Route116_RoseradeEvo::
-	msgbox Route116_RoseradeEvo_Text, MSGBOX_NPC
+Route116_AbomasnowEvo::
+	msgbox Route116_AbomasnowEvo_Text, MSGBOX_NPC
 	end
 
-Route116_RoseradeEvo_Text:
+Route116_AbomasnowEvo_Text:
 	.string "Did you know that certain POKéMON\n"
 	.string "evolve when their BEAUTY reaches its\l"
 	.string "maximum level?\p"

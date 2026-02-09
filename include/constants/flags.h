@@ -79,7 +79,7 @@
 #define FLAG_SAPPHIRE_KECLEON                   0x3E 
 #define FLAG_SYS_BRAILLE_REGIDRAGO_COMPLETED    0x3F
 #define FLAG_DEFEATED_REGIDRAGO                 0x40 
-#define FLAG_DEFEATED_DUSKNOIR                  0x41 
+#define FLAG_DEFEATED_SPIRITOMB                  0x41 
 #define FLAG_SYS_BRAILLE_REGIGIGAS_COMPLETED    0x42
 #define FLAG_DEFEATED_REGIGIGAS                 0x43
 #define FLAG_HIDE_REGIGIGAS                     0x44 

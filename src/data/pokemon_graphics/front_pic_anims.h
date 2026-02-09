@@ -4934,7 +4934,7 @@ static const union AnimCmd sAnim_Lickilicky_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Rhyperior_1[] =
+static const union AnimCmd sAnim_Snover_1[] =
 {
     ANIMCMD_FRAME(0, 50),
     ANIMCMD_FRAME(1, 25),
@@ -5072,7 +5072,7 @@ static const union AnimCmd sAnim_PorygonZ_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dusknoir_1[] =
+static const union AnimCmd sAnim_Spiritomb_1[] =
 {
     ANIMCMD_FRAME(1, 9),
     ANIMCMD_FRAME(0, 9),
@@ -5183,7 +5183,7 @@ static const union AnimCmd sAnim_Tinkatuff_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Roserade_1[] =
+static const union AnimCmd sAnim_Abomasnow_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
@@ -5724,7 +5724,7 @@ SINGLE_ANIMATION(Tinkaton);
 DOUBLE_ANIMATION(DeoxysA);
 DOUBLE_ANIMATION(DeoxysD);
 DOUBLE_ANIMATION(DeoxysS);
-SINGLE_ANIMATION(Dusknoir);
+SINGLE_ANIMATION(Spiritomb);
 SINGLE_ANIMATION(Electivire);
 SINGLE_ANIMATION(Froslass);
 SINGLE_ANIMATION(Gallade);
@@ -5745,8 +5745,8 @@ SINGLE_ANIMATION(Hydreigon);
 SINGLE_ANIMATION(PorygonZ);
 SINGLE_ANIMATION(Regidrago);
 SINGLE_ANIMATION(Regigigas);
-SINGLE_ANIMATION(Rhyperior);
-SINGLE_ANIMATION(Roserade);
+SINGLE_ANIMATION(Snover);
+SINGLE_ANIMATION(Abomasnow);
 SINGLE_ANIMATION(Sylveon);
 SINGLE_ANIMATION(Regieleki);
 SINGLE_ANIMATION(Tangrowth);
@@ -6208,7 +6208,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_WEAVILE] = sAnims_Weavile,
     [SPECIES_MAGNEZONE] = sAnims_Magnezone,
     [SPECIES_LICKILICKY] = sAnims_Lickilicky,
-    [SPECIES_RHYPERIOR] = sAnims_Rhyperior,
+    [SPECIES_SNOVER] = sAnims_Snover,
     [SPECIES_TANGROWTH] = sAnims_Tangrowth,
     [SPECIES_ELECTIVIRE] = sAnims_Electivire,
     [SPECIES_MAGMORTAR] = sAnims_Magmortar,
@@ -6221,11 +6221,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_HYDREIGON] = sAnims_Hydreigon,
     [SPECIES_GALLADE] = sAnims_Gallade,
     [SPECIES_PORYGON_Z] = sAnims_PorygonZ,
-    [SPECIES_DUSKNOIR] = sAnims_Dusknoir,
+    [SPECIES_SPIRITOMB] = sAnims_Spiritomb,
     [SPECIES_FROSLASS] = sAnims_Froslass,
     [SPECIES_ARCEUS] = sAnims_Arceus,
     [SPECIES_TINKATUFF] = sAnims_Tinkatuff,
-    [SPECIES_ROSERADE] = sAnims_Roserade,
+    [SPECIES_ABOMASNOW] = sAnims_Abomasnow,
     [SPECIES_DECIBELLE] = sAnims_Decibelle,
     [SPECIES_MISMAGIUS] = sAnims_Mismagius,
     [SPECIES_HONCHKROW] = sAnims_Honchkrow,

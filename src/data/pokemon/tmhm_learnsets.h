@@ -10502,7 +10502,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
         
-    [SPECIES_DUSKNOIR] = { .learnset = {
+    [SPECIES_SPIRITOMB] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,
@@ -11138,7 +11138,7 @@ const union {
         .FLASH = TRUE
     } }, 
         
-    [SPECIES_RHYPERIOR] = { .learnset = {
+    [SPECIES_SNOVER] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -11174,7 +11174,7 @@ const union {
         .ROCK_SMASH = TRUE
     } }, 
 
-    [SPECIES_ROSERADE] = { .learnset = {
+    [SPECIES_ABOMASNOW] = { .learnset = {
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
         .HIDDEN_POWER = TRUE,

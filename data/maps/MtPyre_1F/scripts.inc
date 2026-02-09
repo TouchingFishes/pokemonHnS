@@ -1,11 +1,11 @@
 MtPyre_1F_MapScripts::
 	.byte 0
 
-MtPyre_1F_DusknoirMisdreavusEvo::
-	msgbox MtPyre_1F_DusknoirMisdreavusEvo_Text, MSGBOX_NPC
+MtPyre_1F_SpiritombMisdreavusEvo::
+	msgbox MtPyre_1F_SpiritombMisdreavusEvo_Text, MSGBOX_NPC
 	end
 
-MtPyre_1F_DusknoirMisdreavusEvo_Text:
+MtPyre_1F_SpiritombMisdreavusEvo_Text:
 	.string "Wild DUSKULL sometimes hold a SPELL TAG.\n"
 	.string "I wonder why? What do they do with it?\l"
 	.string "Maybe they use it to evolve?\p"
