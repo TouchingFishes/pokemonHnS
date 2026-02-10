@@ -1390,7 +1390,7 @@ const u16 gEggMoves[] = {
               MOVE_DOUBLE_EDGE,
               MOVE_THRASH),
 
-    egg_moves(TRAPINCH,
+    egg_moves(RAELIC,
               MOVE_FOCUS_ENERGY,
               MOVE_MUD_SHOT,
               MOVE_FLAIL,
@@ -2801,7 +2801,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_DOUBLE_EDGE,
               MOVE_THRASH),
 
-    egg_moves(TRAPINCH,
+    egg_moves(RAELIC,
               MOVE_FOCUS_ENERGY,
               MOVE_QUICK_ATTACK,
               MOVE_GUST),

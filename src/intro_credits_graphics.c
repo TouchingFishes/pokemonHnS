@@ -20,8 +20,8 @@
 #define TAG_BICYCLE 1001
 #define TAG_BRENDAN 1002
 #define TAG_MAY     1003
-#define TAG_FLYGON_LATIOS  1004
-#define TAG_FLYGON_LATIAS  1005
+#define TAG_FUSANG_LATIOS  1004
+#define TAG_FUSANG_LATIAS  1005
 
 // Used for the Clouds/Trees/Houses sprites that pass by in the background
 #define TAG_MOVING_SCENERY 2000
@@ -74,7 +74,7 @@ static const u32 sLatias_Gfx[]            = INCBIN_U32("graphics/intro/scene_2/l
 static void SpriteCB_MovingScenery(struct Sprite *sprite);
 static void SpriteCB_Player(struct Sprite *sprite);
 static void SpriteCB_Bicycle(struct Sprite *sprite);
-static void SpriteCB_FlygonLeftHalf(struct Sprite *sprite);
+static void SpriteCB_FusangLeftHalf(struct Sprite *sprite);
 
 static const struct SpriteTemplate sSpriteTemplate_MovingScenery =
 {
@@ -528,7 +528,7 @@ static const struct SpriteTemplate sSpriteTemplate_MayBicycle =
     .callback = SpriteCB_Bicycle
 };
 
-static const struct OamData sOamData_Flygon =
+static const struct OamData sOamData_Fusang =
 {
     .y = DISPLAY_HEIGHT,
     .shape = SPRITE_SHAPE(64x64),
@@ -536,44 +536,44 @@ static const struct OamData sOamData_Flygon =
     .priority = 1
 };
 
-static const union AnimCmd sAnim_FlygonLeft[] =
+static const union AnimCmd sAnim_FusangLeft[] =
 {
     ANIMCMD_FRAME(0, 16),
     ANIMCMD_END
 };
 
-static const union AnimCmd sAnim_FlygonRight[] =
+static const union AnimCmd sAnim_FusangRight[] =
 {
     ANIMCMD_FRAME(64, 16),
     ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnims_Flygon[] =
+static const union AnimCmd *const sAnims_Fusang[] =
 {
-    sAnim_FlygonLeft,
-    sAnim_FlygonRight
+    sAnim_FusangLeft,
+    sAnim_FusangRight
 };
 
-static const struct SpriteTemplate sSpriteTemplate_FlygonLatios =
+static const struct SpriteTemplate sSpriteTemplate_FusangLatios =
 {
-    .tileTag = TAG_FLYGON_LATIOS,
-    .paletteTag = TAG_FLYGON_LATIOS,
-    .oam = &sOamData_Flygon,
-    .anims = sAnims_Flygon,
+    .tileTag = TAG_FUSANG_LATIOS,
+    .paletteTag = TAG_FUSANG_LATIOS,
+    .oam = &sOamData_Fusang,
+    .anims = sAnims_Fusang,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCB_FlygonLeftHalf
+    .callback = SpriteCB_FusangLeftHalf
 };
 
-static const struct SpriteTemplate sSpriteTemplate_FlygonLatias =
+static const struct SpriteTemplate sSpriteTemplate_FusangLatias =
 {
-    .tileTag = TAG_FLYGON_LATIAS,
-    .paletteTag = TAG_FLYGON_LATIAS,
-    .oam = &sOamData_Flygon,
-    .anims = sAnims_Flygon,
+    .tileTag = TAG_FUSANG_LATIAS,
+    .paletteTag = TAG_FUSANG_LATIAS,
+    .oam = &sOamData_Fusang,
+    .anims = sAnims_Fusang,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCB_FlygonLeftHalf
+    .callback = SpriteCB_FusangLeftHalf
 };
 
 const struct CompressedSpriteSheet gSpriteSheet_IntroBrendan[] =
@@ -606,33 +606,33 @@ const struct CompressedSpriteSheet gSpriteSheet_IntroBicycle[] =
     {}
 };
 
-// In RS these were Latios/Latias. In Emerald both are replaced with Flygon and now only 1 is used
-static const struct CompressedSpriteSheet sSpriteSheet_IntroFlygon_Unused[] =
+// In RS these were Latios/Latias. In Emerald both are replaced with Fusang and now only 1 is used
+static const struct CompressedSpriteSheet sSpriteSheet_IntroFusang_Unused[] =
 {
     {
-        .data = gIntroFlygon_Gfx,
+        .data = gIntroFusang_Gfx,
         .size = 0x1000,
-        .tag = TAG_FLYGON_LATIOS
+        .tag = TAG_FUSANG_LATIOS
     },
     {}
 };
 
-const struct CompressedSpriteSheet gSpriteSheet_IntroFlygon[] =
+const struct CompressedSpriteSheet gSpriteSheet_IntroFusang[] =
 {
     {
-        .data = gIntroFlygon_Gfx,
+        .data = gIntroFusang_Gfx,
         .size = 0x1000,
-        .tag = TAG_FLYGON_LATIAS
+        .tag = TAG_FUSANG_LATIAS
     },
     {}
 };
 
-const struct SpritePalette gSpritePalettes_IntroPlayerFlygon[] =
+const struct SpritePalette gSpritePalettes_IntroPlayerFusang[] =
 {
     { .data = gIntroPlayer_Pal, .tag = TAG_BRENDAN },
     { .data = gIntroPlayer_Pal, .tag = TAG_MAY },
-    { .data = gIntroFlygon_Pal, .tag = TAG_FLYGON_LATIOS },
-    { .data = gIntroFlygon_Pal, .tag = TAG_FLYGON_LATIAS },
+    { .data = gIntroFusang_Pal, .tag = TAG_FUSANG_LATIOS },
+    { .data = gIntroFusang_Pal, .tag = TAG_FUSANG_LATIAS },
     {}
 };
 
@@ -672,7 +672,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_Latios[] =
     {
         .data = sLatios_Gfx,
         .size = 0x1000,
-        .tag = TAG_FLYGON_LATIOS
+        .tag = TAG_FUSANG_LATIOS
     },
     {}
 };
@@ -683,7 +683,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_Latias[] =
     {
         .data = sLatias_Gfx,
         .size = 0x1000,
-        .tag = TAG_FLYGON_LATIAS
+        .tag = TAG_FUSANG_LATIAS
     },
     {}
 };
@@ -692,8 +692,8 @@ const struct SpritePalette gSpritePalettes_Credits[] =
 {
     { .data = sBrendanCredits_Pal, .tag = TAG_BRENDAN },
     { .data = sMayCredits_Pal,     .tag = TAG_MAY },
-    { .data = sLatios_Pal,         .tag = TAG_FLYGON_LATIOS },
-    { .data = sLatias_Pal,         .tag = TAG_FLYGON_LATIAS },
+    { .data = sLatios_Pal,         .tag = TAG_FUSANG_LATIOS },
+    { .data = sLatias_Pal,         .tag = TAG_FUSANG_LATIAS },
     {}
 };
 
@@ -1133,13 +1133,13 @@ u8 CreateIntroMaySprite(s16 x, s16 y)
 
 #undef sPlayerSpriteId
 
-static void SpriteCB_FlygonLeftHalf(struct Sprite *sprite)
+static void SpriteCB_FusangLeftHalf(struct Sprite *sprite)
 {
 }
 
 #define sLeftSpriteId data[0]
 
-static void SpriteCB_FlygonRightHalf(struct Sprite *sprite)
+static void SpriteCB_FusangRightHalf(struct Sprite *sprite)
 {
     sprite->invisible = gSprites[sprite->sLeftSpriteId].invisible;
     sprite->y = gSprites[sprite->sLeftSpriteId].y;
@@ -1147,25 +1147,25 @@ static void SpriteCB_FlygonRightHalf(struct Sprite *sprite)
     sprite->y2 = gSprites[sprite->sLeftSpriteId].y2;
 }
 
-// In RS these were for Latios/Latias. In Emerald both are replaced with Flygon and now only 1 is used
-static u8 UNUSED CreateIntroFlygonSprite_Unused(s16 x, s16 y)
+// In RS these were for Latios/Latias. In Emerald both are replaced with Fusang and now only 1 is used
+static u8 UNUSED CreateIntroFusangSprite_Unused(s16 x, s16 y)
 {
-    u8 leftSpriteId = CreateSprite(&sSpriteTemplate_FlygonLatios, x - 32, y, 5);
-    u8 rightSpriteId = CreateSprite(&sSpriteTemplate_FlygonLatios, x + 32, y, 6);
+    u8 leftSpriteId = CreateSprite(&sSpriteTemplate_FusangLatios, x - 32, y, 5);
+    u8 rightSpriteId = CreateSprite(&sSpriteTemplate_FusangLatios, x + 32, y, 6);
     gSprites[rightSpriteId].sLeftSpriteId = leftSpriteId;
     StartSpriteAnim(&gSprites[rightSpriteId], 1);
-    gSprites[rightSpriteId].callback = &SpriteCB_FlygonRightHalf;
+    gSprites[rightSpriteId].callback = &SpriteCB_FusangRightHalf;
     return leftSpriteId;
 }
 
 
-u8 CreateIntroFlygonSprite(s16 x, s16 y)
+u8 CreateIntroFusangSprite(s16 x, s16 y)
 {
-    u8 leftSpriteId = CreateSprite(&sSpriteTemplate_FlygonLatias, x - 32, y, 5);
-    u8 rightSpriteId = CreateSprite(&sSpriteTemplate_FlygonLatias, x + 32, y, 6);
+    u8 leftSpriteId = CreateSprite(&sSpriteTemplate_FusangLatias, x - 32, y, 5);
+    u8 rightSpriteId = CreateSprite(&sSpriteTemplate_FusangLatias, x + 32, y, 6);
     gSprites[rightSpriteId].sLeftSpriteId = leftSpriteId;
     StartSpriteAnim(&gSprites[rightSpriteId], 1);
-    gSprites[rightSpriteId].callback = &SpriteCB_FlygonRightHalf;
+    gSprites[rightSpriteId].callback = &SpriteCB_FusangRightHalf;
     return leftSpriteId;
 }
 

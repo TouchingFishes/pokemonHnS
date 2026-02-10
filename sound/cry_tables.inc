@@ -324,9 +324,9 @@ gCryTable::
 	cry Cry_Crawdaunt
 	cry Cry_Duosion
 	cry Cry_Reuniclus
-	cry Cry_Trapinch
-	cry Cry_Vibrava
-	cry Cry_Flygon
+	cry Cry_Raelic
+	cry Cry_Romushu
+	cry Cry_Fusang
 	cry Cry_Pawniard
 	cry Cry_Bisharp
 	cry Cry_Baltoy
@@ -759,9 +759,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Crawdaunt
 	cry_reverse Cry_Duosion
 	cry_reverse Cry_Reuniclus
-	cry_reverse Cry_Trapinch
-	cry_reverse Cry_Vibrava
-	cry_reverse Cry_Flygon
+	cry_reverse Cry_Raelic
+	cry_reverse Cry_Romushu
+	cry_reverse Cry_Fusang
 	cry_reverse Cry_Pawniard
 	cry_reverse Cry_Bisharp
 	cry_reverse Cry_Baltoy

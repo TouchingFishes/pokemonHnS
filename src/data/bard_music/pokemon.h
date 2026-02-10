@@ -2660,7 +2660,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_TRAPINCH] = {
+    [SPECIES_RAELIC] = {
         { .songLengthId =  0 },
         { .songLengthId = 15 },
         { .songLengthId = 51 },
@@ -2668,7 +2668,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_VIBRAVA] = {
+    [SPECIES_ROMUSHU] = {
         { .songLengthId = 17 },
         { .songLengthId = 27 },
         { .songLengthId = 42 },
@@ -2676,7 +2676,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_FLYGON] = {
+    [SPECIES_FUSANG] = {
         { .songLengthId = 18 },
         { .songLengthId = 27 },
         { .songLengthId = 51 },

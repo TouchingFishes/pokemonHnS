@@ -4387,7 +4387,7 @@ static const u16 sSharpedoLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sTrapinchLevelUpLearnset_Original[] = {
+static const u16 sRaelicLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 9, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(17, MOVE_FAINT_ATTACK),
@@ -4399,7 +4399,7 @@ static const u16 sTrapinchLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVibravaLevelUpLearnset_Original[] = {
+static const u16 sRomushuLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_FAINT_ATTACK),
@@ -4415,7 +4415,7 @@ static const u16 sVibravaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sFlygonLevelUpLearnset_Original[] = {
+static const u16 sFusangLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_BITE),
     LEVEL_UP_MOVE( 1, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 1, MOVE_FAINT_ATTACK),

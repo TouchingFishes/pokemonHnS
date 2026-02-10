@@ -3936,36 +3936,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_TRAPINCH] =
+    [NATIONAL_DEX_RAELIC] =
     {
         .categoryName = _("ANT PIT"),
         .height = 7,
         .weight = 150,
-        .description = gTrapinchPokedexText,
+        .description = gRaelicPokedexText,
         .pokemonScale = 298,
         .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_VIBRAVA] =
+    [NATIONAL_DEX_ROMUSHU] =
     {
         .categoryName = _("VIBRATION"),
         .height = 11,
         .weight = 153,
-        .description = gVibravaPokedexText,
+        .description = gRomushuPokedexText,
         .pokemonScale = 370,
         .pokemonOffset = 11,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_FLYGON] =
+    [NATIONAL_DEX_FUSANG] =
     {
         .categoryName = _("MYSTIC"),
         .height = 20,
         .weight = 820,
-        .description = gFlygonPokedexText,
+        .description = gFusangPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,

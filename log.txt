@@ -317,7 +317,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/feebas.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/feraligatr.aif sound/direct_sound_samples/cries/feraligatr.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/flaaffy.aif sound/direct_sound_samples/cries/flaaffy.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/flareon.aif sound/direct_sound_samples/cries/flareon.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/flygon.aif sound/direct_sound_samples/cries/flygon.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/fusang.aif sound/direct_sound_samples/cries/fusang.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/forretress.aif sound/direct_sound_samples/cries/forretress.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/froslass.aif sound/direct_sound_samples/cries/froslass.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/furret.aif sound/direct_sound_samples/cries/furret.bin --compress
@@ -589,7 +589,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/togetic.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/torchic.aif sound/direct_sound_samples/cries/torchic.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/torkoal.aif sound/direct_sound_samples/cries/torkoal.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/totodile.aif sound/direct_sound_samples/cries/totodile.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/trapinch.aif sound/direct_sound_samples/cries/trapinch.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/raelic.aif sound/direct_sound_samples/cries/raelic.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/treecko.aif sound/direct_sound_samples/cries/treecko.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tropius.aif sound/direct_sound_samples/cries/tropius.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/typhlosion.aif sound/direct_sound_samples/cries/typhlosion.bin --compress
@@ -604,7 +604,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vaporeon.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/venomoth.aif sound/direct_sound_samples/cries/venomoth.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/venonat.aif sound/direct_sound_samples/cries/venonat.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/venusaur.aif sound/direct_sound_samples/cries/venusaur.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vibrava.aif sound/direct_sound_samples/cries/vibrava.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/romushu.aif sound/direct_sound_samples/cries/romushu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/victreebel.aif sound/direct_sound_samples/cries/victreebel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vigoroth.aif sound/direct_sound_samples/cries/vigoroth.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vileplume.aif sound/direct_sound_samples/cries/vileplume.bin --compress

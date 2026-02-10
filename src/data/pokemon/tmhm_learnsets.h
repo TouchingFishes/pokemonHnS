@@ -8051,7 +8051,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_TRAPINCH] = { .learnset = {
+    [SPECIES_RAELIC] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -8074,7 +8074,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_VIBRAVA] = { .learnset = {
+    [SPECIES_ROMUSHU] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -8099,7 +8099,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_FLYGON] = { .learnset = {
+    [SPECIES_FUSANG] = { .learnset = {
         .DRAGON_CLAW = TRUE,
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,

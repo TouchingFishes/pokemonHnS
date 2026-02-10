@@ -1683,16 +1683,16 @@ Cry_Reuniclus::
 	.incbin "sound/direct_sound_samples/cries/reuniclus.bin"
 
 	.align 2
-Cry_Trapinch::
-	.incbin "sound/direct_sound_samples/cries/trapinch.bin"
+Cry_Raelic::
+	.incbin "sound/direct_sound_samples/cries/raelic.bin"
 
 	.align 2
-Cry_Vibrava::
-	.incbin "sound/direct_sound_samples/cries/vibrava.bin"
+Cry_Romushu::
+	.incbin "sound/direct_sound_samples/cries/romushu.bin"
 
 	.align 2
-Cry_Flygon::
-	.incbin "sound/direct_sound_samples/cries/flygon.bin"
+Cry_Fusang::
+	.incbin "sound/direct_sound_samples/cries/fusang.bin"
 
 	.align 2
 Cry_Pawniard::

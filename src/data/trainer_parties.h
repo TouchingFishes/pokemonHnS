@@ -825,7 +825,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Braxton[] = {
     {
     .iv = 100,
     .lvl = 28,
-    .species = SPECIES_TRAPINCH,
+    .species = SPECIES_RAELIC,
     .moves = {MOVE_BITE, MOVE_DIG, MOVE_FAINT_ATTACK, MOVE_SAND_TOMB}
     },
     {
@@ -2666,7 +2666,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     {
     .iv = 250,
     .lvl = 53,
-    .species = SPECIES_FLYGON,
+    .species = SPECIES_FUSANG,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
     },
@@ -3516,7 +3516,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jaylen[] = {
     {
     .iv = 0,
     .lvl = 19,
-    .species = SPECIES_TRAPINCH,
+    .species = SPECIES_RAELIC,
     }
 };
 
@@ -4349,7 +4349,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Nicolas5[] = {
     {
     .iv = 255,
     .lvl = 70,
-    .species = SPECIES_VIBRAVA,
+    .species = SPECIES_ROMUSHU,
     .heldItem = ITEM_DRAGON_FANG
     }
 };
@@ -11560,7 +11560,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake2[] = {
     {
     .iv = 250,
     .lvl = 86,
-    .species = SPECIES_FLYGON,
+    .species = SPECIES_FUSANG,
     .heldItem = ITEM_CHOICE_BAND,
     .moves = {MOVE_FLAMETHROWER, MOVE_ROCK_SLIDE, MOVE_DRAGON_BREATH, MOVE_EARTHQUAKE}
     },

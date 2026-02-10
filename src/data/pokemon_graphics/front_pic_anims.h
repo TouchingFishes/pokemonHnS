@@ -3589,7 +3589,7 @@ static const union AnimCmd sAnim_Sharpedo_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Trapinch_1[] =
+static const union AnimCmd sAnim_Raelic_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -3599,7 +3599,7 @@ static const union AnimCmd sAnim_Trapinch_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Vibrava_1[] =
+static const union AnimCmd sAnim_Romushu_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -3611,7 +3611,7 @@ static const union AnimCmd sAnim_Vibrava_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Flygon_1[] =
+static const union AnimCmd sAnim_Fusang_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5603,9 +5603,9 @@ SINGLE_ANIMATION(Feebas);
 SINGLE_ANIMATION(Milotic);
 SINGLE_ANIMATION(Carvanha);
 SINGLE_ANIMATION(Sharpedo);
-SINGLE_ANIMATION(Trapinch);
-SINGLE_ANIMATION(Vibrava);
-SINGLE_ANIMATION(Flygon);
+SINGLE_ANIMATION(Raelic);
+SINGLE_ANIMATION(Romushu);
+SINGLE_ANIMATION(Fusang);
 SINGLE_ANIMATION(Makuhita);
 SINGLE_ANIMATION(Hariyama);
 SINGLE_ANIMATION(Electrike);
@@ -6095,9 +6095,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MILOTIC]     = sAnims_Milotic,
     [SPECIES_CARVANHA]    = sAnims_Carvanha,
     [SPECIES_SHARPEDO]    = sAnims_Sharpedo,
-    [SPECIES_TRAPINCH]    = sAnims_Trapinch,
-    [SPECIES_VIBRAVA]     = sAnims_Vibrava,
-    [SPECIES_FLYGON]      = sAnims_Flygon,
+    [SPECIES_RAELIC]    = sAnims_Raelic,
+    [SPECIES_ROMUSHU]     = sAnims_Romushu,
+    [SPECIES_FUSANG]      = sAnims_Fusang,
     [SPECIES_MAKUHITA]    = sAnims_Makuhita,
     [SPECIES_HARIYAMA]    = sAnims_Hariyama,
     [SPECIES_ELECTRIKE]   = sAnims_Electrike,

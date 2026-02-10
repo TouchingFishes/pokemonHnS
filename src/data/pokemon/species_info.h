@@ -9451,7 +9451,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_TRAPINCH] =
+    [SPECIES_RAELIC] =
     {
         .baseHP        = 45,
         .baseAttack    = 100,
@@ -9481,7 +9481,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_VIBRAVA] =
+    [SPECIES_ROMUSHU] =
     {
         .baseHP        = 50,
         .baseAttack    = 70,
@@ -9511,7 +9511,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_FLYGON] =
+    [SPECIES_FUSANG] =
     {
         .baseHP        = 80,
         .baseAttack    = 100,

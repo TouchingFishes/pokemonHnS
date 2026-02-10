@@ -56,7 +56,7 @@ SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth:
 	.braille "FIRST COMES\n"
 	.braille "MAGNEZONE.\n"
 	.braille "LAST COMES\n"
-	.braille "VIBRAVA.$"
+	.braille "ROMUSHU.$"
 
 SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived:
 	brailleformat 2, 0, 26, 19, 5, 3

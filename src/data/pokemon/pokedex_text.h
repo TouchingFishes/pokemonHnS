@@ -1966,19 +1966,19 @@ const u8 gSpindaPokedexText[] = _(
     "unsteady, tottering walk has the\n"
     "effect of fouling its foe's aim.");
 
-const u8 gTrapinchPokedexText[] = _(
+const u8 gRaelicPokedexText[] = _(
     "Its big jaws crunch through boulders.\n"
     "Because its head is so big, it has a hard\n"
     "time getting back upright if it tips over\n"
     "onto its back.");
 
-const u8 gVibravaPokedexText[] = _(
+const u8 gRomushuPokedexText[] = _(
     "It looses ultrasonic waves by rubbing its\n"
-    "wings together. Since a VIBRAVA's wings\n"
+    "wings together. Since a ROMUSHU's wings\n"
     "are still in the process of growing, it can\n"
     "only fly short distances.");
 
-const u8 gFlygonPokedexText[] = _(
+const u8 gFusangPokedexText[] = _(
     "The flapping of its wings sounds like\n"
     "singing. To prevent detection by enemies,\n"
     "it hides itself by flapping up a cloud of\n"

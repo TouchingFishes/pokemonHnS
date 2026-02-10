@@ -1885,13 +1885,13 @@ $(OBJEVENTGFXDIR)/pokemon/reuniclus.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/spinda.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/trapinch.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/raelic.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/vibrava.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/romushu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/flygon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/fusang.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/pawniard.4bpp: %.4bpp: %.png

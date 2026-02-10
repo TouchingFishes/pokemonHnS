@@ -3186,7 +3186,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -3196,7 +3196,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 19,
@@ -3216,7 +3216,7 @@
               {
                 "min_level": 19,
                 "max_level": 19,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -3370,7 +3370,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -3380,7 +3380,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 19,
@@ -3400,7 +3400,7 @@
               {
                 "min_level": 19,
                 "max_level": 19,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -3554,7 +3554,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -3564,7 +3564,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 19,
@@ -3738,7 +3738,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -3778,17 +3778,17 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           },
@@ -20761,12 +20761,12 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -20915,12 +20915,12 @@
               {
                 "min_level": 20,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -21074,7 +21074,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -21228,7 +21228,7 @@
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 21,
@@ -28949,7 +28949,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -28959,7 +28959,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -28969,7 +28969,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -28979,7 +28979,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -28989,7 +28989,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -28999,7 +28999,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29018,7 +29018,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29028,7 +29028,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29038,7 +29038,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29048,7 +29048,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29058,7 +29058,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29068,7 +29068,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29087,7 +29087,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29097,7 +29097,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29117,7 +29117,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29127,7 +29127,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29137,7 +29137,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29156,7 +29156,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29166,7 +29166,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29186,7 +29186,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29196,7 +29196,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29206,7 +29206,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29225,7 +29225,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29235,7 +29235,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29245,7 +29245,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29255,7 +29255,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29265,7 +29265,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29275,7 +29275,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29294,7 +29294,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29304,7 +29304,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29314,7 +29314,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29324,7 +29324,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29334,7 +29334,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29344,7 +29344,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29373,7 +29373,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29383,7 +29383,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29393,7 +29393,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29403,7 +29403,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29413,7 +29413,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29442,7 +29442,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29452,7 +29452,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29462,7 +29462,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29472,7 +29472,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29482,7 +29482,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29501,7 +29501,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29511,7 +29511,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29521,7 +29521,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29531,7 +29531,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29541,7 +29541,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29551,7 +29551,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29570,7 +29570,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29580,7 +29580,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29590,7 +29590,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29600,7 +29600,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29610,7 +29610,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29620,7 +29620,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29639,7 +29639,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29649,7 +29649,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29659,7 +29659,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29669,7 +29669,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29679,7 +29679,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29689,7 +29689,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29708,7 +29708,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29718,7 +29718,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29728,7 +29728,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29738,7 +29738,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29748,7 +29748,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29758,7 +29758,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29777,7 +29777,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29787,7 +29787,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29797,7 +29797,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29807,7 +29807,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29817,7 +29817,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29827,7 +29827,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29846,7 +29846,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29856,7 +29856,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29866,7 +29866,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29876,7 +29876,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29886,7 +29886,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29896,7 +29896,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29915,7 +29915,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29925,7 +29925,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29935,7 +29935,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -29945,7 +29945,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -29955,7 +29955,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -29965,7 +29965,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -29984,7 +29984,7 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -29994,7 +29994,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -30004,7 +30004,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 22,
@@ -30014,7 +30014,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 23,
@@ -30024,7 +30024,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 24,
@@ -30034,7 +30034,7 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               }
             ]
           }
@@ -66807,27 +66807,17 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_TRAPINCH"
-              },
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_BELDUM"
-              },
-              {
-                "min_level": 20,
-                "max_level": 30,
-                "species": "SPECIES_VIBRAVA"
+                "species": "SPECIES_RAELIC"
               },
               {
                 "min_level": 20,
@@ -66837,7 +66827,17 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_VIBRAVA"
+                "species": "SPECIES_ROMUSHU"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_BELDUM"
+              },
+              {
+                "min_level": 20,
+                "max_level": 30,
+                "species": "SPECIES_ROMUSHU"
               }
             ]
           },

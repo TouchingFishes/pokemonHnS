@@ -499,19 +499,19 @@ static const union AnimCmd sUnusedAnim_Sharpedo_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Trapinch_1[] =
+static const union AnimCmd sUnusedAnim_Raelic_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Vibrava_1[] =
+static const union AnimCmd sUnusedAnim_Romushu_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Flygon_1[] =
+static const union AnimCmd sUnusedAnim_Fusang_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
@@ -1271,9 +1271,9 @@ static const union AnimCmd *const sUnusedAnims_Feebas[] = {sAnim_GeneralFrame0, 
 static const union AnimCmd *const sUnusedAnims_Milotic[] = {sAnim_GeneralFrame0, sUnusedAnim_Milotic_1, sUnusedAnim_Milotic_2};
 static const union AnimCmd *const sUnusedAnims_Carvanha[] = {sAnim_GeneralFrame0, sUnusedAnim_Carvanha_1, sUnusedAnim_Carvanha_2};
 static const union AnimCmd *const sUnusedAnims_Sharpedo[] = {sAnim_GeneralFrame0, sUnusedAnim_Sharpedo_1, sUnusedAnim_Sharpedo_2};
-static const union AnimCmd *const sUnusedAnims_Trapinch[] = {sAnim_GeneralFrame0, sUnusedAnim_Trapinch_1};
-static const union AnimCmd *const sUnusedAnims_Vibrava[] = {sAnim_GeneralFrame0, sUnusedAnim_Vibrava_1};
-static const union AnimCmd *const sUnusedAnims_Flygon[] = {sAnim_GeneralFrame0, sUnusedAnim_Flygon_1};
+static const union AnimCmd *const sUnusedAnims_Raelic[] = {sAnim_GeneralFrame0, sUnusedAnim_Raelic_1};
+static const union AnimCmd *const sUnusedAnims_Romushu[] = {sAnim_GeneralFrame0, sUnusedAnim_Romushu_1};
+static const union AnimCmd *const sUnusedAnims_Fusang[] = {sAnim_GeneralFrame0, sUnusedAnim_Fusang_1};
 static const union AnimCmd *const sUnusedAnims_Makuhita[] = {sAnim_GeneralFrame0, sUnusedAnim_Makuhita_1};
 static const union AnimCmd *const sUnusedAnims_Hariyama[] = {sAnim_GeneralFrame0, sUnusedAnim_Hariyama_1};
 static const union AnimCmd *const sUnusedAnims_Electrike[] = {sAnim_GeneralFrame0, sUnusedAnim_Electrike_1, sUnusedAnim_Electrike_2};
@@ -1713,9 +1713,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_MILOTIC] = sUnusedAnims_Milotic,
     [SPECIES_CARVANHA] = sUnusedAnims_Carvanha,
     [SPECIES_SHARPEDO] = sUnusedAnims_Sharpedo,
-    [SPECIES_TRAPINCH] = sUnusedAnims_Trapinch,
-    [SPECIES_VIBRAVA] = sUnusedAnims_Vibrava,
-    [SPECIES_FLYGON] = sUnusedAnims_Flygon,
+    [SPECIES_RAELIC] = sUnusedAnims_Raelic,
+    [SPECIES_ROMUSHU] = sUnusedAnims_Romushu,
+    [SPECIES_FUSANG] = sUnusedAnims_Fusang,
     [SPECIES_MAKUHITA] = sUnusedAnims_Makuhita,
     [SPECIES_HARIYAMA] = sUnusedAnims_Hariyama,
     [SPECIES_ELECTRIKE] = sUnusedAnims_Electrike,

@@ -5504,7 +5504,7 @@ static const u16 sSharpedoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(55, MOVE_DARK_PULSE),
     LEVEL_UP_END};
 
-static const u16 sTrapinchLevelUpLearnset[] = {
+static const u16 sRaelicLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_BITE),
     LEVEL_UP_MOVE(1, MOVE_BIDE),
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
@@ -5523,7 +5523,7 @@ static const u16 sTrapinchLevelUpLearnset[] = {
     LEVEL_UP_MOVE(89, MOVE_FISSURE),
     LEVEL_UP_END};
 
-static const u16 sVibravaLevelUpLearnset[] = {
+static const u16 sRomushuLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_BITE),
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
     LEVEL_UP_MOVE(1, MOVE_SAND_TOMB),
@@ -5546,7 +5546,7 @@ static const u16 sVibravaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(80, MOVE_FISSURE),
     LEVEL_UP_END};
 
-static const u16 sFlygonLevelUpLearnset[] = {
+static const u16 sFusangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_BITE),
     LEVEL_UP_MOVE(1, MOVE_DRAGON_DANCE),
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
