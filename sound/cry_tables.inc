@@ -405,7 +405,7 @@ gCryTable::
 	cry Cry_Happiny
 	cry Cry_Honchkrow
 	cry Cry_Leafeon
-	cry Cry_Lickilicky
+	cry Cry_Gekopon
 	cry Cry_Magmortar
 	cry Cry_Magnezone
 	cry Cry_Larvesta
@@ -840,7 +840,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Happiny
 	cry_reverse Cry_Honchkrow
 	cry_reverse Cry_Leafeon
-	cry_reverse Cry_Lickilicky
+	cry_reverse Cry_Gekopon
 	cry_reverse Cry_Magmortar
 	cry_reverse Cry_Magnezone
 	cry_reverse Cry_Larvesta

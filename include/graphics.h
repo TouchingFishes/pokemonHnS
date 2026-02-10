@@ -2910,13 +2910,13 @@ extern const u32 gMonStillFrontPic_Magnezone[];
 extern const u8 gMonIcon_Magnezone[];
 extern const u8 gMonFootprint_Magnezone[];
 
-extern const u32 gMonFrontPic_Lickilicky[];
-extern const u32 gMonPalette_Lickilicky[];
-extern const u32 gMonBackPic_Lickilicky[];
-extern const u32 gMonShinyPalette_Lickilicky[];
-extern const u32 gMonStillFrontPic_Lickilicky[];
-extern const u8 gMonIcon_Lickilicky[];
-extern const u8 gMonFootprint_Lickilicky[];
+extern const u32 gMonFrontPic_Gekopon[];
+extern const u32 gMonPalette_Gekopon[];
+extern const u32 gMonBackPic_Gekopon[];
+extern const u32 gMonShinyPalette_Gekopon[];
+extern const u32 gMonStillFrontPic_Gekopon[];
+extern const u8 gMonIcon_Gekopon[];
+extern const u8 gMonFootprint_Gekopon[];
 
 extern const u32 gMonFrontPic_Snover[];
 extern const u32 gMonPalette_Snover[];

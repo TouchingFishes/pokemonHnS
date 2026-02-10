@@ -1862,24 +1862,6 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Weavile[] = {
     overworld_frame(gSurfablePokemonPic_Weavile, 4, 4, 11),
 };
 
-const struct SpriteFrameImage gSurfingOverworldPicTable_Lickilicky[] = {
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 0),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 1),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 2),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 3),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 4),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 5),
-};
-
-const struct SpriteFrameImage gSurfingOverlayPicTable_Lickilicky[] = {
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 6),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 7),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 8),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 9),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 10),
-    overworld_frame(gSurfablePokemonPic_Lickilicky, 4, 4, 11),
-};
-
 const struct SpriteFrameImage gSurfingOverworldPicTable_Arceus[] = {
     overworld_frame(gSurfablePokemonPic_Arceus, 8, 8, 0),
     overworld_frame(gSurfablePokemonPic_Arceus, 8, 8, 1),
@@ -3744,24 +3726,6 @@ const struct SpriteFrameImage gSurfingOverlayShinyPicTable_Weavile[] = {
     overworld_frame(gSurfableShinyPokemonPic_Weavile, 4, 4, 9),
     overworld_frame(gSurfableShinyPokemonPic_Weavile, 4, 4, 10),
     overworld_frame(gSurfableShinyPokemonPic_Weavile, 4, 4, 11),
-};
-
-const struct SpriteFrameImage gSurfingOverworldShinyPicTable_Lickilicky[] = {
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 0),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 1),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 2),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 3),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 4),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 5),
-};
-
-const struct SpriteFrameImage gSurfingOverlayShinyPicTable_Lickilicky[] = {
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 6),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 7),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 8),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 9),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 10),
-    overworld_frame(gSurfableShinyPokemonPic_Lickilicky, 4, 4, 11),
 };
 
 const struct SpriteFrameImage gSurfingOverworldShinyPicTable_Arceus[] = {

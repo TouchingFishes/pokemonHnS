@@ -6233,7 +6233,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_LICKILICKY]              = (TUTOR(MOVE_MEGA_PUNCH)
+    [SPECIES_GEKOPON]              = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_MEGA_KICK)
                                 | TUTOR(MOVE_BODY_SLAM)

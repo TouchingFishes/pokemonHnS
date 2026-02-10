@@ -19372,7 +19372,7 @@ static const struct TrainerMonItemCustomMoves sParty_Whitney2[] = { //LeaderGrou
     {
     .iv = 100,
     .lvl = 65,
-    .species = SPECIES_LICKILICKY,
+    .species = SPECIES_GEKOPON,
     .heldItem = ITEM_SILK_SCARF,
     .moves = {MOVE_DEFENSE_CURL, MOVE_ROLLOUT, MOVE_FOCUS_BLAST, MOVE_SUPERSONIC}
     },

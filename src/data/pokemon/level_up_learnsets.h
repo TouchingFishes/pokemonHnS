@@ -7234,7 +7234,7 @@ static const u16 sLeafeonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(78, MOVE_SWORDS_DANCE),
     LEVEL_UP_END};
 
-static const u16 sLickilickyLevelUpLearnset[] = {
+static const u16 sGekoponLevelUpLearnset[] = {
     LEVEL_UP_MOVE(0, MOVE_STOMP),
     LEVEL_UP_MOVE(1, MOVE_FALSE_SWIPE),
     LEVEL_UP_MOVE(1, MOVE_LICK),

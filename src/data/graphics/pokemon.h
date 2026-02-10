@@ -2851,12 +2851,12 @@ const u32 gMonShinyPalette_Magnezone[] = INCBIN_U32("graphics/pokemon/magnezone/
 const u8 gMonIcon_Magnezone[] = INCBIN_U8("graphics/pokemon/magnezone/icon.4bpp");
 const u8 gMonFootprint_Magnezone[] = INCBIN_U8("graphics/pokemon/magnezone/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Lickilicky[] = INCBIN_U32("graphics/pokemon/lickilicky/anim_front.4bpp.lz");
-const u32 gMonPalette_Lickilicky[] = INCBIN_U32("graphics/pokemon/lickilicky/normal.gbapal.lz");
-const u32 gMonBackPic_Lickilicky[] = INCBIN_U32("graphics/pokemon/lickilicky/back.4bpp.lz");
-const u32 gMonShinyPalette_Lickilicky[] = INCBIN_U32("graphics/pokemon/lickilicky/shiny.gbapal.lz");
-const u8 gMonIcon_Lickilicky[] = INCBIN_U8("graphics/pokemon/lickilicky/icon.4bpp");
-const u8 gMonFootprint_Lickilicky[] = INCBIN_U8("graphics/pokemon/lickilicky/footprint.1bpp");
+const u32 gMonStillFrontPic_Gekopon[] = INCBIN_U32("graphics/pokemon/gekopon/front.4bpp.lz");
+const u32 gMonPalette_Gekopon[] = INCBIN_U32("graphics/pokemon/gekopon/normal.gbapal.lz");
+const u32 gMonBackPic_Gekopon[] = INCBIN_U32("graphics/pokemon/gekopon/back.4bpp.lz");
+const u32 gMonShinyPalette_Gekopon[] = INCBIN_U32("graphics/pokemon/gekopon/shiny.gbapal.lz");
+const u8 gMonIcon_Gekopon[] = INCBIN_U8("graphics/pokemon/gekopon/icon.4bpp");
+const u8 gMonFootprint_Gekopon[] = INCBIN_U8("graphics/pokemon/gekopon/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Snover[] = INCBIN_U32("graphics/pokemon/snover/anim_front.4bpp.lz");
 const u32 gMonPalette_Snover[] = INCBIN_U32("graphics/pokemon/snover/normal.gbapal.lz");

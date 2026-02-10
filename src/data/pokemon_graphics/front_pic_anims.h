@@ -4920,7 +4920,7 @@ static const union AnimCmd sAnim_Magnezone_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lickilicky_1[] =
+static const union AnimCmd sAnim_Gekopon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(1, 5),
@@ -5733,7 +5733,7 @@ SINGLE_ANIMATION(Gliscor);
 SINGLE_ANIMATION(Happiny);
 SINGLE_ANIMATION(Honchkrow);
 SINGLE_ANIMATION(Leafeon);
-SINGLE_ANIMATION(Lickilicky);
+SINGLE_ANIMATION(Gekopon);
 SINGLE_ANIMATION(Magmortar);
 SINGLE_ANIMATION(Magnezone);
 SINGLE_ANIMATION(Larvesta);
@@ -6207,7 +6207,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_VOLCARONA] = sAnims_Volcarona,
     [SPECIES_WEAVILE] = sAnims_Weavile,
     [SPECIES_MAGNEZONE] = sAnims_Magnezone,
-    [SPECIES_LICKILICKY] = sAnims_Lickilicky,
+    [SPECIES_GEKOPON] = sAnims_Gekopon,
     [SPECIES_SNOVER] = sAnims_Snover,
     [SPECIES_TANGROWTH] = sAnims_Tangrowth,
     [SPECIES_ELECTIVIRE] = sAnims_Electivire,

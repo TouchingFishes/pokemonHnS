@@ -1976,7 +1976,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_LICKILICKY,
+                                            .species = SPECIES_GEKOPON,
                                             .heldItem = ITEM_FOCUS_BAND,
                                             .moves = {MOVE_UPROAR, MOVE_DISABLE, MOVE_ATTRACT, MOVE_LICK},
                                             .hpEV = 252,
@@ -1991,7 +1991,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 0,
                                             .personality = 0x8,
-                                            .nickname = _("LICKILICKY"),
+                                            .nickname = _("GEKOPON"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =

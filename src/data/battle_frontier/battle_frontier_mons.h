@@ -6265,15 +6265,15 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_LICKILICKY_1] = {
-        .species = SPECIES_LICKILICKY,
+    [FRONTIER_MON_GEKOPON_1] = {
+        .species = SPECIES_GEKOPON,
         .moves = {MOVE_SLAM, MOVE_BRICK_BREAK, MOVE_LICK, MOVE_ROLLOUT},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_LICKILICKY_2] = {
-        .species = SPECIES_LICKILICKY,
+    [FRONTIER_MON_GEKOPON_2] = {
+        .species = SPECIES_GEKOPON,
         .moves = {MOVE_EARTHQUAKE, MOVE_BODY_SLAM, MOVE_KNOCK_OFF, MOVE_ROCK_SLIDE},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHERI_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
@@ -12702,15 +12702,15 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_LICKILICKY_1] = {
-        .species = SPECIES_LICKILICKY,
+    [FRONTIER_MON_GEKOPON_1] = {
+        .species = SPECIES_GEKOPON,
         .moves = {MOVE_SLAM, MOVE_BRICK_BREAK, MOVE_LICK, MOVE_ROLLOUT},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_QUIRKY
     },
-    [FRONTIER_MON_LICKILICKY_2] = {
-        .species = SPECIES_LICKILICKY,
+    [FRONTIER_MON_GEKOPON_2] = {
+        .species = SPECIES_GEKOPON,
         .moves = {MOVE_EARTHQUAKE, MOVE_BODY_SLAM, MOVE_KNOCK_OFF, MOVE_ROCK_SLIDE},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHERI_BERRY,
         .evSpread = F_EV_SPREAD_SP_DEFENSE | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,

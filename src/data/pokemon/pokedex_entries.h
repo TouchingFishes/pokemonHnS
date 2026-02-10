@@ -4848,12 +4848,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LICKILICKY] =
+    [NATIONAL_DEX_GEKOPON] =
     {
         .categoryName = _("LICKING"),
         .height = 17,
         .weight = 1400,
-        .description = gLickilickyPokedexText,
+        .description = gGekoponPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,

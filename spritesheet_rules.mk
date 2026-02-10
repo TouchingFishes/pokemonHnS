@@ -2122,7 +2122,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/honchkrow.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/leafeon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/lickilicky.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/gekopon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/magmortar.4bpp: %.4bpp: %.png
@@ -2547,9 +2547,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0458_volcarona.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0461_weavile.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0463_lickilicky.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
 $(OBJEVENTGFXDIR)/pokemon/surfable/0493_arceus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 8 -mheight 8
 
@@ -2874,9 +2871,6 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0384_rayquaza_shiny.4bpp: %.4bpp: %.png
 #	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0461_weavile_shiny.4bpp: %.4bpp: %.png
-	$(GFX) $< $@ -mwidth 4 -mheight 4
-
-$(OBJEVENTGFXDIR)/pokemon/surfable/0463_lickilicky_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0493_arceus_shiny.4bpp: %.4bpp: %.png

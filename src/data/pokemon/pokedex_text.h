@@ -2404,7 +2404,7 @@ const u8 gLeafeonPokedexText[] = _(
     "photosynthesis to produce its energy\n"
     "supply without eating food.");
 
-const u8 gLickilickyPokedexText[] = _(
+const u8 gGekoponPokedexText[] = _(
     "The long tongue is always soggy with\n"
     "slobber. The saliva contains a solvent\n"
     "that causes numbness. Getting too close\n"

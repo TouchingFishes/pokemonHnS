@@ -5910,7 +5910,7 @@ static const u16 sLeafeonLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sLickilickyLevelUpLearnset_Original[] = {
+static const u16 sGekoponLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_LICK),
     LEVEL_UP_MOVE( 5, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 9, MOVE_DEFENSE_CURL),

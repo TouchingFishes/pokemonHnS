@@ -392,7 +392,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/latios.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/leafeon.aif sound/direct_sound_samples/cries/leafeon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ledian.aif sound/direct_sound_samples/cries/ledian.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ledyba.aif sound/direct_sound_samples/cries/ledyba.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lickilicky.aif sound/direct_sound_samples/cries/lickilicky.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gekopon.aif sound/direct_sound_samples/cries/gekopon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lickitung.aif sound/direct_sound_samples/cries/lickitung.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lileep.aif sound/direct_sound_samples/cries/lileep.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/linoone.aif sound/direct_sound_samples/cries/linoone.bin --compress

@@ -12295,7 +12295,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LICKILICKY] =
+    [SPECIES_GEKOPON] =
     {
         .baseHP        = 110,
         .baseAttack    = 85,

@@ -2007,8 +2007,8 @@ Cry_Leafeon::
 	.incbin "sound/direct_sound_samples/cries/leafeon.bin"
 
 	.align 2
-Cry_Lickilicky::
-	.incbin "sound/direct_sound_samples/cries/lickilicky.bin"
+Cry_Gekopon::
+	.incbin "sound/direct_sound_samples/cries/gekopon.bin"
 
 	.align 2
 Cry_Magmortar::

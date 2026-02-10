@@ -1,4 +1,4 @@
-.set LOCALID_DOJO_LICKILICKY, 1
+.set LOCALID_DOJO_GEKOPON, 1
 .set LOCALID_DOJO_MACHAMP, 2
 .set LOCALID_DOJO_STEELIX, 3
 .set LOCALID_DOJO_ALAKAZAM, 4
@@ -28,24 +28,24 @@ SaffronCity_FightingDojo_EventScript_Refused::
 	release
 	end
 
-SaffronCity_FightingDojo_EventScript_Lickilicky_EV_HP::
+SaffronCity_FightingDojo_EventScript_Gekopon_EV_HP::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_LICKILICKY, CRY_MODE_NORMAL
-	msgbox SaffronCity_FightingDojo_Text_Lickilicky, MSGBOX_DEFAULT
+	playmoncry SPECIES_GEKOPON, CRY_MODE_NORMAL
+	msgbox SaffronCity_FightingDojo_Text_Gekopon, MSGBOX_DEFAULT
 	delay 20
 	closemessage
-	goto_if_set FLAG_TEMP_1, SaffronCity_FightingDojo_EventScript_BattleLickilicky_EV_HP
+	goto_if_set FLAG_TEMP_1, SaffronCity_FightingDojo_EventScript_BattleGekopon_EV_HP
 	delay 30
-	bufferspeciesname STR_VAR_1, SPECIES_LICKILICKY
+	bufferspeciesname STR_VAR_1, SPECIES_GEKOPON
 	bufferstring STR_VAR_2, SaffronCity_FightingDojo_Text_HP
 	msgbox SaffronCity_FightingDojo_Text_WouldYouLikeToBattle, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_FightingDojo_EventScript_Refused
-SaffronCity_FightingDojo_EventScript_BattleLickilicky_EV_HP::
+SaffronCity_FightingDojo_EventScript_BattleGekopon_EV_HP::
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_NO_SHINY
-	setwildbattle SPECIES_LICKILICKY, 1, ITEM_NONE
+	setwildbattle SPECIES_GEKOPON, 1, ITEM_NONE
 	dowildbattle
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_NO_SHINY
@@ -53,8 +53,8 @@ SaffronCity_FightingDojo_EventScript_BattleLickilicky_EV_HP::
 	release
 	end
 	
-SaffronCity_FightingDojo_Text_Lickilicky:
-	.string "LICKILICKY: LIIIIICK!$"
+SaffronCity_FightingDojo_Text_Gekopon:
+	.string "GEKOPON: LIIIIICK!$"
 
 SaffronCity_FightingDojo_EventScript_Machamp_EV_Attack::
 	lock

@@ -10774,7 +10774,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
         
-    [SPECIES_LICKILICKY] = { .learnset = {
+    [SPECIES_GEKOPON] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,

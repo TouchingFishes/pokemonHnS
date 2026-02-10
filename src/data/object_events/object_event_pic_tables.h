@@ -5779,13 +5779,13 @@ static const struct SpriteFrameImage sPicTable_Leafeon[] = {
     overworld_frame(gObjectEventPic_Leafeon, 4, 4, 4),
     overworld_frame(gObjectEventPic_Leafeon, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Lickilicky[] = {
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Lickilicky, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Gekopon[] = {
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Gekopon, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Magmortar[] = {
     overworld_frame(gObjectEventPic_Magmortar, 4, 4, 0),
