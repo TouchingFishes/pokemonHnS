@@ -3937,7 +3937,7 @@ static const union AnimCmd sAnim_Altaria_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Wynaut_1[] =
+static const union AnimCmd sAnim_Mlloy_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5631,7 +5631,7 @@ SINGLE_ANIMATION(Meditite);
 SINGLE_ANIMATION(Medicham);
 DOUBLE_ANIMATION(Swablu);
 DOUBLE_ANIMATION(Altaria);
-SINGLE_ANIMATION(Wynaut);
+SINGLE_ANIMATION(Mlloy);
 SINGLE_ANIMATION(Duskull);
 SINGLE_ANIMATION(Dusclops);
 SINGLE_ANIMATION(Roselia);
@@ -6123,7 +6123,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_MEDICHAM]    = sAnims_Medicham,
     [SPECIES_SWABLU]      = sAnims_Swablu,
     [SPECIES_ALTARIA]     = sAnims_Altaria,
-    [SPECIES_WYNAUT]      = sAnims_Wynaut,
+    [SPECIES_MLLOY]      = sAnims_Mlloy,
     [SPECIES_DUSKULL]     = sAnims_Duskull,
     [SPECIES_DUSCLOPS]    = sAnims_Dusclops,
     [SPECIES_ROSELIA]     = sAnims_Roselia,

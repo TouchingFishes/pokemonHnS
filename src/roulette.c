@@ -47,22 +47,22 @@
 
 // IDs for grid selections when betting
 #define SELECTION_NONE      0
-#define COL_WYNAUT          1
+#define COL_MLLOY          1
 #define COL_SOLOSIS         2
 #define COL_SKITTY          3
 #define COL_MAKUHITA        4
 #define ROW_ORANGE          (COL_MAKUHITA + 1)
-#define SQU_ORANGE_WYNAUT   (ROW_ORANGE + COL_WYNAUT)
+#define SQU_ORANGE_MLLOY   (ROW_ORANGE + COL_MLLOY)
 #define SQU_ORANGE_SOLOSIS  (ROW_ORANGE + COL_SOLOSIS)
 #define SQU_ORANGE_SKITTY   (ROW_ORANGE + COL_SKITTY)
 #define SQU_ORANGE_MAKUHITA (ROW_ORANGE + COL_MAKUHITA)
 #define ROW_GREEN           (SQU_ORANGE_MAKUHITA + 1)
-#define SQU_GREEN_WYNAUT    (ROW_GREEN + COL_WYNAUT)
+#define SQU_GREEN_MLLOY    (ROW_GREEN + COL_MLLOY)
 #define SQU_GREEN_SOLOSIS   (ROW_GREEN + COL_SOLOSIS)
 #define SQU_GREEN_SKITTY    (ROW_GREEN + COL_SKITTY)
 #define SQU_GREEN_MAKUHITA  (ROW_GREEN + COL_MAKUHITA)
 #define ROW_PURPLE          (SQU_GREEN_MAKUHITA + 1)
-#define SQU_PURPLE_WYNAUT   (ROW_PURPLE + COL_WYNAUT)
+#define SQU_PURPLE_MLLOY   (ROW_PURPLE + COL_MLLOY)
 #define SQU_PURPLE_SOLOSIS  (ROW_PURPLE + COL_SOLOSIS)
 #define SQU_PURPLE_SKITTY   (ROW_PURPLE + COL_SKITTY)
 #define SQU_PURPLE_MAKUHITA (ROW_PURPLE + COL_MAKUHITA)
@@ -79,36 +79,36 @@
 #define GET_ROW_IDX(selectionId)(selectionId / 5 - 1)
 
 // Flags for the above selections, used to set which spaces have been hit or bet on
-#define F_WYNAUT_COL      (1 << COL_WYNAUT)
+#define F_MLLOY_COL      (1 << COL_MLLOY)
 #define F_SOLOSIS_COL     (1 << COL_SOLOSIS)
 #define F_SKITTY_COL      (1 << COL_SKITTY)
 #define F_MAKUHITA_COL    (1 << COL_MAKUHITA)
 #define F_ORANGE_ROW      (1 << ROW_ORANGE)
-#define F_ORANGE_WYNAUT   (1 << SQU_ORANGE_WYNAUT)
+#define F_ORANGE_MLLOY   (1 << SQU_ORANGE_MLLOY)
 #define F_ORANGE_SOLOSIS  (1 << SQU_ORANGE_SOLOSIS)
 #define F_ORANGE_SKITTY   (1 << SQU_ORANGE_SKITTY)
 #define F_ORANGE_MAKUHITA (1 << SQU_ORANGE_MAKUHITA)
 #define F_GREEN_ROW       (1 << ROW_GREEN)
-#define F_GREEN_WYNAUT    (1 << SQU_GREEN_WYNAUT)
+#define F_GREEN_MLLOY    (1 << SQU_GREEN_MLLOY)
 #define F_GREEN_SOLOSIS   (1 << SQU_GREEN_SOLOSIS)
 #define F_GREEN_SKITTY    (1 << SQU_GREEN_SKITTY)
 #define F_GREEN_MAKUHITA  (1 << SQU_GREEN_MAKUHITA)
 #define F_PURPLE_ROW      (1 << ROW_PURPLE)
-#define F_PURPLE_WYNAUT   (1 << SQU_PURPLE_WYNAUT)
+#define F_PURPLE_MLLOY   (1 << SQU_PURPLE_MLLOY)
 #define F_PURPLE_SOLOSIS  (1 << SQU_PURPLE_SOLOSIS)
 #define F_PURPLE_SKITTY   (1 << SQU_PURPLE_SKITTY)
 #define F_PURPLE_MAKUHITA (1 << SQU_PURPLE_MAKUHITA)
 
 // Flags for flashing selections on the roulette wheel
-#define F_FLASH_COLOR_O_WYNAUT   (1 << 0)
+#define F_FLASH_COLOR_O_MLLOY   (1 << 0)
 #define F_FLASH_COLOR_G_SOLOSIS  (1 << 1)
 #define F_FLASH_COLOR_P_SKITTY   (1 << 2)
 #define F_FLASH_COLOR_O_MAKUHITA (1 << 3)
-#define F_FLASH_COLOR_G_WYNAUT   (1 << 4)
+#define F_FLASH_COLOR_G_MLLOY   (1 << 4)
 #define F_FLASH_COLOR_P_SOLOSIS  (1 << 5)
 #define F_FLASH_COLOR_O_SKITTY   (1 << 6)
 #define F_FLASH_COLOR_G_MAKUHITA (1 << 7)
-#define F_FLASH_COLOR_P_WYNAUT   (1 << 8)
+#define F_FLASH_COLOR_P_MLLOY   (1 << 8)
 #define F_FLASH_COLOR_O_SOLOSIS  (1 << 9)
 #define F_FLASH_COLOR_G_SKITTY   (1 << 10)
 #define F_FLASH_COLOR_P_MAKUHITA (1 << 11)
@@ -129,7 +129,7 @@
 #define PALTAG_SHROOMISH 6
 #define PALTAG_VOLTREL   7
 #define PALTAG_GRID_ICONS 8
-#define PALTAG_WYNAUT    9
+#define PALTAG_MLLOY    9
 #define PALTAG_SOLOSIS   10
 #define PALTAG_SKITTY    11
 #define PALTAG_MAKUHITA  12
@@ -181,15 +181,15 @@ enum {
     SPR_WHEEL_BALL_5,
     SPR_WHEEL_BALL_6,
     SPR_WHEEL_CENTER,
-    SPR_WHEEL_ICON_ORANGE_WYNAUT,
+    SPR_WHEEL_ICON_ORANGE_MLLOY,
     SPR_WHEEL_ICON_GREEN_SOLOSIS,
     SPR_WHEEL_ICON_PURPLE_SKITTY,
     SPR_WHEEL_ICON_ORANGE_MAKUHITA,
-    SPR_WHEEL_ICON_GREEN_WYNAUT,
+    SPR_WHEEL_ICON_GREEN_MLLOY,
     SPR_WHEEL_ICON_PURPLE_SOLOSIS,
     SPR_WHEEL_ICON_ORANGE_SKITTY,
     SPR_WHEEL_ICON_GREEN_MAKUHITA,
-    SPR_WHEEL_ICON_PURPLE_WYNAUT,
+    SPR_WHEEL_ICON_PURPLE_MLLOY,
     SPR_WHEEL_ICON_ORANGE_SOLOSIS,
     SPR_WHEEL_ICON_GREEN_SKITTY,
     SPR_WHEEL_ICON_PURPLE_MAKUHITA,
@@ -203,15 +203,15 @@ enum {
     SPR_BALL_COUNTER_1,
     SPR_BALL_COUNTER_2,
     SPR_BALL_COUNTER_3,
-    SPR_GRID_ICON_ORANGE_WYNAUT,
+    SPR_GRID_ICON_ORANGE_MLLOY,
     SPR_GRID_ICON_GREEN_SOLOSIS,
     SPR_GRID_ICON_PURPLE_SKITTY,
     SPR_GRID_ICON_ORANGE_MAKUHITA,
-    SPR_GRID_ICON_GREEN_WYNAUT,
+    SPR_GRID_ICON_GREEN_MLLOY,
     SPR_GRID_ICON_PURPLE_SOLOSIS,
     SPR_GRID_ICON_ORANGE_SKITTY,
     SPR_GRID_ICON_GREEN_MAKUHITA,
-    SPR_GRID_ICON_PURPLE_WYNAUT,
+    SPR_GRID_ICON_PURPLE_MLLOY,
     SPR_GRID_ICON_ORANGE_SOLOSIS,
     SPR_GRID_ICON_GREEN_SKITTY,
     SPR_GRID_ICON_PURPLE_MAKUHITA,
@@ -242,10 +242,10 @@ enum {
 
 // Start points for sprite IDs that are looped over
 #define SPR_WHEEL_BALLS SPR_WHEEL_BALL_1
-#define SPR_WHEEL_ICONS SPR_WHEEL_ICON_ORANGE_WYNAUT
+#define SPR_WHEEL_ICONS SPR_WHEEL_ICON_ORANGE_MLLOY
 #define SPR_BALL_COUNTER SPR_BALL_COUNTER_1
 #define SPR_CREDIT_DIGITS SPR_CREDIT_DIG_1
-#define SPR_GRID_ICONS SPR_GRID_ICON_ORANGE_WYNAUT
+#define SPR_GRID_ICONS SPR_GRID_ICON_ORANGE_MLLOY
 #define SPR_POKE_HEADERS SPR_POKE_HEADER_1
 #define SPR_COLOR_HEADERS SPR_COLOR_HEADER_1
 #define SPR_GRID_BALLS SPR_GRID_BALL_1
@@ -483,7 +483,7 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .inSelectionFlags = 0,
         .flashFlags = 0,
     },
-    [COL_WYNAUT] = {
+    [COL_MLLOY] = {
         .spriteIdOffset = 12,
         .baseMultiplier = NUM_BOARD_POKES,
         .column = 1,
@@ -492,8 +492,8 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 7,
         .var05 = 0,
         .tilemapOffset = 0,
-        .flag = F_WYNAUT_COL,
-        .inSelectionFlags = F_WYNAUT_COL | F_ORANGE_WYNAUT | F_GREEN_WYNAUT | F_PURPLE_WYNAUT,
+        .flag = F_MLLOY_COL,
+        .inSelectionFlags = F_MLLOY_COL | F_ORANGE_MLLOY | F_GREEN_MLLOY | F_PURPLE_MLLOY,
         .flashFlags = F_FLASH_COLUMN,
     },
     [COL_SOLOSIS] = {
@@ -545,10 +545,10 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 0,
         .tilemapOffset = 12,
         .flag = F_ORANGE_ROW,
-        .inSelectionFlags = F_ORANGE_ROW | F_ORANGE_WYNAUT | F_ORANGE_SOLOSIS | F_ORANGE_SKITTY | F_ORANGE_MAKUHITA,
-        .flashFlags = F_FLASH_COLOR_O_WYNAUT | F_FLASH_COLOR_O_SOLOSIS | F_FLASH_COLOR_O_SKITTY | F_FLASH_COLOR_O_MAKUHITA,
+        .inSelectionFlags = F_ORANGE_ROW | F_ORANGE_MLLOY | F_ORANGE_SOLOSIS | F_ORANGE_SKITTY | F_ORANGE_MAKUHITA,
+        .flashFlags = F_FLASH_COLOR_O_MLLOY | F_FLASH_COLOR_O_SOLOSIS | F_FLASH_COLOR_O_SKITTY | F_FLASH_COLOR_O_MAKUHITA,
     },
-    [SQU_ORANGE_WYNAUT] = {
+    [SQU_ORANGE_MLLOY] = {
         .spriteIdOffset = 0,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 1,
@@ -557,9 +557,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 10,
         .var05 = 3,
         .tilemapOffset = 3,
-        .flag = F_ORANGE_WYNAUT,
-        .inSelectionFlags = F_ORANGE_WYNAUT,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_WYNAUT,
+        .flag = F_ORANGE_MLLOY,
+        .inSelectionFlags = F_ORANGE_MLLOY,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_O_MLLOY,
     },
     [SQU_ORANGE_SOLOSIS] = {
         .spriteIdOffset = 9,
@@ -610,10 +610,10 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 3,
         .tilemapOffset = 15,
         .flag = F_GREEN_ROW,
-        .inSelectionFlags = F_GREEN_ROW | F_GREEN_WYNAUT | F_GREEN_SOLOSIS | F_GREEN_SKITTY | F_GREEN_MAKUHITA,
-        .flashFlags = F_FLASH_COLOR_G_WYNAUT | F_FLASH_COLOR_G_SOLOSIS | F_FLASH_COLOR_G_SKITTY | F_FLASH_COLOR_G_MAKUHITA,
+        .inSelectionFlags = F_GREEN_ROW | F_GREEN_MLLOY | F_GREEN_SOLOSIS | F_GREEN_SKITTY | F_GREEN_MAKUHITA,
+        .flashFlags = F_FLASH_COLOR_G_MLLOY | F_FLASH_COLOR_G_SOLOSIS | F_FLASH_COLOR_G_SKITTY | F_FLASH_COLOR_G_MAKUHITA,
     },
-    [SQU_GREEN_WYNAUT] = {
+    [SQU_GREEN_MLLOY] = {
         .spriteIdOffset = 4,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 1,
@@ -622,9 +622,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 13,
         .var05 = 6,
         .tilemapOffset = 6,
-        .flag = F_GREEN_WYNAUT,
-        .inSelectionFlags = F_GREEN_WYNAUT,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_WYNAUT,
+        .flag = F_GREEN_MLLOY,
+        .inSelectionFlags = F_GREEN_MLLOY,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_G_MLLOY,
     },
     [SQU_GREEN_SOLOSIS] = {
         .spriteIdOffset = 1,
@@ -675,10 +675,10 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .var05 = 6,
         .tilemapOffset = 18,
         .flag = F_PURPLE_ROW,
-        .inSelectionFlags = F_PURPLE_ROW | F_PURPLE_WYNAUT | F_PURPLE_SOLOSIS | F_PURPLE_SKITTY | F_PURPLE_MAKUHITA,
-        .flashFlags = F_FLASH_COLOR_P_WYNAUT | F_FLASH_COLOR_P_SOLOSIS | F_FLASH_COLOR_P_SKITTY | F_FLASH_COLOR_P_MAKUHITA,
+        .inSelectionFlags = F_PURPLE_ROW | F_PURPLE_MLLOY | F_PURPLE_SOLOSIS | F_PURPLE_SKITTY | F_PURPLE_MAKUHITA,
+        .flashFlags = F_FLASH_COLOR_P_MLLOY | F_FLASH_COLOR_P_SOLOSIS | F_FLASH_COLOR_P_SKITTY | F_FLASH_COLOR_P_MAKUHITA,
     },
-    [SQU_PURPLE_WYNAUT] = {
+    [SQU_PURPLE_MLLOY] = {
         .spriteIdOffset = 8,
         .baseMultiplier = NUM_ROULETTE_SLOTS,
         .column = 1,
@@ -687,9 +687,9 @@ static const struct GridSelection sGridSelections[NUM_GRID_SELECTIONS + 1] =
         .y = 16,
         .var05 = 9,
         .tilemapOffset = 9,
-        .flag = F_PURPLE_WYNAUT,
-        .inSelectionFlags = F_PURPLE_WYNAUT,
-        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_WYNAUT,
+        .flag = F_PURPLE_MLLOY,
+        .inSelectionFlags = F_PURPLE_MLLOY,
+        .flashFlags = F_FLASH_ICON | F_FLASH_COLOR_P_MLLOY,
     },
     [SQU_PURPLE_SOLOSIS] = {
         .spriteIdOffset = 5,
@@ -737,8 +737,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 0,
         .id2 = 1,
-        .gridSquare = SQU_ORANGE_WYNAUT,
-        .flag = F_ORANGE_WYNAUT,
+        .gridSquare = SQU_ORANGE_MLLOY,
+        .flag = F_ORANGE_MLLOY,
     },
     {
         .id1 = 1,
@@ -761,8 +761,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 4,
         .id2 = 9,
-        .gridSquare = SQU_GREEN_WYNAUT,
-        .flag = F_GREEN_WYNAUT,
+        .gridSquare = SQU_GREEN_MLLOY,
+        .flag = F_GREEN_MLLOY,
     },
     {
         .id1 = 5,
@@ -785,8 +785,8 @@ static const struct RouletteSlot sRouletteSlots[] =
     {
         .id1 = 8,
         .id2 = 17,
-        .gridSquare = SQU_PURPLE_WYNAUT,
-        .flag = F_PURPLE_WYNAUT,
+        .gridSquare = SQU_PURPLE_MLLOY,
+        .flag = F_PURPLE_MLLOY,
     },
     {
         .id1 = 9,
@@ -858,7 +858,7 @@ static const struct RouletteTable sRouletteTables[] =
 // Data to flash the color indicator for each slot on the roulette wheel
 static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS + 1] =
 {
-    { // F_FLASH_COLOR_O_WYNAUT
+    { // F_FLASH_COLOR_O_MLLOY
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(0) + 5,
         .numColors = 1,
@@ -898,7 +898,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_G_WYNAUT
+    { // F_FLASH_COLOR_G_MLLOY
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(5) + 10,
         .numColors = 1,
@@ -938,7 +938,7 @@ static const struct RouletteFlashSettings sFlashData_Colors[NUM_ROULETTE_SLOTS +
         .unk7_5 = -2,
         .colorDeltaDir = 0,
     },
-    { // F_FLASH_COLOR_P_WYNAUT
+    { // F_FLASH_COLOR_P_MLLOY
         .color = FLASHUTIL_USE_EXISTING_COLOR,
         .paletteOffset = BG_PLTT_ID(8) + 5,
         .numColors = 1,
@@ -1319,7 +1319,7 @@ static void UpdateGridSelectionRect(u8 selectionId)
     case SELECTION_NONE:
         FillTilemapRect(&sRoulette->tilemapBuffers[0][0], 0, 14, 7, 16, 13);
         break;
-    case COL_WYNAUT:
+    case COL_MLLOY:
     case COL_SOLOSIS:
     case COL_SKITTY:
     case COL_MAKUHITA:
@@ -1366,7 +1366,7 @@ static void Task_SelectFirstEmptySquare(u8 taskId)
     if (sRoulette->hitFlags & F_ORANGE_ROW)
     {
         // If the whole orange row is filled, get first in green row
-        for (i = SQU_GREEN_WYNAUT; i < SQU_GREEN_MAKUHITA; i++)
+        for (i = SQU_GREEN_MLLOY; i < SQU_GREEN_MAKUHITA; i++)
         {
             if (!(sRoulette->hitFlags & sGridSelections[i].flag))
                 break;
@@ -1376,7 +1376,7 @@ static void Task_SelectFirstEmptySquare(u8 taskId)
     {
         // Otherwise get first in orange row
         // With only 6 balls both rows can't be filled, no need to check purple row
-        for (i = SQU_ORANGE_WYNAUT; i <= SQU_ORANGE_MAKUHITA; i++) // <= is accidental, but it will never get that far
+        for (i = SQU_ORANGE_MLLOY; i <= SQU_ORANGE_MAKUHITA; i++) // <= is accidental, but it will never get that far
         {
             if (!(sRoulette->hitFlags & sGridSelections[i].flag))
                 break;
@@ -2060,15 +2060,15 @@ static u8 RecordHit(u8 taskId, u8 slotId)
 {
     u8 i, j;
     u32 columnFlags[NUM_BOARD_POKES] = {
-        F_WYNAUT_COL | F_ORANGE_WYNAUT | F_GREEN_WYNAUT | F_PURPLE_WYNAUT,
+        F_MLLOY_COL | F_ORANGE_MLLOY | F_GREEN_MLLOY | F_PURPLE_MLLOY,
         F_SOLOSIS_COL | F_ORANGE_SOLOSIS | F_GREEN_SOLOSIS | F_PURPLE_SOLOSIS,
         F_SKITTY_COL | F_ORANGE_SKITTY | F_GREEN_SKITTY | F_PURPLE_SKITTY,
         F_MAKUHITA_COL | F_ORANGE_MAKUHITA | F_GREEN_MAKUHITA | F_PURPLE_MAKUHITA
     };
     u32 rowFlags[NUM_BOARD_COLORS] = {
-        F_ORANGE_ROW | F_ORANGE_WYNAUT | F_ORANGE_SOLOSIS | F_ORANGE_SKITTY | F_ORANGE_MAKUHITA,
-        F_GREEN_ROW | F_GREEN_WYNAUT | F_GREEN_SOLOSIS | F_GREEN_SKITTY | F_GREEN_MAKUHITA,
-        F_PURPLE_ROW | F_PURPLE_WYNAUT | F_PURPLE_SOLOSIS | F_PURPLE_SKITTY | F_PURPLE_MAKUHITA
+        F_ORANGE_ROW | F_ORANGE_MLLOY | F_ORANGE_SOLOSIS | F_ORANGE_SKITTY | F_ORANGE_MAKUHITA,
+        F_GREEN_ROW | F_GREEN_MLLOY | F_GREEN_SOLOSIS | F_GREEN_SKITTY | F_GREEN_MAKUHITA,
+        F_PURPLE_ROW | F_PURPLE_MLLOY | F_PURPLE_SOLOSIS | F_PURPLE_SKITTY | F_PURPLE_MAKUHITA
     };
 
     if (slotId >= NUM_ROULETTE_SLOTS)
@@ -2105,7 +2105,7 @@ static bool8 IsHitInBetSelection(u8 gridSquare, u8 betSelection)
         {
         case SELECTION_NONE:
             return 3; // should never happen, player must place bet
-        case COL_WYNAUT:
+        case COL_MLLOY:
         case COL_SOLOSIS:
         case COL_SKITTY:
         case COL_MAKUHITA:
@@ -2117,7 +2117,7 @@ static bool8 IsHitInBetSelection(u8 gridSquare, u8 betSelection)
         case ROW_ORANGE:
         case ROW_GREEN:
         case ROW_PURPLE:
-            if (hit >= (betSelection + COL_WYNAUT)
+            if (hit >= (betSelection + COL_MLLOY)
              && hit <= (betSelection + COL_MAKUHITA))
                 return TRUE;
             break;
@@ -2156,7 +2156,7 @@ static void FlashSelectionOnWheel(u8 selectionId)
         struct RouletteFlashSettings iconFlash[NUM_BOARD_COLORS];
         memcpy(iconFlash, sFlashData_PokeIcons, sizeof(iconFlash));
 
-        if (selectionId >= COL_WYNAUT && selectionId <= COL_MAKUHITA)
+        if (selectionId >= COL_MLLOY && selectionId <= COL_MAKUHITA)
             numSelected = NUM_BOARD_COLORS; // Selection is full column
         else
             numSelected = 1;
@@ -2166,8 +2166,8 @@ static void FlashSelectionOnWheel(u8 selectionId)
         {
         // The specific color of the poke it references doesn't matter, because the icons of a poke share a palette
         // So it just uses the first sprite ID of each
-        case COL_WYNAUT:
-            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_ORANGE_WYNAUT]].oam.paletteNum);
+        case COL_MLLOY:
+            palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_ORANGE_MLLOY]].oam.paletteNum);
             break;
         case COL_SOLOSIS:
             palOffset = PLTT_ID(gSprites[sRoulette->spriteIds[SPR_WHEEL_ICON_GREEN_SOLOSIS]].oam.paletteNum);
@@ -2237,7 +2237,7 @@ static void DrawGridBackground(u8 selectionId)
     {
     case SELECTION_NONE:
         return;
-    case COL_WYNAUT:
+    case COL_MLLOY:
     case COL_SOLOSIS:
     case COL_SKITTY:
     case COL_MAKUHITA:
@@ -2331,8 +2331,8 @@ static const u16 sCredit_Pal[] = INCBIN_U16("graphics/roulette/credit.gbapal");
 static const u16 sShroomish_Pal[] = INCBIN_U16("graphics/roulette/shroomish.gbapal");
 static const u16 sVoltrel_Pal[] = INCBIN_U16("graphics/roulette/tailow.gbapal");
 static const u16 sGridIcons_Pal[] = INCBIN_U16("graphics/roulette/grid_icons.gbapal");
-static const u16 sWynaut_Pal[] = INCBIN_U16("graphics/roulette/wynaut.gbapal");
-static const u16 sSolosis_Pal[] = INCBIN_U16("graphics/roulette/azurill.gbapal");
+static const u16 sMlloy_Pal[] = INCBIN_U16("graphics/roulette/wynaut.gbapal"); //wynaut
+static const u16 sSolosis_Pal[] = INCBIN_U16("graphics/roulette/azurill.gbapal"); //azurill
 static const u16 sSkitty_Pal[] = INCBIN_U16("graphics/roulette/skitty.gbapal");
 static const u16 sMakuhita_Pal[] = INCBIN_U16("graphics/roulette/makuhita.gbapal");
 static const u16 sUnused1_Pal[] = INCBIN_U16("graphics/roulette/unused_1.gbapal");
@@ -2357,7 +2357,7 @@ static const struct SpritePalette sSpritePalettes[] =
     { .data = sShroomish_Pal,   .tag = PALTAG_SHROOMISH },
     { .data = sVoltrel_Pal,     .tag = PALTAG_VOLTREL },
     { .data = sGridIcons_Pal,   .tag = PALTAG_GRID_ICONS },
-    { .data = sWynaut_Pal,      .tag = PALTAG_WYNAUT },
+    { .data = sMlloy_Pal,      .tag = PALTAG_MLLOY },
     { .data = sSolosis_Pal,     .tag = PALTAG_SOLOSIS },
     { .data = sSkitty_Pal,      .tag = PALTAG_SKITTY },
     { .data = sMakuhita_Pal,    .tag = PALTAG_MAKUHITA },
@@ -2437,7 +2437,7 @@ static const union AnimCmd sAnim_WheelIcons[] =
     ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_OrangeWynaut[] =
+static const union AnimCmd *const sAnim_WheelIcon_OrangeMlloy[] =
 {
     &sAnim_WheelIcons[0]
 };
@@ -2457,7 +2457,7 @@ static const union AnimCmd *const sAnim_WheelIcon_OrangeMakuhita[] =
     &sAnim_WheelIcons[3]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_GreenWynaut[] =
+static const union AnimCmd *const sAnim_WheelIcon_GreenMlloy[] =
 {
     &sAnim_WheelIcons[4]
 };
@@ -2477,7 +2477,7 @@ static const union AnimCmd *const sAnim_WheelIcon_GreenMakuhita[] =
     &sAnim_WheelIcons[7]
 };
 
-static const union AnimCmd *const sAnim_WheelIcon_PurpleWynaut[] =
+static const union AnimCmd *const sAnim_WheelIcon_PurpleMlloy[] =
 {
     &sAnim_WheelIcons[8]
 };
@@ -2536,7 +2536,7 @@ static const union AnimCmd sAnim_GridIcons[] =
     ANIMCMD_END
 };
 
-static const union AnimCmd *const sAnim_WynautHeader[] =
+static const union AnimCmd *const sAnim_MlloyHeader[] =
 {
     &sAnim_Headers[0]
 };
@@ -2571,7 +2571,7 @@ static const union AnimCmd *const sAnim_PurpleHeader[] =
     &sAnim_Headers[10]
 };
 
-static const union AnimCmd *const sAnim_GridIcon_Wynaut[] =
+static const union AnimCmd *const sAnim_GridIcon_Mlloy[] =
 {
     &sAnim_GridIcons[0]
 };
@@ -2597,7 +2597,7 @@ static const struct SpriteTemplate sSpriteTemplates_PokeHeaders[NUM_BOARD_POKES]
         .tileTag = GFXTAG_HEADERS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridHeader,
-        .anims = sAnim_WynautHeader,
+        .anims = sAnim_MlloyHeader,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2668,7 +2668,7 @@ static const struct SpriteTemplate sSpriteTemplates_GridIcons[NUM_BOARD_POKES] =
         .tileTag = GFXTAG_GRID_ICONS,
         .paletteTag = PALTAG_GRID_ICONS,
         .oam = &sOam_GridIcon,
-        .anims = sAnim_GridIcon_Wynaut,
+        .anims = sAnim_GridIcon_Mlloy,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_GridSquare
@@ -2703,14 +2703,14 @@ static const struct SpriteTemplate sSpriteTemplates_GridIcons[NUM_BOARD_POKES] =
 };
 
 // Wheel icons are listed clockwise starting from 1 oclock on the roulette wheel (with Poké Ball upside right)
-// They go Wynaut -> Solosis -> Skitty -> Makuhita, and Orange -> Green -> Purple
+// They go Mlloy -> Solosis -> Skitty -> Makuhita, and Orange -> Green -> Purple
 static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOTS] =
 {
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_WYNAUT,
+        .paletteTag = PALTAG_MLLOY,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_OrangeWynaut,
+        .anims = sAnim_WheelIcon_OrangeMlloy,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2744,9 +2744,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_WYNAUT,
+        .paletteTag = PALTAG_MLLOY,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_GreenWynaut,
+        .anims = sAnim_WheelIcon_GreenMlloy,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon
@@ -2780,9 +2780,9 @@ static const struct SpriteTemplate sSpriteTemplates_WheelIcons[NUM_ROULETTE_SLOT
     },
     {
         .tileTag = GFXTAG_WHEEL_ICONS,
-        .paletteTag = PALTAG_WYNAUT,
+        .paletteTag = PALTAG_MLLOY,
         .oam = &sOam_WheelIcon,
-        .anims = sAnim_WheelIcon_PurpleWynaut,
+        .anims = sAnim_WheelIcon_PurpleMlloy,
         .images = NULL,
         .affineAnims = gDummySpriteAffineAnimTable,
         .callback = SpriteCB_WheelIcon

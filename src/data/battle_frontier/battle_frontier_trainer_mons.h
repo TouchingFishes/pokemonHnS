@@ -31,7 +31,7 @@
     FRONTIER_MON_SMEARGLE,      \
     FRONTIER_MON_PIDGEY,        \
     FRONTIER_MON_RATTATA,       \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_SKITTY,        \
     FRONTIER_MON_SPEAROW,       \
     FRONTIER_MON_HOOTHOOT,      \
@@ -130,7 +130,7 @@
     FRONTIER_MON_SHEDINJA,      \
     FRONTIER_MON_ZUBAT,         \
     FRONTIER_MON_SPINARAK,      \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_NIDORAN_M,     \
     FRONTIER_MON_NIDORAN_F,     \
     FRONTIER_MON_KIRLIA,        \
@@ -234,7 +234,7 @@
     FRONTIER_MON_WOOPER,        \
     FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_MARILL,        \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_SURSKIT,       \
     FRONTIER_MON_RUFFLET,       \
     FRONTIER_MON_KIRLIA,        \
@@ -432,7 +432,7 @@
     FRONTIER_MON_SMEARGLE,      \
     FRONTIER_MON_PIDGEY,        \
     FRONTIER_MON_RATTATA,       \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_SKITTY,        \
     FRONTIER_MON_SURSKIT,       \
     FRONTIER_MON_JIGGLYPUFF,    \
@@ -520,7 +520,7 @@
     FRONTIER_MON_SHEDINJA,      \
     FRONTIER_MON_ZUBAT,         \
     FRONTIER_MON_SPINARAK,      \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_DIGLETT,       \
     FRONTIER_MON_LEDYBA,        \
     FRONTIER_MON_NINCADA,       \
@@ -674,7 +674,7 @@
     FRONTIER_MON_SEEDOT,        \
     FRONTIER_MON_FLORGES,         \
     FRONTIER_MON_HOPPIP,        \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_KIRLIA,        \
     FRONTIER_MON_MEDITITE,      \
     FRONTIER_MON_PARAS,         \
@@ -706,7 +706,7 @@
     FRONTIER_MON_RALTS,         \
     FRONTIER_MON_PICHU,         \
     FRONTIER_MON_POOCHYENA,     \
-    FRONTIER_MON_WYNAUT,        \
+    FRONTIER_MON_MLLOY,        \
     FRONTIER_MON_KIRLIA,        \
     FRONTIER_MON_MAREEP,        \
     FRONTIER_MON_MEDITITE,      \

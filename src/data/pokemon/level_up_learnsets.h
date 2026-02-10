@@ -6035,7 +6035,7 @@ static const u16 sAltariaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_SKY_ATTACK),
     LEVEL_UP_END};
 
-static const u16 sWynautLevelUpLearnset[] = {
+static const u16 sMlloyLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_SPLASH),
     LEVEL_UP_MOVE(1, MOVE_CHARM),
     LEVEL_UP_MOVE(1, MOVE_ENCORE),

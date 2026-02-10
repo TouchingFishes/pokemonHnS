@@ -626,7 +626,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/rufflet.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wobbuffet.aif sound/direct_sound_samples/cries/wobbuffet.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wooper.aif sound/direct_sound_samples/cries/wooper.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/impidimp.aif sound/direct_sound_samples/cries/impidimp.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/wynaut.aif sound/direct_sound_samples/cries/wynaut.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mlloy.aif sound/direct_sound_samples/cries/mlloy.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/xatu.aif sound/direct_sound_samples/cries/xatu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/yanma.aif sound/direct_sound_samples/cries/yanma.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/yanmega.aif sound/direct_sound_samples/cries/yanmega.bin --compress

@@ -2340,12 +2340,12 @@ const u32 gMonShinyPalette_Altaria[] = INCBIN_U32("graphics/pokemon/altaria/shin
 const u8 gMonIcon_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/icon.4bpp");
 const u8 gMonFootprint_Altaria[] = INCBIN_U8("graphics/pokemon/altaria/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/front.4bpp.lz");
-const u32 gMonPalette_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/normal.gbapal.lz");
-const u32 gMonBackPic_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/back.4bpp.lz");
-const u32 gMonShinyPalette_Wynaut[] = INCBIN_U32("graphics/pokemon/wynaut/shiny.gbapal.lz");
-const u8 gMonIcon_Wynaut[] = INCBIN_U8("graphics/pokemon/wynaut/icon.4bpp");
-const u8 gMonFootprint_Wynaut[] = INCBIN_U8("graphics/pokemon/wynaut/footprint.1bpp");
+const u32 gMonStillFrontPic_Mlloy[] = INCBIN_U32("graphics/pokemon/mlloy/front.4bpp.lz");
+const u32 gMonPalette_Mlloy[] = INCBIN_U32("graphics/pokemon/mlloy/normal.gbapal.lz");
+const u32 gMonBackPic_Mlloy[] = INCBIN_U32("graphics/pokemon/mlloy/back.4bpp.lz");
+const u32 gMonShinyPalette_Mlloy[] = INCBIN_U32("graphics/pokemon/mlloy/shiny.gbapal.lz");
+const u8 gMonIcon_Mlloy[] = INCBIN_U8("graphics/pokemon/mlloy/icon.4bpp");
+const u8 gMonFootprint_Mlloy[] = INCBIN_U8("graphics/pokemon/mlloy/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/front.4bpp.lz");
 const u32 gMonPalette_Duskull[] = INCBIN_U32("graphics/pokemon/duskull/normal.gbapal.lz");

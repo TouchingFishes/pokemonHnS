@@ -124,7 +124,7 @@ static const u32 sAreaGlow_Pal[] = INCBIN_U32("graphics/pokedex/area_glow.gbapal
 static const u32 sAreaGlow_Gfx[] = INCBIN_U32("graphics/pokedex/area_glow.4bpp.lz");
 static const u32 sPokedexPlusHGSS_ScreenSelectBarSubmenu_Tilemap[] = INCBIN_U32("graphics/pokedex/hgss/HGSS_SelectBar.bin.lz");
 
-static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_WYNAUT };
+static const u16 sSpeciesHiddenFromAreaScreen[] = { SPECIES_MLLOY };
 
 // Return the region-map section at (x,y) tiles on the Pokédex area screen.
 // Uses the same layout as the Pokédex art: flag set => combined; unset => johto.
@@ -504,7 +504,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_MEDICHAM, 
     SPECIES_SWABLU, 
     SPECIES_ALTARIA, 
-    SPECIES_WYNAUT, 
+    SPECIES_MLLOY, 
     SPECIES_DUSKULL, 
     SPECIES_DUSCLOPS, 
     SPECIES_ROSELIA, 
@@ -766,7 +766,7 @@ static void FindMapsWithMon(u16 species)
             }
         }
         // Check if this species should be hidden from the area map.
-        // This only applies to Wynaut, to hide the encounters on Mirage Island.
+        // This only applies to Mlloy, to hide the encounters on Mirage Island.
         for (i = 0; i < ARRAY_COUNT(sSpeciesHiddenFromAreaScreen); i++)
         {
             if (sSpeciesHiddenFromAreaScreen[i] == species)

@@ -77,7 +77,6 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Sabrina;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ShinyGyarados;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMagnemiteDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedSquirtleDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedWooperDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedPikachuDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedPorygon2Doll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CuttableTree;
@@ -156,7 +155,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TreeckoDoll
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TorchicDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MudkipDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DuskullDoll;
-extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WynautDoll;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_WooperDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_BaltoyDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_KecleonDoll;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkittyDoll;
@@ -344,7 +343,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SHINY_GYARADOS] =         &gObjectEventGraphicsInfo_ShinyGyarados,
     //[OBJ_EVENT_GFX_UNUSED_MAGNEMITE_DOLL] =    &gObjectEventGraphicsInfo_UnusedMagnemiteDoll,
     //[OBJ_EVENT_GFX_UNUSED_SQUIRTLE_DOLL] =     &gObjectEventGraphicsInfo_UnusedSquirtleDoll,
-    //[OBJ_EVENT_GFX_UNUSED_WOOPER_DOLL] =       &gObjectEventGraphicsInfo_UnusedWooperDoll,
     //[OBJ_EVENT_GFX_UNUSED_PIKACHU_DOLL] =      &gObjectEventGraphicsInfo_UnusedPikachuDoll,
     //[OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL] =     &gObjectEventGraphicsInfo_UnusedPorygon2Doll,
     [OBJ_EVENT_GFX_CUTTABLE_TREE] =            &gObjectEventGraphicsInfo_CuttableTree,
@@ -423,7 +421,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_TORCHIC_DOLL] =             &gObjectEventGraphicsInfo_TorchicDoll,
     [OBJ_EVENT_GFX_MUDKIP_DOLL] =              &gObjectEventGraphicsInfo_MudkipDoll,
     [OBJ_EVENT_GFX_DUSKULL_DOLL] =             &gObjectEventGraphicsInfo_DuskullDoll,
-    [OBJ_EVENT_GFX_WYNAUT_DOLL] =              &gObjectEventGraphicsInfo_WynautDoll,
+    [OBJ_EVENT_GFX_WOOPER_DOLL] =              &gObjectEventGraphicsInfo_WooperDoll,
     [OBJ_EVENT_GFX_BALTOY_DOLL] =              &gObjectEventGraphicsInfo_BaltoyDoll,
     [OBJ_EVENT_GFX_KECLEON_DOLL] =             &gObjectEventGraphicsInfo_KecleonDoll,
     [OBJ_EVENT_GFX_SKITTY_DOLL] =              &gObjectEventGraphicsInfo_SkittyDoll,

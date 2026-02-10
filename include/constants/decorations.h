@@ -93,7 +93,7 @@
 #define DECOR_TORCHIC_DOLL     89
 #define DECOR_MUDKIP_DOLL      90
 #define DECOR_DUSKULL_DOLL     91
-#define DECOR_WYNAUT_DOLL      92
+#define DECOR_WOOPER_DOLL      92
 #define DECOR_BALTOY_DOLL      93
 #define DECOR_KECLEON_DOLL     94
 #define DECOR_SKITTY_DOLL      95

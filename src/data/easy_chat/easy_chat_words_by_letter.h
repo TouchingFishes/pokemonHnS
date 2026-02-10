@@ -1958,7 +1958,7 @@ const u16 gEasyChatWordsByLetter_W[] = {
     EC_MOVE2(WRAP),
     EC_WORD_WROOOAAR_EXCL,
     EC_POKEMON(IMPIDIMP),
-    EC_POKEMON(WYNAUT),
+    EC_POKEMON(MLLOY),
 };
 
 const u16 gEasyChatWordsByLetter_X[] = {

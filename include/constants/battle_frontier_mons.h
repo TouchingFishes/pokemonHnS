@@ -36,7 +36,7 @@
 #define FRONTIER_MON_SMEARGLE       32
 #define FRONTIER_MON_PIDGEY         33
 #define FRONTIER_MON_RATTATA        34
-#define FRONTIER_MON_WYNAUT         35
+#define FRONTIER_MON_MLLOY         35
 #define FRONTIER_MON_SKITTY         36
 #define FRONTIER_MON_SPEAROW        37
 #define FRONTIER_MON_HOOTHOOT       38

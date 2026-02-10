@@ -2158,8 +2158,8 @@ const u8 gAbsolPokedexText[] = _(
     "disasters. It is a long-lived POKéMON that\n"
     "has a life-span of 100 years.");
 
-const u8 gWynautPokedexText[] = _(
-    "A WYNAUT loves to eat sweet fruits.\n"
+const u8 gMlloyPokedexText[] = _(
+    "A MLLOY loves to eat sweet fruits.\n"
     "It cleverly picks fruits using its earlike\n"
     "arms. They gather in fruit gardens, drawn\n"
     "by the fragrance.");

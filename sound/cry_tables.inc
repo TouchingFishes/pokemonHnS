@@ -258,7 +258,7 @@ gCryTable::
 	cry Cry_Manectric
 	cry Cry_Duskull
 	cry Cry_Latias
-	cry Cry_Wynaut
+	cry Cry_Mlloy
 	cry Cry_Skorupi
 	cry Cry_Sharpedo
 	cry Cry_Drapion
@@ -693,7 +693,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Manectric
 	cry_reverse Cry_Duskull
 	cry_reverse Cry_Latias
-	cry_reverse Cry_Wynaut
+	cry_reverse Cry_Mlloy
 	cry_reverse Cry_Skorupi
 	cry_reverse Cry_Sharpedo
 	cry_reverse Cry_Drapion

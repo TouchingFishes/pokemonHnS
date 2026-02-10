@@ -845,11 +845,11 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_WYNAUT || *species == SPECIES_SOLOSIS || *species == SPECIES_TINKATUFF || *species == SPECIES_TINKATON || *species == SPECIES_TINKATINK || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
+    if (*species == SPECIES_MLLOY || *species == SPECIES_SOLOSIS || *species == SPECIES_TINKATUFF || *species == SPECIES_TINKATON || *species == SPECIES_TINKATINK || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-        if (*species == SPECIES_WYNAUT && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+        if (*species == SPECIES_MLLOY && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
         {
             *species = SPECIES_WOBBUFFET;
         }

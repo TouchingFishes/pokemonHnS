@@ -4320,12 +4320,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_WYNAUT] =
+    [NATIONAL_DEX_MLLOY] =
     {
         .categoryName = _("BRIGHT"),
         .height = 6,
         .weight = 140,
-        .description = gWynautPokedexText,
+        .description = gMlloyPokedexText,
         .pokemonScale = 484,
         .pokemonOffset = 19,
         .trainerScale = 256,

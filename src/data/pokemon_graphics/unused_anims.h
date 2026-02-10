@@ -723,13 +723,13 @@ static const union AnimCmd sUnusedAnim_Altaria_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Wynaut_1[] =
+static const union AnimCmd sUnusedAnim_Mlloy_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Wynaut_2[] =
+static const union AnimCmd sUnusedAnim_Mlloy_2[] =
 {
     ANIMCMD_FRAME(1, 9),
     ANIMCMD_END,
@@ -1299,7 +1299,7 @@ static const union AnimCmd *const sUnusedAnims_Meditite[] = {sAnim_GeneralFrame0
 static const union AnimCmd *const sUnusedAnims_Medicham[] = {sAnim_GeneralFrame0, sUnusedAnim_Medicham_1};
 static const union AnimCmd *const sUnusedAnims_Swablu[] = {sAnim_GeneralFrame0, sUnusedAnim_Swablu_1, sUnusedAnim_Swablu_2};
 static const union AnimCmd *const sUnusedAnims_Altaria[] = {sAnim_GeneralFrame0, sUnusedAnim_Altaria_1};
-static const union AnimCmd *const sUnusedAnims_Wynaut[] = {sAnim_GeneralFrame0, sUnusedAnim_Wynaut_1, sUnusedAnim_Wynaut_2};
+static const union AnimCmd *const sUnusedAnims_Mlloy[] = {sAnim_GeneralFrame0, sUnusedAnim_Mlloy_1, sUnusedAnim_Mlloy_2};
 static const union AnimCmd *const sUnusedAnims_Duskull[] = {sAnim_GeneralFrame0, sUnusedAnim_Duskull_1, sUnusedAnim_Duskull_2};
 static const union AnimCmd *const sUnusedAnims_Dusclops[] = {sAnim_GeneralFrame0, sUnusedAnim_Dusclops_1, sUnusedAnim_Dusclops_2};
 static const union AnimCmd *const sUnusedAnims_Roselia[] = {sAnim_GeneralFrame0};
@@ -1741,7 +1741,7 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_MEDICHAM] = sUnusedAnims_Medicham,
     [SPECIES_SWABLU] = sUnusedAnims_Swablu,
     [SPECIES_ALTARIA] = sUnusedAnims_Altaria,
-    [SPECIES_WYNAUT] = sUnusedAnims_Wynaut,
+    [SPECIES_MLLOY] = sUnusedAnims_Mlloy,
     [SPECIES_DUSKULL] = sUnusedAnims_Duskull,
     [SPECIES_DUSCLOPS] = sUnusedAnims_Dusclops,
     [SPECIES_ROSELIA] = sUnusedAnims_Roselia,

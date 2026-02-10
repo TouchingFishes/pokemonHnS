@@ -5012,7 +5012,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_SWIFT)),
 
-    [SPECIES_WYNAUT]           = (0),
+    [SPECIES_MLLOY]           = (0),
 
     [SPECIES_DUSKULL]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)

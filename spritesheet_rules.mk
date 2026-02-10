@@ -1990,7 +1990,7 @@ $(OBJEVENTGFXDIR)/pokemon/chimecho.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/absol.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/wynaut.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/mlloy.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/snorunt.4bpp: %.4bpp: %.png

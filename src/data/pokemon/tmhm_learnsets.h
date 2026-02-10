@@ -8756,7 +8756,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_WYNAUT] = { .learnset = {
+    [SPECIES_MLLOY] = { .learnset = {
     } },
 
     [SPECIES_DUSKULL] = { .learnset = {
