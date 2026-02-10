@@ -4494,12 +4494,12 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               },
               {
                 "min_level": 18,
@@ -4708,7 +4708,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               }
             ]
           },
@@ -4862,12 +4862,12 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               },
               {
                 "min_level": 18,
@@ -5076,7 +5076,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               }
             ]
           },
@@ -66802,7 +66802,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_LOTUGA"
               },
               {
                 "min_level": 20,

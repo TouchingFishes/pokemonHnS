@@ -1523,12 +1523,12 @@ Cry_Florges::
 	.incbin "sound/direct_sound_samples/cries/florges.bin"
 
 	.align 2
-Cry_Lombre::
-	.incbin "sound/direct_sound_samples/cries/lombre.bin"
+Cry_Lotuga::
+	.incbin "sound/direct_sound_samples/cries/lotuga.bin"
 
 	.align 2
-Cry_Ludicolo::
-	.incbin "sound/direct_sound_samples/cries/ludicolo.bin"
+Cry_Vertuga::
+	.incbin "sound/direct_sound_samples/cries/vertuga.bin"
 
 	.align 2
 Cry_Seedot::

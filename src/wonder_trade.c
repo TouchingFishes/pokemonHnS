@@ -698,7 +698,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
-            else if ((partnerSpecies == SPECIES_LOMBRE || partnerSpecies == SPECIES_NUZLEAF) && partnerLevel >= 38)
+            else if ((partnerSpecies == SPECIES_LOTUGA || partnerSpecies == SPECIES_NUZLEAF) && partnerLevel >= 38)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
@@ -1021,7 +1021,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             {
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             }
-            else if ((species == SPECIES_LOMBRE || species == SPECIES_NUZLEAF) && level >= 38)
+            else if ((species == SPECIES_LOTUGA || species == SPECIES_NUZLEAF) && level >= 38)
             {
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             }

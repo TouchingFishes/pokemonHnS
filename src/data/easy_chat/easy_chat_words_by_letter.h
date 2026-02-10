@@ -931,7 +931,7 @@ const u16 gEasyChatWordsByLetter_L[] = {
     EC_WORD_LOCOMOTIVE,
     EC_WORD_LOL,
     EC_WORD_LOLLING,
-    EC_POKEMON(LOMBRE),
+    EC_POKEMON(LOTUGA),
     EC_WORD_LONESOME,
     EC_WORD_LOOK,
     EC_WORD_LOOKS,
@@ -948,7 +948,7 @@ const u16 gEasyChatWordsByLetter_L[] = {
     EC_WORD_LOW,
     EC_MOVE(LOW_KICK),
     EC_WORD_LOWS,
-    EC_POKEMON(LUDICOLO),
+    EC_POKEMON(VERTUGA),
     EC_POKEMON_NATIONAL(LUGIA),
     EC_WORD_LUKEWARM,
     EC_POKEMON(LUNATONE),
@@ -2530,7 +2530,7 @@ const u16 gEasyChatWordsByLetter_UnusedJapaneseRu[] = {
     EC_WORD_RUBY,
     EC_WORD_THAN,
     EC_POKEMON(SOLOSIS),
-    EC_POKEMON(LUDICOLO),
+    EC_POKEMON(VERTUGA),
     EC_WORD_HAPPILY,
 };
 

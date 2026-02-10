@@ -155,19 +155,19 @@ static const union AnimCmd sUnusedAnim_Floette_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Lombre_1[] =
+static const union AnimCmd sUnusedAnim_Lotuga_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Ludicolo_1[] =
+static const union AnimCmd sUnusedAnim_Vertuga_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Ludicolo_2[] =
+static const union AnimCmd sUnusedAnim_Vertuga_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -1235,8 +1235,8 @@ static const union AnimCmd *const sUnusedAnims_Grimmsnarl[] = {sAnim_GeneralFram
 static const union AnimCmd *const sUnusedAnims_Flabebe[] = {sAnim_GeneralFrame0, sUnusedAnim_Flabebe_1, sUnusedAnim_Flabebe_2};
 static const union AnimCmd *const sUnusedAnims_Floette[] = {sAnim_GeneralFrame0, sUnusedAnim_Floette_1, sUnusedAnim_Floette_2};
 static const union AnimCmd *const sUnusedAnims_Florges[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Lombre[] = {sAnim_GeneralFrame0, sUnusedAnim_Lombre_1};
-static const union AnimCmd *const sUnusedAnims_Ludicolo[] = {sAnim_GeneralFrame0, sUnusedAnim_Ludicolo_1, sUnusedAnim_Ludicolo_2};
+static const union AnimCmd *const sUnusedAnims_Lotuga[] = {sAnim_GeneralFrame0, sUnusedAnim_Lotuga_1};
+static const union AnimCmd *const sUnusedAnims_Vertuga[] = {sAnim_GeneralFrame0, sUnusedAnim_Vertuga_1, sUnusedAnim_Vertuga_2};
 static const union AnimCmd *const sUnusedAnims_Seedot[] = {sAnim_GeneralFrame0, sUnusedAnim_Seedot_1};
 static const union AnimCmd *const sUnusedAnims_Nuzleaf[] = {sAnim_GeneralFrame0, sUnusedAnim_Nuzleaf_1};
 static const union AnimCmd *const sUnusedAnims_Shiftry[] = {sAnim_GeneralFrame0, sUnusedAnim_Shiftry_1, sUnusedAnim_Shiftry_2};
@@ -1677,8 +1677,8 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_FLABEBE] = sUnusedAnims_Flabebe,
     [SPECIES_FLOETTE] = sUnusedAnims_Floette,
     [SPECIES_FLORGES] = sUnusedAnims_Florges,
-    [SPECIES_LOMBRE] = sUnusedAnims_Lombre,
-    [SPECIES_LUDICOLO] = sUnusedAnims_Ludicolo,
+    [SPECIES_LOTUGA] = sUnusedAnims_Lotuga,
+    [SPECIES_VERTUGA] = sUnusedAnims_Vertuga,
     [SPECIES_SEEDOT] = sUnusedAnims_Seedot,
     [SPECIES_NUZLEAF] = sUnusedAnims_Nuzleaf,
     [SPECIES_SHIFTRY] = sUnusedAnims_Shiftry,

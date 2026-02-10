@@ -52,7 +52,6 @@ tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/dusclops/tiles.4bpp grap
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/forest/tiles.4bpp graphics/pokemon_storage/wallpapers/forest/tiles.4bpp.lz
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/frame/tiles.4bpp graphics/pokemon_storage/wallpapers/frame/tiles.4bpp.lz
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/legendary/tiles.4bpp graphics/pokemon_storage/wallpapers/legendary/tiles.4bpp.lz
-tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/ludicolo/tiles.4bpp graphics/pokemon_storage/wallpapers/ludicolo/tiles.4bpp.lz
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/machine/tiles.4bpp graphics/pokemon_storage/wallpapers/machine/tiles.4bpp.lz
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/pikachu/tiles.4bpp graphics/pokemon_storage/wallpapers/pikachu/tiles.4bpp.lz
 tools/gbagfx/gbagfx graphics/pokemon_storage/wallpapers/plain/tiles.4bpp graphics/pokemon_storage/wallpapers/plain/tiles.4bpp.lz
@@ -396,10 +395,10 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gekopon.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lickitung.aif sound/direct_sound_samples/cries/lickitung.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lileep.aif sound/direct_sound_samples/cries/lileep.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/linoone.aif sound/direct_sound_samples/cries/linoone.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lombre.aif sound/direct_sound_samples/cries/lombre.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lotuga.aif sound/direct_sound_samples/cries/lotuga.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/florges.aif sound/direct_sound_samples/cries/florges.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/fraxure.aif sound/direct_sound_samples/cries/fraxure.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ludicolo.aif sound/direct_sound_samples/cries/ludicolo.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vertuga.aif sound/direct_sound_samples/cries/vertuga.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lugia.aif sound/direct_sound_samples/cries/lugia.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lunatone.aif sound/direct_sound_samples/cries/lunatone.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/luvdisc.aif sound/direct_sound_samples/cries/luvdisc.bin --compress

@@ -8303,7 +8303,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LOMBRE] =
+    [SPECIES_LOTUGA] =
     {
         .baseHP        = 60,
         .baseAttack    = 50,
@@ -8333,7 +8333,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LUDICOLO] =
+    [SPECIES_VERTUGA] =
     {
         .baseHP        = 80,
         .baseAttack    = 70,

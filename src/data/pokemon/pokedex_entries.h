@@ -3252,24 +3252,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LOMBRE] =
+    [NATIONAL_DEX_LOTUGA] =
     {
         .categoryName = _("JOLLY"),
         .height = 12,
         .weight = 325,
-        .description = gLombrePokedexText,
+        .description = gLotugaPokedexText,
         .pokemonScale = 277,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LUDICOLO] =
+    [NATIONAL_DEX_VERTUGA] =
     {
         .categoryName = _("CAREFREE"),
         .height = 15,
         .weight = 550,
-        .description = gLudicoloPokedexText,
+        .description = gVertugaPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,

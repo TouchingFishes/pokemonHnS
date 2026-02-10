@@ -139,7 +139,7 @@ BattleFrontier_Lounge9_EV_SDEF_Yes::
 	waitmessage
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_NO_SHINY
-	setwildbattle SPECIES_LUDICOLO, 1, ITEM_NONE
+	setwildbattle SPECIES_VERTUGA, 1, ITEM_NONE
 	dowildbattle
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_NO_SHINY
@@ -207,7 +207,7 @@ BattleFrontier_Lounge9_EV_SDEF_TEXT:
 	.string "Are you ready?$"
 
 BattleFrontier_Lounge9_EV_SDEF_TEXT2:
-	.string "Go LUDICOLO!$"
+	.string "Go VERTUGA!$"
 
 BattleFrontier_Lounge9_EV_SPD_TEXT:
 	.string "Hmph… I can train your\n"

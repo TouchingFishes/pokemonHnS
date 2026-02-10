@@ -3060,7 +3060,7 @@ bool8 ScrCmd_baobacheckmon(struct ScriptContext *ctx)
             (species == SPECIES_PAWNIARD ||
              species == SPECIES_FLORGES ||
              species == SPECIES_MAKUHITA ||
-             species == SPECIES_LOMBRE ||
+             species == SPECIES_LOTUGA ||
              species == SPECIES_TRAPINCH ||
              species == SPECIES_BELDUM ||
              species == SPECIES_VIBRAVA);

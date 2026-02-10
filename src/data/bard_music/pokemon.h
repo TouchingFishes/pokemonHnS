@@ -2372,7 +2372,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_LOMBRE] = {
+    [SPECIES_LOTUGA] = {
         { .songLengthId = 24 },
         { .songLengthId =  3 },
         { .songLengthId = 51 },
@@ -2380,7 +2380,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_LUDICOLO] = {
+    [SPECIES_VERTUGA] = {
         { .songLengthId = 39 },
         { .songLengthId = 9 },
         { .songLengthId = 26 },

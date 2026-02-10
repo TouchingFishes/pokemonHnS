@@ -3160,7 +3160,7 @@ static const union AnimCmd sAnim_Florges_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lombre_1[] =
+static const union AnimCmd sAnim_Lotuga_1[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
@@ -3170,7 +3170,7 @@ static const union AnimCmd sAnim_Lombre_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ludicolo_1[] =
+static const union AnimCmd sAnim_Vertuga_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -5565,8 +5565,8 @@ DOUBLE_ANIMATION(Grimmsnarl);
 DOUBLE_ANIMATION(Flabebe);
 DOUBLE_ANIMATION(Floette);
 SINGLE_ANIMATION(Florges);
-SINGLE_ANIMATION(Lombre);
-SINGLE_ANIMATION(Ludicolo);
+SINGLE_ANIMATION(Lotuga);
+SINGLE_ANIMATION(Vertuga);
 SINGLE_ANIMATION(Seedot);
 SINGLE_ANIMATION(Nuzleaf);
 SINGLE_ANIMATION(Shiftry);
@@ -6059,8 +6059,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_FLABEBE]     = sAnims_Flabebe,
     [SPECIES_FLOETTE]      = sAnims_Floette,
     [SPECIES_FLORGES]       = sAnims_Florges,
-    [SPECIES_LOMBRE]      = sAnims_Lombre,
-    [SPECIES_LUDICOLO]    = sAnims_Ludicolo,
+    [SPECIES_LOTUGA]      = sAnims_Lotuga,
+    [SPECIES_VERTUGA]    = sAnims_Vertuga,
     [SPECIES_SEEDOT]      = sAnims_Seedot,
     [SPECIES_NUZLEAF]     = sAnims_Nuzleaf,
     [SPECIES_SHIFTRY]     = sAnims_Shiftry,

@@ -1624,13 +1624,13 @@ const u8 gFlorgesPokedexText[] = _(
     "across ponds by carrying them on the\n"
     "broad leaf on its head.");
 
-const u8 gLombrePokedexText[] = _(
+const u8 gLotugaPokedexText[] = _(
     "In the evening, it takes great delight in\n"
     "popping out of rivers and startling people.\n"
     "It feeds on aquatic moss that grows on\n"
     "rocks in the riverbed.");
 
-const u8 gLudicoloPokedexText[] = _(
+const u8 gVertugaPokedexText[] = _(
     "When it hears festive music, all the cells\n"
     "in its body become stimulated, and it\n"
     "begins moving in rhythm. It does not\n"

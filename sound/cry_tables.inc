@@ -284,8 +284,8 @@ gCryTable::
 	cry Cry_Banette
 	cry Cry_Shuppet
 	cry Cry_Florges
-	cry Cry_Lombre
-	cry Cry_Ludicolo
+	cry Cry_Lotuga
+	cry Cry_Vertuga
 	cry Cry_Seedot
 	cry Cry_Nuzleaf
 	cry Cry_Shiftry
@@ -719,8 +719,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Banette
 	cry_reverse Cry_Shuppet
 	cry_reverse Cry_Florges
-	cry_reverse Cry_Lombre
-	cry_reverse Cry_Ludicolo
+	cry_reverse Cry_Lotuga
+	cry_reverse Cry_Vertuga
 	cry_reverse Cry_Seedot
 	cry_reverse Cry_Nuzleaf
 	cry_reverse Cry_Shiftry

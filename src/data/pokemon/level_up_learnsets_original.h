@@ -3863,7 +3863,7 @@ static const u16 sFlorgesLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sLombreLevelUpLearnset_Original[] = {
+static const u16 sLotugaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_ABSORB),
@@ -3877,7 +3877,7 @@ static const u16 sLombreLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sLudicoloLevelUpLearnset_Original[] = {
+static const u16 sVertugaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),

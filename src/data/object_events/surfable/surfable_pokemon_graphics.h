@@ -381,15 +381,15 @@ const u32 gSurfableShinyPokemonPic_Linoone[] = INCBIN_U32("graphics/object_event
 const u16 gSurfablePokemonPalette_Linoone[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0264_linoone.gbapal");
 const u16 gSurfablePokemonShinyPalette_Linoone[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0264_linoone_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Lombre[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0271_lombre.4bpp");
-const u32 gSurfableShinyPokemonPic_Lombre[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0271_lombre_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Lombre[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0271_lombre.gbapal");
-const u16 gSurfablePokemonShinyPalette_Lombre[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0271_lombre_shiny.gbapal");
+const u32 gSurfablePokemonPic_Lotuga[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0271_lotuga.4bpp");
+const u32 gSurfableShinyPokemonPic_Lotuga[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0271_lotuga_shiny.4bpp");
+const u16 gSurfablePokemonPalette_Lotuga[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0271_lotuga.gbapal");
+const u16 gSurfablePokemonShinyPalette_Lotuga[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0271_lotuga_shiny.gbapal");
 
-const u32 gSurfablePokemonPic_Ludicolo[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0272_ludicolo.4bpp");
-const u32 gSurfableShinyPokemonPic_Ludicolo[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0272_ludicolo_shiny.4bpp");
-const u16 gSurfablePokemonPalette_Ludicolo[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0272_ludicolo.gbapal");
-const u16 gSurfablePokemonShinyPalette_Ludicolo[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0272_ludicolo_shiny.gbapal");
+const u32 gSurfablePokemonPic_Vertuga[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0272_vertuga.4bpp");
+const u32 gSurfableShinyPokemonPic_Vertuga[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0272_vertuga_shiny.4bpp");
+const u16 gSurfablePokemonPalette_Vertuga[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0272_vertuga.gbapal");
+const u16 gSurfablePokemonShinyPalette_Vertuga[] = INCBIN_U16("graphics/object_events/pics/pokemon/surfable/0272_vertuga_shiny.gbapal");
 
 const u32 gSurfablePokemonPic_Surskit[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0283_surskit.4bpp");
 const u32 gSurfableShinyPokemonPic_Surskit[] = INCBIN_U32("graphics/object_events/pics/pokemon/surfable/0283_surskit_shiny.4bpp");

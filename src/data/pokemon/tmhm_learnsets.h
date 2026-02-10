@@ -7110,7 +7110,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_LOMBRE] = { .learnset = {
+    [SPECIES_LOTUGA] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -7140,7 +7140,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_LUDICOLO] = { .learnset = {
+    [SPECIES_VERTUGA] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,

@@ -3641,7 +3641,7 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     {
     .iv = 255,
     .lvl = 56,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM}
     },
@@ -4954,7 +4954,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nancy[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     }
 };
 
@@ -5439,7 +5439,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin1[] = {
     {
     .iv = 0,
     .lvl = 14,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 0,
@@ -5483,7 +5483,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin2[] = {
     {
     .iv = 0,
     .lvl = 26,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 0,
@@ -5496,7 +5496,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin3[] = {
     {
     .iv = 0,
     .lvl = 37,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 0,
@@ -5509,7 +5509,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin4[] = {
     {
     .iv = 60,
     .lvl = 47,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 60,
@@ -5522,7 +5522,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Edwin5[] = {
     {
     .iv = 120,
     .lvl = 58,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     },
     {
     .iv = 120,
@@ -5627,7 +5627,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute110Treecko[]
     {
     .iv = 50,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 100,
@@ -5645,7 +5645,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute119Treecko[]
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 150,
@@ -5667,7 +5667,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute110Torchic[]
     {
     .iv = 50,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 50,
@@ -5685,7 +5685,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRoute119Torchic[]
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 100,
@@ -5735,7 +5735,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute119Mudkip[] = {
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 150,
@@ -5762,7 +5762,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute110Treecko[] = {
     {
     .iv = 50,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 100,
@@ -5780,7 +5780,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute119Treecko[] = {
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 150,
@@ -5802,7 +5802,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute110Torchic[] = {
     {
     .iv = 50,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 50,
@@ -5820,7 +5820,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_MayRoute119Torchic[] = {
     {
     .iv = 100,
     .lvl = 29,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 100,
@@ -6230,7 +6230,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lorenzo[] = {
     {
     .iv = 50,
     .lvl = 28,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     }
 };
 
@@ -6301,7 +6301,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jenna[] = {
     {
     .iv = 50,
     .lvl = 28,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 50,
@@ -6847,7 +6847,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Haley2[] = {
     {
     .iv = 10,
     .lvl = 26,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 10,
@@ -6860,7 +6860,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Haley3[] = {
     {
     .iv = 60,
     .lvl = 35,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 80,
@@ -6873,7 +6873,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Haley4[] = {
     {
     .iv = 110,
     .lvl = 44,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 130,
@@ -6891,7 +6891,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Haley5[] = {
     {
     .iv = 200,
     .lvl = 58,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 255,
@@ -7623,7 +7623,7 @@ static const struct TrainerMonItemDefaultMoves sParty_BrendanLilycoveTreecko[] =
     {
     .iv = 150,
     .lvl = 34,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     .heldItem = ITEM_NONE,
     },
     {
@@ -7644,7 +7644,7 @@ static const struct TrainerMonItemDefaultMoves sParty_BrendanLilycoveTorchic[] =
     {
     .iv = 150,
     .lvl = 34,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     .heldItem = ITEM_NONE,
     },
     {
@@ -7704,7 +7704,7 @@ static const struct TrainerMonItemDefaultMoves sParty_MayLilycoveTreecko[] = {
     {
     .iv = 150,
     .lvl = 34,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     .heldItem = ITEM_NONE,
     },
     {
@@ -7725,7 +7725,7 @@ static const struct TrainerMonItemDefaultMoves sParty_MayLilycoveTorchic[] = {
     {
     .iv = 150,
     .lvl = 34,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     .heldItem = ITEM_NONE,
     },
     {
@@ -8237,7 +8237,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sophie[] = {
     {
     .iv = 0,
     .lvl = 19,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     }
 };
 
@@ -8284,7 +8284,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Angelina[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 0,
@@ -8627,7 +8627,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Celia[] = {
     {
     .iv = 0,
     .lvl = 22,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     }
 };
 
@@ -11032,7 +11032,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle3[] = {
     {
     .iv = 120,
     .lvl = 43,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 120,
@@ -11065,7 +11065,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle4[] = {
     {
     .iv = 200,
     .lvl = 55,
-    .species = SPECIES_LOMBRE,
+    .species = SPECIES_LOTUGA,
     },
     {
     .iv = 200,
@@ -11098,7 +11098,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gabrielle5[] = {
     {
     .iv = 255,
     .lvl = 61,
-    .species = SPECIES_LUDICOLO,
+    .species = SPECIES_VERTUGA,
     },
     {
     .iv = 255,
