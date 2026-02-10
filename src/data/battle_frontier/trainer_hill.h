@@ -3866,7 +3866,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_URSALUNA,
+                                            .species = SPECIES_HONEDGE,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_PLAY_ROUGH, MOVE_EARTHQUAKE, MOVE_COSMIC_POWER, MOVE_RECOVER},
                                             .hpEV = 6,
@@ -3881,7 +3881,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("URSALUNA"),
+                                            .nickname = _("HONEDGE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -4085,7 +4085,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [2] =
                                         {
-                                            .species = SPECIES_URSALUNA,
+                                            .species = SPECIES_HONEDGE,
                                             .heldItem = ITEM_QUICK_CLAW,
                                             .moves = {MOVE_EARTHQUAKE, MOVE_FACADE, MOVE_PROTECT, MOVE_ROCK_SLIDE},
                                             .hpEV = 252,
@@ -4100,7 +4100,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("URSALUNA"),
+                                            .nickname = _("HONEDGE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [3] =

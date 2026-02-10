@@ -2548,18 +2548,18 @@ const u8 gWyrdeerPokedexText[] = _(
     "The fur shed from its beard retains heat\n"
     "and is useful for winter clothing.");
 
-const u8 gUrsalunaPokedexText[] = _(
-    "Swampy terrain gives Ursaluna its burly\n"
+const u8 gHonedgePokedexText[] = _(
+    "Swampy terrain gives Honedge its burly\n"
     "physique and newfound capacity to\n"
     "manipulate peat at will.");
 
-const u8 gUrsaluna_BloodMoonPokedexText[] = _(
+const u8 gDoubladePokedexText[] = _(
             "It crossed the sea and drifted\n"
             "ashore in a new land. Surviving in this\n"
             "place led it to take on a unique\n"
             "appearance and gain special powers.");
 
-const u8 gKleavorPokedexText[] = _(
+const u8 gAegislashPokedexText[] = _(
             "A violent creature that fells trees with\n"
             "its crude axes and shields itself with hard\n"
             "stone. Should one encounter this Pokémon\n"

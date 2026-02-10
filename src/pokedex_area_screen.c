@@ -580,9 +580,9 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     //SPECIES_DUNDRAG, 
     SPECIES_DUNLONG,
     SPECIES_WYRDEER,
-    SPECIES_URSALUNA,
-    SPECIES_URSALUNA_BLOODMOON,
-    SPECIES_KLEAVOR*/
+    SPECIES_HONEDGE,
+    SPECIES_DOUBLADE,
+    SPECIES_AEGISLASH*/
 };
 
 static const u16 sMovingRegionMapSections[3] =

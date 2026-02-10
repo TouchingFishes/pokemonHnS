@@ -485,9 +485,9 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_DUNDRAG]                    = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  1 },
     [SPECIES_DUNLONG]                  = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },
     [SPECIES_WYRDEER]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
-    [SPECIES_URSALUNA]                     = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
-    [SPECIES_URSALUNA_BLOODMOON]           = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
-    [SPECIES_KLEAVOR]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 }, //changelater
+    [SPECIES_HONEDGE]                     = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
+    [SPECIES_DOUBLADE]           = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  3 },
+    [SPECIES_AEGISLASH]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 }, //changelater
     //[SPECIES_UNUSED_SPACE5]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },
     //[SPECIES_UNUSED_SPACE6]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },
     //[SPECIES_UNUSED_SPACE7]                = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  5 },

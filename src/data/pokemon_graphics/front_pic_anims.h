@@ -5246,7 +5246,7 @@ static const union AnimCmd sAnim_Wyrdeer_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ursaluna_1[] =
+static const union AnimCmd sAnim_Honedge_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -5255,7 +5255,7 @@ static const union AnimCmd sAnim_Ursaluna_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Ursaluna_BloodMoon_1[] =
+static const union AnimCmd sAnim_Doublade_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -5263,7 +5263,7 @@ static const union AnimCmd sAnim_Ursaluna_BloodMoon_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
-static const union AnimCmd sAnim_Kleavor_1[] =
+static const union AnimCmd sAnim_Aegislash_1[] =
 {
     ANIMCMD_FRAME(1, 10),
     ANIMCMD_FRAME(0, 15),
@@ -5757,9 +5757,9 @@ SINGLE_ANIMATION(Kujinought);
 SINGLE_ANIMATION(Dundrag);
 SINGLE_ANIMATION(Dunlong);
 SINGLE_ANIMATION(Wyrdeer);
-SINGLE_ANIMATION(Ursaluna);
-SINGLE_ANIMATION(Ursaluna_BloodMoon);
-SINGLE_ANIMATION(Kleavor);
+SINGLE_ANIMATION(Honedge);
+SINGLE_ANIMATION(Doublade);
+SINGLE_ANIMATION(Aegislash);
 
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 {
@@ -6244,7 +6244,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DUNDRAG] = sAnims_Kujinought,
     [SPECIES_DUNLONG] = sAnims_Dunlong,
     [SPECIES_WYRDEER] = sAnims_Wyrdeer,
-    [SPECIES_URSALUNA] = sAnims_Ursaluna,
-    [SPECIES_URSALUNA_BLOODMOON] = sAnims_Ursaluna_BloodMoon,
-    [SPECIES_KLEAVOR] = sAnims_Kleavor,
+    [SPECIES_HONEDGE] = sAnims_Honedge,
+    [SPECIES_DOUBLADE] = sAnims_Doublade,
+    [SPECIES_AEGISLASH] = sAnims_Aegislash,
 };

@@ -20056,7 +20056,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 66,
-    .species = SPECIES_KLEAVOR,
+    .species = SPECIES_AEGISLASH,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE, MOVE_TWINEEDLE, MOVE_AGILITY}
     },
@@ -21008,7 +21008,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Chikorita6[] = { //Ri
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21052,7 +21052,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Chikorita7[] = { //Ri
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21233,7 +21233,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Cyndaquil6[] = { //Ri
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21278,7 +21278,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Cyndaquil7[] = { //Ri
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21455,7 +21455,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Totodile6[] = { //Riv
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21499,7 +21499,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Totodile7[] = { //Riv
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_URSALUNA_BLOODMOON,
+    .species = SPECIES_DOUBLADE,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_FAKE_TEARS, MOVE_MOONBLAST, MOVE_ANCIENT_POWER, MOVE_REST},
     },
@@ -21688,7 +21688,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Giovanni[] = { //RocketAd
     {
     .iv = 255,
     .lvl = 60,
-    .species = SPECIES_URSALUNA,
+    .species = SPECIES_HONEDGE,
     .moves = {MOVE_EARTHQUAKE, MOVE_SANDSTORM, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE}
     },
     {

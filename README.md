@@ -211,7 +211,7 @@ When you compile, use the modern compiler with "make modern". Compiling using th
 
 **Pokémon related:**
 * Following Pokémon (Optional, with a second option to enable or not Big Followers like Rayquaza).
-* 40 new Pokémon species, mostly from Gen. IV and 3 from Gen 9 (Kujinought, Dudunsparce, Farigiraf, Ursaluna).
+* 40 new Pokémon species, mostly from Gen. IV and 3 from Gen 9 (Kujinought, Dudunsparce, Farigiraf, Honedge).
 * 1 new box space since 2.0.
 * Day/Night encounters. Some Pokémon only appear during day or night.
 * (Not in HnS) All the buffs from later generations are in (optional). 

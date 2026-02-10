@@ -6370,7 +6370,7 @@ static const u16 sWyrdeerLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sUrsalunaLevelUpLearnset_Original[] = {
+static const u16 sHonedgeLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 5, MOVE_CHARM),
     LEVEL_UP_MOVE( 11, MOVE_MAGNITUDE),
@@ -6384,7 +6384,7 @@ static const u16 sUrsalunaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sUrsaluna_BloodMoonLevelUpLearnset_Original[] = {
+static const u16 sDoubladeLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_TACKLE),
     LEVEL_UP_MOVE( 1, MOVE_REST),
     LEVEL_UP_MOVE( 1, MOVE_SNORE),
@@ -6402,7 +6402,7 @@ static const u16 sUrsaluna_BloodMoonLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sKleavorLevelUpLearnset_Original[] = {
+static const u16 sAegislashLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 6, MOVE_FOCUS_ENERGY),

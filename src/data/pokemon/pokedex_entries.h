@@ -5131,34 +5131,34 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 286,
         .trainerOffset = 1,
     },
-    [NATIONAL_DEX_URSALUNA] =
+    [NATIONAL_DEX_HONEDGE] =
     {
         .categoryName = _("Peat"),
         .height = 24,
         .weight = 2900,
-        .description = gUrsalunaPokedexText,
+        .description = gHonedgePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 369,
         .trainerOffset = 7,
     },
-    [NATIONAL_DEX_URSALUNA_BLOODMOON] =
+    [NATIONAL_DEX_DOUBLADE] =
     {
         .categoryName = _("Peat"),
         .height = 27,
         .weight = 3330,
-        .description = gUrsaluna_BloodMoonPokedexText,
+        .description = gDoubladePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 369,
         .trainerOffset = 7,
     },
-    [NATIONAL_DEX_KLEAVOR] =
+    [NATIONAL_DEX_AEGISLASH] =
     {
         .categoryName = _("Axe"),
         .height = 18,
         .weight = 890,
-        .description = gKleavorPokedexText,
+        .description = gAegislashPokedexText,
         .pokemonScale = 267,
         .pokemonOffset = 2,
         .trainerScale = 286,

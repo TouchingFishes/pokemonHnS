@@ -11468,7 +11468,7 @@ const union {
         .FLASH = TRUE,
     } }, 
 
-    [SPECIES_URSALUNA] = { .learnset = {
+    [SPECIES_HONEDGE] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -11498,7 +11498,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
-    [SPECIES_URSALUNA_BLOODMOON] = { .learnset = {
+    [SPECIES_DOUBLADE] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -11528,7 +11528,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
-    [SPECIES_KLEAVOR] = { .learnset = {
+    [SPECIES_AEGISLASH] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,

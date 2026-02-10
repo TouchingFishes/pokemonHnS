@@ -2103,16 +2103,16 @@ Cry_Wyrdeer::
 	.incbin "sound/direct_sound_samples/cries/wyrdeer.bin"
 
 	.align 2
-Cry_Ursaluna::
-	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
+Cry_Honedge::
+	.incbin "sound/direct_sound_samples/cries/honedge.bin"
 
 	.align 2
-Cry_Ursaluna_BloodMoon::
-	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
+Cry_Doublade::
+	.incbin "sound/direct_sound_samples/cries/doublade.bin"
 
 	.align 2
-Cry_Kleavor::
-	.incbin "sound/direct_sound_samples/cries/kleavor.bin"
+Cry_Aegislash::
+	.incbin "sound/direct_sound_samples/cries/aegislash.bin"
 
 	.align 2
 DirectSoundWaveData_register_noise::
