@@ -1791,12 +1791,12 @@ Cry_Metagross::
 	.incbin "sound/direct_sound_samples/cries/metagross.bin"
 
 	.align 2
-Cry_Bagon::
-	.incbin "sound/direct_sound_samples/cries/bagon.bin"
+Cry_Gible::
+	.incbin "sound/direct_sound_samples/cries/gible.bin"
 
 	.align 2
-Cry_Shelgon::
-	.incbin "sound/direct_sound_samples/cries/shelgon.bin"
+Cry_Gabite::
+	.incbin "sound/direct_sound_samples/cries/gabite.bin"
 
 	.align 2
 Cry_Regirock::
@@ -1875,8 +1875,8 @@ Cry_Rayquaza::
 	.incbin "sound/direct_sound_samples/cries/rayquaza.bin"
 
 	.align 2
-Cry_Salamence::
-	.incbin "sound/direct_sound_samples/cries/salamence.bin"
+Cry_Garchomp::
+	.incbin "sound/direct_sound_samples/cries/garchomp.bin"
 
 	.align 2
 Cry_Breloom::

@@ -2224,19 +2224,19 @@ const u8 gLuvdiscPokedexText[] = _(
     "ago of giving a LUVDISC as a gift to\n"
     "express one's feelings of love.");
 
-const u8 gBagonPokedexText[] = _(
+const u8 gGiblePokedexText[] = _(
     "Although it is small, this POKéMON is very\n"
     "powerful because its body is a bundle of\n"
     "muscles. It launches head-butts with its\n"
     "ironlike skull.");
 
-const u8 gShelgonPokedexText[] = _(
+const u8 gGabitePokedexText[] = _(
     "It hardly eats while it awaits evolution.\n"
     "It becomes hardier by enduring hunger.\n"
     "Its shell peels off the instant it begins\n"
     "to evolve.");
 
-const u8 gSalamencePokedexText[] = _(
+const u8 gGarchompPokedexText[] = _(
     "After many long years, its cellular\n"
     "structure underwent a sudden mutation to\n"
     "grow wings. When angered, it loses all\n"

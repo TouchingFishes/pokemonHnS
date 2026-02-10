@@ -2645,7 +2645,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     {
     .iv = 250,
     .lvl = 52,
-    .species = SPECIES_SHELGON,
+    .species = SPECIES_GABITE,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ROCK_TOMB, MOVE_DRAGON_CLAW, MOVE_PROTECT, MOVE_DOUBLE_EDGE}
     },
@@ -2673,7 +2673,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     {
     .iv = 255,
     .lvl = 55,
-    .species = SPECIES_SALAMENCE,
+    .species = SPECIES_GARCHOMP,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_FLAMETHROWER, MOVE_DRAGON_CLAW, MOVE_ROCK_SLIDE, MOVE_CRUNCH}
     }
@@ -4313,7 +4313,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nicolas4[] = {
     {
     .iv = 200,
     .lvl = 61,
-    .species = SPECIES_SHELGON,
+    .species = SPECIES_GABITE,
     },
     {
     .iv = 200,
@@ -4343,7 +4343,7 @@ static const struct TrainerMonItemDefaultMoves sParty_Nicolas5[] = {
     {
     .iv = 255,
     .lvl = 70,
-    .species = SPECIES_SALAMENCE,
+    .species = SPECIES_GARCHOMP,
     .heldItem = ITEM_DRAGON_FANG
     },
     {
@@ -11553,7 +11553,7 @@ static const struct TrainerMonItemCustomMoves sParty_Drake2[] = {
     {
     .iv = 255,
     .lvl = 86,
-    .species = SPECIES_SALAMENCE,
+    .species = SPECIES_GARCHOMP,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_DRAGON_CLAW, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE, MOVE_FIRE_BLAST}
     },
@@ -19996,7 +19996,7 @@ static const struct TrainerMonItemCustomMoves sParty_Clair2[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 64,
-    .species = SPECIES_SHELGON,
+    .species = SPECIES_GABITE,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_THUNDER_WAVE, MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_DRAGON_BREATH}
     },
@@ -20825,7 +20825,7 @@ static const struct TrainerMonItemCustomMoves sParty_Lance2[] = { //EliteFourGro
     {
     .iv = 255,
     .lvl = 69,
-    .species = SPECIES_SALAMENCE,
+    .species = SPECIES_GARCHOMP,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_DRAGON_CLAW, MOVE_AIR_SLASH, MOVE_DOUBLE_EDGE, MOVE_THUNDERBOLT}
     },

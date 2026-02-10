@@ -4322,7 +4322,7 @@ static const union AnimCmd sAnim_Gardevoir_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bagon_1[] =
+static const union AnimCmd sAnim_Gible_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4332,7 +4332,7 @@ static const union AnimCmd sAnim_Bagon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Shelgon_1[] =
+static const union AnimCmd sAnim_Gabite_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -4342,7 +4342,7 @@ static const union AnimCmd sAnim_Shelgon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Salamence_1[] =
+static const union AnimCmd sAnim_Garchomp_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -5671,9 +5671,9 @@ SINGLE_ANIMATION(Armaldo);
 SINGLE_ANIMATION(Ralts);
 SINGLE_ANIMATION(Kirlia);
 SINGLE_ANIMATION(Gardevoir);
-SINGLE_ANIMATION(Bagon);
-SINGLE_ANIMATION(Shelgon);
-SINGLE_ANIMATION(Salamence);
+SINGLE_ANIMATION(Gible);
+SINGLE_ANIMATION(Gabite);
+SINGLE_ANIMATION(Garchomp);
 SINGLE_ANIMATION(Beldum);
 SINGLE_ANIMATION(Metang);
 SINGLE_ANIMATION(Metagross);
@@ -6158,9 +6158,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_RALTS]       = sAnims_Ralts,
     [SPECIES_KIRLIA]      = sAnims_Kirlia,
     [SPECIES_GARDEVOIR]   = sAnims_Gardevoir,
-    [SPECIES_BAGON]       = sAnims_Bagon,
-    [SPECIES_SHELGON]     = sAnims_Shelgon,
-    [SPECIES_SALAMENCE]   = sAnims_Salamence,
+    [SPECIES_GIBLE]       = sAnims_Gible,
+    [SPECIES_GABITE]     = sAnims_Gabite,
+    [SPECIES_GARCHOMP]   = sAnims_Garchomp,
     [SPECIES_BELDUM]      = sAnims_Beldum,
     [SPECIES_METANG]      = sAnims_Metang,
     [SPECIES_METAGROSS]   = sAnims_Metagross,

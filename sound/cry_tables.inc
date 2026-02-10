@@ -351,8 +351,8 @@ gCryTable::
 	cry Cry_Beldum
 	cry Cry_Metang
 	cry Cry_Metagross
-	cry Cry_Bagon
-	cry Cry_Shelgon
+	cry Cry_Gible
+	cry Cry_Gabite
 	cry Cry_Regirock
 	cry Cry_Regice
 	cry Cry_Registeel
@@ -372,7 +372,7 @@ gCryTable::
 	cry Cry_Groudon
 	cry Cry_Kyogre
 	cry Cry_Rayquaza
-	cry Cry_Salamence
+	cry Cry_Garchomp
 	cry Cry_Breloom
 	cry Cry_Shroomish
 	cry Cry_Linoone
@@ -786,8 +786,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Beldum
 	cry_reverse Cry_Metang
 	cry_reverse Cry_Metagross
-	cry_reverse Cry_Bagon
-	cry_reverse Cry_Shelgon
+	cry_reverse Cry_Gible
+	cry_reverse Cry_Gabite
 	cry_reverse Cry_Regirock
 	cry_reverse Cry_Regice
 	cry_reverse Cry_Registeel
@@ -807,7 +807,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Groudon
 	cry_reverse Cry_Kyogre
 	cry_reverse Cry_Rayquaza
-	cry_reverse Cry_Salamence
+	cry_reverse Cry_Garchomp
 	cry_reverse Cry_Breloom
 	cry_reverse Cry_Shroomish
 	cry_reverse Cry_Linoone

@@ -11360,7 +11360,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_BAGON] =
+    [SPECIES_GIBLE] =
     {
         .baseHP        = 45,
         .baseAttack    = 75,
@@ -11390,7 +11390,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SHELGON] =
+    [SPECIES_GABITE] =
     {
         .baseHP        = 65,
         .baseAttack    = 95,
@@ -11420,7 +11420,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SALAMENCE] =
+    [SPECIES_GARCHOMP] =
     {
         .baseHP        = 95,
         .baseAttack    = 135,

@@ -4452,36 +4452,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BAGON] =
+    [NATIONAL_DEX_GIBLE] =
     {
         .categoryName = _("ROCK HEAD"),
         .height = 6,
         .weight = 421,
-        .description = gBagonPokedexText,
+        .description = gGiblePokedexText,
         .pokemonScale = 448,
         .pokemonOffset = 18,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SHELGON] =
+    [NATIONAL_DEX_GABITE] =
     {
         .categoryName = _("ENDURANCE"),
         .height = 11,
         .weight = 1105,
-        .description = gShelgonPokedexText,
+        .description = gGabitePokedexText,
         .pokemonScale = 311,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SALAMENCE] =
+    [NATIONAL_DEX_GARCHOMP] =
     {
         .categoryName = _("DRAGON"),
         .height = 15,
         .weight = 1026,
-        .description = gSalamencePokedexText,
+        .description = gGarchompPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

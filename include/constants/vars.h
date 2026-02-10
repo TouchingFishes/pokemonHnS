@@ -163,7 +163,7 @@
 #define VAR_BILLS_GRANDPA                                0x408F //0 = meet gramps
 #define VAR_NUM_BADGES                                   0x4090
 #define VAR_KANTO_SAFARI_ZONE_PROGRESS                   0x4091 // 0 = meet steven, 1 = unlock brush, 2 = unlock mountain, 3 = unlock cave, 4  = don
-#define VAR_BAOBA_QUEST_STATE                            0x4092 //0 = goto FUCHSIA, 1 = give BELDUM to baoba for 200k, 2 = give CASTFORM to baoba for 300k, 3 = give MEDICHAM to baoba for 400k, 4 = give BAGON to baboa for 500k, 5 = done
+#define VAR_BAOBA_QUEST_STATE                            0x4092 //0 = goto FUCHSIA, 1 = give BELDUM to baoba for 200k, 2 = give CASTFORM to baoba for 300k, 3 = give MEDICHAM to baoba for 400k, 4 = give GIBLE to baboa for 500k, 5 = done
 #define VAR_CINNABAR_ISLAND_STATE                        0x4093
 #define VAR_MT_SILVER_STATE                              0x4094
 #define VAR_LILYCOVE_FAN_CLUB_STATE                      0x4095

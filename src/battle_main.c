@@ -2621,7 +2621,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                             SetMonData(&party[i], MON_DATA_HELD_ITEM, &helditem); 
                         }
                         
-                        if (partyData[i].species == SPECIES_SALAMENCE && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
+                        if (partyData[i].species == SPECIES_GARCHOMP && gTrainers[trainerNum].trainerPic == TRAINER_PIC_ELITE_FOUR_WILL
                         && gTrainers[trainerNum].trainerClass == TRAINER_CLASS_ELITE_FOUR)
                         {
                             helditem = ITEM_073;  //sitrus modifier

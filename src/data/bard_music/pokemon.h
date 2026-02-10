@@ -3164,7 +3164,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_BAGON] = {
+    [SPECIES_GIBLE] = {
         { .songLengthId = 5 },
         { .songLengthId = 27 },
         { .songLengthId = 51 },
@@ -3172,7 +3172,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_SHELGON] = {
+    [SPECIES_GABITE] = {
         { .songLengthId = 9 },
         { .songLengthId = 27 },
         { .songLengthId = 51 },
@@ -3180,7 +3180,7 @@ const struct BardSound gBardSounds_Pokemon[NUM_SPECIES][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [SPECIES_SALAMENCE] = {
+    [SPECIES_GARCHOMP] = {
         { .songLengthId =  0 },
         { .songLengthId =  0 },
         { .songLengthId = 9 },

@@ -879,25 +879,25 @@ static const union AnimCmd sUnusedAnim_Krolucard_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Bagon_1[] =
+static const union AnimCmd sUnusedAnim_Gible_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Bagon_2[] =
+static const union AnimCmd sUnusedAnim_Gible_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Salamence_1[] =
+static const union AnimCmd sUnusedAnim_Garchomp_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Salamence_2[] =
+static const union AnimCmd sUnusedAnim_Garchomp_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -1334,9 +1334,9 @@ static const union AnimCmd *const sUnusedAnims_Armaldo[] = {sAnim_GeneralFrame0}
 static const union AnimCmd *const sUnusedAnims_Ralts[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Kirlia[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Gardevoir[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Bagon[] = {sAnim_GeneralFrame0, sUnusedAnim_Bagon_1, sUnusedAnim_Bagon_2};
-static const union AnimCmd *const sUnusedAnims_Shelgon[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Salamence[] = {sAnim_GeneralFrame0, sUnusedAnim_Salamence_1, sUnusedAnim_Salamence_2};
+static const union AnimCmd *const sUnusedAnims_Gible[] = {sAnim_GeneralFrame0, sUnusedAnim_Gible_1, sUnusedAnim_Gible_2};
+static const union AnimCmd *const sUnusedAnims_Gabite[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Garchomp[] = {sAnim_GeneralFrame0, sUnusedAnim_Garchomp_1, sUnusedAnim_Garchomp_2};
 static const union AnimCmd *const sUnusedAnims_Beldum[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Metang[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Metagross[] = {sAnim_GeneralFrame0};
@@ -1776,9 +1776,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_RALTS] = sUnusedAnims_Ralts,
     [SPECIES_KIRLIA] = sUnusedAnims_Kirlia,
     [SPECIES_GARDEVOIR] = sUnusedAnims_Gardevoir,
-    [SPECIES_BAGON] = sUnusedAnims_Bagon,
-    [SPECIES_SHELGON] = sUnusedAnims_Shelgon,
-    [SPECIES_SALAMENCE] = sUnusedAnims_Salamence,
+    [SPECIES_GIBLE] = sUnusedAnims_Gible,
+    [SPECIES_GABITE] = sUnusedAnims_Gabite,
+    [SPECIES_GARCHOMP] = sUnusedAnims_Garchomp,
     [SPECIES_BELDUM] = sUnusedAnims_Beldum,
     [SPECIES_METANG] = sUnusedAnims_Metang,
     [SPECIES_METAGROSS] = sUnusedAnims_Metagross,

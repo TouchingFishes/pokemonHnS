@@ -2023,13 +2023,13 @@ $(OBJEVENTGFXDIR)/pokemon/relicanth.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/luvdisc.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/bagon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/gible.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/shelgon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/gabite.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/salamence.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/garchomp.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/beldum.4bpp: %.4bpp: %.png

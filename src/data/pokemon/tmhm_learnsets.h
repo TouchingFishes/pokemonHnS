@@ -9722,7 +9722,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_BAGON] = { .learnset = {
+    [SPECIES_GIBLE] = { .learnset = {
         .DRAGON_CLAW = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -9747,7 +9747,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_SHELGON] = { .learnset = {
+    [SPECIES_GABITE] = { .learnset = {
         .DRAGON_CLAW = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -9772,7 +9772,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_SALAMENCE] = { .learnset = {
+    [SPECIES_GARCHOMP] = { .learnset = {
         .DRAGON_CLAW = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,

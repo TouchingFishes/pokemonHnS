@@ -6646,7 +6646,7 @@ static const u16 sGardevoirLevelUpLearnset[] = {
     LEVEL_UP_MOVE(62, MOVE_MOONBLAST),
     LEVEL_UP_END};
 
-static const u16 sBagonLevelUpLearnset[] = {
+static const u16 sGibleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_RAGE),
     LEVEL_UP_MOVE(5, MOVE_BITE),
     LEVEL_UP_MOVE(9, MOVE_LEER),
@@ -6663,7 +6663,7 @@ static const u16 sBagonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(53, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END};
 
-static const u16 sShelgonLevelUpLearnset[] = {
+static const u16 sGabiteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_RAGE),
     LEVEL_UP_MOVE(1, MOVE_BITE),
     LEVEL_UP_MOVE(1, MOVE_LEER),
@@ -6684,7 +6684,7 @@ static const u16 sShelgonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(78, MOVE_DOUBLE_EDGE),
     LEVEL_UP_END};
 
-static const u16 sSalamenceLevelUpLearnset[] = {
+static const u16 sGarchompLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_RAGE),
     LEVEL_UP_MOVE(1, MOVE_BITE),
     LEVEL_UP_MOVE(1, MOVE_SHADOW_CLAW),

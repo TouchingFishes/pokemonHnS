@@ -5589,7 +5589,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_THUNDER_PUNCH)
                                 | TUTOR(MOVE_FIRE_PUNCH)),
 
-    [SPECIES_BAGON]            = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_GIBLE]            = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_ROCK_SLIDE)
@@ -5602,7 +5602,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
-    [SPECIES_SHELGON]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_GABITE]          = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_ROCK_SLIDE)
@@ -5617,7 +5617,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
-    [SPECIES_SALAMENCE]        = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_GARCHOMP]        = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_MIMIC)
                                 | TUTOR(MOVE_ROCK_SLIDE)

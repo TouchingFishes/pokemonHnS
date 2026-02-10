@@ -525,7 +525,7 @@ static const struct PokemonJumpMons sPokeJumpMons[] =
     { .species = SPECIES_MLLOY,     .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_SNORUNT,    .jumpType = JUMP_TYPE_NORMAL, },
     { .species = SPECIES_CLAMPERL,   .jumpType = JUMP_TYPE_FAST, },
-    { .species = SPECIES_BAGON,      .jumpType = JUMP_TYPE_FAST, },
+    { .species = SPECIES_GIBLE,      .jumpType = JUMP_TYPE_FAST, },
 };
 
 void StartPokemonJump(u16 partyId, MainCallback exitCallback)

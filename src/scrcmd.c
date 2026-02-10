@@ -3090,7 +3090,7 @@ bool8 ScrCmd_baobacheckmon(struct ScriptContext *ctx)
         gSpecialVar_Result =
             (species == SPECIES_AXEW ||
              species == SPECIES_NOSEPASS ||
-             species == SPECIES_BAGON ||
+             species == SPECIES_GIBLE ||
              species == SPECIES_RELICANTH ||
              species == SPECIES_FEEBAS);
         break;

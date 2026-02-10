@@ -1694,7 +1694,7 @@ const u16 gEggMoves[] = {
               MOVE_MEMENTO,
               MOVE_DESTINY_BOND),
 
-    egg_moves(BAGON,
+    egg_moves(GIBLE,
               MOVE_HYDRO_PUMP,
               MOVE_DRAGON_PULSE,
               MOVE_THRASH,
@@ -3025,7 +3025,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_MEMENTO,
               MOVE_DESTINY_BOND),
 
-    egg_moves(BAGON,
+    egg_moves(GIBLE,
               MOVE_HYDRO_PUMP,
               MOVE_THRASH,
               MOVE_DRAGON_RAGE,
