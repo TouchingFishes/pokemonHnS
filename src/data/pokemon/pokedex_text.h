@@ -2506,7 +2506,7 @@ const u8 gTangrowthPokedexText[] = _(
     "it's fine. The POKéMON regenerates quickly\n"
     "and will go right back to normal.");
 
-const u8 gTogekissPokedexText[] = _(
+const u8 gCorsoreefPokedexText[] = _(
     "As everyone knows, it visits peaceful\n"
     "regions, bringing them gifts of kindness\n"
     "and sweet blessings. It will never appear\n"
@@ -2524,7 +2524,7 @@ const u8 gYanmegaPokedexText[] = _(
     "adept at biting apart foes while flying\n"
     "by at high speed.");
 
-const u8 gAnnihilapePokedexText[] = _(
+const u8 gKujinoughtPokedexText[] = _(
     "When its anger rose beyond a critical\n"
     "point, this Pokémon gained power that\n" 
     "is unfettered by the limits of its\n"

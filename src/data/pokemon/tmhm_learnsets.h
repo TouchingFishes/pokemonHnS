@@ -11251,7 +11251,7 @@ const union {
         .ROCK_SMASH = TRUE
     } }, 
         
-    [SPECIES_TOGEKISS] = { .learnset = {
+    [SPECIES_CORSOREEF] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
@@ -11342,7 +11342,7 @@ const union {
         .FLASH = TRUE
     } }, 
 
-    [SPECIES_ANNIHILAPE] = { .learnset = {
+    [SPECIES_KUJINOUGHT] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .TOXIC = TRUE,
         .BULK_UP = TRUE,

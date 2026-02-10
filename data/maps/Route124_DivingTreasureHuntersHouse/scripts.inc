@@ -6,11 +6,11 @@ Route124_DivingTreasureHuntersHouse_OnTransition:
 	setflag FLAG_LANDMARK_HUNTERS_HOUSE
 	end
 
-Route124_DivingTreasureHuntersHouse_TogekissEvo::
-	msgbox Route124_DivingTreasureHuntersHouse_TogekissEvo_Text, MSGBOX_NPC
+Route124_DivingTreasureHuntersHouse_CorsoreefEvo::
+	msgbox Route124_DivingTreasureHuntersHouse_CorsoreefEvo_Text, MSGBOX_NPC
 	end
 
-Route124_DivingTreasureHuntersHouse_TogekissEvo_Text:
+Route124_DivingTreasureHuntersHouse_CorsoreefEvo_Text:
 	.string "There's one POKéMON that evolves\n"
 	.string "HOLDING a HEART SCALE during the day.\p"
 	.string "That POKéMON is TOGETIC!\n" 

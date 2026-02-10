@@ -219,7 +219,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/alakazam.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/altaria.aif sound/direct_sound_samples/cries/altaria.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/decibelle.aif sound/direct_sound_samples/cries/decibelle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ampharos.aif sound/direct_sound_samples/cries/ampharos.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/annihilape.aif sound/direct_sound_samples/cries/annihilape.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kujinought.aif sound/direct_sound_samples/cries/kujinought.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/anorith.aif sound/direct_sound_samples/cries/anorith.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/arbok.aif sound/direct_sound_samples/cries/arbok.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/arcanine.aif sound/direct_sound_samples/cries/arcanine.bin --compress
@@ -584,7 +584,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tauros.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/teddiursa.aif sound/direct_sound_samples/cries/teddiursa.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tentacool.aif sound/direct_sound_samples/cries/tentacool.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tentacruel.aif sound/direct_sound_samples/cries/tentacruel.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/togekiss.aif sound/direct_sound_samples/cries/togekiss.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/corsoreef.aif sound/direct_sound_samples/cries/corsoreef.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/togepi.aif sound/direct_sound_samples/cries/togepi.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/togetic.aif sound/direct_sound_samples/cries/togetic.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/torchic.aif sound/direct_sound_samples/cries/torchic.bin --compress

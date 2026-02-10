@@ -2469,7 +2469,7 @@ static void InitDomeTrainers(void)
                 || species == SPECIES_SOLOSIS
                 || species == SPECIES_TALONFLAME
                 || species == SPECIES_DEINO
-                || species == SPECIES_TOGEKISS))
+                || species == SPECIES_CORSOREEF))
                 {
                     monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[0]];
                     monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[1]];

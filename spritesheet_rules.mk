@@ -2173,7 +2173,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/sylveon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/tangrowth.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/togekiss.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/corsoreef.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/weavile.4bpp: %.4bpp: %.png
@@ -2182,7 +2182,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/weavile.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/yanmega.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/annihilape.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/kujinought.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/dundrag.4bpp: %.4bpp: %.png

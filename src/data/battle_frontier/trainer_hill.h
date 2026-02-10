@@ -1606,7 +1606,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_TOGEKISS,
+                                            .species = SPECIES_CORSOREEF,
                                             .heldItem = ITEM_BRIGHT_POWDER,
                                             .moves = {MOVE_METRONOME, MOVE_WISH, MOVE_ENCORE, MOVE_CHARM},
                                             .hpEV = 50,
@@ -1621,7 +1621,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 20,
                                             .abilityNum = 1,
                                             .personality = 0x77,
-                                            .nickname = _("TOGEKISS"),
+                                            .nickname = _("CORSOREEF"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -4045,7 +4045,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                 {
                                     [0] =
                                         {
-                                            .species = SPECIES_ANNIHILAPE,
+                                            .species = SPECIES_KUJINOUGHT,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_SHADOW_PUNCH, MOVE_KARATE_CHOP, MOVE_BULK_UP, MOVE_ROAR},
                                             .hpEV = 252,
@@ -4060,7 +4060,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x3,
-                                            .nickname = _("ANNIHILAPE"),
+                                            .nickname = _("KUJINOUGHT"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [1] =
@@ -4813,7 +4813,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_TOGEKISS,
+                                            .species = SPECIES_CORSOREEF,
                                             .heldItem = ITEM_LEFTOVERS,
                                             .moves = {MOVE_AIR_SLASH, MOVE_WISH, MOVE_PROTECT, MOVE_CONFUSE_RAY},
                                             .hpEV = 110,
@@ -4828,7 +4828,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0x14,
-                                            .nickname = _("TOGEKISS"),
+                                            .nickname = _("CORSOREEF"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                         [5] =

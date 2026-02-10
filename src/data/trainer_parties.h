@@ -9288,7 +9288,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brawly5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_ANNIHILAPE,
+    .species = SPECIES_KUJINOUGHT,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_SHADOW_PUNCH, MOVE_CROSS_CHOP, MOVE_SUBSTITUTE, MOVE_BULK_UP}
     },
@@ -19865,7 +19865,7 @@ static const struct TrainerMonItemCustomMoves sParty_Chuck_3[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 37,
-    .species = SPECIES_ANNIHILAPE,
+    .species = SPECIES_KUJINOUGHT,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_PUNCH, MOVE_BRICK_BREAK, MOVE_ICE_PUNCH, MOVE_RAGE}
     },
@@ -19904,7 +19904,7 @@ static const struct TrainerMonItemCustomMoves sParty_Chuck2[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 64,
-    .species = SPECIES_ANNIHILAPE,
+    .species = SPECIES_KUJINOUGHT,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_CROSS_CHOP, MOVE_SHADOW_PUNCH, MOVE_ROCK_SLIDE, MOVE_MEDITATE}
     },

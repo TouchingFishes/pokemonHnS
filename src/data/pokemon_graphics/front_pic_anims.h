@@ -4971,7 +4971,7 @@ static const union AnimCmd sAnim_Magmortar_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Togekiss_1[] =
+static const union AnimCmd sAnim_Corsoreef_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5205,7 +5205,7 @@ static const union AnimCmd sAnim_Regigigas_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Annihilape_1[] =
+static const union AnimCmd sAnim_Kujinought_1[] =
 {
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
@@ -5750,10 +5750,10 @@ SINGLE_ANIMATION(Abomasnow);
 SINGLE_ANIMATION(Sylveon);
 SINGLE_ANIMATION(Regieleki);
 SINGLE_ANIMATION(Tangrowth);
-SINGLE_ANIMATION(Togekiss);
+SINGLE_ANIMATION(Corsoreef);
 SINGLE_ANIMATION(Weavile);
 SINGLE_ANIMATION(Yanmega);
-SINGLE_ANIMATION(Annihilape);
+SINGLE_ANIMATION(Kujinought);
 SINGLE_ANIMATION(Dundrag);
 SINGLE_ANIMATION(Dunlong);
 SINGLE_ANIMATION(Wyrdeer);
@@ -6212,7 +6212,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_TANGROWTH] = sAnims_Tangrowth,
     [SPECIES_ELECTIVIRE] = sAnims_Electivire,
     [SPECIES_MAGMORTAR] = sAnims_Magmortar,
-    [SPECIES_TOGEKISS] = sAnims_Togekiss,
+    [SPECIES_CORSOREEF] = sAnims_Corsoreef,
     [SPECIES_YANMEGA] = sAnims_Yanmega,
     [SPECIES_LEAFEON] = sAnims_Leafeon,
     [SPECIES_GLACEON] = sAnims_Glaceon,
@@ -6240,8 +6240,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DEOXYS_SPEED] = sAnims_DeoxysS,
     [SPECIES_REGIDRAGO] = sAnims_Regidrago,
     [SPECIES_REGIGIGAS] = sAnims_Regigigas,
-    [SPECIES_ANNIHILAPE] = sAnims_Annihilape,
-    [SPECIES_DUNDRAG] = sAnims_Annihilape,
+    [SPECIES_KUJINOUGHT] = sAnims_Kujinought,
+    [SPECIES_DUNDRAG] = sAnims_Kujinought,
     [SPECIES_DUNLONG] = sAnims_Dunlong,
     [SPECIES_WYRDEER] = sAnims_Wyrdeer,
     [SPECIES_URSALUNA] = sAnims_Ursaluna,

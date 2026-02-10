@@ -149,7 +149,7 @@ bool8 CheckTogepi(void)
  
     if (GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEPI
     || GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGETIC
-    || GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_TOGEKISS){
+    || GetMonData(&gPlayerParty[0], MON_DATA_SPECIES_OR_EGG, 0) == SPECIES_CORSOREEF){
         return TRUE;
     }
     return FALSE;

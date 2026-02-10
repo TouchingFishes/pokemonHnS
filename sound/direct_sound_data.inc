@@ -2075,8 +2075,8 @@ Cry_Tangrowth::
 	.incbin "sound/direct_sound_samples/cries/tangrowth.bin"
 
 	.align 2
-Cry_Togekiss::
-	.incbin "sound/direct_sound_samples/cries/togekiss.bin"
+Cry_Corsoreef::
+	.incbin "sound/direct_sound_samples/cries/corsoreef.bin"
 
 	.align 2
 Cry_Weavile::
@@ -2087,8 +2087,8 @@ Cry_Yanmega::
 	.incbin "sound/direct_sound_samples/cries/yanmega.bin"
 
 	.align 2
-Cry_Annihilape::
-	.incbin "sound/direct_sound_samples/cries/annihilape.bin"
+Cry_Kujinought::
+	.incbin "sound/direct_sound_samples/cries/kujinought.bin"
 
 	.align 2
 Cry_Dundrag::

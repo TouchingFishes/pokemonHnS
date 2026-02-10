@@ -5052,12 +5052,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 7,
     },
 
-    [NATIONAL_DEX_TOGEKISS] =
+    [NATIONAL_DEX_CORSOREEF] =
     {
         .categoryName = _("JUBILEE"),
         .height = 15,
         .weight = 380,
-        .description = gTogekissPokedexText,
+        .description = gCorsoreefPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -5087,12 +5087,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-    [NATIONAL_DEX_ANNIHILAPE] =
+    [NATIONAL_DEX_KUJINOUGHT] =
     {
         .categoryName = _("RAGE MONKEY"),
         .height = 12,
         .weight = 516,
-        .description = gAnnihilapePokedexText,
+        .description = gKujinoughtPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,

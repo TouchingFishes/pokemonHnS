@@ -3006,13 +3006,13 @@ extern const u32 gMonStillFrontPic_Zweilous[];
 extern const u8 gMonIcon_Zweilous[];
 extern const u8 gMonFootprint_Zweilous[];
 
-extern const u32 gMonFrontPic_Togekiss[];
-extern const u32 gMonPalette_Togekiss[];
-extern const u32 gMonBackPic_Togekiss[];
-extern const u32 gMonShinyPalette_Togekiss[];
-extern const u32 gMonStillFrontPic_Togekiss[];
-extern const u8 gMonIcon_Togekiss[];
-extern const u8 gMonFootprint_Togekiss[];
+extern const u32 gMonFrontPic_Corsoreef[];
+extern const u32 gMonPalette_Corsoreef[];
+extern const u32 gMonBackPic_Corsoreef[];
+extern const u32 gMonShinyPalette_Corsoreef[];
+extern const u32 gMonStillFrontPic_Corsoreef[];
+extern const u8 gMonIcon_Corsoreef[];
+extern const u8 gMonFootprint_Corsoreef[];
 
 extern const u32 gMonFrontPic_Tinkatink[];
 extern const u32 gMonPalette_Tinkatink[];
@@ -3174,13 +3174,13 @@ extern const u32 gMonStillFrontPic_DeoxysS[];
 extern const u8 gMonIcon_DeoxysS[];
 extern const u8 gMonFootprint_DeoxysS[];
 
-extern const u32 gMonFrontPic_Annihilape[];
-extern const u32 gMonPalette_Annihilape[];
-extern const u32 gMonBackPic_Annihilape[];
-extern const u32 gMonShinyPalette_Annihilape[];
-extern const u32 gMonStillFrontPic_Annihilape[];
-extern const u8 gMonIcon_Annihilape[];
-extern const u8 gMonFootprint_Annihilape[];
+extern const u32 gMonFrontPic_Kujinought[];
+extern const u32 gMonPalette_Kujinought[];
+extern const u32 gMonBackPic_Kujinought[];
+extern const u32 gMonShinyPalette_Kujinought[];
+extern const u32 gMonStillFrontPic_Kujinought[];
+extern const u8 gMonIcon_Kujinought[];
+extern const u8 gMonFootprint_Kujinought[];
 
 extern const u32 gMonFrontPic_Dundrag[];
 extern const u32 gMonPalette_Dundrag[];

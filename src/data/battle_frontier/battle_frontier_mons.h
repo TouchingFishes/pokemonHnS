@@ -6384,8 +6384,8 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_IMPISH
     },
-    [FRONTIER_MON_ANNIHILAPE_1] = {
-        .species = SPECIES_ANNIHILAPE,
+    [FRONTIER_MON_KUJINOUGHT_1] = {
+        .species = SPECIES_KUJINOUGHT,
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_SUBSTITUTE, MOVE_SHADOW_PUNCH},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEFTOVERS,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,
@@ -12821,8 +12821,8 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
         .nature = NATURE_IMPISH
     },
-    [FRONTIER_MON_ANNIHILAPE_1] = {
-        .species = SPECIES_ANNIHILAPE,
+    [FRONTIER_MON_KUJINOUGHT_1] = {
+        .species = SPECIES_KUJINOUGHT,
         .moves = {MOVE_BULK_UP, MOVE_CROSS_CHOP, MOVE_SUBSTITUTE, MOVE_SHADOW_PUNCH},
         .itemTableId = BATTLE_FRONTIER_ITEM_LEFTOVERS,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_ATTACK,

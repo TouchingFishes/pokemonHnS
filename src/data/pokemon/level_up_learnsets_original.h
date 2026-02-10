@@ -6228,7 +6228,7 @@ static const u16 sTangrowthLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sTogekissLevelUpLearnset_Original[] = {
+static const u16 sCorsoreefLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_AIR_CUTTER),
@@ -6285,7 +6285,7 @@ static const u16 sYanmegaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sAnnihilapeLevelUpLearnset_Original[] = {
+static const u16 sKujinoughtLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_LOW_KICK),

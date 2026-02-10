@@ -422,10 +422,10 @@ gCryTable::
 	cry Cry_Abomasnow
 	cry Cry_Sylveon
 	cry Cry_Tangrowth
-	cry Cry_Togekiss
+	cry Cry_Corsoreef
 	cry Cry_Weavile
 	cry Cry_Yanmega
-	cry Cry_Annihilape
+	cry Cry_Kujinought
 	cry Cry_Dundrag
 	cry Cry_Dunlong
 	cry Cry_Wyrdeer
@@ -857,10 +857,10 @@ gCryTable_Reverse::
 	cry_reverse Cry_Abomasnow
 	cry_reverse Cry_Sylveon
 	cry_reverse Cry_Tangrowth
-	cry_reverse Cry_Togekiss
+	cry_reverse Cry_Corsoreef
 	cry_reverse Cry_Weavile
 	cry_reverse Cry_Yanmega
-	cry_reverse Cry_Annihilape
+	cry_reverse Cry_Kujinought
 	cry_reverse Cry_Dundrag
 	cry_reverse Cry_Dunlong
 	cry_reverse Cry_Wyrdeer
