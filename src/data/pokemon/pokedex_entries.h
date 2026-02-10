@@ -3780,12 +3780,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ROSELIA] =
+    [NATIONAL_DEX_PURGISLUG] =
     {
         .categoryName = _("THORN"),
         .height = 3,
         .weight = 20,
-        .description = gRoseliaPokedexText,
+        .description = gPurgislugPokedexText,
         .pokemonScale = 677,
         .pokemonOffset = 20,
         .trainerScale = 256,

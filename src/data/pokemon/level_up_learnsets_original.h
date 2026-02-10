@@ -4881,7 +4881,7 @@ static const u16 sDusclopsLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sRoseliaLevelUpLearnset_Original[] = {
+static const u16 sPurgislugLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),
     LEVEL_UP_MOVE( 5, MOVE_GROWTH),
     LEVEL_UP_MOVE( 9, MOVE_POISON_STING),

@@ -514,7 +514,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/remoraid.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/rhydon.aif sound/direct_sound_samples/cries/rhydon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/rhyhorn.aif sound/direct_sound_samples/cries/rhyhorn.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/snover.aif sound/direct_sound_samples/cries/snover.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/roselia.aif sound/direct_sound_samples/cries/roselia.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/purgislug.aif sound/direct_sound_samples/cries/purgislug.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/abomasnow.aif sound/direct_sound_samples/cries/abomasnow.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mimikyu.aif sound/direct_sound_samples/cries/mimikyu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/salamence.aif sound/direct_sound_samples/cries/salamence.bin --compress

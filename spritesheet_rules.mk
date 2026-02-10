@@ -1846,7 +1846,7 @@ $(OBJEVENTGFXDIR)/pokemon/krolucada.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/krolucard.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/roselia.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/purgislug.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/gulpin.4bpp: %.4bpp: %.png

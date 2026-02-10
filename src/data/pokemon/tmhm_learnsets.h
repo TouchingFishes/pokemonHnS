@@ -8817,7 +8817,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_ROSELIA] = { .learnset = {
+    [SPECIES_PURGISLUG] = { .learnset = {
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
         .HIDDEN_POWER = TRUE,

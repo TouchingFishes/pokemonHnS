@@ -861,7 +861,7 @@ static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare
 
         if (*species == SPECIES_TINKATUFF && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
         {
-            *species = SPECIES_ROSELIA;
+            *species = SPECIES_PURGISLUG;
         }
 
         if (*species == SPECIES_TINKATON && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)

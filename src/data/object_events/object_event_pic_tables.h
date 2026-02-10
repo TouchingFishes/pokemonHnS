@@ -5031,15 +5031,15 @@ static const struct SpriteFrameImage sPicTable_Krolucard[] = {
     overworld_frame(gObjectEventPic_Krolucard, 4, 4, 4),
     overworld_frame(gObjectEventPic_Krolucard, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Roselia[] = {
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 5),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 6),
-    overworld_frame(gObjectEventPic_Roselia, 4, 4, 7),
+static const struct SpriteFrameImage sPicTable_Purgislug[] = {
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 5),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 6),
+    overworld_frame(gObjectEventPic_Purgislug, 4, 4, 7),
 };
 static const struct SpriteFrameImage sPicTable_Gulpin[] = {
     overworld_frame(gObjectEventPic_Gulpin, 4, 4, 0),

@@ -507,7 +507,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_MLLOY, 
     SPECIES_DUSKULL, 
     SPECIES_DUSCLOPS, 
-    SPECIES_ROSELIA, 
+    SPECIES_PURGISLUG, 
     SPECIES_SLAKOTH, 
     SPECIES_VIGOROTH, 
     SPECIES_SLAKING, 

@@ -415,7 +415,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Violet[] = {
     {
     .iv = 0,
     .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 0,
@@ -438,7 +438,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = {
     {
     .iv = 10,
     .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -456,7 +456,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = {
     {
     .iv = 20,
     .lvl = 37,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -968,7 +968,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brooke1[] = {
     {
     .iv = 100,
     .lvl = 17,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -994,7 +994,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brooke2[] = {
     {
     .iv = 110,
     .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -1012,7 +1012,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brooke3[] = {
     {
     .iv = 200,
     .lvl = 37,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -1030,7 +1030,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brooke4[] = {
     {
     .iv = 255,
     .lvl = 48,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 255,
@@ -5547,7 +5547,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_WallyVR1[] = {
     {
     .iv = 150,
     .lvl = 44,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     .moves = {MOVE_MAGICAL_LEAF, MOVE_LEECH_SEED, MOVE_GIGA_DRAIN, MOVE_TOXIC}
     },
     {
@@ -6095,7 +6095,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lydia2[] = {
     {
     .iv = 10,
     .lvl = 29,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 10,
@@ -6128,7 +6128,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lydia3[] = {
     {
     .iv = 20,
     .lvl = 34,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 20,
@@ -6161,7 +6161,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lydia4[] = {
     {
     .iv = 30,
     .lvl = 48,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 80,
@@ -6288,7 +6288,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Catherine1[] = {
     {
     .iv = 50,
     .lvl = 26,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -6319,7 +6319,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Sophia[] = {
     {
     .iv = 50,
     .lvl = 38,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -6332,7 +6332,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Catherine2[] = {
     {
     .iv = 80,
     .lvl = 33,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -6345,7 +6345,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Catherine3[] = {
     {
     .iv = 90,
     .lvl = 45,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -6358,7 +6358,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Catherine4[] = {
     {
     .iv = 180,
     .lvl = 54,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -7860,7 +7860,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_TyraAndIvy[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     .moves = {MOVE_GROWTH, MOVE_STUN_SPORE, MOVE_MEGA_DRAIN, MOVE_LEECH_SEED}
     },
     {
@@ -8666,7 +8666,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Shayla[] = {
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     }
 };
 
@@ -8789,7 +8789,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Makayla[] = {
     {
     .iv = 0,
     .lvl = 33,
-    .species = SPECIES_ROSELIA,
+    .species = SPECIES_PURGISLUG,
     },
     {
     .iv = 0,

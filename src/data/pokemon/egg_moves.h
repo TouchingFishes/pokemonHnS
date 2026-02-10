@@ -1531,7 +1531,7 @@ const u16 gEggMoves[] = {
               MOVE_SYNTHESIS,
               MOVE_RAZOR_LEAF),
 
-    egg_moves(ROSELIA,
+    egg_moves(PURGISLUG,
               MOVE_COTTON_SPORE,
               MOVE_EXTRASENSORY,
               MOVE_MIND_READER,
@@ -2905,7 +2905,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_MEMENTO,
               MOVE_FAINT_ATTACK),
 
-    egg_moves(ROSELIA,
+    egg_moves(PURGISLUG,
               MOVE_SPIKES,
               MOVE_SYNTHESIS,
               MOVE_PIN_MISSILE,

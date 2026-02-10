@@ -1888,8 +1888,8 @@ const u8 gKrolucardPokedexText[] = _(
     "to draw patterns in the night sky. Over 200\n"
     "different patterns have been confirmed.");
 
-const u8 gRoseliaPokedexText[] = _(
-    "A ROSELIA that drinks nutritionally rich\n"
+const u8 gPurgislugPokedexText[] = _(
+    "A PURGISLUG that drinks nutritionally rich\n"
     "springwater blooms with lovely flowers.\n"
     "The fragrance of its flowers has the\n"
     "effect of making its foes careless.");

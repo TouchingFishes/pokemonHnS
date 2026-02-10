@@ -24,7 +24,7 @@ Route116_AbomasnowEvo_Text:
 	.string "Did you know that certain POKéMON\n"
 	.string "evolve when their BEAUTY reaches its\l"
 	.string "maximum level?\p"
-	.string "That's how my ROSELIA evolved!$"
+	.string "That's how my PURGISLUG evolved!$"
 
 Route116_EventScript_SetWandasBoyfriendPos::
 	setobjectxyperm LOCALID_WANDAS_BF_OUTSIDE, 38, 10

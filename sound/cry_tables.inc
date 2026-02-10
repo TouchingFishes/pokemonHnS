@@ -252,7 +252,7 @@ gCryTable::
 	cry Cry_HoOh
 	cry Cry_Celebi
 	cry Cry_Kecleon
-	cry Cry_Roselia
+	cry Cry_Purgislug
 	cry Cry_Torkoal
 	cry Cry_Electrike
 	cry Cry_Manectric
@@ -687,7 +687,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_HoOh
 	cry_reverse Cry_Celebi
 	cry_reverse Cry_Kecleon
-	cry_reverse Cry_Roselia
+	cry_reverse Cry_Purgislug
 	cry_reverse Cry_Torkoal
 	cry_reverse Cry_Electrike
 	cry_reverse Cry_Manectric

@@ -8,7 +8,7 @@ Route25_BillsHouse_EventScript_Gramps::
 	lock
 	faceplayer
 	goto_if_eq VAR_BILLS_GRANDPA, 1, Route25_BillsHouse_EventScript_Gramps_Spinda
-	goto_if_eq VAR_BILLS_GRANDPA, 2, Route25_BillsHouse_EventScript_Gramps_Roselia
+	goto_if_eq VAR_BILLS_GRANDPA, 2, Route25_BillsHouse_EventScript_Gramps_Purgislug
 	goto_if_eq VAR_BILLS_GRANDPA, 3, Route25_BillsHouse_EventScript_Gramps_Florges
 	goto_if_eq VAR_BILLS_GRANDPA, 4, Route25_BillsHouse_EventScript_Gramps_Growlithe
 	goto_if_eq VAR_BILLS_GRANDPA, 5, Route25_BillsHouse_EventScript_Gramps_Pichu
@@ -49,8 +49,8 @@ Route25_BillsHouse_EventScript_Gramps_Spinda::
 	setvar VAR_TEMP_0, ITEM_EVERSTONE
 	goto Route25_BillsHouse_EventScript_Gramps_Correctmon
 
-Route25_BillsHouse_EventScript_Gramps_Roselia::
-	msgbox Route25_BillsHouse_Text_Roselia, MSGBOX_DEFAULT
+Route25_BillsHouse_EventScript_Gramps_Purgislug::
+	msgbox Route25_BillsHouse_Text_Purgislug, MSGBOX_DEFAULT
 	msgbox Route25_BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, Route25_BillsHouse_EventScript_Gramps_Declined
 	msgbox Route25_BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
@@ -61,8 +61,8 @@ Route25_BillsHouse_EventScript_Gramps_Roselia::
 	copyvar VAR_0x8005, VAR_0x800A
 	specialvar VAR_RESULT, GetTradeSpecies
 	copyvar VAR_0x800B, VAR_RESULT
-	goto_if_ne VAR_RESULT, SPECIES_ROSELIA, Route25_BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_ROSELIA
+	goto_if_ne VAR_RESULT, SPECIES_PURGISLUG, Route25_BillsHouse_EventScript_Gramps_WrongMon
+	bufferspeciesname STR_VAR_1, SPECIES_PURGISLUG
 	setvar VAR_TEMP_0, ITEM_LEAF_STONE
 	goto Route25_BillsHouse_EventScript_Gramps_Correctmon
 
@@ -143,7 +143,7 @@ Route25_BillsHouse_EventScript_Gramps_ExtraLeafStones::
 Route25_BillsHouse_Test::
 	givemon SPECIES_SPINDA, 10
 	givemon SPECIES_FLORGES, 10
-	givemon SPECIES_ROSELIA, 10
+	givemon SPECIES_PURGISLUG, 10
 	givemon SPECIES_GROWLITHE, 10
 	givemon SPECIES_PICHU, 10
 	end
@@ -160,7 +160,7 @@ Route25_BillsHouse_Text_Spinda:
 	.string "a POKéMON that is covered in\l"
 	.string "a random pattern.$"
 
-Route25_BillsHouse_Text_Roselia:
+Route25_BillsHouse_Text_Purgislug:
 	.string "Ah, my grandson mentioned a\n"
 	.string "green POKéMON that has flowers\l"
 	.string "growing from its wrists.$"

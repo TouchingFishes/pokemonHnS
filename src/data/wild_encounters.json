@@ -14659,7 +14659,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ROSELIA"
+                "species": "SPECIES_PURGISLUG"
               },
               {
                 "min_level": 28,
@@ -14967,12 +14967,12 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ROSELIA"
+                "species": "SPECIES_PURGISLUG"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ROSELIA"
+                "species": "SPECIES_PURGISLUG"
               },
               {
                 "min_level": 26,
@@ -52952,7 +52952,7 @@
               {
                 "min_level": 26,
                 "max_level": 28,
-                "species": "SPECIES_ROSELIA"
+                "species": "SPECIES_PURGISLUG"
               },
               {
                 "min_level": 27,
