@@ -3338,25 +3338,25 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_RUFFLET] =
     {
-        .categoryName = _("SEAGULL"),
-        .height = 6,
-        .weight = 95,
+        .categoryName = _("EAGLET"),
+        .height = 5,
+        .weight = 105,
         .description = gRuffletPokedexText,
-        .pokemonScale = 295,
-        .pokemonOffset = -2,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_BRAVIARY] =
     {
-        .categoryName = _("WATER BIRD"),
-        .height = 12,
-        .weight = 280,
+        .categoryName = _("VALIANT"),
+        .height = 15,
+        .weight = 410,
         .description = gBraviaryPokedexText,
-        .pokemonScale = 288,
-        .pokemonOffset = 1,
-        .trainerScale = 256,
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
         .trainerOffset = 0,
     },
 
@@ -3638,12 +3638,12 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TALONFLAME] =
     {
-        .categoryName = _("DECEIVER"),
-        .height = 6,
-        .weight = 115,
+        .categoryName = _("SCORCHING"),
+        .height = 12,
+        .weight = 245,
         .description = gTalonflamePokedexText,
-        .pokemonScale = 466,
-        .pokemonOffset = 17,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
@@ -3734,24 +3734,24 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_FLETCHLING] =
     {
-        .categoryName = _("CHEERING"),
-        .height = 4,
-        .weight = 42,
+        .categoryName = _("TINY ROBIN"),
+        .height = 3,
+        .weight = 17,
         .description = gFletchlingPokedexText,
-        .pokemonScale = 515,
-        .pokemonOffset = -9,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_FLETCHADIN] =
     {
-        .categoryName = _("CHEERING"),
-        .height = 4,
-        .weight = 42,
+        .categoryName = _("EMBER"),
+        .height = 7,
+        .weight = 160,
         .description = gFletchadinPokedexText,
-        .pokemonScale = 512,
-        .pokemonOffset = -7,
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
@@ -4022,25 +4022,25 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_DRAPION] =
     {
-        .categoryName = _("CAT FERRET"),
+        .categoryName = _("OGRE SCORP"),
         .height = 13,
-        .weight = 403,
+        .weight = 615,
         .description = gDrapionPokedexText,
-        .pokemonScale = 256,
-        .pokemonOffset = 3,
+        .pokemonScale = 272,
+        .pokemonOffset = 5,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_SKORUPI] =
     {
-        .categoryName = _("FANG SNAKE"),
-        .height = 27,
-        .weight = 525,
+        .categoryName = _("SCORPION"),
+        .height = 8,
+        .weight = 120,
         .description = gSkorupiPokedexText,
-        .pokemonScale = 275,
-        .pokemonOffset = 7,
-        .trainerScale = 256,
+        .pokemonScale = 366,
+        .pokemonOffset = 12,
+        .trainerScale = 257,
         .trainerOffset = 0,
     },
 
@@ -4358,38 +4358,38 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_TYNAMO] =
     {
-        .categoryName = _("CLAP"),
-        .height = 8,
-        .weight = 395,
+        .categoryName = _("ELEFISH"),
+        .height = 2,
+        .weight = 3,
         .description = gTynamoPokedexText,
-        .pokemonScale = 315,
-        .pokemonOffset = 16,
+        .pokemonScale = 682,
+        .pokemonOffset = 24,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_EELEKTRIK] =
     {
-        .categoryName = _("BALL ROLL"),
-        .height = 11,
-        .weight = 876,
+        .categoryName = _("ELEFISH"),
+        .height = 12,
+        .weight = 220,
         .description = gEelektrikPokedexText,
-        .pokemonScale = 338,
-        .pokemonOffset = 13,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_EELEKTROSS] =
     {
-        .categoryName = _("ICE BREAK"),
-        .height = 14,
-        .weight = 1506,
+        .categoryName = _("THUNDER EEL"),
+        .height = 21,
+        .weight = 805,
         .description = gEelektrossPokedexText,
-        .pokemonScale = 316,
-        .pokemonOffset = 4,
-        .trainerScale = 256,
-        .trainerOffset = 0,
+        .pokemonScale = 256,
+        .pokemonOffset = 1,
+        .trainerScale = 365,
+        .trainerOffset = 7,
     },
 
     [NATIONAL_DEX_CLAMPERL] =
@@ -4454,38 +4454,38 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_GIBLE] =
     {
-        .categoryName = _("ROCK HEAD"),
-        .height = 6,
-        .weight = 421,
+        .categoryName = _("LAND SHARK"),
+        .height = 7,
+        .weight = 205,
         .description = gGiblePokedexText,
-        .pokemonScale = 448,
-        .pokemonOffset = 18,
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_GABITE] =
     {
-        .categoryName = _("ENDURANCE"),
-        .height = 11,
-        .weight = 1105,
+        .categoryName = _("CAVE SHARK"),
+        .height = 14,
+        .weight = 560,
         .description = gGabitePokedexText,
-        .pokemonScale = 311,
-        .pokemonOffset = 12,
-        .trainerScale = 256,
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_GARCHOMP] =
     {
-        .categoryName = _("DRAGON"),
-        .height = 15,
-        .weight = 1026,
+        .categoryName = _("MACH SHARK"),
+        .height = 19,
+        .weight = 950,
         .description = gGarchompPokedexText,
         .pokemonScale = 256,
-        .pokemonOffset = 0,
-        .trainerScale = 256,
-        .trainerOffset = 0,
+        .pokemonOffset = 1,
+        .trainerScale = 326,
+        .trainerOffset = 4,
     },
 
     [NATIONAL_DEX_BELDUM] =
@@ -4742,14 +4742,14 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SPIRITOMB] =
     {
-        .categoryName = _("GRIPPER"),
-        .height = 22,
-        .weight = 1066,
+        .categoryName = _("FORBIDDEN"),
+        .height = 10,
+        .weight = 1080,
         .description = gSpiritombPokedexText,
-        .pokemonScale = 256,
-        .pokemonOffset = 0,
-        .trainerScale = 309,
-        .trainerOffset = 4,
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_ELECTIVIRE] =
@@ -4922,38 +4922,38 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_DEINO] =
     {
-        .categoryName = _("MIME"),
-        .height = 6,
-        .weight = 130,
+        .categoryName = _("IRATE"),
+        .height = 8,
+        .weight = 173,
         .description = gDeinoPokedexText,
-        .pokemonScale = 484,
-        .pokemonOffset = 19,
-        .trainerScale = 256,
+        .pokemonScale = 366,
+        .pokemonOffset = 12,
+        .trainerScale = 257,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_ZWEILOUS] =
     {
-        .categoryName = _("BIG EATER"),
-        .height = 6,
-        .weight = 1050,
+        .categoryName = _("HOSTILE"),
+        .height = 14,
+        .weight = 500,
         .description = gZweilousPokedexText,
-        .pokemonScale = 484,
-        .pokemonOffset = 19,
-        .trainerScale = 256,
+        .pokemonScale = 265,
+        .pokemonOffset = 3,
+        .trainerScale = 262,
         .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_HYDREIGON] =
     {
-        .categoryName = _("VIRTUAL"),
-        .height = 9,
-        .weight = 340,
+        .categoryName = _("BRUTAL"),
+        .height = 18,
+        .weight = 1600,
         .description = gHydreigonPokedexText,
-        .pokemonScale = 358,
-        .pokemonOffset = 5,
-        .trainerScale = 256,
-        .trainerOffset = 0,
+        .pokemonScale = 267,
+        .pokemonOffset = 2,
+        .trainerScale = 286,
+        .trainerOffset = 1,
     },
 
     [NATIONAL_DEX_PORYGON_Z] =
@@ -5006,26 +5006,26 @@ const struct PokedexEntry gPokedexEntries[] =
 
     [NATIONAL_DEX_SNOVER] =
     {
-        .categoryName = _("DRILL"),
-        .height = 24,
-        .weight = 2828,
+        .categoryName = _("FROST TREE"),
+        .height = 10,
+        .weight = 505,
         .description = gSnoverPokedexText,
-        .pokemonScale = 256,
-        .pokemonOffset = 0,
-        .trainerScale = 360,
-        .trainerOffset = 7,
+        .pokemonScale = 305,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
     },
 
     [NATIONAL_DEX_ABOMASNOW] =
     {
-        .categoryName = _("BOUQUET"),
-        .height = 9,
-        .weight = 145,
+        .categoryName = _("FROST TREE"),
+        .height = 22,
+        .weight = 1355,
         .description = gAbomasnowPokedexText,
-        .pokemonScale = 358,
-        .pokemonOffset = 13,
-        .trainerScale = 256,
-        .trainerOffset = 0,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 348,
+        .trainerOffset = 6,
     },
 
     [NATIONAL_DEX_SYLVEON] =
@@ -5122,7 +5122,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_WYRDEER] =
     {
-        .categoryName = _("Big Horn"),
+        .categoryName = _("BIG HORN"),
         .height = 18,
         .weight = 951,
         .description = gWyrdeerPokedexText,
@@ -5133,14 +5133,14 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_HONEDGE] =
     {
-        .categoryName = _("Peat"),
-        .height = 24,
-        .weight = 2900,
+        .categoryName = _("SWORD"),
+        .height = 8,
+        .weight = 20,
         .description = gHonedgePokedexText,
-        .pokemonScale = 256,
-        .pokemonOffset = 3,
-        .trainerScale = 369,
-        .trainerOffset = 7,
+        .pokemonScale = 366,
+        .pokemonOffset = 7,
+        .trainerScale = 257,
+        .trainerOffset = 0,
     },
     [NATIONAL_DEX_DOUBLADE] =
     {
