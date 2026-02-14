@@ -1392,16 +1392,16 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_BLASTOISE_DOLL,
     },
 
-    [DECOR_WAILMER_DOLL] =
+    [DECOR_PORYGON2_DOLL] =
     {
-        .id = DECOR_WAILMER_DOLL,
-        .name = _("WAILMER DOLL"),
+        .id = DECOR_PORYGON2_DOLL,
+        .name = _("PORYGON2 DOLL"),
         .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x2,
+        .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_WAILMER_DOLL,
-        .tiles = DecorGfx_WAILMER_DOLL,
+        .description = DecorDesc_PORYGON2_DOLL,
+        .tiles = DecorGfx_PORYGON2_DOLL,
     },
     
     [DECOR_REGIROCK_DOLL] =

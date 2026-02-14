@@ -183,7 +183,7 @@
 #define OBJ_EVENT_GFX_BIG_VENUSAUR_DOLL          178
 #define OBJ_EVENT_GFX_BIG_CHARIZARD_DOLL         179
 #define OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL         180
-#define OBJ_EVENT_GFX_BIG_WAILMER_DOLL           181
+#define OBJ_EVENT_GFX_KURT_ON_GROUND             181
 #define OBJ_EVENT_GFX_BIG_REGIROCK_DOLL          182
 #define OBJ_EVENT_GFX_BIG_REGICE_DOLL            183
 #define OBJ_EVENT_GFX_BIG_REGISTEEL_DOLL         184
@@ -229,16 +229,17 @@
 #define OBJ_EVENT_GFX_DUSCLOPS                   224
 #define OBJ_EVENT_GFX_RED_NORMAL                 225
 #define OBJ_EVENT_GFX_SUDOWOODO                  226
-#define OBJ_EVENT_GFX_MEW                        227
-#define OBJ_EVENT_GFX_RED                        228
-#define OBJ_EVENT_GFX_LEAF                       229
-#define OBJ_EVENT_GFX_DEOXYS                     230
-#define OBJ_EVENT_GFX_DEOXYS_TRIANGLE            231
-#define OBJ_EVENT_GFX_GIOVANNI                   232
-#define OBJ_EVENT_GFX_LINK_RS_BRENDAN            233
-#define OBJ_EVENT_GFX_LINK_RS_MAY                234
-#define OBJ_EVENT_GFX_LUGIA                      235
-#define OBJ_EVENT_GFX_HOOH                       236
+#define OBJ_EVENT_GFX_PORYGON2_DOLL              227
+#define OBJ_EVENT_GFX_MEW                        228
+#define OBJ_EVENT_GFX_RED                        229
+#define OBJ_EVENT_GFX_LEAF                       230
+#define OBJ_EVENT_GFX_DEOXYS                     231
+#define OBJ_EVENT_GFX_DEOXYS_TRIANGLE            232
+#define OBJ_EVENT_GFX_GIOVANNI                   233
+#define OBJ_EVENT_GFX_LINK_RS_BRENDAN            234
+#define OBJ_EVENT_GFX_LINK_RS_MAY                235
+#define OBJ_EVENT_GFX_LUGIA                      236
+#define OBJ_EVENT_GFX_HOOH                       237
 #define OBJ_EVENT_GFX_POKE_BALL                  OBJ_EVENT_GFX_ITEM_BALL // replaces ITEM_BALL
 #define OBJ_EVENT_GFX_OW_MON                     OBJ_EVENT_GFX_REGICE
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               OBJ_EVENT_GFX_QUINTY_PLUMP

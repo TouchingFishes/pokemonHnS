@@ -880,10 +880,6 @@ static const struct SpriteFrameImage sPicTable_UnusedPikachuDoll[] = {
     obj_frame_tiles(gObjectEventPic_UnusedPikachuDoll),
 };
 
-static const struct SpriteFrameImage sPicTable_UnusedPorygon2Doll[] = {
-    obj_frame_tiles(gObjectEventPic_UnusedPorygon2Doll),
-};
-
 static const struct SpriteFrameImage sPicTable_CuttableTree[] = {
     overworld_frame(gObjectEventPic_CuttableTree, 2, 2, 0),
     overworld_frame(gObjectEventPic_CuttableTree, 2, 2, 1),
@@ -1550,9 +1546,9 @@ static const struct SpriteFrameImage sPicTable_GulpinDoll[] = {
     obj_frame_tiles(gObjectEventPic_GulpinDoll),
 };
 
-/*static const struct SpriteFrameImage sPicTable_FlorgesDoll[] = {
-    obj_frame_tiles(gObjectEventPic_FlorgesDoll),
-};*/
+static const struct SpriteFrameImage sPicTable_Porygon2Doll[] = {
+    obj_frame_tiles(gObjectEventPic_Porygon2Doll),
+};
 
 static const struct SpriteFrameImage sPicTable_SeedotDoll[] = {
     obj_frame_tiles(gObjectEventPic_SeedotDoll),
@@ -1627,8 +1623,8 @@ static const struct SpriteFrameImage sPicTable_BigBlastoiseDoll[] = {
     obj_frame_tiles(gObjectEventPic_BigBlastoiseDoll),
 };
 
-static const struct SpriteFrameImage sPicTable_BigWailmerDoll[] = {
-    obj_frame_tiles(gObjectEventPic_BigWailmerDoll),
+static const struct SpriteFrameImage sPicTable_KurtOnGround[] = {
+    obj_frame_tiles(gObjectEventPic_KurtOnGround),
 };
 
 static const struct SpriteFrameImage sPicTable_BigRegirockDoll[] = {

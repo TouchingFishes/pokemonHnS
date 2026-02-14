@@ -550,9 +550,9 @@ const u16 DecorGfx_GULPIN_DOLL[] = {
     OBJ_EVENT_GFX_GULPIN_DOLL
 };
 
-/*const u16 DecorGfx_FLORGES_DOLL[] = {
-    OBJ_EVENT_GFX_FLORGES_DOLL
-};*/
+const u16 DecorGfx_PORYGON2_DOLL[] = {
+    OBJ_EVENT_GFX_PORYGON2_DOLL
+};
 
 const u16 DecorGfx_SEEDOT_DOLL[] = {
     OBJ_EVENT_GFX_SEEDOT_DOLL
@@ -622,8 +622,8 @@ const u16 DecorGfx_BLASTOISE_DOLL[] = {
     OBJ_EVENT_GFX_BIG_BLASTOISE_DOLL
 };
 
-const u16 DecorGfx_WAILMER_DOLL[] = {
-    OBJ_EVENT_GFX_BIG_WAILMER_DOLL
+const u16 DecorGfx_KURT_ON_GROUND[] = {
+    OBJ_EVENT_GFX_KURT_ON_GROUND
 };
 
 const u16 DecorGfx_REGIROCK_DOLL[] = {

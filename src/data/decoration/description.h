@@ -547,8 +547,8 @@ const u8 DecorDesc_BLASTOISE_DOLL[] = _(
         "Place it on a mat\n"
         "or a desk.");
 
-const u8 DecorDesc_WAILMER_DOLL[] = _(
-    "A large doll.\n"
+const u8 DecorDesc_PORYGON2_DOLL[] = _(
+    "A cool doll.\n"
         "Place it on a mat\n"
         "or a desk.");
 
