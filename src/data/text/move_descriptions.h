@@ -1466,7 +1466,7 @@ static const u8 sMoonblastDescription[] = _(
     "the moon. May lower Sp. Atk.");
 
 static const u8 sCrossPoisonDescription[] = _(
-    "A stabbing attack that\n"
+    "A high-crit attack that\n"
     "may poison the foe.");
 
 static const u8 sXScissorDescription[] = _(
