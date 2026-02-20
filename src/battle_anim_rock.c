@@ -85,6 +85,17 @@ const struct SpriteTemplate gSwirlingDirtSpriteTemplate =
     .callback = AnimParticleInVortex,
 };
 
+const struct SpriteTemplate gStoneEdgeSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_STONE_EDGE,
+    .paletteTag = ANIM_TAG_STONE_EDGE,
+    .oam = &gOamData_AffineOff_ObjNormal_32x32,
+    .anims = gAnims_BasicFire,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimParticleInVortex,
+};
+
 static const union AffineAnimCmd sAffineAnim_Whirlpool[] =
 {
     AFFINEANIMCMD_FRAME(0xC0, 0xC0, 0, 0),

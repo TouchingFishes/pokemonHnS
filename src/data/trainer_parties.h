@@ -19959,7 +19959,7 @@ static const struct TrainerMonItemCustomMoves sParty_Clair[] = { //LeaderGroup
     .lvl = 44,
     .species = SPECIES_DUNLONG,
     .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_GLARE, MOVE_ANCIENT_POWER, MOVE_REST, MOVE_POISON_JAB}
+    .moves = {MOVE_GLARE, MOVE_ANCIENT_POWER, MOVE_REST, MOVE_CROSS_POISON}
     },
     {
     .iv = 200,
@@ -19991,7 +19991,7 @@ static const struct TrainerMonItemCustomMoves sParty_Clair2[] = { //LeaderGroup
     .lvl = 63,
     .species = SPECIES_DUNLONG,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_REST, MOVE_GLARE, MOVE_POISON_JAB, MOVE_SKULL_BASH}
+    .moves = {MOVE_REST, MOVE_GLARE, MOVE_CROSS_POISON, MOVE_SKULL_BASH}
     },
     {
     .iv = 200,

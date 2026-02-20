@@ -98,6 +98,17 @@ const struct SpriteTemplate gShadowBallSpriteTemplate =
     .callback = AnimShadowBall,
 };
 
+const struct SpriteTemplate gEnergyBallSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_ENERGY_BALL,
+    .paletteTag = ANIM_TAG_ENERGY_BALL,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sAffineAnims_ShadowBall,
+    .callback = AnimShadowBall,
+};
+
 static const union AnimCmd sAnim_Lick[] =
 {
     ANIMCMD_FRAME(0, 2),
@@ -1344,4 +1355,26 @@ static void AnimMonMoveCircular_Step(struct Sprite *sprite)
         gSprites[sprite->data[5]].y -= 8;
         sprite->callback = DestroySpriteAndMatrix;
     }
+}
+
+//Creates purple flames that surround the target.
+//No args.
+void AnimTask_PurpleFlamesOnTarget(u8 taskId)
+{
+    struct Task *task = &gTasks[taskId];
+
+    task->data[0] = 0;
+    task->data[1] = 16;
+    task->data[9] = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+    task->data[10] = GetBattlerYCoordWithElevation(gBattleAnimTarget);
+    task->data[11] = (GetBattlerSpriteCoordAttr(gBattleAnimTarget, BATTLER_COORD_ATTR_WIDTH) / 2) + 8;
+    task->data[7] = 0;
+    task->data[5] = GetBattlerSpriteBGPriority(gBattleAnimTarget);
+    task->data[6] = GetBattlerSpriteSubpriority(gBattleAnimTarget) - 2;
+    task->data[3] = 0;
+    task->data[4] = 16;
+    SetGpuReg(REG_OFFSET_BLDCNT, (BLDCNT_EFFECT_BLEND | BLDCNT_TGT2_ALL));
+    SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(0, 0x10));
+    task->data[8] = 0;
+    task->func = AnimTask_GrudgeFlames_Step;
 }

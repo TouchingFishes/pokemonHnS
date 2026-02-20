@@ -28,6 +28,7 @@ static void AnimTask_ImprisonOrbs_Step(u8);
 static void AnimTask_SkillSwap_Step(u8);
 static void AnimTask_ExtrasensoryDistortion_Step(u8);
 static void AnimPsychoCut(struct Sprite *sprite);
+static void AnimateZenHeadbutt(struct Sprite *sprite);
 static void AnimTask_TransparentCloneGrowAndShrink_Step(u8);
 
 static const union AffineAnimCmd sAffineAnim_PsychUpSpiral[] =
@@ -123,6 +124,23 @@ static void AnimPsychoCut(struct Sprite *sprite)
 
     sprite->callback = StartAnimLinearTranslation;
     StoreSpriteCallbackInData6(sprite, DestroyAnimSprite);
+}
+
+static void AnimateZenHeadbutt(struct Sprite *sprite)
+{
+    if (gBattleAnimArgs[0] == 0)
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_X_2);
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimAttacker, BATTLER_COORD_Y_PIC_OFFSET) + 18;
+    }
+    else
+    {
+        sprite->x = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_X_2);
+        sprite->y = GetBattlerSpriteCoord(gBattleAnimTarget, BATTLER_COORD_Y_PIC_OFFSET) + 18;
+    }
+
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
 }
 
 const struct SpriteTemplate gLightScreenWallSpriteTemplate =
@@ -365,6 +383,33 @@ const struct SpriteTemplate gImprisonOrbSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy,
+};
+
+const union AffineAnimCmd gZenHeadbuttAffineAnimCmd[] =
+{
+    AFFINEANIMCMD_FRAME(0x10, 0x10, 0, 0),
+    AFFINEANIMCMD_FRAME(0x8, 0x8, 0, 18),
+    AFFINEANIMCMD_LOOP(0),
+    AFFINEANIMCMD_FRAME(0xFFFB, 0xFFFB, 0, 8),
+    AFFINEANIMCMD_FRAME(0x5, 0x5, 0, 8),
+    AFFINEANIMCMD_LOOP(5),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gZenHeadbuttAffineAnims[] =
+{
+    gZenHeadbuttAffineAnimCmd,
+};
+
+const struct SpriteTemplate gZenHeadbuttSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,
+    .paletteTag = ANIM_TAG_WATER_IMPACT,
+    .oam = &gOamData_AffineNormal_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gZenHeadbuttAffineAnims,
+    .callback = AnimateZenHeadbutt,
 };
 
 const struct SpriteTemplate gRedXSpriteTemplate =

@@ -1304,6 +1304,11 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_DragonPulse, 0x0100, ANIM_TAG_DRAGON_PULSE},
     {gBattleAnimSpriteGfx_DragonPulseRing, 0x200, ANIM_TAG_DRAGON_PULSE_RING},
     {gBattleAnimSpriteGfx_PurpleJab, 0x0100, ANIM_TAG_PURPLE_JAB},
+    {gBattleAnimSpriteGfx_WoodHammerHammer, 0x800, ANIM_TAG_WOOD_HAMMER_HAMMER},
+    {gBattleAnimSpriteGfx_WoodHammer, 0x0C00, ANIM_TAG_WOOD_HAMMER},
+    {gBattleAnimSpriteGfx_EnergyBall, 0x0200, ANIM_TAG_ENERGY_BALL},
+    {gBattleAnimSpriteGfx_StoneEdge, 0x0A00, ANIM_TAG_STONE_EDGE},
+    {gBattleAnimSpriteGfx_Punishment, 0xa00, ANIM_TAG_PUNISHMENT_BLADES},
 };
 
 const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
@@ -1603,6 +1608,11 @@ const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_DragonPulse, ANIM_TAG_DRAGON_PULSE},
     {gBattleAnimSpritePal_DragonPulseRing, ANIM_TAG_DRAGON_PULSE_RING},
     {gBattleAnimSpritePal_PurpleJab, ANIM_TAG_PURPLE_JAB},
+    {gBattleAnimSpritePal_WoodHammerHammer, ANIM_TAG_WOOD_HAMMER_HAMMER},
+    {gBattleAnimSpritePal_WoodHammer, ANIM_TAG_WOOD_HAMMER},
+    {gBattleAnimSpritePal_EnergyBall, ANIM_TAG_ENERGY_BALL},
+    {gBattleAnimSpritePal_StoneEdge, ANIM_TAG_STONE_EDGE},
+    {gBattleAnimSpritePal_Punishment, ANIM_TAG_PUNISHMENT_BLADES},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
@@ -1635,4 +1645,7 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_SOLAR_BEAM_PLAYER]   = {gBattleAnimBgImage_Impact,     gBattleAnimBgPalette_SolarBeam,  gBattleAnimBgTilemap_ImpactPlayer},
     [BG_SOLAR_BEAM_CONTESTS] = {gBattleAnimBgImage_Impact,     gBattleAnimBgPalette_SolarBeam,  gBattleAnimBgTilemap_ImpactContests},
     [BG_FOCUS_BLAST]         = {gBattleAnimBgImage_FocusBlast, gBattleAnimBgPalette_FocusBlast, gBattleAnimBgTilemap_FocusBlast},
+    [BG_ROCK_WRECKER]        = {gBattleAnimBgImage_Hurricane,  gBattleAnimBgPalette_RockWrecker, gBattleAnimBgTilemap_Hurricane},
+    [BG_GUNK_SHOT]           = {gBattleAnimBgImage_FocusBlast, gBattleAnimBgPalette_GunkShot,   gBattleAnimBgTilemap_FocusBlast},
+    [BG_HURRICANE]           = {gBattleAnimBgImage_Hurricane,  gBattleAnimBgPalette_Hurricane,  gBattleAnimBgTilemap_Hurricane},
 };

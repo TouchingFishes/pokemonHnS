@@ -2942,7 +2942,7 @@ const struct BardSound gBardSounds_Moves[MOVES_COUNT][6] = {
         NULL_BARD_SOUND,
         NULL_BARD_SOUND,
     },
-    [MOVE_POISON_JAB] = {
+    [MOVE_CROSS_POISON] = {
         { .songLengthId = 12 },
         { .songLengthId =  3 },
         { .songLengthId = 22 },

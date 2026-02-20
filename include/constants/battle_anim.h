@@ -302,6 +302,11 @@
 #define ANIM_TAG_DRAGON_PULSE               (ANIM_SPRITES_START + 292)
 #define ANIM_TAG_DRAGON_PULSE_RING          (ANIM_SPRITES_START + 293)
 #define ANIM_TAG_PURPLE_JAB                 (ANIM_SPRITES_START + 294)
+#define ANIM_TAG_WOOD_HAMMER                (ANIM_SPRITES_START + 295)
+#define ANIM_TAG_WOOD_HAMMER_HAMMER         (ANIM_SPRITES_START + 296)
+#define ANIM_TAG_ENERGY_BALL                (ANIM_SPRITES_START + 297)
+#define ANIM_TAG_STONE_EDGE                 (ANIM_SPRITES_START + 298)
+#define ANIM_TAG_PUNISHMENT_BLADES          (ANIM_SPRITES_START + 299)
 
 // battlers
 #define ANIM_ATTACKER         0
@@ -359,6 +364,9 @@
 #define BG_SOLAR_BEAM_PLAYER 25
 #define BG_SOLAR_BEAM_CONTESTS 26
 #define BG_FOCUS_BLAST 27
+#define BG_ROCK_WRECKER 28
+#define BG_GUNK_SHOT 29
+#define BG_HURRICANE 30
 
 // table ids for general animations (gBattleAnims_General)
 #define B_ANIM_CASTFORM_CHANGE          0
