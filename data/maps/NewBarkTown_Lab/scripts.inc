@@ -137,6 +137,33 @@ NewBarkTown_Lab_EventScript_ElmAccepted::
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 	end
 
+NewBarkTown_Lab_EventScript_ElmChooseStarterRegion:
+	message NewBarkTown_Lab_Text_ElmChooseAStarterRegion
+	waitmessage
+	multichoice 20, 0, MULTI_STARTER_REGION_CHOICE, FALSE
+	switch VAR_RESULT
+	case 0, NewBarkTown_Lab_EventScript_JohtoChosen
+	case 1, NewBarkTown_Lab_EventScript_KantoChosen
+	case 2, NewBarkTown_Lab_EventScript_HoennChosen
+	case 3, NewBarkTown_Lab_EventScript_SinnohChosen
+	case MULTI_B_PRESSED, NewBarkTown_Lab_EventScript_JohtoChosen
+
+NewBarkTown_Lab_EventScript_JohtoChosen:
+	setflag FLAG_CHOSE_JOHTO_STARTERS
+	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
+
+NewBarkTown_Lab_EventScript_KantoChosen:
+	setflag FLAG_CHOSE_KANTO_STARTERS
+	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
+
+NewBarkTown_Lab_EventScript_HoennChosen:
+	setflag FLAG_CHOSE_HOENN_STARTERS   
+	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
+
+NewBarkTown_Lab_EventScript_SinnohChosen:
+	setflag FLAG_CHOSE_SINNOH_STARTERS  
+	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
+
 NewBarkTown_Lab_EventScript_ElmChoosePokemon::
 	msgbox NewBarkTown_Lab_Text_ElmChooseAPokemon, MSGBOX_DEFAULT
 	closemessage
@@ -170,8 +197,47 @@ NewBarkTown_Lab_EventScript_ChikoritaBall::
 
 NewBarkTown_Lab_EventScript_ChikoritaBall_Choice::
 	callnative DisableStaticRandomizer
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, NewBarkTown_Lab_EventScript_BulbasaurBall_Choice
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, NewBarkTown_Lab_EventScript_TreeckoBall_Choice
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, NewBarkTown_Lab_EventScript_TurtwigBall_Choice
 	setvar VAR_STARTER_MON, 0
 	setvar PLAYER_STARTER_SPECIES, SPECIES_CHIKORITA
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_BulbasaurBall_Choice:
+	setvar VAR_STARTER_MON, 0
+	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_TreeckoBall_Choice:
+	setvar VAR_STARTER_MON, 0
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TREECKO
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_TurtwigBall_Choice:
+	setvar VAR_STARTER_MON, 0
+	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR ;TURTWIG
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -192,8 +258,47 @@ NewBarkTown_Lab_EventScript_CyndaquilBall::
 
 NewBarkTown_Lab_EventScript_CyndaquilBall_Choice::
 	callnative DisableStaticRandomizer
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, NewBarkTown_Lab_EventScript_CharmanderBall_Choice
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, NewBarkTown_Lab_EventScript_TorchicBall_Choice
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, NewBarkTown_Lab_EventScript_ChimcharBall_Choice
 	setvar VAR_STARTER_MON, 1
 	setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseCyndaquil, MSGBOX_YESNO	
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_CharmanderBall_Choice:
+	setvar VAR_STARTER_MON, 1
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHARMANDER
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseCyndaquil, MSGBOX_YESNO	
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_TorchicBall_Choice:
+	setvar VAR_STARTER_MON, 1
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TORCHIC
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseCyndaquil, MSGBOX_YESNO	
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_ChimcharBall_Choice:
+	setvar VAR_STARTER_MON, 1
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL ;CHIMCHAR
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -214,8 +319,47 @@ NewBarkTown_Lab_EventScript_TotodileBall::
 
 NewBarkTown_Lab_EventScript_TotodileBall_Choice::
 	callnative DisableStaticRandomizer
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, NewBarkTown_Lab_EventScript_SquirtleBall_Choice
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, NewBarkTown_Lab_EventScript_MudkipBall_Choice
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, NewBarkTown_Lab_EventScript_PiplupBall_Choice
 	setvar VAR_STARTER_MON, 2
 	setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseTotodile, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_SquirtleBall_Choice:
+	setvar VAR_STARTER_MON, 2
+	setvar PLAYER_STARTER_SPECIES, SPECIES_SQUIRTLE
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseTotodile, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_MudkipBall_Choice:
+	setvar VAR_STARTER_MON, 2
+	setvar PLAYER_STARTER_SPECIES, SPECIES_MUDKIP
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	msgbox NewBarkTown_Lab_Text_ChooseTotodile, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_PiplupBall_Choice:
+	setvar VAR_STARTER_MON, 2
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE ;PIPLUP
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -670,9 +814,22 @@ NewBarkTown_Lab_Text_ElmMissionFromMrPokemon:
 	.string "{PLAYER}, can you go in our\n"
 	.string "place?$"
 
-NewBarkTown_Lab_Text_ElmChooseAPokemon:
+NewBarkTown_Lab_Text_ElmChooseAStarterRegion:
 	.string "I want you to raise one of\n"
 	.string "the POKéMON contained in these BALLS.\p"
+	.string "Due to you being such a great\n"
+	.string "help for me. I want you to have\p"
+	.string "a special choice…\n"
+	.string "I want you to choose the region\n"
+	.string "of your new POKéMON!\p"
+	.string "So… what kind of POKéMON\n"
+    .string "do you want to start with?\p"
+    .string "From which region?$"
+
+NewBarkTown_Lab_Text_ElmChooseAPokemon:
+	.string "Now that you have chosen the\n"
+	.string "correct region, you should go\p"
+	.string "ahead and pick your POKéMON now.\n"
 	.string "You'll be that POKéMON's\n"
 	.string "first partner, {PLAYER}!\p"
 	.string "Go on. Pick one!$"

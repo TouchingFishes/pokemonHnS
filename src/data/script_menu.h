@@ -922,6 +922,13 @@ static const struct MenuAction MultichoiceList_Exit[] =
     {gText_Exit},
 };
 
+static const struct MenuAction sMenuAction_StarterRegionChoice[] = {
+    {gText_JohtoStarterChoice},
+    {gText_KantoStarterChoice},
+    {gText_HoennStarterChoice},
+    {gText_JohtoStarterChoice},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -1058,6 +1065,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_ELDERQUIIZ4]                 = MULTICHOICE(MultichoiceList_ElderQuiz4),
     [MULTI_ELDERQUIIZ5]                 = MULTICHOICE(MultichoiceList_ElderQuiz5),
     [MULTI_HOENN_STARTERS]              = MULTICHOICE(MultichoiceList_HoennStarters),
+    [MULTI_STARTER_REGION_CHOICE]       = MULTICHOICE(sMenuAction_StarterRegionChoice),
     [MULTI_5FLOORS]                    = MULTICHOICE(MultichoiceList_5Floors),
 
 };
@@ -1167,3 +1175,4 @@ static const u8 *const sWirelessOptions_NoRecordMixBerryCrush[] =
     CableClub_Text_YouMayBattleHere,
     CableClub_Text_CancelSelectedItem,
 };
+

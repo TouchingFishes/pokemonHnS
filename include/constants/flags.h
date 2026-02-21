@@ -709,10 +709,10 @@
 #define FLAG_SHINY_STARTER_3  0x296 // Flag for shiny starters, Totodile
 #define FLAG_FORCE_SHINY   0x297 // Needed for shiny starters, not used anywhere else
 #define FLAG_TEMPORALY_DISABLE_STATIC_RANDOMIZER  0x298
-#define FLAG_UNUSED_0x299  0x299 // Unused Flag
-#define FLAG_UNUSED_0x29A  0x29A // Unused Flag
-#define FLAG_UNUSED_0x29B  0x29B // Unused Flag
-#define FLAG_UNUSED_0x29C  0x29C // Unused Flag
+#define FLAG_CHOSE_JOHTO_STARTERS     0x299
+#define FLAG_CHOSE_KANTO_STARTERS     0x29A
+#define FLAG_CHOSE_HOENN_STARTERS     0x29B
+#define FLAG_CHOSE_SINNOH_STARTERS    0x29C
 #define FLAG_UNUSED_0x29D  0x29D // Unused Flag
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag

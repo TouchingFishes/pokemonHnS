@@ -1532,6 +1532,11 @@ extern const u8 gText_BlueStone[];
 extern const u8 gText_GreenStone[];
 extern const u8 gText_RedStone[];
 
+extern const u8 gText_JohtoStarterChoice[];
+extern const u8 gText_KantoStarterChoice[];
+extern const u8 gText_HoennStarterChoice[];
+extern const u8 gText_SinnohStarterChoice[];
+
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];
