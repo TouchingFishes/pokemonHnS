@@ -582,7 +582,15 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_WYRDEER,
     SPECIES_HONEDGE,
     SPECIES_DOUBLADE,
-    SPECIES_AEGISLASH*/
+    SPECIES_TURTWIG,
+    SPECIES_GROTLE,
+    SPECIES_TORTERRA,
+    SPECIES_CHIMCHAR,
+    SPECIES_MONFERNO,
+    SPECIES_INFERNAPE,
+    SPECIES_PIPLUP,
+    SPECIES_PRINPLUP,
+    SPECIES_EMPOLEON,*/
 };
 
 static const u16 sMovingRegionMapSections[3] =

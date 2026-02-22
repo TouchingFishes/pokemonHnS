@@ -126,6 +126,7 @@ NewBarkTown_Lab_EventScript_ElmAccepted::
 	applymovement OBJ_EVENT_ID_PLAYER, NewBarkTown_Lab_Movement_Look_Left
 	waitmovement 0
 	waitmovement 0
+	delay 20
 	msgbox NewBarkTown_Lab_Text_ElmGotAnEmail, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
@@ -133,8 +134,15 @@ NewBarkTown_Lab_EventScript_ElmAccepted::
 	applymovement OBJ_EVENT_ID_PLAYER, NewBarkTown_Lab_Movement_Look_Up
 	waitmovement 0
 	delay 30
-	msgbox NewBarkTown_Lab_Text_ElmMissionFromMrPokemon, MSGBOX_DEFAULT
-	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
+	msgbox NewBarkTown_Lab_Text_ElmMissionFromMrPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ElmChooseStarterRegion
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_ElmRefused2
+	end
+
+NewBarkTown_Lab_EventScript_ElmRefused2::
+	msgbox NewBarkTown_Lab_Text_ElmRefused, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ElmChooseStarterRegion
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_ElmRefused2
 	end
 
 NewBarkTown_Lab_EventScript_ElmChooseStarterRegion:
@@ -150,18 +158,66 @@ NewBarkTown_Lab_EventScript_ElmChooseStarterRegion:
 
 NewBarkTown_Lab_EventScript_JohtoChosen:
 	setflag FLAG_CHOSE_JOHTO_STARTERS
+	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
+	waitmovement 0
+	waitmovement 0
+	delay 10
+	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
+	waitmovement 0
+	delay 30
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 
 NewBarkTown_Lab_EventScript_KantoChosen:
 	setflag FLAG_CHOSE_KANTO_STARTERS
+	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
+	waitmovement 0
+	waitmovement 0
+	delay 10
+	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
+	waitmovement 0
+	delay 30
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 
 NewBarkTown_Lab_EventScript_HoennChosen:
-	setflag FLAG_CHOSE_HOENN_STARTERS   
+	setflag FLAG_CHOSE_HOENN_STARTERS
+	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
+	waitmovement 0
+	waitmovement 0
+	delay 10
+	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
+	waitmovement 0
+	delay 30   
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 
 NewBarkTown_Lab_EventScript_SinnohChosen:
-	setflag FLAG_CHOSE_SINNOH_STARTERS  
+	setflag FLAG_CHOSE_SINNOH_STARTERS
+	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
+	waitmovement 0
+	waitmovement 0
+	delay 10
+	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
+	waitmovement 0  
+	delay 30
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 
 NewBarkTown_Lab_EventScript_ElmChoosePokemon::
@@ -217,7 +273,7 @@ NewBarkTown_Lab_EventScript_BulbasaurBall_Choice:
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
-	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, SPECIES_BULBASAUR
 	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
@@ -237,7 +293,7 @@ NewBarkTown_Lab_EventScript_TreeckoBall_Choice:
 
 NewBarkTown_Lab_EventScript_TurtwigBall_Choice:
 	setvar VAR_STARTER_MON, 0
-	setvar PLAYER_STARTER_SPECIES, SPECIES_BULBASAUR ;TURTWIG
+	setvar PLAYER_STARTER_SPECIES, SPECIES_TURTWIG
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -278,7 +334,7 @@ NewBarkTown_Lab_EventScript_CharmanderBall_Choice:
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
-	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, SPECIES_CHARMANDER
 	msgbox NewBarkTown_Lab_Text_ChooseCyndaquil, MSGBOX_YESNO	
 	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
@@ -298,7 +354,7 @@ NewBarkTown_Lab_EventScript_TorchicBall_Choice:
 
 NewBarkTown_Lab_EventScript_ChimcharBall_Choice:
 	setvar VAR_STARTER_MON, 1
-	setvar PLAYER_STARTER_SPECIES, SPECIES_CYNDAQUIL ;CHIMCHAR
+	setvar PLAYER_STARTER_SPECIES, SPECIES_CHIMCHAR
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -359,7 +415,7 @@ NewBarkTown_Lab_EventScript_MudkipBall_Choice:
 
 NewBarkTown_Lab_EventScript_PiplupBall_Choice:
 	setvar VAR_STARTER_MON, 2
-	setvar PLAYER_STARTER_SPECIES, SPECIES_TOTODILE ;PIPLUP
+	setvar PLAYER_STARTER_SPECIES, SPECIES_PIPLUP
 	showmonpic PLAYER_STARTER_SPECIES, 10, 3
 	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -774,8 +830,8 @@ NewBarkTown_Lab_Text_ElmIntro:
 	.string "But there are some things I\n"
 	.string "don't quite understand yet.\p"
 	.string "So!\p"
-	.string "I'd like you to raise a\n"
-	.string "POKéMON that I recently caught.$"
+	.string "I'd like you to raise a POKéMON that\n"
+	.string "I recently caught and help me out.$"
 
 NewBarkTown_Lab_Text_ElmAccepted:
 	.string "Thanks, {PLAYER}!\n"
@@ -791,6 +847,17 @@ NewBarkTown_Lab_Text_ElmResearchAmbitions:
 	.string "into the many mysteries of\n"
 	.string "POKéMON.\p"
 	.string "You can count on it!$"
+
+NewBarkTown_Lab_Text_ElmConfigureStarterChoice:
+	.string "Let me quickly configure your\n"
+	.string "POKéMON choice. This will only\p"
+	.string "take a second…$"
+
+NewBarkTown_Lab_Text_ElmConfiguringStarterChoice:
+	.string "Just a few quick clicks…\p"
+	.string "… … …\n"
+	.string "Hm… and here…\p"
+	.string "That should do it!$"
 
 NewBarkTown_Lab_Text_ElmGotAnEmail:
 	.string "Oh, hey! I got an e-mail!\p"
@@ -815,24 +882,27 @@ NewBarkTown_Lab_Text_ElmMissionFromMrPokemon:
 	.string "place?$"
 
 NewBarkTown_Lab_Text_ElmChooseAStarterRegion:
-	.string "I want you to raise one of\n"
-	.string "the POKéMON contained in these BALLS.\p"
-	.string "Due to you being such a great\n"
-	.string "help for me. I want you to have\p"
-	.string "a special choice…\n"
-	.string "I want you to choose the region\n"
-	.string "of your new POKéMON!\p"
-	.string "So… what kind of POKéMON\n"
-    .string "do you want to start with?\p"
-    .string "From which region?$"
+	.string "Thank you for your help. Hopefully this\n"
+	.string "will also be a great experience for you!\p"
+	.string "Now before you head out, I have one\n"
+	.string "important request I would like to make.\p"
+	.string "I want you to raise one of the POKéMON\n"
+	.string "contained in these BALLS,\p"
+	.string "and because you are such a great help.\n"
+	.string "I will allow you to make a very special\p"
+	.string "choice…\p"
+	.string "You may choose which region your first\n"
+	.string "POKéMON should come from!\p"
+	.string "So… what kind of POKéMON do you want\n"
+    .string "to start with?$"
 
 NewBarkTown_Lab_Text_ElmChooseAPokemon:
 	.string "Now that you have chosen the\n"
-	.string "correct region, you should go\p"
-	.string "ahead and pick your POKéMON now.\n"
-	.string "You'll be that POKéMON's\n"
-	.string "first partner, {PLAYER}!\p"
-	.string "Go on. Pick one!$"
+	.string "region of your new partner, you\p"
+	.string "should go ahead and pick your POKéMON.\n"
+	.string "You'll be its first partner\p"
+	.string "Go on. {PLAYER}!\p"
+	.string "pick one!$"
 
 NewBarkTown_Lab_Text_ElmWhereGoing:
 	.string "ELM: Wait! Where are you\n"

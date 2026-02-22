@@ -2555,13 +2555,57 @@ const u8 gHonedgePokedexText[] = _(
     "energy completely.");
 
 const u8 gDoubladePokedexText[] = _(
-            "It crossed the sea and drifted\n"
-            "ashore in a new land. Surviving in this\n"
-            "place led it to take on a unique\n"
-            "appearance and gain special powers.");
+    "It crossed the sea and drifted\n"
+    "ashore in a new land. Surviving in this\n"
+    "place led it to take on a unique\n"
+    "appearance and gain special powers.");
 
 const u8 gAegislashPokedexText[] = _(
-            "A violent creature that fells trees with\n"
-            "its crude axes and shields itself with hard\n"
-            "stone. Should one encounter this Pokémon\n"
-            "in the wild, one's only recourse is to flee.");
+    "A violent creature that fells trees with\n"
+    "its crude axes and shields itself with hard\n"
+    "stone. Should one encounter this Pokémon\n"
+    "in the wild, one's only recourse is to flee.");
+
+const u8 gTurtwigPokedexText[] = _(
+    "A tiny, leafy Pokémon that loves sunlight.\n"
+    "It uses the small sprout on its head to\n"
+    "convert sunlight into energy and grow.");
+
+const u8 gGrotlePokedexText[] = _(
+    "It grows a thick, leafy shell as it evolves.\n"
+    "This Pokémon loves forests and spends its\n"
+    "time nurturing plants on its back.");
+
+const u8 gTorterraPokedexText[] = _(
+    "A massive, turtle-like Pokémon that carries\n"
+    "a small ecosystem on its back. It moves\n"
+    "slowly but steadily across the land.");
+
+const u8 gChimcharPokedexText[] = _(
+    "A playful, fiery Pokémon that loves to climb.\n"
+    "Its tail flame reflects its health and mood.");
+
+const u8 gMonfernoPokedexText[] = _(
+    "This Pokémon becomes more agile and powerful\n"
+    "as it grows. It wields its flames skillfully\n"
+    "during battles.");
+
+const u8 gInfernapePokedexText[] = _(
+    "A master of both speed and firepower.\n"
+    "It can unleash blazing attacks and\n"
+    "outmaneuver foes with incredible agility.");
+
+const u8 gPiplupPokedexText[] = _(
+    "A proud, penguin-like Pokémon that is very\n"
+    "proud of its appearance. It waddles around\n"
+    "and often ignores commands it dislikes.");
+
+const u8 gPrinplupPokedexText[] = _(
+    "A refined and elegant Pokémon that has\n"
+    "learned discipline. It commands respect\n"
+    "from others in its colony.");
+
+const u8 gEmpoleonPokedexText[] = _(
+    "An imposing Pokémon with steel-like wings\n"
+    "and a regal presence. It leads its colony\n"
+    "and strikes fear into rivals with its power.");

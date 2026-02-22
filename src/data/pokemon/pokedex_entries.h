@@ -5164,6 +5164,105 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 286,
         .trainerOffset = 1,
     },
+    [NATIONAL_DEX_TURTWIG] =
+    {
+        .categoryName = _("Tiny Leaf"),
+        .height = 40,
+        .weight = 1020,
+        .description = gTurtwigPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_GROTLE] =
+    {
+        .categoryName = _("Grove"),
+        .height = 79,
+        .weight = 9700,
+        .description = gGrotlePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_TORTERRA] =
+    {
+        .categoryName = _("Continent"),
+        .height = 225,
+        .weight = 31000,
+        .description = gTorterraPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 369,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_CHIMCHAR] =
+    {
+        .categoryName = _("Chimp"),
+        .height = 55,
+        .weight = 620,
+        .description = gChimcharPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_MONFERNO] =
+    {
+        .categoryName = _("Playful"),
+        .height = 90,
+        .weight = 2200,
+        .description = gMonfernoPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 286,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_INFERNAPE] =
+    {
+        .categoryName = _("Flame"),
+        .height = 120,
+        .weight = 5500,
+        .description = gInfernapePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 369,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_PIPLUP] =
+    {
+        .categoryName = _("Penguin"),
+        .height = 40,
+        .weight = 522,
+        .description = gPiplupPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_PRINPLUP] =
+    {
+        .categoryName = _("Penguin"),
+        .height = 64,
+        .weight = 2300,
+        .description = gPrinplupPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 286,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_EMPOLEON] =
+    {
+        .categoryName = _("Emperor"),
+        .height = 170,
+        .weight = 8450,
+        .description = gEmpoleonPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 369,
+        .trainerOffset = 0,
+    },
     [NATIONAL_DEX_UNUSED_SPACE5] =
     {
         .categoryName = _("ALPHA"),

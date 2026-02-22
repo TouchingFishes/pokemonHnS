@@ -926,7 +926,7 @@ static const struct MenuAction sMenuAction_StarterRegionChoice[] = {
     {gText_JohtoStarterChoice},
     {gText_KantoStarterChoice},
     {gText_HoennStarterChoice},
-    {gText_JohtoStarterChoice},
+    {gText_SinnohStarterChoice},
 };
 
 struct MultichoiceListStruct

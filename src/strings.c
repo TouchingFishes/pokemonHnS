@@ -1470,10 +1470,10 @@ const u8 gText_BlueStone[] = _("BLUE STONE");
 const u8 gText_GreenStone[] = _("GREEN STONE");
 const u8 gText_RedStone[] = _("RED STONE");
 
-const u8 gText_JohtoStarterChoice[] = _("JOHTO STARTER");
-const u8 gText_KantoStarterChoice[] = _("KANTO STARTER");
-const u8 gText_HoennStarterChoice[] = _("HOENN STARTER");
-const u8 gText_SinnohStarterChoice[] = _("SINNOH STARTER");
+const u8 gText_JohtoStarterChoice[] = _("JOHTO POKéMON");
+const u8 gText_KantoStarterChoice[] = _("KANTO POKéMON");
+const u8 gText_HoennStarterChoice[] = _("HOENN POKéMON");
+const u8 gText_SinnohStarterChoice[] = _("SINNOH POKéMON");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");

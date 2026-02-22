@@ -5254,6 +5254,78 @@ static const union AnimCmd sAnim_Aegislash_1[] =
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
+static const union AnimCmd sAnim_Turtwig_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Grotle_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Torterra_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Chimchar_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Monferno_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Infernape_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Piplup_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Prinplup_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+static const union AnimCmd sAnim_Empoleon_1[] =
+{
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
 
 #define SINGLE_ANIMATION(name)                      \
 static const union AnimCmd *const sAnims_##name[] = \
@@ -5743,6 +5815,15 @@ SINGLE_ANIMATION(Wyrdeer);
 SINGLE_ANIMATION(Honedge);
 SINGLE_ANIMATION(Doublade);
 SINGLE_ANIMATION(Aegislash);
+SINGLE_ANIMATION(Turtwig);
+SINGLE_ANIMATION(Grotle);
+SINGLE_ANIMATION(Torterra);
+SINGLE_ANIMATION(Chimchar);
+SINGLE_ANIMATION(Monferno);
+SINGLE_ANIMATION(Infernape);
+SINGLE_ANIMATION(Piplup);
+SINGLE_ANIMATION(Prinplup);
+SINGLE_ANIMATION(Empoleon);
 
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
 {
@@ -6230,4 +6311,13 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_HONEDGE] = sAnims_Honedge,
     [SPECIES_DOUBLADE] = sAnims_Doublade,
     [SPECIES_AEGISLASH] = sAnims_Aegislash,
+    [SPECIES_TURTWIG]   = sAnims_Turtwig,
+    [SPECIES_GROTLE]    = sAnims_Grotle,
+    [SPECIES_TORTERRA]  = sAnims_Torterra,
+    [SPECIES_CHIMCHAR]  = sAnims_Chimchar,
+    [SPECIES_MONFERNO]  = sAnims_Monferno,
+    [SPECIES_INFERNAPE] = sAnims_Infernape,
+    [SPECIES_PIPLUP]    = sAnims_Piplup,
+    [SPECIES_PRINPLUP]  = sAnims_Prinplup,
+    [SPECIES_EMPOLEON]  = sAnims_Empoleon,
 };
