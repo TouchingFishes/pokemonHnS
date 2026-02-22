@@ -18720,7 +18720,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt33[] = { //TeamRock
 static const struct TrainerMonItemCustomMoves sParty_Falkner[] = { //LeaderGroup
     {
     .iv = 100,
-    .lvl = 8,
+    .lvl = 9,
     .species = SPECIES_PIDGEY,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_QUICK_ATTACK, MOVE_NONE}
@@ -18729,8 +18729,8 @@ static const struct TrainerMonItemCustomMoves sParty_Falkner[] = { //LeaderGroup
     .iv = 100,
     .lvl = 11,
     .species = SPECIES_NOCTOWL,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_GROWL, MOVE_PECK}
+    .heldItem = ITEM_ORAN_BERRY,
+    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_FORESIGHT, MOVE_PECK}
     },
 };
 
@@ -18739,9 +18739,9 @@ static const struct TrainerMonItemCustomMoves sParty_Falkner2[] = { //LeaderGrou
     {
     .iv = 100,
     .lvl = 64,
-    .species = SPECIES_NOCTOWL,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_PSYCHIC, MOVE_WING_ATTACK, MOVE_HYPNOSIS, MOVE_DREAM_EATER}
+    .species = SPECIES_PIDGEOT,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SKY_ATTACK, MOVE_EXTREME_SPEED, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
     },
     {
     .iv = 100,
@@ -18760,45 +18760,52 @@ static const struct TrainerMonItemCustomMoves sParty_Falkner2[] = { //LeaderGrou
     {
     .iv = 100,
     .lvl = 64,
-    .species = SPECIES_HONCHKROW,
+    .species = SPECIES_TALONFLAME,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_DRILL_PECK, MOVE_FAINT_ATTACK, MOVE_HAZE, MOVE_ICY_WIND}
     },
     {
     .iv = 100,
     .lvl = 65,
-    .species = SPECIES_PIDGEOT,
+    .species = SPECIES_BRAVIARY,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SKY_ATTACK, MOVE_EXTREME_SPEED, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
     },
     {
     .iv = 100,
     .lvl = 68,
-    .species = SPECIES_BRAVIARY,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_AERIAL_ACE, MOVE_SURF, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
+    .species = SPECIES_NOCTOWL,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_PSYCHIC, MOVE_WING_ATTACK, MOVE_HYPNOSIS, MOVE_DREAM_EATER}
     },
 };
 
 
 static const struct TrainerMonItemCustomMoves sParty_Bugsy[] = { //LeaderGroup
     {
-    .iv = 100,
-    .lvl = 15,
-    .species = SPECIES_PINECO,
+    .iv = 50,
+    .lvl = 14,
+    .species = SPECIES_SURSKIT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_PIN_MISSILE, MOVE_HEADBUTT, MOVE_BULLET_SEED, MOVE_HARDEN}
+    .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_BULLET_SEED, MOVE_MUD_SHOT}
+    },
+    {
+    .iv = 50,
+    .lvl = 14,
+    .species = SPECIES_SURSKIT,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_BUBBLE, MOVE_QUICK_ATTACK, MOVE_BULLET_SEED, MOVE_MUD_SHOT}
     },
     {
     .iv = 100,
     .lvl = 15,
     .species = SPECIES_LEDIAN,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_BULLET_SEED, MOVE_COMET_PUNCH, MOVE_SUPERSONIC, MOVE_REFLECT}
+    .moves = {MOVE_BULLET_SEED, MOVE_COMET_PUNCH, MOVE_THUNDER_PUNCH, MOVE_REFLECT}
     },
     {
     .iv = 100,
-    .lvl = 16,
+    .lvl = 18,
     .species = SPECIES_SCYTHER,
     .heldItem = ITEM_BERRY_JUICE,
     .moves = {MOVE_QUICK_ATTACK, MOVE_FURY_CUTTER, MOVE_BULLET_SEED, MOVE_PURSUIT}
@@ -18858,14 +18865,14 @@ static const struct TrainerMonItemCustomMoves sParty_Whitney[] = { //LeaderGroup
     .lvl = 20,
     .species = SPECIES_CLEFAIRY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_HEADBUTT, MOVE_CHARM, MOVE_SWEET_KISS, MOVE_METRONOME}
+    .moves = {MOVE_DOUBLE_SLAP, MOVE_MIMIC, MOVE_METRONOME, MOVE_ATTRACT}
     },
     {
-    .iv = 20,
-    .lvl = 20,
-    .species = SPECIES_TEDDIURSA,
+    .iv = 100,
+    .lvl = 19,
+    .species = SPECIES_SKITTY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_FURY_SWIPES, MOVE_FAKE_TEARS, MOVE_LICK, MOVE_MUD_SLAP}
+    .moves = {MOVE_MUD_SLAP, MOVE_UPROAR, MOVE_SING, MOVE_ATTRACT}
     },
     {
     .iv = 20,
@@ -18934,16 +18941,16 @@ static const struct TrainerMonItemCustomMoves sParty_Morty[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 23,
-    .species = SPECIES_STANTLER,
+    .species = SPECIES_STANTLER, //NOHFACE
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SWIFT, MOVE_HYPNOSIS, MOVE_NIGHTMARE, MOVE_LEER}
     },
     {
     .iv = 100,
     .lvl = 24,
-    .species = SPECIES_MISDREAVUS,
+    .species = SPECIES_DUSKULL,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_PAIN_SPLIT, MOVE_PERISH_SONG, MOVE_PSYWAVE}
+    .moves = {MOVE_SHADOW_BALL, MOVE_DISABLE, MOVE_FAINT_ATTACK, MOVE_CONFUSE_RAY}
     },
     {
     .iv = 100,
@@ -22908,7 +22915,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Piplup5[] = { //Rival
     .iv = 100,
     .lvl = 45,
     .species = SPECIES_SNEASEL,
-    .heldItem = ITEM_BLACK_GLASSES,
+    .heldItem = ITEM_NONE,
     .moves = {MOVE_SLASH, MOVE_NIGHT_SLASH, MOVE_ROCK_SMASH, MOVE_AERIAL_ACE},
     },
     {
