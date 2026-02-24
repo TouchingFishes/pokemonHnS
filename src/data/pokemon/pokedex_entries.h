@@ -5166,7 +5166,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_TURTWIG] =
     {
-        .categoryName = _("Tiny Leaf"),
+        .categoryName = _("TINY LEAF"),
         .height = 40,
         .weight = 1020,
         .description = gTurtwigPokedexText,
@@ -5199,7 +5199,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_CHIMCHAR] =
     {
-        .categoryName = _("Chimp"),
+        .categoryName = _("CHIMP"),
         .height = 55,
         .weight = 620,
         .description = gChimcharPokedexText,
@@ -5232,7 +5232,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_PIPLUP] =
     {
-        .categoryName = _("Penguin"),
+        .categoryName = _("PENGUIN"),
         .height = 40,
         .weight = 522,
         .description = gPiplupPokedexText,
