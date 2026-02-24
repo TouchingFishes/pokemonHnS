@@ -1696,12 +1696,12 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
 
     [MOVE_EGG_BOMB] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_FLINCH_HIT, //EFFECT_HIT
         .power = 120, //100
         .type = TYPE_NORMAL,
         .accuracy = 85, //75
         .pp = 10,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 15, //0
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,

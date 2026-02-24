@@ -258,8 +258,8 @@ static const u8 sPeckDescription[] = _(
     "jabbing beak, etc.");
 
 static const u8 sDrillPeckDescription[] = _(
-    "A corkscrewing attack with\n"
-    "the beak acting as a drill.");
+    "A corkscrewing attack with a\n"
+    "high critical-hit ratio.");
 
 static const u8 sSubmissionDescription[] = _(
     "A reckless body slam that\n"
@@ -483,7 +483,7 @@ static const u8 sSelfDestructDescription[] = _(
 
 static const u8 sEggBombDescription[] = _(
     "An egg is forcibly hurled at\n"
-    "the foe.");
+    "the foe. May cause flinching");
 
 static const u8 sLickDescription[] = _(
     "Licks with a long tongue to\n"
@@ -506,8 +506,8 @@ static const u8 sFireBlastDescription[] = _(
     "strikes. May cause a burn.");
 
 static const u8 sWaterfallDescription[] = _(
-    "Charges the foe with speed\n"
-    "to climb waterfalls.");
+    "Rushes the foe with a aqua-\n"
+    "tic speed. May flinch foe.");
 
 static const u8 sClampDescription[] = _(
     "Traps and squeezes the\n"
@@ -1347,7 +1347,7 @@ static const u8 sHowlDescription[] = _(
 
 static const u8 sDragonClawDescription[] = _(
     "Slashes the foe with sharp\n"
-    "claws.");
+    "claws. May lower DEFENSE.");
 
 static const u8 sFrenzyPlantDescription[] = _(
     "Powerful, but leaves the\n"
