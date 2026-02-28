@@ -9963,7 +9963,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     .lvl = 86,
     .species = SPECIES_AGGRON,
     .heldItem = ITEM_METAL_COAT,
-    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_SOLAR_BEAM, MOVE_DRAGON_CLAW}
+    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_ICE_BEAM, MOVE_DRAGON_CLAW}
     },
     {
     .iv = 255,
@@ -9977,7 +9977,7 @@ static const struct TrainerMonItemCustomMoves sParty_Steven[] = {
     .lvl = 86,
     .species = SPECIES_ARMALDO,
     .heldItem = ITEM_MYSTIC_WATER,
-    .moves = {MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_SLASH}
+    .moves = {MOVE_WATER_PULSE, MOVE_ANCIENT_POWER, MOVE_AERIAL_ACE, MOVE_X_SCISSOR}
     },
     {
     .iv = 255,
@@ -22288,9 +22288,9 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Mudkip5[] = { //Rival
     {
     .iv = 100,
     .lvl = 47,
-    .species = SPECIES_HAXORUS,
+    .species = SPECIES_PINSIR,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE, MOVE_SLASH},
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_REST},
     },
     {
     .iv = 100,
@@ -22332,9 +22332,9 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Mudkip6[] = { //Rival
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_HAXORUS,
-    .heldItem = ITEM_SILK_SCARF,
-    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_HYPER_BEAM},
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_SILVER_POWDER,
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_REST},
     },
     {
     .iv = 255,
@@ -22376,9 +22376,9 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Mudkip7[] = { //Rival
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_HAXORUS,
-    .heldItem = ITEM_SILK_SCARF,
-    .moves = {MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_HYPER_BEAM},
+    .species = SPECIES_PINSIR,
+    .heldItem = ITEM_SILVER_POWDER,
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_REST},
     },
     {
     .iv = 255,

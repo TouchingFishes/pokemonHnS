@@ -208,15 +208,60 @@ AzaleaTown_EventScript_SilverTriggerBot::
 	end
 
 AzaleaTown_Silver_Battle_Cyndaquil::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, AzaleaTown_Silver_Battle_Charmander
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, AzaleaTown_Silver_Battle_Torchic
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, AzaleaTown_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_2, AzaleaTown_Text_RivalWin
 	return
 
+AzaleaTown_Silver_Battle_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_CHARMANDER_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Torchic::
+	trainerbattle_no_intro TRAINER_RIVAL_TORCHIC_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Chimchar::
+	trainerbattle_no_intro TRAINER_RIVAL_CHIMCHAR_2, AzaleaTown_Text_RivalWin
+	return
+
 AzaleaTown_Silver_Battle_Totodile::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, AzaleaTown_Silver_Battle_Squirtle
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, AzaleaTown_Silver_Battle_Mudkip
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, AzaleaTown_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_2, AzaleaTown_Text_RivalWin
 	return
 
+AzaleaTown_Silver_Battle_Squirtle::
+	trainerbattle_no_intro TRAINER_RIVAL_SQUIRTLE_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Mudkip::
+	trainerbattle_no_intro TRAINER_RIVAL_MUDKIP_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Piplup::
+	trainerbattle_no_intro TRAINER_RIVAL_PIPLUP_2, AzaleaTown_Text_RivalWin
+	return
+
 AzaleaTown_Silver_Battle_Chikorita::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, AzaleaTown_Silver_Battle_Bulbasaur
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, AzaleaTown_Silver_Battle_Treecko
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, AzaleaTown_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Bulbasaur::
+	trainerbattle_no_intro TRAINER_RIVAL_BULBASAUR_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Treecko::
+	trainerbattle_no_intro TRAINER_RIVAL_TREECKO_2, AzaleaTown_Text_RivalWin
+	return
+
+AzaleaTown_Silver_Battle_Turtwig::
+	trainerbattle_no_intro TRAINER_RIVAL_TURTWIG_2, AzaleaTown_Text_RivalWin
 	return
 
 

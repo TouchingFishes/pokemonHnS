@@ -77,15 +77,60 @@ IndigoPlateau_EventScript_SilverBeat::
 	end
 
 IndigoPlateau_Silver_Battle_Cyndaquil::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Charmander
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Torchic
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_7, IndigoPlateau_Text_RivalWin
 	return
 
+IndigoPlateau_Silver_Battle_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_CHARMANDER_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Torchic::
+	trainerbattle_no_intro TRAINER_RIVAL_TORCHIC_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Chimchar::
+	trainerbattle_no_intro TRAINER_RIVAL_CHIMCHAR_7, IndigoPlateau_Text_RivalWin
+	return
+
 IndigoPlateau_Silver_Battle_Totodile::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Squirtle
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Mudkip
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_7, IndigoPlateau_Text_RivalWin
 	return
 
+IndigoPlateau_Silver_Battle_Squirtle::
+trainerbattle_no_intro TRAINER_RIVAL_SQUIRTLE_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Mudkip::
+	trainerbattle_no_intro TRAINER_RIVAL_MUDKIP_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Piplup::
+	trainerbattle_no_intro TRAINER_RIVAL_PIPLUP_7, IndigoPlateau_Text_RivalWin
+	return
+
 IndigoPlateau_Silver_Battle_Chikorita::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Bulbasaur
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Treecko
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Bulbasaur::
+	trainerbattle_no_intro TRAINER_RIVAL_BULBASAUR_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Treecko::
+	trainerbattle_no_intro TRAINER_RIVAL_TREECKO_7, IndigoPlateau_Text_RivalWin
+	return
+
+IndigoPlateau_Silver_Battle_Turtwig::
+	trainerbattle_no_intro TRAINER_RIVAL_TURTWIG_7, IndigoPlateau_Text_RivalWin
 	return
 
 IndigoPlateau_Text_RivalEntrance1:

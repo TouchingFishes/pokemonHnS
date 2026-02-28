@@ -139,15 +139,60 @@ BurnedTower_1F_EventScript_Silver::
 	end
 
 BurnedTower_1F_Silver_Battle_Cyndaquil::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Charmander
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Torchic
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_3, BurnedTowerSilver_WinText
 	return
 
+BurnedTower_1F_Silver_Battle_Charmander::
+	trainerbattle_no_intro TRAINER_RIVAL_CHARMANDER_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Torchic::
+	trainerbattle_no_intro TRAINER_RIVAL_TORCHIC_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Chimchar::
+	trainerbattle_no_intro TRAINER_RIVAL_CHIMCHAR_3, BurnedTowerSilver_WinText
+	return
+
 BurnedTower_1F_Silver_Battle_Totodile::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Squirtle
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Mudkip
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_3, BurnedTowerSilver_WinText
 	return
 
+BurnedTower_1F_Silver_Battle_Squirtle::
+	trainerbattle_no_intro TRAINER_RIVAL_SQUIRTLE_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Mudkip::
+	trainerbattle_no_intro TRAINER_RIVAL_MUDKIP_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Piplup::
+	trainerbattle_no_intro TRAINER_RIVAL_PIPLUP_3, BurnedTowerSilver_WinText
+	return
+
 BurnedTower_1F_Silver_Battle_Chikorita::
+	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Bulbasaur
+	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Treecko
+	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Bulbasaur::
+	trainerbattle_no_intro TRAINER_RIVAL_BULBASAUR_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Treecko::
+	trainerbattle_no_intro TRAINER_RIVAL_TREECKO_3, BurnedTowerSilver_WinText
+	return
+
+BurnedTower_1F_Silver_Battle_Turtwig::
+	trainerbattle_no_intro TRAINER_RIVAL_TURTWIG_3, BurnedTowerSilver_WinText
 	return
 
 BurnedTowerSilver_BeforeText:
