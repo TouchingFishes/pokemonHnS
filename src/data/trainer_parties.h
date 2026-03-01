@@ -22334,7 +22334,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Mudkip6[] = { //Rival
     .lvl = 64,
     .species = SPECIES_PINSIR,
     .heldItem = ITEM_SILVER_POWDER,
-    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_REST},
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE},
     },
     {
     .iv = 255,
@@ -22378,7 +22378,7 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Mudkip7[] = { //Rival
     .lvl = 68,
     .species = SPECIES_PINSIR,
     .heldItem = ITEM_SILVER_POWDER,
-    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_REST},
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_AERIAL_ACE},
     },
     {
     .iv = 255,
