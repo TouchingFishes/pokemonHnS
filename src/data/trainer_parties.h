@@ -370,7 +370,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Leah[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Daisy[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Daisy[] = { //AromaLadyGroup
     {
     .iv = 0,
     .lvl = 14,
@@ -383,7 +383,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Daisy[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose1[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Rose1[] = { //AromaLadyGroup
     {
     .iv = 0,
     .lvl = 14,
@@ -411,7 +411,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Felix[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Violet[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Violet[] = { //AromaLadyGroup
     {
     .iv = 0,
     .lvl = 26,
@@ -424,7 +424,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Violet[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = { //AromaLadyGroup
     {
     .iv = 10,
     .lvl = 24,
@@ -442,7 +442,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose2[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = { //AromaLadyGroup
     {
     .iv = 20,
     .lvl = 35,
@@ -460,7 +460,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose4[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Rose4[] = { //AromaLadyGroup
     {
     .iv = 255,
     .lvl = 51,
@@ -483,7 +483,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose4[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Rose5[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Rose5[] = { //AromaLadyGroup
     {
     .iv = 255,
     .lvl = 64,
@@ -8003,7 +8003,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tyron[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Celina[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Celina[] = { //AromaLadyGroup
     {
     .iv = 0,
     .lvl = 18,
@@ -8456,7 +8456,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bryant[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Shayla[] = {
+static const struct TrainerMonNoItemDefaultMoves sParty_Shayla[] = { //AromaLadyGroup
     {
     .iv = 0,
     .lvl = 18,
