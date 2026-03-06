@@ -580,7 +580,7 @@ static void SetupRoomObjectEvents(void)
         if (sStatusMon == PIKE_STATUSMON_DUSCLOPS)
             objGfx2 = OBJ_EVENT_GFX_MON_BASE+SPECIES_DUSCLOPS;
         else
-            objGfx2 = OBJ_EVENT_GFX_MON_BASE+SPECIES_KIRLIA;
+            objGfx2 = OBJ_EVENT_GFX_MON_BASE+SPECIES_GOTHORITA;
         setObjGfx2 = TRUE;
         break;
     case PIKE_ROOM_HEAL_PART:
@@ -950,13 +950,13 @@ static bool8 TryInflictRandomStatus(void)
         if (Random() % 2 != 0)
             sStatusMon = PIKE_STATUSMON_DUSCLOPS;
         else
-            sStatusMon = PIKE_STATUSMON_KIRLIA;
+            sStatusMon = PIKE_STATUSMON_GOTHORITA;
         break;
     case STATUS1_PARALYSIS:
     case STATUS1_SLEEP:
     case STATUS1_TOXIC_POISON:
     default:
-        sStatusMon = PIKE_STATUSMON_KIRLIA;
+        sStatusMon = PIKE_STATUSMON_GOTHORITA;
         break;
     }
 

@@ -217,7 +217,7 @@ static const u16 sIsValidSpecies[] =
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
     SPECIES_IMPIDIMP,
-    SPECIES_FLORGES,
+    SPECIES_ROSERADE,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -270,7 +270,7 @@ static const u16 sIsValidSpecies[] =
     SPECIES_KROLUCARD,
     SPECIES_LILEEP,
     SPECIES_ANORITH,
-    SPECIES_RALTS,
+    SPECIES_GOTHITA,
     SPECIES_GIBLE,
     SPECIES_BELDUM,
     SPECIES_TINKATINK,
@@ -319,7 +319,7 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
     SPECIES_IMPIDIMP,
-    SPECIES_FLORGES,
+    SPECIES_ROSERADE,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -371,7 +371,7 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_KROLUCARD,
     SPECIES_LILEEP,
     SPECIES_ANORITH,
-    SPECIES_RALTS,
+    SPECIES_GOTHITA,
     SPECIES_GIBLE,
     SPECIES_BELDUM,
     SPECIES_TINKATUFF,
@@ -662,7 +662,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
-        case EVO_LEVEL_FLABEBE:
+        case EVO_LEVEL_BUDEW:
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
@@ -728,9 +728,9 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             else if ((partnerSpecies == SPECIES_PANSAGE || partnerSpecies == SPECIES_PANSEAR
                    || partnerSpecies == SPECIES_PANPOUR || partnerSpecies == SPECIES_COTTONEE
                    || partnerSpecies == SPECIES_PETILIL || partnerSpecies == SPECIES_MINCCINO
-                   || partnerSpecies == SPECIES_FLOETTE || partnerSpecies == SPECIES_FLOETTE_YELLOW_FLOWER
-                   || partnerSpecies == SPECIES_FLOETTE_ORANGE_FLOWER || partnerSpecies == SPECIES_FLOETTE_BLUE_FLOWER
-                   || partnerSpecies == SPECIES_FLOETTE_WHITE_FLOWER) && partnerLevel >= 15)
+                   || partnerSpecies == SPECIES_ROSELIA || partnerSpecies == SPECIES_ROSELIA_YELLOW_FLOWER
+                   || partnerSpecies == SPECIES_ROSELIA_ORANGE_FLOWER || partnerSpecies == SPECIES_ROSELIA_BLUE_FLOWER
+                   || partnerSpecies == SPECIES_ROSELIA_WHITE_FLOWER) && partnerLevel >= 15)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
@@ -760,7 +760,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
         case EVO_ITEM_MALE:
-            if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_KIRLIA && partnerLevel >= 35)
+            if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_GOTHORITA && partnerLevel >= 35)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
         case EVO_MOVE:
@@ -985,7 +985,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
-        case EVO_LEVEL_FLABEBE:
+        case EVO_LEVEL_BUDEW:
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
@@ -1063,7 +1063,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             }
             break;
         case EVO_LEVEL_FEMALE:
-            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_KIRLIA && level >= 35)
+            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_GOTHORITA && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
         case EVO_LEVEL_MALE:
@@ -1073,7 +1073,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         case EVO_LEVEL_FEMALE_MORNING:
             UpdateTimeOfDay();
             {
-            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_KIRLIA && gLocalTime.hours >= 6 && gLocalTime.hours < 9 && level >= 35)
+            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_GOTHORITA && gLocalTime.hours >= 6 && gLocalTime.hours < 9 && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             
             }

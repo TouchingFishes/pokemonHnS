@@ -1519,8 +1519,8 @@ Cry_Shuppet::
 	.incbin "sound/direct_sound_samples/cries/shuppet.bin"
 
 	.align 2
-Cry_Florges::
-	.incbin "sound/direct_sound_samples/cries/florges.bin"
+Cry_Roserade::
+	.incbin "sound/direct_sound_samples/cries/roserade.bin"
 
 	.align 2
 Cry_Lotuga::
@@ -1559,24 +1559,24 @@ Cry_Grimmsnarl::
 	.incbin "sound/direct_sound_samples/cries/grimmsnarl.bin"
 
 	.align 2
-Cry_Flabebe::
-	.incbin "sound/direct_sound_samples/cries/flabebe.bin"
+Cry_Budew::
+	.incbin "sound/direct_sound_samples/cries/budew.bin"
 
 	.align 2
-Cry_Floette::
-	.incbin "sound/direct_sound_samples/cries/floette.bin"
+Cry_Roselia::
+	.incbin "sound/direct_sound_samples/cries/roselia.bin"
 
 	.align 2
-Cry_Ralts::
-	.incbin "sound/direct_sound_samples/cries/ralts.bin"
+Cry_Gothita::
+	.incbin "sound/direct_sound_samples/cries/gothita.bin"
 
 	.align 2
-Cry_Kirlia::
-	.incbin "sound/direct_sound_samples/cries/kirlia.bin"
+Cry_Gothorita::
+	.incbin "sound/direct_sound_samples/cries/gothorita.bin"
 
 	.align 2
-Cry_Gardevoir::
-	.incbin "sound/direct_sound_samples/cries/gardevoir.bin"
+Cry_Gothitelle::
+	.incbin "sound/direct_sound_samples/cries/gothitelle.bin"
 
 	.align 2
 Cry_Slakoth::
@@ -1983,8 +1983,8 @@ Cry_Froslass::
 	.incbin "sound/direct_sound_samples/cries/froslass.bin"
 
 	.align 2
-Cry_Gallade::
-	.incbin "sound/direct_sound_samples/cries/gallade.bin"
+Cry_Bombirdier::
+	.incbin "sound/direct_sound_samples/cries/bombirdier.bin"
 
 	.align 2
 Cry_Glaceon::

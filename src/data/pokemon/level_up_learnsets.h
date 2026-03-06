@@ -4819,12 +4819,12 @@ static const u16 sGrimmsnarlLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_AIR_SLASH),
     LEVEL_UP_END};
 
-static const u16 sFlabebeLevelUpLearnset[] = {
+static const u16 sBudewLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_HARDEN),
     LEVEL_UP_MOVE(7, MOVE_HARDEN),
     LEVEL_UP_END};
 
-static const u16 sFloetteLevelUpLearnset[] = {
+static const u16 sRoseliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_CONFUSION),
     LEVEL_UP_MOVE(13, MOVE_GUST),
@@ -4842,7 +4842,7 @@ static const u16 sFloetteLevelUpLearnset[] = {
     LEVEL_UP_MOVE(45, MOVE_SLUDGE_BOMB),
     LEVEL_UP_END};
 
-static const u16 sFlorgesLevelUpLearnset[] = {
+static const u16 sRoseradeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_ASTONISH),
     LEVEL_UP_MOVE(3, MOVE_GROWL),
     LEVEL_UP_MOVE(7, MOVE_ABSORB),
@@ -6573,7 +6573,7 @@ static const u16 sArmaldoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(64, MOVE_ROCK_BLAST),
     LEVEL_UP_END};
 
-static const u16 sRaltsLevelUpLearnset[] = {
+static const u16 sGothitaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(6, MOVE_CONFUSION),
     LEVEL_UP_MOVE(11, MOVE_DOUBLE_TEAM),
@@ -6591,7 +6591,7 @@ static const u16 sRaltsLevelUpLearnset[] = {
     LEVEL_UP_MOVE(50, MOVE_MOONBLAST),
     LEVEL_UP_END};
 
-static const u16 sKirliaLevelUpLearnset[] = {
+static const u16 sGothoritaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(1, MOVE_DOUBLE_TEAM),
@@ -6612,7 +6612,7 @@ static const u16 sKirliaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(56, MOVE_MOONBLAST),
     LEVEL_UP_END};
 
-static const u16 sGardevoirLevelUpLearnset[] = {
+static const u16 sGothitelleLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_GROWL),
     LEVEL_UP_MOVE(1, MOVE_CHARM),
     LEVEL_UP_MOVE(1, MOVE_MOONBLAST),
@@ -7111,7 +7111,7 @@ static const u16 sFroslassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_DESTINY_BOND),
     LEVEL_UP_END};
 
-static const u16 sGalladeLevelUpLearnset[] = {
+static const u16 sBombirdierLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_LEER),
     LEVEL_UP_MOVE(1, MOVE_CHARM),
     LEVEL_UP_MOVE(1, MOVE_LEAF_BLADE),

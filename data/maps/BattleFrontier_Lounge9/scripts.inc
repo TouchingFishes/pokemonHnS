@@ -70,7 +70,7 @@ BattleFrontier_Lounge9_EV_ATK_Yes::
 	waitmessage
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_NO_SHINY
-	setwildbattle SPECIES_GALLADE, 1, ITEM_NONE
+	setwildbattle SPECIES_BOMBIRDIER, 1, ITEM_NONE
 	dowildbattle
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_NO_SHINY
@@ -93,7 +93,7 @@ BattleFrontier_Lounge9_EV_SATK_Yes::
 	waitmessage
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_NO_SHINY
-	setwildbattle SPECIES_GARDEVOIR, 1, ITEM_NONE
+	setwildbattle SPECIES_GOTHITELLE, 1, ITEM_NONE
 	dowildbattle
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_NO_SHINY
@@ -183,7 +183,7 @@ BattleFrontier_Lounge9_EV_ATK_TEXT:
 	.string "Are you ready?$"
 
 BattleFrontier_Lounge9_EV_ATK_TEXT2:
-	.string "Go GALLADE!$"
+	.string "Go BOMBIRDIER!$"
 
 BattleFrontier_Lounge9_EV_SATK_TEXT:
 	.string "Bonjour! I can train your POKéMON\n"
@@ -191,7 +191,7 @@ BattleFrontier_Lounge9_EV_SATK_TEXT:
 	.string "Are you ready?$"
 
 BattleFrontier_Lounge9_EV_SATK_TEXT2:
-	.string "Go GARDEVOIR!$"
+	.string "Go GOTHITELLE!$"
 	
 BattleFrontier_Lounge9_EV_DEF_TEXT:
 	.string "Sup' kid! I can train your\n"

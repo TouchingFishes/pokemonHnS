@@ -131,25 +131,25 @@ static const union AnimCmd sUnusedAnim_Grimmsnarl_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Flabebe_1[] =
+static const union AnimCmd sUnusedAnim_Budew_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Flabebe_2[] =
+static const union AnimCmd sUnusedAnim_Budew_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Floette_1[] =
+static const union AnimCmd sUnusedAnim_Roselia_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Floette_2[] =
+static const union AnimCmd sUnusedAnim_Roselia_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -1232,9 +1232,9 @@ static const union AnimCmd *const sUnusedAnims_Linoone[] = {sAnim_GeneralFrame0,
 static const union AnimCmd *const sUnusedAnims_Impidimp[] = {sAnim_GeneralFrame0, sUnusedAnim_Impidimp_1, sUnusedAnim_Impidimp_2};
 static const union AnimCmd *const sUnusedAnims_Morgrem[] = {sAnim_GeneralFrame0, sUnusedAnim_Morgrem_1, sUnusedAnim_Morgrem_2};
 static const union AnimCmd *const sUnusedAnims_Grimmsnarl[] = {sAnim_GeneralFrame0, sUnusedAnim_Grimmsnarl_1, sUnusedAnim_Grimmsnarl_2};
-static const union AnimCmd *const sUnusedAnims_Flabebe[] = {sAnim_GeneralFrame0, sUnusedAnim_Flabebe_1, sUnusedAnim_Flabebe_2};
-static const union AnimCmd *const sUnusedAnims_Floette[] = {sAnim_GeneralFrame0, sUnusedAnim_Floette_1, sUnusedAnim_Floette_2};
-static const union AnimCmd *const sUnusedAnims_Florges[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Budew[] = {sAnim_GeneralFrame0, sUnusedAnim_Budew_1, sUnusedAnim_Budew_2};
+static const union AnimCmd *const sUnusedAnims_Roselia[] = {sAnim_GeneralFrame0, sUnusedAnim_Roselia_1, sUnusedAnim_Roselia_2};
+static const union AnimCmd *const sUnusedAnims_Roserade[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Lotuga[] = {sAnim_GeneralFrame0, sUnusedAnim_Lotuga_1};
 static const union AnimCmd *const sUnusedAnims_Vertuga[] = {sAnim_GeneralFrame0, sUnusedAnim_Vertuga_1, sUnusedAnim_Vertuga_2};
 static const union AnimCmd *const sUnusedAnims_Seedot[] = {sAnim_GeneralFrame0, sUnusedAnim_Seedot_1};
@@ -1331,9 +1331,9 @@ static const union AnimCmd *const sUnusedAnims_Lileep[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Cradily[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Anorith[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Armaldo[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Ralts[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Kirlia[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Gardevoir[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Gothita[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Gothorita[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Gothitelle[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Gible[] = {sAnim_GeneralFrame0, sUnusedAnim_Gible_1, sUnusedAnim_Gible_2};
 static const union AnimCmd *const sUnusedAnims_Gabite[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Garchomp[] = {sAnim_GeneralFrame0, sUnusedAnim_Garchomp_1, sUnusedAnim_Garchomp_2};
@@ -1674,9 +1674,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_IMPIDIMP] = sUnusedAnims_Impidimp,
     [SPECIES_MORGREM] = sUnusedAnims_Morgrem,
     [SPECIES_GRIMMSNARL] = sUnusedAnims_Grimmsnarl,
-    [SPECIES_FLABEBE] = sUnusedAnims_Flabebe,
-    [SPECIES_FLOETTE] = sUnusedAnims_Floette,
-    [SPECIES_FLORGES] = sUnusedAnims_Florges,
+    [SPECIES_BUDEW] = sUnusedAnims_Budew,
+    [SPECIES_ROSELIA] = sUnusedAnims_Roselia,
+    [SPECIES_ROSERADE] = sUnusedAnims_Roserade,
     [SPECIES_LOTUGA] = sUnusedAnims_Lotuga,
     [SPECIES_VERTUGA] = sUnusedAnims_Vertuga,
     [SPECIES_SEEDOT] = sUnusedAnims_Seedot,
@@ -1773,9 +1773,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_CRADILY] = sUnusedAnims_Cradily,
     [SPECIES_ANORITH] = sUnusedAnims_Anorith,
     [SPECIES_ARMALDO] = sUnusedAnims_Armaldo,
-    [SPECIES_RALTS] = sUnusedAnims_Ralts,
-    [SPECIES_KIRLIA] = sUnusedAnims_Kirlia,
-    [SPECIES_GARDEVOIR] = sUnusedAnims_Gardevoir,
+    [SPECIES_GOTHITA] = sUnusedAnims_Gothita,
+    [SPECIES_GOTHORITA] = sUnusedAnims_Gothorita,
+    [SPECIES_GOTHITELLE] = sUnusedAnims_Gothitelle,
     [SPECIES_GIBLE] = sUnusedAnims_Gible,
     [SPECIES_GABITE] = sUnusedAnims_Gabite,
     [SPECIES_GARCHOMP] = sUnusedAnims_Garchomp,

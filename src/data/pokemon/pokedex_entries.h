@@ -3216,36 +3216,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_FLABEBE] =
+    [NATIONAL_DEX_BUDEW] =
     {
         .categoryName = _("COCOON"),
         .height = 7,
         .weight = 115,
-        .description = gFlabebePokedexText,
+        .description = gBudewPokedexText,
         .pokemonScale = 391,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_FLOETTE] =
+    [NATIONAL_DEX_ROSELIA] =
     {
         .categoryName = _("POISON MOTH"),
         .height = 12,
         .weight = 316,
-        .description = gFloettePokedexText,
+        .description = gRoseliaPokedexText,
         .pokemonScale = 269,
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_FLORGES] =
+    [NATIONAL_DEX_ROSERADE] =
     {
         .categoryName = _("WATER WEED"),
         .height = 5,
         .weight = 26,
-        .description = gFlorgesPokedexText,
+        .description = gRoseradePokedexText,
         .pokemonScale = 406,
         .pokemonOffset = 19,
         .trainerScale = 256,
@@ -3360,36 +3360,36 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_RALTS] =
+    [NATIONAL_DEX_GOTHITA] =
     {
         .categoryName = _("FEELING"),
         .height = 4,
         .weight = 66,
-        .description = gRaltsPokedexText,
+        .description = gGothitaPokedexText,
         .pokemonScale = 457,
         .pokemonOffset = -3,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_KIRLIA] =
+    [NATIONAL_DEX_GOTHORITA] =
     {
         .categoryName = _("EMOTION"),
         .height = 8,
         .weight = 202,
-        .description = gKirliaPokedexText,
+        .description = gGothoritaPokedexText,
         .pokemonScale = 354,
         .pokemonOffset = 0,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GARDEVOIR] =
+    [NATIONAL_DEX_GOTHITELLE] =
     {
         .categoryName = _("EMBRACE"),
         .height = 16,
         .weight = 484,
-        .description = gGardevoirPokedexText,
+        .description = gGothitellePokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 256,
@@ -4776,12 +4776,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_GALLADE] =
+    [NATIONAL_DEX_BOMBIRDIER] =
     {
         .categoryName = _("BLADE"),
         .height = 16,
         .weight = 520,
-        .description = gGalladePokedexText,
+        .description = gBombirdierPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 299,

@@ -9,7 +9,7 @@ Route25_BillsHouse_EventScript_Gramps::
 	faceplayer
 	goto_if_eq VAR_BILLS_GRANDPA, 1, Route25_BillsHouse_EventScript_Gramps_Spinda
 	goto_if_eq VAR_BILLS_GRANDPA, 2, Route25_BillsHouse_EventScript_Gramps_Purgislug
-	goto_if_eq VAR_BILLS_GRANDPA, 3, Route25_BillsHouse_EventScript_Gramps_Florges
+	goto_if_eq VAR_BILLS_GRANDPA, 3, Route25_BillsHouse_EventScript_Gramps_Roserade
 	goto_if_eq VAR_BILLS_GRANDPA, 4, Route25_BillsHouse_EventScript_Gramps_Growlithe
 	goto_if_eq VAR_BILLS_GRANDPA, 5, Route25_BillsHouse_EventScript_Gramps_Pichu
 	goto_if_eq VAR_BILLS_GRANDPA, 6, Route25_BillsHouse_EventScript_Gramps_ShownAll
@@ -66,8 +66,8 @@ Route25_BillsHouse_EventScript_Gramps_Purgislug::
 	setvar VAR_TEMP_0, ITEM_LEAF_STONE
 	goto Route25_BillsHouse_EventScript_Gramps_Correctmon
 
-Route25_BillsHouse_EventScript_Gramps_Florges::
-	msgbox Route25_BillsHouse_Text_Florges, MSGBOX_DEFAULT
+Route25_BillsHouse_EventScript_Gramps_Roserade::
+	msgbox Route25_BillsHouse_Text_Roserade, MSGBOX_DEFAULT
 	msgbox Route25_BillsHouse_Text_AskToSeeMon, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, FALSE, Route25_BillsHouse_EventScript_Gramps_Declined
 	msgbox Route25_BillsHouse_Text_ExcitedToSee, MSGBOX_DEFAULT
@@ -78,8 +78,8 @@ Route25_BillsHouse_EventScript_Gramps_Florges::
 	copyvar VAR_0x8005, VAR_0x800A
 	specialvar VAR_RESULT, GetTradeSpecies
 	copyvar VAR_0x800B, VAR_RESULT
-	goto_if_ne VAR_RESULT, SPECIES_FLORGES, Route25_BillsHouse_EventScript_Gramps_WrongMon
-	bufferspeciesname STR_VAR_1, SPECIES_FLORGES
+	goto_if_ne VAR_RESULT, SPECIES_ROSERADE, Route25_BillsHouse_EventScript_Gramps_WrongMon
+	bufferspeciesname STR_VAR_1, SPECIES_ROSERADE
 	setvar VAR_TEMP_0, ITEM_DEEP_SEA_TOOTH
 	goto Route25_BillsHouse_EventScript_Gramps_Correctmon
 
@@ -142,7 +142,7 @@ Route25_BillsHouse_EventScript_Gramps_ExtraLeafStones::
 
 Route25_BillsHouse_Test::
 	givemon SPECIES_SPINDA, 10
-	givemon SPECIES_FLORGES, 10
+	givemon SPECIES_ROSERADE, 10
 	givemon SPECIES_PURGISLUG, 10
 	givemon SPECIES_GROWLITHE, 10
 	givemon SPECIES_PICHU, 10
@@ -165,7 +165,7 @@ Route25_BillsHouse_Text_Purgislug:
 	.string "green POKéMON that has flowers\l"
 	.string "growing from its wrists.$"
 
-Route25_BillsHouse_Text_Florges:
+Route25_BillsHouse_Text_Roserade:
 	.string "Do you know of a water POKéMON\n"
 	.string "that has a big lily pad on\l"
 	.string "its head?"

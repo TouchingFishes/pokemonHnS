@@ -1705,13 +1705,13 @@ $(OBJEVENTGFXDIR)/pokemon/morgrem.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/grimmsnarl.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/flabebe.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/budew.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/floette.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/roselia.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/florges.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/roserade.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/lotuga.4bpp: %.4bpp: %.png
@@ -1741,13 +1741,13 @@ $(OBJEVENTGFXDIR)/pokemon/rufflet.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/braviary.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/ralts.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/gothita.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/kirlia.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/gothorita.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/gardevoir.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/gothitelle.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surskit.4bpp: %.4bpp: %.png
@@ -2104,7 +2104,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/electivire.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/froslass.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/gallade.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/bombirdier.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/glaceon.4bpp: %.4bpp: %.png
@@ -2479,7 +2479,7 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0263_zigzagoon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0264_linoone.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0270_florges.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0270_roserade.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0271_lotuga.4bpp: %.4bpp: %.png
@@ -2805,7 +2805,7 @@ $(OBJEVENTGFXDIR)/pokemon/surfable/0263_zigzagoon_shiny.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/surfable/0264_linoone_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/surfable/0270_florges_shiny.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/surfable/0270_roserade_shiny.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/surfable/0271_lotuga_shiny.4bpp: %.4bpp: %.png

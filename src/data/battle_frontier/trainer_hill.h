@@ -440,7 +440,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [3] =
                     {
-                        .species = SPECIES_GARDEVOIR,
+                        .species = SPECIES_GOTHITELLE,
                         .heldItem = ITEM_SITRUS_BERRY,
                         .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND, MOVE_DESTINY_BOND},
                         .hpEV = 110,
@@ -455,7 +455,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0x80,
-                        .nickname = _("GARDEVOIR"),
+                        .nickname = _("GOTHITELLE"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =
@@ -1738,7 +1738,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_GARDEVOIR,
+                                            .species = SPECIES_GOTHITELLE,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_WISH},
                                             .hpEV = 252,
@@ -1753,7 +1753,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0xF,
-                                            .nickname = _("GARDEVOIR"),
+                                            .nickname = _("GOTHITELLE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -3918,7 +3918,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_GARDEVOIR,
+                                            .species = SPECIES_GOTHITELLE,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND, MOVE_WILL_O_WISP},
                                             .hpEV = 6,
@@ -3933,7 +3933,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("GARDEVOIR"),
+                                            .nickname = _("GOTHITELLE"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

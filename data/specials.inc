@@ -132,8 +132,8 @@ gSpecials::
 	def_special TraderDoDecorationTrade
 	def_special GetSeedotSizeRecordInfo
 	def_special CompareSeedotSize
-	def_special GetFlorgesSizeRecordInfo
-	def_special CompareFlorgesSize
+	def_special GetRoseradeSizeRecordInfo
+	def_special CompareRoseradeSize
 	def_special TryPutNameRaterShowOnTheAir
 	def_special BufferMonNickname
 	def_special IsMonOTIDNotPlayers

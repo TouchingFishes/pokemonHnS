@@ -689,7 +689,7 @@
 #define MAP_SOOTOPOLIS_CITY_HOUSE5                         (80 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_HOUSE6                         (81 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_HOUSE7                         (82 | (28 << 8))
-#define MAP_SOOTOPOLIS_CITY_FLORGES_AND_SEEDOT_HOUSE       (83 | (28 << 8))
+#define MAP_SOOTOPOLIS_CITY_ROSERADE_AND_SEEDOT_HOUSE      (83 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F        (84 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F       (85 | (28 << 8))
 #define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM                  (86 | (28 << 8))

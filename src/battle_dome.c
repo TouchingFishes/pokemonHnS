@@ -2463,9 +2463,9 @@ static void InitDomeTrainers(void)
                 || species == SPECIES_AZUMARILL
                 || species == SPECIES_SNUBBULL
                 || species == SPECIES_GRANBULL
-                || species == SPECIES_RALTS
-                || species == SPECIES_KIRLIA
-                || species == SPECIES_GARDEVOIR
+                || species == SPECIES_GOTHITA
+                || species == SPECIES_GOTHORITA
+                || species == SPECIES_GOTHITELLE
                 || species == SPECIES_SOLOSIS
                 || species == SPECIES_TALONFLAME
                 || species == SPECIES_DEINO

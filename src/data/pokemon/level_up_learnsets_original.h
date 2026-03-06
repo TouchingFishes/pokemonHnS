@@ -3844,13 +3844,13 @@ static const u16 sGrimmsnarlLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sFlabebeLevelUpLearnset_Original[] = {
+static const u16 sBudewLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_HARDEN),
     LEVEL_UP_MOVE( 7, MOVE_HARDEN),
     LEVEL_UP_END
 };
 
-static const u16 sFloetteLevelUpLearnset_Original[] = {
+static const u16 sRoseliaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE(10, MOVE_CONFUSION),
     LEVEL_UP_MOVE(13, MOVE_GUST),
@@ -3864,7 +3864,7 @@ static const u16 sFloetteLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sFlorgesLevelUpLearnset_Original[] = {
+static const u16 sRoseradeLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_ABSORB),
@@ -5334,7 +5334,7 @@ static const u16 sArmaldoLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sRaltsLevelUpLearnset_Original[] = {
+static const u16 sGothitaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 6, MOVE_CONFUSION),
     LEVEL_UP_MOVE(11, MOVE_DOUBLE_TEAM),
@@ -5348,7 +5348,7 @@ static const u16 sRaltsLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sKirliaLevelUpLearnset_Original[] = {
+static const u16 sGothoritaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_TEAM),
@@ -5365,7 +5365,7 @@ static const u16 sKirliaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGardevoirLevelUpLearnset_Original[] = {
+static const u16 sGothitelleLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSION),
     LEVEL_UP_MOVE( 1, MOVE_DOUBLE_TEAM),
@@ -5819,7 +5819,7 @@ static const u16 sFroslassLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sGalladeLevelUpLearnset_Original[] = {
+static const u16 sBombirdierLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_CHARM),
     LEVEL_UP_MOVE( 1, MOVE_LEAF_BLADE),

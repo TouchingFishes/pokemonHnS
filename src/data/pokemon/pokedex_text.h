@@ -1606,19 +1606,19 @@ const u8 gGrimmsnarlPokedexText[] = _(
     "flower-covered fields collecting pollen.\n"
     "It attacks ferociously when angered.");
 
-const u8 gFlabebePokedexText[] = _(
+const u8 gBudewPokedexText[] = _(
     "To avoid detection by its enemies, it hides\n"
     "motionlessly beneath large leaves and in\n"
     "the gaps of branches. It also attaches\n"
     "dead leaves to its body for camouflage.");
 
-const u8 gFloettePokedexText[] = _(
+const u8 gRoseliaPokedexText[] = _(
     "It is a nocturnal POKéMON that flies from\n"
     "fields and mountains to the attraction of\n"
     "streetlights at night. It looses highly\n"
     "toxic powder from its wings.");
 
-const u8 gFlorgesPokedexText[] = _(
+const u8 gRoseradePokedexText[] = _(
     "This POKéMON lives in ponds with clean\n"
     "water. It is known to ferry small POKéMON\n"
     "across ponds by carrying them on the\n"
@@ -1678,19 +1678,19 @@ const u8 gBraviaryPokedexText[] = _(
     "even if it is injured. One can carry a car\n"
     "while flying.");
 
-const u8 gRaltsPokedexText[] = _(
-    "A RALTS has the power to sense the\n"
+const u8 gGothitaPokedexText[] = _(
+    "A GOTHITA has the power to sense the\n"
     "emotions of people and POKéMON with the\n"
     "horns on its head. It takes cover if it\n"
     "senses any hostility.");
 
-const u8 gKirliaPokedexText[] = _(
-    "A KIRLIA has the psychic power to create \n"
+const u8 gGothoritaPokedexText[] = _(
+    "A GOTHORITA has the psychic power to create \n"
     "a rip in the dimensions and see into the\n"
     "future. It is said to dance with pleasure\n"
     "on sunny mornings.");
 
-const u8 gGardevoirPokedexText[] = _(
+const u8 gGothitellePokedexText[] = _(
     "It apparently does not feel the pull of\n"
     "gravity because it supports itself with\n"
     "psychic power. It will give its life to\n"
@@ -2368,7 +2368,7 @@ const u8 gFroslassPokedexText[] = _(
     "chilly den, where they become its\n"
     "decorations.");
 
-const u8 gGalladePokedexText[] = _(
+const u8 gBombirdierPokedexText[] = _(
     "A master of courtesy and swordsmanship,\n"
     "it fights using extending swords on its\n"
     "elbows when trying to protect someone.\n"

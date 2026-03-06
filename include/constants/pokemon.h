@@ -254,7 +254,7 @@
 #define EVO_LEVEL_ATK_EQ_DEF 9  // Pokémon reaches the specified level with attack = defense
 #define EVO_LEVEL_ATK_LT_DEF 10 // Pokémon reaches the specified level with attack < defense
 #define EVO_LEVEL_MORGREM    11 // Pokémon reaches the specified level with a Morgrem personality value
-#define EVO_LEVEL_FLABEBE    12 // Pokémon reaches the specified level with a Flabebe personality value
+#define EVO_LEVEL_BUDEW    12 // Pokémon reaches the specified level with a Budew personality value
 #define EVO_LEVEL_NINJASK    13 // Pokémon reaches the specified level (special value for Ninjask)
 #define EVO_LEVEL_SHEDINJA   14 // Pokémon reaches the specified level (special value for Shedinja)
 #define EVO_BEAUTY           15 // Pokémon levels up with beauty ≥ specified value

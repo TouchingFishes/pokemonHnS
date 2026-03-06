@@ -283,7 +283,7 @@ gCryTable::
 	cry Cry_Rufflet
 	cry Cry_Banette
 	cry Cry_Shuppet
-	cry Cry_Florges
+	cry Cry_Roserade
 	cry Cry_Lotuga
 	cry Cry_Vertuga
 	cry Cry_Seedot
@@ -293,11 +293,11 @@ gCryTable::
 	cry Cry_Impidimp
 	cry Cry_Morgrem
 	cry Cry_Grimmsnarl
-	cry Cry_Flabebe
-	cry Cry_Floette
-	cry Cry_Ralts
-	cry Cry_Kirlia
-	cry Cry_Gardevoir
+	cry Cry_Budew
+	cry Cry_Roselia
+	cry Cry_Gothita
+	cry Cry_Gothorita
+	cry Cry_Gothitelle
 	cry Cry_Slakoth
 	cry Cry_Vigoroth
 	cry Cry_Slaking
@@ -399,7 +399,7 @@ gCryTable::
 	cry Cry_Spiritomb
 	cry Cry_Electivire
 	cry Cry_Froslass
-	cry Cry_Gallade
+	cry Cry_Bombirdier
 	cry Cry_Glaceon
 	cry Cry_Gliscor
 	cry Cry_Happiny
@@ -718,7 +718,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Rufflet
 	cry_reverse Cry_Banette
 	cry_reverse Cry_Shuppet
-	cry_reverse Cry_Florges
+	cry_reverse Cry_Roserade
 	cry_reverse Cry_Lotuga
 	cry_reverse Cry_Vertuga
 	cry_reverse Cry_Seedot
@@ -728,11 +728,11 @@ gCryTable_Reverse::
 	cry_reverse Cry_Impidimp
 	cry_reverse Cry_Morgrem
 	cry_reverse Cry_Grimmsnarl
-	cry_reverse Cry_Flabebe
-	cry_reverse Cry_Floette
-	cry_reverse Cry_Ralts
-	cry_reverse Cry_Kirlia
-	cry_reverse Cry_Gardevoir
+	cry_reverse Cry_Budew
+	cry_reverse Cry_Roselia
+	cry_reverse Cry_Gothita
+	cry_reverse Cry_Gothorita
+	cry_reverse Cry_Gothitelle
 	cry_reverse Cry_Slakoth
 	cry_reverse Cry_Vigoroth
 	cry_reverse Cry_Slaking
@@ -834,7 +834,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Spiritomb
 	cry_reverse Cry_Electivire
 	cry_reverse Cry_Froslass
-	cry_reverse Cry_Gallade
+	cry_reverse Cry_Bombirdier
 	cry_reverse Cry_Glaceon
 	cry_reverse Cry_Gliscor
 	cry_reverse Cry_Happiny

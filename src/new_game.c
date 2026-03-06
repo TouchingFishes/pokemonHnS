@@ -214,7 +214,7 @@ void NewGameInitData(void)
     ClearAllContestWinnerPics();
     ClearPlayerLinkBattleRecords();
     InitSeedotSizeRecord();
-    InitFlorgesSizeRecord();
+    InitRoseradeSizeRecord();
     gPlayerPartyCount = 0;
     ZeroPlayerPartyMons();
     ResetPokemonStorageSystem();

@@ -1229,7 +1229,7 @@ const u16 gEggMoves[] = {
               MOVE_TICKLE,
               MOVE_TRICK),
 
-    egg_moves(FLORGES,
+    egg_moves(ROSERADE,
               MOVE_SYNTHESIS,
               MOVE_COUNTER,
               MOVE_RAZOR_LEAF,
@@ -1684,7 +1684,7 @@ const u16 gEggMoves[] = {
               MOVE_SWORDS_DANCE,
               MOVE_ROCK_SLIDE),
 
-    egg_moves(RALTS,
+    egg_moves(GOTHITA,
               MOVE_DISABLE,
               MOVE_CONFUSE_RAY,
               MOVE_ENCORE,
@@ -2668,7 +2668,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_TICKLE,
               MOVE_TRICK),
 
-    egg_moves(FLORGES,
+    egg_moves(ROSERADE,
               MOVE_SYNTHESIS,
               MOVE_RAZOR_LEAF,
               MOVE_SWEET_SCENT,
@@ -3018,7 +3018,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_FALSE_SWIPE,
               MOVE_ROCK_SLIDE),
 
-    egg_moves(RALTS,
+    egg_moves(GOTHITA,
               MOVE_DISABLE,
               MOVE_WILL_O_WISP,
               MOVE_MEAN_LOOK,

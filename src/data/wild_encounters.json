@@ -381,12 +381,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 3,
@@ -406,7 +406,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 4,
@@ -515,7 +515,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 3,
@@ -540,12 +540,12 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 3,
@@ -560,7 +560,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 4,
@@ -689,7 +689,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 4,
@@ -709,7 +709,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 4,
@@ -823,7 +823,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 3,
@@ -838,7 +838,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 3,
@@ -4474,7 +4474,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 17,
@@ -4489,7 +4489,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 16,
@@ -4842,7 +4842,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 17,
@@ -4857,7 +4857,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 16,
@@ -7094,7 +7094,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_BUDEW"
               },
               {
                 "min_level": 6,
@@ -7163,7 +7163,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_BUDEW"
               },
               {
                 "min_level": 6,
@@ -7178,7 +7178,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_BUDEW"
               },
               {
                 "min_level": 5,
@@ -7232,7 +7232,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_BUDEW"
               },
               {
                 "min_level": 6,
@@ -7301,7 +7301,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_FLABEBE"
+                "species": "SPECIES_BUDEW"
               },
               {
                 "min_level": 6,
@@ -49029,7 +49029,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 18,
@@ -49218,7 +49218,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_GOTHITA"
               },
               {
                 "min_level": 16,
@@ -66782,7 +66782,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_FLORGES"
+                "species": "SPECIES_ROSERADE"
               },
               {
                 "min_level": 20,

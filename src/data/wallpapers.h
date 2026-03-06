@@ -318,7 +318,7 @@ static const u32 sWallpaperIcon_Circle[]       = INCBIN_U32("graphics/pokemon_st
 static const u32 sWallpaperIcon_Koffing[]      = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/koffing.4bpp.lz");
 static const u32 sWallpaperIcon_Ribbon[]       = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/ribbon.4bpp.lz");
 static const u32 sWallpaperIcon_FourCircles[]  = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/four_circles.4bpp.lz");
-//static const u32 sWallpaperIcon_Florges[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/florges.4bpp.lz");
+//static const u32 sWallpaperIcon_Roserade[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/roserade.4bpp.lz");
 static const u32 sWallpaperIcon_Crystal[]      = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/crystal.4bpp.lz");
 static const u32 sWallpaperIcon_Pichu[]        = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/pichu.4bpp.lz");
 static const u32 sWallpaperIcon_Diglett[]      = INCBIN_U32("graphics/pokemon_storage/wallpapers/icons/diglett.4bpp.lz");
@@ -369,7 +369,7 @@ static const u32 *const sWaldaWallpaperIcons[] =
     sWallpaperIcon_Ribbon,
     gWallpaperIcon_Bolt,
     sWallpaperIcon_FourCircles,
-    //sWallpaperIcon_Florges,
+    //sWallpaperIcon_Roserade,
     sWallpaperIcon_Crystal,
     sWallpaperIcon_Pichu,
     sWallpaperIcon_Diglett,
