@@ -6,8 +6,8 @@ const struct MonCoords gTrainerBackPicCoords[] =
     [TRAINER_BACK_PIC_LEAF] = {.size = 8, .y_offset = 5},
     [TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN] = {.size = 8, .y_offset = 4},
     [TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_WALLY] = {.size = 8, .y_offset = 4},
-    [TRAINER_BACK_PIC_STEVEN] = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_SILVER] = {.size = 8, .y_offset = 4},
+    [TRAINER_BACK_PIC_LANCE] = {.size = 8, .y_offset = 4},
 };
 
 // this table goes functionally unused, since none of these pics are compressed
@@ -45,15 +45,15 @@ const struct CompressedSpriteSheet gTrainerBackPicTable[] =
         .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_RubySapphireMay),
         .tag = TRAINER_BACK_PIC_RUBY_SAPPHIRE_MAY,
     },
-    [TRAINER_BACK_PIC_WALLY] = {
-        .data = (const u32 *)gTrainerBackPic_Wally,
-        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Wally),
-        .tag = TRAINER_BACK_PIC_WALLY,
+    [TRAINER_BACK_PIC_SILVER] = {
+        .data = (const u32 *)gTrainerBackPic_Silver,
+        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Silver),
+        .tag = TRAINER_BACK_PIC_SILVER,
     },
-    [TRAINER_BACK_PIC_STEVEN] = {
-        .data = (const u32 *)gTrainerBackPic_Steven,
-        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Steven),
-        .tag = TRAINER_BACK_PIC_STEVEN,
+    [TRAINER_BACK_PIC_LANCE] = {
+        .data = (const u32 *)gTrainerBackPic_Lance,
+        .size = TRAINER_PIC_SIZE * ARRAY_COUNT(gTrainerBackPicTable_Lance),
+        .tag = TRAINER_BACK_PIC_LANCE,
     },
 };
 
@@ -67,6 +67,6 @@ const struct CompressedSpritePalette gTrainerBackPicPaletteTable[] =
     TRAINER_BACK_PAL(LEAF, gTrainerBackPicPalette_Leaf),
     TRAINER_BACK_PAL(RUBY_SAPPHIRE_BRENDAN, gTrainerPalette_RubySapphireBrendan),
     TRAINER_BACK_PAL(RUBY_SAPPHIRE_MAY, gTrainerPalette_RubySapphireMay),
-    TRAINER_BACK_PAL(WALLY, gTrainerPalette_Wally_Back),
-    TRAINER_BACK_PAL(STEVEN, gTrainerPalette_Steven_Back),
+    TRAINER_BACK_PAL(SILVER, gTrainerPalette_Silver_Back),
+    TRAINER_BACK_PAL(LANCE, gTrainerPalette_Lance_Back),
 };

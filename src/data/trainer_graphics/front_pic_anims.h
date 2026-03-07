@@ -438,6 +438,82 @@ static const union AnimCmd *const sAnims_PyramidKingBrandon[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Channeler[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Kindler[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Gambler[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Gideon[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_MasterYama[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Rocker[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_CasinoAce[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Painter[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Tamer[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Lorelei[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Agatha[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Riley[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Palmer[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Barry[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Iris[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Alder[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Cynthia[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Sora[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_SoraWithCat[] = {
+    sAnim_GeneralFrame0,
+};
+
 const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
 {
     [TRAINER_PIC_HIKER] = sAnims_Hiker,
@@ -551,4 +627,23 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_FACTORY_HEAD_NOLAND] = sAnims_FactoryHeadNoland,
     [TRAINER_PIC_PIKE_QUEEN_LUCY] = sAnims_PikeQueenLucy,
     [TRAINER_PIC_PYRAMID_KING_BRANDON] = sAnims_PyramidKingBrandon,
+    [TRAINER_PIC_CHANNELER] = sAnims_Channeler,
+    [TRAINER_PIC_KINDLER] = sAnims_Kindler,
+    [TRAINER_PIC_GAMBLER] = sAnims_Gambler,
+    [TRAINER_PIC_GIDEON] = sAnims_Gideon,
+    [TRAINER_PIC_MASTER_YAMA] = sAnims_MasterYama,
+    [TRAINER_PIC_ROCKER] = sAnims_Rocker,
+    [TRAINER_PIC_CASINO_ACE] = sAnims_CasinoAce,
+    [TRAINER_PIC_PAINTER] = sAnims_Painter,
+    [TRAINER_PIC_TAMER] = sAnims_Tamer,
+    [TRAINER_PIC_LORELEI] = sAnims_Lorelei,
+    [TRAINER_PIC_AGATHA] = sAnims_Agatha,
+    [TRAINER_PIC_RILEY] = sAnims_Riley,
+    [TRAINER_PIC_PALMER] = sAnims_Palmer,
+    [TRAINER_PIC_BARRY] = sAnims_Barry,
+    [TRAINER_PIC_IRIS] = sAnims_Iris,
+    [TRAINER_PIC_ALDER] = sAnims_Alder,
+    [TRAINER_PIC_CYNTHIA] = sAnims_Cynthia,
+    [TRAINER_PIC_SORA] = sAnims_Sora,
+    [TRAINER_PIC_SORA_WITH_CAT] = sAnims_SoraWithCat,
 };
