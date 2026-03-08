@@ -240,6 +240,34 @@
 #define OBJ_EVENT_GFX_LINK_RS_MAY                235
 #define OBJ_EVENT_GFX_LUGIA                      236
 #define OBJ_EVENT_GFX_HOOH                       237
+#define OBJ_EVENT_GFX_MODEL                      238
+#define OBJ_EVENT_GFX_AROMA_LADY                 239
+#define OBJ_EVENT_GFX_BIRD_KEEPER               240
+#define OBJ_EVENT_GFX_BREEDER_F                  241
+#define OBJ_EVENT_GFX_BREEDER_M                  242
+#define OBJ_EVENT_GFX_BUG_MANIAC                 243
+#define OBJ_EVENT_GFX_REPORTER_F                 244
+#define OBJ_EVENT_GFX_REPORTER_M                 245
+#define OBJ_EVENT_GFX_COLLECTOR                  246
+#define OBJ_EVENT_GFX_DRAGON_TAMER               247
+#define OBJ_EVENT_GFX_GUITARIST_F                249
+#define OBJ_EVENT_GFX_EXPERT_F                   249
+#define OBJ_EVENT_GFX_EXPERT_M                   250
+#define OBJ_EVENT_GFX_GUITARIST_M                251
+#define OBJ_EVENT_GFX_HEX_MANIAC                 252
+#define OBJ_EVENT_GFX_CAMERAMAN                  253
+#define OBJ_EVENT_GFX_KINDLER                    254
+#define OBJ_EVENT_GFX_LADY                       255
+#define OBJ_EVENT_GFX_PALMER                     256
+#define OBJ_EVENT_GFX_POKEFAN_F                  257
+#define OBJ_EVENT_GFX_POKEFAN_M                  258
+#define OBJ_EVENT_GFX_POKEMANIAC                 259
+#define OBJ_EVENT_GFX_PSYCHIC_F                  260
+#define OBJ_EVENT_GFX_RICH_BOY                   261
+#define OBJ_EVENT_GFX_RUIN_MANIAC                262
+#define OBJ_EVENT_GFX_TAMER                      263
+#define OBJ_EVENT_GFX_WOMAN_3                    264
+#define OBJ_EVENT_GFX_CYNTHIA                    265
 #define OBJ_EVENT_GFX_POKE_BALL                  OBJ_EVENT_GFX_ITEM_BALL // replaces ITEM_BALL
 #define OBJ_EVENT_GFX_OW_MON                     OBJ_EVENT_GFX_REGICE
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               OBJ_EVENT_GFX_QUINTY_PLUMP
@@ -253,7 +281,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        239
+#define NUM_OBJ_EVENT_GFX                        266
 
 
 // These are dynamic object gfx ids.

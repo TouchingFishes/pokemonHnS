@@ -274,7 +274,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE1               (2 | (19 << 8))
 #define MAP_FUCHSIA_CITY_HOUSE2               (3 | (19 << 8))
 #define MAP_FUCHSIA_CITY_GYM                  (4 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE19GATE               (5 | (19 << 8))
+#define MAP_FUCHSIA_CITY_ROUTE19_GATE         (5 | (19 << 8))
 #define MAP_FUCHSIA_CITY_ROUTE15_GATE         (6 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE (7 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH    (8 | (19 << 8))
@@ -689,7 +689,7 @@
 #define MAP_SOOTOPOLIS_CITY_HOUSE5                         (80 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_HOUSE6                         (81 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_HOUSE7                         (82 | (28 << 8))
-#define MAP_SOOTOPOLIS_CITY_ROSERADE_AND_SEEDOT_HOUSE      (83 | (28 << 8))
+#define MAP_SOOTOPOLIS_CITY_LOTAD_AND_SEEDOT_HOUSE         (83 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_1F        (84 | (28 << 8))
 #define MAP_SOOTOPOLIS_CITY_MYSTERY_EVENTS_HOUSE_B1F       (85 | (28 << 8))
 #define MAP_EVER_GRANDE_CITY_SIDNEYS_ROOM                  (86 | (28 << 8))
@@ -1024,7 +1024,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {71, 5, 5, 6, 5, 29, 9, 10, 6, 6, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 27, 28, 91, 0, 27, 126, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H
