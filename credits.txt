@@ -1,4 +1,4 @@
-Buck, Barry, Riley, Palmer Front Pic and Cynthia, Lady, RichBoy OW Sprites by:
+Buck, Barry, Riley, Palmer, Skier (Female and Male) Front Pic and Cynthia, Lady, Rich_Boy, Dragon_Tamer, Skier (Female and Male) OW Sprites by:
 
 spilledpizza
 TheWiggliestJiggliest
@@ -10,11 +10,11 @@ The Radiant Quartz/Prismatic Platinum team for their support
 
 Lass, Steven, Camerman, Reporter_M, Reporter_F, Contest Judge, Ninja Boy, Devon Employee, Emerald_Little_Boy, RS_Little_Boy, Wallace, Mauville_Man_1 & 2 OW Sprite by RavePossum / PoffinCase
 
-Painter, Hiker, Sage, Pokeranger (Male and Female), Pokemaniac OW Sprite by MrDollSteak (the asset is named Artist.png in this repo)
+Painter, Hiker, Sage, Pokeranger (Female and Male), Pokemaniac OW Sprite by MrDollSteak (the asset is named Artist.png in this repo)
 
-Tamer, Rocker, Psychic_F, Dragon_Tamer, Aroma_Lady, Breeder (Female and Male) OW Sprite by Kalarie
+Tamer, Rocker, Psychic_F, Aroma_Lady, Breeder (Female and Male) OW Sprite by Kalarie
 
-Ruin_Maniac, Kindler, Bird_Keeper, Expert (Male and Female) OW Sprite by Spherical Ice
+Ruin_Maniac, Kindler, Bird_Keeper, Expert (Female and Male) OW Sprite by Spherical Ice
 
 Psychic_M OW Sprite by Avatar
 

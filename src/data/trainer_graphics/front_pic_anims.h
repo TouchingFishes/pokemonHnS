@@ -446,6 +446,14 @@ static const union AnimCmd *const sAnims_Kindler[] = {
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_SkierF[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_SkierM[] = {
+    sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_Gambler[] = {
     sAnim_GeneralFrame0,
 };
@@ -645,6 +653,8 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_PYRAMID_KING_BRANDON] = sAnims_PyramidKingBrandon,
     [TRAINER_PIC_CHANNELER] = sAnims_Channeler,
     [TRAINER_PIC_KINDLER] = sAnims_Kindler,
+    [TRAINER_PIC_SKIER_F] = sAnims_SkierF,
+    [TRAINER_PIC_SKIER_M] = sAnims_SkierM,
     [TRAINER_PIC_GAMBLER] = sAnims_Gambler,
     [TRAINER_PIC_GIDEON] = sAnims_Gideon,
     [TRAINER_PIC_MASTER_YAMA] = sAnims_MasterYama,

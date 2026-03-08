@@ -355,6 +355,12 @@ const u32 gTrainerPalette_Channeler[] = INCBIN_U32("graphics/trainers/front_pics
 const u32 gTrainerFrontPic_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/kindler.4bpp.lz");
 const u32 gTrainerPalette_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/kindler.gbapal.lz");
 
+const u32 gTrainerFrontPic_SkierF[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.4bpp.lz");
+const u32 gTrainerPalette_SkierF[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.gbapal.lz");
+
+const u32 gTrainerFrontPic_SkierM[] = INCBIN_U32("graphics/trainers/front_pics/skier_m.4bpp.lz");
+const u32 gTrainerPalette_SkierM[] = INCBIN_U32("graphics/trainers/front_pics/skier_m.gbapal.lz");
+
 const u32 gTrainerFrontPic_Gambler[] = INCBIN_U32("graphics/trainers/front_pics/gambler.4bpp.lz");
 const u32 gTrainerPalette_Gambler[] = INCBIN_U32("graphics/trainers/front_pics/gambler.gbapal.lz");
 

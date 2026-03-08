@@ -129,27 +129,29 @@
 #define TRAINER_PIC_PYRAMID_KING_BRANDON            110
 #define TRAINER_PIC_CHANNELER                       111
 #define TRAINER_PIC_KINDLER                         112
-#define TRAINER_PIC_GAMBLER                         113
-#define TRAINER_PIC_GIDEON                          114
-#define TRAINER_PIC_MASTER_YAMA                     115
-#define TRAINER_PIC_ROCKER                          116
-#define TRAINER_PIC_CASINO_ACE                      117
-#define TRAINER_PIC_PAINTER                         118
-#define TRAINER_PIC_TAMER                           119
-#define TRAINER_PIC_SCIENTIST                       120
-#define TRAINER_PIC_MODEL                           121
-#define TRAINER_PIC_GUITARIST_F                     122
-#define TRAINER_PIC_BUCK                            123
-#define TRAINER_PIC_LORELEI                         124
-#define TRAINER_PIC_AGATHA                          125
-#define TRAINER_PIC_RILEY                           126
-#define TRAINER_PIC_PALMER                          127
-#define TRAINER_PIC_BARRY                           128
-#define TRAINER_PIC_IRIS                            129
-#define TRAINER_PIC_ALDER                           130
-#define TRAINER_PIC_CYNTHIA                         131
-#define TRAINER_PIC_SORA                            132 
-#define TRAINER_PIC_SORA_WITH_CAT                   133
+#define TRAINER_PIC_SKIER_F                         113
+#define TRAINER_PIC_SKIER_M                         114
+#define TRAINER_PIC_GAMBLER                         115
+#define TRAINER_PIC_GIDEON                          116
+#define TRAINER_PIC_MASTER_YAMA                     117
+#define TRAINER_PIC_ROCKER                          118
+#define TRAINER_PIC_CASINO_ACE                      119
+#define TRAINER_PIC_PAINTER                         120
+#define TRAINER_PIC_TAMER                           121
+#define TRAINER_PIC_SCIENTIST                       122
+#define TRAINER_PIC_MODEL                           123
+#define TRAINER_PIC_GUITARIST_F                     124
+#define TRAINER_PIC_BUCK                            125
+#define TRAINER_PIC_LORELEI                         126
+#define TRAINER_PIC_AGATHA                          127
+#define TRAINER_PIC_RILEY                           128
+#define TRAINER_PIC_PALMER                          129
+#define TRAINER_PIC_BARRY                           130
+#define TRAINER_PIC_IRIS                            131
+#define TRAINER_PIC_ALDER                           132
+#define TRAINER_PIC_CYNTHIA                         133
+#define TRAINER_PIC_SORA                            134 
+#define TRAINER_PIC_SORA_WITH_CAT                   135
 
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
@@ -360,7 +362,7 @@
 #define TRAINER_CLASS_RICH_BOY       0x16
 #define TRAINER_CLASS_POKEMANIAC     0x17
 #define TRAINER_CLASS_GUITARIST      0x18
-#define TRAINER_CLASS_SUPER_NERD        0x19
+#define TRAINER_CLASS_SUPER_NERD     0x19
 #define TRAINER_CLASS_CAMPER         0x1a
 #define TRAINER_CLASS_PICNICKER      0x1b
 #define TRAINER_CLASS_BUG_MANIAC     0x1c
@@ -417,6 +419,26 @@
 #define TRAINER_CLASS_BURGLAR 0x4D
 #define TRAINER_CLASS_JUGGLER 0x4E
 #define TRAINER_CLASS_PSYCHIC_M 0x4F
+#define TRAINER_CLASS_CHANNELER 0x50
+#define TRAINER_CLASS_MODEL 0x51
+#define TRAINER_CLASS_ELDER 0x52
+#define TRAINER_CLASS_SCIENTIST 0x53
+#define TRAINER_CLASS_TAMER 0x54
+#define TRAINER_CLASS_KINDLER 0x55
+#define TRAINER_CLASS_SKIER 0x56
+#define TRAINER_CLASS_GAMBLER 0x57
+#define TRAINER_CLASS_CASINO_ACE 0x58
+#define TRAINER_CLASS_RILEY 0x59
+#define TRAINER_CLASS_BARRY 0x5a
+#define TRAINER_CLASS_BUCK 0x5b
+#define TRAINER_CLASS_IRIS 0x5c
+#define TRAINER_CLASS_CYNTHIA 0x5d
+#define TRAINER_CLASS_STEVEN 0x5e
+#define TRAINER_CLASS_SORA 0x5f
+
+
+
+#define TRAINER_CLASS_EX_ELITE
 
 
 
