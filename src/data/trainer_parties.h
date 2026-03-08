@@ -12355,7 +12355,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Vance3[] = { //BirdKeepe
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Carrie[] = { //LassGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Carrie[] = { //BeautyGroup
     {
     .iv = 0,
     .lvl = 18,
@@ -13522,7 +13522,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cara[] = { //BeautyGroup
 };
 //naomi and alexa missing
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Victoria[] = { //BeautyGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Victoria[] = { //ModelGroup
     {
     .iv = 0,
     .lvl = 15,
@@ -19504,7 +19504,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Beverly[] = { //PokefanF
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Ruth[] = { //PokefanFGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Ruth[] = { //ModelGroup
     {
     .iv = 0,
     .lvl = 23,

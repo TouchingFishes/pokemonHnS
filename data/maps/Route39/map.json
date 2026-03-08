@@ -52,7 +52,7 @@
       "flag": "FLAG_ENABLE_BAOBA_MATCH_CALL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_MODEL",
       "x": 22,
       "y": 38,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BALDING_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
       "x": 29,
       "y": 40,
       "elevation": 0,
@@ -247,7 +247,7 @@
       "flag": "FLAG_HIDE_ROUTE39_SHADOW"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
       "x": 16,
       "y": 45,
       "elevation": 0,

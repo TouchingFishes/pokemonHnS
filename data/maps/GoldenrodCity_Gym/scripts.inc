@@ -6,8 +6,8 @@ GoldenrodCity_Gym_MapScripts::
 
 
 GoldenrodCity_Gym_EventScript_Carrie::
-	trainerbattle_single TRAINER_CARRIE GoldenrodCity_Gym_Text_LassCarrieSeen, GoldenrodCity_Gym_Text_LassCarrieBeaten
-	msgbox GoldenrodCity_Gym_Text_LassCarrieAfter, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_CARRIE GoldenrodCity_Gym_Text_BeautyCarrieSeen, GoldenrodCity_Gym_Text_BeautyCarrieBeaten
+	msgbox GoldenrodCity_Gym_Text_BeautyCarrieAfter, MSGBOX_AUTOCLOSE
 	end
 
 GoldenrodCity_Gym_EventScript_Bridget::
@@ -16,8 +16,8 @@ GoldenrodCity_Gym_EventScript_Bridget::
 	end
 
 GoldenrodCity_Gym_EventScript_Victoria::
-	trainerbattle_single TRAINER_VICTORIA GoldenrodCity_Gym_Text_BeautyVictoriaSeen, GoldenrodCity_Gym_Text_BeautyVictoriaBeaten
-	msgbox GoldenrodCity_Gym_Text_BeautyVictoriaAfter, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_VICTORIA GoldenrodCity_Gym_Text_ModelVictoriaSeen, GoldenrodCity_Gym_Text_ModelVictoriaBeaten
+	msgbox GoldenrodCity_Gym_Text_ModelVictoriaAfter, MSGBOX_AUTOCLOSE
 	end
 
 GoldenrodCity_Gym_EventScript_Samantha::
@@ -180,15 +180,15 @@ GoldenrodCity_Gym_Text_WhitneyRematchDefeat:
     .string "Waaaaah!\p"
     .string "…Snivel, hic… …You meanie!$"
 
-GoldenrodCity_Gym_Text_LassCarrieSeen:
+GoldenrodCity_Gym_Text_BeautyCarrieSeen:
     .string "Don't let my POKéMON's cute looks\n"
     .string "fool you.\p"
     .string "They can whip you!$"
 
-GoldenrodCity_Gym_Text_LassCarrieBeaten:
+GoldenrodCity_Gym_Text_BeautyCarrieBeaten:
     .string "Darn… I thought you were weak…$"
 
-GoldenrodCity_Gym_Text_LassCarrieAfter:
+GoldenrodCity_Gym_Text_BeautyCarrieAfter:
     .string "Do my POKéMON think I'm cute?$"
 
 GoldenrodCity_Gym_Text_LassBridgetSeen:
@@ -210,14 +210,14 @@ GoldenrodCity_Gym_Text_BridgetWhitneyCries:
     .string "It's OK. She'll stop soon. She\n"
     .string "always cries when she loses.$"
 
-GoldenrodCity_Gym_Text_BeautyVictoriaSeen:
+GoldenrodCity_Gym_Text_ModelVictoriaSeen:
     .string "Oh, you are a cute little trainer!\p"
     .string "I like you, but I won't hold back!$"
 
-GoldenrodCity_Gym_Text_BeautyVictoriaBeaten:
+GoldenrodCity_Gym_Text_ModelVictoriaBeaten:
     .string "Let's see… Oops, it's over?$"
 
-GoldenrodCity_Gym_Text_BeautyVictoriaAfter:
+GoldenrodCity_Gym_Text_ModelVictoriaAfter:
     .string "Wow, you must be good to beat me!\n"
     .string "Keep it up!$"
 

@@ -80,7 +80,7 @@
       "flag": "FLAG_ITEM_UNION_CAVE_X_DEFEND"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMANIAC",
       "x": 20,
       "y": 39,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SUPER_NERD",
+      "graphics_id": "OBJ_EVENT_GFX_POKEMANIAC",
       "x": 3,
       "y": 44,
       "elevation": 0,
