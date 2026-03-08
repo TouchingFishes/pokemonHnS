@@ -79,8 +79,8 @@ const u32 gTrainerPalette_Pokemaniac[] = INCBIN_U32("graphics/trainers/front_pic
 const u32 gTrainerFrontPic_Ariana[] = INCBIN_U32("graphics/trainers/front_pics/ariana.4bpp.lz");
 const u32 gTrainerPalette_Ariana[] = INCBIN_U32("graphics/trainers/front_pics/ariana.gbapal.lz");
 
-const u32 gTrainerFrontPic_Guitarist[] = INCBIN_U32("graphics/trainers/front_pics/guitarist.4bpp.lz");
-const u32 gTrainerPalette_Guitarist[] = INCBIN_U32("graphics/trainers/front_pics/guitarist.gbapal.lz");
+const u32 gTrainerFrontPic_GuitaristM[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_m.4bpp.lz");
+const u32 gTrainerPalette_GuitaristM[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_m.gbapal.lz");
 
 const u32 gTrainerFrontPic_SuperNerd[] = INCBIN_U32("graphics/trainers/front_pics/super_nerd.4bpp.lz");
 const u32 gTrainerPalette_SuperNerd[] = INCBIN_U32("graphics/trainers/front_pics/super_nerd.gbapal.lz");
@@ -375,6 +375,18 @@ const u32 gTrainerPalette_Painter[] = INCBIN_U32("graphics/trainers/front_pics/p
 
 const u32 gTrainerFrontPic_Tamer[] = INCBIN_U32("graphics/trainers/front_pics/tamer.4bpp.lz");
 const u32 gTrainerPalette_Tamer[] = INCBIN_U32("graphics/trainers/front_pics/tamer.gbapal.lz");
+
+const u32 gTrainerFrontPic_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.4bpp.lz");
+const u32 gTrainerPalette_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.gbapal.lz");
+
+const u32 gTrainerFrontPic_Model[] = INCBIN_U32("graphics/trainers/front_pics/model.4bpp.lz");
+const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/front_pics/model.gbapal.lz");
+
+const u32 gTrainerFrontPic_GuitaristF[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_f.4bpp.lz");
+const u32 gTrainerPalette_GuitaristF[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_f.gbapal.lz");
+
+const u32 gTrainerFrontPic_Buck[] = INCBIN_U32("graphics/trainers/front_pics/buck.4bpp.lz");
+const u32 gTrainerPalette_Buck[] = INCBIN_U32("graphics/trainers/front_pics/buck.gbapal.lz");
 
 const u32 gTrainerFrontPic_Lorelei[] = INCBIN_U32("graphics/trainers/front_pics/lorelei.4bpp.lz");
 const u32 gTrainerPalette_Lorelei[] = INCBIN_U32("graphics/trainers/front_pics/lorelei.gbapal.lz");

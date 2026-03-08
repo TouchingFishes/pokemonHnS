@@ -12,10 +12,10 @@ Lass, Steven, Camerman, Reporter_M, Reporter_F, Contest Judge, Ninja Boy, Devon 
 
 Painter, Hiker, Sage, Pokeranger (Male and Female), Pokemaniac OW Sprite by MrDollSteak (the asset is named Artist.png in this repo)
 
-Tamer, Rocker, Psychic_F, Dragon_Tamer OW Sprite by Kalarie
+Tamer, Rocker, Psychic_F, Dragon_Tamer, Aroma_Lady, Breeder (Female and Male) OW Sprite by Kalarie
 
-Ruin Maniac, Kindler, Expert (Male and Female) OW Sprite by Spherical Ice
+Ruin_Maniac, Kindler, Bird_Keeper, Expert (Male and Female) OW Sprite by Spherical Ice
 
 Psychic_M OW Sprite by Avatar
 
-Pokefan_F, Hex_Maniac, Guitarist, Girl_2 (RS Beauty) OW Sprite by Aveontrainer(?)
+Pokefan_F, Hex_Maniac, Collector, Bug_Maniac, Guitarist, Girl_2 (RS Beauty) OW Sprite by Aveontrainer(?)

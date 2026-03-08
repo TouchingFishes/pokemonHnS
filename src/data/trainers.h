@@ -3324,7 +3324,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST_M,
         .trainerName = _("CLYDE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -3337,7 +3337,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_GUITARIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerPic = TRAINER_PIC_GUITARIST_M,
         .trainerName = _("VINCENT"),
         .items = {},
         .doubleBattle = FALSE,

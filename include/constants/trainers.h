@@ -43,7 +43,7 @@
 #define TRAINER_PIC_EXPERT_F                        24
 #define TRAINER_PIC_POKEMANIAC                      25
 #define TRAINER_PIC_ARIANA                          26
-#define TRAINER_PIC_GUITARIST                       27
+#define TRAINER_PIC_GUITARIST_M                     27
 #define TRAINER_PIC_SUPER_NERD                      28
 #define TRAINER_PIC_CAMPER                          29
 #define TRAINER_PIC_PICNICKER                       30
@@ -136,16 +136,20 @@
 #define TRAINER_PIC_CASINO_ACE                      117
 #define TRAINER_PIC_PAINTER                         118
 #define TRAINER_PIC_TAMER                           119
-#define TRAINER_PIC_LORELEI                         120
-#define TRAINER_PIC_AGATHA                          121
-#define TRAINER_PIC_RILEY                           122
-#define TRAINER_PIC_PALMER                          123
-#define TRAINER_PIC_BARRY                           124
-#define TRAINER_PIC_IRIS                            125
-#define TRAINER_PIC_ALDER                           126
-#define TRAINER_PIC_CYNTHIA                         127
-#define TRAINER_PIC_SORA                            128 
-#define TRAINER_PIC_SORA_WITH_CAT                   129
+#define TRAINER_PIC_SCIENTIST                       120
+#define TRAINER_PIC_MODEL                           121
+#define TRAINER_PIC_GUITARIST_F                     122
+#define TRAINER_PIC_BUCK                            123
+#define TRAINER_PIC_LORELEI                         124
+#define TRAINER_PIC_AGATHA                          125
+#define TRAINER_PIC_RILEY                           126
+#define TRAINER_PIC_PALMER                          127
+#define TRAINER_PIC_BARRY                           128
+#define TRAINER_PIC_IRIS                            129
+#define TRAINER_PIC_ALDER                           130
+#define TRAINER_PIC_CYNTHIA                         131
+#define TRAINER_PIC_SORA                            132 
+#define TRAINER_PIC_SORA_WITH_CAT                   133
 
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)

@@ -106,7 +106,7 @@ static const union AnimCmd *const sAnims_Ariana[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_Guitarist[] ={
+static const union AnimCmd *const sAnims_GuitaristM[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -474,6 +474,22 @@ static const union AnimCmd *const sAnims_Tamer[] = {
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_Scientist[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Model[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_GuitaristF[] = {
+    sAnim_GeneralFrame0,
+};
+
+static const union AnimCmd *const sAnims_Buck[] = {
+    sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_Lorelei[] = {
     sAnim_GeneralFrame0,
 };
@@ -543,7 +559,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_EXPERT_F] = sAnims_ExpertF,
     [TRAINER_PIC_POKEMANIAC] = sAnims_Pokemaniac,
     [TRAINER_PIC_ARIANA] = sAnims_Ariana,
-    [TRAINER_PIC_GUITARIST] = sAnims_Guitarist,
+    [TRAINER_PIC_GUITARIST_M] = sAnims_GuitaristM,
     [TRAINER_PIC_SUPER_NERD] = sAnims_SuperNerd,
     [TRAINER_PIC_CAMPER] = sAnims_Camper,
     [TRAINER_PIC_PICNICKER] = sAnims_Picnicker,
@@ -636,6 +652,10 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_CASINO_ACE] = sAnims_CasinoAce,
     [TRAINER_PIC_PAINTER] = sAnims_Painter,
     [TRAINER_PIC_TAMER] = sAnims_Tamer,
+    [TRAINER_PIC_SCIENTIST] = sAnims_Scientist,
+    [TRAINER_PIC_MODEL] = sAnims_Model,
+    [TRAINER_PIC_GUITARIST_F] = sAnims_GuitaristF,
+    [TRAINER_PIC_BUCK] = sAnims_Buck,
     [TRAINER_PIC_LORELEI] = sAnims_Lorelei,
     [TRAINER_PIC_AGATHA] = sAnims_Agatha,
     [TRAINER_PIC_RILEY] = sAnims_Riley,

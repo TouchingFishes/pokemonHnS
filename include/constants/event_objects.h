@@ -266,8 +266,7 @@
 #define OBJ_EVENT_GFX_RICH_BOY                   261
 #define OBJ_EVENT_GFX_RUIN_MANIAC                262
 #define OBJ_EVENT_GFX_TAMER                      263
-#define OBJ_EVENT_GFX_WOMAN_3                    264
-#define OBJ_EVENT_GFX_CYNTHIA                    265
+#define OBJ_EVENT_GFX_CYNTHIA                    264
 #define OBJ_EVENT_GFX_POKE_BALL                  OBJ_EVENT_GFX_ITEM_BALL // replaces ITEM_BALL
 #define OBJ_EVENT_GFX_OW_MON                     OBJ_EVENT_GFX_REGICE
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               OBJ_EVENT_GFX_QUINTY_PLUMP
