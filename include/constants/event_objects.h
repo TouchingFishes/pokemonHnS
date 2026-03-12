@@ -267,8 +267,10 @@
 #define OBJ_EVENT_GFX_PSYCHIC_F                  262
 #define OBJ_EVENT_GFX_RICH_BOY                   263
 #define OBJ_EVENT_GFX_RUIN_MANIAC                264
-#define OBJ_EVENT_GFX_TAMER                      265
-#define OBJ_EVENT_GFX_CYNTHIA                    266
+#define OBJ_EVENT_GFX_POKERANGER_F               265
+#define OBJ_EVENT_GFX_POKERANGER_M               266
+#define OBJ_EVENT_GFX_TAMER                      267
+#define OBJ_EVENT_GFX_CYNTHIA                    268
 #define OBJ_EVENT_GFX_POKE_BALL                  OBJ_EVENT_GFX_ITEM_BALL // replaces ITEM_BALL
 #define OBJ_EVENT_GFX_OW_MON                     OBJ_EVENT_GFX_REGICE
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               OBJ_EVENT_GFX_QUINTY_PLUMP
@@ -282,7 +284,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        267
+#define NUM_OBJ_EVENT_GFX                        269
 
 
 // These are dynamic object gfx ids.

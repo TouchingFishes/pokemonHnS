@@ -255,6 +255,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_GuitaristM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HexManiac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cameraman;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kindler;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkierF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SkierM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lady;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Palmer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokefanF;
@@ -263,6 +265,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Pokemaniac;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PsychicF;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RichBoy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RuinManiac;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokerangerF;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_PokerangerM;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Tamer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Woman3;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cynthia;
@@ -561,6 +565,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_HEX_MANIAC] =               &gObjectEventGraphicsInfo_HexManiac,
     [OBJ_EVENT_GFX_CAMERAMAN] =                &gObjectEventGraphicsInfo_Cameraman,
     [OBJ_EVENT_GFX_KINDLER] =                  &gObjectEventGraphicsInfo_Kindler,
+    [OBJ_EVENT_GFX_SKIER_F] =                  &gObjectEventGraphicsInfo_SkierF,
+    [OBJ_EVENT_GFX_SKIER_M] =                  &gObjectEventGraphicsInfo_SkierM,
     [OBJ_EVENT_GFX_LADY] =                     &gObjectEventGraphicsInfo_Lady,
     [OBJ_EVENT_GFX_PALMER] =                   &gObjectEventGraphicsInfo_Palmer,
     [OBJ_EVENT_GFX_POKEFAN_F] =                &gObjectEventGraphicsInfo_PokefanF,
@@ -569,6 +575,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_PSYCHIC_F] =                &gObjectEventGraphicsInfo_PsychicF,
     [OBJ_EVENT_GFX_RICH_BOY] =                 &gObjectEventGraphicsInfo_RichBoy,
     [OBJ_EVENT_GFX_RUIN_MANIAC] =              &gObjectEventGraphicsInfo_RuinManiac,
+    [OBJ_EVENT_GFX_POKERANGER_F] =             &gObjectEventGraphicsInfo_PokerangerF,
+    [OBJ_EVENT_GFX_POKERANGER_M] =             &gObjectEventGraphicsInfo_PokerangerM,
     [OBJ_EVENT_GFX_TAMER] =                    &gObjectEventGraphicsInfo_Tamer,
     [OBJ_EVENT_GFX_WOMAN_3] =                  &gObjectEventGraphicsInfo_Woman3,
     [OBJ_EVENT_GFX_CYNTHIA] =                  &gObjectEventGraphicsInfo_Cynthia,
