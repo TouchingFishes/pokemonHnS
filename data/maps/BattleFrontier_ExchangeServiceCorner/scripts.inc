@@ -99,7 +99,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_TreeckoDoll::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmTreeckoDoll, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_TREECKO_DOLL
+	setvar VAR_0x8009, DECOR_SWABLU_DOLL
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
@@ -107,7 +107,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_TorchicDoll::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmTorchicDoll, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_TORCHIC_DOLL
+	setvar VAR_0x8009, DECOR_SWABLU_DOLL
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 
@@ -115,7 +115,7 @@ BattleFrontier_ExchangeServiceCorner_EventScript_MudkipDoll::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmMudkipDoll, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
 	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_MUDKIP_DOLL
+	setvar VAR_0x8009, DECOR_SWABLU_DOLL
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
 

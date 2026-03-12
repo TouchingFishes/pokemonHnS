@@ -379,7 +379,7 @@ const u16 gTowerFemaleTrainerGfxIds[28] =
     OBJ_EVENT_GFX_WOMAN_3, //pokefan
     OBJ_EVENT_GFX_OLD_WOMAN, //expert
     OBJ_EVENT_GFX_CYCLING_TRIATHLETE_F, //cycling thr
-    OBJ_EVENT_GFX_UNUSED_WOMAN_4, //running thr
+    OBJ_EVENT_GFX_WOMAN_3, //running thr
     OBJ_EVENT_GFX_SWIMMER_LAND_F, //swimm thr
     OBJ_EVENT_GFX_BATTLE_GIRL, //battle girl
     OBJ_EVENT_GFX_WORKER_F, //parasol lady

@@ -1056,42 +1056,6 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_SMOOCHUM_DOLL,
     },
 
-    [DECOR_TREECKO_DOLL] =
-    {
-        .id = DECOR_TREECKO_DOLL,
-        .name = _("TREECKO DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_TREECKO_DOLL,
-        .tiles = DecorGfx_TREECKO_DOLL,
-    },
-
-    [DECOR_TORCHIC_DOLL] =
-    {
-        .id = DECOR_TORCHIC_DOLL,
-        .name = _("TORCHIC DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_TORCHIC_DOLL,
-        .tiles = DecorGfx_TORCHIC_DOLL,
-    },
-
-    [DECOR_MUDKIP_DOLL] =
-    {
-        .id = DECOR_MUDKIP_DOLL,
-        .name = _("MUDKIP DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_MUDKIP_DOLL,
-        .tiles = DecorGfx_MUDKIP_DOLL,
-    },
-
     [DECOR_DUSKULL_DOLL] =
     {
         .id = DECOR_DUSKULL_DOLL,
@@ -1128,18 +1092,6 @@ const struct Decoration gDecorations[] =
         .tiles = DecorGfx_BALTOY_DOLL,
     },
 
-    [DECOR_KECLEON_DOLL] =
-    {
-        .id = DECOR_KECLEON_DOLL,
-        .name = _("KECLEON DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_KECLEON_DOLL,
-        .tiles = DecorGfx_KECLEON_DOLL,
-    },
-
     [DECOR_SKITTY_DOLL] =
     {
         .id = DECOR_SKITTY_DOLL,
@@ -1163,30 +1115,6 @@ const struct Decoration gDecorations[] =
         .description = DecorDesc_SWABLU_DOLL,
         .tiles = DecorGfx_SWABLU_DOLL,
     },
-
-    [DECOR_GULPIN_DOLL] =
-    {
-        .id = DECOR_GULPIN_DOLL,
-        .name = _("GULPIN DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_GULPIN_DOLL,
-        .tiles = DecorGfx_GULPIN_DOLL,
-    },
-
-    /*[DECOR_ROSERADE_DOLL] =
-    {
-        .id = DECOR_ROSERADE_DOLL,
-        .name = _("ROSERADE DOLL"),
-        .permission = DECORPERM_SPRITE,
-        .shape = DECORSHAPE_1x1,
-        .category = DECORCAT_DOLL,
-        .price = 3000,
-        .description = DecorDesc_ROSERADE_DOLL,
-        .tiles = DecorGfx_ROSERADE_DOLL,
-    },*/
 
     [DECOR_SEEDOT_DOLL] =
     {

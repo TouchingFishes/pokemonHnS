@@ -288,17 +288,17 @@ MauvilleCity_GameCorner_EventScript_ChooseDollPrize2::
 
 MauvilleCity_GameCorner_EventScript_TreeckoDoll::
 	setvar VAR_TEMP_1, 1
-	bufferdecorationname STR_VAR_1, DECOR_TREECKO_DOLL
+	bufferdecorationname STR_VAR_1, DECOR_SWABLU_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
 
 MauvilleCity_GameCorner_EventScript_TorchicDoll::
 	setvar VAR_TEMP_1, 2
-	bufferdecorationname STR_VAR_1, DECOR_TORCHIC_DOLL
+	bufferdecorationname STR_VAR_1, DECOR_SWABLU_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
 
 MauvilleCity_GameCorner_EventScript_MudkipDoll::
 	setvar VAR_TEMP_1, 3
-	bufferdecorationname STR_VAR_1, DECOR_MUDKIP_DOLL
+	bufferdecorationname STR_VAR_1, DECOR_SWABLU_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
 
 MauvilleCity_GameCorner_EventScript_RegirockDoll::
@@ -337,11 +337,11 @@ MauvilleCity_GameCorner_EventScript_ConfirmDollPrize2::
 MauvilleCity_GameCorner_EventScript_BuyTreeckoDoll::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_TREECKO_DOLL
-	checkdecorspace DECOR_TREECKO_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
 	removecoins DOLL_COINS
-	adddecoration DECOR_TREECKO_DOLL
+	adddecoration DECOR_SWABLU_DOLL
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
@@ -351,11 +351,11 @@ MauvilleCity_GameCorner_EventScript_BuyTreeckoDoll::
 MauvilleCity_GameCorner_EventScript_BuyTorchicDoll::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_TORCHIC_DOLL
-	checkdecorspace DECOR_TORCHIC_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
 	removecoins DOLL_COINS
-	adddecoration DECOR_TORCHIC_DOLL
+	adddecoration DECOR_SWABLU_DOLL
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
@@ -365,11 +365,11 @@ MauvilleCity_GameCorner_EventScript_BuyTorchicDoll::
 MauvilleCity_GameCorner_EventScript_BuyMudkipDoll::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_MUDKIP_DOLL
-	checkdecorspace DECOR_MUDKIP_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
 	removecoins DOLL_COINS
-	adddecoration DECOR_MUDKIP_DOLL
+	adddecoration DECOR_SWABLU_DOLL
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
@@ -701,31 +701,31 @@ MauvilleCity_GameCorner_EventScript_Girl::
 	end
 
 MauvilleCity_GameCorner_EventScript_GiveTreeckoDoll::
-	bufferdecorationname STR_VAR_2, DECOR_TREECKO_DOLL
-	checkdecorspace DECOR_TREECKO_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
-	givedecoration DECOR_TREECKO_DOLL
+	givedecoration DECOR_SWABLU_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
 	end
 
 MauvilleCity_GameCorner_EventScript_GiveTorchicDoll::
-	bufferdecorationname STR_VAR_2, DECOR_TORCHIC_DOLL
-	checkdecorspace DECOR_TORCHIC_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
-	givedecoration DECOR_TORCHIC_DOLL
+	givedecoration DECOR_SWABLU_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
 	end
 
 MauvilleCity_GameCorner_EventScript_GiveMudkipDoll::
-	bufferdecorationname STR_VAR_2, DECOR_MUDKIP_DOLL
-	checkdecorspace DECOR_MUDKIP_DOLL
+	bufferdecorationname STR_VAR_2, DECOR_SWABLU_DOLL
+	checkdecorspace DECOR_SWABLU_DOLL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForStarterDoll
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo2, MSGBOX_DEFAULT
-	givedecoration DECOR_MUDKIP_DOLL
+	givedecoration DECOR_SWABLU_DOLL
 	setflag FLAG_RECEIVED_STARTER_DOLL
 	goto MauvilleCity_GameCorner_EventScript_ReceivedStarterDoll
 	end

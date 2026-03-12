@@ -510,18 +510,6 @@ const u16 DecorGfx_SMOOCHUM_DOLL[] = {
     OBJ_EVENT_GFX_SMOOCHUM_DOLL
 };
 
-const u16 DecorGfx_TREECKO_DOLL[] = {
-    OBJ_EVENT_GFX_TREECKO_DOLL
-};
-
-const u16 DecorGfx_TORCHIC_DOLL[] = {
-    OBJ_EVENT_GFX_TORCHIC_DOLL
-};
-
-const u16 DecorGfx_MUDKIP_DOLL[] = {
-    OBJ_EVENT_GFX_MUDKIP_DOLL
-};
-
 const u16 DecorGfx_DUSKULL_DOLL[] = {
     OBJ_EVENT_GFX_DUSKULL_DOLL
 };
@@ -534,20 +522,12 @@ const u16 DecorGfx_BALTOY_DOLL[] = {
     OBJ_EVENT_GFX_BALTOY_DOLL
 };
 
-const u16 DecorGfx_KECLEON_DOLL[] = {
-    OBJ_EVENT_GFX_KECLEON_DOLL
-};
-
 const u16 DecorGfx_SKITTY_DOLL[] = {
-    OBJ_EVENT_GFX_KECLEON_DOLL
+    OBJ_EVENT_GFX_SKITTY_DOLL
 };
 
 const u16 DecorGfx_SWABLU_DOLL[] = {
     OBJ_EVENT_GFX_SWABLU_DOLL
-};
-
-const u16 DecorGfx_GULPIN_DOLL[] = {
-    OBJ_EVENT_GFX_GULPIN_DOLL
 };
 
 const u16 DecorGfx_PORYGON2_DOLL[] = {
