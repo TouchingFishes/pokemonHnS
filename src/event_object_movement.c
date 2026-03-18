@@ -469,7 +469,7 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION 0x110C
 #define OBJ_EVENT_PAL_TAG_TRUCK                   0x110D
 #define OBJ_EVENT_PAL_TAG_VIGOROTH                0x110E
-#define OBJ_EVENT_PAL_TAG_ZIGZAGOON               0x110F
+#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x110F
 #define OBJ_EVENT_PAL_TAG_MAY                     0x1110
 #define OBJ_EVENT_PAL_TAG_MAY_REFLECTION          0x1111
 #define OBJ_EVENT_PAL_TAG_MOVING_BOX              0x1112
@@ -480,9 +480,9 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_KYOGRE_REFLECTION       0x1117
 #define OBJ_EVENT_PAL_TAG_GROUDON                 0x1118
 #define OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION      0x1119
-#define OBJ_EVENT_PAL_TAG_UNUSED                  0x111A
+#define OBJ_EVENT_PAL_TAG_UNUSED                  0x111A //unused
 #define OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW        0x111B
-#define OBJ_EVENT_PAL_TAG_POOCHYENA               0x111C
+#define OBJ_EVENT_PAL_TAG_LADY                    0x111C
 #define OBJ_EVENT_PAL_TAG_RED_LEAF                0x111D
 #define OBJ_EVENT_PAL_TAG_DEOXYS                  0x111E
 #define OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE      0x111F
@@ -507,9 +507,9 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_CHUCK                 0x1132
 #define OBJ_EVENT_PAL_TAG_PRYCE                 0x1133
 #define OBJ_EVENT_PAL_TAG_CLAIR                 0x1134
-#define OBJ_EVENT_PAL_TAG_UNUSED3          0x1135
-#define OBJ_EVENT_PAL_TAG_UNUSED4       0x1136
-#define OBJ_EVENT_PAL_TAG_UNUSED2                 0x1137
+#define OBJ_EVENT_PAL_TAG_UNUSED3               0x1135 //unused
+#define OBJ_EVENT_PAL_TAG_UNUSED4               0x1136 //unused
+#define OBJ_EVENT_PAL_TAG_UNUSED2               0x1137 //unused
 #define OBJ_EVENT_PAL_TAG_JANINE                 0x1138
 #define OBJ_EVENT_PAL_TAG_WILL                   0x1139
 #define OBJ_EVENT_PAL_TAG_KAREN                  0x113A
@@ -520,10 +520,10 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_KIMONO                  0x113E
 #define OBJ_EVENT_PAL_TAG_EUSINE                  0x113F
 #define OBJ_EVENT_PAL_TAG_ELM                  0x1140
-#define OBJ_EVENT_PAL_TAG_FIREBREATHER                  0x1141
-#define OBJ_EVENT_PAL_TAG_SAGE                  0x1142
+#define OBJ_EVENT_PAL_TAG_PALMER                0x1141
+#define OBJ_EVENT_PAL_TAG_HIKER                 0x1142
 #define OBJ_EVENT_PAL_TAG_STEVEN                0x1143
-#define OBJ_EVENT_PAL_TAG_SCIENTIST_F           0x1144
+#define OBJ_EVENT_PAL_TAG_PSYCHIC               0x1144
 #define OBJ_EVENT_PAL_TAG_SHINY_GYARADOS        0x1145
 #define OBJ_EVENT_PAL_TAG_TOWER_BEAM            0x1146
 #define OBJ_EVENT_PAL_TAG_SNORLAX               0x1147
@@ -618,12 +618,12 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Silver,               OBJ_EVENT_PAL_TAG_SILVER},
     {gObjectEventPal_Kimono,               OBJ_EVENT_PAL_TAG_KIMONO},
     {gObjectEventPal_Elm,               OBJ_EVENT_PAL_TAG_ELM},
-    {gObjectEventPal_Firebreather,               OBJ_EVENT_PAL_TAG_FIREBREATHER},
+    {gObjectEventPal_Palmer,               OBJ_EVENT_PAL_TAG_PALMER},
+    {gObjectEventPal_Hiker,               OBJ_EVENT_PAL_TAG_HIKER},
     {gObjectEventPal_Eusine,               OBJ_EVENT_PAL_TAG_EUSINE},
-    {gObjectEventPal_Sage,               OBJ_EVENT_PAL_TAG_SAGE},
     {gObjectEventPal_Red,               OBJ_EVENT_PAL_TAG_RED},
     {gObjectEventPal_Steven,               OBJ_EVENT_PAL_TAG_STEVEN},
-    {gObjectEventPal_ScientistF,               OBJ_EVENT_PAL_TAG_SCIENTIST_F},
+    {gObjectEventPal_Psychic,               OBJ_EVENT_PAL_TAG_PSYCHIC},
     {gObjectEventPal_ShinyGyarados,               OBJ_EVENT_PAL_TAG_SHINY_GYARADOS},
     {gObjectEventPal_TowerBeam,               OBJ_EVENT_PAL_TAG_TOWER_BEAM},
     {gObjectEventPal_Whirlpool,                OBJ_EVENT_PAL_TAG_WHIRLPOOL},
@@ -645,7 +645,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_QuintyPlumpReflection, OBJ_EVENT_PAL_TAG_QUINTY_PLUMP_REFLECTION},
     {gObjectEventPal_Truck,                 OBJ_EVENT_PAL_TAG_TRUCK},
     {gObjectEventPal_Vigoroth,              OBJ_EVENT_PAL_TAG_VIGOROTH},
-    //{gObjectEventPal_EnemyZigzagoon,        OBJ_EVENT_PAL_TAG_ZIGZAGOON},
+    {gObjectEventPal_Cynthia,               OBJ_EVENT_PAL_TAG_CYNTHIA},
     {gObjectEventPal_May,                   OBJ_EVENT_PAL_TAG_MAY},
     {gObjectEventPal_MayReflection,         OBJ_EVENT_PAL_TAG_MAY_REFLECTION},
     {gObjectEventPal_MovingBox,             OBJ_EVENT_PAL_TAG_MOVING_BOX},
@@ -656,7 +656,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Groudon,               OBJ_EVENT_PAL_TAG_GROUDON},
     {gObjectEventPal_GroudonReflection,     OBJ_EVENT_PAL_TAG_GROUDON_REFLECTION},
     {gObjectEventPal_SubmarineShadow,       OBJ_EVENT_PAL_TAG_SUBMARINE_SHADOW},
-    {gObjectEventPal_Poochyena,             OBJ_EVENT_PAL_TAG_POOCHYENA},
+    {gObjectEventPal_Lady,                  OBJ_EVENT_PAL_TAG_LADY},
     {gObjectEventPal_RedLeaf,               OBJ_EVENT_PAL_TAG_RED_LEAF},
     {gObjectEventPal_Deoxys,                OBJ_EVENT_PAL_TAG_DEOXYS},
     {gObjectEventPal_BirthIslandStone,      OBJ_EVENT_PAL_TAG_BIRTH_ISLAND_STONE},
