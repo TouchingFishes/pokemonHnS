@@ -8108,24 +8108,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Charlotte[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Deandre[] = {
-    {
-    .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ZIGZAGOON,
-    },
-    {
-    .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ARON,
-    },
-    {
-    .iv = 0,
-    .lvl = 14,
-    .species = SPECIES_ELECTRIKE,
-    }
-};
-
 static const struct TrainerMonNoItemDefaultMoves sParty_GruntMagmaHideout1[] = {
     {
     .iv = 0,
@@ -14411,7 +14393,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Virgil[] = { //Gentleman
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Alfred[] = { //SkierGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Alfred[] = { //GentlemanGroup
     {
     .iv = 0,
     .lvl = 24,
@@ -14420,7 +14402,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Alfred[] = { //SkierGrou
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Roxanne[] = { //SkierGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Roxanne[] = { //SkierFGroup
     {
     .iv = 0,
     .lvl = 33,
@@ -14429,7 +14411,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Roxanne[] = { //SkierGro
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Clarissa[] = { //SkierGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Clarissa[] = { //SkierFGroup
     {
     .iv = 0,
     .lvl = 34,
@@ -18992,7 +18974,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Doris[] = { //MediumGrou
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Ronald[] = { //BoarderGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Ronald[] = { //SkierMGroup
     {
     .iv = 0,
     .lvl = 29,
@@ -19011,7 +18993,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Ronald[] = { //BoarderGr
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Brad[] = { //BoarderGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Brad[] = { //SkierMGroup
     {
     .iv = 0,
     .lvl = 30,
@@ -19035,7 +19017,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brad[] = { //BoarderGrou
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Douglas[] = { //PokefanMGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Douglas[] = { //SkierMGroup
     {
     .iv = 0,
     .lvl = 35,
@@ -19043,23 +19025,33 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Douglas[] = { //PokefanM
     },
 };
 
-/*
-	next_list_item ; BOARDER (4)
-	db "GERARDO@", TRAINERTYPE_NORMAL
-	db 62
-	dw DEWGONG
-	db 62
-	dw DEWGONG
-	db 64
-	dw VANILLUXE
-	db -1 ; end
 
-	next_list_item ; BOARDER (5)
-	db "DEANDRE@", TRAINERTYPE_NORMAL
-	db 69
-	dw ABOMASNOW
-	db -1 ; end
-*/
+static const struct TrainerMonNoItemDefaultMoves sParty_Gerardo[] = { //SkierMGroup
+    {
+    .iv = 0,
+    .lvl = 62,
+    .species = SPECIES_DEWGONG,
+    },
+    {
+    .iv = 0,
+    .lvl = 62,
+    .species = SPECIES_DEWGONG,
+    },
+    {
+    .iv = 0,
+    .lvl = 64,
+    .species = SPECIES_GLALIE,
+    },
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Deandre[] = { //SkierMGroup
+    {
+    .iv = 0,
+    .lvl = 69,
+    .species = SPECIES_ABOMASNOW,
+    },
+};
 
 
 static const struct TrainerMonNoItemDefaultMoves sParty_William[] = { //PokefanMGroup

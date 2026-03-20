@@ -442,10 +442,6 @@ static const union AnimCmd *const sAnims_Channeler[] = {
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_Kindler[] = {
-    sAnim_GeneralFrame0,
-};
-
 static const union AnimCmd *const sAnims_SkierF[] = {
     sAnim_GeneralFrame0,
 };
@@ -487,10 +483,6 @@ static const union AnimCmd *const sAnims_Scientist[] = {
 };
 
 static const union AnimCmd *const sAnims_Model[] = {
-    sAnim_GeneralFrame0,
-};
-
-static const union AnimCmd *const sAnims_GuitaristF[] = {
     sAnim_GeneralFrame0,
 };
 
@@ -652,7 +644,6 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_PIKE_QUEEN_LUCY] = sAnims_PikeQueenLucy,
     [TRAINER_PIC_PYRAMID_KING_BRANDON] = sAnims_PyramidKingBrandon,
     [TRAINER_PIC_CHANNELER] = sAnims_Channeler,
-    [TRAINER_PIC_KINDLER] = sAnims_Kindler,
     [TRAINER_PIC_SKIER_F] = sAnims_SkierF,
     [TRAINER_PIC_SKIER_M] = sAnims_SkierM,
     [TRAINER_PIC_GAMBLER] = sAnims_Gambler,
@@ -663,8 +654,6 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_PAINTER] = sAnims_Painter,
     [TRAINER_PIC_TAMER] = sAnims_Tamer,
     [TRAINER_PIC_SCIENTIST] = sAnims_Scientist,
-    [TRAINER_PIC_MODEL] = sAnims_Model,
-    [TRAINER_PIC_GUITARIST_F] = sAnims_GuitaristF,
     [TRAINER_PIC_BUCK] = sAnims_Buck,
     [TRAINER_PIC_LORELEI] = sAnims_Lorelei,
     [TRAINER_PIC_AGATHA] = sAnims_Agatha,

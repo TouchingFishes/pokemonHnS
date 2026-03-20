@@ -352,9 +352,6 @@ const u32 gTrainerPalette_PyramidKingBrandon[] = INCBIN_U32("graphics/trainers/f
 const u32 gTrainerFrontPic_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.4bpp.lz");
 const u32 gTrainerPalette_Channeler[] = INCBIN_U32("graphics/trainers/front_pics/channeler.gbapal.lz");
 
-const u32 gTrainerFrontPic_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/kindler.4bpp.lz");
-const u32 gTrainerPalette_Kindler[] = INCBIN_U32("graphics/trainers/front_pics/kindler.gbapal.lz");
-
 const u32 gTrainerFrontPic_SkierF[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.4bpp.lz");
 const u32 gTrainerPalette_SkierF[] = INCBIN_U32("graphics/trainers/front_pics/skier_f.gbapal.lz");
 
@@ -384,12 +381,6 @@ const u32 gTrainerPalette_Tamer[] = INCBIN_U32("graphics/trainers/front_pics/tam
 
 const u32 gTrainerFrontPic_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.4bpp.lz");
 const u32 gTrainerPalette_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.gbapal.lz");
-
-const u32 gTrainerFrontPic_Model[] = INCBIN_U32("graphics/trainers/front_pics/model.4bpp.lz");
-const u32 gTrainerPalette_Model[] = INCBIN_U32("graphics/trainers/front_pics/model.gbapal.lz");
-
-const u32 gTrainerFrontPic_GuitaristF[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_f.4bpp.lz");
-const u32 gTrainerPalette_GuitaristF[] = INCBIN_U32("graphics/trainers/front_pics/guitarist_f.gbapal.lz");
 
 const u32 gTrainerFrontPic_Buck[] = INCBIN_U32("graphics/trainers/front_pics/buck.4bpp.lz");
 const u32 gTrainerPalette_Buck[] = INCBIN_U32("graphics/trainers/front_pics/buck.gbapal.lz");

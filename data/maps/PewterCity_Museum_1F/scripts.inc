@@ -21,16 +21,16 @@ PewterCity_Museum_1F_EventScript_Receptionist::
 	msgbox PewterCity_Museum_1F_Text_Recptionist, MSGBOX_NPC
 	end
 
-PewterCity_Museum_1F_EventScript_FossilWoman::
-	goto_if_set FLAG_HIDE_PEWTER_CLAW_FOSSIL, PewterCity_Museum_1F_EventScript_FossilWoman2
-	goto_if_set FLAG_HIDE_PEWTER_ROOT_FOSSIL, PewterCity_Museum_1F_EventScript_FossilWoman2
-	goto_if_ge VAR_TEMP_2, 1, PewterCity_Museum_1F_EventScript_FossilWoman2
-	msgbox PewterCity_Museum_1F_Text_FossilWoman, MSGBOX_NPC
+PewterCity_Museum_1F_EventScript_FossilManiac::
+	goto_if_set FLAG_HIDE_PEWTER_CLAW_FOSSIL, PewterCity_Museum_1F_EventScript_FossilManiac2
+	goto_if_set FLAG_HIDE_PEWTER_ROOT_FOSSIL, PewterCity_Museum_1F_EventScript_FossilManiac2
+	goto_if_ge VAR_TEMP_2, 1, PewterCity_Museum_1F_EventScript_FossilManiac2
+	msgbox PewterCity_Museum_1F_Text_FossilManiac, MSGBOX_NPC
 	setvar VAR_TEMP_2, 1
 	end
 
-PewterCity_Museum_1F_EventScript_FossilWoman2::
-	msgbox PewterCity_Museum_1F_Text_FossilWomanAfter, MSGBOX_NPC
+PewterCity_Museum_1F_EventScript_FossilManiac2::
+	msgbox PewterCity_Museum_1F_Text_FossilManiacAfter, MSGBOX_NPC
 	end
 
 PewterCity_Museum_1F_EventScript_Oldman::
@@ -50,7 +50,7 @@ PewterCity_Museum_1F_Text_Recptionist:
 	.string "charge!\p"
 	.string "Please go ahead.$"
 
-PewterCity_Museum_1F_Text_FossilWoman:
+PewterCity_Museum_1F_Text_FossilManiac:
 	.string "You must be a strong trainer.\p"
 	.string "We don't have much use for the\n"
 	.string "fossils on the counter over there.\p"
@@ -58,7 +58,7 @@ PewterCity_Museum_1F_Text_FossilWoman:
 	.string "dropped a ton of them off here.\p"
 	.string "Go ahead and take them if you like.$"
 
-PewterCity_Museum_1F_Text_FossilWomanAfter:
+PewterCity_Museum_1F_Text_FossilManiacAfter:
 	.string "We often share research with the\n"
 	.string "RUINS OF ALPH researchers.\p"
 	.string "We even share fossils with them\n"
