@@ -39,7 +39,7 @@
       "flag": "FLAG_HIDE_GOLDENROD_NPCS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKER",
       "x": 20,
       "y": 30,
       "elevation": 0,

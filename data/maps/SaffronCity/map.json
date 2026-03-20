@@ -114,7 +114,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_HIKER",
+      "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
       "x": 28,
       "y": 39,
       "elevation": 0,
@@ -127,7 +127,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_PSYCHIC_M",
       "x": 7,
       "y": 15,
       "elevation": 0,
@@ -192,7 +192,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_1",
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
       "x": 15,
       "y": 32,
       "elevation": 0,

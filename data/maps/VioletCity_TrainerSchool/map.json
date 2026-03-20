@@ -80,7 +80,7 @@
       "flag": "FLAG_HIDE_TRAINER_SCHOOL_EARL"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
+      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
       "x": 4,
       "y": 3,
       "elevation": 0,
