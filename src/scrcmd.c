@@ -3058,9 +3058,9 @@ bool8 ScrCmd_baobacheckmon(struct ScriptContext *ctx)
     case 1:
         gSpecialVar_Result =
             (species == SPECIES_PAWNIARD ||
-             species == SPECIES_ROSERADE ||
+             species == SPECIES_LOTAD ||
              species == SPECIES_MAKUHITA ||
-             species == SPECIES_LOTUGA ||
+             species == SPECIES_LOMBRE ||
              species == SPECIES_RAELIC ||
              species == SPECIES_BELDUM ||
              species == SPECIES_ROMUSHU);

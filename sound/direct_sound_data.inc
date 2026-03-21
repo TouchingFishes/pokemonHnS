@@ -1519,16 +1519,16 @@ Cry_Shuppet::
 	.incbin "sound/direct_sound_samples/cries/shuppet.bin"
 
 	.align 2
-Cry_Roserade::
-	.incbin "sound/direct_sound_samples/cries/roserade.bin"
+Cry_Lotad::
+	.incbin "sound/direct_sound_samples/cries/lotad.bin"
 
 	.align 2
-Cry_Lotuga::
-	.incbin "sound/direct_sound_samples/cries/lotuga.bin"
+Cry_Lombre::
+	.incbin "sound/direct_sound_samples/cries/lombre.bin"
 
 	.align 2
-Cry_Vertuga::
-	.incbin "sound/direct_sound_samples/cries/vertuga.bin"
+Cry_Ludicolo::
+	.incbin "sound/direct_sound_samples/cries/ludicolo.bin"
 
 	.align 2
 Cry_Seedot::
@@ -1559,12 +1559,12 @@ Cry_Grimmsnarl::
 	.incbin "sound/direct_sound_samples/cries/grimmsnarl.bin"
 
 	.align 2
-Cry_Budew::
-	.incbin "sound/direct_sound_samples/cries/budew.bin"
-
-	.align 2
 Cry_Roselia::
 	.incbin "sound/direct_sound_samples/cries/roselia.bin"
+
+	.align 2
+Cry_Roserade::
+	.incbin "sound/direct_sound_samples/cries/roserade.bin"
 
 	.align 2
 Cry_Gothita::

@@ -3216,60 +3216,60 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BUDEW] =
+    [NATIONAL_DEX_ROSELIA] =
     {
         .categoryName = _("COCOON"),
         .height = 7,
         .weight = 115,
-        .description = gBudewPokedexText,
+        .description = gRoseliaPokedexText,
         .pokemonScale = 391,
         .pokemonOffset = 20,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ROSELIA] =
+    [NATIONAL_DEX_ROSERADE] =
     {
         .categoryName = _("POISON MOTH"),
         .height = 12,
         .weight = 316,
-        .description = gRoseliaPokedexText,
+        .description = gRoseradePokedexText,
         .pokemonScale = 269,
         .pokemonOffset = 1,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_ROSERADE] =
+    [NATIONAL_DEX_LOTAD] =
     {
         .categoryName = _("WATER WEED"),
         .height = 5,
         .weight = 26,
-        .description = gRoseradePokedexText,
+        .description = gLotadPokedexText,
         .pokemonScale = 406,
         .pokemonOffset = 19,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_LOTUGA] =
+    [NATIONAL_DEX_LOMBRE] =
     {
         .categoryName = _("JOLLY"),
         .height = 12,
         .weight = 325,
-        .description = gLotugaPokedexText,
+        .description = gLombrePokedexText,
         .pokemonScale = 277,
         .pokemonOffset = 9,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_VERTUGA] =
+    [NATIONAL_DEX_LUDICOLO] =
     {
         .categoryName = _("CAREFREE"),
         .height = 15,
         .weight = 550,
-        .description = gVertugaPokedexText,
+        .description = gLudicoloPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 268,

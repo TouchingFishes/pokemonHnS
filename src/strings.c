@@ -2191,7 +2191,7 @@ const u8 gText_EVO_LEVEL_ATK_GT_DEF[]               = _("LvlUp to {STR_VAR_2}, A
 const u8 gText_EVO_LEVEL_ATK_EQ_DEF[]               = _("LvlUp to {STR_VAR_2}, Atk = Def");
 const u8 gText_EVO_LEVEL_ATK_LT_DEF[]               = _("LvlUp to {STR_VAR_2}, Atk < Def");
 const u8 gText_EVO_LEVEL_MORGREM[]                  = _("LvlUp to {STR_VAR_2}, Morgrem personality");
-const u8 gText_EVO_LEVEL_BUDEW[]                  = _("LvlUp to {STR_VAR_2}, Budew personality");
+const u8 gText_EVO_LEVEL_ROSELIA[]                  = _("LvlUp to {STR_VAR_2}, Roselia personality");
 const u8 gText_EVO_LEVEL_NINJASK[]                  = _("LvlUp to {STR_VAR_2}");
 const u8 gText_EVO_LEVEL_SHEDINJA[]                 = _("LvlUp to {STR_VAR_2}, party<6, 1x POKéBALL");
 const u8 gText_EVO_BEAUTY[]                         = _("LvlUp, high beauty");

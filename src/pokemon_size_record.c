@@ -250,23 +250,23 @@ void CompareSeedotSize(void)
     gSpecialVar_Result = CompareMonSize(SPECIES_SEEDOT, sizeRecord);
 }
 
-void InitRoseradeSizeRecord(void)
+void InitLotadSizeRecord(void)
 {
-    VarSet(VAR_ROSERADE_SIZE_RECORD, DEFAULT_MAX_SIZE);
+    VarSet(VAR_LOTAD_SIZE_RECORD, DEFAULT_MAX_SIZE);
 }
 
-void GetRoseradeSizeRecordInfo(void)
+void GetLotadSizeRecordInfo(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_ROSERADE_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
 
-    GetMonSizeRecordInfo(SPECIES_ROSERADE, sizeRecord);
+    GetMonSizeRecordInfo(SPECIES_LOTAD, sizeRecord);
 }
 
-void CompareRoseradeSize(void)
+void CompareLotadSize(void)
 {
-    u16 *sizeRecord = GetVarPointer(VAR_ROSERADE_SIZE_RECORD);
+    u16 *sizeRecord = GetVarPointer(VAR_LOTAD_SIZE_RECORD);
 
-    gSpecialVar_Result = CompareMonSize(SPECIES_ROSERADE, sizeRecord);
+    gSpecialVar_Result = CompareMonSize(SPECIES_LOTAD, sizeRecord);
 }
 
 void GiveGiftRibbonToParty(u8 index, u8 ribbonId)

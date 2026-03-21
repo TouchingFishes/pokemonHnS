@@ -1871,13 +1871,6 @@ const u32 gMonShinyPalette_Grimmsnarl[] = INCBIN_U32("graphics/pokemon/grimmsnar
 const u8 gMonIcon_Grimmsnarl[] = INCBIN_U8("graphics/pokemon/grimmsnarl/icon.4bpp");
 const u8 gMonFootprint_Grimmsnarl[] = INCBIN_U8("graphics/pokemon/grimmsnarl/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Budew[] = INCBIN_U32("graphics/pokemon/budew/front.4bpp.lz");
-const u32 gMonPalette_Budew[] = INCBIN_U32("graphics/pokemon/budew/normal.gbapal.lz");
-const u32 gMonBackPic_Budew[] = INCBIN_U32("graphics/pokemon/budew/back.4bpp.lz");
-const u32 gMonShinyPalette_Budew[] = INCBIN_U32("graphics/pokemon/budew/shiny.gbapal.lz");
-const u8 gMonIcon_Budew[] = INCBIN_U8("graphics/pokemon/budew/icon.4bpp");
-const u8 gMonFootprint_Budew[] = INCBIN_U8("graphics/pokemon/budew/footprint.1bpp");
-
 const u32 gMonStillFrontPic_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/front.4bpp.lz");
 const u32 gMonPalette_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/normal.gbapal.lz");
 const u32 gMonBackPic_Roselia[] = INCBIN_U32("graphics/pokemon/roselia/back.4bpp.lz");
@@ -1892,19 +1885,26 @@ const u32 gMonShinyPalette_Roserade[] = INCBIN_U32("graphics/pokemon/roserade/sh
 const u8 gMonIcon_Roserade[] = INCBIN_U8("graphics/pokemon/roserade/icon.4bpp");
 const u8 gMonFootprint_Roserade[] = INCBIN_U8("graphics/pokemon/roserade/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Lotuga[] = INCBIN_U32("graphics/pokemon/lotuga/front.4bpp.lz");
-const u32 gMonPalette_Lotuga[] = INCBIN_U32("graphics/pokemon/lotuga/normal.gbapal.lz");
-const u32 gMonBackPic_Lotuga[] = INCBIN_U32("graphics/pokemon/lotuga/back.4bpp.lz");
-const u32 gMonShinyPalette_Lotuga[] = INCBIN_U32("graphics/pokemon/lotuga/shiny.gbapal.lz");
-const u8 gMonIcon_Lotuga[] = INCBIN_U8("graphics/pokemon/lotuga/icon.4bpp");
-const u8 gMonFootprint_Lotuga[] = INCBIN_U8("graphics/pokemon/lotuga/footprint.1bpp");
+const u32 gMonStillFrontPic_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/front.4bpp.lz");
+const u32 gMonPalette_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/normal.gbapal.lz");
+const u32 gMonBackPic_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/back.4bpp.lz");
+const u32 gMonShinyPalette_Lotad[] = INCBIN_U32("graphics/pokemon/lotad/shiny.gbapal.lz");
+const u8 gMonIcon_Lotad[] = INCBIN_U8("graphics/pokemon/lotad/icon.4bpp");
+const u8 gMonFootprint_Lotad[] = INCBIN_U8("graphics/pokemon/lotad/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Vertuga[] = INCBIN_U32("graphics/pokemon/vertuga/front.4bpp.lz");
-const u32 gMonPalette_Vertuga[] = INCBIN_U32("graphics/pokemon/vertuga/normal.gbapal.lz");
-const u32 gMonBackPic_Vertuga[] = INCBIN_U32("graphics/pokemon/vertuga/back.4bpp.lz");
-const u32 gMonShinyPalette_Vertuga[] = INCBIN_U32("graphics/pokemon/vertuga/shiny.gbapal.lz");
-const u8 gMonIcon_Vertuga[] = INCBIN_U8("graphics/pokemon/vertuga/icon.4bpp");
-const u8 gMonFootprint_Vertuga[] = INCBIN_U8("graphics/pokemon/vertuga/footprint.1bpp");
+const u32 gMonStillFrontPic_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/front.4bpp.lz");
+const u32 gMonPalette_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/normal.gbapal.lz");
+const u32 gMonBackPic_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/back.4bpp.lz");
+const u32 gMonShinyPalette_Lombre[] = INCBIN_U32("graphics/pokemon/lombre/shiny.gbapal.lz");
+const u8 gMonIcon_Lombre[] = INCBIN_U8("graphics/pokemon/lombre/icon.4bpp");
+const u8 gMonFootprint_Lombre[] = INCBIN_U8("graphics/pokemon/lombre/footprint.1bpp");
+
+const u32 gMonStillFrontPic_Ludicolo[] = INCBIN_U32("graphics/pokemon/ludicolo/front.4bpp.lz");
+const u32 gMonPalette_Ludicolo[] = INCBIN_U32("graphics/pokemon/ludicolo/normal.gbapal.lz");
+const u32 gMonBackPic_Ludicolo[] = INCBIN_U32("graphics/pokemon/ludicolo/back.4bpp.lz");
+const u32 gMonShinyPalette_Ludicolo[] = INCBIN_U32("graphics/pokemon/ludicolo/shiny.gbapal.lz");
+const u8 gMonIcon_Ludicolo[] = INCBIN_U8("graphics/pokemon/ludicolo/icon.4bpp");
+const u8 gMonFootprint_Ludicolo[] = INCBIN_U8("graphics/pokemon/ludicolo/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/front.4bpp.lz");
 const u32 gMonPalette_Seedot[] = INCBIN_U32("graphics/pokemon/seedot/normal.gbapal.lz");

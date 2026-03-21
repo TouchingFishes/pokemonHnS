@@ -7058,10 +7058,10 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_BUDEW] = { .learnset = {
+    [SPECIES_ROSELIA] = { .learnset = {
     } },
 
-    [SPECIES_ROSELIA] = { .learnset = {
+    [SPECIES_ROSERADE] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
@@ -7085,7 +7085,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_ROSERADE] = { .learnset = {
+    [SPECIES_LOTAD] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -7110,7 +7110,7 @@ const union {
         .FLASH = TRUE,
     } },
 
-    [SPECIES_LOTUGA] = { .learnset = {
+    [SPECIES_LOMBRE] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,
@@ -7140,7 +7140,7 @@ const union {
         .WHIRLPOOL = TRUE,
     } },
 
-    [SPECIES_VERTUGA] = { .learnset = {
+    [SPECIES_LUDICOLO] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,

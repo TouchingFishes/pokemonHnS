@@ -3110,7 +3110,7 @@ static const union AnimCmd sAnim_Grimmsnarl_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Budew_1[] =
+static const union AnimCmd sAnim_Roselia_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 10),
@@ -3120,13 +3120,13 @@ static const union AnimCmd sAnim_Budew_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Budew_2[] =
+static const union AnimCmd sAnim_Roselia_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Roselia_1[] =
+static const union AnimCmd sAnim_Roserade_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_FRAME(1, 1),
@@ -3146,13 +3146,13 @@ static const union AnimCmd sAnim_Roselia_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Roselia_2[] =
+static const union AnimCmd sAnim_Roserade_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Roserade_1[] =
+static const union AnimCmd sAnim_Lotad_1[] =
 {
     ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 55),
@@ -3160,17 +3160,17 @@ static const union AnimCmd sAnim_Roserade_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Lotuga_1[] =
+static const union AnimCmd sAnim_Lombre_1[] =
 {
-    /*ANIMCMD_FRAME(0, 6),
+    ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 7),*/
+    ANIMCMD_FRAME(0, 7),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Vertuga_1[] =
+static const union AnimCmd sAnim_Ludicolo_1[] =
 {
     /*ANIMCMD_FRAME(0, 22),
     ANIMCMD_FRAME(1, 22),
@@ -5617,11 +5617,11 @@ SINGLE_ANIMATION(Linoone);
 SINGLE_ANIMATION(Impidimp);
 DOUBLE_ANIMATION(Morgrem);
 DOUBLE_ANIMATION(Grimmsnarl);
-DOUBLE_ANIMATION(Budew);
 DOUBLE_ANIMATION(Roselia);
-SINGLE_ANIMATION(Roserade);
-SINGLE_ANIMATION(Lotuga);
-SINGLE_ANIMATION(Vertuga);
+DOUBLE_ANIMATION(Roserade);
+SINGLE_ANIMATION(Lotad);
+SINGLE_ANIMATION(Lombre);
+SINGLE_ANIMATION(Ludicolo);
 SINGLE_ANIMATION(Seedot);
 SINGLE_ANIMATION(Nuzleaf);
 SINGLE_ANIMATION(Shiftry);
@@ -6120,11 +6120,11 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_IMPIDIMP]     = sAnims_Impidimp,
     [SPECIES_MORGREM]     = sAnims_Morgrem,
     [SPECIES_GRIMMSNARL]   = sAnims_Grimmsnarl,
-    [SPECIES_BUDEW]     = sAnims_Budew,
-    [SPECIES_ROSELIA]      = sAnims_Roselia,
-    [SPECIES_ROSERADE]       = sAnims_Roserade,
-    [SPECIES_LOTUGA]      = sAnims_Lotuga,
-    [SPECIES_VERTUGA]    = sAnims_Vertuga,
+    [SPECIES_ROSELIA]     = sAnims_Roselia,
+    [SPECIES_ROSERADE]      = sAnims_Roserade,
+    [SPECIES_LOTAD]       = sAnims_Lotad,
+    [SPECIES_LOMBRE]      = sAnims_Lombre,
+    [SPECIES_LUDICOLO]    = sAnims_Ludicolo,
     [SPECIES_SEEDOT]      = sAnims_Seedot,
     [SPECIES_NUZLEAF]     = sAnims_Nuzleaf,
     [SPECIES_SHIFTRY]     = sAnims_Shiftry,

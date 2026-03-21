@@ -276,7 +276,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_EVAN] = {
-        .species = SPECIES_ROSELIA,
+        .species = SPECIES_ROSERADE,
         .nickname = _("DUSTER"),
         .trainerName = _("EVAN"),
         .trainerGfxId = OBJ_EVENT_GFX_LITTLE_BOY,
@@ -1284,7 +1284,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_KATRINA] = {
-        .species = SPECIES_ROSERADE,
+        .species = SPECIES_LOTAD,
         .nickname = _("TADO"),
         .trainerName = _("KATRINA"),
         .trainerGfxId = OBJ_EVENT_GFX_WOMAN_1,
@@ -1816,7 +1816,7 @@ const struct ContestPokemon gContestOpponents[] =
         .otId = CONTEST_AI_TRAINER_ID,
     },
     [CONTEST_OPPONENT_KARLA] = {
-        .species = SPECIES_LOTUGA,
+        .species = SPECIES_LOMBRE,
         .nickname = _("LOMBE"),
         .trainerName = _("KARLA"),
         .trainerGfxId = OBJ_EVENT_GFX_GIRL_1,

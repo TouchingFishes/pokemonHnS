@@ -217,7 +217,7 @@ static const u16 sIsValidSpecies[] =
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
     SPECIES_IMPIDIMP,
-    SPECIES_ROSERADE,
+    SPECIES_LOTAD,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -319,7 +319,7 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_POOCHYENA,
     SPECIES_ZIGZAGOON,
     SPECIES_IMPIDIMP,
-    SPECIES_ROSERADE,
+    SPECIES_LOTAD,
     SPECIES_SEEDOT,
     SPECIES_NINCADA,
     SPECIES_VOLTREL,
@@ -662,7 +662,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
-        case EVO_LEVEL_BUDEW:
+        case EVO_LEVEL_ROSELIA:
             if (gEvolutionTable[partnerSpecies][i].param <= partnerLevel && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
@@ -698,7 +698,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
-            else if ((partnerSpecies == SPECIES_LOTUGA || partnerSpecies == SPECIES_NUZLEAF) && partnerLevel >= 38)
+            else if ((partnerSpecies == SPECIES_LOMBRE || partnerSpecies == SPECIES_NUZLEAF) && partnerLevel >= 38)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
@@ -728,9 +728,9 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             else if ((partnerSpecies == SPECIES_PANSAGE || partnerSpecies == SPECIES_PANSEAR
                    || partnerSpecies == SPECIES_PANPOUR || partnerSpecies == SPECIES_COTTONEE
                    || partnerSpecies == SPECIES_PETILIL || partnerSpecies == SPECIES_MINCCINO
-                   || partnerSpecies == SPECIES_ROSELIA || partnerSpecies == SPECIES_ROSELIA_YELLOW_FLOWER
-                   || partnerSpecies == SPECIES_ROSELIA_ORANGE_FLOWER || partnerSpecies == SPECIES_ROSELIA_BLUE_FLOWER
-                   || partnerSpecies == SPECIES_ROSELIA_WHITE_FLOWER) && partnerLevel >= 15)
+                   || partnerSpecies == SPECIES_ROSERADE || partnerSpecies == SPECIES_ROSERADE_YELLOW_FLOWER
+                   || partnerSpecies == SPECIES_ROSERADE_ORANGE_FLOWER || partnerSpecies == SPECIES_ROSERADE_BLUE_FLOWER
+                   || partnerSpecies == SPECIES_ROSERADE_WHITE_FLOWER) && partnerLevel >= 15)
             {
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
@@ -985,7 +985,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) <= 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
-        case EVO_LEVEL_BUDEW:
+        case EVO_LEVEL_ROSELIA:
             if (gEvolutionTable[species][i].param <= level && (upperPersonality % 10) > 4)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
@@ -1021,7 +1021,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             {
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             }
-            else if ((species == SPECIES_LOTUGA || species == SPECIES_NUZLEAF) && level >= 38)
+            else if ((species == SPECIES_LOMBRE || species == SPECIES_NUZLEAF) && level >= 38)
             {
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             }

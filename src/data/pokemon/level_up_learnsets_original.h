@@ -3866,25 +3866,6 @@ static const u16 sGrimmsnarlLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sBudewLevelUpLearnset_Original[] = {
-    LEVEL_UP_MOVE(1, MOVE_ABSORB),
-    LEVEL_UP_MOVE(5, MOVE_GROWTH),
-    LEVEL_UP_MOVE(9, MOVE_POISON_STING),
-    LEVEL_UP_MOVE(13, MOVE_STUN_SPORE),
-    LEVEL_UP_MOVE(17, MOVE_MEGA_DRAIN),
-    LEVEL_UP_MOVE(21, MOVE_LEECH_SEED),
-    LEVEL_UP_MOVE(25, MOVE_MAGICAL_LEAF),
-    LEVEL_UP_MOVE(29, MOVE_GRASS_WHISTLE),
-    LEVEL_UP_MOVE(33, MOVE_GIGA_DRAIN),
-    LEVEL_UP_MOVE(37, MOVE_SWEET_SCENT),
-    LEVEL_UP_MOVE(41, MOVE_INGRAIN),
-    LEVEL_UP_MOVE(45, MOVE_TOXIC),
-    LEVEL_UP_MOVE(49, MOVE_PETAL_DANCE),
-    LEVEL_UP_MOVE(53, MOVE_AROMATHERAPY),
-    LEVEL_UP_MOVE(57, MOVE_SYNTHESIS),
-    LEVEL_UP_END
-};
-
 static const u16 sRoseliaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE(1, MOVE_ABSORB),
     LEVEL_UP_MOVE(5, MOVE_GROWTH),
@@ -3923,7 +3904,18 @@ static const u16 sRoseradeLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sLotugaLevelUpLearnset_Original[] = {
+static const u16 sLotadLevelUpLearnset_Original[] = {
+    LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
+    LEVEL_UP_MOVE( 3, MOVE_GROWL),
+    LEVEL_UP_MOVE( 7, MOVE_ABSORB),
+    LEVEL_UP_MOVE(13, MOVE_NATURE_POWER),
+    LEVEL_UP_MOVE(21, MOVE_MIST),
+    LEVEL_UP_MOVE(31, MOVE_RAIN_DANCE),
+    LEVEL_UP_MOVE(43, MOVE_MEGA_DRAIN),
+    LEVEL_UP_END
+};
+
+static const u16 sLombreLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 3, MOVE_GROWL),
     LEVEL_UP_MOVE( 7, MOVE_ABSORB),
@@ -3937,7 +3929,7 @@ static const u16 sLotugaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sVertugaLevelUpLearnset_Original[] = {
+static const u16 sLudicoloLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_GROWL),
     LEVEL_UP_MOVE( 1, MOVE_ABSORB),

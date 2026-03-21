@@ -381,12 +381,12 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
@@ -515,7 +515,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
@@ -540,7 +540,7 @@
               {
                 "min_level": 4,
                 "max_level": 4,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
@@ -689,7 +689,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 4,
@@ -823,7 +823,7 @@
               {
                 "min_level": 3,
                 "max_level": 3,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 3,
@@ -4474,7 +4474,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 17,
@@ -4489,17 +4489,17 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 18,
@@ -4708,7 +4708,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               }
             ]
           },
@@ -4842,7 +4842,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 17,
@@ -4857,17 +4857,17 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 18,
@@ -5076,7 +5076,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               }
             ]
           },
@@ -7094,7 +7094,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 6,
@@ -7163,7 +7163,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 6,
@@ -7178,7 +7178,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 5,
@@ -7232,7 +7232,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 6,
@@ -7301,7 +7301,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_BUDEW"
+                "species": "SPECIES_ROSELIA"
               },
               {
                 "min_level": 6,
@@ -33806,27 +33806,27 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_SENTRET"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_SENTRET"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
@@ -33905,32 +33905,32 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 2,
@@ -66782,7 +66782,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_ROSERADE"
+                "species": "SPECIES_LOTAD"
               },
               {
                 "min_level": 20,
@@ -66802,7 +66802,7 @@
               {
                 "min_level": 20,
                 "max_level": 30,
-                "species": "SPECIES_LOTUGA"
+                "species": "SPECIES_LOMBRE"
               },
               {
                 "min_level": 20,

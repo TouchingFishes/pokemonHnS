@@ -1566,7 +1566,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [3] =
                                         {
-                                            .species = SPECIES_VERTUGA,
+                                            .species = SPECIES_LUDICOLO,
                                             .heldItem = ITEM_SITRUS_BERRY,
                                             .moves = {MOVE_TEETER_DANCE, MOVE_FAKE_OUT, MOVE_RAIN_DANCE, MOVE_SURF},
                                             .hpEV = 252,
@@ -1581,7 +1581,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0x50,
-                                            .nickname = _("VERTUGA"),
+                                            .nickname = _("LUDICOLO"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [4] =

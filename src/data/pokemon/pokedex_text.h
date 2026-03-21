@@ -1606,31 +1606,31 @@ const u8 gGrimmsnarlPokedexText[] = _(
     "flower-covered fields collecting pollen.\n"
     "It attacks ferociously when angered.");
 
-const u8 gBudewPokedexText[] = _(
+const u8 gRoseliaPokedexText[] = _(
     "To avoid detection by its enemies, it hides\n"
     "motionlessly beneath large leaves and in\n"
     "the gaps of branches. It also attaches\n"
     "dead leaves to its body for camouflage.");
 
-const u8 gRoseliaPokedexText[] = _(
+const u8 gRoseradePokedexText[] = _(
     "It is a nocturnal POKéMON that flies from\n"
     "fields and mountains to the attraction of\n"
     "streetlights at night. It looses highly\n"
     "toxic powder from its wings.");
 
-const u8 gRoseradePokedexText[] = _(
+const u8 gLotadPokedexText[] = _(
     "This POKéMON lives in ponds with clean\n"
     "water. It is known to ferry small POKéMON\n"
     "across ponds by carrying them on the\n"
     "broad leaf on its head.");
 
-const u8 gLotugaPokedexText[] = _(
+const u8 gLombrePokedexText[] = _(
     "In the evening, it takes great delight in\n"
     "popping out of rivers and startling people.\n"
     "It feeds on aquatic moss that grows on\n"
     "rocks in the riverbed.");
 
-const u8 gVertugaPokedexText[] = _(
+const u8 gLudicoloPokedexText[] = _(
     "When it hears festive music, all the cells\n"
     "in its body become stimulated, and it\n"
     "begins moving in rhythm. It does not\n"

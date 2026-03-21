@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_LOTUGA",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_LOMBRE",
       "x": 9,
       "y": 33,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_ROSERADE",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_LOTAD",
       "x": 11,
       "y": 18,
       "elevation": 0,

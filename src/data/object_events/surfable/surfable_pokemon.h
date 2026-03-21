@@ -299,15 +299,15 @@ const struct RideablePokemon gSurfablePokemon[] =
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_ROSERADE,
+        .species = SPECIES_LOTAD,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_LOTUGA,
+        .species = SPECIES_LOMBRE,
         .trainerPose = 0,
     },
     {
-        .species = SPECIES_VERTUGA,
+        .species = SPECIES_LUDICOLO,
         .trainerPose = 0,
     },
     {
