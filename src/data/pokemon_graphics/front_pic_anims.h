@@ -3399,7 +3399,7 @@ static const union AnimCmd sAnim_Delcatty_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Kecleon_1[] =
+static const union AnimCmd sAnim_Psychu_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 18),
@@ -5643,7 +5643,7 @@ SINGLE_ANIMATION(Wailmer);
 SINGLE_ANIMATION(Wailord);
 SINGLE_ANIMATION(Skitty);
 SINGLE_ANIMATION(Delcatty);
-SINGLE_ANIMATION(Kecleon);
+SINGLE_ANIMATION(Psychu);
 SINGLE_ANIMATION(Baltoy);
 SINGLE_ANIMATION(Claydol);
 SINGLE_ANIMATION(Nosepass);
@@ -6144,7 +6144,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_WAILORD]     = sAnims_Wailord,
     [SPECIES_SKITTY]      = sAnims_Skitty,
     [SPECIES_DELCATTY]    = sAnims_Delcatty,
-    [SPECIES_KECLEON]     = sAnims_Kecleon,
+    [SPECIES_PSYCHU]     = sAnims_Psychu,
     [SPECIES_BALTOY]      = sAnims_Baltoy,
     [SPECIES_CLAYDOL]     = sAnims_Claydol,
     [SPECIES_NOSEPASS]    = sAnims_Nosepass,

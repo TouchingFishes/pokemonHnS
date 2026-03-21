@@ -18,7 +18,7 @@ FortreeCity_EventScript_Man::
 FortreeCity_EventScript_Woman::
 	lock
 	faceplayer
-	goto_if_set FLAG_KECLEON_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible
+	goto_if_set FLAG_PSYCHU_FLED_FORTREE, FortreeCity_EventScript_WomanGymAccessible
 	msgbox FortreeCity_Text_SomethingBlockingGym, MSGBOX_DEFAULT
 	release
 	end
@@ -52,7 +52,7 @@ FortreeCity_EventScript_GymSign::
 	msgbox FortreeCity_Text_GymSign, MSGBOX_SIGN
 	end
 
-FortreeCity_EventScript_Kecleon::
+FortreeCity_EventScript_Psychu::
 	lock
 	faceplayer
 	checkitem ITEM_DEVON_SCOPE
@@ -70,20 +70,20 @@ FortreeCity_EventScript_AskUseDevonScope::
 FortreeCity_EventScript_UseDevonScope::
 	msgbox FortreeCity_Text_UsedDevonScopePokemonFled, MSGBOX_DEFAULT
 	closemessage
-	applymovement VAR_LAST_TALKED, Movement_KecleonAppears
+	applymovement VAR_LAST_TALKED, Movement_PsychuAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_PSYCHU, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	applymovement VAR_LAST_TALKED, FortreeCity_Movement_KecleonFlee
+	applymovement VAR_LAST_TALKED, FortreeCity_Movement_PsychuFlee
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
-	setflag FLAG_KECLEON_FLED_FORTREE
+	setflag FLAG_PSYCHU_FLED_FORTREE
 	release
 	end
 
-FortreeCity_Movement_KecleonFlee:
+FortreeCity_Movement_PsychuFlee:
 	walk_right
 	step_end
 

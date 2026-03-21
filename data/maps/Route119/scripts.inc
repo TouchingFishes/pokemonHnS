@@ -9,10 +9,10 @@ Route119_MapScripts::
 
 Route119_OnResume:
 	callnative SetTimeBasedEncounters
-	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route119_EventScript_TryRemoveKecleon
+	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, Route119_EventScript_TryRemovePsychu
 	end
 
-Route119_EventScript_TryRemoveKecleon::
+Route119_EventScript_TryRemovePsychu::
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, Common_EventScript_NopReturn
 	removeobject VAR_LAST_TALKED
@@ -32,68 +32,68 @@ Route119_EventScript_MoveInstituteWorkersDownstairs::
 	setvar VAR_WEATHER_INSTITUTE_STATE, 2
 	return
 
-Route119_EventScript_SapphireKecleon::
+Route119_EventScript_SapphirePsychu::
 	lock
 	faceplayer
 	setvar VAR_0x8009, 7
 	checkitem ITEM_DEVON_SCOPE
-	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_SapphireKecleon2
-	msgbox Kecleon_Text_SomethingUnseeable, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, TRUE, Route119_EventScript_SapphirePsychu2
+	msgbox Psychu_Text_SomethingUnseeable, MSGBOX_DEFAULT
 	release
 	end
 
-Route119_EventScript_SapphireKecleon2::
-	msgbox Kecleon_Text_WantToUseDevonScope, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route119_EventScript_SapphireKecleon3
+Route119_EventScript_SapphirePsychu2::
+	msgbox Psychu_Text_WantToUseDevonScope, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route119_EventScript_SapphirePsychu3
 	release
 	end
 
-Route119_EventScript_SapphireKecleon3::
-	msgbox Kecleon_Text_UseDevonScopeMonAttacked, MSGBOX_DEFAULT
+Route119_EventScript_SapphirePsychu3::
+	msgbox Psychu_Text_UseDevonScopeMonAttacked, MSGBOX_DEFAULT
 	closemessage
 	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
 	waitmovement 0
-	applymovement VAR_LAST_TALKED, Movement_KecleonAppears
+	applymovement VAR_LAST_TALKED, Movement_PsychuAppears
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_KECLEON, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_PSYCHU, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
-	setwildbattle SPECIES_KECLEON, 29
+	setwildbattle SPECIES_PSYCHU, 29
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
 	dowildbattle
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route119_EventScript_SapphireKecleon4
-	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route119_EventScript_SapphireKecleon4
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route119_EventScript_SapphireKecleon5
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route119_EventScript_SapphireKecleon5
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route119_EventScript_SapphirePsychu4
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route119_EventScript_SapphirePsychu4
+	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, Route119_EventScript_SapphirePsychu5
+	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, Route119_EventScript_SapphirePsychu5
 	release
 	end
 
-Route119_EventScript_SapphireKecleon4::
-	msgbox Route119_EventScript_SapphireKecleon_Text1, MSGBOX_DEFAULT
+Route119_EventScript_SapphirePsychu4::
+	msgbox Route119_EventScript_SapphirePsychu_Text1, MSGBOX_DEFAULT
 	closemessage
 	giveitem ITEM_SAPPHIRE
 	closemessage
-	setflag FLAG_SAPPHIRE_KECLEON
+	setflag FLAG_SAPPHIRE_PSYCHU
 	goto Common_EventScript_RemoveStaticPokemon
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	releaseall
 	end
 
-Route119_EventScript_SapphireKecleon5::
-	msgbox Route119_EventScript_SapphireKecleon_Text2, MSGBOX_DEFAULT
+Route119_EventScript_SapphirePsychu5::
+	msgbox Route119_EventScript_SapphirePsychu_Text2, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
-Route119_EventScript_SapphireKecleon_Text1:
-	.string "The KECLEON dropped a\n"
+Route119_EventScript_SapphirePsychu_Text1:
+	.string "The PSYCHU dropped a\n"
 	.string "SHINY object!$"
 
-Route119_EventScript_SapphireKecleon_Text2:
-	.string "The invisible KECLEON\n"
+Route119_EventScript_SapphirePsychu_Text2:
+	.string "The invisible PSYCHU\n"
 	.string "is still here…$"
 
 Route119_EventScript_RivalTrigger1::

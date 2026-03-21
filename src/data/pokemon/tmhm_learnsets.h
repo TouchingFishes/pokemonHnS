@@ -7649,7 +7649,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_KECLEON] = { .learnset = {
+    [SPECIES_PSYCHU] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,

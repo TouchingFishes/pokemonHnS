@@ -4224,12 +4224,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_KECLEON] =
+    [NATIONAL_DEX_PSYCHU] =
     {
         .categoryName = _("COLOR SWAP"),
         .height = 10,
         .weight = 220,
-        .description = gKecleonPokedexText,
+        .description = gPsychuPokedexText,
         .pokemonScale = 316,
         .pokemonOffset = 10,
         .trainerScale = 256,

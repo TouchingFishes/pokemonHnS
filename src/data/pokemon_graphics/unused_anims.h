@@ -323,7 +323,7 @@ static const union AnimCmd sUnusedAnim_Delcatty_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Kecleon_1[] =
+static const union AnimCmd sUnusedAnim_Psychu_1[] =
 {
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_FRAME(1, 7),
@@ -350,7 +350,7 @@ static const union AnimCmd sUnusedAnim_Kecleon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Kecleon_2[] =
+static const union AnimCmd sUnusedAnim_Psychu_2[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(7, 12),
@@ -376,7 +376,7 @@ static const union AnimCmd sUnusedAnim_Kecleon_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Kecleon_3[] =
+static const union AnimCmd sUnusedAnim_Psychu_3[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(7, 12),
@@ -402,7 +402,7 @@ static const union AnimCmd sUnusedAnim_Kecleon_3[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Kecleon_4[] =
+static const union AnimCmd sUnusedAnim_Psychu_4[] =
 {
     ANIMCMD_FRAME(0,18),
     ANIMCMD_FRAME(10, 18),
@@ -1256,7 +1256,7 @@ static const union AnimCmd *const sUnusedAnims_Wailmer[] = {sAnim_GeneralFrame0,
 static const union AnimCmd *const sUnusedAnims_Wailord[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Skitty[] = {sAnim_GeneralFrame0, sUnusedAnim_Skitty_1};
 static const union AnimCmd *const sUnusedAnims_Delcatty[] = {sAnim_GeneralFrame0, sUnusedAnim_Delcatty_1};
-static const union AnimCmd *const sUnusedAnims_Kecleon[] = {sAnim_GeneralFrame0, sUnusedAnim_Kecleon_1, sUnusedAnim_Kecleon_2, sUnusedAnim_Kecleon_3, sUnusedAnim_Kecleon_4};
+static const union AnimCmd *const sUnusedAnims_Psychu[] = {sAnim_GeneralFrame0, sUnusedAnim_Psychu_1, sUnusedAnim_Psychu_2, sUnusedAnim_Psychu_3, sUnusedAnim_Psychu_4};
 static const union AnimCmd *const sUnusedAnims_Baltoy[] = {sAnim_GeneralFrame0, sUnusedAnim_Baltoy_1};
 static const union AnimCmd *const sUnusedAnims_Claydol[] = {sAnim_GeneralFrame0, sUnusedAnim_Claydol_1};
 static const union AnimCmd *const sUnusedAnims_Nosepass[] = {sAnim_GeneralFrame0, sUnusedAnim_Nosepass_1};
@@ -1698,7 +1698,7 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_WAILORD] = sUnusedAnims_Wailord,
     [SPECIES_SKITTY] = sUnusedAnims_Skitty,
     [SPECIES_DELCATTY] = sUnusedAnims_Delcatty,
-    [SPECIES_KECLEON] = sUnusedAnims_Kecleon,
+    [SPECIES_PSYCHU] = sUnusedAnims_Psychu,
     [SPECIES_BALTOY] = sUnusedAnims_Baltoy,
     [SPECIES_CLAYDOL] = sUnusedAnims_Claydol,
     [SPECIES_NOSEPASS] = sUnusedAnims_Nosepass,

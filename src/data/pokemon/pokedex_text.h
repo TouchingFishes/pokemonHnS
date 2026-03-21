@@ -2110,10 +2110,10 @@ const u8 gCastformPokedexText[] = _(
     "the temperature and humidity appear to\n"
     "affect its cellular structure.");
 
-const u8 gKecleonPokedexText[] = _(
+const u8 gPsychuPokedexText[] = _(
     "A POKéMON that has the ability to alter its\n"
     "body colors to match its surroundings.\n"
-    "A KECLEON reverts to its original colors if\n"
+    "A PSYCHU reverts to its original colors if\n"
     "it is startled.");
 
 const u8 gShuppetPokedexText[] = _(

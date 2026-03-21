@@ -2039,12 +2039,12 @@ const u32 gMonShinyPalette_Delcatty[] = INCBIN_U32("graphics/pokemon/delcatty/sh
 const u8 gMonIcon_Delcatty[] = INCBIN_U8("graphics/pokemon/delcatty/icon.4bpp");
 const u8 gMonFootprint_Delcatty[] = INCBIN_U8("graphics/pokemon/delcatty/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/front.4bpp.lz");
-const u32 gMonPalette_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/normal.gbapal.lz");
-const u32 gMonBackPic_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/back.4bpp.lz");
-const u32 gMonShinyPalette_Kecleon[] = INCBIN_U32("graphics/pokemon/kecleon/shiny.gbapal.lz");
-const u8 gMonIcon_Kecleon[] = INCBIN_U8("graphics/pokemon/kecleon/icon.4bpp");
-const u8 gMonFootprint_Kecleon[] = INCBIN_U8("graphics/pokemon/kecleon/footprint.1bpp");
+const u32 gMonStillFrontPic_Psychu[] = INCBIN_U32("graphics/pokemon/psychu/front.4bpp.lz");
+const u32 gMonPalette_Psychu[] = INCBIN_U32("graphics/pokemon/psychu/normal.gbapal.lz");
+const u32 gMonBackPic_Psychu[] = INCBIN_U32("graphics/pokemon/psychu/back.4bpp.lz");
+const u32 gMonShinyPalette_Psychu[] = INCBIN_U32("graphics/pokemon/psychu/shiny.gbapal.lz");
+const u8 gMonIcon_Psychu[] = INCBIN_U8("graphics/pokemon/psychu/icon.4bpp");
+const u8 gMonFootprint_Psychu[] = INCBIN_U8("graphics/pokemon/psychu/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Baltoy[] = INCBIN_U32("graphics/pokemon/baltoy/front.4bpp.lz");
 const u32 gMonPalette_Baltoy[] = INCBIN_U32("graphics/pokemon/baltoy/normal.gbapal.lz");

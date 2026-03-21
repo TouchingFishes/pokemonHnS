@@ -1391,8 +1391,8 @@ Cry_Celebi::
 	.incbin "sound/direct_sound_samples/cries/celebi.bin"
 
 	.align 2
-Cry_Kecleon::
-	.incbin "sound/direct_sound_samples/cries/kecleon.bin"
+Cry_Psychu::
+	.incbin "sound/direct_sound_samples/cries/psychu.bin"
 
 	.align 2
 Cry_Purgislug::

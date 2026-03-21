@@ -4207,7 +4207,7 @@ static const u16 sDelcattyLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sKecleonLevelUpLearnset_Original[] = {
+static const u16 sPsychuLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_THIEF),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),

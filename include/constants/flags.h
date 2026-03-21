@@ -76,7 +76,7 @@
 #define FLAG_DEFEATED_REGIELEKI                 0x3B 
 #define FLAG_HIDE_REGIELEKI                     0x3C 
 #define FLAG_HIDE_REGIDRAGO                     0x3D
-#define FLAG_SAPPHIRE_KECLEON                   0x3E 
+#define FLAG_SAPPHIRE_PSYCHU                   0x3E 
 #define FLAG_SYS_BRAILLE_REGIDRAGO_COMPLETED    0x3F
 #define FLAG_DEFEATED_REGIDRAGO                 0x40 
 #define FLAG_DEFEATED_SPIRITOMB                  0x41 
@@ -321,7 +321,7 @@
 #define FLAG_MET_RIVAL_LILYCOVE              0x124
 #define FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE 0x125
 #define FLAG_EXCHANGED_SCANNER               0x126
-#define FLAG_KECLEON_FLED_FORTREE            0x127
+#define FLAG_PSYCHU_FLED_FORTREE            0x127
 #define FLAG_PETALBURG_MART_EXPANDED_ITEMS   0x128
 #define FLAG_RECEIVED_MIRACLE_SEED           0x129
 #define FLAG_RECEIVED_BELDUM                 0x12A

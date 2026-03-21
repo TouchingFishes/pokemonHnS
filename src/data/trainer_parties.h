@@ -1358,7 +1358,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica1[] = {
     {
     .iv = 0,
     .lvl = 29,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
     },
     {
@@ -1373,7 +1373,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica2[] = {
     {
     .iv = 80,
     .lvl = 35,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
     },
     {
@@ -1388,7 +1388,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica3[] = {
     {
     .iv = 200,
     .lvl = 45,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
     },
     {
@@ -1403,7 +1403,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica4[] = {
     {
     .iv = 255,
     .lvl = 51,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
     },
     {
@@ -1424,7 +1424,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Jessica5[] = {
     {
     .iv = 255,
     .lvl = 64,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_BIND, MOVE_LICK, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK}
     },
     {
@@ -6229,7 +6229,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jackson5[] = {
     {
     .iv = 255,
     .lvl = 61,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     },
     {
     .iv = 255,
@@ -6653,7 +6653,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jonathan[] = {
     {
     .iv = 0,
     .lvl = 33,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     },
     {
     .iv = 0,
@@ -7251,7 +7251,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Gerald[] = {
     {
     .iv = 100,
     .lvl = 23,
-    .species = SPECIES_KECLEON,
+    .species = SPECIES_PSYCHU,
     .moves = {MOVE_FLAMETHROWER, MOVE_FURY_SWIPES, MOVE_FAINT_ATTACK, MOVE_BIND}
     }
 };

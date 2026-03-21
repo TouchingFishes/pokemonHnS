@@ -412,7 +412,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_BridgeKecleon",
+      "script": "Route120_EventScript_BridgePsychu",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {
@@ -503,7 +503,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_Kecleon1",
+      "script": "Route120_EventScript_Psychu1",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {
@@ -516,7 +516,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_Kecleon2",
+      "script": "Route120_EventScript_Psychu2",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {
@@ -529,7 +529,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_Kecleon3",
+      "script": "Route120_EventScript_Psychu3",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {
@@ -542,7 +542,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_Kecleon5",
+      "script": "Route120_EventScript_Psychu5",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {
@@ -555,7 +555,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route120_EventScript_Kecleon4",
+      "script": "Route120_EventScript_Psychu4",
       "flag": "FLAG_GARBAGEFLAG"
     },
     {

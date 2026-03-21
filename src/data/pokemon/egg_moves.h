@@ -1319,7 +1319,7 @@ const u16 gEggMoves[] = {
               MOVE_SUBSTITUTE,
               MOVE_TICKLE),
 
-    egg_moves(KECLEON,
+    egg_moves(PSYCHU,
               MOVE_DISABLE,
               MOVE_DIZZY_PUNCH,
               MOVE_FAKE_OUT,
@@ -2749,7 +2749,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_SUBSTITUTE,
               MOVE_TICKLE),
 
-    egg_moves(KECLEON,
+    egg_moves(PSYCHU,
               MOVE_DISABLE,
               MOVE_MAGIC_COAT,
               MOVE_TRICK),

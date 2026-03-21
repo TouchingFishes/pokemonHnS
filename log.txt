@@ -375,7 +375,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kabutops.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kadabra.aif sound/direct_sound_samples/cries/kadabra.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kakuna.aif sound/direct_sound_samples/cries/kakuna.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kangaskhan.aif sound/direct_sound_samples/cries/kangaskhan.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kecleon.aif sound/direct_sound_samples/cries/kecleon.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/psychu.aif sound/direct_sound_samples/cries/psychu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kingdra.aif sound/direct_sound_samples/cries/kingdra.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kingler.aif sound/direct_sound_samples/cries/kingler.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gothorita.aif sound/direct_sound_samples/cries/gothorita.bin --compress

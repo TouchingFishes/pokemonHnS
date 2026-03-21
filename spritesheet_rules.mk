@@ -2040,7 +2040,7 @@ $(OBJEVENTGFXDIR)/pokemon/castform_rainy.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/castform_snowy.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/kecleon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/psychu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/shuppet.4bpp: %.4bpp: %.png
