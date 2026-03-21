@@ -10597,7 +10597,7 @@ const union {
         .SNATCH = TRUE,
     } }, 
         
-    [SPECIES_BOMBIRDIER] = { .learnset = {
+    [SPECIES_GEOWATT] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .CALM_MIND = TRUE,
         .TOXIC = TRUE,

@@ -7043,7 +7043,7 @@ static const u16 sFroslassLevelUpLearnset[] = {
     LEVEL_UP_MOVE(59, MOVE_DESTINY_BOND),
     LEVEL_UP_END};
 
-static const u16 sBombirdierLevelUpLearnset[] = {
+static const u16 sGeowattLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_LEER),
     LEVEL_UP_MOVE(1, MOVE_CHARM),
     LEVEL_UP_MOVE(1, MOVE_LEAF_BLADE),

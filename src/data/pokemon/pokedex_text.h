@@ -2368,7 +2368,7 @@ const u8 gFroslassPokedexText[] = _(
     "chilly den, where they become its\n"
     "decorations.");
 
-const u8 gBombirdierPokedexText[] = _(
+const u8 gGeowattPokedexText[] = _(
     "A master of courtesy and swordsmanship,\n"
     "it fights using extending swords on its\n"
     "elbows when trying to protect someone.\n"

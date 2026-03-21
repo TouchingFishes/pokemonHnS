@@ -12180,7 +12180,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_WHITE,
         .noFlip = FALSE,
     },
-    [SPECIES_BOMBIRDIER] =
+    [SPECIES_GEOWATT] =
     {
         .baseHP        = 60,
         .baseAttack    = 70,

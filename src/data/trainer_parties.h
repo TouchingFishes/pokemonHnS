@@ -3730,7 +3730,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Katelynn[] = {
     {
     .iv = 100,
     .lvl = 43,
-    .species = SPECIES_BOMBIRDIER,
+    .species = SPECIES_GEOWATT,
     .moves = {MOVE_LEAF_BLADE, MOVE_PSYCHIC, MOVE_FURY_CUTTER, MOVE_CALM_MIND}
     },
     {
@@ -9915,7 +9915,7 @@ static const struct TrainerMonItemCustomMoves sParty_TateAndLiza5[] = {
     {
     .iv = 255,
     .lvl = 90,
-    .species = SPECIES_BOMBIRDIER,
+    .species = SPECIES_GEOWATT,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_PSYCHO_CUT, MOVE_WISH, MOVE_SWORDS_DANCE, MOVE_PROTECT}
     },
@@ -21318,7 +21318,7 @@ static const struct TrainerMonItemCustomMoves sParty_Lance[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 54,
-    .species = SPECIES_BOMBIRDIER,
+    .species = SPECIES_GEOWATT,
     .heldItem = ITEM_BLACK_BELT,
     .moves = {MOVE_PSYCHO_CUT, MOVE_BRICK_BREAK, MOVE_LEAF_BLADE, MOVE_HYPER_BEAM}
     },
@@ -21364,7 +21364,7 @@ static const struct TrainerMonItemCustomMoves sParty_Lance2[] = { //EliteFourGro
     {
     .iv = 255,
     .lvl = 69,
-    .species = SPECIES_BOMBIRDIER,
+    .species = SPECIES_GEOWATT,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_HIDDEN_POWER, MOVE_HYPER_BEAM, MOVE_HYDRO_PUMP, MOVE_FIRE_BLAST}
     },

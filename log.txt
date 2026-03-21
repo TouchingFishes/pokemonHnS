@@ -321,7 +321,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/fusang.aif sound/direct_s
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/forretress.aif sound/direct_sound_samples/cries/forretress.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/froslass.aif sound/direct_sound_samples/cries/froslass.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/furret.aif sound/direct_sound_samples/cries/furret.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/bombirdier.aif sound/direct_sound_samples/cries/bombirdier.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/geowatt.aif sound/direct_sound_samples/cries/geowatt.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gothitelle.aif sound/direct_sound_samples/cries/gothitelle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gastly.aif sound/direct_sound_samples/cries/gastly.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gengar.aif sound/direct_sound_samples/cries/gengar.bin --compress

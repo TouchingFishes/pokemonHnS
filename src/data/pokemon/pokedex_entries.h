@@ -4776,12 +4776,12 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_BOMBIRDIER] =
+    [NATIONAL_DEX_GEOWATT] =
     {
         .categoryName = _("MEGATON"),
         .height = 17,
         .weight = 3160,
-        .description = gBombirdierPokedexText,
+        .description = gGeowattPokedexText,
         .pokemonScale = 256,
         .pokemonOffset = 3,
         .trainerScale = 296,
@@ -5254,7 +5254,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_EMPOLEON] =
     {
-        .categoryName = _("Emperor"),
+        .categoryName = _("EMPEROR"),
         .height = 17,
         .weight = 845,
         .description = gEmpoleonPokedexText,

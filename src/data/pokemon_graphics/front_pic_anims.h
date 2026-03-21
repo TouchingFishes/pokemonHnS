@@ -5051,7 +5051,7 @@ static const union AnimCmd sAnim_Hydreigon_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bombirdier_1[] =
+static const union AnimCmd sAnim_Geowatt_1[] =
 {
     ANIMCMD_FRAME(1, 20),
     ANIMCMD_FRAME(0, 20),
@@ -5782,7 +5782,7 @@ DOUBLE_ANIMATION(DeoxysS);
 SINGLE_ANIMATION(Spiritomb);
 SINGLE_ANIMATION(Electivire);
 SINGLE_ANIMATION(Froslass);
-SINGLE_ANIMATION(Bombirdier);
+SINGLE_ANIMATION(Geowatt);
 SINGLE_ANIMATION(Glaceon);
 SINGLE_ANIMATION(Gliscor);
 SINGLE_ANIMATION(Happiny);
@@ -6283,7 +6283,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_GLISCOR] = sAnims_Gliscor,
     [SPECIES_LARVESTA] = sAnims_Larvesta,
     [SPECIES_HYDREIGON] = sAnims_Hydreigon,
-    [SPECIES_BOMBIRDIER] = sAnims_Bombirdier,
+    [SPECIES_GEOWATT] = sAnims_Geowatt,
     [SPECIES_PORYGON_Z] = sAnims_PorygonZ,
     [SPECIES_SPIRITOMB] = sAnims_Spiritomb,
     [SPECIES_FROSLASS] = sAnims_Froslass,

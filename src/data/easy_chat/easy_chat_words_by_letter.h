@@ -576,7 +576,7 @@ const u16 gEasyChatWordsByLetter_F[] = {
 
 const u16 gEasyChatWordsByLetter_G[] = {
     EC_WORD_GAME,
-    EC_POKEMON(BOMBIRDIER),
+    EC_POKEMON(GEOWATT),
     EC_POKEMON(GOTHITELLE),
     EC_POKEMON_NATIONAL(GASTLY),
     EC_POKEMON_NATIONAL(GENGAR),

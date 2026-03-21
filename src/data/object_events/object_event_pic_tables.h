@@ -6039,13 +6039,13 @@ static const struct SpriteFrameImage sPicTable_Froslass[] = {
     overworld_frame(gObjectEventPic_Froslass, 4, 4, 4),
     overworld_frame(gObjectEventPic_Froslass, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Bombirdier[] = {
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Geowatt[] = {
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Geowatt, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Glaceon[] = {
     overworld_frame(gObjectEventPic_Glaceon, 4, 4, 0),

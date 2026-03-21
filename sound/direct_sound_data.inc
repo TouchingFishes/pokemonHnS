@@ -1983,8 +1983,8 @@ Cry_Froslass::
 	.incbin "sound/direct_sound_samples/cries/froslass.bin"
 
 	.align 2
-Cry_Bombirdier::
-	.incbin "sound/direct_sound_samples/cries/bombirdier.bin"
+Cry_Geowatt::
+	.incbin "sound/direct_sound_samples/cries/geowatt.bin"
 
 	.align 2
 Cry_Glaceon::

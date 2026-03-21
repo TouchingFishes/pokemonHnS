@@ -17,24 +17,24 @@ PetalburgCity_OnTransition:
 	call_if_eq VAR_GARBAGEVAR, 8, PetalburgCity_EventScript_SetGymDoorsUnlocked
 	end
 
-PetalburgCity_BombirdierEvo::
+PetalburgCity_GeowattEvo::
 	faceplayer
-	msgbox PetalburgCity_BombirdierEvo_Text, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, PetalburgCity_BombirdierEvo2
-	goto_if_eq VAR_RESULT, NO, PetalburgCity_BombirdierEvo3
+	msgbox PetalburgCity_GeowattEvo_Text, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, PetalburgCity_GeowattEvo2
+	goto_if_eq VAR_RESULT, NO, PetalburgCity_GeowattEvo3
 	end
 
-PetalburgCity_BombirdierEvo2:
-	msgbox PetalburgCity_BombirdierEvo_Text2, MSGBOX_DEFAULT
+PetalburgCity_GeowattEvo2:
+	msgbox PetalburgCity_GeowattEvo_Text2, MSGBOX_DEFAULT
 	closemessage
 	end
 
-PetalburgCity_BombirdierEvo3:
-	msgbox PetalburgCity_BombirdierEvo_Text3, MSGBOX_DEFAULT
+PetalburgCity_GeowattEvo3:
+	msgbox PetalburgCity_GeowattEvo_Text3, MSGBOX_DEFAULT
 	closemessage
 	end
 
-PetalburgCity_BombirdierEvo_Text:
+PetalburgCity_GeowattEvo_Text:
 	.string "PROF. BIRCH might be the most famous\n"
 	.string "PROFESSOR of HOENN, but I am also a\l"
 	.string "reliable PROFESSOR.\p"
@@ -42,13 +42,13 @@ PetalburgCity_BombirdierEvo_Text:
 	.string "information that he might not know\l"
 	.string "about. Do you want to listen to it?$"
 
-PetalburgCity_BombirdierEvo_Text2:
+PetalburgCity_GeowattEvo_Text2:
 	.string "Choosing between a MALE or FEMALE GOTHITA\n"
 	.string "is quite important.\p"
 	.string "Depending on what you capture, the last\n"
 	.string "evolution of GOTHITA will be different.\p"
 	.string "If GOTHITA is MALE, he will naturally\n"
-	.string "evolve into BOMBIRDIER but only if it\l"
+	.string "evolve into GEOWATT but only if it\l"
 	.string "happens during the morning, which is\l"
 	.string "from 6AM to 9AM.\p"
 	.string "GOTHITA will evolve into GOTHITELLE if he\n"
@@ -57,7 +57,7 @@ PetalburgCity_BombirdierEvo_Text2:
 	.string "I believe this information might be\n"
 	.string "useful for a new trainer like you.$"
 
-PetalburgCity_BombirdierEvo_Text3:
+PetalburgCity_GeowattEvo_Text3:
 	.string "Oh… Okay…$"
 
 PetalburgCity_EventScript_MoveGymBoyToWestEntrance::

@@ -399,7 +399,7 @@ gCryTable::
 	cry Cry_Spiritomb
 	cry Cry_Electivire
 	cry Cry_Froslass
-	cry Cry_Bombirdier
+	cry Cry_Geowatt
 	cry Cry_Glaceon
 	cry Cry_Gliscor
 	cry Cry_Happiny
@@ -834,7 +834,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Spiritomb
 	cry_reverse Cry_Electivire
 	cry_reverse Cry_Froslass
-	cry_reverse Cry_Bombirdier
+	cry_reverse Cry_Geowatt
 	cry_reverse Cry_Glaceon
 	cry_reverse Cry_Gliscor
 	cry_reverse Cry_Happiny

@@ -3005,12 +3005,12 @@ const u32 gMonShinyPalette_Volcarona[] = INCBIN_U32("graphics/pokemon/volcarona/
 const u8 gMonIcon_Volcarona[] = INCBIN_U8("graphics/pokemon/volcarona/icon.4bpp");
 const u8 gMonFootprint_Volcarona[] = INCBIN_U8("graphics/pokemon/volcarona/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Bombirdier[] = INCBIN_U32("graphics/pokemon/bombirdier/front.4bpp.lz");
-const u32 gMonPalette_Bombirdier[] = INCBIN_U32("graphics/pokemon/bombirdier/normal.gbapal.lz");
-const u32 gMonBackPic_Bombirdier[] = INCBIN_U32("graphics/pokemon/bombirdier/back.4bpp.lz");
-const u32 gMonShinyPalette_Bombirdier[] = INCBIN_U32("graphics/pokemon/bombirdier/shiny.gbapal.lz");
-const u8 gMonIcon_Bombirdier[] = INCBIN_U8("graphics/pokemon/bombirdier/icon.4bpp");
-const u8 gMonFootprint_Bombirdier[] = INCBIN_U8("graphics/pokemon/bombirdier/footprint.1bpp");
+const u32 gMonStillFrontPic_Geowatt[] = INCBIN_U32("graphics/pokemon/geowatt/front.4bpp.lz");
+const u32 gMonPalette_Geowatt[] = INCBIN_U32("graphics/pokemon/geowatt/normal.gbapal.lz");
+const u32 gMonBackPic_Geowatt[] = INCBIN_U32("graphics/pokemon/geowatt/back.4bpp.lz");
+const u32 gMonShinyPalette_Geowatt[] = INCBIN_U32("graphics/pokemon/geowatt/shiny.gbapal.lz");
+const u8 gMonIcon_Geowatt[] = INCBIN_U8("graphics/pokemon/geowatt/icon.4bpp");
+const u8 gMonFootprint_Geowatt[] = INCBIN_U8("graphics/pokemon/geowatt/footprint.1bpp");
 
 const u32 gMonStillFrontPic_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/anim_front.4bpp.lz");
 const u32 gMonPalette_PorygonZ[] = INCBIN_U32("graphics/pokemon/porygon_z/normal.gbapal.lz");

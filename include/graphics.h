@@ -3086,13 +3086,13 @@ extern const u32 gMonStillFrontPic_Volcarona[];
 extern const u8 gMonIcon_Volcarona[];
 extern const u8 gMonFootprint_Volcarona[];
 
-extern const u32 gMonFrontPic_Bombirdier[];
-extern const u32 gMonPalette_Bombirdier[];
-extern const u32 gMonBackPic_Bombirdier[];
-extern const u32 gMonShinyPalette_Bombirdier[];
-extern const u32 gMonStillFrontPic_Bombirdier[];
-extern const u8 gMonIcon_Bombirdier[];
-extern const u8 gMonFootprint_Bombirdier[];
+extern const u32 gMonFrontPic_Geowatt[];
+extern const u32 gMonPalette_Geowatt[];
+extern const u32 gMonBackPic_Geowatt[];
+extern const u32 gMonShinyPalette_Geowatt[];
+extern const u32 gMonStillFrontPic_Geowatt[];
+extern const u8 gMonIcon_Geowatt[];
+extern const u8 gMonFootprint_Geowatt[];
 
 extern const u32 gMonFrontPic_PorygonZ[];
 extern const u32 gMonPalette_PorygonZ[];

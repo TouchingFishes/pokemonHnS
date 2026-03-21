@@ -3732,7 +3732,7 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST
     },
     [FRONTIER_MON_GOTHITELLE_2] = {
-        .species = SPECIES_BOMBIRDIER,
+        .species = SPECIES_GEOWATT,
         .moves = {MOVE_HI_JUMP_KICK, MOVE_CALM_MIND, MOVE_DOUBLE_TEAM, MOVE_PSYCHO_CUT},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
@@ -5076,7 +5076,7 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST
     },
     [FRONTIER_MON_GOTHITELLE_4] = {
-        .species = SPECIES_BOMBIRDIER,
+        .species = SPECIES_GEOWATT,
         .moves = {MOVE_SWORDS_DANCE, MOVE_FURY_CUTTER, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH},
         .itemTableId = BATTLE_FRONTIER_ITEM_BRIGHT_POWDER,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_SPEED,
@@ -5685,7 +5685,7 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .nature = NATURE_ADAMANT
     },
     [FRONTIER_MON_GOTHITELLE_5] = {
-        .species = SPECIES_BOMBIRDIER,
+        .species = SPECIES_GEOWATT,
         .moves = {MOVE_PSYCHO_CUT, MOVE_SHADOW_CLAW, MOVE_ENDURE, MOVE_HI_JUMP_KICK},
         .itemTableId = BATTLE_FRONTIER_ITEM_SALAC_BERRY,
         .evSpread = F_EV_SPREAD_SPEED | F_EV_SPREAD_DEFENSE | F_EV_SPREAD_ATTACK,
@@ -10169,7 +10169,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST
     },
     [FRONTIER_MON_GOTHITELLE_2] = {
-        .species = SPECIES_BOMBIRDIER,
+        .species = SPECIES_GEOWATT,
         .moves = {MOVE_HI_JUMP_KICK, MOVE_CALM_MIND, MOVE_DOUBLE_TEAM, MOVE_PSYCHO_CUT},
         .itemTableId = BATTLE_FRONTIER_ITEM_CHESTO_BERRY,
         .evSpread = F_EV_SPREAD_DEFENSE | F_EV_SPREAD_HP,
@@ -11513,7 +11513,7 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_MODEST
     },
     [FRONTIER_MON_GOTHITELLE_4] = {
-        .species = SPECIES_BOMBIRDIER,
+        .species = SPECIES_GEOWATT,
         .moves = {MOVE_SWORDS_DANCE, MOVE_FURY_CUTTER, MOVE_ICE_PUNCH, MOVE_FIRE_PUNCH},
         .itemTableId = BATTLE_FRONTIER_ITEM_BRIGHT_POWDER,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_SPEED,
