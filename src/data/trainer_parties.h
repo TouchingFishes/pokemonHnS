@@ -20977,9 +20977,9 @@ static const struct TrainerMonItemCustomMoves sParty_Will[] = { //EliteFourGroup
     {
     .iv = 255,
     .lvl = 48,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_PSYCHU,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_BATON_PASS, MOVE_CALM_MIND, MOVE_LOVELY_KISS, MOVE_PSYCHIC}
+    .moves = {MOVE_BATON_PASS, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_PSYCHIC}
     },
     {
     .iv = 255,
@@ -21009,9 +21009,9 @@ static const struct TrainerMonItemCustomMoves sParty_Will2[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 67,
-    .species = SPECIES_JYNX,
+    .species = SPECIES_PSYCHU,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_BLIZZARD, MOVE_PSYCHIC, MOVE_PERISH_SONG, MOVE_LOVELY_KISS}
+    .moves = {MOVE_BATON_PASS, MOVE_CALM_MIND, MOVE_THUNDERBOLT, MOVE_PSYCHIC}
     },
     {
     .iv = 255,
@@ -21069,9 +21069,9 @@ static const struct TrainerMonItemCustomMoves sParty_Bruno[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 53,
-    .species = SPECIES_STEELIX,
+    .species = SPECIES_GEOWATT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_IRON_TAIL}
+    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_THUNDER_WAVE}
     },
     {
     .iv = 255,
@@ -21108,9 +21108,9 @@ static const struct TrainerMonItemCustomMoves sParty_Bruno2[] = { //EliteFourGro
     {
     .iv = 255,
     .lvl = 67,
-    .species = SPECIES_STEELIX,
+    .species = SPECIES_GEOWATT,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_CRUNCH, MOVE_EARTHQUAKE, MOVE_ROAR, MOVE_IRON_TAIL}
+    .moves = {MOVE_THUNDER, MOVE_EARTHQUAKE, MOVE_ROCK_TOMB, MOVE_THUNDER_WAVE}
     },
     {
     .iv = 255,
