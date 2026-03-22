@@ -8941,7 +8941,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_GULPIN] = { .learnset = {
+    [SPECIES_LARVICID] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,
@@ -8967,7 +8967,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } },
 
-    [SPECIES_SWALOT] = { .learnset = {
+    [SPECIES_PENDRAGON] = { .learnset = {
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,

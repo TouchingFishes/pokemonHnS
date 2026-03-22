@@ -2389,19 +2389,19 @@ const u32 gMonShinyPalette_Slaking[] = INCBIN_U32("graphics/pokemon/slaking/shin
 const u8 gMonIcon_Slaking[] = INCBIN_U8("graphics/pokemon/slaking/icon.4bpp");
 const u8 gMonFootprint_Slaking[] = INCBIN_U8("graphics/pokemon/slaking/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/front.4bpp.lz");
-const u32 gMonPalette_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/normal.gbapal.lz");
-const u32 gMonBackPic_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/back.4bpp.lz");
-const u32 gMonShinyPalette_Gulpin[] = INCBIN_U32("graphics/pokemon/gulpin/shiny.gbapal.lz");
-const u8 gMonIcon_Gulpin[] = INCBIN_U8("graphics/pokemon/gulpin/icon.4bpp");
-const u8 gMonFootprint_Gulpin[] = INCBIN_U8("graphics/pokemon/gulpin/footprint.1bpp");
+const u32 gMonStillFrontPic_Larvicid[] = INCBIN_U32("graphics/pokemon/larvicid/front.4bpp.lz");
+const u32 gMonPalette_Larvicid[] = INCBIN_U32("graphics/pokemon/larvicid/normal.gbapal.lz");
+const u32 gMonBackPic_Larvicid[] = INCBIN_U32("graphics/pokemon/larvicid/back.4bpp.lz");
+const u32 gMonShinyPalette_Larvicid[] = INCBIN_U32("graphics/pokemon/larvicid/shiny.gbapal.lz");
+const u8 gMonIcon_Larvicid[] = INCBIN_U8("graphics/pokemon/larvicid/icon.4bpp");
+const u8 gMonFootprint_Larvicid[] = INCBIN_U8("graphics/pokemon/larvicid/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/front.4bpp.lz");
-const u32 gMonPalette_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/normal.gbapal.lz");
-const u32 gMonBackPic_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/back.4bpp.lz");
-const u32 gMonShinyPalette_Swalot[] = INCBIN_U32("graphics/pokemon/swalot/shiny.gbapal.lz");
-const u8 gMonIcon_Swalot[] = INCBIN_U8("graphics/pokemon/swalot/icon.4bpp");
-const u8 gMonFootprint_Swalot[] = INCBIN_U8("graphics/pokemon/swalot/footprint.1bpp");
+const u32 gMonStillFrontPic_Pendragon[] = INCBIN_U32("graphics/pokemon/pendragon/front.4bpp.lz");
+const u32 gMonPalette_Pendragon[] = INCBIN_U32("graphics/pokemon/pendragon/normal.gbapal.lz");
+const u32 gMonBackPic_Pendragon[] = INCBIN_U32("graphics/pokemon/pendragon/back.4bpp.lz");
+const u32 gMonShinyPalette_Pendragon[] = INCBIN_U32("graphics/pokemon/pendragon/shiny.gbapal.lz");
+const u8 gMonIcon_Pendragon[] = INCBIN_U8("graphics/pokemon/pendragon/icon.4bpp");
+const u8 gMonFootprint_Pendragon[] = INCBIN_U8("graphics/pokemon/pendragon/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/front.4bpp.lz");
 const u32 gMonPalette_Tropius[] = INCBIN_U32("graphics/pokemon/tropius/normal.gbapal.lz");

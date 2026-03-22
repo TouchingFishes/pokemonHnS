@@ -344,7 +344,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/groudon.aif sound/direct_
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/grovyle.aif sound/direct_sound_samples/cries/grovyle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/growlithe.aif sound/direct_sound_samples/cries/growlithe.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/reuniclus.aif sound/direct_sound_samples/cries/reuniclus.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gulpin.aif sound/direct_sound_samples/cries/gulpin.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/larvicid.aif sound/direct_sound_samples/cries/larvicid.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gyarados.aif sound/direct_sound_samples/cries/gyarados.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/happiny.aif sound/direct_sound_samples/cries/happiny.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/hariyama.aif sound/direct_sound_samples/cries/hariyama.bin --compress
@@ -571,7 +571,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sunflora.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sunkern.aif sound/direct_sound_samples/cries/sunkern.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/surskit.aif sound/direct_sound_samples/cries/surskit.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swablu.aif sound/direct_sound_samples/cries/swablu.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swalot.aif sound/direct_sound_samples/cries/swalot.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pendragon.aif sound/direct_sound_samples/cries/pendragon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swampert.aif sound/direct_sound_samples/cries/swampert.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltrean.aif sound/direct_sound_samples/cries/voltrean.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swinub.aif sound/direct_sound_samples/cries/swinub.bin --compress

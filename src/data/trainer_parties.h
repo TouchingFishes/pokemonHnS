@@ -3517,7 +3517,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Timothy4[] = { //ExpertMG
     {
     .iv = 210,
     .lvl = 70,
-    .species = SPECIES_SWALOT,
+    .species = SPECIES_PENDRAGON,
     .moves = {MOVE_STEAMROLLER, MOVE_POISON_TAIL, MOVE_IRON_TAIL, MOVE_DIG}
     },
     {
@@ -4735,7 +4735,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Takashi[] = {
     {
     .iv = 0,
     .lvl = 26,
-    .species = SPECIES_SWALOT,
+    .species = SPECIES_PENDRAGON,
     }
 };
 
@@ -8473,7 +8473,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jaiden[] = {
     {
     .iv = 0,
     .lvl = 26,
-    .species = SPECIES_GULPIN,
+    .species = SPECIES_LARVICID,
     }
 };
 
@@ -20790,7 +20790,7 @@ static const struct TrainerMonItemCustomMoves sParty_Janine[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 61,
-    .species = SPECIES_SWALOT,
+    .species = SPECIES_PENDRAGON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_STEAMROLLER, MOVE_IRON_TAIL, MOVE_AERIAL_ACE, MOVE_TOXIC}
     },
@@ -21272,7 +21272,7 @@ static const struct TrainerMonItemCustomMoves sParty_Koga2[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 67,
-    .species = SPECIES_SWALOT,
+    .species = SPECIES_PENDRAGON,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_STEAMROLLER, MOVE_POISON_TAIL, MOVE_TOXIC, MOVE_PROTECT}
     },

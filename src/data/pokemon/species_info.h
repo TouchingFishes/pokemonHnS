@@ -10507,7 +10507,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GULPIN] = //LARVICID
+    [SPECIES_LARVICID] = //LARVICID
     {
         .baseHP        = 45,
         .baseAttack    = 70,
@@ -10537,7 +10537,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SWALOT] = //PENDRAGON
+    [SPECIES_PENDRAGON] = //PENDRAGON
     {
         .baseHP        = 90,
         .baseAttack    = 119,

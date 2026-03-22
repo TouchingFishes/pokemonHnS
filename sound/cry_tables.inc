@@ -314,8 +314,8 @@ gCryTable::
 	cry Cry_Masquerain
 	cry Cry_Skitty
 	cry Cry_Delcatty
-	cry Cry_Gulpin
-	cry Cry_Swalot
+	cry Cry_Larvicid
+	cry Cry_Pendragon
 	cry Cry_Numel
 	cry Cry_Camerupt
 	cry Cry_Barboach
@@ -749,8 +749,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Masquerain
 	cry_reverse Cry_Skitty
 	cry_reverse Cry_Delcatty
-	cry_reverse Cry_Gulpin
-	cry_reverse Cry_Swalot
+	cry_reverse Cry_Larvicid
+	cry_reverse Cry_Pendragon
 	cry_reverse Cry_Numel
 	cry_reverse Cry_Camerupt
 	cry_reverse Cry_Barboach

@@ -3792,24 +3792,24 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 3,
     },
 
-    [NATIONAL_DEX_GULPIN] =
+    [NATIONAL_DEX_LARVICID] =
     {
         .categoryName = _("INSTAR"),
         .height = 12,
         .weight = 585,
-        .description = gGulpinPokedexText,
+        .description = gLarvicidPokedexText,
         .pokemonScale = 282,
         .pokemonOffset = 7,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
 
-    [NATIONAL_DEX_SWALOT] =
+    [NATIONAL_DEX_PENDRAGON] =
     {
         .categoryName = _("METALPEDE"),
         .height = 25,
         .weight = 800,
-        .description = gSwalotPokedexText,
+        .description = gPendragonPokedexText,
         .pokemonScale = 257,
         .pokemonOffset = 2,
         .trainerScale = 423,

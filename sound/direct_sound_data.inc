@@ -1643,12 +1643,12 @@ Cry_Delcatty::
 	.incbin "sound/direct_sound_samples/cries/delcatty.bin"
 
 	.align 2
-Cry_Gulpin::
-	.incbin "sound/direct_sound_samples/cries/gulpin.bin"
+Cry_Larvicid::
+	.incbin "sound/direct_sound_samples/cries/larvicid.bin"
 
 	.align 2
-Cry_Swalot::
-	.incbin "sound/direct_sound_samples/cries/swalot.bin"
+Cry_Pendragon::
+	.incbin "sound/direct_sound_samples/cries/pendragon.bin"
 
 	.align 2
 Cry_Numel::

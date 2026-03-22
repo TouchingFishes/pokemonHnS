@@ -777,13 +777,13 @@ static const union AnimCmd sUnusedAnim_Slaking_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Gulpin_1[] =
+static const union AnimCmd sUnusedAnim_Larvicid_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Swalot_1[] =
+static const union AnimCmd sUnusedAnim_Pendragon_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
@@ -1306,8 +1306,8 @@ static const union AnimCmd *const sUnusedAnims_Purgislug[] = {sAnim_GeneralFrame
 static const union AnimCmd *const sUnusedAnims_Slakoth[] = {sAnim_GeneralFrame0, sUnusedAnim_Slakoth_1};
 static const union AnimCmd *const sUnusedAnims_Vigoroth[] = {sAnim_GeneralFrame0, sUnusedAnim_Vigoroth_1};
 static const union AnimCmd *const sUnusedAnims_Slaking[] = {sAnim_GeneralFrame0, sUnusedAnim_Slaking_1};
-static const union AnimCmd *const sUnusedAnims_Gulpin[] = {sAnim_GeneralFrame0, sUnusedAnim_Gulpin_1};
-static const union AnimCmd *const sUnusedAnims_Swalot[] = {sAnim_GeneralFrame0, sUnusedAnim_Swalot_1};
+static const union AnimCmd *const sUnusedAnims_Larvicid[] = {sAnim_GeneralFrame0, sUnusedAnim_Larvicid_1};
+static const union AnimCmd *const sUnusedAnims_Pendragon[] = {sAnim_GeneralFrame0, sUnusedAnim_Pendragon_1};
 static const union AnimCmd *const sUnusedAnims_Tropius[] = {sAnim_GeneralFrame0, sUnusedAnim_Tropius_1};
 static const union AnimCmd *const sUnusedAnims_Axew[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Fraxure[] = {sAnim_GeneralFrame0};
@@ -1748,8 +1748,8 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_SLAKOTH] = sUnusedAnims_Slakoth,
     [SPECIES_VIGOROTH] = sUnusedAnims_Vigoroth,
     [SPECIES_SLAKING] = sUnusedAnims_Slaking,
-    [SPECIES_GULPIN] = sUnusedAnims_Gulpin,
-    [SPECIES_SWALOT] = sUnusedAnims_Swalot,
+    [SPECIES_LARVICID] = sUnusedAnims_Larvicid,
+    [SPECIES_PENDRAGON] = sUnusedAnims_Pendragon,
     [SPECIES_TROPIUS] = sUnusedAnims_Tropius,
     [SPECIES_AXEW] = sUnusedAnims_Axew,
     [SPECIES_FRAXURE] = sUnusedAnims_Fraxure,

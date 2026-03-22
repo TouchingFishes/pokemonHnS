@@ -1550,7 +1550,7 @@ const u16 gEggMoves[] = {
               MOVE_CURSE,
               MOVE_SLEEP_TALK),
 
-    egg_moves(GULPIN,
+    egg_moves(LARVICID,
               MOVE_DREAM_EATER,
               MOVE_ACID_ARMOR,
               MOVE_SMOG,
@@ -2920,7 +2920,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_CURSE,
               MOVE_SLEEP_TALK),
 
-    egg_moves(GULPIN,
+    egg_moves(LARVICID,
               MOVE_DREAM_EATER,
               MOVE_ACID_ARMOR,
               MOVE_SMOG,

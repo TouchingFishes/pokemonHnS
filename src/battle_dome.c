@@ -2441,8 +2441,8 @@ static void InitDomeTrainers(void)
                 || species == SPECIES_SCEPTILE
                 || species == SPECIES_MASQUERAIN
                 || species == SPECIES_DELCATTY
-                || species == SPECIES_GULPIN
-                || species == SPECIES_SWALOT
+                || species == SPECIES_LARVICID
+                || species == SPECIES_PENDRAGON
                 || species == SPECIES_LUVDISC
                 || species == SPECIES_ELECTIVIRE))
                 {

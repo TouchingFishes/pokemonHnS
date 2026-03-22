@@ -6127,7 +6127,7 @@ static const u16 sSlakingLevelUpLearnset[] = {
     LEVEL_UP_MOVE(58, MOVE_FOCUS_BLAST),
     LEVEL_UP_END};
 
-static const u16 sGulpinLevelUpLearnset[] = {
+static const u16 sLarvicidLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(6, MOVE_YAWN),
     LEVEL_UP_MOVE(9, MOVE_POISON_GAS),
@@ -6142,7 +6142,7 @@ static const u16 sGulpinLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_PAIN_SPLIT),
     LEVEL_UP_END};
 
-static const u16 sSwalotLevelUpLearnset[] = {
+static const u16 sPendragonLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_POUND),
     LEVEL_UP_MOVE(1, MOVE_YAWN),
     LEVEL_UP_MOVE(1, MOVE_POISON_GAS),

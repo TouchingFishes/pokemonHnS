@@ -1923,10 +1923,10 @@ $(OBJEVENTGFXDIR)/pokemon/krolucard.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/purgislug.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/gulpin.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/larvicid.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/swalot.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/pendragon.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/carvanha.4bpp: %.4bpp: %.png

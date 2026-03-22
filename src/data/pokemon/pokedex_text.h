@@ -1893,16 +1893,16 @@ const u8 gPurgislugPokedexText[] = _(
     "Travelers who stare too long at its glow\n"
     "report strange visions and whispers.");
 
-const u8 gGulpinPokedexText[] = _(
+const u8 gLarvicidPokedexText[] = _(
     "This POKéMON's stomach fluid can even\n"
     "digest scrap iron. In one gulp, it can\n"
     "swallow something that is as large as\n"
     "itself.");
 
-const u8 gSwalotPokedexText[] = _(
+const u8 gPendragonPokedexText[] = _(
     "Its powerful stomach acid is capable of\n"
     "digesting almost anything. The one thing\n"
-    "in the whole world a SWALOT can't digest is\n"
+    "in the whole world a PENDRAGON can't digest is\n"
     "its own stomach.");
 
 const u8 gCarvanhaPokedexText[] = _(

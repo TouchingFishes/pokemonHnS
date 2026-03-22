@@ -3980,7 +3980,7 @@ static const union AnimCmd sAnim_Slaking_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gulpin_1[] =
+static const union AnimCmd sAnim_Larvicid_1[] =
 {
     ANIMCMD_FRAME(0, 14),
     ANIMCMD_FRAME(1, 14),
@@ -3990,7 +3990,7 @@ static const union AnimCmd sAnim_Gulpin_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Swalot_1[] =
+static const union AnimCmd sAnim_Pendragon_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 30),
@@ -5672,8 +5672,8 @@ SINGLE_ANIMATION(Purgislug);
 SINGLE_ANIMATION(Slakoth);
 SINGLE_ANIMATION(Vigoroth);
 SINGLE_ANIMATION(Slaking);
-SINGLE_ANIMATION(Gulpin);
-SINGLE_ANIMATION(Swalot);
+SINGLE_ANIMATION(Larvicid);
+SINGLE_ANIMATION(Pendragon);
 SINGLE_ANIMATION(Tropius);
 SINGLE_ANIMATION(Axew);
 SINGLE_ANIMATION(Fraxure);
@@ -6173,8 +6173,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_SLAKOTH]     = sAnims_Slakoth,
     [SPECIES_VIGOROTH]    = sAnims_Vigoroth,
     [SPECIES_SLAKING]     = sAnims_Slaking,
-    [SPECIES_GULPIN]      = sAnims_Gulpin,
-    [SPECIES_SWALOT]      = sAnims_Swalot,
+    [SPECIES_LARVICID]      = sAnims_Larvicid,
+    [SPECIES_PENDRAGON]      = sAnims_Pendragon,
     [SPECIES_TROPIUS]     = sAnims_Tropius,
     [SPECIES_AXEW]        = sAnims_Axew,
     [SPECIES_FRAXURE]     = sAnims_Fraxure,
