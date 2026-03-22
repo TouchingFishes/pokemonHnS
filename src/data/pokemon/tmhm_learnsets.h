@@ -11550,6 +11550,56 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
+    [SPECIES_FOMANTIS] = { .learnset = {
+        .SOLAR_BEAM = TRUE,
+        .GIGA_DRAIN = TRUE,
+        .CUT = TRUE,
+    } },
+
+    [SPECIES_LURANTIS] = { .learnset = {
+        .SOLAR_BEAM      = TRUE,
+        .GIGA_DRAIN      = TRUE,
+        .CUT             = TRUE,
+    } },
+
+    [SPECIES_VULLABY] = { .learnset = {
+        .TOXIC           = TRUE,
+        .FACADE          = TRUE,
+        .RETURN          = TRUE,
+        .STEEL_WING      = TRUE,
+        .SECRET_POWER    = TRUE,
+        .REST            = TRUE,
+        .ATTRACT         = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_MANDIBUZZ] = { .learnset = {
+        .TOXIC           = TRUE,
+        .FACADE          = TRUE,
+        .RETURN          = TRUE,
+        .STEEL_WING      = TRUE,
+        .SECRET_POWER    = TRUE,
+        .REST            = TRUE,
+        .ATTRACT         = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_MIENFOO] = { .learnset = {
+        .FOCUS_PUNCH     = TRUE,
+        .BRICK_BREAK     = TRUE,
+        .REST            = TRUE,
+        .ATTRACT         = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_MIENSHAO] = { .learnset = {
+        .FOCUS_PUNCH     = TRUE,
+        .BRICK_BREAK     = TRUE,
+        .REST            = TRUE,
+        .ATTRACT         = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
     [SPECIES_TURTWIG] = { .learnset = {
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,

@@ -6708,6 +6708,60 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWIFT)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
+    [SPECIES_FOMANTIS]   = (TUTOR(MOVE_SWORDS_DANCE)
+                             | TUTOR(MOVE_DOUBLE_EDGE)
+                             | TUTOR(MOVE_MIMIC)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_ENDURE)
+                             | TUTOR(MOVE_MUD_SLAP)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_DEFENSE_CURL)
+                             | TUTOR(MOVE_FURY_CUTTER)),
+
+    [SPECIES_LURANTIS]   = (TUTOR(MOVE_SWORDS_DANCE)
+                             | TUTOR(MOVE_DOUBLE_EDGE)
+                             | TUTOR(MOVE_MIMIC)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_ENDURE)
+                             | TUTOR(MOVE_MUD_SLAP)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_DEFENSE_CURL)
+                             | TUTOR(MOVE_FURY_CUTTER)),
+
+    [SPECIES_VULLABY]    = (TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_DEFENSE_CURL)
+                             | TUTOR(MOVE_ENDURE)),
+
+    [SPECIES_MANDIBUZZ]  = (TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_DEFENSE_CURL)
+                             | TUTOR(MOVE_ENDURE)),
+
+    [SPECIES_MIENFOO]    = (TUTOR(MOVE_COUNTER)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_FURY_CUTTER)
+                             | TUTOR(MOVE_ENDURE)),
+
+    [SPECIES_MIENSHAO]   = (TUTOR(MOVE_COUNTER)
+                             | TUTOR(MOVE_SUBSTITUTE)
+                             | TUTOR(MOVE_SNORE)
+                             | TUTOR(MOVE_SWAGGER)
+                             | TUTOR(MOVE_SLEEP_TALK)
+                             | TUTOR(MOVE_FURY_CUTTER)
+                             | TUTOR(MOVE_ENDURE)),
+
     [SPECIES_TURTWIG]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)

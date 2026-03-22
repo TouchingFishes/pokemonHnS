@@ -2114,6 +2114,30 @@ Cry_Doublade::
 Cry_Aegislash::
 	.incbin "sound/direct_sound_samples/cries/aegislash.bin"
 
+.align 2
+Cry_Fomantis::
+	.incbin "sound/direct_sound_samples/cries/fomantis.bin"
+
+	.align 2
+Cry_Lurantis::
+	.incbin "sound/direct_sound_samples/cries/lurantis.bin"
+
+	.align 2
+Cry_Vullaby::
+	.incbin "sound/direct_sound_samples/cries/vullaby.bin"
+
+	.align 2
+Cry_Mandibuzz::
+	.incbin "sound/direct_sound_samples/cries/mandibuzz.bin"
+
+	.align 2
+Cry_Mienfoo::
+	.incbin "sound/direct_sound_samples/cries/mienfoo.bin"
+
+	.align 2
+Cry_Mienshao::
+	.incbin "sound/direct_sound_samples/cries/mienshao.bin"
+
 	.align 2
 Cry_Turtwig::
 	.incbin "sound/direct_sound_samples/cries/turtwig.bin"

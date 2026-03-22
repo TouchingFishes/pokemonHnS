@@ -5164,6 +5164,72 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 286,
         .trainerOffset = 1,
     },
+    [NATIONAL_DEX_FOMANTIS] =
+    {
+        .categoryName = _("SICKLE GRASS"),
+        .height = 3,
+        .weight = 15,
+        .description = gFomantisPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_LURANTIS] =
+    {
+        .categoryName = _("BLOOM SICKLE"),
+        .height = 9,
+        .weight = 185,
+        .description = gLurantisPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 8,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_VULLABY] =
+    {
+        .categoryName = _("DIAPERED"),
+        .height = 5,
+        .weight = 90,
+        .description = gVullabyPokedexText,
+        .pokemonScale = 432,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_MANDIBUZZ] =
+    {
+        .categoryName = _("BONE VULTURE"),
+        .height = 12,
+        .weight = 395,
+        .description = gMandibuzzPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_MIENFOO] =
+    {
+        .categoryName = _("MARTIAL ARTS"),
+        .height = 9,
+        .weight = 200,
+        .description = gMienfooPokedexText,
+        .pokemonScale = 338,
+        .pokemonOffset = 10,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_MIENSHAO] =
+    {
+        .categoryName = _("WUSHU"),
+        .height = 14,
+        .weight = 355,
+        .description = gMienshaoPokedexText,
+        .pokemonScale = 265,
+        .pokemonOffset = 2,
+        .trainerScale = 262,
+        .trainerOffset = 0,
+    },
     [NATIONAL_DEX_TURTWIG] =
     {
         .categoryName = _("TINY LEAF"),
