@@ -6780,7 +6780,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_DOUBLE_EDGE)),
 
-    [SPECIES_BUIZEL]     = (TUTOR(MOVE_ICE_PUNCH)
+    [SPECIES_RIOLU]     = (TUTOR(MOVE_ICE_PUNCH)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
@@ -6788,7 +6788,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SLEEP_TALK)
                                 | TUTOR(MOVE_ENDURE)),
 
-    [SPECIES_FLOATZEL]   = (TUTOR(MOVE_ICE_PUNCH)
+    [SPECIES_LUCARIO]   = (TUTOR(MOVE_ICE_PUNCH)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)

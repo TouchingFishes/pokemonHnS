@@ -3152,7 +3152,7 @@ const u16 gEggMoves_Old[] = {
               MOVE_ACID,
               MOVE_BITE),
 
-    egg_moves(BUIZEL,
+    egg_moves(RIOLU,
               MOVE_QUICK_ATTACK,
               MOVE_PURSUIT,
               MOVE_WATER_PULSE,

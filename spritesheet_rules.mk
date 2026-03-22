@@ -2301,10 +2301,10 @@ $(OBJEVENTGFXDIR)/pokemon/zangoose.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/seviper.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/buizel.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/riolu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/floatzel.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/lucario.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/nohface.4bpp: %.4bpp: %.png

@@ -11614,14 +11614,14 @@ const union {
         .PROTECT         = TRUE,
     } },
 
-    [SPECIES_BUIZEL] = { .learnset = {
+    [SPECIES_RIOLU] = { .learnset = {
         .BRICK_BREAK     = TRUE,
         .RETURN          = TRUE,
         .FACADE          = TRUE,
         .PROTECT         = TRUE,
     } },
 
-    [SPECIES_FLOATZEL] = { .learnset = {
+    [SPECIES_LUCARIO] = { .learnset = {
         .BRICK_BREAK     = TRUE,
         .RETURN          = TRUE,
         .FACADE          = TRUE,

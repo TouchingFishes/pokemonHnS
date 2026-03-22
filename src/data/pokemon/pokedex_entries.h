@@ -5252,25 +5252,25 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-    [NATIONAL_DEX_BUIZEL] =
+    [NATIONAL_DEX_RIOLU] =
     {
-        .categoryName = _("SEA WEASEL"),
+        .categoryName = _("EMANATION"),
         .height = 7,
-        .weight = 295,
-        .description = gBuizelPokedexText,
+        .weight = 202,
+        .description = gRioluPokedexText,
         .pokemonScale = 365,
-        .pokemonOffset = 12,
+        .pokemonOffset = 13,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
-    [NATIONAL_DEX_FLOATZEL] =
+    [NATIONAL_DEX_LUCARIO] =
     {
-        .categoryName = _("SEA WEASEL"),
-        .height = 11,
-        .weight = 335,
-        .description = gFloatzelPokedexText,
-        .pokemonScale = 320,
-        .pokemonOffset = 7,
+        .categoryName = _("AURA"),
+        .height = 12,
+        .weight = 540,
+        .description = gLucarioPokedexText,
+        .pokemonScale = 282,
+        .pokemonOffset = 4,
         .trainerScale = 256,
         .trainerOffset = 0,
     },

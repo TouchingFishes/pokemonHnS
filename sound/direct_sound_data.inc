@@ -2147,12 +2147,12 @@ Cry_Seviper::
 	.incbin "sound/direct_sound_samples/cries/seviper.bin"
 
 	.align 2
-Cry_Buizel::
-	.incbin "sound/direct_sound_samples/cries/buizel.bin"
+Cry_Riolu::
+	.incbin "sound/direct_sound_samples/cries/riolu.bin"
 
 	.align 2
-Cry_Floatzel::
-	.incbin "sound/direct_sound_samples/cries/floatzel.bin"
+Cry_Lucario::
+	.incbin "sound/direct_sound_samples/cries/lucario.bin"
 
 	.align 2
 Cry_Nohface::

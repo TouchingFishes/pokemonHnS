@@ -3294,21 +3294,21 @@ extern const u32 gMonStillFrontPic_Seviper[];
 extern const u8 gMonIcon_Seviper[];
 extern const u8 gMonFootprint_Seviper[];
 
-extern const u32 gMonFrontPic_Buizel[];
-extern const u32 gMonPalette_Buizel[];
-extern const u32 gMonBackPic_Buizel[];
-extern const u32 gMonShinyPalette_Buizel[];
-extern const u32 gMonStillFrontPic_Buizel[];
-extern const u8 gMonIcon_Buizel[];
-extern const u8 gMonFootprint_Buizel[];
+extern const u32 gMonFrontPic_Riolu[];
+extern const u32 gMonPalette_Riolu[];
+extern const u32 gMonBackPic_Riolu[];
+extern const u32 gMonShinyPalette_Riolu[];
+extern const u32 gMonStillFrontPic_Riolu[];
+extern const u8 gMonIcon_Riolu[];
+extern const u8 gMonFootprint_Riolu[];
 
-extern const u32 gMonFrontPic_Floatzel[];
-extern const u32 gMonPalette_Floatzel[];
-extern const u32 gMonBackPic_Floatzel[];
-extern const u32 gMonShinyPalette_Floatzel[];
-extern const u32 gMonStillFrontPic_Floatzel[];
-extern const u8 gMonIcon_Floatzel[];
-extern const u8 gMonFootprint_Floatzel[];
+extern const u32 gMonFrontPic_Lucario[];
+extern const u32 gMonPalette_Lucario[];
+extern const u32 gMonBackPic_Lucario[];
+extern const u32 gMonShinyPalette_Lucario[];
+extern const u32 gMonStillFrontPic_Lucario[];
+extern const u8 gMonIcon_Lucario[];
+extern const u8 gMonFootprint_Lucario[];
 
 extern const u32 gMonFrontPic_Nohface[];
 extern const u32 gMonPalette_Nohface[];

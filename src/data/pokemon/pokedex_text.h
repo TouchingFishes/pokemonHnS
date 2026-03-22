@@ -2605,17 +2605,17 @@ const u8 gSeviperPokedexText[] = _(
     "with its swordlike tail, which also oozes\n"
     "a horrible poison.");
 
-const u8 gBuizelPokedexText[] = _(
-    "It inflates its flotation sac, keeping its\n"
-    "face above water in order to watch for\n"
-    "prey movement. It swims by rotating its\n"
-    "two tails like a screw.");
+const u8 gRioluPokedexText[] = _(
+    "It can discern the physical and emotional\n"
+    "states of people, POKéMON, and other\n"
+    "natural things from the shape of their\n"
+    "aura waves.");
 
-const u8 gFloatzelPokedexText[] = _(
-    "Its flotation sac developed as a result\n"
-    "of pursuing aquatic prey. It can double\n"
-    "as a rubber raft. It assists in the rescues\n"
-    "of drowning people.");
+const u8 gLucarioPokedexText[] = _(
+    "It understands human speech.\n"
+    "It is said that no foe can remain invisible\n"
+    "to LUCARIO, since it can detect Auras.\n"
+    "Even foes it could not otherwise see.");
 
 const u8 gNohfacePokedexText[] = _(
     "It waits for someone to become its friend.\n"

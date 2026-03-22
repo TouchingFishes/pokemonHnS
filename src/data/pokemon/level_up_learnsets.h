@@ -7742,7 +7742,7 @@ static const u16 sSeviperLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sBuizelLevelUpLearnset[] = {
+static const u16 sRioluLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_SCRATCH),
     LEVEL_UP_MOVE(4, MOVE_GROWL),
     LEVEL_UP_MOVE(7, MOVE_WATER_GUN),
@@ -7752,7 +7752,7 @@ static const u16 sBuizelLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const u16 sFloatzelLevelUpLearnset[] = {
+static const u16 sLucarioLevelUpLearnset[] = {
     LEVEL_UP_MOVE(1, MOVE_SCRATCH),
     LEVEL_UP_MOVE(4, MOVE_GROWL),
     LEVEL_UP_MOVE(7, MOVE_WATER_GUN),
