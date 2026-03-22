@@ -3278,6 +3278,54 @@ extern const u32 gMonStillFrontPic_Mienshao[];
 extern const u8 gMonIcon_Mienshao[];
 extern const u8 gMonFootprint_Mienshao[];
 
+extern const u32 gMonFrontPic_Zangoose[];
+extern const u32 gMonPalette_Zangoose[];
+extern const u32 gMonBackPic_Zangoose[];
+extern const u32 gMonShinyPalette_Zangoose[];
+extern const u32 gMonStillFrontPic_Zangoose[];
+extern const u8 gMonIcon_Zangoose[];
+extern const u8 gMonFootprint_Zangoose[];
+
+extern const u32 gMonFrontPic_Seviper[];
+extern const u32 gMonPalette_Seviper[];
+extern const u32 gMonBackPic_Seviper[];
+extern const u32 gMonShinyPalette_Seviper[];
+extern const u32 gMonStillFrontPic_Seviper[];
+extern const u8 gMonIcon_Seviper[];
+extern const u8 gMonFootprint_Seviper[];
+
+extern const u32 gMonFrontPic_Buizel[];
+extern const u32 gMonPalette_Buizel[];
+extern const u32 gMonBackPic_Buizel[];
+extern const u32 gMonShinyPalette_Buizel[];
+extern const u32 gMonStillFrontPic_Buizel[];
+extern const u8 gMonIcon_Buizel[];
+extern const u8 gMonFootprint_Buizel[];
+
+extern const u32 gMonFrontPic_Floatzel[];
+extern const u32 gMonPalette_Floatzel[];
+extern const u32 gMonBackPic_Floatzel[];
+extern const u32 gMonShinyPalette_Floatzel[];
+extern const u32 gMonStillFrontPic_Floatzel[];
+extern const u8 gMonIcon_Floatzel[];
+extern const u8 gMonFootprint_Floatzel[];
+
+extern const u32 gMonFrontPic_Nohface[];
+extern const u32 gMonPalette_Nohface[];
+extern const u32 gMonBackPic_Nohface[];
+extern const u32 gMonShinyPalette_Nohface[];
+extern const u32 gMonStillFrontPic_Nohface[];
+extern const u8 gMonIcon_Nohface[];
+extern const u8 gMonFootprint_Nohface[];
+
+extern const u32 gMonFrontPic_Kitsunoh[];
+extern const u32 gMonPalette_Kitsunoh[];
+extern const u32 gMonBackPic_Kitsunoh[];
+extern const u32 gMonShinyPalette_Kitsunoh[];
+extern const u32 gMonStillFrontPic_Kitsunoh[];
+extern const u8 gMonIcon_Kitsunoh[];
+extern const u8 gMonFootprint_Kitsunoh[];
+
 extern const u32 gMonFrontPic_Turtwig[];
 extern const u32 gMonPalette_Turtwig[];
 extern const u32 gMonBackPic_Turtwig[];

@@ -11600,6 +11600,47 @@ const union {
         .PROTECT         = TRUE,
     } },
 
+    [SPECIES_ZANGOOSE] = { .learnset = {
+        .RETURN          = TRUE,
+        .FACADE          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_SEVIPER] = { .learnset = {
+        .SLUDGE_BOMB     = TRUE,
+        .TOXIC           = TRUE,
+        .RETURN          = TRUE,
+        .FACADE          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_BUIZEL] = { .learnset = {
+        .BRICK_BREAK     = TRUE,
+        .RETURN          = TRUE,
+        .FACADE          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_FLOATZEL] = { .learnset = {
+        .BRICK_BREAK     = TRUE,
+        .RETURN          = TRUE,
+        .FACADE          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_NOHFACE] = { .learnset = {
+        .TOXIC           = TRUE,
+        .FACADE          = TRUE,
+        .RETURN          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
+    [SPECIES_KITSUNOH] = { .learnset = {
+        .RETURN          = TRUE,
+        .FACADE          = TRUE,
+        .PROTECT         = TRUE,
+    } },
+
     [SPECIES_TURTWIG] = { .learnset = {
         .TOXIC = TRUE,
         .BULLET_SEED = TRUE,

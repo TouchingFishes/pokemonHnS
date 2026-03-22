@@ -2593,6 +2593,42 @@ const u8 gMienshaoPokedexText[] = _(
     "attacks come with such rapidity that they\n"
     "cannot even be seen.");
 
+const u8 gZangoosePokedexText[] = _(
+    "When it battles, it stands on its hind legs\n"
+    "and attacks with its sharply clawed\n"
+    "forelegs. Its fur bristles if it encounters\n"
+    "any Seviper.");
+
+const u8 gSeviperPokedexText[] = _(
+    "Seviper and Zangoose are eternal rivals.\n"
+    "It counters a Zangoose's dazzling agility\n"
+    "with its swordlike tail, which also oozes\n"
+    "a horrible poison.");
+
+const u8 gBuizelPokedexText[] = _(
+    "It inflates its flotation sac, keeping its\n"
+    "face above water in order to watch for\n"
+    "prey movement. It swims by rotating its\n"
+    "two tails like a screw.");
+
+const u8 gFloatzelPokedexText[] = _(
+    "Its flotation sac developed as a result\n"
+    "of pursuing aquatic prey. It can double\n"
+    "as a rubber raft. It assists in the rescues\n"
+    "of drowning people.");
+
+const u8 gNohfacePokedexText[] = _(
+    "It waits for someone to become its friend.\n"
+    "Unfortunately, befriending it is very\n"
+    "difficult, because years of waiting for a\n"
+    "friend have made it bitter.");
+
+const u8 gKitsunohPokedexText[] = _(
+    "KITSUNOH is seldom seen in old ruins.\n"
+    "Most people think its existence is\n"
+    "nothing more than an old tale. Even those\n"
+    "who think it exists, have never seen it.");
+
 const u8 gTurtwigPokedexText[] = _(
     "The shell on its back is made of soil. \n"
     "On a very healthy TURTWIG, the shell \n"

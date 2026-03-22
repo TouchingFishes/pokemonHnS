@@ -5230,6 +5230,72 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 262,
         .trainerOffset = 0,
     },
+    [NATIONAL_DEX_ZANGOOSE] =
+    {
+        .categoryName = _("CAT FERRET"),
+        .height = 13,
+        .weight = 403,
+        .description = gZangoosePokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_SEVIPER] =
+    {
+        .categoryName = _("FANG SNAKE"),
+        .height = 27,
+        .weight = 525,
+        .description = gSeviperPokedexText,
+        .pokemonScale = 275,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_BUIZEL] =
+    {
+        .categoryName = _("SEA WEASEL"),
+        .height = 7,
+        .weight = 295,
+        .description = gBuizelPokedexText,
+        .pokemonScale = 365,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_FLOATZEL] =
+    {
+        .categoryName = _("SEA WEASEL"),
+        .height = 11,
+        .weight = 335,
+        .description = gFloatzelPokedexText,
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_NOHFACE] =
+    {
+        .categoryName = _("FORSAKEN"),
+        .height = 4,
+        .weight = 101,
+        .description = gNohfacePokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 15,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+    [NATIONAL_DEX_KITSUNOH] =
+    {
+        .categoryName = _("MASK"),
+        .height = 11,
+        .weight = 375,
+        .description = gKitsunohPokedexText,
+        .pokemonScale = 320,
+        .pokemonOffset = 7,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
     [NATIONAL_DEX_TURTWIG] =
     {
         .categoryName = _("TINY LEAF"),

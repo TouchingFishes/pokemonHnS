@@ -2139,6 +2139,30 @@ Cry_Mienshao::
 	.incbin "sound/direct_sound_samples/cries/mienshao.bin"
 
 	.align 2
+Cry_Zangoose::
+	.incbin "sound/direct_sound_samples/cries/zangoose.bin"
+
+	.align 2
+Cry_Seviper::
+	.incbin "sound/direct_sound_samples/cries/seviper.bin"
+
+	.align 2
+Cry_Buizel::
+	.incbin "sound/direct_sound_samples/cries/buizel.bin"
+
+	.align 2
+Cry_Floatzel::
+	.incbin "sound/direct_sound_samples/cries/floatzel.bin"
+
+	.align 2
+Cry_Nohface::
+	.incbin "sound/direct_sound_samples/cries/nohface.bin"
+
+	.align 2
+Cry_Kitsunoh::
+	.incbin "sound/direct_sound_samples/cries/kitsunoh.bin"
+
+	.align 2
 Cry_Turtwig::
 	.incbin "sound/direct_sound_samples/cries/turtwig.bin"
 
