@@ -907,7 +907,7 @@
 #define TRAINER_CYNTHIA                     903
 #define TRAINER_RIVAL_SQUIRTLE_6            904
 #define TRAINER_RIVAL_SQUIRTLE_7            905
-#define TRAINER_UNUSED3                     906
+#define TRAINER_SU                          906
 #define TRAINER_UNUSED4                     907
 #define TRAINER_UNUSED5                     908
 #define TRAINER_UNUSED6                     909

@@ -507,8 +507,8 @@ AzaleaTown_Gym_EventScript_Al::
 	end
 
 AzaleaTown_Gym_EventScript_Josh::
-	trainerbattle_single TRAINER_JOSH AzaleaTown_Gym_Text_BugCatcherJoshSeen, AzaleaTown_Gym_Text_BugCatcherJoshBeaten
-	msgbox AzaleaTown_Gym_Text_BugCatcherJoshAfter, MSGBOX_AUTOCLOSE
+	trainerbattle_single TRAINER_JOSH AzaleaTown_Gym_Text_BugManiacJoshSeen, AzaleaTown_Gym_Text_BugManiacJoshBeaten
+	msgbox AzaleaTown_Gym_Text_BugManiacJoshAfter, MSGBOX_AUTOCLOSE
 	end
 
 AzaleaTown_Gym_EventScript_Benny::
@@ -757,16 +757,16 @@ AzaleaTown_Gym_Text_BugCatcherAlAfter:
 	.string "don't like bug POKéMON.\p"
 	.string "I don't know why…$"
 
-AzaleaTown_Gym_Text_BugCatcherJoshSeen:
+AzaleaTown_Gym_Text_BugManiacJoshSeen:
 	.string "You saved all the SLOWPOKE?\n"
 	.string "Whew, you're mighty!\p"
 	.string "But my grown-up POKéMON are\n"
 	.string "pretty tough too!$"
 
-AzaleaTown_Gym_Text_BugCatcherJoshBeaten:
+AzaleaTown_Gym_Text_BugManiacJoshBeaten:
 	.string "Urrgggh!$"
 
-AzaleaTown_Gym_Text_BugCatcherJoshAfter:
+AzaleaTown_Gym_Text_BugManiacJoshAfter:
 	.string "I guess I should teach them\n"
 	.string "better moves…$"
 

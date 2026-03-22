@@ -7,9 +7,9 @@ Route35_OnTransition:
 	callnative SetTimeBasedEncounters
 	end	
 
-Route35_EventScript_CamperIvan::
-	trainerbattle_single TRAINER_IVAN Route35_Text_CamperIvanSeen, Route35_Text_CamperIvanBeaten
-	msgbox Route35_Text_CamperIvanAfter, MSGBOX_AUTOCLOSE
+Route35_EventScript_PokerangerMIvan::
+	trainerbattle_single TRAINER_IVAN Route35_Text_PokerangerMIvanSeen, Route35_Text_PokerangerMIvanBeaten
+	msgbox Route35_Text_PokerangerMIvanAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route35_EventScript_CamperElliot::
@@ -22,9 +22,9 @@ Route35_EventScript_PicnickerBrooke::
 	msgbox Route35_Text_PicnickerBrookeAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route35_EventScript_PicnickerKim::
-	trainerbattle_single TRAINER_KIM Route35_Text_PicnickerKimSeen, Route35_Text_PicnickerKimBeaten
-	msgbox Route35_Text_PicnickerKimAfter, MSGBOX_AUTOCLOSE
+Route35_EventScript_AromaLadyHana::
+	trainerbattle_single TRAINER_KIM Route35_Text_AromaLadyHanaSeen, Route35_Text_AromaLadyHanaBeaten
+	msgbox Route35_Text_AromaLadyHanaAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route35_EventScript_BirdKeeperBryan::
@@ -52,6 +52,11 @@ Route35_EventScript_PolicemanDirk::
 	msgbox Route35_Text_OfficerDirkAfter, MSGBOX_AUTOCLOSE
 	end
 
+Route35_EventScript_GuitaristSu::
+	trainerbattle_single TRAINER_SU Route35_Text_SuSeenText, Route35_Text_SuBeatenText
+    msgbox Route35_Text_SuAfterBattleText, MSGBOX_AUTOCLOSE
+    end
+
 Route35_EventScript_Sign1::
 	lock
 	msgbox Route35_Text_Sign, MSGBOX_SIGN
@@ -78,14 +83,14 @@ Route35_EventScript_Item_ParalyzeHeal::
 	finditem ITEM_PARALYZE_HEAL
 	end
 
-Route35_Text_CamperIvanSeen:
+Route35_Text_PokerangerMIvanSeen:
 	.string "I've been getting POKéMON data off\n"
 	.string "my radio. I think I'm good.$"
 
-Route35_Text_CamperIvanBeaten:
+Route35_Text_PokerangerMIvanBeaten:
 	.string "I give!$"
 
-Route35_Text_CamperIvanAfter:
+Route35_Text_PokerangerMIvanAfter:
 	.string "Music on the radio changes the\n"
 	.string "moods of wild POKéMON.$"
 
@@ -111,15 +116,16 @@ Route35_Text_PicnickerBrookeAfter:
 	.string "I can count on my POKéMON more than\n"
 	.string "my boyfriend.$"
 
-Route35_Text_PicnickerKimSeen:
-	.string "Are you going to the GYM? Me too!$"
+Route35_Text_AromaLadyHanaSeen:
+	.string "Mmm, the fragrance of my\n"
+    .string "CHIKORITA is divine!$"
 
-Route35_Text_PicnickerKimBeaten:
-	.string "Oh. I couldn't win…$"
+Route35_Text_AromaLadyHanaBeaten:
+	.string "Oh no! My sweet CHIKORITA...$"
 
-Route35_Text_PicnickerKimAfter:
-	.string "The GYM BADGES are pretty. I collect\n"
-	.string "them.$"
+Route35_Text_AromaLadyHanaAfter:
+	.string "Remember, a gentle heart and\n"
+    .string "a lovely fragrance can calm all.$"
 
 Route35_Text_BirdKeeperBryanSeen:
 	.string "What kinds of BALLS do you use?$"
@@ -185,6 +191,17 @@ Route35_Text_OfficerDirkAfter:
 Route35_Text_OfficerDirkTough:
 	.string "Your POKéMON look pretty tough.\p"
 	.string "You could go anywhere safely.$"
+
+Route35_Text_SuSeenText:
+    .string "Ah... I just want to relax\n"
+    .string "by the berry trees...$"
+
+Route35_Text_SuBeatenText:
+    .string "Hmm... even music can't save me now.$"
+
+Route35_Text_SuAfterBattleText:
+    .string "Sometimes, escaping the city\n"
+    .string "is the best way to find your rhythm.$"
 
 Route35_Text_Sign:
 	.string "ROUTE 35$"

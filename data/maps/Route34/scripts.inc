@@ -20,9 +20,9 @@ Route34_EventScript_YoungsterSamuel::
 	msgbox Route34_Text_YoungsterSamuel_After, MSGBOX_AUTOCLOSE
 	end
 
-Route34_EventScript_YoungsterIan::
-	trainerbattle_single TRAINER_IAN Route34_Text_YoungsterIan_Seen, Route34_Text_YoungsterIan_Beaten
-	msgbox Route34_Text_YoungsterIan_After, MSGBOX_AUTOCLOSE
+Route34_EventScript_CollectorIan::
+	trainerbattle_single TRAINER_IAN Route34_Text_CollectorIan_Seen, Route34_Text_CollectorIan_Beaten
+	msgbox Route34_Text_CollectorIan_After, MSGBOX_AUTOCLOSE
 	end
 
 Route34_EventScript_CamperTodd::
@@ -106,16 +106,16 @@ Route34_Text_YoungsterSamuel_After:
 	.string "After all, I'm trying to become\n"
 	.string "a GYM LEADER.$"
 
-Route34_Text_YoungsterIan_Seen:
-	.string "I'm the best in my class at\n"
+Route34_Text_CollectorIan_Seen:
+	.string "I'm the best at collecting\n"
 	.string "POKéMON.$"
 
-Route34_Text_YoungsterIan_Beaten:
+Route34_Text_CollectorIan_Beaten:
 	.string "No! There are better trainers…$"
 
-Route34_Text_YoungsterIan_After:
+Route34_Text_CollectorIan_After:
 	.string "I'm trying hard so I can be the\n"
-	.string "star in my class.$"
+	.string "star collector.$"
 
 Route34_Text_CamperTodd_Seen:
 	.string "I'm confident in my ability to\n"
