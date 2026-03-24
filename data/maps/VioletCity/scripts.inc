@@ -383,6 +383,16 @@ VioletCity_Movement_Kimono_Girl_5:
 	walk_up
 	step_end	
 
+VioletCity_EventScript_Lotad::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_LOTAD, CRY_MODE_NORMAL
+	msgbox VioletCity_Text_Lotad, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
 VioletCity_EventScript_LiquidJustice::
 	msgbox VioletCity_Text_LiquidJustice, MSGBOX_NPC
 	end
@@ -492,4 +502,6 @@ VioletCity_Text_Kimono_Girl3:
 VioletCity_Text_Kimono_Girl4:
 .string "I am counting on you.$"
 
+VioletCity_Text_Lotad:
+	.string "LOTAD: Lod tae-tae!$"
 

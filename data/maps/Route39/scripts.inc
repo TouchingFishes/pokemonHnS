@@ -262,11 +262,11 @@ Route39_EventScript_Derek::
 
 Route39_Text_PokefanMDerekSeen:
 	.string "This is a good time to brag\n"
-	.string "about my PIKACHU!$"
+	.string "about my GRANBULL!$"
 
 Route39_Text_PokefanMDerekBeaten:
 	.string "I had no time to show off\n"
-	.string "PIKACHU…$"
+	.string "GRANBULL$"
 
 Route39_Text_PokefanMDerekAfter:
 	.string "I'm not listening to your\n"

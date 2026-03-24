@@ -12149,23 +12149,23 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Bryan[] = { //BirdKeeper
 static const struct TrainerMonNoItemDefaultMoves sParty_Theo[] = { //BirdKeeperGroup
     {
     .iv = 0,
-    .lvl = 17,
+    .lvl = 15,
     .species = SPECIES_PIDGEY,
     },
     {
     .iv = 0,
-    .lvl = 19,
-    .species = SPECIES_TORCHIC,
+    .lvl = 20,
+    .species = SPECIES_FEAROW,
     },
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_VOLTREL,
+    .species = SPECIES_SPEAROW,
     },
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_VOLTREL,
+    .species = SPECIES_SPEAROW,
     },
 };
 
@@ -14001,15 +14001,15 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Brent4[] = { //Pokemania
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Miller[] = { //TeamRocketGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Miller[] = { //PokemaniacGroup
     {
     .iv = 0,
-    .lvl = 29,
+    .lvl = 27,
     .species = SPECIES_NIDOKING,
     },
     {
     .iv = 0,
-    .lvl = 29,
+    .lvl = 27,
     .species = SPECIES_NIDOQUEEN,
     },
 };
@@ -14453,14 +14453,9 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt24[] = { //Gentlema
 static const struct TrainerMonNoItemDefaultMoves sParty_Preston[] = { //GentlemanGroup
     {
     .iv = 0,
-    .lvl = 22,
-    .species = SPECIES_ELECTRIKE,
-    },
-    {
-    .iv = 0,
-    .lvl = 22,
-    .species = SPECIES_GROWLITHE,
-    },
+    .lvl = 23,
+    .species = SPECIES_FLAREON,
+    }
 };
 
 
@@ -17914,9 +17909,14 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Gina[] = { //PicnickerGr
 static const struct TrainerMonNoItemDefaultMoves sParty_Brooke[] = { //PicnickerGroup
     {
     .iv = 0,
-    .lvl = 18,
+    .lvl = 14,
     .species = SPECIES_PIKACHU,
     },
+    {
+    .iv = 0,
+    .lvl = 17,
+    .species = SPECIES_VULPIX,
+    }
 };
 
 
@@ -19692,7 +19692,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Keith[] = { //OfficerGro
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Dirk[] = { //GruntFGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Dirk[] = { //OfficerGroup
     {
     .iv = 0,
     .lvl = 16,
@@ -19701,7 +19701,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Dirk[] = { //GruntFGroup
     {
     .iv = 0,
     .lvl = 16,
-    .species = SPECIES_HOUNDOUR,
+    .species = SPECIES_GROWLITHE,
     },
 };
 
@@ -20030,14 +20030,14 @@ static const struct TrainerMonItemCustomMoves sParty_Morty[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 24,
-    .species = SPECIES_HAUNTER,
+    .species = SPECIES_MISDREAVUS,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_HYPNOSIS, MOVE_NIGHTMARE, MOVE_CURSE, MOVE_SHADOW_BALL}
     },
     {
     .iv = 100,
     .lvl = 23,
-    .species = SPECIES_STANTLER, //NOHFACE
+    .species = SPECIES_NOHFACE,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SWORDS_DANCE, MOVE_QUICK_ATTACK, MOVE_SLASH, MOVE_SHADOW_BALL}
     },
@@ -20051,7 +20051,7 @@ static const struct TrainerMonItemCustomMoves sParty_Morty[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 25,
-    .species = SPECIES_GENGAR,
+    .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_HYPNOSIS, MOVE_SHADOW_BALL, MOVE_MEAN_LOOK, MOVE_DREAM_EATER}
     },
@@ -20060,46 +20060,46 @@ static const struct TrainerMonItemCustomMoves sParty_Morty[] = { //LeaderGroup
 
 static const struct TrainerMonItemCustomMoves sParty_Morty2[] = { //LeaderGroup
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 64,
     .species = SPECIES_MIMIKYU,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SHADOW_CLAW, MOVE_POWER_GEM, MOVE_MEAN_LOOK, MOVE_DETECT}
     },
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 63,
-    .species = SPECIES_WYRDEER,
+    .species = SPECIES_KITSUNOH,
     .heldItem = ITEM_SILK_SCARF,
-    .moves = {MOVE_JUMP_KICK, MOVE_HEADBUTT, MOVE_HYPNOSIS, MOVE_PSYCHO_CUT}
+    .moves = {MOVE_SWORDS_DANCE, MOVE_QUICK_ATTACK, MOVE_SLASH, MOVE_SHADOW_BALL}
     },
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 64,
-    .species = SPECIES_GENGAR,
+    .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_SPELL_TAG,
     .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_SLUDGE_BOMB, MOVE_PSYCHIC}
     },
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 63,
-    .species = SPECIES_MISMAGIUS,
+    .species = SPECIES_SPIRITOMB,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_MEAN_LOOK, MOVE_PAIN_SPLIT, MOVE_PERISH_SONG}
+    .moves = {MOVE_SHADOW_PUNCH, MOVE_FIRE_PUNCH, MOVE_WILL_O_WISP, MOVE_DARK_PULSE}
     },
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 65,
     .species = SPECIES_GENGAR,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_SHADOW_BALL, MOVE_HYPNOSIS, MOVE_THUNDERBOLT, MOVE_DREAM_EATER}
     },
     {
-    .iv = 100,
+    .iv = 255,
     .lvl = 65,
-    .species = SPECIES_SPIRITOMB,
+    .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_PUNCH, MOVE_FIRE_PUNCH, MOVE_WILL_O_WISP, MOVE_DARK_PULSE}
+    .moves = {MOVE_SHADOW_BALL, MOVE_MEAN_LOOK, MOVE_PAIN_SPLIT, MOVE_PERISH_SONG}
     },
 };
 

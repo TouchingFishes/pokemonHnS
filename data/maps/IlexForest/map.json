@@ -489,7 +489,7 @@
       "flag": "FLAG_HIDE_ILEX_FOREST_KIMONO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
       "x": 24,
       "y": 14,
       "elevation": 3,
