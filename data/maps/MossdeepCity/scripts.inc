@@ -14,7 +14,7 @@ MossdeepCity_MapScripts::
 
 MossdeepCity_OnTransition:
 	callnative SetTimeBasedEncounters
-	clearflag FLAG_MOSSDEEP_GYM_SWITCH_1
+	clearflag FLAG_GOT_CAPTAIN_TROPIUS
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_2
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_3
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_4

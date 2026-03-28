@@ -184,6 +184,32 @@ Route41_Text_SwimmerfWendyAfter:
 	.string "at the same time.\p"
 	.string "It's so beautiful, it's scary.$"
 
+Route41_EventScript_RuinManiac::
+    lock
+    faceplayer
+    waitse
+    msgbox Route41_Text_RuinManiacIntro, MSGBOX_DEFAULT
+    waitmoncry
+    closemessage
+    release
+    end
+
+Route41_Text_RuinManiacIntro:
+    .string "Hahahaha! Do you have\n"
+    .string "ANY idea what I've done?!\l"
+    .string "FOSSIL POKéMON -- ancient\n"
+    .string "creatures thought lost\l"
+    .string "to time -- now SWIM\n"
+    .string "freely in the Whirl\l"
+    .string "Islands as nature\n"
+    .string "intended!\l"
+    .string "KABUTO! OMANYTE!\p"
+    .string "They call me mad...\n"
+    .string "The professors, the\l"
+    .string "researchers, all of them!\l"
+    .string "But who's laughing now?\n"
+    .string "The FOSSILS are FREE!$"
+
 Route41_EventScript_Tentacruel1::
 	lock
 	faceplayer

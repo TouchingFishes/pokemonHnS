@@ -257,6 +257,118 @@ OlivineCity_EventScript_EonTicketWomanAfter::
 	release
 	end
 
+OlivineCity_EventScript_SuperNerd::
+    lock
+    faceplayer
+    msgbox OlivineCity_Text_SuperNerdFossils, MSGBOX_DEFAULT
+    closemessage
+    release
+    end
+
+OlivineCity_EventScript_RetiredCaptain::
+    lock
+    faceplayer
+    goto_if_set FLAG_GOT_CAPTAIN_TROPIUS, OlivineCity_EventScript_RetiredCaptainAfter
+    msgbox OlivineCity_Text_RetiredCaptainIntro, MSGBOX_DEFAULT
+    closemessage
+    getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, VioletCity_PokeCenter_Text_ElmsAideFullParty
+    msgbox OlivineCity_Text_RetiredCaptainGift, MSGBOX_DEFAULT
+    givemon SPECIES_TROPIUS, 15, ITEM_NONE
+    msgbox OlivineCity_Text_RetiredCaptainGiftDone, MSGBOX_DEFAULT
+    setflag FLAG_GOT_CAPTAIN_TROPIUS
+    closemessage
+    release
+    end
+
+OlivineCity_EventScript_RetiredCaptainPartyFull::
+    msgbox OlivineCity_Text_RetiredCaptainPartyFull, MSGBOX_DEFAULT
+    closemessage
+    release
+    end
+
+OlivineCity_EventScript_RetiredCaptainAfter::
+    msgbox OlivineCity_Text_RetiredCaptainAfter, MSGBOX_DEFAULT
+    closemessage
+    release
+    end
+
+OlivineCity_EventScript_Tropius::
+    lock
+    faceplayer
+    waitse
+    playmoncry SPECIES_TROPIUS, CRY_MODE_NORMAL
+    msgbox OlivineCity_Text_Tropius, MSGBOX_DEFAULT
+    waitmoncry
+    release
+    end
+
+OlivineCity_Text_Tropius:
+    .string "A large dinosaur-like\n"
+    .string "POKéMON stands by the\l"
+    .string "apartments, gazing out at\n"
+    .string "the open sea.\l"
+    .string "It turns to look at you\n"
+    .string "with bright, eager eyes.\l"
+    .string "It lets out a low rumble\n"
+    .string "and spreads its wings\l"
+    .string "as if to say--\n"
+    .string "Let's go already!$"
+
+OlivineCity_Text_RetiredCaptainIntro:
+    .string "Heh, you've got the look\n"
+    .string "of a traveler about you.\l"
+    .string "I was the same once.\n"
+    .string "Sailed every sea there\l"
+    .string "is to sail. JOHTO,\n"
+    .string "HOENN, you name it.\l"
+    .string "But these old legs are\n"
+    .string "done with adventure.\l"
+    .string "My TROPIUS, though...\n"
+    .string "that's another story.\l"
+    .string "She paces the docks\n"
+    .string "every single morning.\l"
+    .string "Still wants to see the\n"
+    .string "world, bless her heart.\l"
+    .string "How about it, kid?\n"
+    .string "Take her with you.$"
+
+OlivineCity_Text_RetiredCaptainGift:
+    .string "Go on, she won't bite.\n"
+    .string "Probably.$"
+
+OlivineCity_Text_RetiredCaptainGiftDone:
+    .string "Treat her well, kid.\n"
+    .string "And see some of the\l"
+    .string "world for me, yeah?$"
+
+OlivineCity_Text_RetiredCaptainPartyFull:
+    .string "Hah, a full crew already!\n"
+    .string "Come back when you've\l"
+    .string "got room for one more.\n"
+    .string "TROPIUS isn't going\l"
+    .string "anywhere... unlike me,\n"
+    .string "back in the day.$"
+
+OlivineCity_Text_RetiredCaptainAfter:
+    .string "TROPIUS keeping up\n"
+    .string "with you out there?\l"
+    .string "Good. She always did\n"
+    .string "hate standing still.$"
+
+OlivineCity_Text_SuperNerdFossils:
+    .string "Have you heard the rumors\n"
+    .string "about the Whirl Islands?\l"
+    .string "Some madman has been\n"
+    .string "releasing FOSSIL POKéMON\l"
+    .string "into the caves there!\l"
+    .string "OMANYTE... KABUTO...\l"
+    .string "As a scientist, I find it\n"
+    .string "utterly fascinating--\l"
+    .string "but also deeply reckless.\n"
+    .string "Those species went extinct\l"
+    .string "for a reason, you know.$"
+
 OlivineCity_Text_CafeSign:
 	.string "OLIVINE CAFE\n"
 	.string "WHERE STRONG SAILORS ENJOY\l"
