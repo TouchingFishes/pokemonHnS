@@ -5893,6 +5893,18 @@ SINGLE_ANIMATION(Wyrdeer);
 SINGLE_ANIMATION(Honedge);
 SINGLE_ANIMATION(Doublade);
 SINGLE_ANIMATION(Aegislash);
+SINGLE_ANIMATION(Fomantis);
+SINGLE_ANIMATION(Lurantis);
+SINGLE_ANIMATION(Vullaby);
+SINGLE_ANIMATION(Mandibuzz);
+SINGLE_ANIMATION(Mienfoo);
+SINGLE_ANIMATION(Mienshao);
+SINGLE_ANIMATION(Zangoose);
+SINGLE_ANIMATION(Seviper);
+SINGLE_ANIMATION(Riolu);
+SINGLE_ANIMATION(Lucario);
+SINGLE_ANIMATION(Nohface);
+SINGLE_ANIMATION(Kitsunoh);
 SINGLE_ANIMATION(Turtwig);
 SINGLE_ANIMATION(Grotle);
 SINGLE_ANIMATION(Torterra);
@@ -6389,13 +6401,25 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_HONEDGE] = sAnims_Honedge,
     [SPECIES_DOUBLADE] = sAnims_Doublade,
     [SPECIES_AEGISLASH] = sAnims_Aegislash,
-    [SPECIES_TURTWIG]   = sAnims_Turtwig,
-    [SPECIES_GROTLE]    = sAnims_Grotle,
-    [SPECIES_TORTERRA]  = sAnims_Torterra,
-    [SPECIES_CHIMCHAR]  = sAnims_Chimchar,
-    [SPECIES_MONFERNO]  = sAnims_Monferno,
+    [SPECIES_FOMANTIS] = sAnims_Fomantis,
+    [SPECIES_LURANTIS] = sAnims_Lurantis,
+    [SPECIES_VULLABY] = sAnims_Vullaby,
+    [SPECIES_MANDIBUZZ] = sAnims_Mandibuzz,
+    [SPECIES_MIENFOO] = sAnims_Mienfoo,
+    [SPECIES_MIENSHAO] = sAnims_Mienshao,
+    [SPECIES_ZANGOOSE] = sAnims_Zangoose,
+    [SPECIES_SEVIPER] = sAnims_Seviper,
+    [SPECIES_RIOLU] = sAnims_Riolu,
+    [SPECIES_LUCARIO] = sAnims_Lucario,
+    [SPECIES_NOHFACE] = sAnims_Nohface,
+    [SPECIES_KITSUNOH] = sAnims_Kitsunoh,
+    [SPECIES_TURTWIG] = sAnims_Turtwig,
+    [SPECIES_GROTLE] = sAnims_Grotle,
+    [SPECIES_TORTERRA] = sAnims_Torterra,
+    [SPECIES_CHIMCHAR] = sAnims_Chimchar,
+    [SPECIES_MONFERNO] = sAnims_Monferno,
     [SPECIES_INFERNAPE] = sAnims_Infernape,
-    [SPECIES_PIPLUP]    = sAnims_Piplup,
-    [SPECIES_PRINPLUP]  = sAnims_Prinplup,
-    [SPECIES_EMPOLEON]  = sAnims_Empoleon,
+    [SPECIES_PIPLUP] = sAnims_Piplup,
+    [SPECIES_PRINPLUP] = sAnims_Prinplup,
+    [SPECIES_EMPOLEON] = sAnims_Empoleon,
 };
