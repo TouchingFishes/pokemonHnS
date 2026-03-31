@@ -2540,23 +2540,23 @@ const u8 gWyrdeerPokedexText[] = _(
     "The fur shed from its beard retains heat\n"
     "and is useful for winter clothing.");
 
-const u8 gHonedgePokedexText[] = _(
-    "If anyone dares to grab its hilt, it\n"
-    "wraps a blue cloth around that person's\n"
-    "arm and drains that person's life\n"
-    "energy completely.");
+const u8 gWhismurPokedexText[] = _(
+    "Its cries equal a jet plane in volume.\n"
+    "It inhales through its ear canals. Because\n"
+    "of this system, it can cry continually\n"
+    "without having to catch its breath.");
 
-const u8 gDoubladePokedexText[] = _(
-    "It crossed the sea and drifted\n"
-    "ashore in a new land. Surviving in this\n"
-    "place led it to take on a unique\n"
-    "appearance and gain special powers.");
+const u8 gLoudredPokedexText[] = _(
+    "It positions the round speakers on its\n"
+    "head to assail foes with ultrasonic waves\n"
+    "at massive volume. It builds power by\n"
+    "stomping the ground.");
 
-const u8 gAegislashPokedexText[] = _(
-    "A violent creature that fells trees with\n"
-    "its crude axes and shields itself with hard\n"
-    "stone. Should one encounter this POKéMON\n"
-    "in the wild, one's only recourse is to flee.");
+const u8 gExploudPokedexText[] = _(
+    "It has sound-generating organs all over\n"
+    "its body. It communicates with others by\n"
+    "adjusting the tone and volume of the cries\n"
+    "it emits.");
 
 const u8 gFomantisPokedexText[] = _(
     "During the day, it sleeps and soaks up\n"

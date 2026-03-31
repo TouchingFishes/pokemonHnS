@@ -429,9 +429,9 @@ gCryTable::
 	cry Cry_Dundrag
 	cry Cry_Dunlong
 	cry Cry_Wyrdeer
-	cry Cry_Honedge
-	cry Cry_Doublade
-	cry Cry_Aegislash
+	cry Cry_Whismur
+	cry Cry_Loudred
+	cry Cry_Exploud
 
 	.align 2
 gCryTable_Reverse::
@@ -864,6 +864,6 @@ gCryTable_Reverse::
 	cry_reverse Cry_Dundrag
 	cry_reverse Cry_Dunlong
 	cry_reverse Cry_Wyrdeer
-	cry_reverse Cry_Honedge
-	cry_reverse Cry_Doublade
-	cry_reverse Cry_Aegislash
+	cry_reverse Cry_Whismur
+	cry_reverse Cry_Loudred
+	cry_reverse Cry_Exploud

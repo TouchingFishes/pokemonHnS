@@ -718,7 +718,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             }
             else if ((partnerSpecies == SPECIES_MURKROW || partnerSpecies == SPECIES_MISDREAVUS
-                   || partnerSpecies == SPECIES_MUNNA || partnerSpecies == SPECIES_DOUBLADE
+                   || partnerSpecies == SPECIES_MUNNA || partnerSpecies == SPECIES_LOUDRED
                    || partnerSpecies == SPECIES_SINISTEA || partnerSpecies == SPECIES_SANDSHREW_ALOLAN
                    || partnerSpecies == SPECIES_VULPIX_ALOLAN || partnerSpecies == SPECIES_SINISTEA_ANTIQUE)
                    && partnerLevel >= 25)

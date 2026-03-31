@@ -5206,30 +5206,35 @@ static const union AnimCmd sAnim_Wyrdeer_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Honedge_1[] =
+static const union AnimCmd sAnim_Whismur_1[] =
 {
-    ANIMCMD_FRAME(1, 50),
-    ANIMCMD_FRAME(1, 40),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 33),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Doublade_1[] =
+static const union AnimCmd sAnim_Loudred_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 33),
     ANIMCMD_END,
 };
-static const union AnimCmd sAnim_Aegislash_1[] =
+static const union AnimCmd sAnim_Exploud_1[] =
 {
-    ANIMCMD_FRAME(0, 18),
-    ANIMCMD_FRAME(1, 18),
-    ANIMCMD_FRAME(0, 18),
-    ANIMCMD_FRAME(1, 18),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 44),
+    ANIMCMD_FRAME(0, 9),
     ANIMCMD_END,
 };
 static const union AnimCmd sAnim_Fomantis_1[] =
@@ -5890,9 +5895,9 @@ SINGLE_ANIMATION(Kujinought);
 SINGLE_ANIMATION(Dundrag);
 SINGLE_ANIMATION(Dunlong);
 SINGLE_ANIMATION(Wyrdeer);
-SINGLE_ANIMATION(Honedge);
-SINGLE_ANIMATION(Doublade);
-SINGLE_ANIMATION(Aegislash);
+SINGLE_ANIMATION(Whismur);
+SINGLE_ANIMATION(Loudred);
+SINGLE_ANIMATION(Exploud);
 SINGLE_ANIMATION(Fomantis);
 SINGLE_ANIMATION(Lurantis);
 SINGLE_ANIMATION(Vullaby);
@@ -6398,9 +6403,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DUNDRAG] = sAnims_Kujinought,
     [SPECIES_DUNLONG] = sAnims_Dunlong,
     [SPECIES_WYRDEER] = sAnims_Wyrdeer,
-    [SPECIES_HONEDGE] = sAnims_Honedge,
-    [SPECIES_DOUBLADE] = sAnims_Doublade,
-    [SPECIES_AEGISLASH] = sAnims_Aegislash,
+    [SPECIES_WHISMUR] = sAnims_Whismur,
+    [SPECIES_LOUDRED] = sAnims_Loudred,
+    [SPECIES_EXPLOUD] = sAnims_Exploud,
     [SPECIES_FOMANTIS] = sAnims_Fomantis,
     [SPECIES_LURANTIS] = sAnims_Lurantis,
     [SPECIES_VULLABY] = sAnims_Vullaby,

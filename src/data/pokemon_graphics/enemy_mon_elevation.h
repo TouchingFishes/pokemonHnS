@@ -79,5 +79,4 @@ const u8 gEnemyMonElevation[NUM_SPECIES] =
     [SPECIES_VOLCARONA] = 6,
     [SPECIES_PORYGON_Z] = 12,
     [SPECIES_REGIDRAGO] = 5,
-    [SPECIES_HONEDGE] = 4,
 };

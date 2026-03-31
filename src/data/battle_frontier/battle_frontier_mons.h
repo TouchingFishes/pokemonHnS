@@ -6412,22 +6412,22 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_SP_ATTACK,
         .nature = NATURE_SERIOUS
     },
-    [FRONTIER_MON_HONEDGE_1] = {
-        .species = SPECIES_HONEDGE,
+    [FRONTIER_MON_WHISMUR_1] = {
+        .species = SPECIES_WHISMUR,
         .moves = {MOVE_EARTHQUAKE, MOVE_SLASH, MOVE_ROLLOUT, MOVE_PLAY_ROUGH},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_DOUBLADE_1] = {
-        .species = SPECIES_DOUBLADE,
+    [FRONTIER_MON_LOUDRED_1] = {
+        .species = SPECIES_LOUDRED,
         .moves = {MOVE_EARTH_POWER, MOVE_FAKE_TEARS, MOVE_DARK_PULSE, MOVE_MOONBLAST},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_SP_ATTACK,
         .nature = NATURE_BASHFUL
     },
-    [FRONTIER_MON_AEGISLASH_1] = {
-        .species = SPECIES_AEGISLASH,
+    [FRONTIER_MON_EXPLOUD_1] = {
+        .species = SPECIES_EXPLOUD,
         .moves = {MOVE_ROCK_SLIDE, MOVE_SPIKES, MOVE_CRUSH_CLAW, MOVE_TWINEEDLE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
@@ -12849,22 +12849,22 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_SP_ATTACK,
         .nature = NATURE_SERIOUS
     },
-    [FRONTIER_MON_HONEDGE_1] = {
-        .species = SPECIES_HONEDGE,
+    [FRONTIER_MON_WHISMUR_1] = {
+        .species = SPECIES_WHISMUR,
         .moves = {MOVE_EARTHQUAKE, MOVE_SLASH, MOVE_ROLLOUT, MOVE_PLAY_ROUGH},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
         .nature = NATURE_MODEST
     },
-    [FRONTIER_MON_DOUBLADE_1] = {
-        .species = SPECIES_DOUBLADE,
+    [FRONTIER_MON_LOUDRED_1] = {
+        .species = SPECIES_LOUDRED,
         .moves = {MOVE_EARTH_POWER, MOVE_FAKE_TEARS, MOVE_SLASH, MOVE_MOONBLAST},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,
         .nature = NATURE_BASHFUL
     },
-    [FRONTIER_MON_AEGISLASH_1] = {
-        .species = SPECIES_AEGISLASH,
+    [FRONTIER_MON_EXPLOUD_1] = {
+        .species = SPECIES_EXPLOUD,
         .moves = {MOVE_ROCK_SLIDE, MOVE_SPIKES, MOVE_CRUSH_CLAW, MOVE_TWINEEDLE},
         .itemTableId = BATTLE_FRONTIER_ITEM_SITRUS_BERRY,
         .evSpread = F_EV_SPREAD_HP | F_EV_SPREAD_ATTACK,

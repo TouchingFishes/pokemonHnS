@@ -20718,7 +20718,7 @@ static const struct TrainerMonItemCustomMoves sParty_Brock[] = { //LeaderGroup
     {
     .iv = 200,
     .lvl = 66,
-    .species = SPECIES_AEGISLASH,
+    .species = SPECIES_EXPLOUD,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_SWORDS_DANCE, MOVE_ROCK_SLIDE, MOVE_TWINEEDLE, MOVE_AGILITY}
     },
@@ -24302,7 +24302,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Giovanni[] = { //RocketAd
     {
     .iv = 255,
     .lvl = 60,
-    .species = SPECIES_HONEDGE,
+    .species = SPECIES_WHISMUR,
     .moves = {MOVE_EARTHQUAKE, MOVE_SANDSTORM, MOVE_PLAY_ROUGH, MOVE_DOUBLE_EDGE}
     },
     {
@@ -25376,7 +25376,7 @@ MotoGroup:
 	dw DRAGONITE
 	dw ICE_BEAM, DRAGON_PULSE, TWISTER, THUNDERBOLT
 	db 75
-	dw PORYGON2 ;AEGISLASH (some day)
+	dw PORYGON2 ;EXPLOUD (some day)
 	dw PSYCHIC_M, THUNDERBOLT, ICE_BEAM, TRI_ATTACK
 	db 77
 	dw KINGDRA

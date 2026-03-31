@@ -2268,13 +2268,13 @@ $(OBJEVENTGFXDIR)/pokemon/followers/dunlong.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/wyrdeer.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/honedge.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/whismur.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/doublade.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/loudred.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/aegislash.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/exploud.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/fomantis.4bpp: %.4bpp: %.png

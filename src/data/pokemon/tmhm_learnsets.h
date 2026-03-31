@@ -11468,7 +11468,7 @@ const union {
         .FLASH = TRUE,
     } }, 
 
-    [SPECIES_HONEDGE] = { .learnset = {
+    [SPECIES_WHISMUR] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -11498,7 +11498,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
-    [SPECIES_DOUBLADE] = { .learnset = {
+    [SPECIES_LOUDRED] = { .learnset = {
         .FOCUS_PUNCH = TRUE,
         .ROAR = TRUE,
         .TOXIC = TRUE,
@@ -11528,7 +11528,7 @@ const union {
         .ROCK_SMASH = TRUE,
     } }, 
 
-    [SPECIES_AEGISLASH] = { .learnset = {
+    [SPECIES_EXPLOUD] = { .learnset = {
         .TOXIC = TRUE,
         .HIDDEN_POWER = TRUE,
         .SUNNY_DAY = TRUE,
