@@ -4851,12 +4851,12 @@ const struct PokedexEntry gPokedexEntries[] =
     [NATIONAL_DEX_GEKOPON] =
     {
         .categoryName = _("ELEFROG"),
-        .height = 12,
-        .weight = 1400,
+        .height = 15,
+        .weight = 620,
         .description = gGekoponPokedexText,
-        .pokemonScale = 356,
-        .pokemonOffset = 17,
-        .trainerScale = 256,
+        .pokemonScale = 268,
+        .pokemonOffset = 2,
+        .trainerScale = 271,
         .trainerOffset = 0,
     },
 

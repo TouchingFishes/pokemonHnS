@@ -3349,7 +3349,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_TWISTER] =
     {
         .effect = EFFECT_TWISTER,
-        .power = 80, //65
+        .power = 90, //65
         .type = TYPE_FLYING, //TYPE_DRAGON
         .accuracy = 100,
         .pp = 20,
@@ -4623,7 +4623,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_MUDDY_WATER] =
     {
         .effect = EFFECT_ACCURACY_DOWN_HIT,
-        .power = 95, //90
+        .power = 105, //90
         .type = TYPE_GROUND,
         .accuracy = 85,
         .pp = 10,
@@ -4972,7 +4972,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DARK_PULSE] =
     {
         .effect = EFFECT_FLINCH_HIT,
-        .power = 80,
+        .power = 95,
         .type = TYPE_DARK,
         .accuracy = 100,
         .pp = 15,
