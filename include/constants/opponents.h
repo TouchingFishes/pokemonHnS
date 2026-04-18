@@ -2,17 +2,17 @@
 #define GUARD_CONSTANTS_OPPONENTS_H
 
 #define TRAINER_NONE                          0
-#define TRAINER_SAWYER_1                      1
+#define TRAINER_SAWYER_1                      1 //unused in johto
 #define TRAINER_SAYO                          2
 #define TRAINER_SCOTT                         3
 #define TRAINER_SEAN                          4
 #define TRAINER_SETH                          5
 #define TRAINER_TROY                          6
 #define TRAINER_TULLY                         7
-#define TRAINER_TYLER                         8
+#define TRAINER_TYLER                         8 //unused in johto
 #define TRAINER_ROD                           9
-#define TRAINER_TONY                         10
-#define TRAINER_MARCEL                       11
+#define TRAINER_TONY                         10 //unused in johto
+#define TRAINER_MARCEL                       11 //unused in johto
 #define TRAINER_ARNOLD                       12
 #define TRAINER_ED                           13
 #define TRAINER_VALERIE                      14
@@ -23,35 +23,35 @@
 #define TRAINER_FALKNER_1                    19
 #define TRAINER_TODD                         20
 #define TRAINER_TOM                          21
-#define TRAINER_VERONICA                     22
-#define TRAINER_THERESA                      23
+#define TRAINER_VERONICA                     22 //unused in johto
+#define TRAINER_THERESA                      23 //unused in johto
 #define TRAINER_TIM                          24
 #define TRAINER_TIMOTHY                      25
 #define TRAINER_FALKNER_2                    26
 #define TRAINER_SID                          27
 #define TRAINER_STANLY                       28
 #define TRAINER_REBECCA                      29
-#define TRAINER_MATT                         30
-#define TRAINER_ZANDER                       31
+#define TRAINER_MATT                         30 //unused in johto
+#define TRAINER_ZANDER                       31 //unused in johto
 #define TRAINER_DEVIN                        32
 #define TRAINER_GRANT                        33
 #define TRAINER_CASSIE                       34
-#define TRAINER_LEAH                         35
+#define TRAINER_LEAH                         35 //unused in johto
 #define TRAINER_JEFFREY                      36
 #define TRAINER_GRUNT_33                     37
 #define TRAINER_NORMAN                       38
-#define TRAINER_VIOLET                       39
-#define TRAINER_ROSE_2                       40
-#define TRAINER_ROSE_3                       41
-#define TRAINER_ROSE_4                       42
-#define TRAINER_ROSE_5                       43
+#define TRAINER_VIOLET                       39 //unused in johto
+#define TRAINER_ROSE_2                       40 //unused in johto
+#define TRAINER_ROSE_3                       41 //unused in johto
+#define TRAINER_ROSE_4                       42 //unused in johto
+#define TRAINER_ROSE_5                       43 //unused in johto
 #define TRAINER_KRISE                        44
 #define TRAINER_GRUNT_16                     45
 #define TRAINER_RAYMOND                      46
 #define TRAINER_KUNI                         47
 #define TRAINER_KYLE                         48
 #define TRAINER_LAO                          49
-#define TRAINER_LEA_AND_PIA                  50
+#define TRAINER_LEA_AND_PIA                  50 //until here
 #define TRAINER_REENA                        51
 #define TRAINER_REX                          52
 #define TRAINER_RICH                         53
@@ -158,7 +158,7 @@
 #define TRAINER_JO_AND_ZOE                  154
 #define TRAINER_TONY_1                      155
 #define TRAINER_JEROME                      156
-#define TRAINER_MATTHEW                     157
+#define TRAINER_MATTHEW                     157 //unused in johto
 #define TRAINER_DAVID                       158
 #define TRAINER_SPENCER                     159
 #define TRAINER_ROLAND                      160

@@ -24363,45 +24363,45 @@ static const struct TrainerMonNoItemCustomMoves sParty_Archer_1[] = { //RocketAd
     {
     .iv = 255,
     .lvl = 38,
-    .species = SPECIES_HOUNDOOM,
+    .species = SPECIES_PERSIAN,
     .moves = {MOVE_BITE, MOVE_SMOG, MOVE_ROAR, MOVE_FLAMETHROWER}
     },
 };
 static const struct TrainerMonNoItemCustomMoves sParty_Archer_2[] = { //RocketAdminGroup
     {
     .iv = 255,
-    .lvl = 39,
-    .species = SPECIES_HYDREIGON,
-    .moves = {MOVE_TRI_ATTACK, MOVE_ZAP_CANNON, MOVE_FLAMETHROWER, MOVE_ICE_BEAM}
+    .lvl = 42,
+    .species = SPECIES_HONCHKROW,
+    .moves = {MOVE_FAINT_ATTACK, MOVE_FLY, MOVE_STEEL_WING, MOVE_SUPERPOWER}
     },
     {
     .iv = 255,
-    .lvl = 38,
+    .lvl = 40,
     .species = SPECIES_TAUROS,
     .moves = {MOVE_HEADBUTT, MOVE_ROCK_SMASH, MOVE_PURSUIT, MOVE_FRUSTRATION}
     },
     {
     .iv = 255,
-    .lvl = 39,
+    .lvl = 42,
     .species = SPECIES_GYARADOS,
     .moves = {MOVE_BITE, MOVE_STRENGTH, MOVE_GUST, MOVE_SURF}
     },
     {
     .iv = 255,
-    .lvl = 38,
-    .species = SPECIES_HOUNDOOM,
-    .moves = {MOVE_BITE, MOVE_SMOG, MOVE_ROAR, MOVE_FLAMETHROWER}
+    .lvl = 40,
+    .species = SPECIES_NIDOKING,
+    .moves = {MOVE_DOUBLE_KICK, MOVE_DRILL_RUN, MOVE_THRASH, MOVE_POISON_FANG}
     },
     {
     .iv = 255,
-    .lvl = 40,
-    .species = SPECIES_SLOWBRO,
-    .moves = {MOVE_CONFUSION, MOVE_CURSE, MOVE_AMNESIA, MOVE_SURF}
+    .lvl = 43,
+    .species = SPECIES_GRIMMSNARL,
+    .moves = {MOVE_BRICK_BREAK, MOVE_FAINT_ATTACK, MOVE_THUNDER_PUNCH, MOVE_ICE_PUNCH}
     },
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Grunt[] = { //TeamRocketGroup //proton1
+static const struct TrainerMonNoItemDefaultMoves sParty_Grunt[] = { //TeamRocketGroup //proton1 Slowpoke Well
     {
     .iv = 0,
     .lvl = 12,
@@ -24409,13 +24409,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt[] = { //TeamRocket
     },
     {
     .iv = 0,
-    .lvl = 13,
+    .lvl = 12,
     .species = SPECIES_SLOWPOKE,
     },
     {
     .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_HOUNDOUR,
+    .lvl = 14,
+    .species = SPECIES_MURKROW,
     },
 };
 

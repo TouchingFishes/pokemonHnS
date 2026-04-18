@@ -27,9 +27,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_ROSS] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = _("ROSS"),
         .items = {},
         .doubleBattle = FALSE,
@@ -40,9 +40,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MITCH] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = _("MITCH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -53,9 +53,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_JED] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = _("JED"),
         .items = {},
         .doubleBattle = FALSE,
@@ -66,9 +66,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_MARC] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = _("MARC"),
         .items = {},
         .doubleBattle = FALSE,
@@ -79,9 +79,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_RICH] =
     {
-        .trainerClass = TRAINER_CLASS_COLLECTOR,
+        .trainerClass = TRAINER_CLASS_SCIENTIST,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_COLLECTOR,
+        .trainerPic = TRAINER_PIC_SCIENTIST,
         .trainerName = _("RICH"),
         .items = {},
         .doubleBattle = FALSE,
