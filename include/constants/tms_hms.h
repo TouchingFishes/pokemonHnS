@@ -51,7 +51,32 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(MIRROR_SHOT) \
+    F(FLAME_CHARGE) \
+    F(ICE_PUNCH) \
+    F(MIMIC) \
+    F(GRASS_KNOT) \
+    F(CHARGE_BEAM) \
+    F(VENOSHOCK) \
+    F(ROCK_BLAST) \
+    F(ENERGY_BALL) \
+    F(SWIFT) \
+    F(MUD_SLAP) \
+    F(SLEEP_TALK) \
+    F(AVALANCHE) \
+    F(BEAT_UP) \
+    F(COSMIC_POWER) \
+    F(ACROBATICS) \
+    F(SWEET_SCENT) \
+    F(FIRE_PUNCH) \
+    F(ZAP_CANNON) \
+    F(FALSE_SWIPE) \
+    F(THUNDER_PUNCH) \
+    F(ICE_BALL) \
+    F(POUNCE) \
+    F(DRAGONBREATH) \
+    F(NIGHTMARE)
 
 #define FOREACH_HM(F) \
     F(CUT) \
