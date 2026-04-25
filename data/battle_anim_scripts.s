@@ -12176,7 +12176,6 @@ Move_MAGICAL_FIRE:
 	loadspritegfx ANIM_TAG_ROUND_SHADOW
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_PURPLE_FLAME
-	loadspritegfx ANIM_TAG_WHITE_SHADOW @Destiny Bond
 	monbg ANIM_ATTACKER
 	splitbgprio ANIM_ATTACKER
 	fadetobg BG_GHOST
@@ -12188,7 +12187,6 @@ Move_MAGICAL_FIRE:
 	delay 10
 	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
 	createvisualtask AnimTask_PurpleFlamesOnTarget, 0x3
-	createvisualtask AnimTask_DestinyBondWhiteShadow, 0x5, 0x0, 0x30
 	delay 30
 	createvisualtask AnimTask_BlendParticle, 5, ANIM_TAG_IMPACT, 0, 12, 12, RGB(0, 0, 23)
 	waitforvisualfinish
@@ -12211,19 +12209,10 @@ Move_MAGICAL_FIRE:
 	blend_color_cycle selector=F_PAL_TARGET, delay=0, num_blends=2, initial_blend_y=0, target_blend_y=13, color=RGB_PURPLE
 	waitforvisualfinish
 	delay 1
-	playsewithpan SOUND_PAN_ATTACKER, 192
-	createvisualtask AnimTask_NightShadeClone, 5, 10
-	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	delay 1
-	goto PhantomForceWaitEnd
-PhantomForceBg:
-	fadetobg BG_DARK
-	waitbgfadeout
-	createvisualtask AnimTask_FadeScreenToWhite, 5
-	waitbgfadein
-	return
-PhantomForceWaitEnd:
+	goto MagicalFireWaitEnd
+MagicalFireWaitEnd:
 	waitforvisualfinish
 	restorebg
 	waitbgfadein
