@@ -4242,7 +4242,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ACROBATICS] =
+    [ITEM_TM_SIGNAL_BEAM] =
     {
         .name = _("TM66"),
         .itemId = ITEM_TM66,
@@ -4338,7 +4338,7 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_DRAGONBREATH] =
+    [ITEM_TM_DRAGON_BREATH] =
     {
         .name = _("TM74"),
         .itemId = ITEM_TM74,
@@ -9223,7 +9223,7 @@ const struct Item gItems2[] =
     {
         .name = _("TM54"),
         .itemId = ITEM_TM54,
-        .price = 3000,
+        .price = 1000,
         .description = sTM54Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -9267,7 +9267,7 @@ const struct Item gItems2[] =
     {
         .name = _("TM58"),
         .itemId = ITEM_TM58,
-        .price = 5000,
+        .price = 3000,
         .description = sTM58Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -9344,14 +9344,14 @@ const struct Item gItems2[] =
     {
         .name = _("TM65"),
         .itemId = ITEM_TM65,
-        .price = 3000,
+        .price = 7500,
         .description = sTM65Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_ACROBATICS] =
+    [ITEM_TM_SIGNAL_BEAM] =
     {
         .name = _("TM66"),
         .itemId = ITEM_TM66,
@@ -9366,7 +9366,7 @@ const struct Item gItems2[] =
     {
         .name = _("TM67"),
         .itemId = ITEM_TM67,
-        .price = 3000,
+        .price = 1000,
         .description = sTM67Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -9421,7 +9421,7 @@ const struct Item gItems2[] =
     {
         .name = _("TM72"),
         .itemId = ITEM_TM72,
-        .price = 5000,
+        .price = 3000,
         .description = sTM72Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -9432,14 +9432,14 @@ const struct Item gItems2[] =
     {
         .name = _("TM73"),
         .itemId = ITEM_TM73,
-        .price = 5000,
+        .price = 3000,
         .description = sTM73Desc,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_DRAGONBREATH] =
+    [ITEM_TM_DRAGON_BREATH] =
     {
         .name = _("TM74"),
         .itemId = ITEM_TM74,

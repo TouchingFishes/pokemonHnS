@@ -67,7 +67,7 @@
     F(AVALANCHE) \
     F(BEAT_UP) \
     F(COSMIC_POWER) \
-    F(ACROBATICS) \
+    F(SIGNAL_BEAM) \
     F(SWEET_SCENT) \
     F(FIRE_PUNCH) \
     F(ZAP_CANNON) \
@@ -75,7 +75,7 @@
     F(THUNDER_PUNCH) \
     F(ICE_BALL) \
     F(POUNCE) \
-    F(DRAGONBREATH) \
+    F(DRAGON_BREATH) \
     F(NIGHTMARE)
 
 #define FOREACH_HM(F) \
