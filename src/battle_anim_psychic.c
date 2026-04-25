@@ -30,6 +30,7 @@ static void AnimTask_ExtrasensoryDistortion_Step(u8);
 static void AnimPsychoCut(struct Sprite *sprite);
 static void AnimateZenHeadbutt(struct Sprite *sprite);
 static void AnimTask_TransparentCloneGrowAndShrink_Step(u8);
+extern const union AffineAnimCmd *const gAffineAnims_PsychoBoostOrb[];
 
 static const union AffineAnimCmd sAffineAnim_PsychUpSpiral[] =
 {
@@ -1282,3 +1283,21 @@ static void AnimPsychoBoost(struct Sprite *sprite)
         break;
     }
 }
+
+//lunge
+const struct SpriteTemplate gLungeGreenChargeTemplate =
+{
+    .tileTag = ANIM_TAG_CIRCLE_OF_LIGHT,
+    .paletteTag = ANIM_TAG_LEAF,
+    .oam = &gOamData_AffineDouble_ObjBlend_64x64,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_PsychoBoostOrb,
+    .callback = AnimPsychoBoost
+};
+
+const union AffineAnimCmd *const gAffineAnims_PsychoBoostOrb[] =
+{
+    sAffineAnim_PsychoBoostOrb_0,
+    sAffineAnim_PsychoBoostOrb_1,
+};

@@ -1461,9 +1461,9 @@ static const u8 sPlayRoughDescription[] = _(
     "Plays rough with the foe.\n"
     "May lower ATTACK.");
 
-static const u8 sMoonblastDescription[] = _(
-    "Attacks with the power of\n"
-    "the moon. May lower Sp. Atk.");
+static const u8 sPounceDescription[] = _(
+    "A sudden pounce that\n"
+    "lowers the foe's SPEED.");
 
 static const u8 sCrossPoisonDescription[] = _(
     "A high-crit attack that\n"
@@ -1477,17 +1477,17 @@ static const u8 sZenHeadbuttDescription[] = _(
     "Hits with a strong head-\n"
     "butt. May cause flinching.");
 
-static const u8 sPixieKissDescription[] = _(
-    "An attack that absorbs\n"
-    "half the damage inflicted.");
+static const u8 sBoomburstDescription[] = _(
+    "A loud attack that uses loud\n"
+    "sound bursts to injure.");
 
-static const u8 sFairySongDescription[] = _(
-    "Lets out a charming cry\n"
-    "that cannot be evaded.");
+static const u8 sLungeDescription[] = _(
+    "A unforeseen lunge that\n"
+    "lowers the foe's ATTACK.");
     
-static const u8 sMysticGleamDescription[] = _(
-    "Damages foes by emitting\n"
-    "a bright flash.");
+static const u8 sIcicleCrashDescription[] = _(
+    "An icicle attack that may\n"
+    "cause flinching.");
 
 static const u8 sGunkShotDescription[] = _(
     "Shoots filthy garbage at\n"
@@ -1585,9 +1585,9 @@ static const u8 sBarrierBashDescription[] = _(
     "Hits a foe with psychic\n"
     "energy. May raise Defense.");
 
-static const u8 sGyroBallDescription[] = _(
-    "A high-speed spin that does\n"
-    "more damage to faster foes.");
+static const u8 sAcrobaticsDescription[] = _(
+    "A high-speed strike, does\n"
+    "more damage if no item held.");
 
 static const u8 sHeavySlamDescription[] = _(
     "Does more damage if the\n"
@@ -1597,17 +1597,17 @@ static const u8 sFlameChargeDescription[] = _(
     "Attacks in a cloak of\n"
     "flames. Raises Speed.");
 
-static const u8 sVoltDashDescription[] = _(
-    "Attacks with swift cur-\n"
-    "rents. Raises Speed.");
+static const u8 sAuraSphereDescription[] = _(
+    "Attacks with mystical aura\n"
+    "that cannot be evaded.");
 
 static const u8 sVenoshockDescription[] = _(
     "Does double damage if the\n"
     "foe is poisoned.");
 
-static const u8 sPhantomForceDescription[] = _(
-    "Vanishes on first turn\n"
-    "then strikes next turn.");
+static const u8 sShadowSneakDescription[] = _(
+    "An extremely fast attack\n"
+    "that always strikes first.");
 
 static const u8 sPoisonJabDescription[] = _(
     "Venomous stabbing attack.\n"
@@ -1985,13 +1985,13 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_DRAGON_PULSE - 1] = sDragonPulseDescription,
     [MOVE_EARTH_POWER - 1] = sEarthPowerDescription,
     [MOVE_PLAY_ROUGH - 1] = sPlayRoughDescription,
-    [MOVE_MOONBLAST - 1] = sMoonblastDescription,
+    [MOVE_POUNCE - 1] = sPounceDescription,
     [MOVE_CROSS_POISON - 1] = sCrossPoisonDescription,
     [MOVE_X_SCISSOR - 1] = sXScissorDescription,
     [MOVE_ZEN_HEADBUTT - 1] = sZenHeadbuttDescription,
-    [MOVE_PIXIE_KISS - 1] = sPixieKissDescription,
-    [MOVE_FAIRY_SONG - 1] = sFairySongDescription,
-    [MOVE_MYSTIC_GLEAM - 1] = sMysticGleamDescription,
+    [MOVE_BOOMBURST - 1] = sBoomburstDescription,
+    [MOVE_LUNGE - 1] = sLungeDescription,
+    [MOVE_ICICLE_CRASH - 1] = sIcicleCrashDescription,
     [MOVE_GUNK_SHOT - 1] = sGunkShotDescription,
     [MOVE_STONE_EDGE - 1] = sStoneEdgeDescription,
     [MOVE_CHARGE_BEAM - 1] = sChargeBeamDescription,
@@ -2016,12 +2016,12 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MAGICAL_FIRE - 1] = sMagicalFireDescription,
     [MOVE_WILD_CHARGE - 1] = sWildChargeDescription,
     [MOVE_BARRIER_BASH - 1] = sBarrierBashDescription,
-    [MOVE_GYRO_BALL - 1] = sGyroBallDescription,
+    [MOVE_ACROBATICS - 1] = sAcrobaticsDescription,
     [MOVE_HEAVY_SLAM - 1] = sHeavySlamDescription,
     [MOVE_FLAME_CHARGE - 1] = sFlameChargeDescription,
-    [MOVE_VOLT_DASH - 1] = sVoltDashDescription,
+    [MOVE_AURA_SPHERE - 1] = sAuraSphereDescription,
     [MOVE_VENOSHOCK - 1] = sVenoshockDescription,
-    [MOVE_PHANTOM_FORCE - 1] = sPhantomForceDescription,
+    [MOVE_SHADOW_SNEAK - 1] = sShadowSneakDescription,
     [MOVE_POISON_JAB - 1] = sPoisonJabDescription,
     [MOVE_HEAD_SMASH - 1] = sHeadSmashDescription,
 };

@@ -1007,6 +1007,7 @@ const struct OamData gOamData_AffineDouble_ObjBlend_32x64 =
     .paletteNum = 0,
 };
 
+
 const struct CompressedSpriteSheet gBattleAnimPicTable[] =
 {
     {gBattleAnimSpriteGfx_Bone, 0x0200, ANIM_TAG_BONE},
@@ -1309,6 +1310,8 @@ const struct CompressedSpriteSheet gBattleAnimPicTable[] =
     {gBattleAnimSpriteGfx_EnergyBall, 0x0200, ANIM_TAG_ENERGY_BALL},
     {gBattleAnimSpriteGfx_StoneEdge, 0x0A00, ANIM_TAG_STONE_EDGE},
     {gBattleAnimSpriteGfx_Punishment, 0xa00, ANIM_TAG_PUNISHMENT_BLADES},
+    {gBattleAnimSpriteGfx_WhiteStreak, 0x0200, ANIM_TAG_WHITE_STREAK},
+    {gBattleAnimSpriteGfx_QuickGuard, 0x200, ANIM_TAG_QUICK_GUARD_HAND},
 };
 
 const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
@@ -1613,6 +1616,8 @@ const struct CompressedSpritePalette gBattleAnimPaletteTable[] =
     {gBattleAnimSpritePal_EnergyBall, ANIM_TAG_ENERGY_BALL},
     {gBattleAnimSpritePal_StoneEdge, ANIM_TAG_STONE_EDGE},
     {gBattleAnimSpritePal_Punishment, ANIM_TAG_PUNISHMENT_BLADES},
+    {gBattleAnimSpritePal_WhiteStreak, ANIM_TAG_WHITE_STREAK},
+    {gBattleAnimSpritePal_QuickGuard, ANIM_TAG_QUICK_GUARD_HAND},
 };
 
 const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
@@ -1648,4 +1653,5 @@ const struct BattleAnimBackground gBattleAnimBackgroundTable[] =
     [BG_ROCK_WRECKER]        = {gBattleAnimBgImage_Hurricane,  gBattleAnimBgPalette_RockWrecker, gBattleAnimBgTilemap_Hurricane},
     [BG_GUNK_SHOT]           = {gBattleAnimBgImage_FocusBlast, gBattleAnimBgPalette_GunkShot,   gBattleAnimBgTilemap_FocusBlast},
     [BG_HURRICANE]           = {gBattleAnimBgImage_Hurricane,  gBattleAnimBgPalette_Hurricane,  gBattleAnimBgTilemap_Hurricane},
+    [BG_AURA_SPHERE]         = {gBattleAnimBgImage_FocusBlast, gBattleAnimBgPalette_AuraSphere, gBattleAnimBgTilemap_FocusBlast},
 };

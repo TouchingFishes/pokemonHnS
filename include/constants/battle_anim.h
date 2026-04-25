@@ -307,6 +307,8 @@
 #define ANIM_TAG_ENERGY_BALL                (ANIM_SPRITES_START + 297)
 #define ANIM_TAG_STONE_EDGE                 (ANIM_SPRITES_START + 298)
 #define ANIM_TAG_PUNISHMENT_BLADES          (ANIM_SPRITES_START + 299)
+#define ANIM_TAG_WHITE_STREAK               (ANIM_SPRITES_START + 300)
+#define ANIM_TAG_QUICK_GUARD_HAND           (ANIM_SPRITES_START + 301)
 
 // battlers
 #define ANIM_ATTACKER         0
@@ -367,6 +369,7 @@
 #define BG_ROCK_WRECKER 28
 #define BG_GUNK_SHOT 29
 #define BG_HURRICANE 30
+#define BG_AURA_SPHERE 31
 
 // table ids for general animations (gBattleAnims_General)
 #define B_ANIM_CASTFORM_CHANGE          0

@@ -1663,6 +1663,11 @@ const u32 gBattleAnimSpriteGfx_StoneEdge[] = INCBIN_U32("graphics/battle_anims/s
 const u16 gBattleAnimSpritePal_StoneEdge[] = INCBIN_U16("graphics/battle_anims/sprites/stone_edge.gbapal.lz");
 const u32 gBattleAnimSpriteGfx_Punishment[] = INCBIN_U32("graphics/battle_anims/sprites/punishment.4bpp.lz");
 const u16 gBattleAnimSpritePal_Punishment[] = INCBIN_U16("graphics/battle_anims/sprites/punishment.gbapal.lz");
+const u16 gBattleAnimBgPalette_AuraSphere[] = INCBIN_U16("graphics/battle_anims/backgrounds/aura_sphere.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_WhiteStreak[] = INCBIN_U32("graphics/battle_anims/sprites/white_streak.4bpp.lz");
+const u16 gBattleAnimSpritePal_WhiteStreak[] = INCBIN_U16("graphics/battle_anims/sprites/white_streak.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_QuickGuard[] = INCBIN_U32("graphics/battle_anims/sprites/quick_guard.4bpp.lz");
+const u16 gBattleAnimSpritePal_QuickGuard[] = INCBIN_U16("graphics/battle_anims/sprites/quick_guard.gbapal.lz");
 
 // random garbage at the end.
 static const u8 sEmpty3[0x54BAC] = {0};

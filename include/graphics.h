@@ -5599,6 +5599,7 @@ extern const u32 gBattleAnimBgTilemap_Cosmic[];
 extern const u32 gBattleAnimBgTilemap_InAir[];
 extern const u32 gBattleAnimBgTilemap_Aurora[];
 extern const u32 gBattleAnimBgTilemap_Fissure[];
+extern const u16 gBattleAnimBgPalette_AuraSphere[];
 
 extern const u32 gMetalShineGfx[];
 extern const u32 gMetalShinePalette[];
@@ -5936,6 +5937,10 @@ extern const u32 gBattleAnimSpriteGfx_StoneEdge[];
 extern const u32 gBattleAnimSpritePal_StoneEdge[];
 extern const u32 gBattleAnimSpriteGfx_Punishment[];
 extern const u32 gBattleAnimSpritePal_Punishment[];
+extern const u32 gBattleAnimSpriteGfx_WhiteStreak[];
+extern const u16 gBattleAnimSpritePal_WhiteStreak[];
+extern const u32 gBattleAnimSpriteGfx_QuickGuard[];
+extern const u16 gBattleAnimSpritePal_QuickGuard[];
 
 extern const u32 gTrainerFrontPic_SalonMaidenAnabel[];
 extern const u32 gTrainerFrontPic_DomeAceTucker[];

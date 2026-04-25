@@ -876,3 +876,24 @@ void AnimTask_SeismicTossBgAccelerateDownAtEnd(u8 taskId)
         DestroyAnimVisualTask(taskId);
     }
 }
+
+//icicle crash
+static const union AffineAnimCmd sSpriteAffineAnim_IcicleCrash[] =
+{
+    AFFINEANIMCMD_FRAME(0, 0, 128, 1), //180 degree turn
+    AFFINEANIMCMD_END
+};
+static const union AffineAnimCmd* const sSpriteAffineAnimTable_IcicleCrash[] =
+{
+    sSpriteAffineAnim_IcicleCrash,
+};
+const struct SpriteTemplate gIcicleCrashSpearTemplate =
+{
+    .tileTag = ANIM_TAG_ICICLE_SPEAR,
+    .paletteTag = ANIM_TAG_ICICLE_SPEAR,
+    .oam = &gOamData_AffineNormal_ObjNormal_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sSpriteAffineAnimTable_IcicleCrash,
+    .callback = AnimFallingRock
+};

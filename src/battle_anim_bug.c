@@ -485,3 +485,14 @@ static void AnimTailGlowOrb(struct Sprite *sprite)
     StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
     sprite->callback = RunStoredCallbackWhenAffineAnimEnds;
 }
+
+const struct SpriteTemplate gLungeGreenBubbleTemplate =
+{
+    .tileTag = ANIM_TAG_SMALL_BUBBLES,
+    .paletteTag = ANIM_TAG_RAZOR_LEAF,
+    .oam = &gOamData_AffineOff_ObjNormal_16x16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = AnimThrowProjectile
+};

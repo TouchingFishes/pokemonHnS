@@ -34,6 +34,7 @@ static void AnimTask_BlendColorCycleByTagLoop(u8);
 static void AnimTask_FlashAnimTagWithColor_Step1(u8);
 static void AnimTask_FlashAnimTagWithColor_Step2(u8);
 static void AnimTask_ShakeBattleTerrain_Step(u8);
+extern const union AffineAnimCmd *const gAffineAnims_HitSplat[];
 
 static const union AnimCmd sAnim_ConfusionDuck_0[] =
 {
@@ -1036,3 +1037,23 @@ static void AnimFlashingHitSplat_Step(struct Sprite *sprite)
     if (sprite->data[0]++ > 12)
         DestroyAnimSprite(sprite);
 }
+
+//lunge
+const struct SpriteTemplate gLungeGreenImpactTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_RAZOR_LEAF,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gAffineAnims_HitSplat,
+    .callback = AnimHitSplatBasic
+};
+
+const union AffineAnimCmd *const gAffineAnims_HitSplat[] =
+{
+    sAffineAnim_HitSplat_0,
+    sAffineAnim_HitSplat_1,
+    sAffineAnim_HitSplat_2,
+    sAffineAnim_HitSplat_3,
+};

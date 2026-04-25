@@ -26,6 +26,8 @@ static void AnimTask_ScaleMonAndRestore_Step(u8 taskId);
 static void AnimTask_RotateMonSpriteToSide_Step(u8 taskId);
 static void AnimTask_ShakeTargetBasedOnMovePowerOrDmg_Step(u8 taskId);
 static void AnimTask_SlideOffScreen_Step(u8 taskId);
+static void AnimTask_DuckDownHop_Step1(u8 taskId);
+static void AnimTask_DuckDownHop_Step2(u8 taskId);
 
 const struct SpriteTemplate gHorizontalLungeSpriteTemplate =
 {
@@ -1041,6 +1043,59 @@ static void AnimTask_ShakeTargetBasedOnMovePowerOrDmg_Step(u8 taskId)
         {
             gSprites[task->data[7]].x2 = 0;
             gSprites[task->data[7]].y2 = 0;
+            DestroyAnimVisualTask(taskId);
+            return;
+        }
+    }
+}
+
+void AnimTask_DuckDownHop(u8 taskId)
+{
+    s16 wavePeriod = 0x8000 / gBattleAnimArgs[3];
+    if (GetBattlerSide(gBattleAnimAttacker))
+    {
+        gBattleAnimArgs[1] = -gBattleAnimArgs[1];
+    }
+    gTasks[taskId].data[0] = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
+    gTasks[taskId].data[1] = (gBattleAnimArgs[1] << 8) / gBattleAnimArgs[3];
+    gTasks[taskId].data[2] = gBattleAnimArgs[2];
+    gTasks[taskId].data[3] = gBattleAnimArgs[3];
+    gTasks[taskId].data[4] = gBattleAnimArgs[4];
+    gTasks[taskId].data[5] = (gBattleAnimArgs[5] << 8) / gBattleAnimArgs[6];
+    gTasks[taskId].data[6] = gBattleAnimArgs[6];
+    gTasks[taskId].data[7] = wavePeriod;
+    gTasks[taskId].func = AnimTask_DuckDownHop_Step1;
+}
+
+static void AnimTask_DuckDownHop_Step1(u8 taskId)
+{
+    u8 spriteId;
+
+    spriteId = gTasks[taskId].data[0];
+    gTasks[taskId].data[12] += gTasks[taskId].data[5];
+    gSprites[spriteId].y2 = (gTasks[taskId].data[12] >> 8);
+    if (--gTasks[taskId].data[6] == 0)
+    {
+        gTasks[taskId].func = AnimTask_DuckDownHop_Step2;
+    }
+}
+
+static void AnimTask_DuckDownHop_Step2(u8 taskId)
+{
+    u8 spriteId;
+    if (gTasks[taskId].data[4] > 0)
+    {
+        gTasks[taskId].data[4]--;
+    }
+    else
+    {
+        spriteId = gTasks[taskId].data[0];
+        gTasks[taskId].data[11] += gTasks[taskId].data[1];
+        gSprites[spriteId].x2 = gTasks[taskId].data[11] >> 8;
+        gSprites[spriteId].y2 = Sin((u8)(gTasks[taskId].data[10] >> 8), gTasks[taskId].data[2]) + (gTasks[taskId].data[12] >> 8);
+        gTasks[taskId].data[10] += gTasks[taskId].data[7];
+        if (--gTasks[taskId].data[3] == 0)
+        {
             DestroyAnimVisualTask(taskId);
             return;
         }

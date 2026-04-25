@@ -4259,7 +4259,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_HYPER_VOICE] =
     {
         .effect = EFFECT_HIT,
-        .power = 100, //90
+        .power = 90,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
@@ -5103,7 +5103,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     {
         .effect = EFFECT_ATTACK_DOWN_HIT,
         .power = 90,
-        .type = TYPE_FAIRY,
+        .type = TYPE_NORMAL,
         .accuracy = 90,
         .pp = 10,
         .secondaryEffectChance = 10,
@@ -5112,18 +5112,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },
-    [MOVE_MOONBLAST] =
+    [MOVE_POUNCE] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
-        .power = 95,
-        .type = TYPE_FAIRY,
+        .effect = EFFECT_SPEED_DOWN_HIT,
+        .power = 50,
+        .type = TYPE_BUG,
         .accuracy = 100,
-        .pp = 15,
-        .secondaryEffectChance = 30,
+        .pp = 20,
+        .secondaryEffectChance = 100,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_SPECIAL,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .category= MOVE_CATEGORY_PHYSICAL,
     },
     [MOVE_CROSS_POISON] =
     {
@@ -5164,44 +5164,44 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },
-    [MOVE_PIXIE_KISS] =
+    [MOVE_BOOMBURST] =
     {
-        .effect = EFFECT_ABSORB,
-        .power = 50,
-        .type = TYPE_FAIRY,
+        .effect = EFFECT_HIT,
+        .power = 140,
+        .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
         .category= MOVE_CATEGORY_SPECIAL,
     },
-    [MOVE_FAIRY_SONG] =
+    [MOVE_LUNGE] =
     {
-        .effect = EFFECT_ALWAYS_HIT,
-        .power = 40,
-        .type = TYPE_STEEL,
-        .accuracy = 0,
+        .effect = EFFECT_ATTACK_DOWN_HIT,
+        .power = 70, //80
+        .type = TYPE_BUG,
+        .accuracy = 100,
         .pp = 15,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 100,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .category= MOVE_CATEGORY_PHYSICAL,
+    },
+    [MOVE_ICICLE_CRASH] =
+    {
+        .effect = EFFECT_FLINCH_HIT,
+        .power = 85,
+        .type = TYPE_ICE,
+        .accuracy = 90,
+        .pp = 10,
+        .secondaryEffectChance = 30,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_SPECIAL,
-    },
-    [MOVE_MYSTIC_GLEAM] =
-    {
-        .effect = EFFECT_HIT,
-        .power = 80,
-        .type = TYPE_FAIRY,
-        .accuracy = 100,
-        .pp = 20,
-        .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_BOTH,
-        .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_SPECIAL,
+        .category= MOVE_CATEGORY_PHYSICAL,
     },
     [MOVE_GUNK_SHOT] =
     {
@@ -5515,18 +5515,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },
-    [MOVE_GYRO_BALL] =
+    [MOVE_ACROBATICS] =
     {
         .effect = EFFECT_HIT,
-        .power = 100,
-        .type = TYPE_STEEL,
+        .power = 55,
+        .type = TYPE_FLYING,
         .accuracy = 100,
-        .pp = 20,
+        .pp = 15,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_SPECIAL,
+        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .category= MOVE_CATEGORY_PHYSICAL,
     },
     [MOVE_HEAVY_SLAM] =
     {
@@ -5554,18 +5554,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },
-    [MOVE_VOLT_DASH] =
+    [MOVE_AURA_SPHERE] =
     {
-        .effect = EFFECT_THAW_HIT,
-        .power = 70,
-        .type = TYPE_ELECTRIC,
-        .accuracy = 100,
-        .pp = 15,
-        .secondaryEffectChance = 20,
+        .effect = EFFECT_ALWAYS_HIT,
+        .power = 90,
+        .type = TYPE_FIGHTING,
+        .accuracy = 0,
+        .pp = 20,
+        .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_PHYSICAL,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .category= MOVE_CATEGORY_SPECIAL,
     },
     [MOVE_VENOSHOCK] =
     {
@@ -5580,16 +5580,16 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_SPECIAL,
     },
-    [MOVE_PHANTOM_FORCE] =
+    [MOVE_SHADOW_SNEAK] =
     {
-        .effect = EFFECT_SEMI_INVULNERABLE,
-        .power = 90,
+        .effect = EFFECT_QUICK_ATTACK,
+        .power = 40,
         .type = TYPE_GHOST,
         .accuracy = 100,
-        .pp = 10,
+        .pp = 30,
         .secondaryEffectChance = 0,
         .target = MOVE_TARGET_SELECTED,
-        .priority = 0,
+        .priority = 1,
         .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },

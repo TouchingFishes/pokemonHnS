@@ -51,6 +51,7 @@ static bool8 GenerateHailParticle(u8 hailStructId, u8 affineAnimNum, u8 taskId, 
 static void AvalancheAnim_Step(struct Sprite *sprite);
 static void AvalancheAnim_Step2(struct Sprite *sprite);
 
+
 static const union AnimCmd sAnim_Unused[] =
 {
     ANIMCMD_FRAME(0, 5, .hFlip = TRUE),
@@ -559,6 +560,18 @@ const struct SpriteTemplate gIceBallImpactShardSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = InitIceBallParticle,
+};
+
+// shadow sneak
+const struct SpriteTemplate gShadowSneakImpactSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_IMPACT,
+    .paletteTag = ANIM_TAG_HANDS_AND_FEET,
+    .oam = &gOamData_AffineNormal_ObjBlend_32x32,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sAffineAnims_IceCrystalHit,
+    .callback = AnimIceEffectParticle
 };
 
 static void AvalancheAnim_Step(struct Sprite *sprite)

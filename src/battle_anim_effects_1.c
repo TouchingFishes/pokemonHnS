@@ -165,6 +165,7 @@ static void AnimTask_DoubleTeam_Step(u8);
 static void AnimDoubleTeam(struct Sprite *);
 static void AnimPoisonJabProjectile(struct Sprite *);
 static void AnimNightSlash(struct Sprite *);
+static void AnimAcrobaticsSlashes(struct Sprite *);
 
 const union AnimCmd gPowderParticlesAnimCmds[] =
 {
@@ -2437,6 +2438,150 @@ const struct SpriteTemplate gNightSlashRightSpriteTemplate =
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimNightSlash,
+};
+
+const union AnimCmd gRockPolishStreak_AnimCmd[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(8, 3),
+    ANIMCMD_FRAME(12, 15),
+    ANIMCMD_FRAME(8, 3),
+    ANIMCMD_FRAME(4, 2),
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+const union AnimCmd *const gRockPolishStreak_AnimCmds[] =
+{
+    gRockPolishStreak_AnimCmd,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd0[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd1[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x10, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd2[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x20, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd3[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x30, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd4[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x40, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd5[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x50, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd6[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x60, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd7[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x70, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd8[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x80, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmd9[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0x90, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdA[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xA0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdB[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xB0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdC[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xC0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdD[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xD0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdE[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xE0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd gRockPolishStreak_AffineAnimCmdF[] =
+{
+    AFFINEANIMCMD_FRAME(0x100, 0x100, 0xF0, 0),
+    AFFINEANIMCMD_END,
+};
+
+const union AffineAnimCmd *const gRockPolishStreak_AffineAnimCmds[] =
+{
+    gRockPolishStreak_AffineAnimCmd0,
+    gRockPolishStreak_AffineAnimCmd1,
+    gRockPolishStreak_AffineAnimCmd2,
+    gRockPolishStreak_AffineAnimCmd3,
+    gRockPolishStreak_AffineAnimCmd4,
+    gRockPolishStreak_AffineAnimCmd5,
+    gRockPolishStreak_AffineAnimCmd6,
+    gRockPolishStreak_AffineAnimCmd7,
+    gRockPolishStreak_AffineAnimCmd8,
+    gRockPolishStreak_AffineAnimCmd9,
+    gRockPolishStreak_AffineAnimCmdA,
+    gRockPolishStreak_AffineAnimCmdB,
+    gRockPolishStreak_AffineAnimCmdC,
+    gRockPolishStreak_AffineAnimCmdD,
+    gRockPolishStreak_AffineAnimCmdE,
+    gRockPolishStreak_AffineAnimCmdF,
+};
+
+const struct SpriteTemplate gAcrobaticsSlashesSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_WHITE_STREAK,
+    .paletteTag = ANIM_TAG_WHITE_STREAK,
+    .oam = &gOamData_AffineDouble_ObjBlend_32x8,
+    .anims = gRockPolishStreak_AnimCmds,
+    .images = NULL,
+    .affineAnims = gRockPolishStreak_AffineAnimCmds,
+    .callback = AnimAcrobaticsSlashes,
 };
 
 static void AnimGrassKnot(struct Sprite *sprite)
@@ -6028,4 +6173,13 @@ void InitSpritePosToAnimTargetsCentre(struct Sprite *sprite, bool32 respectMonPi
 
     SetAnimSpriteInitialXOffset(sprite, gBattleAnimArgs[0]);
     sprite->y += gBattleAnimArgs[1];
+}
+
+static void AnimAcrobaticsSlashes(struct Sprite *sprite)
+{
+    int affineAnimNum = Random2() % ARRAY_COUNT(gRockPolishStreak_AffineAnimCmds);
+    InitSpritePosToAnimTarget(sprite, TRUE);
+    StartSpriteAffineAnim(sprite, affineAnimNum);
+    StoreSpriteCallbackInData6(sprite, DestroySpriteAndMatrix);
+    sprite->callback = RunStoredCallbackWhenAnimEnds;
 }
