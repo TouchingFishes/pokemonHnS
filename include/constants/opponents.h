@@ -465,7 +465,7 @@
 #define TRAINER_LINDA                       461
 #define TRAINER_KAYLEE                      462
 #define TRAINER_LAUREL                      463
-#define TRAINER_GRUNT                       464
+#define TRAINER_GRUNT                       464 //unused
 #define TRAINER_GRUNT_31                    465
 #define TRAINER_GRUNT_32                    466
 #define TRAINER_PETREL_1                    467

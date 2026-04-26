@@ -1546,7 +1546,7 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_GRUNT] =
+    [TRAINER_GRUNT] = //unused
     {
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
@@ -1555,7 +1555,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Cynthia),
     },
 
     [TRAINER_GRUNT_2] =
@@ -1887,7 +1887,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .trainerName = _("GRUNT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -6079,7 +6079,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Grunt),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Proton1),
     },
     
 

@@ -243,7 +243,7 @@ Route128_EventScript_Harrison::
 	end
 
 Route128_EventScript_Carlee::
-	trainerbattle_single TRAINER_GRUNT, Route128_Text_CarleeIntro, Route128_Text_CarleeDefeat
+	trainerbattle_single TRAINER_PRYCE_1_2, Route128_Text_CarleeIntro, Route128_Text_CarleeDefeat
 	msgbox Route128_Text_CarleePostBattle, MSGBOX_AUTOCLOSE
 	end
 
