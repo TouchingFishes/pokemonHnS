@@ -51,28 +51,28 @@
 #define TRAINER_KUNI                         47
 #define TRAINER_KYLE                         48
 #define TRAINER_LAO                          49
-#define TRAINER_LEA_AND_PIA                  50 //until here
+#define TRAINER_LEA_AND_PIA                  50
 #define TRAINER_REENA                        51
 #define TRAINER_REX                          52
 #define TRAINER_RICH                         53
 #define TRAINER_RICKY                        54
 #define TRAINER_ROB                          55
 #define TRAINER_ROBERT                       56
-#define TRAINER_LOLA_1                       57
+#define TRAINER_LOLA_1                       57 //unused in johto
 #define TRAINER_CODY                         58
 #define TRAINER_GWEN                         59
-#define TRAINER_LOLA_2                       60
-#define TRAINER_LOLA_3                       61
-#define TRAINER_LOLA_4                       62
-#define TRAINER_LOLA_5                       63
-#define TRAINER_RICKY_1                      64
+#define TRAINER_LOLA_2                       60 //unused in johto
+#define TRAINER_LOLA_3                       61 //unused in johto
+#define TRAINER_LOLA_4                       62 //unused in johto
+#define TRAINER_LOLA_5                       63 //unused in johto
+#define TRAINER_RICKY_1                      64 //unused in johto
 #define TRAINER_SIMON                        65
 #define TRAINER_CHARLIE                      66
-#define TRAINER_RICKY_2                      67
-#define TRAINER_RICKY_3                      68
-#define TRAINER_RICKY_4                      69
-#define TRAINER_RICKY_5                      70
-#define TRAINER_RANDALL                      71
+#define TRAINER_RICKY_2                      67 //unused in johto
+#define TRAINER_RICKY_3                      68 //unused in johto
+#define TRAINER_RICKY_4                      69 //unused in johto
+#define TRAINER_RICKY_5                      70 //unused in johto
+#define TRAINER_RANDALL                      71 //until here
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
 #define TRAINER_BERKE                        74
