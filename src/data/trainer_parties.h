@@ -3271,7 +3271,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_AnnaAndMeg5[] = {
     .iv = 255,
     .lvl = 68,
     .species = SPECIES_MEGANIUM,
-    .moves = {MOVE_MOONBLAST, MOVE_GIGA_DRAIN, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM}
+    .moves = {MOVE_ANCIENT_POWER, MOVE_GIGA_DRAIN, MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM}
     }
 };
 
@@ -19826,22 +19826,29 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Grunt33[] = { //TeamRock
     .species = SPECIES_KOFFING,
     },
 };
-// --- Gym Leader Trainers Start ---
 
+// --- Gym Leader Trainers Start ---
 static const struct TrainerMonItemCustomMoves sParty_Falkner[] = { //LeaderGroup
     {
-    .iv = 100,
+    .iv = 50,
     .lvl = 9,
     .species = SPECIES_PIDGEY,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_QUICK_ATTACK, MOVE_NONE}
+    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_QUICK_ATTACK, MOVE_DOUBLE_TEAM}
+    },
+    {
+    .iv = 50,
+    .lvl = 9,
+    .species = SPECIES_FLETCHLING,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_EMBER, MOVE_MUD_SLAP, MOVE_PECK, MOVE_DOUBLE_TEAM}
     },
     {
     .iv = 100,
-    .lvl = 11,
+    .lvl = 12,
     .species = SPECIES_NOCTOWL,
     .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_TACKLE, MOVE_MUD_SLAP, MOVE_FORESIGHT, MOVE_PECK}
+    .moves = {MOVE_TACKLE, MOVE_PECK, MOVE_NIGHT_SHADE, MOVE_DOUBLE_TEAM}
     },
 };
 
@@ -21141,7 +21148,7 @@ static const struct TrainerMonItemCustomMoves sParty_Will2[] = { //EliteFourGrou
     .lvl = 66,
     .species = SPECIES_GOTHITELLE,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_MOONBLAST, MOVE_REFLECT}
+    .moves = {MOVE_PSYCHIC, MOVE_HYPER_VOICE, MOVE_THUNDERBOLT, MOVE_REFLECT}
     },
     {
     .iv = 255,
@@ -24808,42 +24815,42 @@ static const struct TrainerMonItemCustomMoves sParty_Sora[] = {
         .lvl = 75,
         .species = SPECIES_GENGAR,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_MAGICAL_LEAF},
+        .moves = {MOVE_SHADOW_BALL, MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_GIGA_DRAIN},
     },
     {
         .iv = 255,
         .lvl = 76,
         .species = SPECIES_CORSOREEF,
         .heldItem = ITEM_LEFTOVERS,
-        .moves = {MOVE_GRASS_KNOT, MOVE_ANCIENT_POWER, MOVE_SLUDGE_BOMB, MOVE_BODY_SLAM},
+        .moves = {MOVE_GRASS_KNOT, MOVE_ANCIENT_POWER, MOVE_SURF, MOVE_INGRAIN},
     },
     {
         .iv = 255,
         .lvl = 75,
         .species = SPECIES_DECIBELLE,
         .heldItem = ITEM_PETAYA_BERRY,
-        .moves = {MOVE_X_SCISSOR, MOVE_EARTHQUAKE, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE},
+        .moves = {MOVE_FLASH_CANNON, MOVE_PSYCHIC, MOVE_SHOCK_WAVE, MOVE_SHADOW_BALL},
     },
     {
         .iv = 255,
         .lvl = 77,
         .species = SPECIES_GEKOPON,
         .heldItem = ITEM_SOFT_SAND,
-        .moves = {MOVE_ROCK_WRECKER, MOVE_CURSE, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE},
+        .moves = {MOVE_THUNDERBOLT, MOVE_ENERGY_BALL, MOVE_BRICK_BREAK, MOVE_EARTHQUAKE},
     },
     {
         .iv = 255,
         .lvl = 77,
         .species = SPECIES_DUNLONG,
         .heldItem = ITEM_SITRUS_BERRY,
-        .moves = {MOVE_MACH_PUNCH, MOVE_AERIAL_ACE, MOVE_FLAMETHROWER, MOVE_OVERHEAT},
+        .moves = {MOVE_DRAGON_PULSE, MOVE_AERIAL_ACE, MOVE_FLAMETHROWER, MOVE_STEEL_WING},
     },
     {
         .iv = 255,
         .lvl = 79,
         .species = SPECIES_CHARIZARD,
         .heldItem = ITEM_CHESTO_BERRY,
-        .moves = {MOVE_SLASH, MOVE_BURNING_SAND, MOVE_REST, MOVE_SLEEP_TALK},
+        .moves = {MOVE_BLAST_BURN, MOVE_DRAGON_CLAW, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE},
     },
 };
 
