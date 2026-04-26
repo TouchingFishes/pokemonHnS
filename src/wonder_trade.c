@@ -569,7 +569,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         else if (rndEeveevolutionChance == 6)
             targetSpecies = SPECIES_GLACEON;
         else if (rndEeveevolutionChance == 7)
-            targetSpecies = SPECIES_SYLVEON;
+            targetSpecies = SPECIES_UMBREON;
         return targetSpecies;
     }
     else if (partnerSpecies == SPECIES_MILCERY && partnerLevel >= 25)
@@ -931,7 +931,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             else if (rndEeveevolutionChance == 6)
                 targetSpecies = SPECIES_GLACEON;
             else if (rndEeveevolutionChance == 7)
-                targetSpecies = SPECIES_SYLVEON;
+                targetSpecies = SPECIES_UMBREON;
             return targetSpecies;
         }
     }

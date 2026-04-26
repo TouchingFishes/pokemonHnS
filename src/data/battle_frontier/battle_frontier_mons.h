@@ -3774,8 +3774,8 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_JOLTEON_2] = {
-        .species = SPECIES_SYLVEON,
-        .moves = {MOVE_AURA_SPHERE, MOVE_DIG, MOVE_SKULL_BASH, MOVE_ROAR},
+        .species = SPECIES_JOLTEON,
+        .moves = {MOVE_THUNDERBOLT, MOVE_SIGNAL_BEAM, MOVE_DOUBLE_KICK, MOVE_CHARGE_BEAM},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK,
         .nature = NATURE_HARDY
@@ -10211,8 +10211,8 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .nature = NATURE_DOCILE
     },
     [FRONTIER_MON_JOLTEON_2] = {
-        .species = SPECIES_SYLVEON,
-        .moves = {MOVE_AURA_SPHERE, MOVE_DIG, MOVE_SKULL_BASH, MOVE_ROAR},
+        .species = SPECIES_JOLTEON,
+        .moves = {MOVE_THUNDER, MOVE_DIG, MOVE_AERIAL_ACE, MOVE_ROAR},
         .itemTableId = BATTLE_FRONTIER_ITEM_SCOPE_LENS,
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_ATTACK,
         .nature = NATURE_HARDY

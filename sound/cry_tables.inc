@@ -420,7 +420,7 @@ gCryTable::
 	cry Cry_Regigigas
 	cry Cry_Snover
 	cry Cry_Abomasnow
-	cry Cry_Sylveon
+	cry Cry_Ursaluna
 	cry Cry_Tangrowth
 	cry Cry_Corsoreef
 	cry Cry_Weavile
@@ -432,6 +432,27 @@ gCryTable::
 	cry Cry_Whismur
 	cry Cry_Loudred
 	cry Cry_Exploud
+	cry Cry_Fomantis
+	cry Cry_Lurantis
+	cry Cry_Vullaby
+	cry Cry_Mandibuzz
+	cry Cry_Mienfoo
+	cry Cry_Mienshao
+	cry Cry_Zangoose
+	cry Cry_Seviper
+	cry Cry_Riolu
+	cry Cry_Lucario
+	cry Cry_Nohface
+	cry Cry_Kitsunoh
+	cry Cry_Turtwig
+	cry Cry_Grotle
+	cry Cry_Torterra
+	cry Cry_Chimchar
+	cry Cry_Monferno
+	cry Cry_Infernape
+	cry Cry_Piplup
+	cry Cry_Prinplup
+	cry Cry_Empoleon
 
 	.align 2
 gCryTable_Reverse::
@@ -855,7 +876,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Regigigas
 	cry_reverse Cry_Snover
 	cry_reverse Cry_Abomasnow
-	cry_reverse Cry_Sylveon
+	cry_reverse Cry_Ursaluna
 	cry_reverse Cry_Tangrowth
 	cry_reverse Cry_Corsoreef
 	cry_reverse Cry_Weavile
@@ -867,3 +888,24 @@ gCryTable_Reverse::
 	cry_reverse Cry_Whismur
 	cry_reverse Cry_Loudred
 	cry_reverse Cry_Exploud
+	cry_reverse Cry_Fomantis
+	cry_reverse Cry_Lurantis
+	cry_reverse Cry_Vullaby
+	cry_reverse Cry_Mandibuzz
+	cry_reverse Cry_Mienfoo
+	cry_reverse Cry_Mienshao
+	cry_reverse Cry_Zangoose
+	cry_reverse Cry_Seviper
+	cry_reverse Cry_Riolu
+	cry_reverse Cry_Lucario
+	cry_reverse Cry_Nohface
+	cry_reverse Cry_Kitsunoh
+	cry_reverse Cry_Turtwig
+	cry_reverse Cry_Grotle
+	cry_reverse Cry_Torterra
+	cry_reverse Cry_Chimchar
+	cry_reverse Cry_Monferno
+	cry_reverse Cry_Infernape
+	cry_reverse Cry_Piplup
+	cry_reverse Cry_Prinplup
+	cry_reverse Cry_Empoleon

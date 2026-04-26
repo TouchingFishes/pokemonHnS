@@ -575,7 +575,7 @@ static const u16 sSpeciesHiddenFromAreaScreenModern[] = {
     SPECIES_YANMEGA, 
     SPECIES_LEAFEON, 
     SPECIES_GLACEON, 
-    SPECIES_SYLVEON, 
+    SPECIES_URSALUNA, 
     SPECIES_KUJINOUGHT, 
     //SPECIES_DUNDRAG, 
     SPECIES_DUNLONG,

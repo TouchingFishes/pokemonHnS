@@ -6602,9 +6602,7 @@ static void HandleTargetSpeciesPrint(u8 taskId, u16 targetSpecies, u16 previousT
         if (targetSpecies == previousTargetSpecies)
             return;
         /*else if (targetSpecies == SPECIES_GLACEON)
-            base_i -= 1;
-        else if (targetSpecies == SPECIES_SYLVEON)
-            base_i -= 2;*/
+            base_i -= 1;*/
     }
 
     if (base_i < iterations)

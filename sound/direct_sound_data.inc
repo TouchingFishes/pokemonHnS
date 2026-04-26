@@ -2067,8 +2067,8 @@ Cry_Abomasnow::
 	.incbin "sound/direct_sound_samples/cries/abomasnow.bin"
 
 	.align 2
-Cry_Sylveon::
-	.incbin "sound/direct_sound_samples/cries/sylveon.bin"
+Cry_Ursaluna::
+	.incbin "sound/direct_sound_samples/cries/ursaluna.bin"
 
 	.align 2
 Cry_Tangrowth::

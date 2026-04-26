@@ -575,7 +575,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/pendragon.aif sound/direc
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swampert.aif sound/direct_sound_samples/cries/swampert.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltrean.aif sound/direct_sound_samples/cries/voltrean.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/swinub.aif sound/direct_sound_samples/cries/swinub.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sylveon.aif sound/direct_sound_samples/cries/sylveon.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/ursaluna.aif sound/direct_sound_samples/cries/ursaluna.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/voltrel.aif sound/direct_sound_samples/cries/voltrel.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tangela.aif sound/direct_sound_samples/cries/tangela.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/tangrowth.aif sound/direct_sound_samples/cries/tangrowth.bin --compress

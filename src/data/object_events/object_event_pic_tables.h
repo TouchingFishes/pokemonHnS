@@ -6211,13 +6211,13 @@ static const struct SpriteFrameImage sPicTable_Abomasnow[] = {
     overworld_frame(gObjectEventPic_Abomasnow, 4, 4, 6),
     overworld_frame(gObjectEventPic_Abomasnow, 4, 4, 7),
 };
-static const struct SpriteFrameImage sPicTable_Sylveon[] = {
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Sylveon, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Ursaluna[] = {
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Ursaluna, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Tangrowth[] = {
     overworld_frame(gObjectEventPic_Tangrowth, 4, 4, 0),

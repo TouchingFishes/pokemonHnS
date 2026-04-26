@@ -2490,11 +2490,11 @@ const u8 gAbomasnowPokedexText[] = _(
     "itself by whipping up blizzards.\n"
     "It is also known as “The Ice Monster.”");
 
-const u8 gSylveonPokedexText[] = _(
-    "Its ribbonlike feelers give off an aura\n"
-    "that weakens hostility in its prey, causing\n"
-    "them to let down their guard. A moment\n"
-    "later, it pounces.");
+const u8 gUrsalunaPokedexText[] = _(
+    "It dwells deep within forgotten caves.\n"
+    "Few have glimpsed it, and fewer yet have\n"
+    "managed to catch one. Something ominous\n"
+    "awakened its not-yet-understood powers.");
 
 const u8 gTangrowthPokedexText[] = _(
     "It ensnares prey by extending arms made\n"

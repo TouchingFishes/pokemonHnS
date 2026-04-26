@@ -2982,13 +2982,13 @@ extern const u32 gMonStillFrontPic_Glaceon[];
 extern const u8 gMonIcon_Glaceon[];
 extern const u8 gMonFootprint_Glaceon[];
 
-extern const u32 gMonFrontPic_Sylveon[];
-extern const u32 gMonPalette_Sylveon[];
-extern const u32 gMonBackPic_Sylveon[];
-extern const u32 gMonShinyPalette_Sylveon[];
-extern const u32 gMonStillFrontPic_Sylveon[];
-extern const u8 gMonIcon_Sylveon[];
-extern const u8 gMonFootprint_Sylveon[];
+extern const u32 gMonFrontPic_Ursaluna[];
+extern const u32 gMonPalette_Ursaluna[];
+extern const u32 gMonBackPic_Ursaluna[];
+extern const u32 gMonShinyPalette_Ursaluna[];
+extern const u32 gMonStillFrontPic_Ursaluna[];
+extern const u8 gMonIcon_Ursaluna[];
+extern const u8 gMonFootprint_Ursaluna[];
 
 extern const u32 gMonFrontPic_Hydreigon[];
 extern const u32 gMonPalette_Hydreigon[];

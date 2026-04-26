@@ -5150,11 +5150,12 @@ static const union AnimCmd sAnim_Abomasnow_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Sylveon_1[] =
+static const union AnimCmd sAnim_Ursaluna_1[] =
 {
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 5),
     ANIMCMD_END,
 };
 
@@ -5885,7 +5886,7 @@ SINGLE_ANIMATION(Regidrago);
 SINGLE_ANIMATION(Regigigas);
 SINGLE_ANIMATION(Snover);
 SINGLE_ANIMATION(Abomasnow);
-SINGLE_ANIMATION(Sylveon);
+SINGLE_ANIMATION(Ursaluna);
 SINGLE_ANIMATION(Regieleki);
 SINGLE_ANIMATION(Tangrowth);
 SINGLE_ANIMATION(Corsoreef);
@@ -6393,7 +6394,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_DEINO] = sAnims_Deino,
     [SPECIES_HAPPINY] = sAnims_Happiny,
     [SPECIES_ZWEILOUS] = sAnims_Zweilous,
-    [SPECIES_SYLVEON] = sAnims_Sylveon,
+    [SPECIES_URSALUNA] = sAnims_Ursaluna,
     [SPECIES_DEOXYS_ATTACK] = sAnims_DeoxysA,
     [SPECIES_DEOXYS_DEFENSE] = sAnims_DeoxysD,
     [SPECIES_DEOXYS_SPEED] = sAnims_DeoxysS,

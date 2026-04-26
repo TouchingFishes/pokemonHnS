@@ -2241,7 +2241,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/abomasnow.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/snover.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/sylveon.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/ursaluna.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/tangrowth.4bpp: %.4bpp: %.png

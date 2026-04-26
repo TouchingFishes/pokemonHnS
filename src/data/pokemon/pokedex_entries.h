@@ -5028,16 +5028,16 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 6,
     },
 
-    [NATIONAL_DEX_SYLVEON] =
+    [NATIONAL_DEX_URSALUNA] =
     {
-        .categoryName = _("INTERWINE"),
-        .height = 10,
-        .weight = 235,
-        .description = gSylveonPokedexText,
-        .pokemonScale = 316,
-        .pokemonOffset = 7,
-        .trainerScale = 256,
-        .trainerOffset = 0,
+        .categoryName = _("MOON BEAR"),
+        .height = 27,
+        .weight = 3330,
+        .description = gUrsalunaPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 3,
+        .trainerScale = 369,
+        .trainerOffset = 7,
     },
 
     [NATIONAL_DEX_TANGROWTH] =

@@ -2914,12 +2914,12 @@ const u32 gMonShinyPalette_Glaceon[] = INCBIN_U32("graphics/pokemon/glaceon/shin
 const u8 gMonIcon_Glaceon[] = INCBIN_U8("graphics/pokemon/glaceon/icon.4bpp");
 const u8 gMonFootprint_Glaceon[] = INCBIN_U8("graphics/pokemon/glaceon/footprint.1bpp");
 
-const u32 gMonStillFrontPic_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/anim_front.4bpp.lz");
-const u32 gMonPalette_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/normal.gbapal.lz");
-const u32 gMonBackPic_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/back.4bpp.lz");
-const u32 gMonShinyPalette_Sylveon[] = INCBIN_U32("graphics/pokemon/sylveon/shiny.gbapal.lz");
-const u8 gMonIcon_Sylveon[] = INCBIN_U8("graphics/pokemon/sylveon/icon.4bpp");
-const u8 gMonFootprint_Sylveon[] = INCBIN_U8("graphics/pokemon/sylveon/footprint.1bpp");
+const u32 gMonStillFrontPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/anim_front.4bpp.lz");
+const u32 gMonPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/normal.gbapal.lz");
+const u32 gMonBackPic_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/back.4bpp.lz");
+const u32 gMonShinyPalette_Ursaluna[] = INCBIN_U32("graphics/pokemon/ursaluna/shiny.gbapal.lz");
+const u8 gMonIcon_Ursaluna[] = INCBIN_U8("graphics/pokemon/ursaluna/icon.4bpp");
+const u8 gMonFootprint_Ursaluna[] = INCBIN_U8("graphics/pokemon/ursaluna/footprint.1bpp");
 
 const u32 gMonStillFrontPic_Hydreigon[] = INCBIN_U32("graphics/pokemon/hydreigon/anim_front.4bpp.lz");
 const u32 gMonPalette_Hydreigon[] = INCBIN_U32("graphics/pokemon/hydreigon/normal.gbapal.lz");
