@@ -73,7 +73,7 @@
     F(ZAP_CANNON) \
     F(FALSE_SWIPE) \
     F(THUNDER_PUNCH) \
-    F(ICE_BALL) \
+    F(DREAM_EATER) \
     F(POUNCE) \
     F(DRAGON_BREATH) \
     F(NIGHTMARE)

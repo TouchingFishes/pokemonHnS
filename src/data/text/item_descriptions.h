@@ -1602,9 +1602,9 @@ static const u8 sTM71Desc[] = _(
     "paralyze the foe.");
 
 static const u8 sTM72Desc[] = _(
-    "Hurls a chunk of\n"
-    "ice that grows\n"
-    "stronger each turn.");
+    "Recovers half the\n"
+    "HP of the damage \n"
+    "this move inflicts.");
 
 static const u8 sTM73Desc[] = _(
     "Leaps at the foe to\n"

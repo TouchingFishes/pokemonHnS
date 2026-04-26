@@ -396,7 +396,7 @@
 #define ITEM_TM69 357 //Zap Cannon - Power Plant
 #define ITEM_TM70 358 //False Swipe - Should be buyable somewhere
 #define ITEM_TM71 359 //Thunder Punch - Goldenrod Mart
-#define ITEM_TM72 360 //Ice Ball
+#define ITEM_TM72 360 //Dream Eater
 #define ITEM_TM73 361 //Pounce - Bugsy's TM, Azalea Gym
 #define ITEM_TM74 362 //Dragonbreath - Claire's TM, Blackthorn (?)
 #define ITEM_TM75 363 //Nightmare - Route 31
