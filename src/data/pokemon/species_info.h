@@ -1079,7 +1079,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CLEFAIRY] = //modified
+    [SPECIES_CLEFAIRY] =
     {
         .baseHP        = 70,
         .baseAttack    = 45,
@@ -1087,8 +1087,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 35,
         .baseSpAttack  = 60,
         .baseSpDefense = 65,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 150,
         .expYield = 68,
         .evYield_HP        = 2,
@@ -1119,8 +1118,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 95, //+10
         .baseSpAttack_old  = 85,
         .baseSpDefense = 90,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 25,
         .expYield = 129,
         .evYield_HP        = 3,
@@ -1204,7 +1202,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_JIGGLYPUFF] = //modified
+    [SPECIES_JIGGLYPUFF] =
     {
         .baseHP        = 115,
         .baseAttack    = 45,
@@ -1212,8 +1210,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 45,
         .baseSpDefense = 25,
-        .types = { TYPE_NORMAL, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 170,
         .expYield = 76,
         .evYield_HP        = 2,
@@ -1247,8 +1244,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 85, //+10
         .baseSpAttack_old  = 75,
         .baseSpDefense = 50,
-        .types = { TYPE_NORMAL, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 50,
         .expYield = 109,
         .evYield_HP        = 3,
@@ -5288,7 +5284,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_CLEFFA] = //modified
+    [SPECIES_CLEFFA] =
     {
         .baseHP        = 50,
         .baseAttack    = 25,
@@ -5296,8 +5292,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 45,
         .baseSpDefense = 55,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 150,
         .expYield = 27,
         .evYield_HP        = 0,
@@ -5319,7 +5314,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_IGGLYBUFF] = //modified
+    [SPECIES_IGGLYBUFF] =
     {
         .baseHP        = 90,
         .baseAttack    = 30,
@@ -5327,8 +5322,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 15,
         .baseSpAttack  = 40,
         .baseSpDefense = 20,
-        .types = { TYPE_NORMAL, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 170,
         .expYield = 29,
         .evYield_HP        = 1,
@@ -5350,7 +5344,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = TRUE,
     },
 
-    [SPECIES_TOGEPI] = //modified
+    [SPECIES_TOGEPI] =
     {
         .baseHP        = 35,
         .baseAttack    = 20,
@@ -5358,8 +5352,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 20,
         .baseSpAttack  = 40,
         .baseSpDefense = 65,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 190,
         .expYield = 74,
         .evYield_HP        = 0,
@@ -5381,7 +5374,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_TOGETIC] = //modified
+    [SPECIES_TOGETIC] =
     {
         .baseHP        = 55,
         .baseAttack    = 40,
@@ -5393,8 +5386,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack_old  = 80,
         .baseSpDefense = 125, //+20
         .baseSpDefense_old = 105,
-        .types = { TYPE_FAIRY, TYPE_FLYING }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_FLYING },
+        .types = { TYPE_NORMAL, TYPE_FLYING },
         .catchRate = 65, //75
         .expYield = 154, //114
         .evYield_HP        = 0,
@@ -5613,7 +5605,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 40,
         .baseSpAttack  = 20,
         .baseSpDefense = 50,
-        .types = { TYPE_WATER, TYPE_FAIRY }, //changed
+        .types = { TYPE_WATER, TYPE_NORMAL }, //changed
         .types_old = { TYPE_WATER, TYPE_WATER },
         .catchRate = 190,
         .expYield = 58,
@@ -5645,7 +5637,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 60, //+10
         .baseSpAttack_old  = 50,
         .baseSpDefense = 80,
-        .types = { TYPE_WATER, TYPE_FAIRY }, //changed
+        .types = { TYPE_WATER, TYPE_NORMAL }, //changed
         .types_old = { TYPE_WATER, TYPE_WATER },
         .catchRate = 75,
         .expYield = 153,
@@ -6409,7 +6401,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_SNUBBULL] = //modified
+    [SPECIES_SNUBBULL] =
     {
         .baseHP        = 60,
         .baseAttack    = 80,
@@ -6417,9 +6409,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 30,
         .baseSpAttack  = 40,
         .baseSpDefense = 40,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_new = { TYPE_FAIRY, TYPE_NORMAL }, //changed, modern typing
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 190,
         .expYield = 63,
         .evYield_HP        = 0,
@@ -6441,7 +6431,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GRANBULL] = //modified
+    [SPECIES_GRANBULL] =
     {
         .baseHP        = 90,
         .baseAttack    = 120,
@@ -6449,9 +6439,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 45,
         .baseSpAttack  = 60,
         .baseSpDefense = 60,
-        .types = { TYPE_FAIRY, TYPE_FAIRY }, //changed
-        .types_new = { TYPE_FAIRY, TYPE_NORMAL }, //changed, modern typing
-        .types_old = { TYPE_NORMAL, TYPE_NORMAL },
+        .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 75,
         .expYield = 178,
         .evYield_HP        = 0,
@@ -8184,8 +8172,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 50,
         .baseSpAttack  = 55,
         .baseSpDefense = 40,
-        .types = { TYPE_DARK, TYPE_FAIRY },
-        .types_old = { TYPE_DARK, TYPE_DARK },
+        .types = { TYPE_DARK, TYPE_DARK },
         .catchRate = 255,
         .expYield = 53,
         .evYield_HP        = 0,
@@ -8215,8 +8202,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 70,
         .baseSpAttack  = 75,
         .baseSpDefense = 55,
-        .types = { TYPE_DARK, TYPE_FAIRY },
-        .types_old = { TYPE_DARK, TYPE_DARK },
+        .types = { TYPE_DARK, TYPE_DARK },
         .catchRate = 120,
         .expYield = 71,
         .evYield_HP        = 0,
@@ -8246,8 +8232,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 60,
         .baseSpAttack  = 95,
         .baseSpDefense = 75,
-        .types = { TYPE_DARK, TYPE_FAIRY },
-        .types_old = { TYPE_DARK, TYPE_FIGHTING },
+        .types = { TYPE_DARK, TYPE_FIGHTING },
         .catchRate = 45,
         .expYield = 195,
         .evYield_HP        = 0,
@@ -9167,8 +9152,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 96,
         .baseSpAttack  = 50,
         .baseSpDefense = 105,
-        .types_old = { TYPE_GHOST, TYPE_NORMAL },
-        .types = { TYPE_GHOST, TYPE_FAIRY },
+        .types = { TYPE_GHOST, TYPE_NORMAL },
         .catchRate = 45,
         .expYield = 167,
         .evYield_HP        = 0,
@@ -9260,8 +9244,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 40,
         .baseSpDefense = 75, //+10
         .baseSpDefense_old = 65,
-        .types = { TYPE_WATER, TYPE_FAIRY }, //changed
-        .types_old = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 225,
         .expYield = 110,
         .evYield_HP        = 0,
