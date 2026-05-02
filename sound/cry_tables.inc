@@ -262,7 +262,7 @@ gCryTable::
 	cry Cry_Skorupi
 	cry Cry_Sharpedo
 	cry Cry_Drapion
-	cry Cry_Solosis
+	cry Cry_Vanillite
 	cry Cry_Swablu
 	cry Cry_Altaria
 	cry Cry_Unused265
@@ -295,9 +295,9 @@ gCryTable::
 	cry Cry_Grimmsnarl
 	cry Cry_Roselia
 	cry Cry_Roserade
-	cry Cry_Gothita
-	cry Cry_Gothorita
-	cry Cry_Gothitelle
+	cry Cry_Ralts
+	cry Cry_Kirlia
+	cry Cry_Gardevoir
 	cry Cry_Slakoth
 	cry Cry_Vigoroth
 	cry Cry_Slaking
@@ -322,13 +322,13 @@ gCryTable::
 	cry Cry_Whiscash
 	cry Cry_Corphish
 	cry Cry_Crawdaunt
-	cry Cry_Duosion
-	cry Cry_Reuniclus
+	cry Cry_Vanillish
+	cry Cry_Vanilluxe
 	cry Cry_Raelic
 	cry Cry_Romushu
 	cry Cry_Fusang
-	cry Cry_Pawniard
-	cry Cry_Bisharp
+	cry Cry_Bronzor
+	cry Cry_Bronzong
 	cry Cry_Baltoy
 	cry Cry_Claydol
 	cry Cry_Lunatone
@@ -362,7 +362,7 @@ gCryTable::
 	cry Cry_Poochyena
 	cry Cry_Mightyena
 	cry Cry_Dusclops
-	cry Cry_Mimikyu
+	cry Cry_Gallade
 	cry Cry_Talonflame
 	cry Cry_Aron
 	cry Cry_Lairon
@@ -718,7 +718,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Skorupi
 	cry_reverse Cry_Sharpedo
 	cry_reverse Cry_Drapion
-	cry_reverse Cry_Solosis
+	cry_reverse Cry_Vanillite
 	cry_reverse Cry_Swablu
 	cry_reverse Cry_Altaria
 	cry_reverse Cry_Unused265
@@ -751,9 +751,9 @@ gCryTable_Reverse::
 	cry_reverse Cry_Grimmsnarl
 	cry_reverse Cry_Roselia
 	cry_reverse Cry_Roserade
-	cry_reverse Cry_Gothita
-	cry_reverse Cry_Gothorita
-	cry_reverse Cry_Gothitelle
+	cry_reverse Cry_Ralts
+	cry_reverse Cry_Kirlia
+	cry_reverse Cry_Gardevoir
 	cry_reverse Cry_Slakoth
 	cry_reverse Cry_Vigoroth
 	cry_reverse Cry_Slaking
@@ -778,13 +778,13 @@ gCryTable_Reverse::
 	cry_reverse Cry_Whiscash
 	cry_reverse Cry_Corphish
 	cry_reverse Cry_Crawdaunt
-	cry_reverse Cry_Duosion
-	cry_reverse Cry_Reuniclus
+	cry_reverse Cry_Vanillish
+	cry_reverse Cry_Vanilluxe
 	cry_reverse Cry_Raelic
 	cry_reverse Cry_Romushu
 	cry_reverse Cry_Fusang
-	cry_reverse Cry_Pawniard
-	cry_reverse Cry_Bisharp
+	cry_reverse Cry_Bronzor
+	cry_reverse Cry_Bronzong
 	cry_reverse Cry_Baltoy
 	cry_reverse Cry_Claydol
 	cry_reverse Cry_Lunatone
@@ -818,7 +818,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Poochyena
 	cry_reverse Cry_Mightyena
 	cry_reverse Cry_Dusclops
-	cry_reverse Cry_Mimikyu
+	cry_reverse Cry_Gallade
 	cry_reverse Cry_Talonflame
 	cry_reverse Cry_Aron
 	cry_reverse Cry_Lairon

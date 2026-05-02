@@ -427,13 +427,13 @@ static const union AnimCmd sUnusedAnim_Nosepass_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Mimikyu_1[] =
+static const union AnimCmd sUnusedAnim_Gallade_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Mimikyu_2[] =
+static const union AnimCmd sUnusedAnim_Gallade_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
@@ -599,7 +599,7 @@ static const union AnimCmd sUnusedAnim_Eelektross_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Solosis_1[] =
+static const union AnimCmd sUnusedAnim_Vanillite_1[] =
 {
     ANIMCMD_FRAME(0, 5),
     ANIMCMD_FRAME(2, 5),
@@ -619,7 +619,7 @@ static const union AnimCmd sUnusedAnim_Solosis_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Solosis_2[] =
+static const union AnimCmd sUnusedAnim_Vanillite_2[] =
 {
     ANIMCMD_FRAME(0, 6),
     ANIMCMD_FRAME(1, 6),
@@ -632,7 +632,7 @@ static const union AnimCmd sUnusedAnim_Solosis_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Solosis_3[] =
+static const union AnimCmd sUnusedAnim_Vanillite_3[] =
 {
     ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(5, 12),
@@ -641,25 +641,25 @@ static const union AnimCmd sUnusedAnim_Solosis_3[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Solosis_4[] =
+static const union AnimCmd sUnusedAnim_Vanillite_4[] =
 {
     ANIMCMD_FRAME(7, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Duosion_1[] =
+static const union AnimCmd sUnusedAnim_Vanillish_1[] =
 {
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Duosion_2[] =
+static const union AnimCmd sUnusedAnim_Vanillish_2[] =
 {
     ANIMCMD_FRAME(1, 1),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sUnusedAnim_Reuniclus_1[] =
+static const union AnimCmd sUnusedAnim_Vanilluxe_1[] =
 {
     ANIMCMD_FRAME(0, 63),
     ANIMCMD_END,
@@ -1261,7 +1261,7 @@ static const union AnimCmd *const sUnusedAnims_Baltoy[] = {sAnim_GeneralFrame0, 
 static const union AnimCmd *const sUnusedAnims_Claydol[] = {sAnim_GeneralFrame0, sUnusedAnim_Claydol_1};
 static const union AnimCmd *const sUnusedAnims_Nosepass[] = {sAnim_GeneralFrame0, sUnusedAnim_Nosepass_1};
 static const union AnimCmd *const sUnusedAnims_Torkoal[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Mimikyu[] = {sAnim_GeneralFrame0, sUnusedAnim_Mimikyu_1, sUnusedAnim_Mimikyu_2};
+static const union AnimCmd *const sUnusedAnims_Gallade[] = {sAnim_GeneralFrame0, sUnusedAnim_Gallade_1, sUnusedAnim_Gallade_2};
 static const union AnimCmd *const sUnusedAnims_Barboach[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Whiscash[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Luvdisc[] = {sAnim_GeneralFrame0, sUnusedAnim_Luvdisc_1, sUnusedAnim_Luvdisc_2};
@@ -1283,15 +1283,15 @@ static const union AnimCmd *const sUnusedAnims_Camerupt[] = {sAnim_GeneralFrame0
 static const union AnimCmd *const sUnusedAnims_Tynamo[] = {sAnim_GeneralFrame0, sUnusedAnim_Tynamo_1};
 static const union AnimCmd *const sUnusedAnims_Eelektrik[] = {sAnim_GeneralFrame0, sUnusedAnim_Eelektrik_1};
 static const union AnimCmd *const sUnusedAnims_Eelektross[] = {sAnim_GeneralFrame0, sUnusedAnim_Eelektross_1, sUnusedAnim_Eelektross_2};
-static const union AnimCmd *const sUnusedAnims_Pawniard[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Bisharp[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Bronzor[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Bronzong[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Snorunt[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Glalie[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Lunatone[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Solrock[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Solosis[] = {sAnim_GeneralFrame0, sUnusedAnim_Solosis_1, sUnusedAnim_Solosis_2, sUnusedAnim_Solosis_3, sUnusedAnim_Solosis_4};
-static const union AnimCmd *const sUnusedAnims_Duosion[] = {sAnim_GeneralFrame0, sUnusedAnim_Duosion_1, sUnusedAnim_Duosion_2};
-static const union AnimCmd *const sUnusedAnims_Reuniclus[] = {sAnim_GeneralFrame0, sUnusedAnim_Reuniclus_1};
+static const union AnimCmd *const sUnusedAnims_Vanillite[] = {sAnim_GeneralFrame0, sUnusedAnim_Vanillite_1, sUnusedAnim_Vanillite_2, sUnusedAnim_Vanillite_3, sUnusedAnim_Vanillite_4};
+static const union AnimCmd *const sUnusedAnims_Vanillish[] = {sAnim_GeneralFrame0, sUnusedAnim_Vanillish_1, sUnusedAnim_Vanillish_2};
+static const union AnimCmd *const sUnusedAnims_Vanilluxe[] = {sAnim_GeneralFrame0, sUnusedAnim_Vanilluxe_1};
 static const union AnimCmd *const sUnusedAnims_Fletchling[] = {sAnim_GeneralFrame0, sUnusedAnim_Fletchling_1};
 static const union AnimCmd *const sUnusedAnims_Fletchadin[] = {sAnim_GeneralFrame0, sUnusedAnim_Fletchadin_1};
 static const union AnimCmd *const sUnusedAnims_Talonflame[] = {sAnim_GeneralFrame0, sUnusedAnim_Talonflame_1};
@@ -1331,9 +1331,9 @@ static const union AnimCmd *const sUnusedAnims_Lileep[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Cradily[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Anorith[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Armaldo[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Gothita[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Gothorita[] = {sAnim_GeneralFrame0};
-static const union AnimCmd *const sUnusedAnims_Gothitelle[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Ralts[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Kirlia[] = {sAnim_GeneralFrame0};
+static const union AnimCmd *const sUnusedAnims_Gardevoir[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Gible[] = {sAnim_GeneralFrame0, sUnusedAnim_Gible_1, sUnusedAnim_Gible_2};
 static const union AnimCmd *const sUnusedAnims_Gabite[] = {sAnim_GeneralFrame0};
 static const union AnimCmd *const sUnusedAnims_Garchomp[] = {sAnim_GeneralFrame0, sUnusedAnim_Garchomp_1, sUnusedAnim_Garchomp_2};
@@ -1703,7 +1703,7 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_CLAYDOL] = sUnusedAnims_Claydol,
     [SPECIES_NOSEPASS] = sUnusedAnims_Nosepass,
     [SPECIES_TORKOAL] = sUnusedAnims_Torkoal,
-    [SPECIES_MIMIKYU] = sUnusedAnims_Mimikyu,
+    [SPECIES_GALLADE] = sUnusedAnims_Gallade,
     [SPECIES_BARBOACH] = sUnusedAnims_Barboach,
     [SPECIES_WHISCASH] = sUnusedAnims_Whiscash,
     [SPECIES_LUVDISC] = sUnusedAnims_Luvdisc,
@@ -1725,15 +1725,15 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_TYNAMO] = sUnusedAnims_Tynamo,
     [SPECIES_EELEKTRIK] = sUnusedAnims_Eelektrik,
     [SPECIES_EELEKTROSS] = sUnusedAnims_Eelektross,
-    [SPECIES_PAWNIARD] = sUnusedAnims_Pawniard,
-    [SPECIES_BISHARP] = sUnusedAnims_Bisharp,
+    [SPECIES_BRONZOR] = sUnusedAnims_Bronzor,
+    [SPECIES_BRONZONG] = sUnusedAnims_Bronzong,
     [SPECIES_SNORUNT] = sUnusedAnims_Snorunt,
     [SPECIES_GLALIE] = sUnusedAnims_Glalie,
     [SPECIES_LUNATONE] = sUnusedAnims_Lunatone,
     [SPECIES_SOLROCK] = sUnusedAnims_Solrock,
-    [SPECIES_SOLOSIS] = sUnusedAnims_Solosis,
-    [SPECIES_DUOSION] = sUnusedAnims_Duosion,
-    [SPECIES_REUNICLUS] = sUnusedAnims_Reuniclus,
+    [SPECIES_VANILLITE] = sUnusedAnims_Vanillite,
+    [SPECIES_VANILLISH] = sUnusedAnims_Vanillish,
+    [SPECIES_VANILLUXE] = sUnusedAnims_Vanilluxe,
     [SPECIES_FLETCHLING] = sUnusedAnims_Fletchling,
     [SPECIES_FLETCHADIN] = sUnusedAnims_Fletchadin,
     [SPECIES_TALONFLAME] = sUnusedAnims_Talonflame,
@@ -1773,9 +1773,9 @@ static const union AnimCmd *const *const sUnusedAnimsTable[] =
     [SPECIES_CRADILY] = sUnusedAnims_Cradily,
     [SPECIES_ANORITH] = sUnusedAnims_Anorith,
     [SPECIES_ARMALDO] = sUnusedAnims_Armaldo,
-    [SPECIES_GOTHITA] = sUnusedAnims_Gothita,
-    [SPECIES_GOTHORITA] = sUnusedAnims_Gothorita,
-    [SPECIES_GOTHITELLE] = sUnusedAnims_Gothitelle,
+    [SPECIES_RALTS] = sUnusedAnims_Ralts,
+    [SPECIES_KIRLIA] = sUnusedAnims_Kirlia,
+    [SPECIES_GARDEVOIR] = sUnusedAnims_Gardevoir,
     [SPECIES_GIBLE] = sUnusedAnims_Gible,
     [SPECIES_GABITE] = sUnusedAnims_Gabite,
     [SPECIES_GARCHOMP] = sUnusedAnims_Garchomp,

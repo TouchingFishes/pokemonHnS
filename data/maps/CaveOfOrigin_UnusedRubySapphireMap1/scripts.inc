@@ -28,12 +28,12 @@ CaveOfOrigin_UnusedRubySapphireMap1_Scientist3::
 	release
 	end
 
-CaveOfOrigin_UnusedRubySapphireMap1_Gothorita::
+CaveOfOrigin_UnusedRubySapphireMap1_Kirlia::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_GOTHORITA, CRY_MODE_NORMAL
-	msgbox CaveOfOrigin_UnusedRubySapphireMap1_Gothorita_Text, MSGBOX_DEFAULT
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
+	msgbox CaveOfOrigin_UnusedRubySapphireMap1_Kirlia_Text, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -64,5 +64,5 @@ CaveOfOrigin_UnusedRubySapphireMap1_Scientist3_Text:
 	.string "KIRI is also looking for clues.\n"
 	.string "We need to unravel this mystery.$"
 
-CaveOfOrigin_UnusedRubySapphireMap1_Gothorita_Text:
+CaveOfOrigin_UnusedRubySapphireMap1_Kirlia_Text:
 	.string "KIRI: Kir!$"

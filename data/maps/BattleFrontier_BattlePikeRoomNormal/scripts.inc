@@ -284,24 +284,24 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_EnterStatusRoom::
 	waitmovement 0
 	pike_getstatusmon
 	copyvar VAR_0x8004, VAR_RESULT
-	call_if_eq VAR_0x8004, PIKE_STATUSMON_GOTHORITA, BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaAttack
+	call_if_eq VAR_0x8004, PIKE_STATUSMON_KIRLIA, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack
 	call_if_eq VAR_0x8004, PIKE_STATUSMON_DUSCLOPS, BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack
 	msgbox BattleFrontier_BattlePikeRoomNormal_Text_AttacksWhenStartled, MSGBOX_DEFAULT
 	closemessage
 	releaseall
 	end
 
-BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaAttack::
-	msgbox BattleFrontier_BattlePikeRoomNormal_Text_GothoritaStop, MSGBOX_DEFAULT
+BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaAttack::
+	msgbox BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop, MSGBOX_DEFAULT
 	closemessage
 	waitse
-	playmoncry SPECIES_GOTHORITA, CRY_MODE_NORMAL
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 	waitmoncry
 	pike_getstatus
-	call_if_eq VAR_RESULT, PIKE_STATUS_TOXIC, BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedToxic
-	call_if_eq VAR_RESULT, PIKE_STATUS_BURN, BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedWillOWisp
-	call_if_eq VAR_RESULT, PIKE_STATUS_PARALYSIS, BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedThunderWave
-	call_if_eq VAR_RESULT, PIKE_STATUS_SLEEP, BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedHypnosis
+	call_if_eq VAR_RESULT, PIKE_STATUS_TOXIC, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedToxic
+	call_if_eq VAR_RESULT, PIKE_STATUS_BURN, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedWillOWisp
+	call_if_eq VAR_RESULT, PIKE_STATUS_PARALYSIS, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedThunderWave
+	call_if_eq VAR_RESULT, PIKE_STATUS_SLEEP, BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedHypnosis
 	pike_flashscreen
 	waitstate
 	applymovement LOCALID_OBJ_0, BattleFrontier_BattlePikeRoomNormal_Movement_NPCApproachMon
@@ -309,17 +309,17 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaAttack::
 	applymovement LOCALID_OBJ_1, BattleFrontier_BattlePikeRoomNormal_Movement_MonFaceNPC
 	waitmovement 0
 	waitse
-	playmoncry SPECIES_GOTHORITA, CRY_MODE_NORMAL
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 	waitmoncry
 	msgbox BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough, MSGBOX_DEFAULT
 	waitse
-	playmoncry SPECIES_GOTHORITA, CRY_MODE_NORMAL
+	playmoncry SPECIES_KIRLIA, CRY_MODE_NORMAL
 	waitmoncry
 	closemessage
 	applymovement LOCALID_OBJ_1, BattleFrontier_BattlePikeRoomNormal_Movement_MonMoveAside
 	applymovement LOCALID_OBJ_0, BattleFrontier_BattlePikeRoomNormal_Movement_StatusNPCApproachPlayer
 	waitmovement 0
-	msgbox BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForGothorita, MSGBOX_DEFAULT
+	msgbox BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia, MSGBOX_DEFAULT
 	return
 
 BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack::
@@ -351,23 +351,23 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_DusclopsAttack::
 	msgbox BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops, MSGBOX_DEFAULT
 	return
 
-BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedToxic::
-	message BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedToxic
+BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedToxic::
+	message BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic
 	waitmessage
 	return
 
-BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedWillOWisp::
-	message BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedWillOWisp
+BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedWillOWisp::
+	message BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp
 	waitmessage
 	return
 
-BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedThunderWave::
-	message BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedThunderWave
+BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedThunderWave::
+	message BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave
 	waitmessage
 	return
 
-BattleFrontier_BattlePikeRoomNormal_EventScript_GothoritaUsedHypnosis::
-	message BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedHypnosis
+BattleFrontier_BattlePikeRoomNormal_EventScript_KirliaUsedHypnosis::
+	message BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis
 	waitmessage
 	return
 
@@ -580,7 +580,7 @@ BattleFrontier_BattlePikeRoomNormal_EventScript_WillRestoreTwoMons::
 	closemessage
 	return
 
-@ Dusclops or Gothorita
+@ Dusclops or Kirlia
 BattleFrontier_BattlePikeRoomNormal_EventScript_StatusMon::
 	lock
 	faceplayer
@@ -699,25 +699,25 @@ BattleFrontier_BattlePikeRoomNormal_Text_WatchOut:
 	.string "Oh, my!\p"
 	.string "Watch out!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_GothoritaStop:
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaStop:
 	.string "Now, now!\n"
-	.string "GOTHORITA, stop that!$"
+	.string "KIRLIA, stop that!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop:
 	.string "Now, now!\n"
 	.string "DUSCLOPS, stop that!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedToxic:
-	.string "GOTHORITA used TOXIC!$"
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic:
+	.string "KIRLIA used TOXIC!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedHypnosis:
-	.string "GOTHORITA used HYPNOSIS!$"
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
+	.string "KIRLIA used HYPNOSIS!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedThunderWave:
-	.string "GOTHORITA used THUNDER WAVE!$"
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
+	.string "KIRLIA used THUNDER WAVE!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_GothoritaUsedWillOWisp:
-	.string "GOTHORITA used WILL-O-WISP!$"
+BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
+	.string "KIRLIA used WILL-O-WISP!$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp:
 	.string "DUSCLOPS used WILL-O-WISP!$"
@@ -729,9 +729,9 @@ BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
 	.string "Look here!\n"
 	.string "That's quite enough!$"
 
-BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForGothorita:
+BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForKirlia:
 	.string "I must apologize to you…\p"
-	.string "My GOTHORITA has a TIMID nature…$"
+	.string "My KIRLIA has a TIMID nature…$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ApologizeForDusclops:
 	.string "I must apologize to you…\p"

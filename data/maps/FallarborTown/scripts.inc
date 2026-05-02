@@ -22,19 +22,19 @@ FallarborTown_EventScript_ExpertMNormal::
 	end
 
 FallarborTown_EventScript_Girl::
-	msgbox FallarborTown_Text_MyPreciousSolosis, MSGBOX_NPC
+	msgbox FallarborTown_Text_MyPreciousVanillite, MSGBOX_NPC
 	end
 
 FallarborTown_EventScript_Gentleman::
 	msgbox FallarborTown_Text_HaveYouChallengedFlannery, MSGBOX_NPC
 	end
 
-FallarborTown_EventScript_Solosis::
+FallarborTown_EventScript_Vanillite::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_SOLOSIS, CRY_MODE_NORMAL
-	msgbox FallarborTown_Text_Solosis, MSGBOX_DEFAULT
+	playmoncry SPECIES_VANILLITE, CRY_MODE_NORMAL
+	msgbox FallarborTown_Text_Vanillite, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -63,13 +63,13 @@ FallarborTown_Text_RegionKnownForMeteors:
 	.string "They say METEOR FALLS was gouged out\n"
 	.string "by a falling meteorite long ago.$"
 
-FallarborTown_Text_MyPreciousSolosis:
+FallarborTown_Text_MyPreciousVanillite:
 	.string "See! Take a look!\n"
-	.string "This is my precious SOLOSIS!\p"
+	.string "This is my precious VANILLITE!\p"
 	.string "It's slick and smooth and plushy, too!$"
 
-FallarborTown_Text_Solosis:
-	.string "SOLOSIS: Rooreelooo.$"
+FallarborTown_Text_Vanillite:
+	.string "VANILLITE: Rooreelooo.$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
 	.string "Have you already challenged FLANNERY,\n"

@@ -1010,7 +1010,7 @@ static const struct InGameTrade sIngameTrades[] =
         .otName = _("KOBE"),
         .otGender = FEMALE,
         .sheen = 10,
-        .requestedSpecies = SPECIES_GOTHITA
+        .requestedSpecies = SPECIES_RALTS
     },
     [INGAME_TRADE_ONIX] =
     {

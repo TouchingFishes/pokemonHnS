@@ -1678,23 +1678,23 @@ const u8 gBraviaryPokedexText[] = _(
     "even if it is injured. One can carry a car\n"
     "while flying.");
 
-const u8 gGothitaPokedexText[] = _(
-    "They intently observe both TRAINERS and\n"
-    "POKéMON. Apparently, GOTHITA are looking\n"
-    "at something that only they can see. Their\n"
-    "ribbonlike feelers increase their power.");
+const u8 gRaltsPokedexText[] = _(
+    "A RALTS has the power to sense the\n"
+    "emotions of people and POKéMON with the\n"
+    "horns on its head. It takes cover if it\n"
+    "senses any hostility.");
 
-const u8 gGothoritaPokedexText[] = _(
-    "Starlight is the source of their power.\n"
-    "They use hypnosis to control people and\n"
-    "POKéMON. Tales of GOTHORITA leading them\n"
-    "astray are told in every corner.");
+const u8 gKirliaPokedexText[] = _(
+    "A KIRLIA has the psychic power to create \n"
+    "a rip in the dimensions and see into the\n"
+    "future. It is said to dance with pleasure\n"
+    "on sunny mornings.");
 
-const u8 gGothitellePokedexText[] = _(
-    "Starry skies thousands of light-years\n"
-    "away are visible in the space distorted by\n"
-    "their intense psychic power. When it learns\n"
-    "its TRAINER'S life span, it cries in sadness.");
+const u8 gGardevoirPokedexText[] = _(
+    "It apparently does not feel the pull of\n"
+    "gravity because it supports itself with\n"
+    "psychic power. It will give its life to\n"
+    "protect its TRAINER.");
 
 const u8 gSurskitPokedexText[] = _(
     "They gather on puddles after evening\n"
@@ -1786,11 +1786,11 @@ const u8 gHariyamaPokedexText[] = _(
     "It's been known to stand on train tracks\n"
     "and stop trains using forearm thrusts.");
 
-const u8 gSolosisPokedexText[] = _(
-    "Because their bodies are enveloped\n"
-    "in a special liquid, they are fine in any\n"
-    "environment, no matter how severe. They\n"
-    "can use telepathy to talk with others.");
+const u8 gVanillitePokedexText[] = _(
+    "The temperature of their breath is -50ºC.\n"
+    "They create snow crystals and make snow\n"
+    "fall in the areas around them. VANILLITE is\n"
+    "treasured by households in warm regions.");
 
 const u8 gNosepassPokedexText[] = _(
     "Its body emits a powerful magnetism.\n"
@@ -1810,11 +1810,11 @@ const u8 gDelcattyPokedexText[] = _(
     "sleeps there. It is nocturnal and becomes\n"
     "active at dusk.");
 
-const u8 gMimikyuPokedexText[] = _(
-    "A lonely POKéMON, it hides its terrifying\n"
-    "appearance beneath an old rag so it can\n"
-    "get closer to people and other POKéMON.\n"
-    "Its actual appearance is unknown.");
+const u8 gGalladePokedexText[] = _(
+    "A master of courtesy and swordsmanship,\n"
+    "it fights using extending swords on its\n"
+    "elbows when trying to protect someone.\n"
+    "It can sense what its foe is thinking.");
 
 const u8 gTalonflamePokedexText[] = _(
     "In the fever of an exciting battle, it\n"
@@ -1947,17 +1947,17 @@ const u8 gTorkoalPokedexText[] = _(
     "nostrils, it lets off a sound that is\n"
     "similar to a locomotive's horn.");
 
-const u8 gDuosionPokedexText[] = _(
-    "When their brains, now divided in two,\n"
-    "are thinking the same thoughts,\n"
-    "these POKéMON exhibit their maximized\n"
-    "psychic power.");
+const u8 gVanillishPokedexText[] = _(
+    "VANILLISH has existed since the Ice Age.\n"
+    "It controls particles of ice, freezes its\n"
+    "opponents, and then shatters them with\n"
+    "a headbutt.");
 
-const u8 gReuniclusPokedexText[] = _(
-    "They use psychic power to control their\n"
-    "arms, which are made of a special liquid.\n"
-    "When Reuniclus shake hands, a network\n"
-    "forms between their brains.");
+const u8 gVanilluxePokedexText[] = _(
+    "Each of its two heads has a brain, and\n"
+    "when they are in agreement, it attacks\n"
+    "its enemies by exhaling a violent blizzard.\n"
+    "It makes snow clouds inside its body.");
 
 const u8 gSpindaPokedexText[] = _(
     "It is distinguished by a pattern of\n"
@@ -1983,17 +1983,17 @@ const u8 gFusangPokedexText[] = _(
     "it hides itself by flapping up a cloud of\n"
     "desert sand.");
 
-const u8 gPawniardPokedexText[] = _(
-    "Ignoring their injuries, groups attack by\n"
-    "sinking the blades that cover their bodies\n"
-    "into their prey. If battling dulls them, it\n"
-    "sharpens them on stones by the river.");
+const u8 gBronzorPokedexText[] = _(
+    "Implements shaped like it were discovered\n"
+    "in ancient tombs. There are researchers\n"
+    "who believe this POKéMON reflected like a\n"
+    "mirror in the distant past.");
 
-const u8 gBisharpPokedexText[] = _(
-    "This pitiless POKéMON commands a group\n"
-    "of PAWNIARD to hound prey into immobility.\n"
-    "It battles to become the boss, but will be\n"
-    "driven from the group if it loses.");
+const u8 gBronzongPokedexText[] = _(
+    "In ages past, this POKéMON was revered as\n"
+    "a bringer of rain. One caused a news stir\n"
+    "when it was dug up at a construction site\n"
+    "after a 2000-year sleep.");
 
 const u8 gSwabluPokedexText[] = _(
     "A POKéMON that has wings like cottony\n"

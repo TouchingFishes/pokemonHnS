@@ -297,7 +297,7 @@ static const struct TrainerHillFloor sFloors_JPDefault[] = {
                         .friendship = MAX_FRIENDSHIP
                     },
                     [4] = {
-                        .species = SPECIES_DUOSION,
+                        .species = SPECIES_VANILLISH,
                         .heldItem = ITEM_PERSIM_BERRY,
                         .moves = { MOVE_PSYWAVE, MOVE_FUTURE_SIGHT, MOVE_CONFUSE_RAY, MOVE_MAGIC_COAT },
                         .hpEV = 100,
@@ -400,7 +400,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [1] =
                     {
-                        .species = SPECIES_REUNICLUS,
+                        .species = SPECIES_VANILLUXE,
                         .heldItem = ITEM_LEFTOVERS,
                         .moves = {MOVE_PSYCHIC, MOVE_SHADOW_BALL, MOVE_THUNDER_WAVE, MOVE_REFLECT},
                         .hpEV = 255,
@@ -415,7 +415,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0xC,
-                        .nickname = _("REUNICLUS"),
+                        .nickname = _("VANILLUXE"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [2] =
@@ -440,7 +440,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [3] =
                     {
-                        .species = SPECIES_GOTHITELLE,
+                        .species = SPECIES_GARDEVOIR,
                         .heldItem = ITEM_SITRUS_BERRY,
                         .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND, MOVE_DESTINY_BOND},
                         .hpEV = 110,
@@ -455,7 +455,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 24,
                         .abilityNum = 0,
                         .personality = 0x80,
-                        .nickname = _("GOTHITELLE"),
+                        .nickname = _("GARDEVOIR"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                     [4] =
@@ -892,7 +892,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                     },
                     [5] =
                     {
-                        .species = SPECIES_SOLOSIS,
+                        .species = SPECIES_VANILLITE,
                         .heldItem = ITEM_LEFTOVERS,
                         .moves = {MOVE_SURF, MOVE_PROTECT, MOVE_ATTRACT, MOVE_TOXIC},
                         .hpEV = 252,
@@ -907,7 +907,7 @@ static const struct TrainerHillFloor sFloors_Normal[] =
                         .spDefenseIV = 15,
                         .abilityNum = 0,
                         .personality = 0x30,
-                        .nickname = _("SOLOSIS"),
+                        .nickname = _("VANILLITE"),
                         .friendship = MAX_FRIENDSHIP,
                     },
                 },
@@ -1738,7 +1738,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                         },
                                     [5] =
                                         {
-                                            .species = SPECIES_GOTHITELLE,
+                                            .species = SPECIES_GARDEVOIR,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_DOUBLE_TEAM, MOVE_CALM_MIND, MOVE_WISH},
                                             .hpEV = 252,
@@ -1753,7 +1753,7 @@ static const struct TrainerHillFloor sFloors_Variety[] = {
                                             .spDefenseIV = 15,
                                             .abilityNum = 1,
                                             .personality = 0xF,
-                                            .nickname = _("GOTHITELLE"),
+                                            .nickname = _("GARDEVOIR"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                 },
@@ -3138,7 +3138,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                         },
                                     [4] =
                                         {
-                                            .species = SPECIES_BISHARP,
+                                            .species = SPECIES_BRONZONG,
                                             .heldItem = ITEM_SCOPE_LENS,
                                             .moves = {MOVE_NEEDLE_ARM, MOVE_NONE, MOVE_NONE, MOVE_NONE},
                                             .hpEV = 252,
@@ -3153,7 +3153,7 @@ static const struct TrainerHillFloor sFloors_Unique[] = {
                                             .spDefenseIV = 5,
                                             .abilityNum = 1,
                                             .personality = 0x8C,
-                                            .nickname = _("BISHARP"),
+                                            .nickname = _("BRONZONG"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [5] =
@@ -3918,7 +3918,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                         },
                                     [1] =
                                         {
-                                            .species = SPECIES_GOTHITELLE,
+                                            .species = SPECIES_GARDEVOIR,
                                             .heldItem = ITEM_LUM_BERRY,
                                             .moves = {MOVE_PSYCHIC, MOVE_THUNDERBOLT, MOVE_CALM_MIND, MOVE_WILL_O_WISP},
                                             .hpEV = 6,
@@ -3933,7 +3933,7 @@ static const struct TrainerHillFloor sFloors_Expert[] = {
                                             .spDefenseIV = MAX_PER_STAT_IVS,
                                             .abilityNum = 0,
                                             .personality = 0xF,
-                                            .nickname = _("GOTHITELLE"),
+                                            .nickname = _("GARDEVOIR"),
                                             .friendship = MAX_FRIENDSHIP,
                                         },
                                     [2] =

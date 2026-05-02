@@ -253,7 +253,7 @@ LilycoveCity_ContestHall_EventScript_CuteContestJudge::
 LilycoveCity_ContestHall_EventScript_CuteContestant1::
 	lock
 	faceplayer
-	msgbox LilycoveCity_ContestHall_Text_MySolosisWasDistracted, MSGBOX_DEFAULT
+	msgbox LilycoveCity_ContestHall_Text_MyVanilliteWasDistracted, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_CUTE_CONTESTANT_1, Common_Movement_FaceOriginalDirection
 	waitmovement 0
@@ -485,8 +485,8 @@ LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
 	.string "Oh, my goodness! What a perfectly\n"
 	.string "adorable WATER SPORT appeal!$"
 
-LilycoveCity_ContestHall_Text_MySolosisWasDistracted:
-	.string "Oh, no… My sweet SOLOSIS was\n"
+LilycoveCity_ContestHall_Text_MyVanilliteWasDistracted:
+	.string "Oh, no… My sweet VANILLITE was\n"
 	.string "distracted by another POKéMON.$"
 
 LilycoveCity_ContestHall_Text_NeverWonBattleButContest:

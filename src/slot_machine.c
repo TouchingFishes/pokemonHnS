@@ -55,7 +55,7 @@
 #define BIAS_REPLAY     (1 << 0)
 #define BIAS_CHERRY     (1 << 1)
 #define BIAS_LOTAD      (1 << 2)
-#define BIAS_SOLOSIS    (1 << 3)
+#define BIAS_VANILLITE    (1 << 3)
 #define BIAS_POWER      (1 << 4)
 #define BIAS_REELTIME   (1 << 5)
 #define BIAS_MIXED_7    (1 << 6)
@@ -63,7 +63,7 @@
 
 #define BIAS_7       (BIAS_STRAIGHT_7 | BIAS_MIXED_7)
 #define BIAS_SPECIAL (BIAS_7 | BIAS_REELTIME)
-#define BIAS_REGULAR (BIAS_REPLAY | BIAS_CHERRY | BIAS_LOATAD | BIAS_SOLOSIS | BIAS_POWER)
+#define BIAS_REGULAR (BIAS_REPLAY | BIAS_CHERRY | BIAS_LOATAD | BIAS_VANILLITE | BIAS_POWER)
 
 // The slot machine will try to manipulate the outcome by adding up to 4 extra
 // turns to the reel after you press stop.
@@ -76,7 +76,7 @@
 enum {
     SYMBOL_7_RED,
     SYMBOL_7_BLUE,
-    SYMBOL_SOLOSIS,
+    SYMBOL_VANILLITE,
     SYMBOL_LOTAD,
     SYMBOL_CHERRY,
     SYMBOL_POWER,
@@ -87,7 +87,7 @@ enum
 {
     GFXTAG_7_RED,
     GFXTAG_7_BLUE,
-    GFXTAG_SOLOSIS,
+    GFXTAG_VANILLITE,
     GFXTAG_LOTAD,
     GFXTAG_CHERRY,
     GFXTAG_POWER,
@@ -132,7 +132,7 @@ enum {
     MATCH_TOPBOT_CHERRY, // Cherry in top/bottom of first reel
     MATCH_REPLAY,
     MATCH_LOTAD,
-    MATCH_SOLOSIS,
+    MATCH_VANILLITE,
     MATCH_POWER,
     MATCH_MIXED_7,       // First two 7's are same color; last is other color
     MATCH_RED_7,
@@ -5219,7 +5219,7 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
     [LEFT_REEL] = {
         SYMBOL_7_RED,
         SYMBOL_CHERRY,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_REPLAY,
         SYMBOL_POWER,
         SYMBOL_LOTAD,
@@ -5228,12 +5228,12 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_CHERRY,
         SYMBOL_POWER,
         SYMBOL_REPLAY,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_7_RED,
         SYMBOL_POWER,
         SYMBOL_LOTAD,
         SYMBOL_REPLAY,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_7_BLUE,
         SYMBOL_POWER,
         SYMBOL_LOTAD,
@@ -5244,7 +5244,7 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_CHERRY,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_CHERRY,
         SYMBOL_REPLAY,
         SYMBOL_POWER,
@@ -5254,7 +5254,7 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_LOTAD,
         SYMBOL_REPLAY,
         SYMBOL_CHERRY,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_LOTAD,
         SYMBOL_REPLAY,
         SYMBOL_CHERRY,
@@ -5268,18 +5268,18 @@ static const u8 sReelSymbols[NUM_REELS][SYMBOLS_PER_REEL] =
         SYMBOL_7_BLUE,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
         SYMBOL_POWER,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_POWER,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
-        SYMBOL_SOLOSIS,
+        SYMBOL_VANILLITE,
         SYMBOL_POWER,
         SYMBOL_REPLAY,
         SYMBOL_LOTAD,
@@ -5349,7 +5349,7 @@ static const u8 sBiasProbabilities_Regular[][NUM_SLOT_MACHINE_IDS] = {
         [SLOT_MACHINE_LUCKIEST]   = 25
     },
     {
-        // Probabilities for BIAS_SOLOSIS
+        // Probabilities for BIAS_VANILLITE
         [SLOT_MACHINE_UNLUCKIEST] = 12,
         [SLOT_MACHINE_UNLUCKIER]  = 15,
         [SLOT_MACHINE_UNLUCKY]    = 15,
@@ -5457,7 +5457,7 @@ static const u8 sBiasSymbols[] = {
   SYMBOL_REPLAY,  // BIAS_REPLAY
   SYMBOL_CHERRY,  // BIAS_CHERRY
   SYMBOL_LOTAD,   // BIAS_LOTAD
-  SYMBOL_SOLOSIS, // BIAS_SOLOSIS
+  SYMBOL_VANILLITE, // BIAS_VANILLITE
   SYMBOL_POWER,   // BIAS_POWER
   SYMBOL_7_RED,   // BIAS_REELTIME
   SYMBOL_7_RED,   // BIAS_MIXED_7
@@ -5469,13 +5469,13 @@ static const u16 sBiasesSpecial[] = {
 };
 
 static const u16 sBiasesRegular[] = {
-    BIAS_POWER, BIAS_SOLOSIS, BIAS_LOTAD, BIAS_CHERRY, BIAS_REPLAY
+    BIAS_POWER, BIAS_VANILLITE, BIAS_LOTAD, BIAS_CHERRY, BIAS_REPLAY
 };
 
 static const u8 sSymbolToMatch[] = {
     [SYMBOL_7_RED]   = MATCH_RED_7,
     [SYMBOL_7_BLUE]  = MATCH_BLUE_7,
-    [SYMBOL_SOLOSIS] = MATCH_SOLOSIS,
+    [SYMBOL_VANILLITE] = MATCH_VANILLITE,
     [SYMBOL_LOTAD]   = MATCH_LOTAD,
     [SYMBOL_CHERRY]  = MATCH_CHERRY,
     [SYMBOL_POWER]   = MATCH_POWER,
@@ -5487,7 +5487,7 @@ static const u16 sSlotMatchFlags[] = {
     [MATCH_TOPBOT_CHERRY] = 1 << MATCH_TOPBOT_CHERRY,
     [MATCH_REPLAY]        = 1 << MATCH_REPLAY,
     [MATCH_LOTAD]         = 1 << MATCH_LOTAD,
-    [MATCH_SOLOSIS]       = 1 << MATCH_SOLOSIS,
+    [MATCH_VANILLITE]       = 1 << MATCH_VANILLITE,
     [MATCH_POWER]         = 1 << MATCH_POWER,
     [MATCH_MIXED_7]       = 1 << MATCH_MIXED_7,
     [MATCH_RED_7]         = 1 << MATCH_RED_7,
@@ -5499,7 +5499,7 @@ static const u16 sSlotPayouts[] = {
     [MATCH_TOPBOT_CHERRY] = 4,
     [MATCH_REPLAY]        = 0,
     [MATCH_LOTAD]         = 6,
-    [MATCH_SOLOSIS]       = 12,
+    [MATCH_VANILLITE]       = 12,
     [MATCH_POWER]         = 3,
     [MATCH_MIXED_7]       = 90,
     [MATCH_RED_7]         = 300,
@@ -7822,7 +7822,7 @@ static const struct SpriteSheet sSlotMachineSpriteSheets[22] =
 {
     { .data = gSlotMachineReelSymbol1Tiles, .size = 0x200, .tag = GFXTAG_7_RED },
     { .data = gSlotMachineReelSymbol2Tiles, .size = 0x200, .tag = GFXTAG_7_BLUE },
-    { .data = gSlotMachineReelSymbol3Tiles, .size = 0x200, .tag = GFXTAG_SOLOSIS },
+    { .data = gSlotMachineReelSymbol3Tiles, .size = 0x200, .tag = GFXTAG_VANILLITE },
     { .data = gSlotMachineReelSymbol4Tiles, .size = 0x200, .tag = GFXTAG_LOTAD },
     { .data = gSlotMachineReelSymbol5Tiles, .size = 0x200, .tag = GFXTAG_CHERRY },
     { .data = gSlotMachineReelSymbol6Tiles, .size = 0x200, .tag = GFXTAG_POWER },

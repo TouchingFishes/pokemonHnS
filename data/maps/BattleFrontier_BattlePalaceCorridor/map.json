@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SOLOSIS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_VANILLITE",
       "x": 3,
       "y": 5,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GOTHORITA",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_KIRLIA",
       "x": 12,
       "y": 6,
       "elevation": 0,

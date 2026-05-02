@@ -43,17 +43,17 @@ PetalburgCity_GeowattEvo_Text:
 	.string "about. Do you want to listen to it?$"
 
 PetalburgCity_GeowattEvo_Text2:
-	.string "Choosing between a MALE or FEMALE GOTHITA\n"
+	.string "Choosing between a MALE or FEMALE RALTS\n"
 	.string "is quite important.\p"
 	.string "Depending on what you capture, the last\n"
-	.string "evolution of GOTHITA will be different.\p"
-	.string "If GOTHITA is MALE, he will naturally\n"
+	.string "evolution of RALTS will be different.\p"
+	.string "If RALTS is MALE, he will naturally\n"
 	.string "evolve into GEOWATT but only if it\l"
 	.string "happens during the morning, which is\l"
 	.string "from 6AM to 9AM.\p"
-	.string "GOTHITA will evolve into GOTHITELLE if he\n"
+	.string "RALTS will evolve into GARDEVOIR if he\n"
 	.string "doesn't evolve during morning, or if\l"
-	.string "said GOTHITA is FEMALE.\p"
+	.string "said RALTS is FEMALE.\p"
 	.string "I believe this information might be\n"
 	.string "useful for a new trainer like you.$"
 

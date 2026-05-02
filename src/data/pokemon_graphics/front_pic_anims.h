@@ -3440,13 +3440,10 @@ static const union AnimCmd sAnim_Torkoal_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Mimikyu_1[] =
+static const union AnimCmd sAnim_Gallade_1[] =
 {
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
@@ -3711,23 +3708,28 @@ static const union AnimCmd sAnim_Eelektross_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Pawniard_1[] =
+static const union AnimCmd sAnim_Bronzor_1[] =
 {
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 25),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
+    ANIMCMD_FRAME(1, 9),
+    ANIMCMD_FRAME(0, 9),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Bisharp_1[] =
+static const union AnimCmd sAnim_Bronzong_1[] =
 {
-    ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
@@ -3786,31 +3788,29 @@ static const union AnimCmd sAnim_Solrock_2[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Solosis_1[] =
+static const union AnimCmd sAnim_Vanillite_1[] =
 {
-    ANIMCMD_FRAME(1, 5),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Vanillish_1[] =
+{
+    ANIMCMD_FRAME(0, 12),
     ANIMCMD_FRAME(1, 45),
-    ANIMCMD_FRAME(0, 5),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Duosion_1[] =
+static const union AnimCmd sAnim_Vanilluxe_1[] =
 {
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 20),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sAnim_Reuniclus_1[] =
-{
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 12),
+    ANIMCMD_FRAME(1, 45),
+    ANIMCMD_FRAME(0, 15),
     ANIMCMD_END,
 };
 
@@ -4259,31 +4259,27 @@ static const union AnimCmd sAnim_Armaldo_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gothita_1[] =
+static const union AnimCmd sAnim_Ralts_1[] =
 {
-    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_FRAME(1, 25),
+    ANIMCMD_FRAME(0, 8),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Kirlia_1[] =
+{
     ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
+    ANIMCMD_FRAME(1, 39),
     ANIMCMD_FRAME(0, 10),
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Gothorita_1[] =
+static const union AnimCmd sAnim_Gardevoir_1[] =
 {
-    ANIMCMD_FRAME(0, 11),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 20),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_END,
-};
-
-static const union AnimCmd sAnim_Gothitelle_1[] =
-{
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
-    ANIMCMD_FRAME(1, 10),
-    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(0, 30),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
@@ -5732,7 +5728,7 @@ SINGLE_ANIMATION(Baltoy);
 SINGLE_ANIMATION(Claydol);
 SINGLE_ANIMATION(Nosepass);
 SINGLE_ANIMATION(Torkoal);
-SINGLE_ANIMATION(Mimikyu);
+SINGLE_ANIMATION(Gallade);
 SINGLE_ANIMATION(Barboach);
 SINGLE_ANIMATION(Whiscash);
 SINGLE_ANIMATION(Luvdisc);
@@ -5754,15 +5750,15 @@ SINGLE_ANIMATION(Camerupt);
 SINGLE_ANIMATION(Tynamo);
 SINGLE_ANIMATION(Eelektrik);
 SINGLE_ANIMATION(Eelektross);
-SINGLE_ANIMATION(Pawniard);
-SINGLE_ANIMATION(Bisharp);
+SINGLE_ANIMATION(Bronzor);
+SINGLE_ANIMATION(Bronzong);
 SINGLE_ANIMATION(Snorunt);
 SINGLE_ANIMATION(Glalie);
 DOUBLE_ANIMATION(Lunatone);
 DOUBLE_ANIMATION(Solrock);
-SINGLE_ANIMATION(Solosis);
-SINGLE_ANIMATION(Duosion);
-SINGLE_ANIMATION(Reuniclus);
+SINGLE_ANIMATION(Vanillite);
+SINGLE_ANIMATION(Vanillish);
+SINGLE_ANIMATION(Vanilluxe);
 SINGLE_ANIMATION(Fletchling);
 SINGLE_ANIMATION(Fletchadin);
 SINGLE_ANIMATION(Talonflame);
@@ -5807,9 +5803,9 @@ SINGLE_ANIMATION(Lileep);
 SINGLE_ANIMATION(Cradily);
 SINGLE_ANIMATION(Anorith);
 SINGLE_ANIMATION(Armaldo);
-SINGLE_ANIMATION(Gothita);
-SINGLE_ANIMATION(Gothorita);
-SINGLE_ANIMATION(Gothitelle);
+SINGLE_ANIMATION(Ralts);
+SINGLE_ANIMATION(Kirlia);
+SINGLE_ANIMATION(Gardevoir);
 SINGLE_ANIMATION(Gible);
 SINGLE_ANIMATION(Gabite);
 SINGLE_ANIMATION(Garchomp);
@@ -6245,7 +6241,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_CLAYDOL]     = sAnims_Claydol,
     [SPECIES_NOSEPASS]    = sAnims_Nosepass,
     [SPECIES_TORKOAL]     = sAnims_Torkoal,
-    [SPECIES_MIMIKYU]     = sAnims_Mimikyu,
+    [SPECIES_GALLADE]     = sAnims_Gallade,
     [SPECIES_BARBOACH]    = sAnims_Barboach,
     [SPECIES_WHISCASH]    = sAnims_Whiscash,
     [SPECIES_LUVDISC]     = sAnims_Luvdisc,
@@ -6267,15 +6263,15 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_TYNAMO]      = sAnims_Tynamo,
     [SPECIES_EELEKTRIK]      = sAnims_Eelektrik,
     [SPECIES_EELEKTROSS]     = sAnims_Eelektross,
-    [SPECIES_PAWNIARD]      = sAnims_Pawniard,
-    [SPECIES_BISHARP]    = sAnims_Bisharp,
+    [SPECIES_BRONZOR]      = sAnims_Bronzor,
+    [SPECIES_BRONZONG]    = sAnims_Bronzong,
     [SPECIES_SNORUNT]     = sAnims_Snorunt,
     [SPECIES_GLALIE]      = sAnims_Glalie,
     [SPECIES_LUNATONE]    = sAnims_Lunatone,
     [SPECIES_SOLROCK]     = sAnims_Solrock,
-    [SPECIES_SOLOSIS]     = sAnims_Solosis,
-    [SPECIES_DUOSION]      = sAnims_Duosion,
-    [SPECIES_REUNICLUS]     = sAnims_Reuniclus,
+    [SPECIES_VANILLITE]     = sAnims_Vanillite,
+    [SPECIES_VANILLISH]      = sAnims_Vanillish,
+    [SPECIES_VANILLUXE]     = sAnims_Vanilluxe,
     [SPECIES_FLETCHLING]      = sAnims_Fletchling,
     [SPECIES_FLETCHADIN]       = sAnims_Fletchadin,
     [SPECIES_TALONFLAME]      = sAnims_Talonflame,
@@ -6315,9 +6311,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_CRADILY]     = sAnims_Cradily,
     [SPECIES_ANORITH]     = sAnims_Anorith,
     [SPECIES_ARMALDO]     = sAnims_Armaldo,
-    [SPECIES_GOTHITA]       = sAnims_Gothita,
-    [SPECIES_GOTHORITA]      = sAnims_Gothorita,
-    [SPECIES_GOTHITELLE]   = sAnims_Gothitelle,
+    [SPECIES_RALTS]       = sAnims_Ralts,
+    [SPECIES_KIRLIA]      = sAnims_Kirlia,
+    [SPECIES_GARDEVOIR]   = sAnims_Gardevoir,
     [SPECIES_GIBLE]       = sAnims_Gible,
     [SPECIES_GABITE]     = sAnims_Gabite,
     [SPECIES_GARCHOMP]   = sAnims_Garchomp,

@@ -1435,8 +1435,8 @@ Cry_Drapion::
 	.incbin "sound/direct_sound_samples/cries/drapion.bin"
 
 	.align 2
-Cry_Solosis::
-	.incbin "sound/direct_sound_samples/cries/solosis.bin"
+Cry_Vanillite::
+	.incbin "sound/direct_sound_samples/cries/vanillite.bin"
 
 	.align 2
 Cry_Swablu::
@@ -1567,16 +1567,16 @@ Cry_Roserade::
 	.incbin "sound/direct_sound_samples/cries/roserade.bin"
 
 	.align 2
-Cry_Gothita::
-	.incbin "sound/direct_sound_samples/cries/gothita.bin"
+Cry_Ralts::
+	.incbin "sound/direct_sound_samples/cries/ralts.bin"
 
 	.align 2
-Cry_Gothorita::
-	.incbin "sound/direct_sound_samples/cries/gothorita.bin"
+Cry_Kirlia::
+	.incbin "sound/direct_sound_samples/cries/kirlia.bin"
 
 	.align 2
-Cry_Gothitelle::
-	.incbin "sound/direct_sound_samples/cries/gothitelle.bin"
+Cry_Gardevoir::
+	.incbin "sound/direct_sound_samples/cries/gardevoir.bin"
 
 	.align 2
 Cry_Slakoth::
@@ -1675,12 +1675,12 @@ Cry_Crawdaunt::
 	.incbin "sound/direct_sound_samples/cries/crawdaunt.bin"
 
 	.align 2
-Cry_Duosion::
-	.incbin "sound/direct_sound_samples/cries/duosion.bin"
+Cry_Vanillish::
+	.incbin "sound/direct_sound_samples/cries/vanillish.bin"
 
 	.align 2
-Cry_Reuniclus::
-	.incbin "sound/direct_sound_samples/cries/reuniclus.bin"
+Cry_Vanilluxe::
+	.incbin "sound/direct_sound_samples/cries/vanilluxe.bin"
 
 	.align 2
 Cry_Raelic::
@@ -1695,12 +1695,12 @@ Cry_Fusang::
 	.incbin "sound/direct_sound_samples/cries/fusang.bin"
 
 	.align 2
-Cry_Pawniard::
-	.incbin "sound/direct_sound_samples/cries/pawniard.bin"
+Cry_Bronzor::
+	.incbin "sound/direct_sound_samples/cries/bronzor.bin"
 
 	.align 2
-Cry_Bisharp::
-	.incbin "sound/direct_sound_samples/cries/bisharp.bin"
+Cry_Bronzong::
+	.incbin "sound/direct_sound_samples/cries/bronzong.bin"
 
 	.align 2
 Cry_Baltoy::
@@ -1835,8 +1835,8 @@ Cry_Dusclops::
 	.incbin "sound/direct_sound_samples/cries/dusclops.bin"
 
 	.align 2
-Cry_Mimikyu::
-	.incbin "sound/direct_sound_samples/cries/mimikyu.bin"
+Cry_Gallade::
+	.incbin "sound/direct_sound_samples/cries/gallade.bin"
 
 	.align 2
 Cry_Talonflame::

@@ -231,7 +231,7 @@ static const u16 sIsValidSpecies[] =
     SPECIES_BALTOY,
     SPECIES_NOSEPASS,
     SPECIES_TORKOAL,
-    SPECIES_MIMIKYU,
+    SPECIES_GALLADE,
     SPECIES_BARBOACH,
     SPECIES_LUVDISC,
     SPECIES_CORPHISH,
@@ -242,12 +242,12 @@ static const u16 sIsValidSpecies[] =
     SPECIES_ELECTRIKE,
     SPECIES_NUMEL,
     SPECIES_TYNAMO,
-    SPECIES_PAWNIARD,
+    SPECIES_BRONZOR,
     SPECIES_SNORUNT,
     SPECIES_LUNATONE,
     SPECIES_SOLROCK,
-    SPECIES_SOLOSIS,
-    SPECIES_DUOSION,
+    SPECIES_VANILLITE,
+    SPECIES_VANILLISH,
     SPECIES_FLETCHLING,
     SPECIES_FLETCHADIN,
     SPECIES_TALONFLAME,
@@ -270,7 +270,7 @@ static const u16 sIsValidSpecies[] =
     SPECIES_KROLUCARD,
     SPECIES_LILEEP,
     SPECIES_ANORITH,
-    SPECIES_GOTHITA,
+    SPECIES_RALTS,
     SPECIES_GIBLE,
     SPECIES_BELDUM,
     SPECIES_TINKATINK,
@@ -333,7 +333,7 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_BALTOY,
     SPECIES_NOSEPASS,
     SPECIES_TORKOAL,
-    SPECIES_MIMIKYU,
+    SPECIES_GALLADE,
     SPECIES_BARBOACH,
     SPECIES_LUVDISC,
     SPECIES_CORPHISH,
@@ -344,12 +344,12 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_ELECTRIKE,
     SPECIES_NUMEL,
     SPECIES_TYNAMO,
-    SPECIES_PAWNIARD,
+    SPECIES_BRONZOR,
     SPECIES_SNORUNT,
     SPECIES_LUNATONE,
     SPECIES_SOLROCK,
-    SPECIES_SOLOSIS,
-    SPECIES_DUOSION,
+    SPECIES_VANILLITE,
+    SPECIES_VANILLISH,
     SPECIES_FLETCHLING,
     SPECIES_FLETCHADIN,
     SPECIES_TALONFLAME,
@@ -371,7 +371,7 @@ static const u16 sIsValidSpeciesVanilla[] =
     SPECIES_KROLUCARD,
     SPECIES_LILEEP,
     SPECIES_ANORITH,
-    SPECIES_GOTHITA,
+    SPECIES_RALTS,
     SPECIES_GIBLE,
     SPECIES_BELDUM,
     SPECIES_TINKATUFF,
@@ -601,7 +601,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         {
         case EVO_FRIENDSHIP:
             if ((partnerSpecies == SPECIES_PICHU || partnerSpecies == SPECIES_CLEFFA || partnerSpecies == SPECIES_IGGLYBUFF
-              || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_SOLOSIS || partnerSpecies == SPECIES_TINKATUFF
+              || partnerSpecies == SPECIES_TOGEPI || partnerSpecies == SPECIES_VANILLITE || partnerSpecies == SPECIES_TINKATUFF
               || partnerSpecies == SPECIES_BUNEARY || partnerSpecies == SPECIES_SWOOBAT || partnerSpecies == SPECIES_SWADLOON)
               && partnerLevel >= 16)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
@@ -760,7 +760,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
         case EVO_ITEM_MALE:
-            if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_GOTHORITA && partnerLevel >= 35)
+            if (GetMonGender(mon) == MON_MALE && partnerSpecies == SPECIES_KIRLIA && partnerLevel >= 35)
                 targetSpecies = gEvolutionTable[partnerSpecies][i].targetSpecies;
             break;
         case EVO_MOVE:
@@ -942,7 +942,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         {
         case EVO_FRIENDSHIP:
             if ((species == SPECIES_PICHU || species == SPECIES_CLEFFA || species == SPECIES_IGGLYBUFF
-              || species == SPECIES_TOGEPI || species == SPECIES_SOLOSIS || species == SPECIES_TINKATUFF) && level >= 16)
+              || species == SPECIES_TOGEPI || species == SPECIES_VANILLITE || species == SPECIES_TINKATUFF) && level >= 16)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             else if ((species == SPECIES_GOLBAT || species == SPECIES_CHANSEY  || species == SPECIES_ZWEILOUS) && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
@@ -1063,7 +1063,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
             }
             break;
         case EVO_LEVEL_FEMALE:
-            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_GOTHORITA && level >= 35)
+            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_KIRLIA && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             break;
         case EVO_LEVEL_MALE:
@@ -1073,7 +1073,7 @@ static u16 GetWonderTradeEvolutionTargetSpecies(struct Pokemon *mon)
         case EVO_LEVEL_FEMALE_MORNING:
             UpdateTimeOfDay();
             {
-            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_GOTHORITA && gLocalTime.hours >= 6 && gLocalTime.hours < 9 && level >= 35)
+            if (GetMonGender(mon) == MON_FEMALE && species == SPECIES_KIRLIA && gLocalTime.hours >= 6 && gLocalTime.hours < 9 && level >= 35)
                 targetSpecies = gEvolutionTable[species][i].targetSpecies;
             
             }

@@ -7,8 +7,8 @@ gTrickHouse_Mechadoll_Poochyena::
 gTrickHouse_Mechadoll_Voltrel::
 	.string "VOLTREL$"
 
-gTrickHouse_Mechadoll_Solosis::
-	.string "SOLOSIS$"
+gTrickHouse_Mechadoll_Vanillite::
+	.string "VANILLITE$"
 
 gTrickHouse_Mechadoll_Lotad::
 	.string "LOTAD$"
@@ -25,8 +25,8 @@ gTrickHouse_Mechadoll_Zubat::
 gTrickHouse_Mechadoll_Nincada::
 	.string "NINCADA$"
 
-gTrickHouse_Mechadoll_Gothita::
-	.string "GOTHITA$"
+gTrickHouse_Mechadoll_Ralts::
+	.string "RALTS$"
 
 gTrickHouse_Mechadoll_Zigzagoon::
 	.string "ZIGZAGOON$"

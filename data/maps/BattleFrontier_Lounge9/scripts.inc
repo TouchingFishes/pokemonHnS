@@ -93,7 +93,7 @@ BattleFrontier_Lounge9_EV_SATK_Yes::
 	waitmessage
 	setflag FLAG_SYS_NO_CATCHING
 	setflag FLAG_NO_SHINY
-	setwildbattle SPECIES_GOTHITELLE, 1, ITEM_NONE
+	setwildbattle SPECIES_GARDEVOIR, 1, ITEM_NONE
 	dowildbattle
 	clearflag FLAG_SYS_NO_CATCHING
 	clearflag FLAG_NO_SHINY
@@ -191,7 +191,7 @@ BattleFrontier_Lounge9_EV_SATK_TEXT:
 	.string "Are you ready?$"
 
 BattleFrontier_Lounge9_EV_SATK_TEXT2:
-	.string "Go GOTHITELLE!$"
+	.string "Go GARDEVOIR!$"
 	
 BattleFrontier_Lounge9_EV_DEF_TEXT:
 	.string "Sup' kid! I can train your\n"
