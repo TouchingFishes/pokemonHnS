@@ -421,6 +421,7 @@ gBattleAnims_Moves::
 	.4byte Move_SHADOW_SNEAK
 	.4byte Move_POISON_JAB
 	.4byte Move_HEAD_SMASH
+	.4byte Move_BLOODMOON
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
 
 	.align 2
@@ -12594,3 +12595,93 @@ Move_HEAD_SMASH:
 	restorebg
 	waitbgfadein
 	end
+
+Move_BLOODMOON:
+	gBattleAnimMove_BloodMoon::
+	loadspritegfx ANIM_TAG_BLOOD_MOON
+	loadspritegfx ANIM_TAG_BEAM
+	loadspritegfx ANIM_TAG_RED_EXPLOSION
+	createvisualtask AnimTask_BlendBattleAnimPal, 5, F_PAL_BG, 0, 16, 16, RGB_BLACK
+	createsprite gVerticalDipSpriteTemplate, ANIM_ATTACKER, 2, 8, 1, ANIM_ATTACKER
+	delay 8
+	playsewithpan SE_M_BARRIER, SOUND_PAN_ATTACKER
+	createsprite gMoonUpSpriteTemplate, ANIM_ATTACKER, 2
+	waitforvisualfinish
+	delay 15
+	playsewithpan SE_M_DETECT, 0
+	waitforvisualfinish
+	createvisualtask AnimTask_IsTargetPlayerSide, 2
+	jumpargeq 7 ANIM_TARGET BloodMoonOnPlayer
+BloodMoonOnOpponent:
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 10, 0, 5
+	call BloodMoonOnslaughtOpponent
+	call BloodMoonOnslaughtOpponent
+	call BloodMoonOnslaughtOpponent
+	call BloodMoonOnslaughtOpponent
+	call BloodMoonOnslaughtOpponent
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 0
+	waitforvisualfinish
+	goto BloodMoonFinish
+BloodMoonOnPlayer:
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_HYPER_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 1, 10, 0, 5
+	call BloodMoonOnslaughtPlayer
+	call BloodMoonOnslaughtPlayer
+	call BloodMoonOnslaughtPlayer
+	call BloodMoonOnslaughtPlayer
+	call BloodMoonOnslaughtPlayer
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	delay 0
+	waitforvisualfinish
+BloodMoonFinish:
+	createvisualtask AnimTask_BlendBattleAnimPal, 5, F_PAL_BG, 0, 0, 0, RGB_BLACK
+	waitforvisualfinish
+	clearmonbg ANIM_ATTACKER
+	end
+BloodMoonOnslaughtOpponent:
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 140, -16, 165, 40, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 0
+	return
+BloodMoonOnslaughtPlayer:
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 6, 5, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, -16, -15, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 16, -5, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, -12, 18, 1, 0
+	delay 0
+	createsprite gBloodMoonOnslaughtSpriteTemplate, ANIM_TARGET, 2, 40, -16, 75, 80, 4
+	createvisualtask AnimTask_ShakeMonInPlace, 2, ANIM_TARGET, 4, 0, 12, 1
+	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
+	delay 0
+	return

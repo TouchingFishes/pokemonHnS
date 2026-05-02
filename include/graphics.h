@@ -5941,6 +5941,12 @@ extern const u32 gBattleAnimSpriteGfx_WhiteStreak[];
 extern const u16 gBattleAnimSpritePal_WhiteStreak[];
 extern const u32 gBattleAnimSpriteGfx_QuickGuard[];
 extern const u16 gBattleAnimSpritePal_QuickGuard[];
+extern const u32 gBattleAnimSpriteGfx_BloodMoon[];
+extern const u16 gBattleAnimSpritePal_BloodMoon[];
+extern const u32 gBattleAnimSpriteGfx_Beam[];
+extern const u16 gBattleAnimSpritePal_Beam[];
+extern const u32 gBattleAnimSpriteGfx_RedExplosion[];
+extern const u16 gBattleAnimSpritePal_RedExplosion[];
 
 extern const u32 gTrainerFrontPic_SalonMaidenAnabel[];
 extern const u32 gTrainerFrontPic_DomeAceTucker[];

@@ -254,6 +254,14 @@ const struct SpriteTemplate gPersistHitSplatSpriteTemplate =
     .callback = AnimHitSplatPersistent,
 };
 
+const struct SpriteTemplate gMoonUpSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BLOOD_MOON,
+    .paletteTag = ANIM_TAG_BLOOD_MOON,
+    .oam = &gOamData_AffineOff_ObjNormal_64x64,
+    .callback = AnimWeatherBallUp,
+};
+
 // Moves a spinning duck around the mon's head.
 // arg 0: initial x pixel offset
 // arg 1: initial y pixel offset
@@ -934,6 +942,31 @@ static void AnimTask_ShakeBattleTerrain_Step(u8 taskId)
     {
         gTasks[taskId].tTimer--;
     }
+}
+
+static const union AffineAnimCmd sSquishTargetAffineAnimCmds[] =
+{
+    AFFINEANIMCMD_FRAME(0, 64, 0, 16), //Flatten
+    AFFINEANIMCMD_FRAME(0, 0, 0, 64),
+    AFFINEANIMCMD_FRAME(0, -64, 0, 16),
+    AFFINEANIMCMD_END,
+};
+
+static void AnimTask_WaitAffineAnim(u8 taskId)
+{
+    struct Task* task = &gTasks[taskId];
+
+    if (!RunAffineAnimFromTaskData(task))
+        DestroyAnimVisualTask(taskId);
+}
+
+void AnimTask_SquishTarget(u8 taskId)
+{
+    struct Task* task = &gTasks[taskId];
+    u8 spriteId = GetAnimBattlerSpriteId(ANIM_TARGET);
+
+    PrepareAffineAnimInTaskData(task, spriteId, sSquishTargetAffineAnimCmds);
+    task->func = AnimTask_WaitAffineAnim;
 }
 
 #undef tXOffset

@@ -1617,6 +1617,10 @@ static const u8 sHeadSmashDescription[] = _(
     "A life-risking head smash\n"
     "that also hurts the user.");
 
+static const u8 sBloodMoonDescription[] = _(
+    "Allows a full-power attack,\n"
+    "but sharply lowers SP. ATK.");
+
 // MOVE_NONE is ignored in this table. Make sure to always subtract 1 before getting the right pointer.
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
 {
@@ -2024,4 +2028,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_SHADOW_SNEAK - 1] = sShadowSneakDescription,
     [MOVE_POISON_JAB - 1] = sPoisonJabDescription,
     [MOVE_HEAD_SMASH - 1] = sHeadSmashDescription,
+    [MOVE_BLOOD_MOON - 1] = sBloodMoonDescription,
 };

@@ -6637,7 +6637,7 @@ static const u16 sUrsalunaLevelUpLearnset[] = {
     LEVEL_UP_MOVE(52, MOVE_SNORE),
     LEVEL_UP_MOVE(54, MOVE_PLAY_ROUGH),
     LEVEL_UP_MOVE(60, MOVE_THRASH),
-    LEVEL_UP_MOVE(70, MOVE_PSYCHO_BOOST), //BLOODMOON
+    LEVEL_UP_MOVE(70, MOVE_BLOOD_MOON),
     LEVEL_UP_END};
 
 static const u16 sTangrowthLevelUpLearnset[] = {

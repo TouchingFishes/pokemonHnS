@@ -6216,6 +6216,7 @@ static const u16 sUrsalunaLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE(37, MOVE_SLASH),
     LEVEL_UP_MOVE(43, MOVE_SNORE),
     LEVEL_UP_MOVE(49, MOVE_THRASH),
+    LEVEL_UP_MOVE(56, MOVE_BLOOD_MOON),
     LEVEL_UP_END
 };
 

@@ -407,8 +407,9 @@
 #define MOVE_SHADOW_SNEAK 402
 #define MOVE_POISON_JAB 403
 #define MOVE_HEAD_SMASH 404
+#define MOVE_BLOOD_MOON 405
 
-#define MOVES_COUNT 405
+#define MOVES_COUNT 406
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF

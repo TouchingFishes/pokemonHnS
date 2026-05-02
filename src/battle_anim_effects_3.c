@@ -1179,6 +1179,23 @@ const union AffineAnimCmd gSlackOffSquishAffineAnimCmds[] =
     AFFINEANIMCMD_END,
 };
 
+static const union AffineAnimCmd sArrowRaidOnslaughtAffineAnims[] = {
+    AFFINEANIMCMD_FRAME(0, 0, 0x30, 1),
+    AFFINEANIMCMD_END
+};
+static const union AffineAnimCmd *const sArrowRaidOnslaughtAffineAnimTable[] = {
+    sArrowRaidOnslaughtAffineAnims
+};
+
+const struct SpriteTemplate gBloodMoonOnslaughtSpriteTemplate =
+{
+    .tileTag = ANIM_TAG_BEAM,
+    .paletteTag = ANIM_TAG_BEAM,
+    .oam = &gOamData_AffineNormal_ObjBlend_64x64,
+    .affineAnims = sArrowRaidOnslaughtAffineAnimTable,
+    .callback = AnimAssistPawprint
+};
+
 static void AnimBlackSmoke(struct Sprite *sprite)
 {
     sprite->x += gBattleAnimArgs[0];

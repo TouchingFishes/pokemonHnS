@@ -1668,6 +1668,14 @@ const u32 gBattleAnimSpriteGfx_WhiteStreak[] = INCBIN_U32("graphics/battle_anims
 const u16 gBattleAnimSpritePal_WhiteStreak[] = INCBIN_U16("graphics/battle_anims/sprites/white_streak.gbapal.lz");
 const u32 gBattleAnimSpriteGfx_QuickGuard[] = INCBIN_U32("graphics/battle_anims/sprites/quick_guard.4bpp.lz");
 const u16 gBattleAnimSpritePal_QuickGuard[] = INCBIN_U16("graphics/battle_anims/sprites/quick_guard.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_BloodMoon[] = INCBIN_U32("graphics/battle_anims/sprites/blood_moon.4bpp.lz");
+const u16 gBattleAnimSpritePal_BloodMoon[] = INCBIN_U16("graphics/battle_anims/sprites/blood_moon.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_Beam[] = INCBIN_U32("graphics/battle_anims/sprites/beam.4bpp.lz");
+const u16 gBattleAnimSpritePal_Beam[] = INCBIN_U16("graphics/battle_anims/sprites/beam.gbapal.lz");
+const u32 gBattleAnimSpriteGfx_RedExplosion[] = INCBIN_U32("graphics/battle_anims/sprites/red_explosion.4bpp.lz");
+const u16 gBattleAnimSpritePal_RedExplosion[] = INCBIN_U16("graphics/battle_anims/sprites/red_explosion.gbapal.lz");
+
+
 
 // random garbage at the end.
 static const u8 sEmpty3[0x54BAC] = {0};

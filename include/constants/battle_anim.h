@@ -309,6 +309,9 @@
 #define ANIM_TAG_PUNISHMENT_BLADES          (ANIM_SPRITES_START + 299)
 #define ANIM_TAG_WHITE_STREAK               (ANIM_SPRITES_START + 300)
 #define ANIM_TAG_QUICK_GUARD_HAND           (ANIM_SPRITES_START + 301)
+#define ANIM_TAG_BLOOD_MOON                 (ANIM_SPRITES_START + 302)
+#define ANIM_TAG_BEAM                       (ANIM_SPRITES_START + 303)
+#define ANIM_TAG_RED_EXPLOSION              (ANIM_SPRITES_START + 304)
 
 // battlers
 #define ANIM_ATTACKER         0
