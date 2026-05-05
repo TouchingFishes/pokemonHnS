@@ -118,7 +118,7 @@
 #define FLAG_MET_TEAM_AQUA_HARBOR            0x61
 #define FLAG_TV_EXPLAINED                    0x62
 #define FLAG_MAUVILLE_GYM_BARRIERS_STATE     0x63
-#define FLAG_GOT_CAPTAIN_TROPIUS             0x64 // 
+#define FLAG_GOT_CAPTAIN_TROPIUS             0x64
 #define FLAG_MOSSDEEP_GYM_SWITCH_2           0x65 // Leftover from the RS version of Mossdeep Gym, functionally unused
 #define FLAG_MOSSDEEP_GYM_SWITCH_3           0x66 //
 #define FLAG_MOSSDEEP_GYM_SWITCH_4           0x67 //
@@ -703,7 +703,7 @@
 #define FLAG_HIDE_CINNABAR_BLAINE  0x28F 
 #define FLAG_HIDE_DOJO_BLAINE  0x290 
 #define FLAG_HIDE_DOJO_BLUE  0x291 
-#define FLAG_UNUSED_0x296  0x296 // Temporal, will get deleted
+#define FLAG_GOT_VANILLITE_FROM_LADY  0x296
 #define FLAG_SHINY_STARTER_1  0x294 // Flag for shiny starters, Cyndaquil
 #define FLAG_SHINY_STARTER_2  0x295 // Flag for shiny starters, Chikorita
 #define FLAG_SHINY_STARTER_3  0x296 // Flag for shiny starters, Totodile
@@ -713,7 +713,7 @@
 #define FLAG_CHOSE_KANTO_STARTERS     0x29A
 #define FLAG_CHOSE_HOENN_STARTERS     0x29B
 #define FLAG_CHOSE_SINNOH_STARTERS    0x29C
-#define FLAG_UNUSED_0x29D  0x29D // Unused Flag
+#define FLAG_RECEIVED_TM_SWEET_SCENT  0x29D
 #define FLAG_UNUSED_0x29E  0x29E // Unused Flag
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag

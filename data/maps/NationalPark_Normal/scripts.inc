@@ -64,7 +64,37 @@ NationalPark_Normal_EventScript_Persian::
 	release
 	end
 
+NationalPark_EventScript_LadyVanillite::
+    lock
+    faceplayer
+    goto_if_set FLAG_GOT_VANILLITE_FROM_LADY, NationalPark_EventScript_LadyVanilliteAfter
 
+    msgbox NationalPark_Text_LadyVanilliteIntro, MSGBOX_DEFAULT
+    closemessage
+
+    getpartysize
+	goto_if_eq VAR_RESULT, PARTY_SIZE, NationalPark_EventScript_LadyVanillitePartyFull
+
+    msgbox NationalPark_Text_LadyVanilliteGift, MSGBOX_DEFAULT
+    givemon SPECIES_VANILLITE, 10, ITEM_NONE
+    msgbox NationalPark_Text_LadyVanilliteGiftDone, MSGBOX_DEFAULT
+
+    setflag FLAG_GOT_VANILLITE_FROM_LADY
+    closemessage
+    release
+    end
+
+NationalPark_EventScript_LadyVanillitePartyFull::
+    msgbox NationalPark_Text_LadyVanillitePartyFull, MSGBOX_DEFAULT
+    closemessage
+    release
+    end
+
+NationalPark_EventScript_LadyVanilliteAfter::
+    msgbox NationalPark_Text_LadyVanilliteAfter, MSGBOX_DEFAULT
+    closemessage
+    release
+    end
 
 NationalPark_Normal_Text_Lass:
 	.string "Look! Check out my bag!\p"
@@ -105,6 +135,31 @@ NationalPark_Normal_Text_Teacher2:
 
 NationalPark_Normal_Text_Persian:
 	.string "PERSIAN: Fufushaa!$"
+
+NationalPark_Text_LadyVanilliteIntro:
+    .string "Oh my, it's such a warm and\n"
+    .string "lovely day.\p"
+    .string "I do adore the sunshine… but\n"
+    .string "one must stay cool, too.$"
+
+NationalPark_Text_LadyVanilliteGift:
+    .string "Here, this Pokémon will help\n"
+    .string "you beat the heat.$"
+
+NationalPark_Text_LadyVanilliteGiftDone:
+    .string "Isn't it precious?\p"
+    .string "It will keep you refreshed\n"
+    .string "even under the bright sun.$"
+
+NationalPark_Text_LadyVanillitePartyFull:
+    .string "Oh dear, your party is full.\n"
+    .string "Do come back after making\n"
+    .string "some space.$"
+
+NationalPark_Text_LadyVanilliteAfter:
+    .string "That little one loves the\n"
+    .string "sun, in its own way.\p"
+    .string "Take care not to overheat!$"
 
 NationalPark_Normal_EventScript_Jack::
 	trainerbattle_single TRAINER_JACK NationalPark_Normal_Text_SchoolboyJack1_Seen, NationalPark_Normal_Text_SchoolboyJack1_Beaten
