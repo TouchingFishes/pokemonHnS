@@ -1359,9 +1359,24 @@ u8 CheckAbilityChangeMoveType(u16 move) // handles move type change
     if (moveType == TYPE_NORMAL && gBattleMoves[move].power != 0)
         switch (ability)
         {
-        case ABILITY_PIXILATE:
+        case ABILITY_GALVANIZE:
         {
-            moveType = TYPE_FAIRY;
+            moveType = TYPE_ELECTRIC;
+        break;
+        }
+        case ABILITY_AERILATE:
+        {
+            moveType = TYPE_FLYING;
+        break;
+        }
+        case ABILITY_CHITINIZE:
+        {
+            moveType = TYPE_BUG;
+        break;
+        }
+        case ABILITY_IMMOLATE:
+        {
+            moveType = TYPE_FIRE;
         break;
         }
         case ABILITY_FORECAST:
@@ -1392,9 +1407,24 @@ u8 DisplayMoveTypeChange(u16 move)
     if (moveType == TYPE_NORMAL && gBattleMoves[move].power != 0)
         switch (ability)
         {
-        case ABILITY_PIXILATE:
+        case ABILITY_GALVANIZE:
         {
-            moveType = TYPE_FAIRY;
+            moveType = TYPE_ELECTRIC;
+        break;
+        }
+        case ABILITY_AERILATE:
+        {
+            moveType = TYPE_FLYING;
+        break;
+        }
+        case ABILITY_CHITINIZE:
+        {
+            moveType = TYPE_BUG;
+        break;
+        }
+        case ABILITY_IMMOLATE:
+        {
+            moveType = TYPE_FIRE;
         break;
         }
         case ABILITY_FORECAST:
