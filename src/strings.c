@@ -1475,6 +1475,11 @@ const u8 gText_KantoStarterChoice[] = _("KANTO POKéMON");
 const u8 gText_HoennStarterChoice[] = _("HOENN POKéMON");
 const u8 gText_SinnohStarterChoice[] = _("SINNOH POKéMON");
 
+const u8 gText_GrassMoveChoice[] = _("ULTIMATE GRASS MOVE");
+const u8 gText_FireMoveChoice[] = _("ULTIMATE FIRE MOVE");
+const u8 gText_WaterMoveChoice[] = _("ULTIMATE WATER MOVE");
+const u8 gText_DeclineUltimateMoveChoice[] = _("NO MOVE");
+
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
 ALIGNED(4) const u8 gText_FacilityMulti[] = _("{STR_VAR_1} MULTI");

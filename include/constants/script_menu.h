@@ -137,7 +137,8 @@
 #define MULTI_VERMILION_HARBOR             126
 #define MULTI_HOENN_STARTERS               127
 #define MULTI_STARTER_REGION_CHOICE        128
-#define MULTI_5FLOORS                      129
+#define MULTI_ULTIMATE_MOVE_CHOICE         129
+#define MULTI_5FLOORS                      130
 
 
 

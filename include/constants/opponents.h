@@ -9,10 +9,10 @@
 #define TRAINER_SETH                          5
 #define TRAINER_TROY                          6
 #define TRAINER_TULLY                         7
-#define TRAINER_TYLER                         8 //unused in johto
+#define TRAINER_TYLER                         8
 #define TRAINER_ROD                           9
 #define TRAINER_TONY                         10 //unused in johto
-#define TRAINER_MARCEL                       11 //unused in johto
+#define TRAINER_MARCEL                       11
 #define TRAINER_ARNOLD                       12
 #define TRAINER_ED                           13
 #define TRAINER_VALERIE                      14
@@ -23,7 +23,7 @@
 #define TRAINER_FALKNER_1                    19
 #define TRAINER_TODD                         20
 #define TRAINER_TOM                          21
-#define TRAINER_VERONICA                     22 //unused in johto
+#define TRAINER_VERONICA                     22
 #define TRAINER_THERESA                      23 //unused in johto
 #define TRAINER_TIM                          24
 #define TRAINER_TIMOTHY                      25
@@ -32,11 +32,11 @@
 #define TRAINER_STANLY                       28
 #define TRAINER_REBECCA                      29
 #define TRAINER_MATT                         30 //unused in johto
-#define TRAINER_ZANDER                       31 //unused in johto
+#define TRAINER_ZANDER                       31
 #define TRAINER_DEVIN                        32
 #define TRAINER_GRANT                        33
 #define TRAINER_CASSIE                       34
-#define TRAINER_LEAH                         35 //unused in johto
+#define TRAINER_LEAH                         35
 #define TRAINER_JEFFREY                      36
 #define TRAINER_GRUNT_33                     37
 #define TRAINER_NORMAN                       38
@@ -72,62 +72,62 @@
 #define TRAINER_RICKY_3                      68 //unused in johto
 #define TRAINER_RICKY_4                      69 //unused in johto
 #define TRAINER_RICKY_5                      70 //unused in johto
-#define TRAINER_RANDALL                      71 //until here
+#define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
 #define TRAINER_BERKE                        74
 #define TRAINER_ELAINE                       75
 #define TRAINER_VINCENT                      76
 #define TRAINER_LEROY                        77
-#define TRAINER_WILTON_1                     78
+#define TRAINER_WILTON_1                     78 //unused in johto
 #define TRAINER_EDGAR                        79
 #define TRAINER_ALBERT                       80
 #define TRAINER_SAMUEL                       81
-#define TRAINER_VITO                         82
+#define TRAINER_VITO                         82 //unused in johto
 #define TRAINER_OWEN                         83
-#define TRAINER_WILTON_2                     84
-#define TRAINER_WILTON_3                     85
-#define TRAINER_WILTON_4                     86
-#define TRAINER_WILTON_5                     87
+#define TRAINER_WILTON_2                     84 //unused in johto
+#define TRAINER_WILTON_3                     85 //unused in johto
+#define TRAINER_WILTON_4                     86 //unused in johto
+#define TRAINER_WILTON_5                     87 //unused in johto
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
 #define TRAINER_BARNEY                       90
-#define TRAINER_JODY                         91
+#define TRAINER_JODY                         91 //unused in johto
 #define TRAINER_WENDY                        92
-#define TRAINER_KEIRA                        93
+#define TRAINER_KEIRA                        93 //unused in johto
 #define TRAINER_EMMA                         94
 #define TRAINER_GIOVANNI                     95
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99
-#define TRAINER_JULIE                       100
-#define TRAINER_ERICK                       101
+#define TRAINER_CAROLINE                     99 //unused in johto
+#define TRAINER_JULIE                       100 //unused in johto
+#define TRAINER_ERICK                       101 //?
 #define TRAINER_ERIK                        102
 #define TRAINER_ERIN                        103
 #define TRAINER_ERNEST                      104
-#define TRAINER_PATRICIA                    105
-#define TRAINER_KINDRA                      106
-#define TRAINER_TAMMY                       107
-#define TRAINER_VALERIE_1                   108
-#define TRAINER_TASHA                       109
-#define TRAINER_VALERIE_2                   110
-#define TRAINER_VALERIE_3                   111
-#define TRAINER_VALERIE_4                   112
-#define TRAINER_VALERIE_5                   113
+#define TRAINER_PATRICIA                    105 //unused in johto
+#define TRAINER_KINDRA                      106 //unused in johto
+#define TRAINER_TAMMY                       107 //unused in johto
+#define TRAINER_VALERIE_1                   108 //unused in johto
+#define TRAINER_TASHA                       109 //unused in johto
+#define TRAINER_VALERIE_2                   110 //unused in johto
+#define TRAINER_VALERIE_3                   111 //unused in johto
+#define TRAINER_VALERIE_4                   112 //unused in johto
+#define TRAINER_VALERIE_5                   113 //unused in johto
 #define TRAINER_GRUNT_18                    114
 #define TRAINER_KIPP                        115
 #define TRAINER_WAI                         116
 #define TRAINER_GRUNT_19                    117
 #define TRAINER_ELLEN                       118
-#define TRAINER_NAOMI                       119
+#define TRAINER_NAOMI                       119 //unused in johto
 #define TRAINER_GRUNT_20                    120
 #define TRAINER_GRUNT_21                    121
 #define TRAINER_GRUNT_22                    122
 #define TRAINER_GRUNT_23                    123
-#define TRAINER_MELISSA                     124
-#define TRAINER_SHEILA                      125
-#define TRAINER_SHIRLEY                     126
+#define TRAINER_MELISSA                     124 //unused in johto
+#define TRAINER_SHEILA                      125 //unused in johto
+#define TRAINER_SHIRLEY                     126 //until here
 #define TRAINER_ARIANA_1                    127
 #define TRAINER_CONNIE                      128
 #define TRAINER_BRIDGET                     129
@@ -158,7 +158,7 @@
 #define TRAINER_JO_AND_ZOE                  154
 #define TRAINER_TONY_1                      155
 #define TRAINER_JEROME                      156
-#define TRAINER_MATTHEW                     157 //unused in johto
+#define TRAINER_MATTHEW                     157
 #define TRAINER_DAVID                       158
 #define TRAINER_SPENCER                     159
 #define TRAINER_ROLAND                      160

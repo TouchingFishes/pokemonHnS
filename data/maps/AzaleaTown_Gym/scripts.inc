@@ -545,8 +545,8 @@ AzaleaTown_Gym_EventScript_Bugsy::
 	addvar VAR_NUM_BADGES, 1
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
-	giveitem ITEM_TM_BULLET_SEED
-	msgbox AzaleaTown_Gym_Text_FuryCutterSpeech, MSGBOX_DEFAULT
+	giveitem ITEM_TM_POUNCE
+	msgbox AzaleaTown_Gym_Text_PounceSpeech, MSGBOX_DEFAULT
 	setvar VAR_AZALEA_TOWN_STATE, 5
 	closemessage
 	setflag FLAG_HIDE_AZALEA_TOWN_FARFETCHD
@@ -708,13 +708,16 @@ AzaleaTown_Gym_Text_HiveBadgeSpeech:
 	.string "Here, I also want you to\n"
 	.string "have this.$"
 
-AzaleaTown_Gym_Text_FuryCutterSpeech:
-	.string "TM09 contains BULLET SEED.\p"
-	.string "It shoots a torrent of seeds\n"
-	.string "between 2 and 5 times every turn.\p"
-	.string "So even though the power is 25, it\n"
-	.string "is really between 50 and 125 power!\p"
-	.string "Isn't that great?\n"
+AzaleaTown_Gym_Text_PounceSpeech:
+	.string "TM73 contains POUNCE!\p"
+	.string "It’s not just an attack-it’s a\n"
+	.string "hunter’s strike.\p"
+	.string "The user leaps in a flash,\n"
+	.string "slamming into the foe and\n"
+	.string "lowering their speed!\p"
+	.string "Once you’ve been caught…\n"
+	.string "there’s no easy escape.\p"
+	.string "Isn’t that amazing?\n"
 	.string "I discovered it!$"
 
 AzaleaTown_Gym_Text_BugsyAdvice:

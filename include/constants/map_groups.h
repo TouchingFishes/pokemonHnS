@@ -77,6 +77,7 @@
 #define MAP_ROUTE26NORTH     (68 | (0 << 8))
 #define MAP_ROUTE27          (69 | (0 << 8))
 #define MAP_ROUTE28          (70 | (0 << 8))
+#define MAP_CHERRYGROVE_BAY  (71 | (0 << 8))
 
 // gMapGroup_IndoorNewBark
 #define MAP_NEW_BARK_TOWN_LAB              (0 | (1 << 8))
@@ -322,6 +323,7 @@
 #define MAP_SAFARI_ZONE_GATE_SAFARI_ZONE_ENTRANCE (24 | (22 << 8))
 #define MAP_ROUTE27_HOUSE                         (25 | (22 << 8))
 #define MAP_MT_SILVER_POKEMON_CENTER              (26 | (22 << 8))
+#define MAP_KIWAME_HOUSE                          (27 | (22 << 8))
 
 // gMapGroup_IndoorKantoRoutes
 #define MAP_ROUTE26_HOUSE1                (0 | (23 << 8))
@@ -1025,6 +1027,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {71, 5, 5, 6, 5, 29, 9, 10, 6, 6, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 27, 28, 91, 0, 27, 126, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 6, 5, 29, 9, 10, 6, 6, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 28, 28, 91, 0, 27, 126, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

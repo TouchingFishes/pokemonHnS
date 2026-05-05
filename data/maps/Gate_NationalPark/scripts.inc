@@ -319,6 +319,28 @@ Route35NationalParkGate_EventScript_Beauty::
 	release
 	end
 
+Route35NationalParkGate_EventScript_Youngster::
+	lock
+	faceplayer
+	goto_if_set FLAG_RECEIVED_TM_BULLET_SEED, Route35NationalParkGate_EventScript_ReceivedBulletSeed
+	msgbox Route35NationalParkGate_Text_LikeFillingMouthWithSeedsTakeThis, MSGBOX_DEFAULT
+	giveitem ITEM_TM_BULLET_SEED
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_TM_BULLET_SEED
+	release
+	end
+
+Route35NationalParkGate_EventScript_ReceivedBulletSeed::
+	goto_if_set FLAG_FINITE_TMS, Route35NationalParkGate_EventScript_ReceivedBulletSeedFinite
+	msgbox Route35NationalParkGate_Text_TMsCanBeReused, MSGBOX_DEFAULT
+	release
+	end
+
+Route35NationalParkGate_EventScript_ReceivedBulletSeedFinite::
+	msgbox Route35NationalParkGate_Text_TMsAreOneTimeUse, MSGBOX_DEFAULT
+	release
+	end
+
 Route35NationalParkGate_Text_Rocker:
 	.string "I love bird POKéMON! I found a\n"
 	.string "DARK-type bird in the park\l"
@@ -345,3 +367,21 @@ Route35NationalParkGate_Text_ContestExplanation:
 	.string "for participating,\p"
 	.string "you also get to keep the bug POKéMON\n"
 	.string "you may have at the end of the contest.$"
+
+Route35NationalParkGate_Text_LikeFillingMouthWithSeedsTakeThis:
+	.string "I like filling my mouth with seeds,\n"
+	.string "then spitting them out fast!\p"
+	.string "You can have this, so you try it out!\p"
+	.string "Use it on a POKéMON, and it will learn\n"
+	.string "a move for firing seeds rapidly.$"
+
+Route35NationalParkGate_Text_TMsAreOneTimeUse:
+	.string "A word of advice!\p"
+	.string "A TM, TECHNICAL MACHINE, is good only\n"
+	.string "for one-time use.\p"
+	.string "Once you use it, it's gone.\n"
+	.string "Think twice before using it!$"
+
+Route35NationalParkGate_Text_TMsCanBeReused:
+	.string "By the way, a TM, TECHNICAL MACHINE,\n"
+	.string "can be used as many times as you want!$"

@@ -1537,6 +1537,11 @@ extern const u8 gText_KantoStarterChoice[];
 extern const u8 gText_HoennStarterChoice[];
 extern const u8 gText_SinnohStarterChoice[];
 
+extern const u8 gText_GrassMoveChoice[];
+extern const u8 gText_FireMoveChoice[];
+extern const u8 gText_WaterMoveChoice[];
+extern const u8 gText_DeclineUltimateMoveChoice[];
+
 
 // Cable Club multichoice text
 extern const u8 CableClub_Text_TradeUsingLinkCable[];

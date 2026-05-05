@@ -929,6 +929,13 @@ static const struct MenuAction sMenuAction_StarterRegionChoice[] = {
     {gText_SinnohStarterChoice},
 };
 
+static const struct MenuAction sMenuAction_UltimateMoveChoice[] = {
+    {gText_GrassMoveChoice},
+    {gText_FireMoveChoice},
+    {gText_WaterMoveChoice},
+    {gText_DeclineUltimateMoveChoice},
+};
+
 struct MultichoiceListStruct
 {
     const struct MenuAction *list;
@@ -1066,6 +1073,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_ELDERQUIIZ5]                 = MULTICHOICE(MultichoiceList_ElderQuiz5),
     [MULTI_HOENN_STARTERS]              = MULTICHOICE(MultichoiceList_HoennStarters),
     [MULTI_STARTER_REGION_CHOICE]       = MULTICHOICE(sMenuAction_StarterRegionChoice),
+    [MULTI_ULTIMATE_MOVE_CHOICE]        = MULTICHOICE(sMenuAction_UltimateMoveChoice),
     [MULTI_5FLOORS]                    = MULTICHOICE(MultichoiceList_5Floors),
 
 };

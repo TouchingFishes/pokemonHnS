@@ -27,6 +27,11 @@
       "map": "MAP_RUINS_OF_ALPH_OUTSIDE",
       "offset": -24,
       "direction": "left"
+    },
+    {
+      "map": "MAP_CHERRYGROVE_BAY",
+      "offset": 1,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -266,8 +271,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_EKANS",
-      "x": 37,
-      "y": 20,
+      "x": 36,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN_LEFT_AND_RIGHT",
       "movement_range_x": 0,
@@ -461,8 +466,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_ZUBAT",
-      "x": 38,
-      "y": 26,
+      "x": 35,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 0,

@@ -104,7 +104,8 @@
     "Route26",
     "Route26North",
     "Route27",
-    "Route28"
+    "Route28",
+    "CherrygroveBay"
   ],
   "gMapGroup_IndoorNewBark": [
     "NewBarkTown_Lab",
@@ -349,7 +350,8 @@
     "SafariZoneGate_PokemonCenter",
     "SafariZoneGate_SafariZoneEntrance",
     "Route27_House",
-    "MtSilver_PokemonCenter"
+    "MtSilver_PokemonCenter",
+    "Kiwame_House"
   ],
   "gMapGroup_IndoorKantoRoutes": [
     "Route26_House1",

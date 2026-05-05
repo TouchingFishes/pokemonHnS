@@ -5024,7 +5024,7 @@
     {
       "id": "LAYOUT_ROUTE40",
       "name": "Route40_Layout",
-      "width": 34,
+      "width": 68,
       "height": 71,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_OlivineCity",
@@ -8780,6 +8780,26 @@
       "secondary_tileset": "gTileset_WhirlIslands",
       "border_filepath": "data/layouts/WhirlIslands_B1F_Inner/border.bin",
       "blockdata_filepath": "data/layouts/WhirlIslands_B1F_Inner/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHERRYGROVE_BAY",
+      "name": "CherrygroveBay_Layout",
+      "width": 51,
+      "height": 140,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_CherrygroveCity",
+      "border_filepath": "data/layouts/CherrygroveBay/border.bin",
+      "blockdata_filepath": "data/layouts/CherrygroveBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_KIWAME_HOUSE",
+      "name": "Kiwame_House_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_EcruteakTheater",
+      "border_filepath": "data/layouts/Kiwame_House/border.bin",
+      "blockdata_filepath": "data/layouts/Kiwame_House/map.bin"
     }
   ]
 }

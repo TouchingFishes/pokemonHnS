@@ -79,6 +79,67 @@ Route40_Text_SwimmerfPaulaAfter:
 	.string "While I float like this,\n"
 	.string "the waves carry me along.$"
 
+Route40_EventScript_Patricia::
+	trainerbattle_single TRAINER_PATRICIA, Route40_Text_PatriciaIntro, Route40_Text_PatriciaDefeat
+	msgbox Route40_Text_PatriciaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route40_Text_PatriciaIntro:
+	.string "Oh! You startled me.\n"
+	.string "I'm waiting for my date…\p"
+	.string "…but I suppose a quick\n"
+	.string "battle could pass the time.$"
+
+Route40_Text_PatriciaDefeat:
+	.string "Oh dear… how improper…$"
+
+Route40_Text_PatriciaPostBattle:
+	.string "Battling did help pass the\n"
+	.string "time, at least.\p"
+	.string "If he keeps me waiting much\n"
+	.string "longer, I'll leave…\p"
+	.string "A lady's time is valuable.$"
+
+Route40_EventScript_Leroy::
+	trainerbattle_single TRAINER_LEROY, Route40_Text_LeroyIntro, Route40_Text_LeroyDefeat
+	msgbox Route40_Text_LeroyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route40_Text_LeroyIntro:
+	.string "These open waters are the\n"
+	.string "best for training!\p"
+	.string "Show me how you handle a\n"
+	.string "battle out at sea!$"
+
+Route40_Text_LeroyDefeat:
+	.string "Whoa… wiped out!$"
+
+Route40_Text_LeroyPostBattle:
+	.string "Out here, it's just you and\n"
+	.string "your Pokémon.\p"
+	.string "If you lose focus, the waves\n"
+	.string "will swallow you up!$"
+
+Route40_EventScript_Jody::
+	trainerbattle_single TRAINER_JODY, Route40_Text_JodyIntro, Route40_Text_JodyDefeat
+	msgbox Route40_Text_JodyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route40_Text_JodyIntro:
+	.string "The sea breeze is wonderful\n"
+	.string "for my skin.\p"
+	.string "Care to battle while I enjoy\n"
+	.string "the view?$"
+
+Route40_Text_JodyDefeat:
+	.string "Oh! My composure slipped…$"
+
+Route40_Text_JodyPostBattle:
+	.string "Battles by the sea feel so\n"
+	.string "refreshing.\p"
+	.string "A good match and fresh air…\n"
+	.string "simply delightful.$"
+
 Route40_EventScript_Woman1::
 	lock
 	faceplayer
