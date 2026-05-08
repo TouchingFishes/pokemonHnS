@@ -1301,14 +1301,14 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_CAROLINE] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .trainerClass = TRAINER_CLASS_PAINTER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerPic = TRAINER_PIC_PAINTER,
         .trainerName = _("CAROLINE"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Caroline),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Caroline),
     },
 
 

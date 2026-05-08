@@ -13602,15 +13602,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jody[] = { //BeautyGroup
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Julie[] = { //BeautyGroup
-    {
-    .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_SENTRET,
-    },
-};
-
-
 static const struct TrainerMonNoItemDefaultMoves sParty_Jaclyn[] = { //BeautyGroup
     {
     .iv = 0,
@@ -13644,25 +13635,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cassie[] = { //BeautyGro
     .iv = 0,
     .lvl = 54,
     .species = SPECIES_JYNX,
-    },
-};
-
-//should be exeggutor (68), ludicolo (69), leafeon (69), altaria (70), meganium (71)
-static const struct TrainerMonNoItemDefaultMoves sParty_Caroline[] = { //BeautyGroup
-    {
-    .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_MARILL,
-    },
-    {
-    .iv = 0,
-    .lvl = 32,
-    .species = SPECIES_SEEL,
-    },
-    {
-    .iv = 0,
-    .lvl = 30,
-    .species = SPECIES_MARILL,
     },
 };
 
@@ -13991,6 +13963,23 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Miller[] = { //Pokemania
     },
 };
 //add vince
+
+
+static const struct TrainerMonNoItemCustomMoves sParty_Caroline[] = { //PainterGroup
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_SMEARGLE,
+    .moves = {MOVE_FLY, MOVE_DIG, MOVE_DIVE, MOVE_BOUNCE},
+    },
+    {
+    .iv = 0,
+    .lvl = 36,
+    .species = SPECIES_SMEARGLE,
+    .moves = {MOVE_CROSS_CHOP, MOVE_MEGAHORN, MOVE_DOUBLE_EDGE, MOVE_SELF_DESTRUCT},
+    },
+};
+
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Eto[] = { //TeamRocketGroup
     {
@@ -18796,6 +18785,25 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Marcel[] = { //Pokerange
     .lvl = 35,
     .species = SPECIES_KINGLER,
     }
+};
+
+
+static const struct TrainerMonNoItemDefaultMoves sParty_Julie[] = { //PokerangerFGroup Route 43
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_EXEGGCUTE,
+    },
+    {
+    .iv = 0,
+    .lvl = 27,
+    .species = SPECIES_LEDIAN,
+    },
+    {
+    .iv = 0,
+    .lvl = 29,
+    .species = SPECIES_RHYHORN,
+    },
 };
 
 

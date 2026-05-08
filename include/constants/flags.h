@@ -1261,7 +1261,7 @@
 #define FLAG_ITEM_UNION_CAVE_X_ATTACK                               0x4B6 
 #define FLAG_ITEM_UNION_CAVE_AWAKENING                              0x4B7 
 #define FLAG_ITEM_UNION_CAVE_SECRET_POWER                           0x4B8 
-#define FLAG_ITEM_UNION_CAVE_X_DEFEND                               0x4B9 
+#define FLAG_ITEM_UNION_CAVE_TM_SWIFT                               0x4B9 
 #define FLAG_ITEM_UNION_CAVE_ETHER                                  0x4BA 
 #define FLAG_ITEM_UNION_CAVE_HYPERPOTION                            0x4BB 
 #define FLAG_ITEM_UNION_CAVE_MAXREVIVE                              0x4BC 

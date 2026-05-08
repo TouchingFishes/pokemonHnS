@@ -78,6 +78,7 @@
 #define MAP_ROUTE27          (69 | (0 << 8))
 #define MAP_ROUTE28          (70 | (0 << 8))
 #define MAP_CHERRYGROVE_BAY  (71 | (0 << 8))
+#define MAP_ROUTE32SOUTH     (72 | (0 << 8))
 
 // gMapGroup_IndoorNewBark
 #define MAP_NEW_BARK_TOWN_LAB              (0 | (1 << 8))
@@ -275,7 +276,7 @@
 #define MAP_FUCHSIA_CITY_HOUSE1               (2 | (19 << 8))
 #define MAP_FUCHSIA_CITY_HOUSE2               (3 | (19 << 8))
 #define MAP_FUCHSIA_CITY_GYM                  (4 | (19 << 8))
-#define MAP_FUCHSIA_ROUTE19GATE               (5 | (19 << 8))
+#define MAP_FUCHSIA_CITY_ROUTE19_GATE         (5 | (19 << 8))
 #define MAP_FUCHSIA_CITY_ROUTE15_GATE         (6 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE (7 | (19 << 8))
 #define MAP_FUCHSIA_CITY_SAFARI_ZONE_BEACH    (8 | (19 << 8))
@@ -447,6 +448,7 @@
 #define MAP_RUINS_OF_ALPH_WORDS_ROOM3                (88 | (24 << 8))
 #define MAP_RUINS_OF_ALPH_WORDS_ROOM4                (89 | (24 << 8))
 #define MAP_ROUTE19_CAVE                             (90 | (24 << 8))
+#define MAP_STARSHOAL_CAVE                           (91 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 
@@ -1026,7 +1028,5 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE          (96 | (31 << 8))
 
 #define MAP_GROUPS_COUNT 32
-
-// static const u8 MAP_GROUP_COUNT[] = {72, 5, 5, 6, 5, 29, 9, 10, 6, 6, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 28, 28, 91, 0, 27, 126, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

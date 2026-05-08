@@ -25,8 +25,8 @@ UnionCave_B1F_EventScript_Item_SecretPower::
 	finditem ITEM_TM_SECRET_POWER
 	end
 
-UnionCave_B1F_EventScript_Item_Xdefend::
-	finditem ITEM_X_DEFEND
+UnionCave_B1F_EventScript_Item_TM_Swift::
+	finditem ITEM_TM_SWIFT
 	end
 
 UnionCave_B1F_Text_HikerPhillipSeen:

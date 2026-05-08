@@ -105,7 +105,8 @@
     "Route26North",
     "Route27",
     "Route28",
-    "CherrygroveBay"
+    "CherrygroveBay",
+    "Route32South"
   ],
   "gMapGroup_IndoorNewBark": [
     "NewBarkTown_Lab",
@@ -474,7 +475,8 @@
     "RuinsOfAlph_WordsRoom2",
     "RuinsOfAlph_WordsRoom3",
     "RuinsOfAlph_WordsRoom4",
-    "Route19_Cave"
+    "Route19_Cave",
+    "StarshoalCave"
   ],
   "gMapGroup_IndoorDynamic": [
 

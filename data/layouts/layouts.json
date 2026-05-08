@@ -8785,7 +8785,7 @@
       "id": "LAYOUT_CHERRYGROVE_BAY",
       "name": "CherrygroveBay_Layout",
       "width": 51,
-      "height": 140,
+      "height": 91,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_CherrygroveCity",
       "border_filepath": "data/layouts/CherrygroveBay/border.bin",
@@ -8800,6 +8800,26 @@
       "secondary_tileset": "gTileset_EcruteakTheater",
       "border_filepath": "data/layouts/Kiwame_House/border.bin",
       "blockdata_filepath": "data/layouts/Kiwame_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE32SOUTH",
+      "name": "Route32South_Layout",
+      "width": 51,
+      "height": 84,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_CherrygroveCity",
+      "border_filepath": "data/layouts/Route32South/border.bin",
+      "blockdata_filepath": "data/layouts/Route32South/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARSHOAL_CAVE",
+      "name": "StarshoalCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Cave_Default",
+      "border_filepath": "data/layouts/StarshoalCave/border.bin",
+      "blockdata_filepath": "data/layouts/StarshoalCave/map.bin"
     }
   ]
 }

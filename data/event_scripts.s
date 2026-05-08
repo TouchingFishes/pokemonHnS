@@ -2000,3 +2000,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CherrygroveBay/scripts.inc"
 
 	.include "data/maps/Kiwame_House/scripts.inc"
+
+	.include "data/maps/Route32South/scripts.inc"
+
+	.include "data/maps/StarshoalCave/scripts.inc"

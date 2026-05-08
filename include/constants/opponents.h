@@ -100,7 +100,7 @@
 #define TRAINER_HOPE                         96
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
-#define TRAINER_CAROLINE                     99 //unused in johto
+#define TRAINER_CAROLINE                     99
 #define TRAINER_JULIE                       100 //unused in johto
 #define TRAINER_ERICK                       101 //?
 #define TRAINER_ERIK                        102
