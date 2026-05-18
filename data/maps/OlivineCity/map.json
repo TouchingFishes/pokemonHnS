@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE39",
       "offset": -6,
       "direction": "up"
+    },
+    {
+      "map": "MAP_OLIVINE_BAY",
+      "offset": 41,
+      "direction": "right"
     }
   ],
   "object_events": [

@@ -3,7 +3,7 @@
   "name": "Route32South",
   "layout": "LAYOUT_ROUTE32SOUTH",
   "music": "MUS_HG_ROUTE29",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE_32",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_NONE",
@@ -30,20 +30,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherrygroveBay_EventScript_FisherMatthew",
+      "script": "Route32South_EventScript_FisherMatthew",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "x": 14,
-      "y": 5,
+      "x": 12,
+      "y": 0,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 4,
       "movement_range_y": 5,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "1",
-      "script": "CherrygroveBay_EventScript_SwimmerFMary",
+      "script": "Route32South_EventScript_SwimmerFMary",
       "flag": "0"
     },
     {
@@ -56,20 +56,20 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "CherrygroveBay_EventScript_PokeRangerMMarcel",
+      "script": "Route32South_EventScript_PokeRangerMMarcel",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CORSOLA",
-      "x": 28,
-      "y": 19,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SKIPLOOM",
+      "x": 36,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherryGroveCity_EventScript_Corsola",
+      "script": "NULL",
       "flag": "0"
     },
     {
@@ -87,8 +87,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CORSOLA",
-      "x": 24,
-      "y": 70,
+      "x": 35,
+      "y": 62,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -101,7 +101,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CORSOLA",
       "x": 10,
-      "y": 68,
+      "y": 66,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -112,16 +112,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CORSOLA",
-      "x": 18,
-      "y": 67,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SKIPLOOM",
+      "x": 4,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherryGroveCity_EventScript_Corsola",
+      "script": "NULL",
       "flag": "0"
     },
     {
@@ -140,14 +140,14 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_ARTIST",
       "x": 16,
-      "y": 70,
+      "y": 67,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherrygroveBay_EventScript_Artist",
+      "script": "Route32South_EventScript_ArtistCaroline",
       "flag": "0"
     }
   ],

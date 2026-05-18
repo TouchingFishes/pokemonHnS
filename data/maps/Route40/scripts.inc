@@ -213,6 +213,12 @@ Route40_Text_MonicaNotMonday:
 Route40_Text_MonicaNope:
 	.string "Not that one.$"
 
+Rotue40_Text_Shellder:
+	.string "SHELLDER: SHAAAR!$"
+
+Rotue40_Text_Tentacool:
+	.string "TENTACOOL: BLUBLUBLUB!$"
+
 Rotue40_EventScript_Monica::
 	lock
 	faceplayer
@@ -254,5 +260,25 @@ Rotue40_EventScript_MonicaCancel::
 Rotue40_EventScript_MonicaCompleted::
 	msgbox Route40_Text_MonicaMonday, MSGBOX_DEFAULT
 	closemessage
+	release
+	end
+
+Rotue40_EventScript_Shellder::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_SHELLDER, CRY_MODE_NORMAL
+	msgbox Rotue40_Text_Shellder, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Rotue40_EventScript_Tentacool::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_TENTACOOL, CRY_MODE_NORMAL
+	msgbox Rotue40_Text_Tentacool, MSGBOX_DEFAULT
+	waitmoncry
 	release
 	end

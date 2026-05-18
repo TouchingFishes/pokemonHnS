@@ -77,7 +77,7 @@ Route32South_Text_PicnickerTiffanyWantsPicnic:
     .string "Won't you join us?$"
 
 Route32South_EventScript_ArtistCaroline::
-	trainerbattle_single TRAINER_ARTIST_CAROLINE, Route32South_Text_CarolineIntro, Route32South_Text_CarolineDefeat
+	trainerbattle_single TRAINER_CAROLINE, Route32South_Text_CarolineIntro, Route32South_Text_CarolineDefeat
 	msgbox Route32South_Text_CarolinePostBattle, MSGBOX_AUTOCLOSE
 	end
 

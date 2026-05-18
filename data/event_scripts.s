@@ -2004,3 +2004,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Route32South/scripts.inc"
 
 	.include "data/maps/StarshoalCave/scripts.inc"
+
+	.include "data/maps/StormyBeach/scripts.inc"
+
+	.include "data/maps/IlexCave/scripts.inc"
+
+	.include "data/maps/IlexForest_West/scripts.inc"
+
+	.include "data/maps/OlivineBay/scripts.inc"
+
+	.include "data/maps/SoulHouse/scripts.inc"

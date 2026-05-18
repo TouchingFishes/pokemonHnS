@@ -235,10 +235,10 @@ static const struct MatchCallStructNPC sMomMatchCallHeader =
 };
 
 static const match_call_text_data_t sBaobaTextScripts[] = {
-    { MatchCall_Text_Baoba1, 0xFFFF,                    0xFFFF },
-    { MatchCall_Text_Baoba2, FLAG_AMPHAROS_HEALED,      0xFFFF },
-    { MatchCall_Text_Baoba2, FLAG_AMPHAROS_HEALED,      0xFFFF },
-    { NULL,                0xFFFF,                      0xFFFF }
+    { MatchCall_Text_Baoba1, 0xFFFF,                           0xFFFF },
+    { MatchCall_Text_Baoba2, FLAG_HIDE_GOLDENROD_ROCKETS,      0xFFFF },
+    { MatchCall_Text_Baoba2, FLAG_HIDE_GOLDENROD_ROCKETS,      0xFFFF },
+    { NULL,                  0xFFFF,                           0xFFFF }
 };
 
 static const struct MatchCallStructNPC sBaobaMatchCallHeader =

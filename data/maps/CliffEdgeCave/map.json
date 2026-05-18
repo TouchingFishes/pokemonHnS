@@ -236,7 +236,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_STEELIX",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HARIYAMA",
       "x": 20,
       "y": 9,
       "elevation": 0,
@@ -275,7 +275,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_WOOPER",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MAKUHITA",
       "x": 36,
       "y": 3,
       "elevation": 0,

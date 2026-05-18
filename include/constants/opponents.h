@@ -92,7 +92,7 @@
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
 #define TRAINER_BARNEY                       90
-#define TRAINER_JODY                         91 //unused in johto
+#define TRAINER_JODY                         91
 #define TRAINER_WENDY                        92
 #define TRAINER_KEIRA                        93 //unused in johto
 #define TRAINER_EMMA                         94

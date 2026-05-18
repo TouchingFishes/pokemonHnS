@@ -1045,9 +1045,9 @@
 #define FLAG_HIDE_SOOTOPOLIS_CITY_RAYQUAZA                          0x3E4//unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_KYOGRE                            0x3E5//unused
 #define FLAG_HIDE_SOOTOPOLIS_CITY_GROUDON                           0x3E6//unused
-#define FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT                0x3E7//unused
 
 // Item Ball Flags 
+#define FLAG_ITEM_ROUTE11111_UP                                     0x3E7//unused
 #define FLAG_ITEM_GARBAGEFLAG                                       0x3E8    //HnS ItemFlags Block 2
 #define FLAG_ITEM_ROUTE39_NUGGET                                    0x3E9
 #define FLAG_ITEM_ROUTE42_ULTRA_BALL                                0x3EA
@@ -1075,7 +1075,7 @@
 #define FLAG_ITEM_MTMORTAR4_MAX_REVIVE                              0x400
 #define FLAG_ITEM_LIGHTHOUSE_ETHER                                  0x401
 #define FLAG_ITEM_LIGHTHOUSE_RARE_CANDY                             0x402
-#define FLAG_ITEM_LUCKY_PUNCH                                0x403
+#define FLAG_ITEM_LUCKY_PUNCH                                       0x403
 #define FLAG_ITEM_LIGHTHOUSE_HYPER_POTION                           0x404
 #define FLAG_ITEM_LIGHTHOUSE_PROTEIN                                0x405
 
@@ -1128,7 +1128,7 @@
 #define FLAG_ITEM_ROCKETHIDEOUT3_GUARD_SPEC                         0x434
 #define FLAG_ITEM_ROCKETHIDEOUT3_HYPER_POTION                       0x435
 
-#define FLAG_ITEM_ICEPATH1_HM_WATERFALL                             0x436
+#define FLAG_ITEM_ICEPATH1_TM_BLIZZARD                              0x436
 #define FLAG_ITEM_ICEPATH1_PP_UP                                    0x437
 #define FLAG_ITEM_ICEPATH1_PROTEIN                                  0x438
 #define FLAG_ITEM_ICEPATH2_IRON                                     0x439
@@ -1211,7 +1211,7 @@
 #define FLAG_ITEM_CERULEANCAVE2_BIG_PEARL                           0x486
 #define FLAG_ITEM_CERULEANCAVE3_MAX_REVIVE                          0x487
 #define FLAG_ITEM_CERULEANCAVE3_ULTRA_BALL                          0x488
-#define FLAG_ITEM_ROUTE20_SHELL_BELL                                   0x489
+#define FLAG_ITEM_ROUTE20_SHELL_BELL                                0x489
 #define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP                            0x48A
 #define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS                            0x48B
 #define FLAG_ITEM_MAGMA_HIDEOUT_2F_2R_MAX_ELIXIR                    0x48C

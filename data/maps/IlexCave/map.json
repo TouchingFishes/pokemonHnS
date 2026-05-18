@@ -1,0 +1,41 @@
+{
+  "id": "MAP_ILEX_CAVE",
+  "name": "IlexCave",
+  "layout": "LAYOUT_ILEX_CAVE",
+  "music": "MUS_HG_UNION_CAVE",
+  "region_map_section": "MAPSEC_ILEX_FOREST",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 4,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_STORMY_BEACH",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 58,
+      "y": 15,
+      "elevation": 0,
+      "dest_map": "MAP_ILEX_FOREST_WEST",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

@@ -1134,7 +1134,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Kindra[] = { //HexManiac
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Tammy[] = { //HexManiacGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Tammy[] = { //HexManiacGroup Stormy Coast
     {
     .iv = 0,
     .lvl = 39,
@@ -1142,8 +1142,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Tammy[] = { //HexManiacG
     },
     {
     .iv = 0,
+    .lvl = 39,
+    .species = SPECIES_NOCTOWL
+    },
+    {
+    .iv = 0,
     .lvl = 41,
-    .species = SPECIES_PURGISLUG, //LAMPENT
+    .species = SPECIES_HAUNTER,
     }
 };
 
@@ -24622,43 +24627,53 @@ static const struct TrainerMonNoItemCustomMoves sParty_Ariana2[] = { //RocketAdm
 static const struct TrainerMonNoItemDefaultMoves sParty_Devin[] = { //HikerGroup
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 41,
     .species = SPECIES_DUNSPARCE,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 41,
     .species = SPECIES_DUNSPARCE,
     },
     {
     .iv = 0,
-    .lvl = 27,
-    .species = SPECIES_GROTLE,
+    .lvl = 43,
+    .species = SPECIES_TORTERRA,
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Grant[] = { //CamperGroup
+static const struct TrainerMonNoItemDefaultMoves sParty_Grant[] = { //PokerangerMGroup
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_SKIPLOOM,
+    .lvl = 40,
+    .species = SPECIES_JUMPLUFF,
     },
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_MARILL,
+    .lvl = 40,
+    .species = SPECIES_AZUMARILL,
+    },
+    {
+    .iv = 0,
+    .lvl = 43,
+    .species = SPECIES_NIDOKING,
+    },
+    {
+    .iv = 0,
+    .lvl = 43,
+    .species = SPECIES_RAPIDASH,
     },
 };
 
 static const struct TrainerMonNoItemDefaultMoves sParty_ThomAndKae[] = { //YoungCouple
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 46,
     .species = SPECIES_LUVDISC,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 46,
     .species = SPECIES_LUVDISC,
     },
 };
@@ -24666,12 +24681,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_ThomAndKae[] = { //Young
 static const struct TrainerMonNoItemDefaultMoves sParty_DuffAndEda[] = { //YoungCouple
     {
     .iv = 0,
-    .lvl = 26,
-    .species = SPECIES_ONIX,
+    .lvl = 44,
+    .species = SPECIES_STEELIX,
     },
     {
     .iv = 0,
-    .lvl = 26,
+    .lvl = 44,
     .species = SPECIES_CLOYSTER,
     },
 };

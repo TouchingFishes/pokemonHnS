@@ -1249,9 +1249,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_JULIE] =
     {
-        .trainerClass = TRAINER_CLASS_BEAUTY,
+        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
-        .trainerPic = TRAINER_PIC_BEAUTY,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
         .trainerName = _("JULIE"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4578,9 +4578,9 @@ const struct Trainer gTrainers[] = {
 
     [TRAINER_GRANT] =
     {
-        .trainerClass = TRAINER_CLASS_CAMPER,
+        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .trainerName = _("GRANT"),
         .items = {},
         .doubleBattle = FALSE,
@@ -4767,6 +4767,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji),
+    },
+
+
+    [TRAINER_TAMMY] =
+    {
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("TAMMY"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Tammy),
     },
 
 

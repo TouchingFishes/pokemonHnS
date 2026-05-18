@@ -9,7 +9,7 @@ CliffEdgeGate_EventScript_Woman::
 	release
 	end
 
-CliffEdgeGate_EventScript_Picnicker::
+CliffEdgeGate_EventScript_Engineer::
 	lock
 	faceplayer
 	msgbox CliffEdgeGate_Text_Expectations, MSGBOX_DEFAULT

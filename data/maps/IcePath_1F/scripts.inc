@@ -14,8 +14,8 @@ IcePath_1F_EventScript_Item_PpUp::
 IcePath_1F_EventScript_Item_Protein::
 	finditem ITEM_PROTEIN
 	end
-IcePath_1F_EventScript_Item_HM_Waterfall::
-	finditem ITEM_HM_WATERFALL
+IcePath_1F_EventScript_Item_TM_Blizzard::
+	finditem ITEM_TM_BLIZZARD
 	end
 
 IcePath_1F_EventScript_KimonoGirl::
@@ -51,6 +51,9 @@ IcePath_1F_EventScript_KimonoGirlPush::
 	applymovement LOCALID_ICEPATH1_KIMONO, IcePath_Movement_KimonoSlide
 	waitmovement 0
 	msgbox IcePath_1F_Text_Thanks, MSGBOX_DEFAULT
+	giveitem ITEM_HM_WATERFALL
+	msgbox IcePath_1F_Text_WaterfallExplainer, MSGBOX_DEFAULT
+	closemessage
 	closemessage
 	applymovement LOCALID_ICEPATH1_KIMONO, IcePath_Movement_KimonoLeave
 	waitmovement LOCALID_ICEPATH1_KIMONO
@@ -124,3 +127,11 @@ IcePath_1F_Text_Cruel:
 IcePath_1F_Text_Thanks:
     .string "You really are kind.\n"
     .string "Thank you so much!$"
+
+IcePath_1F_Text_WaterfallExplainer:
+    .string "Please, take this as thanks.\p"
+    .string "It's HM07 WATERFALL.\p"
+    .string "With it, your Pokémon can\n"
+    .string "climb rushing waterfalls.\p"
+    .string "It will help you continue\n"
+    .string "your journey.$"

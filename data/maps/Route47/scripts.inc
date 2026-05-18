@@ -20,21 +20,21 @@ Route47_Text_HikerAfter::
 	.string "After a battle you should always leave\n"
 	.string "with a parting laugh!$"
 
-Route47_EventScript_Camper::
-	trainerbattle_single TRAINER_GRANT, Route47_Text_CamperSeen, Route47_Text_CamperBeaten
-	msgbox Route47_Text_CamperAfter, MSGBOX_AUTOCLOSE
+Route47_EventScript_PokerangerM::
+	trainerbattle_single TRAINER_GRANT, Route47_Text_PokerangerMSeen, Route47_Text_PokerangerMBeaten
+	msgbox Route47_Text_PokerangerMAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route47_Text_CamperSeen::
+Route47_Text_PokerangerMSeen::
 	.string "I'm not good with large crowds, so\n"
-	.string "I'm camping out here with my\l"
+	.string "I'm training out here with my\l"
 	.string "POKéMON!$"
 
-Route47_Text_CamperBeaten::
+Route47_Text_PokerangerMBeaten::
 	.string "I should be headed deeper into the\n"
 	.string "mountain I guess...$"
 
-Route47_Text_CamperAfter::
+Route47_Text_PokerangerMAfter::
 	.string "See ya!$"
 
 Route47_EventScript_Thom::

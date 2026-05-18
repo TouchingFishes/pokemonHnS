@@ -4964,7 +4964,7 @@
     {
       "id": "LAYOUT_ROUTE34",
       "name": "Route34_Layout",
-      "width": 60,
+      "width": 80,
       "height": 90,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_Goldenrod",
@@ -5035,7 +5035,7 @@
       "id": "LAYOUT_ROUTE41",
       "name": "Route41_Layout",
       "width": 74,
-      "height": 89,
+      "height": 99,
       "primary_tileset": "gTileset_Johto_NorthEast",
       "secondary_tileset": "gTileset_CianwoodCity",
       "border_filepath": "data/layouts/Route41/border.bin",
@@ -8820,6 +8820,56 @@
       "secondary_tileset": "gTileset_Cave_Default",
       "border_filepath": "data/layouts/StarshoalCave/border.bin",
       "blockdata_filepath": "data/layouts/StarshoalCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_STORMY_BEACH",
+      "name": "StormyBeach_Layout",
+      "width": 30,
+      "height": 60,
+      "primary_tileset": "gTileset_Johto_South",
+      "secondary_tileset": "gTileset_IlexForest",
+      "border_filepath": "data/layouts/StormyBeach/border.bin",
+      "blockdata_filepath": "data/layouts/StormyBeach/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILEX_CAVE",
+      "name": "IlexCave_Layout",
+      "width": 60,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_Cave_Default",
+      "border_filepath": "data/layouts/IlexCave/border.bin",
+      "blockdata_filepath": "data/layouts/IlexCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ILEX_FOREST_WEST",
+      "name": "IlexForest_West_Layout",
+      "width": 82,
+      "height": 73,
+      "primary_tileset": "gTileset_Johto_South",
+      "secondary_tileset": "gTileset_IlexForest",
+      "border_filepath": "data/layouts/IlexForest_West/border.bin",
+      "blockdata_filepath": "data/layouts/IlexForest_West/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLIVINE_BAY",
+      "name": "OlivineBay_Layout",
+      "width": 52,
+      "height": 80,
+      "primary_tileset": "gTileset_Johto_General",
+      "secondary_tileset": "gTileset_OlivineCity",
+      "border_filepath": "data/layouts/OlivineBay/border.bin",
+      "blockdata_filepath": "data/layouts/OlivineBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_SOUL_HOUSE",
+      "name": "SoulHouse_Layout",
+      "width": 36,
+      "height": 20,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_SoulHouse",
+      "border_filepath": "data/layouts/SoulHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SoulHouse/map.bin"
     }
   ]
 }
