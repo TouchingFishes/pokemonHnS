@@ -70,28 +70,34 @@ MoveTutor_Text_FuryCutterTaught:
 	.string "I get a thrill watching to see if\n"
 	.string "the move keeps hitting in succession!$"
 
-MoveTutor_MimicTeach:
+MoveTutor_TriAttackTeach:
 	.string "Ah, young one!\p"
-	.string "I am also a young one, but I mimic\n"
-	.string "the styles and speech of the elderly\l"
-	.string "folks of this town.\p"
-	.string "What do you say, young one?\n"
-	.string "Would you agree to it if I were to\l"
-	.string "offer to teach the move MIMIC?$"
+	.string "Have you ever witnessed true\n"
+	.string "balance in battle?\p"
+	.string "Not one force...\n"
+	.string "Not two...\n"
+	.string "But three, striking as one!\p"
+	.string "Fire, ice, and lightning\n"
+	.string "united in a single technique!\p"
+	.string "That is the essence of TRI ATTACK.\p"
+	.string "Tell me, young one...\n"
+	.string "Shall I teach this power to\l"
+	.string "your POKéMON?$"
 
-MoveTutor_MimicDeclined:
-	.string "Oh, boo! I wanted to teach MIMIC\n"
-	.string "to your POKéMON!$"
+MoveTutor_TriAttackDeclined:
+	.string "I see... Perhaps the path of\n"
+	.string "threefold power is not for you.$"
 
-MoveTutor_Text_MimicWhichMon:
-	.string "Fwofwo! And so I shall!\n"
-	.string "Let me see the POKéMON\l"
-	.string "you wish me to teach.$"
+MoveTutor_Text_TriAttackWhichMon:
+	.string "A wise choice!\n"
+	.string "Now, which POKéMON shall learn\l"
+	.string "to wield these three forces?$"
 
-MoveTutor_Text_MimicTaught:
-	.string "MIMIC is a move of great depth.\p"
-	.string "Could you execute it to perfection\n"
-	.string "as well as me…?$"
+MoveTutor_Text_TriAttackTaught:
+	.string "Remember this well...\p"
+	.string "TRI ATTACK is not just power,\n"
+	.string "it is harmony between forces.\p"
+	.string "Use it wisely in battle!$"
 
 MoveTutor_Text_MetronomeTeach:
 	.string "I want all sorts of things!\n"
@@ -119,27 +125,31 @@ MoveTutor_Text_MetronomeTaught:
 	.string "Wouldn't it be nice if we could\n"
 	.string "use it, too?$"
 
-MoveTutor_Text_SleepTalkTeach:
-	.string "Humph! My wife relies on HIDDEN\n"
-	.string "POWER to stay awake.\p"
-	.string "She should just take a nap like I do,\n"
-	.string "and SLEEP TALK.\p"
+MoveTutor_Text_AcrobaticsTeach:
+	.string "Humph! My wife is always darting\n"
+	.string "around, flipping and leaping about.\p"
+	.string "Says it's all about grace and speed...\n"
+	.string "never standing still for a moment!\p"
+	.string "Me? I prefer simple movement,\n"
+	.string "light, free, and unburdened.\p"
+	.string "That's the secret behind\n"
+	.string "ACROBATICS.\p"
 	.string "I can teach your POKéMON how to\n"
-	.string "SLEEP TALK instead. Interested?$"
+	.string "move like that. Interested?$"
 
-MoveTutor_Text_SleepTalkDeclined:
-	.string "Oh, fine, fine. You want to stay awake\n"
-	.string "with HIDDEN POWER, too…$"
+MoveTutor_Text_AcrobaticsDeclined:
+	.string "Oh, fine, fine. You'd rather stay\n"
+	.string "grounded and weighed down…$"
 
-MoveTutor_Text_SleepTalkWhichMon:
+MoveTutor_Text_AcrobaticsWhichMon:
 	.string "Ah, an appreciative child!\n"
 	.string "Which POKéMON should I teach?$"
 
-MoveTutor_Text_SleepTalkTaught:
-	.string "I've never once gotten my wife's\n"
-	.string "coin trick right.\p"
-	.string "I would be happy if I got it right\n"
-	.string "even as I SLEEP TALK…$"
+MoveTutor_Text_AcrobaticsTaught:
+	.string "Heh... maybe my wife's way isn't\n"
+	.string "so bad after all.\p"
+	.string "Move light, strike fast...\n"
+	.string "that's ACROBATICS.$"
 
 MoveTutor_Text_SubstituteTeach:
 	.string "When I travel around the world...\p"
@@ -166,30 +176,36 @@ MoveTutor_Text_SubstituteTaught:
 	.string "own lives to the utmost!\p"
 	.string "I hope you'll get that way, too!$"
 
-MoveTutor_Text_DynamicPunchTeach:
-	.string "I can't do this anymore!\p"
-	.string "It's utterly hopeless!\p"
-	.string "I'm a FIGHTING-type TRAINER,\n"
-	.string "so I can't win at the SAFFRON GYM\l"
-	.string "no matter how hard I try!\p"
-	.string "Argh! Punch! Punch! Punch!\n"
-	.string "Punch! Punch! Punch!\p"
-	.string "What, don't look at me that way!\n"
-	.string "I'm only hitting the ground!\p"
-	.string "Or do you want me to teach your\n"
-	.string "POKéMON DYNAMICPUNCH?$"
+MoveTutor_Text_FocusPunchTeach:
+	.string "Hmph... My body's gotten old,\n"
+	.string "but my fists still remember...\p"
+	.string "The way of the ultimate strike!\p"
+	.string "Back in my day, I trained under\n"
+	.string "waterfalls and shattered boulders!\p"
+	.string "But these days...\n"
+	.string "no one has the patience...\p"
+	.string "Focus... steady your mind...\n"
+	.string "then strike with everything!\p"
+	.string "Hah! What are you staring at?!\n"
+	.string "I'm just practicing...!\p"
+	.string "So... do you want me to teach your\n"
+	.string "POKéMON FOCUS PUNCH?$"
 
-MoveTutor_Text_DynamicPunchDeclined:
-	.string "Darn! You're even making fun of me?\n"
-	.string "Punch! Punch! Punch!$"
+MoveTutor_Text_FocusPunchDeclined:
+	.string "Tch! No discipline at all!\n"
+	.string "Come back when you've learned patience!$"
 
-MoveTutor_Text_DynamicPunchWhichMon:
-	.string "What? You do? You're a good person!\n"
-	.string "Which POKéMON should I teach?$"
+MoveTutor_Text_FocusPunchWhichMon:
+	.string "Oh? You've got some spirit!\n"
+	.string "Good, good...\p"
+	.string "Now, which POKéMON will endure\n"
+	.string "the training?$"
 
-MoveTutor_Text_DynamicPunchTaught:
-	.string "I want you to win at the SAFFRON GYM\n"
-	.string "using that DYNAMICPUNCH!$"
+MoveTutor_Text_FocusPunchTaught:
+	.string "Remember this well...\n"
+	.string "Power comes to those who wait!\p"
+	.string "Use that FOCUS PUNCH and show\n"
+	.string "them true strength!$"
 
 MoveTutor_Text_DoubleEdgeTeach:
 	.string "Sigh…\p"

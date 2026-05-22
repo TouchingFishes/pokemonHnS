@@ -3462,7 +3462,7 @@ const struct Item gItems[] =
 
 // TMs/HMs
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_DYNAMIC_PUNCH] =
     {
         .name = _("TM01"),
         .itemId = ITEM_TM01,
@@ -8636,7 +8636,7 @@ const struct Item gItems2[] =
 
 // TMs/HMs
 
-    [ITEM_TM_FOCUS_PUNCH] =
+    [ITEM_TM_DYNAMIC_PUNCH] =
     {
         .name = _("TM01"),
         .itemId = ITEM_TM01,

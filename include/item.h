@@ -87,7 +87,7 @@ u16 RandomItemHidden(void);
 /* Expands to:
  * enum
  * {
- *   ITEM_TM_FOCUS_PUNCH,
+ *   ITEM_TM_DYNAMIC_PUNCH,
  *   ...
  *   ITEM_HM_CUT,
  *   ...

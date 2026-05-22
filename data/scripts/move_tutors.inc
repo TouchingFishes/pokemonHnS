@@ -127,46 +127,46 @@ MoveTutor_EventScript_FuryCutterTaught::
 	release
 	end
 
-LavaridgeTown_House_EventScript_MimicTutor::
+LavaridgeTown_House_EventScript_TriAttackTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, LavaridgeTown_House_EventScript_MimicTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_MIMIC
-	msgbox MoveTutor_MimicTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MimicDeclined
+	goto_if_set FLAG_FINITE_TMS, LavaridgeTown_House_EventScript_TriAttackTutorFinite
+	clearflag FLAG_MOVE_TUTOR_TAUGHT_TRI_ATTACK
+	msgbox MoveTutor_TriAttackTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_TriAttackDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MimicDeclined
-	msgbox MoveTutor_Text_MimicWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_MIMIC
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_TriAttackDeclined
+	msgbox MoveTutor_Text_TriAttackWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_TRI_ATTACK
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MimicDeclined
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_TriAttackDeclined
 	removemoney 5000, 0
-	goto MoveTutor_EventScript_MimicTaught
+	goto MoveTutor_EventScript_TriAttackTaught
 	end
 
-LavaridgeTown_House_EventScript_MimicTutorFinite::
+LavaridgeTown_House_EventScript_TriAttackTutorFinite::
 	lock
 	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_MIMIC, MoveTutor_EventScript_MimicTaught
-	msgbox MoveTutor_MimicTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MimicDeclined
+	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_TRI_ATTACK, MoveTutor_EventScript_TriAttackTaught
+	msgbox MoveTutor_TriAttackTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_TriAttackDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MimicDeclined
-	msgbox MoveTutor_Text_MimicWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_MIMIC
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_TriAttackDeclined
+	msgbox MoveTutor_Text_TriAttackWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_TRI_ATTACK
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MimicDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_MIMIC
-	goto MoveTutor_EventScript_MimicTaught
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_TriAttackDeclined
+	setflag FLAG_MOVE_TUTOR_TAUGHT_TRI_ATTACK
+	goto MoveTutor_EventScript_TriAttackTaught
 	end
 
-MoveTutor_EventScript_MimicDeclined::
-	msgbox MoveTutor_MimicDeclined, MSGBOX_DEFAULT
+MoveTutor_EventScript_TriAttackDeclined::
+	msgbox MoveTutor_TriAttackDeclined, MSGBOX_DEFAULT
 	release
 	end
 
-MoveTutor_EventScript_MimicTaught::
-	msgbox MoveTutor_Text_MimicTaught, MSGBOX_DEFAULT
+MoveTutor_EventScript_TriAttackTaught::
+	msgbox MoveTutor_Text_TriAttackTaught, MSGBOX_DEFAULT
 	release
 	end
 
@@ -213,46 +213,46 @@ MoveTutor_EventScript_MetronomeTaught::
 	release
 	end
 
-FortreeCity_House2_EventScript_SleepTalkTutor::
+FortreeCity_House2_EventScript_AcrobaticsTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, FortreeCity_House2_EventScript_SleepTalkTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK
-	msgbox MoveTutor_Text_SleepTalkTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SleepTalkDeclined
+	goto_if_set FLAG_FINITE_TMS, FortreeCity_House2_EventScript_AcrobaticsTutorFinite
+	clearflag FLAG_MOVE_TUTOR_TAUGHT_ACROBATICS
+	msgbox MoveTutor_Text_AcrobaticsTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_AcrobaticsDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SleepTalkDeclined
-	msgbox MoveTutor_Text_SleepTalkWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_SLEEP_TALK
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_AcrobaticsDeclined
+	msgbox MoveTutor_Text_AcrobaticsWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_ACROBATICS
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_SleepTalkDeclined
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_AcrobaticsDeclined
 	removemoney 5000, 0
-	goto MoveTutor_EventScript_SleepTalkTaught
+	goto MoveTutor_EventScript_AcrobaticsTaught
 	end
 
-FortreeCity_House2_EventScript_SleepTalkTutorFinite::
+FortreeCity_House2_EventScript_AcrobaticsTutorFinite::
 	lock
 	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK, MoveTutor_EventScript_SleepTalkTaught
-	msgbox MoveTutor_Text_SleepTalkTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SleepTalkDeclined
+	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_ACROBATICS, MoveTutor_EventScript_AcrobaticsTaught
+	msgbox MoveTutor_Text_AcrobaticsTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_AcrobaticsDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SleepTalkDeclined
-	msgbox MoveTutor_Text_SleepTalkWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_SLEEP_TALK
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_AcrobaticsDeclined
+	msgbox MoveTutor_Text_AcrobaticsWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_ACROBATICS
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_SleepTalkDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_SLEEP_TALK
-	goto MoveTutor_EventScript_SleepTalkTaught
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_AcrobaticsDeclined
+	setflag FLAG_MOVE_TUTOR_TAUGHT_ACROBATICS
+	goto MoveTutor_EventScript_AcrobaticsTaught
 	end
 
-MoveTutor_EventScript_SleepTalkDeclined::
-	msgbox MoveTutor_Text_SleepTalkDeclined, MSGBOX_DEFAULT
+MoveTutor_EventScript_AcrobaticsDeclined::
+	msgbox MoveTutor_Text_AcrobaticsDeclined, MSGBOX_DEFAULT
 	release
 	end
 
-MoveTutor_EventScript_SleepTalkTaught::
-	msgbox MoveTutor_Text_SleepTalkTaught, MSGBOX_DEFAULT
+MoveTutor_EventScript_AcrobaticsTaught::
+	msgbox MoveTutor_Text_AcrobaticsTaught, MSGBOX_DEFAULT
 	release
 	end
 
@@ -299,46 +299,46 @@ MoveTutor_EventScript_SubstituteTaught::
 	release
 	end
 
-MossdeepCity_EventScript_DynamicPunchTutor::
+MossdeepCity_EventScript_FocusPunchTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, MossdeepCity_EventScript_DynamicPunchTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH
-	msgbox MoveTutor_Text_DynamicPunchTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
+	goto_if_set FLAG_FINITE_TMS, MossdeepCity_EventScript_FocusPunchTutorFinite
+	clearflag FLAG_MOVE_TUTOR_TAUGHT_FOCUS_PUNCH
+	msgbox MoveTutor_Text_FocusPunchTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FocusPunchDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
-	msgbox MoveTutor_Text_DynamicPunchWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_DYNAMIC_PUNCH
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FocusPunchDeclined
+	msgbox MoveTutor_Text_FocusPunchWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_FOCUS_PUNCH
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DynamicPunchDeclined
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FocusPunchDeclined
 	removemoney 5000, 0
-	goto MoveTutor_EventScript_DynamicPunchTaught
+	goto MoveTutor_EventScript_FocusPunchTaught
 	end
 
-MossdeepCity_EventScript_DynamicPunchTutorFinite::
+MossdeepCity_EventScript_FocusPunchTutorFinite::
 	lock
 	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH, MoveTutor_EventScript_DynamicPunchTaught
-	msgbox MoveTutor_Text_DynamicPunchTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
+	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_FOCUS_PUNCH, MoveTutor_EventScript_FocusPunchTaught
+	msgbox MoveTutor_Text_FocusPunchTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FocusPunchDeclined
 	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_DynamicPunchDeclined
-	msgbox MoveTutor_Text_DynamicPunchWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_DYNAMIC_PUNCH
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FocusPunchDeclined
+	msgbox MoveTutor_Text_FocusPunchWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_FOCUS_PUNCH
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_DynamicPunchDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_DYNAMICPUNCH
-	goto MoveTutor_EventScript_DynamicPunchTaught
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FocusPunchDeclined
+	setflag FLAG_MOVE_TUTOR_TAUGHT_FOCUS_PUNCH
+	goto MoveTutor_EventScript_FocusPunchTaught
 	end
 
-MoveTutor_EventScript_DynamicPunchDeclined::
-	msgbox MoveTutor_Text_DynamicPunchDeclined, MSGBOX_DEFAULT
+MoveTutor_EventScript_FocusPunchDeclined::
+	msgbox MoveTutor_Text_FocusPunchDeclined, MSGBOX_DEFAULT
 	release
 	end
 
-MoveTutor_EventScript_DynamicPunchTaught::
-	msgbox MoveTutor_Text_DynamicPunchTaught, MSGBOX_DEFAULT
+MoveTutor_EventScript_FocusPunchTaught::
+	msgbox MoveTutor_Text_FocusPunchTaught, MSGBOX_DEFAULT
 	release
 	end
 
