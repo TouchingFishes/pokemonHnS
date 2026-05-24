@@ -8854,7 +8854,7 @@
     {
       "id": "LAYOUT_OLIVINE_BAY",
       "name": "OlivineBay_Layout",
-      "width": 52,
+      "width": 56,
       "height": 80,
       "primary_tileset": "gTileset_Johto_General",
       "secondary_tileset": "gTileset_OlivineCity",
@@ -8870,6 +8870,16 @@
       "secondary_tileset": "gTileset_SoulHouse",
       "border_filepath": "data/layouts/SoulHouse/border.bin",
       "blockdata_filepath": "data/layouts/SoulHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAHOGANY_TOWN_HOUSE2",
+      "name": "MahoganyTown_House2_Layout",
+      "width": 13,
+      "height": 10,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_House_Lab",
+      "border_filepath": "data/layouts/MahoganyTown_House2/border.bin",
+      "blockdata_filepath": "data/layouts/MahoganyTown_House2/map.bin"
     }
   ]
 }

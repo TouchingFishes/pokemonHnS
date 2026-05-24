@@ -181,7 +181,7 @@
 #define FLAG_BATTLE_FRONTIER_TRADE_DONE      0x9C
 #define FLAG_FORCE_MIRAGE_TOWER_VISIBLE      0x9D
 #define FLAG_SOOTOPOLIS_ARCHIE_MAXIE_LEAVE   0x9E
-#define FLAG_INTERACTED_WITH_DEVON_EMPLOYEE_GOODS_STOLEN 0x9F
+#define FLAG_RECEIVED_TM_MIMIC               0x9F //mahogany
 #define FLAG_COOL_PAINTING_MADE              0xA0
 #define FLAG_BEAUTY_PAINTING_MADE            0xA1
 #define FLAG_CUTE_PAINTING_MADE              0xA2
@@ -878,7 +878,7 @@
 #define FLAG_IS_KANTO_CHAMPION                                      0x33D
 #define FLAG_HIDE_LEAGUE_BLACKBELT                                  0x33E
 #define FLAG_GOT_ROUTE2_NUGGET                                      0x33F
-#define FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB                            0x340
+#define FLAG_GOT_VIRIDIAN_TM_DREAM_EATER                            0x340
 #define FLAG_GOT_ROUTE_14_AERIAL_ACE                                0x341
 #define FLAG_HIDE_PEWTER_ROOT_FOSSIL                                0x342
 #define FLAG_HIDE_PEWTER_CLAW_FOSSIL                                0x343

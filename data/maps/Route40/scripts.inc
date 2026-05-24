@@ -213,33 +213,33 @@ Route40_Text_MonicaNotMonday:
 Route40_Text_MonicaNope:
 	.string "Not that one.$"
 
-Rotue40_Text_Shellder:
+Route40_Text_Shellder:
 	.string "SHELLDER: SHAAAR!$"
 
-Rotue40_Text_Tentacool:
+Route40_Text_Tentacool:
 	.string "TENTACOOL: BLUBLUBLUB!$"
 
-Rotue40_EventScript_Monica::
+Route40_EventScript_Monica::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_SHARP_BEAK, Rotue40_EventScript_MonicaCompleted
+	goto_if_set FLAG_GOT_SHARP_BEAK, Route40_EventScript_MonicaCompleted
 	msgbox Route40_Text_Monica, MSGBOX_DEFAULT
 	closemessage
 	multichoice 20, 0, MULTI_DAYS_OF_WEEK, FALSE
 	switch VAR_RESULT
-	case 0, Rotue40_EventScript_MonicaNope
-	case 1, Rotue40_EventScript_MonicaYes
-	case 2, Rotue40_EventScript_MonicaNope
-	case 3, Rotue40_EventScript_MonicaNope
-	case 4, Rotue40_EventScript_MonicaNope
-	case 5, Rotue40_EventScript_MonicaNope
-	case 6, Rotue40_EventScript_MonicaNope
-	case 7 Rotue40_EventScript_MonicaCancel
-	case MULTI_B_PRESSED, Rotue40_EventScript_MonicaCancel
+	case 0, Route40_EventScript_MonicaNope
+	case 1, Route40_EventScript_MonicaYes
+	case 2, Route40_EventScript_MonicaNope
+	case 3, Route40_EventScript_MonicaNope
+	case 4, Route40_EventScript_MonicaNope
+	case 5, Route40_EventScript_MonicaNope
+	case 6, Route40_EventScript_MonicaNope
+	case 7 Route40_EventScript_MonicaCancel
+	case MULTI_B_PRESSED, Route40_EventScript_MonicaCancel
 	closemessage
 	release
 	end
-Rotue40_EventScript_MonicaYes::
+Route40_EventScript_MonicaYes::
 	msgbox Route40_Text_MonicaGivesGift, MSGBOX_DEFAULT
 	giveitem ITEM_SHARP_BEAK
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -248,37 +248,37 @@ Rotue40_EventScript_MonicaYes::
 	closemessage
 	release
 	end
-Rotue40_EventScript_MonicaNope::
+Route40_EventScript_MonicaNope::
 	msgbox Route40_Text_MonicaNope, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
-Rotue40_EventScript_MonicaCancel::
+Route40_EventScript_MonicaCancel::
 	closemessage
 	release
 	end
-Rotue40_EventScript_MonicaCompleted::
+Route40_EventScript_MonicaCompleted::
 	msgbox Route40_Text_MonicaMonday, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-Rotue40_EventScript_Shellder::
+Route40_EventScript_Shellder::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_SHELLDER, CRY_MODE_NORMAL
-	msgbox Rotue40_Text_Shellder, MSGBOX_DEFAULT
+	msgbox Route40_Text_Shellder, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
 
-Rotue40_EventScript_Tentacool::
+Route40_EventScript_Tentacool::
 	lock
 	faceplayer
 	waitse
 	playmoncry SPECIES_TENTACOOL, CRY_MODE_NORMAL
-	msgbox Rotue40_Text_Tentacool, MSGBOX_DEFAULT
+	msgbox Route40_Text_Tentacool, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end

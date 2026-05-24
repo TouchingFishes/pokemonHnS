@@ -31,15 +31,15 @@ VirianCity_EventScript_GymGrampsBlue::
 	msgbox ViridianCity_Text_GrampsNearGym_BlueReturned, MSGBOX_NPC
 	end
 
-ViridianCity_EventScript_Fisher::
-	goto_if_set FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB, ViridianCity_EventScript_FisherAfter
-	msgbox ViridianCity_Text_DreamEaterFisherNew, MSGBOX_NPC
-	giveitem ITEM_TM_SLUDGE_BOMB
-	setflag FLAG_GOT_VIRIDIAN_TM_SLUDGE_BOMB
+ViridianCity_EventScript_FatMan::
+	goto_if_set FLAG_GOT_VIRIDIAN_TM_DREAM_EATER, ViridianCity_EventScript_FatManAfter
+	msgbox ViridianCity_Text_DreamEaterFatMan, MSGBOX_NPC
+	giveitem ITEM_TM_DREAM_EATER
+	setflag FLAG_GOT_VIRIDIAN_TM_DREAM_EATER
 	end
 
-ViridianCity_EventScript_FisherAfter::
-	msgbox ViridianCity_Text_DreamEaterFisher_GotTM, MSGBOX_NPC
+ViridianCity_EventScript_FatManAfter::
+	msgbox ViridianCity_Text_DreamEaterFatMan_GotTM, MSGBOX_NPC
 	end
 
 ViridianCity_EventScript_Youngster::
@@ -88,18 +88,10 @@ ViridianCity_Text_GrampsNearGym_BlueReturned:
 	.string "LEADER?\p"
 	.string "Good luck to you. You'll need it.$"
 
-ViridianCity_Text_DreamEaterFisherNew:
-	.string "…Zzzzz…\p" 
-	.string "Yawn!\p"
-	.string "I must have dozed off in the sun.\p"
-	.string "What? I remind you of somebody?\p"
-	.string "I don't know, here, have this.$"
-
-
-ViridianCity_Text_DreamEaterFisher_GotTM::
+ViridianCity_Text_DreamEaterFatMan_GotTM::
 	.string "…Zzzzz…$"
 
-ViridianCity_Text_DreamEaterFisher:
+ViridianCity_Text_DreamEaterFatMan:
 	.string "Yawn!\p"
 	.string "I must have dozed off in the sun.\p"
 	.string "…I had this dream about a DROWZEE\n"
@@ -109,7 +101,7 @@ ViridianCity_Text_DreamEaterFisher:
 	.string "This is spooky! Here, you can have\n"
 	.string "this TM.$"
 
-ViridianCity_Text_DreamEaterFisher_GotDreamEater:
+ViridianCity_Text_DreamEaterFatMan_GotDreamEater:
 	.string "TM42 contains DREAM EATER…\p"
 	.string "…Zzzzz…$"
 

@@ -2014,3 +2014,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OlivineBay/scripts.inc"
 
 	.include "data/maps/SoulHouse/scripts.inc"
+
+	.include "data/maps/MahoganyTown_House2/scripts.inc"

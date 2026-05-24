@@ -69702,128 +69702,33 @@
         {
           "map": "MAP_OLIVINE_BAY",
           "base_label": "gOlivineBay",
-          "land_mons": {
-            "encounter_rate": 20,
-            "mons": [
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              },
-              {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
-              }
-            ]
-          },
           "water_mons": {
             "encounter_rate": 7,
             "mons": [
               {
                 "min_level": 20,
                 "max_level": 24,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_VOLTREL"
               },
               {
                 "min_level": 21,
                 "max_level": 25,
-                "species": "SPECIES_SHELLDER"
+                "species": "SPECIES_TENTACOOL"
               },
               {
                 "min_level": 22,
                 "max_level": 26,
-                "species": "SPECIES_TENTACRUEL"
+                "species": "SPECIES_SHELLDER"
               },
               {
-                "min_level": 20,
-                "max_level": 24,
-                "species": "SPECIES_VOLTREAN"
+                "min_level": 19,
+                "max_level": 22,
+                "species": "SPECIES_STARYU"
               },
               {
                 "min_level": 21,
-                "max_level": 25,
-                "species": "SPECIES_VOLTREAN"
-              }
-            ]
-          },
-          "rock_smash_mons": {
-            "encounter_rate": 60,
-            "mons": [
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_PINECO"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_EXEGGCUTE"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_SPINARAK"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_LEDYBA"
+                "max_level": 24,
+                "species": "SPECIES_STARYU"
               }
             ]
           },
@@ -69853,7 +69758,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_STARYU"
               },
               {
                 "min_level": 40,
@@ -69861,9 +69766,9 @@
                 "species": "SPECIES_KRABBY"
               },
               {
-                "min_level": 40,
+                "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_HORSEA"
               },
               {
                 "min_level": 40,
@@ -69873,12 +69778,12 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_STARYU"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_KRABBY"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_KINGLER"
               }
             ]
           }
