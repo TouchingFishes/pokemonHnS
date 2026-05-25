@@ -845,54 +845,53 @@ void RejectEggFromDayCare(void)
 static void AlterEggSpeciesWithIncenseItem(u16 *species, struct DayCare *daycare)
 {
     u16 motherItem, fatherItem;
-    if (*species == SPECIES_MLLOY || *species == SPECIES_VANILLITE || *species == SPECIES_TINKATUFF || *species == SPECIES_TINKATON || *species == SPECIES_TINKATINK || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
+//    if (*species == SPECIES_MLLOY || *species == SPECIES_VANILLITE || *species == SPECIES_TINKATUFF || *species == SPECIES_TINKATON || *species == SPECIES_TINKATINK || *species == SPECIES_DEINO || *species == SPECIES_HAPPINY || *species == SPECIES_ZWEILOUS || *species == SPECIES_VOLCARONA)
+    if (*species == SPECIES_HAPPINY)
     {
         motherItem = GetBoxMonData(&daycare->mons[0].mon, MON_DATA_HELD_ITEM);
         fatherItem = GetBoxMonData(&daycare->mons[1].mon, MON_DATA_HELD_ITEM);
-        if (*species == SPECIES_MLLOY && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
-        {
-            *species = SPECIES_WOBBUFFET;
-        }
-
-        if (*species == SPECIES_VANILLITE && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
-        {
-            *species = SPECIES_MARILL;
-        }
-
-        if (*species == SPECIES_TINKATUFF && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
-        {
-            *species = SPECIES_PURGISLUG;
-        }
-
-        if (*species == SPECIES_TINKATON && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
-        {
-            *species = SPECIES_CHIMECHO;
-        }
-
-        if (*species == SPECIES_TINKATINK && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
-        {
-            *species = SPECIES_SUDOWOODO;
-        }
-
-        if (*species == SPECIES_DEINO && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
-        {
-            *species = SPECIES_MR_MIME;
-        }
-
         if (*species == SPECIES_HAPPINY && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
         {
             *species = SPECIES_CHANSEY;
         }
+//        if (*species == SPECIES_MLLOY && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+//        {
+//            *species = SPECIES_WOBBUFFET;
+//        }
+//
+//        if (*species == SPECIES_VANILLITE && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+//        {
+//            *species = SPECIES_MARILL;
+//        }
 
-        if (*species == SPECIES_ZWEILOUS && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
-        {
-            *species = SPECIES_SNORLAX;
-        }
+//        if (*species == SPECIES_TINKATUFF && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+//        {
+//            *species = SPECIES_PURGISLUG;
+//        }
 
-        if (*species == SPECIES_VOLCARONA && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
-        {
-            *species = SPECIES_MANTINE;
-        }
+//        if (*species == SPECIES_TINKATON && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+//        {
+//            *species = SPECIES_CHIMECHO;
+//        }
+//
+//        if (*species == SPECIES_TINKATINK && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+//        {
+//            *species = SPECIES_SUDOWOODO;
+//        }
+//
+//        if (*species == SPECIES_DEINO && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+//        {
+//            *species = SPECIES_MR_MIME;
+//        }
+//        if (*species == SPECIES_ZWEILOUS && motherItem != ITEM_LAX_INCENSE && fatherItem != ITEM_LAX_INCENSE)
+//        {
+//            *species = SPECIES_SNORLAX;
+//        }
+//
+//        if (*species == SPECIES_VOLCARONA && motherItem != ITEM_SEA_INCENSE && fatherItem != ITEM_SEA_INCENSE)
+//        {
+//            *species = SPECIES_MANTINE;
+//        }
     }
 }
 
