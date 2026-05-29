@@ -909,6 +909,32 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_COLTON] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerName = _("COLTON"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Colton),
+    },
+
+
+    [TRAINER_MATT] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
+        .trainerPic = TRAINER_PIC_SWIMMER_M,
+        .trainerName = _("MATT"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Matt),
+    },
+
+
     [TRAINER_LEROY] =
     {
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
@@ -1234,6 +1260,19 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_ROMAN] =
+    {
+        .trainerClass = TRAINER_CLASS_RICH_BOY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
+        .trainerPic = TRAINER_PIC_RICH_BOY,
+        .trainerName = _("ROMAN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = ITEM_DEFAULT_MOVES(sParty_Roman),
+    },
+
+
     [TRAINER_SAMANTHA] =
     {
         .trainerClass = TRAINER_CLASS_BEAUTY,
@@ -1452,6 +1491,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Larry),
+    },
+
+
+    [TRAINER_VITO] =
+    {
+        .trainerClass = TRAINER_CLASS_POKEMANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_POKEMANIAC,
+        .trainerName = _("VITO"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Vito),
     },
 
 
@@ -2189,6 +2241,32 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_MONIKA] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
+        .trainerPic = TRAINER_PIC_EXPERT_F,
+        .trainerName = _("MONIKA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Monika),
+    },
+
+
+    [TRAINER_MARIK] =
+    {
+        .trainerClass = TRAINER_CLASS_EXPERT,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
+        .trainerPic = TRAINER_PIC_EXPERT_M,
+        .trainerName = _("MARIK"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Marik),
+    },
+
+
     [TRAINER_DON] =
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
@@ -2836,6 +2914,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Elaine),
+    },
+
+
+    [TRAINER_KEIRA] =
+    {
+        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
+        .trainerPic = TRAINER_PIC_SWIMMER_F,
+        .trainerName = _("KEIRA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Keira),
     },
 
 

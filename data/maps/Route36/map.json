@@ -114,19 +114,6 @@
       "flag": "FLAG_HIDE_SUDOWOODO"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
-      "x": 54,
-      "y": 12,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
-      "movement_range_x": 2,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_NIGHT_POKEMON"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GROWLITHE",
       "x": 57,
       "y": 13,
@@ -138,19 +125,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_DAY_POKEMON"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
-      "x": 58,
-      "y": 12,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
-      "movement_range_x": 1,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_NIGHT_POKEMON"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GROWLITHE",
@@ -193,8 +167,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
-      "x": 19,
-      "y": 9,
+      "x": 20,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -206,8 +180,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
-      "x": 20,
-      "y": 9,
+      "x": 21,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -231,22 +205,9 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GROWLITHE",
-      "x": 44,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
-      "movement_range_x": 3,
-      "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_DAY_POKEMON"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GASTLY",
-      "x": 29,
-      "y": 9,
+      "x": 30,
+      "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
       "movement_range_x": 1,
@@ -258,8 +219,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
-      "x": 44,
-      "y": 7,
+      "x": 54,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
       "movement_range_x": 3,
@@ -270,22 +231,9 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GROWLITHE",
-      "x": 44,
-      "y": 7,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_DOWN_LEFT",
-      "movement_range_x": 3,
-      "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_DAY_POKEMON"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GASTLY",
-      "x": 27,
-      "y": 5,
+      "x": 30,
+      "y": 1,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_COPY_PLAYER",
       "movement_range_x": 9,

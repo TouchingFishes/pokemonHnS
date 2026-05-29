@@ -77,8 +77,8 @@ Route27_EventScript_Item_SolarBeam::
     finditem ITEM_TM_SOLAR_BEAM
     end
 
-Route27_EventScript_Item_Revive::
-    finditem ITEM_REVIVE
+Route27_EventScript_Item_SignalBeam::
+    finditem ITEM_TM_SIGNAL_BEAM
     end
 
 Route27_EventScript_Fatman::
@@ -113,6 +113,11 @@ Route27_EventScript_Gilbert::
 Route27_EventScript_Jose::
 	trainerbattle_single TRAINER_JOSE Route27_Text_BirdKeeperJoseSeen, Route27_Text_BirdKeeperJoseBeaten
 	msgbox Route27_Text_BirdKeeperJoseAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route27_EventScript_Monika::
+	trainerbattle_single TRAINER_MONIKA Route27_Text_MonikaSeen, Route27_Text_MonikaBeaten
+	msgbox Route27_Text_MonikaAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route27_EventScript_Scott::
@@ -206,6 +211,25 @@ Route27_Text_BirdKeeperJoseBeaten:
 Route27_Text_BirdKeeperJoseAfter:
     .string "BIRD KEEPERS like me mimic bird\n"
     .string "whistles to command POKéMON.$"
+
+Route27_Text_MonikaSeen:
+	.string "You there.\p"
+	.string "I've been searching for someone\n"
+	.string "worth my time.\p"
+	.string "Show me your strength.$"
+
+Route27_Text_MonikaBeaten:
+	.string "Good...\p"
+	.string "You didn't disappoint.$"
+
+Route27_Text_MonikaAfter:
+	.string "Most trainers crumble under\n"
+	.string "pressure.\p"
+	.string "You stood your ground.\p"
+	.string "...\p"
+	.string "If you keep training like that,\n"
+	.string "you might go far.\p"
+	.string "Don't get complacent.$"
 
 TohjoFalls_Text_Sign:
     .string "TOHJO FALLS\p"

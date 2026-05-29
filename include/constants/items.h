@@ -390,7 +390,7 @@
 #define ITEM_TM63 351 //Avalanche
 #define ITEM_TM64 352 //Beat Up
 #define ITEM_TM65 353 //Cosmic Power - Ruins of Alph
-#define ITEM_TM66 354 //Signal Beam
+#define ITEM_TM66 354 //Signal Beam - Route 27
 #define ITEM_TM67 355 //Sweet Scent - Ilex Forest - Route 34 Gate House done
 #define ITEM_TM68 356 //Fire Punch - Goldenrod Mart done
 #define ITEM_TM69 357 //Zap Cannon - Power Plant

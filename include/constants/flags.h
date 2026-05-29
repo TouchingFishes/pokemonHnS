@@ -1155,7 +1155,7 @@
 #define FLAG_ITEM_ROUTE27_MOONSTONE                                 0x44E
 #define FLAG_ITEM_ROUTE27_SOLARBEAM                                 0x44F
 #define FLAG_ITEM_ROUTE27_RARECANDY                                 0x450
-#define FLAG_ITEM_ROUTE27_REVIVE                                    0x451
+#define FLAG_ITEM_ROUTE27_TM_SIGNAL_BEAM                            0x451
 #define FLAG_ITEM_TOHJOFALLS_HEART_SCALE                            0x452
 #define FLAG_ITEM_VICTORYROAD1_MAX_REVIVE                           0x453
 #define FLAG_ITEM_VICTORYROAD1_FULL_HEAL                            0x454

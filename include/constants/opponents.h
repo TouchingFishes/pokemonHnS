@@ -31,7 +31,7 @@
 #define TRAINER_SID                          27
 #define TRAINER_STANLY                       28
 #define TRAINER_REBECCA                      29
-#define TRAINER_MATT                         30 //unused in johto
+#define TRAINER_MATT                         30
 #define TRAINER_ZANDER                       31
 #define TRAINER_DEVIN                        32
 #define TRAINER_GRANT                        33
@@ -83,7 +83,7 @@
 #define TRAINER_EDGAR                        79
 #define TRAINER_ALBERT                       80
 #define TRAINER_SAMUEL                       81
-#define TRAINER_VITO                         82 //unused in johto
+#define TRAINER_VITO                         82
 #define TRAINER_OWEN                         83
 #define TRAINER_WILTON_2                     84 //unused in johto
 #define TRAINER_WILTON_3                     85 //unused in johto
@@ -94,7 +94,7 @@
 #define TRAINER_BARNEY                       90
 #define TRAINER_JODY                         91
 #define TRAINER_WENDY                        92
-#define TRAINER_KEIRA                        93 //unused in johto
+#define TRAINER_KEIRA                        93
 #define TRAINER_EMMA                         94
 #define TRAINER_GIOVANNI                     95
 #define TRAINER_HOPE                         96
@@ -127,18 +127,18 @@
 #define TRAINER_GRUNT_23                    123
 #define TRAINER_MELISSA                     124 //unused in johto
 #define TRAINER_SHEILA                      125 //unused in johto
-#define TRAINER_SHIRLEY                     126 //until here
+#define TRAINER_SHIRLEY                     126
 #define TRAINER_ARIANA_1                    127
 #define TRAINER_CONNIE                      128
 #define TRAINER_BRIDGET                     129
 #define TRAINER_OLIVIA                      130
 #define TRAINER_TIFFANY                     131
 #define TRAINER_ARIANA_2                    132
-#define TRAINER_JESSICA_3                   133
-#define TRAINER_JESSICA_4                   134
-#define TRAINER_JESSICA_5                   135
+#define TRAINER_MARIK                       133
+#define TRAINER_MONIKA                      134
+#define TRAINER_ROMAN                       135
 #define TRAINER_WINSTON_1                   136
-#define TRAINER_MOLLIE                      137
+#define TRAINER_COLTON                      137 //until here
 #define TRAINER_GARRET                      138
 #define TRAINER_WINSTON_2                   139
 #define TRAINER_WINSTON_3                   140
@@ -601,7 +601,7 @@
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
 #define TRAINER_RIVAL_CHARMANDER_3          599
-#define TRAINER_RIVAL_CHARMANDER_4           600
+#define TRAINER_RIVAL_CHARMANDER_4          600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
