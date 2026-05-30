@@ -4812,14 +4812,14 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 7,
     },
 
-    [NATIONAL_DEX_HAPPINY] =
+    [NATIONAL_DEX_BOMBIRDIER] =
     {
-        .categoryName = _("PLAYHOUSE"),
-        .height = 6,
-        .weight = 244,
-        .description = gHappinyPokedexText,
-        .pokemonScale = 448,
-        .pokemonOffset = 20,
+        .categoryName = _("ITEM DROP"),
+        .height = 15,
+        .weight = 429,
+        .description = gBombirdierPokedexText,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },

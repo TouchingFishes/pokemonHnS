@@ -458,7 +458,7 @@ const struct MonCoords gMonFrontPicCoords[] =
     [SPECIES_GEOWATT]     = { .size = MON_COORDS_SIZE(56, 64), .y_offset =  1 },
     [SPECIES_GLACEON]     = { .size = MON_COORDS_SIZE(64, 56), .y_offset = 10 },
     [SPECIES_GLISCOR]     = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  7 },
-    [SPECIES_HAPPINY]     = { .size = MON_COORDS_SIZE(32, 48), .y_offset = 12 },
+    [SPECIES_BOMBIRDIER]  = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     [SPECIES_HONCHKROW]   = { .size = MON_COORDS_SIZE(64, 56), .y_offset =  6 },
     [SPECIES_LEAFEON]     = { .size = MON_COORDS_SIZE(56, 48), .y_offset =  9 },
     [SPECIES_GEKOPON]     = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },

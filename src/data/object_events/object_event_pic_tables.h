@@ -6063,13 +6063,13 @@ static const struct SpriteFrameImage sPicTable_Gliscor[] = {
     overworld_frame(gObjectEventPic_Gliscor, 4, 4, 4),
     overworld_frame(gObjectEventPic_Gliscor, 4, 4, 5),
 };
-static const struct SpriteFrameImage sPicTable_Happiny[] = {
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 0),
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 1),
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 2),
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 3),
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 4),
-    overworld_frame(gObjectEventPic_Happiny, 4, 4, 5),
+static const struct SpriteFrameImage sPicTable_Bombirdier[] = {
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 0),
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 1),
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 2),
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 3),
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 4),
+    overworld_frame(gObjectEventPic_Bombirdier, 4, 4, 5),
 };
 static const struct SpriteFrameImage sPicTable_Honchkrow[] = {
     overworld_frame(gObjectEventPic_Honchkrow, 4, 4, 0),

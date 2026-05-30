@@ -2926,13 +2926,13 @@ extern const u32 gMonStillFrontPic_Snover[];
 extern const u8 gMonIcon_Snover[];
 extern const u8 gMonFootprint_Snover[];
 
-extern const u32 gMonFrontPic_Happiny[];
-extern const u32 gMonPalette_Happiny[];
-extern const u32 gMonBackPic_Happiny[];
-extern const u32 gMonShinyPalette_Happiny[];
-extern const u32 gMonStillFrontPic_Happiny[];
-extern const u8 gMonIcon_Happiny[];
-extern const u8 gMonFootprint_Happiny[];
+extern const u32 gMonFrontPic_Bombirdier[];
+extern const u32 gMonPalette_Bombirdier[];
+extern const u32 gMonBackPic_Bombirdier[];
+extern const u32 gMonShinyPalette_Bombirdier[];
+extern const u32 gMonStillFrontPic_Bombirdier[];
+extern const u8 gMonIcon_Bombirdier[];
+extern const u8 gMonFootprint_Bombirdier[];
 
 extern const u32 gMonFrontPic_Tangrowth[];
 extern const u32 gMonPalette_Tangrowth[];

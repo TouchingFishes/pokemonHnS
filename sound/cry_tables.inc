@@ -402,7 +402,7 @@ gCryTable::
 	cry Cry_Geowatt
 	cry Cry_Glaceon
 	cry Cry_Gliscor
-	cry Cry_Happiny
+	cry Cry_Bombirdier
 	cry Cry_Honchkrow
 	cry Cry_Leafeon
 	cry Cry_Gekopon
@@ -858,7 +858,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Geowatt
 	cry_reverse Cry_Glaceon
 	cry_reverse Cry_Gliscor
-	cry_reverse Cry_Happiny
+	cry_reverse Cry_Bombirdier
 	cry_reverse Cry_Honchkrow
 	cry_reverse Cry_Leafeon
 	cry_reverse Cry_Gekopon

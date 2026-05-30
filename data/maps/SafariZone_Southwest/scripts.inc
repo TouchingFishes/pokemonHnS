@@ -11,13 +11,12 @@ SafariZone_Southwest_EventScript_RestHouseSign::
 	msgbox SafariZone_Southwest_Text_RestHouseSign, MSGBOX_SIGN
 	end
 
-SafariZone_Southwest_EventScript_Happiny::
-	msgbox SafariZone_Southwest_EventScript_Happiny_Text, MSGBOX_NPC
+SafariZone_Southwest_EventScript_Chansey::
+	msgbox SafariZone_Southwest_EventScript_Chansey_Text, MSGBOX_NPC
 	end
 
-SafariZone_Southwest_EventScript_Happiny_Text:
+SafariZone_Southwest_EventScript_Chansey_Text:
 	.string "CHANSEY evolves by FRIENDSHIP to\n"
-	.string "BLISSEY. What about HAPPINNY?\l"
-	.string "How does it evolve?\p"
-	.string "Well, turns out that they have to hold\n"
-	.string "a LUCKY EGG while leveling up!$"
+	.string "BLISSEY. You would first need\l"
+	.string "to find one of course.\p"
+	.string "CHANSEY is incredibly rare!$"

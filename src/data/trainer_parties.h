@@ -13727,7 +13727,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Carrie[] = { //BeautyGro
     {
     .iv = 0,
     .lvl = 18,
-    .species = SPECIES_HAPPINY,
+    .species = SPECIES_SKITTY,
     },
 };
 
@@ -21566,16 +21566,16 @@ static const struct TrainerMonItemCustomMoves sParty_Karen[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 55,
-    .species = SPECIES_KROLUCARD,
+    .species = SPECIES_BOMBIRDIER,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_DRAIN_LIFE, MOVE_AERIAL_ACE, MOVE_EXTRASENSORY, MOVE_HAZE}
+    .moves = {MOVE_ROCK_SLIDE, MOVE_AERIAL_ACE, MOVE_FAINT_ATTACK, MOVE_HAZE}
     },
     {
     .iv = 255,
     .lvl = 57,
     .species = SPECIES_HOUNDOOM,
     .heldItem = ITEM_BLACK_GLASSES,
-    .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_IRON_TAIL, MOVE_REVERSAL}
+    .moves = {MOVE_FLAMETHROWER, MOVE_DARK_PULSE, MOVE_IRON_TAIL, MOVE_REVERSAL}
     },
 };
 
@@ -21583,17 +21583,17 @@ static const struct TrainerMonItemCustomMoves sParty_Karen[] = { //EliteFourGrou
 static const struct TrainerMonItemCustomMoves sParty_Karen2[] = { //EliteFourGroup
     {
     .iv = 255,
-    .lvl = 68,
-    .species = SPECIES_WEAVILE,
-    .heldItem = ITEM_BLACK_GLASSES,
-    .moves = {MOVE_BRICK_BREAK, MOVE_METAL_CLAW, MOVE_BEAT_UP, MOVE_BLIZZARD}
-    },
-    {
-    .iv = 255,
     .lvl = 67,
     .species = SPECIES_UMBREON,
     .heldItem = ITEM_SITRUS_BERRY,
     .moves = {MOVE_GROWTH, MOVE_SHADOW_BALL, MOVE_HIDDEN_POWER, MOVE_BATON_PASS}
+    },
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_KROLUCARD,
+    .heldItem = ITEM_BLACK_GLASSES,
+    .moves = {MOVE_DRAIN_LIFE, MOVE_SILVER_WIND, MOVE_EXTRASENSORY, MOVE_DARK_PULSE}
     },
     {
     .iv = 255,
@@ -21605,9 +21605,9 @@ static const struct TrainerMonItemCustomMoves sParty_Karen2[] = { //EliteFourGro
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_KROLUCARD,
+    .species = SPECIES_BOMBIRDIER,
     .heldItem = ITEM_SHARP_BEAK,
-    .moves = {MOVE_SKY_ATTACK, MOVE_PURSUIT, MOVE_SWAGGER, MOVE_PSYCH_UP}
+    .moves = {MOVE_STONE_EDGE, MOVE_SKY_ATTACK, MOVE_NIGHT_SLASH, MOVE_SOFT_BOILED}
     },
     {
     .iv = 255,
@@ -21621,7 +21621,7 @@ static const struct TrainerMonItemCustomMoves sParty_Karen2[] = { //EliteFourGro
     .lvl = 69,
     .species = SPECIES_HOUNDOOM,
     .heldItem = ITEM_CHARCOAL,
-    .moves = {MOVE_FLAMETHROWER, MOVE_CRUNCH, MOVE_IRON_TAIL, MOVE_HIDDEN_POWER}
+    .moves = {MOVE_FLAMETHROWER, MOVE_DARK_PULSE, MOVE_IRON_TAIL, MOVE_HIDDEN_POWER}
     },
 };
 

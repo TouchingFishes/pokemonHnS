@@ -2383,11 +2383,11 @@ const u8 gGliscorPokedexText[] = _(
     "soundless. When the chance presents\n"
     "itself, it swoops!");
 
-const u8 gHappinyPokedexText[] = _(
-    "It carries a round white rock in its\n"
-    "belly pouch. If it gets along well with\n"
-    "someone, it will sometimes give that\n"
-    "person the rock.");
+const u8 gBombirdierPokedexText[] = _(
+    "BOMBIRDIER uses the apron on its\n"
+    "chest to bundle up food, which it\n"
+    "carries back to its nest. It enjoys\n"
+    "dropping things that make loud noises.");
 
 const u8 gHonchkrowPokedexText[] = _(
     "Becoming active at night, it is known\n"

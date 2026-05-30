@@ -2187,7 +2187,7 @@ $(OBJEVENTGFXDIR)/pokemon/followers/glaceon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/followers/gliscor.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/followers/happiny.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/followers/bombirdier.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/followers/honchkrow.4bpp: %.4bpp: %.png

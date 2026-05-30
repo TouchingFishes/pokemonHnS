@@ -5062,11 +5062,9 @@ static const union AnimCmd sAnim_Deino_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Happiny_1[] =
+static const union AnimCmd sAnim_Bombirdier_1[] =
 {
     ANIMCMD_FRAME(0, 30),
-    ANIMCMD_FRAME(1, 30),
-    ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
 
@@ -5865,7 +5863,7 @@ SINGLE_ANIMATION(Froslass);
 SINGLE_ANIMATION(Geowatt);
 SINGLE_ANIMATION(Glaceon);
 SINGLE_ANIMATION(Gliscor);
-SINGLE_ANIMATION(Happiny);
+SINGLE_ANIMATION(Bombirdier);
 SINGLE_ANIMATION(Honchkrow);
 SINGLE_ANIMATION(Leafeon);
 SINGLE_ANIMATION(Gekopon);
@@ -6388,7 +6386,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_TINKATON] = sAnims_Tinkaton,
     [SPECIES_TINKATINK] = sAnims_Tinkatink,
     [SPECIES_DEINO] = sAnims_Deino,
-    [SPECIES_HAPPINY] = sAnims_Happiny,
+    [SPECIES_BOMBIRDIER] = sAnims_Bombirdier,
     [SPECIES_ZWEILOUS] = sAnims_Zweilous,
     [SPECIES_URSALUNA] = sAnims_Ursaluna,
     [SPECIES_DEOXYS_ATTACK] = sAnims_DeoxysA,

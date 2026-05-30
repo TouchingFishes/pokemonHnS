@@ -346,7 +346,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/growlithe.aif sound/direc
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vanilluxe.aif sound/direct_sound_samples/cries/vanilluxe.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/larvicid.aif sound/direct_sound_samples/cries/larvicid.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/gyarados.aif sound/direct_sound_samples/cries/gyarados.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/happiny.aif sound/direct_sound_samples/cries/happiny.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/bombirdier.aif sound/direct_sound_samples/cries/bombirdier.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/hariyama.aif sound/direct_sound_samples/cries/hariyama.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/haunter.aif sound/direct_sound_samples/cries/haunter.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/heracross.aif sound/direct_sound_samples/cries/heracross.bin --compress

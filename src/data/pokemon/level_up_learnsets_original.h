@@ -5899,12 +5899,16 @@ static const u16 sGliscorLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sHappinyLevelUpLearnset_Original[] = {
-    LEVEL_UP_MOVE( 1, MOVE_POUND),
-    LEVEL_UP_MOVE( 1, MOVE_MIMIC),
-    LEVEL_UP_MOVE( 1, MOVE_CHARM),
-    LEVEL_UP_MOVE( 9, MOVE_REFRESH),
-    LEVEL_UP_MOVE(12, MOVE_SWEET_KISS),
+static const u16 sBombirdierLevelUpLearnset_Original[] = {
+    LEVEL_UP_MOVE( 1, MOVE_PECK),
+    LEVEL_UP_MOVE( 4, MOVE_LEER),
+    LEVEL_UP_MOVE( 8, MOVE_PURSUIT),
+    LEVEL_UP_MOVE(13, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE(19, MOVE_WHIRLWIND),
+    LEVEL_UP_MOVE(26, MOVE_WING_ATTACK),
+    LEVEL_UP_MOVE(34, MOVE_ROCK_TOMB),
+    LEVEL_UP_MOVE(43, MOVE_TORMENT),
+    LEVEL_UP_MOVE(53, MOVE_ROCK_SLIDE),
     LEVEL_UP_END
 };
 

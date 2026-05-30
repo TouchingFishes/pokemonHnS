@@ -1995,8 +1995,8 @@ Cry_Gliscor::
 	.incbin "sound/direct_sound_samples/cries/gliscor.bin"
 
 	.align 2
-Cry_Happiny::
-	.incbin "sound/direct_sound_samples/cries/happiny.bin"
+Cry_Bombirdier::
+	.incbin "sound/direct_sound_samples/cries/bombirdier.bin"
 
 	.align 2
 Cry_Honchkrow::

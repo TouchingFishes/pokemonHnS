@@ -1441,6 +1441,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_CURSE)
                                 | TUTOR(MOVE_TRI_ATTACK)
                                 | TUTOR(MOVE_EXPLOSION)
+                                | TUTOR(MOVE_SOFT_BOILED)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_PSYCH_UP)
@@ -1453,6 +1454,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_CURSE)
                                 | TUTOR(MOVE_TRI_ATTACK)
                                 | TUTOR(MOVE_EXPLOSION)
+                                | TUTOR(MOVE_SOFT_BOILED)
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_PSYCH_UP)
@@ -4374,7 +4376,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
-    [SPECIES_RAELIC]         = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_RAELIC]           = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
                                 | TUTOR(MOVE_ROCK_SLIDE)
@@ -5806,23 +5808,17 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
-    [SPECIES_HAPPINY]          = (TUTOR(MOVE_BODY_SLAM)
+    [SPECIES_BOMBIRDIER]       = (TUTOR(MOVE_BODY_SLAM)
                                 | TUTOR(MOVE_DOUBLE_EDGE)
-                                | TUTOR(MOVE_COUNTER)
                                 | TUTOR(MOVE_SEISMIC_TOSS)
                                 | TUTOR(MOVE_CURSE)
-                                | TUTOR(MOVE_METRONOME)
                                 | TUTOR(MOVE_SOFT_BOILED)
-                                | TUTOR(MOVE_THUNDER_WAVE)
                                 | TUTOR(MOVE_SUBSTITUTE)
-                                | TUTOR(MOVE_ROLLOUT)
-                                | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
-                                | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
                                 | TUTOR(MOVE_MUD_SLAP)
                                 | TUTOR(MOVE_SWAGGER)
-                                | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_HONCHKROW]        = (TUTOR(MOVE_DOUBLE_EDGE)

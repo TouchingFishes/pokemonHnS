@@ -6209,9 +6209,9 @@ const struct FacilityMon gBattleFrontierMonsSplit[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_SERIOUS
     },
-    [FRONTIER_MON_HAPPINY_1] = {
-        .species = SPECIES_HAPPINY,
-        .moves = {MOVE_SWEET_KISS, MOVE_REFRESH, MOVE_ATTRACT, MOVE_MIMIC},
+    [FRONTIER_MON_BOMBIRDIER_1] = {
+        .species = SPECIES_BOMBIRDIER,
+        .moves = {MOVE_WING_ATTACK, MOVE_ROCK_TOMB, MOVE_ATTRACT, MOVE_SOFT_BOILED},
         .itemTableId = BATTLE_FRONTIER_ITEM_FOCUS_BAND,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
@@ -12646,9 +12646,9 @@ const struct FacilityMon gBattleFrontierMons[NUM_FRONTIER_MONS] =
         .evSpread = F_EV_SPREAD_SP_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_SERIOUS
     },
-    [FRONTIER_MON_HAPPINY_1] = {
-        .species = SPECIES_HAPPINY,
-        .moves = {MOVE_SWEET_KISS, MOVE_REFRESH, MOVE_ATTRACT, MOVE_MIMIC},
+    [FRONTIER_MON_BOMBIRDIER_1] = {
+        .species = SPECIES_BOMBIRDIER,
+        .moves = {MOVE_ROCK_SLIDE, MOVE_AERIAL_ACE, MOVE_ATTRACT, MOVE_KNOCK_OFF},
         .itemTableId = BATTLE_FRONTIER_ITEM_FOCUS_BAND,
         .evSpread = F_EV_SPREAD_ATTACK | F_EV_SPREAD_HP,
         .nature = NATURE_DOCILE
