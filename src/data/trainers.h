@@ -3671,16 +3671,16 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_SIDNEY] =
+    [TRAINER_DALLAS] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SUSPICIOUS_2,
         .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _("SIDNEY"),
+        .trainerName = _("DALLAS"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Sidney),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Dallas),
     },
 
 

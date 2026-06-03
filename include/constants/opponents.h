@@ -114,7 +114,7 @@
 #define TRAINER_VALERIE_2                   110 //unused in johto
 #define TRAINER_VALERIE_3                   111 //unused in johto
 #define TRAINER_VALERIE_4                   112 //unused in johto
-#define TRAINER_VALERIE_5                   113 //unused in johto
+#define TRAINER_VALERIE_5                   113 //unused in johto //sheila is an unsued name
 #define TRAINER_GRUNT_18                    114
 #define TRAINER_KIPP                        115
 #define TRAINER_WAI                         116
@@ -126,7 +126,7 @@
 #define TRAINER_GRUNT_22                    122
 #define TRAINER_GRUNT_23                    123
 #define TRAINER_MELISSA                     124 //unused in johto
-#define TRAINER_SHEILA                      125 //unused in johto
+#define TRAINER_DALLAS                      125 //unused in johto
 #define TRAINER_SHIRLEY                     126
 #define TRAINER_ARIANA_1                    127
 #define TRAINER_CONNIE                      128

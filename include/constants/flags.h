@@ -494,11 +494,11 @@
 #define FLAG_DEFEATED_LATIAS_OR_LATIOS       0x1C8
 #define FLAG_CAUGHT_LATIAS_OR_LATIOS         0x1C9
 #define FLAG_CAUGHT_MEW                      0x1CA
-#define FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE 0x1CB
-#define FLAG_MET_SCOTT_IN_VERDANTURF         0x1CC
-#define FLAG_MET_SCOTT_IN_FALLARBOR          0x1CD
-#define FLAG_MET_SCOTT_IN_LILYCOVE           0x1CE
-#define FLAG_MET_SCOTT_IN_EVERGRANDE         0x1CF
+#define FLAG_MET_SCOTT_AFTER_OBTAINING_STONE_BADGE 0x1CB //unused
+#define FLAG_MET_SCOTT_IN_VERDANTURF         0x1CC //unused
+#define FLAG_MET_SCOTT_IN_FALLARBOR          0x1CD //unused
+#define FLAG_MET_SCOTT_IN_LILYCOVE           0x1CE //unused
+#define FLAG_MET_SCOTT_IN_EVERGRANDE         0x1CF //unused
 #define FLAG_MET_SCOTT_ON_SS_TIDAL           0x1D0
 #define FLAG_SCOTT_GIVES_BATTLE_POINTS       0x1D1
 #define FLAG_COLLECTED_ALL_GOLD_SYMBOLS      0x1D2
@@ -1166,7 +1166,7 @@
 #define FLAG_ITEM_VICTORYROAD3_RARE_CANDY                           0x459
 #define FLAG_ITEM_VICTORYROAD3_MAX_ETHER                            0x45A
 #define FLAG_ITEM_VICTORYROAD3_ULTRA_BALL                           0x45B
-#define FLAG_ITEM_ICEPATH4_TM_BLIZZARD                              0x45C
+#define FLAG_ITEM_ICEPATH4_TM_AVALANCHE                             0x45C
 #define FLAG_ITEM_ROCKTUNNEL1_TM_FACADE                             0x45D
 #define FLAG_ITEM_ROCKTUNNEL1_ELIXIR                                0x45E
 #define FLAG_ITEM_ROCKTUNNEL2_IRON                                  0x45F
