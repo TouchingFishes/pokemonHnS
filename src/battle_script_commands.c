@@ -8003,7 +8003,7 @@ static void Cmd_setmultihitcounter(void)
     {
         gMultiHitCounter = 5;
     }
-    if (gBattlescriptCurrInstr[1])
+    else if (gBattlescriptCurrInstr[1])
     {
         gMultiHitCounter = gBattlescriptCurrInstr[1];
     }
