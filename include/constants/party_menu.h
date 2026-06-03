@@ -33,7 +33,7 @@
 #define TUTOR_MOVE_SNORE           18
 #define TUTOR_MOVE_ICY_WIND        19
 #define TUTOR_MOVE_ENDURE          20
-#define TUTOR_MOVE_MUD_SLAP        21
+#define TUTOR_MOVE_METAL_CLAW      21
 #define TUTOR_MOVE_ICE_BALL        22
 #define TUTOR_MOVE_SWAGGER         23
 #define TUTOR_MOVE_ACROBATICS      24
@@ -46,7 +46,8 @@
 #define TUTOR_MOVE_BLAST_BURN      31
 #define TUTOR_MOVE_HYDRO_CANNON    32
 #define TUTOR_MOVE_HEADBUTT        7
-#define TUTOR_MOVE_COUNT           34
+#define TUTOR_MOVE_HEAT_WAVE       34
+#define TUTOR_MOVE_COUNT           35
 
 #define PARTY_LAYOUT_SINGLE          0
 #define PARTY_LAYOUT_DOUBLE          1
