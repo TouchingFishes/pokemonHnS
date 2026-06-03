@@ -7998,7 +7998,11 @@ static void Cmd_confuseifrepeatingattackends(void)
 }
 
 static void Cmd_setmultihitcounter(void)
-{
+{   
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
+    {
+        gMultiHitCounter = 5;
+    }
     if (gBattlescriptCurrInstr[1])
     {
         gMultiHitCounter = gBattlescriptCurrInstr[1];
