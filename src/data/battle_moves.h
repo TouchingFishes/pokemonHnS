@@ -2047,7 +2047,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_DIZZY_PUNCH] =
     {
         .effect = EFFECT_CONFUSE_HIT,
-        .power = 70,
+        .power = 85, //70
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
@@ -3601,11 +3601,11 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     [MOVE_HEAT_WAVE] =
     {
         .effect = EFFECT_BURN_HIT,
-        .power = 100, //95
+        .power = 100,
         .type = TYPE_FIRE,
         .accuracy = 90,
         .pp = 10,
-        .secondaryEffectChance = 35, //10
+        .secondaryEffectChance = 20, //10
         .target = MOVE_TARGET_BOTH,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
