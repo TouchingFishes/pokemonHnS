@@ -4621,7 +4621,6 @@ const union {
         .SIGNAL_BEAM = TRUE,
         .ZAP_CANNON = TRUE,
         .FALSE_SWIPE = TRUE,
-        .FLAME_CHARGE = TRUE,
     } },
 
     [SPECIES_PORYGON] = { .learnset = {

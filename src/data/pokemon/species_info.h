@@ -9084,14 +9084,17 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_NOSEPASS] =
+    [SPECIES_NOSEPASS] = //modified
     {
-        .baseHP        = 30,
+        .baseHP        = 50, //+20
+        .baseHP_old    = 30,
         .baseAttack    = 45,
         .baseDefense   = 135,
         .baseSpeed     = 30,
-        .baseSpAttack  = 45,
-        .baseSpDefense = 90,
+        .baseSpAttack  = 75, //+30
+        .baseSpAttack_old = 45,
+        .baseSpDefense = 110, //+20
+        .baseSpDefense_old = 90,
         .types = { TYPE_ROCK, TYPE_ROCK },
         .catchRate = 255,
         .expYield = 108,
@@ -9108,7 +9111,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MINERAL, EGG_GROUP_MINERAL },
-        .abilities = {ABILITY_STURDY, ABILITY_MAGNET_PULL},
+        .abilities = {ABILITY_TRANSISTOR, ABILITY_NONE},
         .safariZoneFleeRate = 0,
         .bodyColor = BODY_COLOR_GRAY,
         .noFlip = FALSE,
