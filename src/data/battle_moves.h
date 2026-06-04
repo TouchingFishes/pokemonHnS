@@ -5075,7 +5075,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_DRAGON_PULSE] =
     {
-        .power = 85,
+        .power = 95,
         .effect = EFFECT_HIT,
         .type = TYPE_DRAGON,
         .accuracy = 100,
@@ -5478,7 +5478,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_MAGICAL_FIRE] =
     {
-        .effect = EFFECT_BURN_HIT,
+        .effect = EFFECT_SPECIAL_ATTACK_DOWN_HIT,
         .power = 75, //65
         .type = TYPE_FIRE,
         .accuracy = 100,
@@ -5504,8 +5504,8 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_BARRIER_BASH] =
     {
-        .effect = EFFECT_HIT,
-        .power = 70,
+        .effect = EFFECT_DEFENSE_UP_HIT,
+        .power = 90,
         .type = TYPE_PSYCHIC,
         .accuracy = 90,
         .pp = 10,
