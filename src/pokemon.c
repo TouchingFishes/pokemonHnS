@@ -6708,13 +6708,11 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     }
     if (attacker->ability == ABILITY_HUSTLE)
         attack = (150 * attack) / 100;
-    if (attacker->ability == ABILITY_CACOPHONY && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_UPROAR || gCurrentMove == MOVE_HYPER_VOICE || gCurrentMove == MOVE_BUG_BUZZ))
-        spAttack = (150 * spAttack) / 100;
     if (attacker->ability == ABILITY_PLUS && ABILITY_ON_FIELD2(ABILITY_MINUS))
         spAttack = (150 * spAttack) / 100;
     if (attacker->ability == ABILITY_MINUS && ABILITY_ON_FIELD2(ABILITY_PLUS))
         spAttack = (150 * spAttack) / 100;
-    if ((gSaveBlock2Ptr->optionsDifficulty == 2))
+    /*if ((gSaveBlock2Ptr->optionsDifficulty == 2))
     {
         // Sceptile gets Thick Fat to reduce dmg from their weaknesses, and a 10% dmg increase.
         if ((attacker->species == SPECIES_SCEPTILE) && (attackerHoldEffect == HOLD_EFFECT_HARD_MODE_MODIFIER))
@@ -6846,11 +6844,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         {
             spAttack = (120 * spAttack) / 100;
         }
-    }
+    }*/
         
     if (attacker->ability == ABILITY_GUTS && attacker->status1)
         attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_TRANSISTOR && moveType == TYPE_ELECTRIC)
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_MINDS_EYE && moveType == TYPE_GHOST)
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_ROCKY_CARGO && moveType == TYPE_ROCK)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
@@ -6870,6 +6872,25 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_CACOPHONY && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_UPROAR || gCurrentMove == MOVE_HYPER_VOICE || gCurrentMove == MOVE_BUG_BUZZ)
+        || gCurrentMove == MOVE_BOOMBURST )
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_RECKLESS && (gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL || gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL_IF_MISS 
+         || gBattleMoves[gCurrentMove].effect == EFFECT_DOUBLE_EDGE))
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_IRON_FIST && (gCurrentMove == MOVE_ICE_PUNCH || gCurrentMove == MOVE_FIRE_PUNCH || gCurrentMove == MOVE_THUNDER_PUNCH || gCurrentMove == MOVE_SHADOW_PUNCH 
+         || gCurrentMove == MOVE_DIZZY_PUNCH || gCurrentMove == MOVE_SKY_UPPERCUT || gCurrentMove == MOVE_COMET_PUNCH || gCurrentMove == MOVE_MEGA_PUNCH  || gCurrentMove == MOVE_FOCUS_PUNCH
+         || gCurrentMove == MOVE_METEOR_MASH  || gCurrentMove == MOVE_MACH_PUNCH  || gCurrentMove == MOVE_DYNAMIC_PUNCH))
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_SHARPNESS && (gCurrentMove == MOVE_AERIAL_ACE || gCurrentMove == MOVE_CROSS_POISON || gCurrentMove == MOVE_X_SCISSOR || gCurrentMove == MOVE_LEAF_BLADE 
+         || gCurrentMove == MOVE_AIR_SLASH || gCurrentMove == MOVE_NIGHT_SLASH || gCurrentMove == MOVE_PSYCHO_CUT || gCurrentMove == MOVE_RAZOR_LEAF  || gCurrentMove == MOVE_SLASH
+         || gCurrentMove == MOVE_AIR_CUTTER  || gCurrentMove == MOVE_CUT  || gCurrentMove == MOVE_FURY_CUTTER))
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SANDSTORM) && attacker->ability == ABILITY_SAND_FORCE && (type == TYPE_ROCK || type == TYPE_GROUND || type == TYPE_STEEL))
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
+
     if ((attacker->species == SPECIES_SPINDA) && ((Random() % 100) <= 2))
         gBattleMovePower = (200 * gBattleMovePower) / 100;
     //if ((attacker->species == SPECIES_GROUDON) && (moveType == TYPE_FIRE))
@@ -7109,9 +7130,21 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
                     }
                 }
             }
-            // Flash fire triggered
+            // Flash Fire triggered
             if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
                 damage = (15 * damage) / 10;
+            
+            // Tinted Lens triggered
+            if (attacker->ability == ABILITY_TINTED_LENS && (gMoveResultFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE))
+                damage = (damage * 2);
+            
+            // Multiscale triggered
+            if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)
+                damage /= 2;
+
+            // Solid Rock and Filter triggered
+            if ((defender->ability == ABILITY_FILTER || defender->ability == ABILITY_SOLID_ROCK) && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE))
+                damage = (damage * 75) / 100;
 
             return damage + 2;
         }
@@ -7154,6 +7187,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         }
         if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
             damage = (15 * damage) / 10;
+
+        if (attacker->ability == ABILITY_TINTED_LENS && (gMoveResultFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE))
+            damage = (damage * 2);
+        
+        if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)
+                damage /= 2;
+
+        if ((defender->ability == ABILITY_FILTER || defender->ability == ABILITY_SOLID_ROCK) && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE))
+            damage = (damage * 75) / 100;
 
         return damage + 2;
 }

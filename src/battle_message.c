@@ -504,6 +504,14 @@ const u8 gText_EmptyString3[] = _("");
 static const u8 sText_YouThrowABallNowRight[] = _("You throw a BALL now, right?\nI… I'll do my best!");
 static const u8 sText_PkmnDroppedItem[] = _("{B_OPPONENT_MON1_NAME} dropped\nits {B_LAST_ITEM}!{WAIT_SE}\p");
 static const u8 sText_BagIsFull[] = _("{B_OPPONENT_MON1_NAME} dropped\n{B_LAST_ITEM}!{WAIT_SE}\pBut your bag is full!\p");
+static const u8 sText_PkmnsXWhippedUpHailstorm[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s {B_SCR_ACTIVE_ABILITY}\nwhipped up a hailstorm!");
+static const u8 sText_AttackerAbilityRaise[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_ATK_ABILITY}\nraised its {B_BUFF1}!");
+static const u8 sText_CursedBodyDisabled[] = _("{B_ATK_NAME_WITH_PREFIX}'s {B_BUFF1} was disabled\nby {B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}!");
+static const u8 sText_AftermathDmg[] = _("{B_ATK_NAME_WITH_PREFIX} is hurt by\n{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}!");
+static const u8 sText_PkmnsAbilityPreventsAbility[] = _("{B_SCR_ACTIVE_NAME_WITH_PREFIX}'s ABILITY\nprevents {B_DEF_NAME_WITH_PREFIX}'s\l{B_DEF_ABILITY} from working!");
+static const u8 sText_TargetAbilityRaisedStat[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nraised its {B_BUFF1}!");
+static const u8 sText_TargetAbilityLoweredStat[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_DEF_ABILITY}\nlowered its {B_BUFF1}!");
+static const u8 sText_TargetStatWontGoHigher[] = _("{B_DEF_NAME_WITH_PREFIX}'s {B_BUFF1}\nwon't go higher!");
 
 // early declaration of strings
 static const u8 sText_PkmnIncapableOfPower[];
@@ -901,6 +909,14 @@ const u8 * const gBattleStringsTable[BATTLESTRINGS_COUNT - BATTLESTRINGS_TABLE_S
     [STRINGID_PKMNGAINEDEXPALL - BATTLESTRINGS_TABLE_START] = sText_PkmnGainedEXPAll,
     [STRINGID_BAGISFULL - BATTLESTRINGS_TABLE_START] = sText_BagIsFull,
     [STRINGID_PKMNDROPPEDITEM - BATTLESTRINGS_TABLE_START] = sText_PkmnDroppedItem,
+    [STRINGID_PKMNSXWHIPPEDUPHAILSTORM - BATTLESTRINGS_TABLE_START] = sText_PkmnsXWhippedUpHailstorm,
+    [STRINGID_ATTACKERABILITYRAISE - BATTLESTRINGS_TABLE_START] = sText_AttackerAbilityRaise,
+    [STRINGID_CUSEDBODYDISABLED - BATTLESTRINGS_TABLE_START] = sText_CursedBodyDisabled,
+    [STRINGID_AFTERMATHDMG - BATTLESTRINGS_TABLE_START] = sText_AftermathDmg,
+    [STRINGID_PKMNSABILITYPREVENTSABILITY - BATTLESTRINGS_TABLE_START]   = sText_PkmnsAbilityPreventsAbility,
+    [STRINGID_TARGETABILITYSTATRAISE - BATTLESTRINGS_TABLE_START]        = sText_TargetAbilityRaisedStat,
+    [STRINGID_TARGETABILITYSTATLOWER - BATTLESTRINGS_TABLE_START]        = sText_TargetAbilityLoweredStat,
+    [STRINGID_TARGETSTATWONTGOHIGHER - BATTLESTRINGS_TABLE_START]        = sText_TargetStatWontGoHigher
 };
 
 const u16 gMissStringIds[] =

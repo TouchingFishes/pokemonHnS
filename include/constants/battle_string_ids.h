@@ -388,9 +388,18 @@
 #define STRINGID_PKMNGAINEDEXPALL           387
 #define STRINGID_PKMNDROPPEDITEM            388
 #define STRINGID_BAGISFULL                  389
+//new ability strins
+#define STRINGID_PKMNSXWHIPPEDUPHAILSTORM   390
+#define STRINGID_ATTACKERABILITYRAISE       391
+#define STRINGID_CUSEDBODYDISABLED          392
+#define STRINGID_AFTERMATHDMG               393
+#define STRINGID_PKMNSABILITYPREVENTSABILITY 394
+#define STRINGID_TARGETABILITYSTATRAISE     395
+#define STRINGID_TARGETABILITYSTATLOWER     396
+#define STRINGID_TARGETSTATWONTGOHIGHER     397
 
 
-#define BATTLESTRINGS_COUNT                 390
+#define BATTLESTRINGS_COUNT                 398
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

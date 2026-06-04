@@ -2241,21 +2241,27 @@ AI_CV_SpitUp_End:
 	end
 
 AI_CV_Hail:
+	if_user_faster AI_CV_Hail2
+	get_ability AI_USER
+	if_equal ABILITY_SLUSH_RUSH, AI_CV_Hail3
+AI_CV_Hail2:
 	if_hp_less_than AI_USER, 40, AI_CV_Hail_ScoreDown1
 	get_weather
-	if_equal AI_WEATHER_SUN, AI_CV_Hail2
-	if_equal AI_WEATHER_RAIN, AI_CV_Hail2
-	if_equal AI_WEATHER_SANDSTORM, AI_CV_Hail2
+	if_equal AI_WEATHER_SUN, AI_CV_Hail3
+	if_equal AI_WEATHER_RAIN, AI_CV_Hail3
+	if_equal AI_WEATHER_SANDSTORM, AI_CV_Hail3
+	get_ability AI_USER
+	if_equal ABILITY_ICE_BODY, AI_CV_Hail3
 	goto AI_CV_Hail_End
 
-AI_CV_Hail2:
+AI_CV_Hail3:
 	score +1
 	goto AI_CV_Hail_End
 
 AI_CV_Hail_ScoreDown1:
 	score -1
 AI_CV_Hail_End:
-	end
+	end	
 
 @ BUG: Facade score is increased if the target is statused, but should be if the user is
 AI_CV_Facade:
@@ -2362,8 +2368,10 @@ AI_CV_ChangeSelfAbility_AbilitiesToEncourage:
 	.byte ABILITY_WONDER_GUARD
 	.byte ABILITY_EFFECT_SPORE
 	.byte ABILITY_SWIFT_SWIM
+	.byte ABILITY_SLUSH_RUSH
 	.byte ABILITY_HUGE_POWER
 	.byte ABILITY_RAIN_DISH
+	.byte ABILITY_ICE_BODY
 	.byte ABILITY_CUTE_CHARM
 	.byte ABILITY_SHED_SKIN
 	.byte ABILITY_MARVEL_SCALE

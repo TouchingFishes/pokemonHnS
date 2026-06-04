@@ -1220,6 +1220,9 @@ static void Cmd_accuracycheck(void)
         if (holdEffect == HOLD_EFFECT_EVASION_UP)
             calc = (calc * (100 - param)) / 100;
 
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_NO_GUARD || gBattleMons[gBattlerTarget].ability == ABILITY_NO_GUARD)
+            calc = 100;
+        
         // final calculation
         if ((Random() % 100 + 1) > calc)
         {
@@ -1493,6 +1496,8 @@ static void ModulateDmgByType(u8 multiplier)
     }
 }
 
+
+//ABILITY_SCRAPPY probably goes here
 s32 GetTypeEffectiveness(struct Pokemon *mon, u8 moveType) {
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
     u8 type1 = GetTypeBySpecies(species, 1);
@@ -1905,8 +1910,13 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
 
     moveType = CheckAbilityChangeMoveType(move);
 
-    // check stab
-    if (IS_BATTLER_OF_TYPE(attacker, moveType))
+    // check stab & adaptability here
+    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
+    {
+        gBattleMoveDamage = gBattleMoveDamage * 20;
+        gBattleMoveDamage = gBattleMoveDamage / 10;
+    }
+    else if (IS_BATTLER_OF_TYPE(attacker, moveType))
     {
         gBattleMoveDamage = gBattleMoveDamage * 15;
         gBattleMoveDamage = gBattleMoveDamage / 10;
@@ -8306,6 +8316,7 @@ static void Cmd_setlightscreen(void)
     gBattlescriptCurrInstr++;
 }
 
+//ABILITY_NO_GUARD should probably go in here
 static void Cmd_tryKO(void)
 {
     u8 holdEffect, param;
@@ -8431,6 +8442,10 @@ static void Cmd_weatherdamage(void)
                 && gBattleMons[gBattlerAttacker].type2 != TYPE_STEEL
                 && gBattleMons[gBattlerAttacker].type2 != TYPE_GROUND
                 && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_VEIL
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_FORCE
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SAND_STREAM
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_OVERCOAT
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERGROUND)
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERWATER))
             {
@@ -8446,6 +8461,11 @@ static void Cmd_weatherdamage(void)
         if (gBattleWeather & B_WEATHER_HAIL)
         {
             if (!IS_BATTLER_OF_TYPE(gBattlerAttacker, TYPE_ICE)
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SLUSH_RUSH
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_ICE_BODY
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_SNOW_WARNING
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_OVERCOAT
+                && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERGROUND)
                 && !(gStatuses3[gBattlerAttacker] & STATUS3_UNDERWATER))
             {

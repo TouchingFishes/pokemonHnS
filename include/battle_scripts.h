@@ -231,4 +231,15 @@ extern const u8 BattleScript_Safari_SameSpeciesCaptureBlocked[];
 
 extern const u8 BattleScript_ItemDropped[];
 
+//new abilities
+extern const u8 BattleScript_SnowWarningActivates[];
+extern const u8 BattleScript_AttackerAbilityStatsRaise[];
+extern const u8 BattleScript_AttackerAbilityStatRaiseEnd3[];
+extern const u8 BattleScript_IceBodyActivates[];
+extern const u8 BattleScript_CursedBodyActivates[];
+extern const u8 BattleScript_AftermathDmg[];
+extern const u8 BattleScript_DampPreventsAftermath[];
+extern const u8 BattleScript_WeakArmorActivates[];
+extern const u8 BattleScript_AbilityRaisesDefenderStat[];
+
 #endif // GUARD_BATTLE_SCRIPTS_H

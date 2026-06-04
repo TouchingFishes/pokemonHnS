@@ -851,6 +851,7 @@ BattleScript_EffectRecoilIfMiss::
 	accuracycheck BattleScript_MoveMissedDoDamage, ACC_CURR_MOVE
 	goto BattleScript_HitFromAtkString
 BattleScript_MoveMissedDoDamage::
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_PrintMoveMissed
 	attackstring
 	ppreduce
 	pause B_WAIT_TIME_LONG
@@ -3867,6 +3868,7 @@ BattleScript_PrintPayDayMoneyString::
 	return
 
 BattleScript_WrapTurnDmg::
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_DoTurnDmgEnd
 	playanimation BS_ATTACKER, B_ANIM_TURN_TRAP, sB_ANIM_ARG1
 	printstring STRINGID_PKMNHURTBY
 	waitmessage B_WAIT_TIME_LONG
@@ -3978,6 +3980,7 @@ BattleScript_MoveEffectConfusion::
 BattleScript_MoveEffectRecoil::
 	jumpifmove MOVE_STRUGGLE, BattleScript_DoRecoil
 	jumpifability BS_ATTACKER, ABILITY_ROCK_HEAD, BattleScript_RecoilEnd
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_RecoilEnd
 BattleScript_DoRecoil::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
 	healthbarupdate BS_ATTACKER
@@ -4015,6 +4018,14 @@ BattleScript_TraceActivates::
 	end3
 
 BattleScript_RainDishActivates::
+	printstring STRINGID_PKMNSXRESTOREDHPALITTLE2
+	waitmessage B_WAIT_TIME_LONG
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	end3
+
+BattleScript_IceBodyActivates::
 	printstring STRINGID_PKMNSXRESTOREDHPALITTLE2
 	waitmessage B_WAIT_TIME_LONG
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
@@ -4094,6 +4105,83 @@ BattleScript_DroughtActivates::
 	playanimation BS_BATTLER_0, B_ANIM_SUN_CONTINUES
 	call BattleScript_WeatherFormChanges
 	end3
+
+BattleScript_SnowWarningActivates::
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_PKMNSXWHIPPEDUPHAILSTORM
+	waitstate
+	playanimation BS_BATTLER_0, B_ANIM_HAIL_CONTINUES, NULL
+	call BattleScript_WeatherFormChanges
+	end3
+
+BattleScript_AttackerAbilityStatsRaise::
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	waitanimation
+	printstring STRINGID_ATTACKERABILITYRAISE
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_AttackerAbilityStatRaiseEnd3::
+	call BattleScript_AttackerAbilityStatsRaise
+	end3
+
+BattleScript_CursedBodyActivates::
+	printstring STRINGID_CUSEDBODYDISABLED
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_AftermathDmg::
+	pause B_WAIT_TIME_SHORT
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_AftermathDmgRet
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
+	healthbarupdate BS_ATTACKER
+	datahpupdate BS_ATTACKER
+	printstring STRINGID_AFTERMATHDMG
+	waitmessage B_WAIT_TIME_LONG
+	tryfaintmon BS_ATTACKER
+BattleScript_AftermathDmgRet:
+	return
+
+BattleScript_DampPreventsAftermath::
+	pause B_WAIT_TIME_SHORT
+	pause 40
+	printstring STRINGID_PKMNSABILITYPREVENTSABILITY
+	waitmessage B_WAIT_TIME_LONG
+	return
+
+BattleScript_WeakArmorActivates::
+	setstatchanger STAT_DEF, 1, TRUE
+	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_WeakArmorActivatesSpeed
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_DECREASE, BattleScript_WeakArmorDefAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_FELL_EMPTY, BattleScript_WeakArmorActivatesSpeed
+	pause B_WAIT_TIME_SHORT
+	printfromtable gStatDownStringIds
+	bichalfword gMoveResultFlags, MOVE_RESULT_MISSED @ Set by statbuffchange when stat can't be decreased
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_WeakArmorActivatesSpeed
+BattleScript_WeakArmorDefAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATLOWER
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_WeakArmorActivatesSpeed:
+	setstatchanger STAT_SPEED, 1, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_WeakArmorActivatesEnd
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_WeakArmorSpeedAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_EMPTY, BattleScript_WeakArmorActivatesEnd
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_TARGETSTATWONTGOHIGHER
+	bichalfword gMoveResultFlags, MOVE_RESULT_MISSED
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_WeakArmorActivatesEnd
+BattleScript_WeakArmorSpeedAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printstring STRINGID_TARGETABILITYSTATRAISE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_WeakArmorActivatesEnd:
+	return
 
 BattleScript_TookAttack::
 	attackstring
