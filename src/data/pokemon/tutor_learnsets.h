@@ -21,6 +21,7 @@ const u16 gTutorMoves[TUTOR_MOVE_COUNT] =
     [TUTOR_MOVE_SNORE] = MOVE_SNORE,
     [TUTOR_MOVE_ICY_WIND] = MOVE_ICY_WIND,
     [TUTOR_MOVE_ENDURE] = MOVE_ENDURE,
+    [TUTOR_MOVE_BIDE] = MOVE_BIDE,
     [TUTOR_MOVE_METAL_CLAW] = MOVE_METAL_CLAW,
     [TUTOR_MOVE_ICE_BALL] = MOVE_ICE_BALL,
     [TUTOR_MOVE_SWAGGER] = MOVE_SWAGGER,
@@ -30,6 +31,7 @@ const u16 gTutorMoves[TUTOR_MOVE_COUNT] =
     [TUTOR_MOVE_POISON_JAB] = MOVE_POISON_JAB,
     [TUTOR_MOVE_FISSURE] = MOVE_FISSURE,
     [TUTOR_MOVE_FURY_CUTTER] = MOVE_FURY_CUTTER,
+    [TUTOR_MOVE_WILD_CHARGE] = MOVE_WILD_CHARGE,
     [TUTOR_MOVE_HEADBUTT] = MOVE_HEADBUTT,
     [TUTOR_MOVE_HEAT_WAVE] = MOVE_HEAT_WAVE,
     [TUTOR_MOVE_FRENZY_PLANT] = MOVE_FRENZY_PLANT,
@@ -50,6 +52,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -62,6 +65,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -74,6 +78,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -93,6 +98,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 //| TUTOR(MOVE_ACROBATICS)
@@ -114,6 +120,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 //| TUTOR(MOVE_ACROBATICS)
@@ -135,6 +142,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -158,6 +166,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -177,6 +186,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -196,6 +206,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -213,6 +224,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)),
 
@@ -226,6 +238,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -236,6 +249,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -245,6 +259,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -254,6 +269,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -267,9 +283,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_RATICATE]         = (TUTOR(MOVE_BODY_SLAM)
@@ -281,9 +299,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_SPEAROW]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -291,6 +311,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -300,6 +321,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -312,6 +334,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -324,6 +347,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -342,8 +366,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_RAICHU]           = (TUTOR(MOVE_MEGA_PUNCH)
@@ -359,8 +385,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_SANDSHREW]        = (TUTOR(MOVE_SWORDS_DANCE)
@@ -375,6 +403,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -395,6 +424,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -410,6 +440,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -422,6 +453,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -440,6 +472,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -454,6 +487,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -466,6 +500,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -484,6 +519,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -508,6 +544,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -530,6 +567,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -541,6 +579,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -552,6 +591,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -572,9 +612,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_WIGGLYTUFF]       = (TUTOR(MOVE_MEGA_PUNCH)
@@ -592,9 +634,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_ZUBAT]            = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -602,6 +646,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -612,6 +657,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -623,6 +669,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_GLOOM]            = (TUTOR(MOVE_SWORDS_DANCE)
@@ -631,6 +678,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -641,6 +689,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -652,6 +701,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -665,6 +715,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -676,6 +727,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)),
 
@@ -685,6 +737,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)),
@@ -696,6 +749,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)),
@@ -708,6 +762,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)),
@@ -720,6 +775,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -733,6 +789,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -751,6 +808,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -769,6 +827,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -789,9 +848,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ACROBATICS)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_PRIMEAPE]         = (TUTOR(MOVE_MEGA_PUNCH)
@@ -808,9 +869,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ACROBATICS)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_GROWLITHE]        = (TUTOR(MOVE_BODY_SLAM)
@@ -819,7 +882,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -829,7 +894,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -840,6 +907,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -857,6 +925,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -876,6 +945,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -898,6 +968,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -917,6 +988,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -936,6 +1008,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -953,6 +1026,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
@@ -971,6 +1045,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
@@ -989,6 +1064,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
@@ -1000,6 +1076,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -1010,6 +1087,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -1021,6 +1099,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -1032,6 +1111,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
@@ -1043,6 +1123,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
@@ -1061,6 +1142,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -1080,6 +1162,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -1101,6 +1184,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -1113,8 +1197,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
     [SPECIES_RAPIDASH]         = (TUTOR(MOVE_BODY_SLAM)
@@ -1123,9 +1209,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_HEADBUTT)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
     [SPECIES_SLOWPOKE]         = (TUTOR(MOVE_BODY_SLAM)
@@ -1138,6 +1226,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1157,6 +1246,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1170,7 +1260,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)),
+                                | TUTOR(MOVE_BIDE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_MAGNETON]         = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
@@ -1180,7 +1272,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)),
+                                | TUTOR(MOVE_BIDE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_FARFETCHD]        = (TUTOR(MOVE_SWORDS_DANCE)
                                 | TUTOR(MOVE_BODY_SLAM)
@@ -1190,6 +1284,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -1202,6 +1297,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1213,6 +1309,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1224,6 +1321,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1235,6 +1333,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1246,6 +1345,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
 
@@ -1256,6 +1356,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
 
@@ -1266,6 +1367,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -1276,6 +1378,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
@@ -1286,6 +1389,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_HAUNTER]          = (TUTOR(MOVE_CURSE)
@@ -1294,6 +1398,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
 
@@ -1311,6 +1416,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1324,6 +1430,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1342,6 +1449,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1363,6 +1471,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1377,6 +1486,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -1390,6 +1500,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -1402,7 +1513,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_ELECTRODE]        = (TUTOR(MOVE_CURSE)
@@ -1412,7 +1525,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_EXEGGCUTE]        = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -1425,6 +1540,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)),
 
@@ -1438,6 +1554,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1456,6 +1573,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1474,6 +1592,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -1492,9 +1611,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)
+                                //| TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_HITMONCHAN]       = (TUTOR(MOVE_MEGA_PUNCH)
@@ -1510,6 +1631,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1531,6 +1653,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -1543,6 +1666,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_WEEZING]          = (TUTOR(MOVE_CURSE)
@@ -1552,6 +1676,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_RHYHORN]          = (TUTOR(MOVE_SWORDS_DANCE)
@@ -1565,6 +1690,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
@@ -1585,6 +1711,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -1610,10 +1737,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_TANGELA]          = (TUTOR(MOVE_SWORDS_DANCE)
@@ -1624,6 +1753,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -1640,6 +1770,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
@@ -1652,6 +1783,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1662,6 +1794,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1672,9 +1805,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
-                                | TUTOR(MOVE_POISON_JAB)),
+                                | TUTOR(MOVE_POISON_JAB)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_SEAKING]          = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
@@ -1682,9 +1817,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
-                                | TUTOR(MOVE_POISON_JAB)),
+                                | TUTOR(MOVE_POISON_JAB)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_STARYU]           = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
@@ -1695,6 +1832,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_STARMIE]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -1706,6 +1844,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_MR_MIME]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -1722,6 +1861,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1733,6 +1873,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -1753,6 +1894,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1770,7 +1912,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_MAGMAR]           = (TUTOR(MOVE_MEGA_PUNCH)
@@ -1784,6 +1928,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -1797,6 +1942,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -1811,8 +1957,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_MAGIKARP]         = (0),
@@ -1825,6 +1973,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -1835,6 +1984,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1848,6 +1998,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -1858,6 +2009,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1869,7 +2021,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_FLAREON]          = (TUTOR(MOVE_BODY_SLAM)
@@ -1878,8 +2032,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -1892,6 +2048,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -1905,6 +2062,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1921,6 +2079,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -1936,6 +2095,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -1957,6 +2117,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -1972,6 +2133,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -1993,10 +2155,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_ARTICUNO]         = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -2006,6 +2170,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2019,9 +2184,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
     [SPECIES_MOLTRES]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -2030,6 +2197,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -2043,6 +2211,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2054,6 +2223,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2066,6 +2236,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -2088,6 +2259,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -2114,6 +2286,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2123,6 +2296,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_FURY_CUTTER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -2134,6 +2308,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2145,6 +2320,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2157,6 +2333,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -2170,8 +2347,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -2182,9 +2361,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -2201,9 +2382,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)
                                 | TUTOR(MOVE_BLAST_BURN)),
@@ -2222,6 +2405,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2241,6 +2425,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2261,6 +2446,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2277,6 +2463,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -2292,6 +2479,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -2305,6 +2493,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -2314,6 +2503,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -2328,6 +2518,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2341,6 +2532,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2351,6 +2543,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)),
 
@@ -2360,6 +2553,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)),
@@ -2369,6 +2563,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -2380,7 +2575,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)),
+                                | TUTOR(MOVE_BIDE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_LANTURN]          = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
@@ -2388,7 +2585,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)),
+                                | TUTOR(MOVE_BIDE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_PICHU]            = (TUTOR(MOVE_MEGA_PUNCH)
                                 | TUTOR(MOVE_MEGA_KICK)
@@ -2402,8 +2601,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_CLEFFA]           = (TUTOR(MOVE_MEGA_PUNCH)
@@ -2422,6 +2623,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2441,8 +2643,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_TOGEPI]           = (TUTOR(MOVE_MEGA_PUNCH)
@@ -2461,6 +2665,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2482,6 +2687,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2496,6 +2702,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -2508,6 +2715,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -2520,8 +2728,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_FLAAFFY]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -2536,8 +2746,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_AMPHAROS]         = (TUTOR(MOVE_MEGA_PUNCH)
@@ -2552,8 +2764,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_BELLOSSOM]        = (TUTOR(MOVE_SWORDS_DANCE)
@@ -2562,6 +2776,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2577,6 +2792,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2594,6 +2810,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2614,6 +2831,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -2632,6 +2850,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2644,6 +2863,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2655,6 +2875,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2666,6 +2887,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2684,6 +2906,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2696,6 +2919,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -2705,6 +2929,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -2713,6 +2938,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -2724,6 +2950,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2741,6 +2968,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2755,6 +2983,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2766,6 +2995,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2778,6 +3008,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -2797,6 +3028,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -2811,6 +3043,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2827,6 +3060,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2841,6 +3075,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -2855,6 +3090,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -2871,9 +3107,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_GLIGAR]           = (TUTOR(MOVE_SWORDS_DANCE)
@@ -2884,6 +3122,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -2899,6 +3138,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -2917,8 +3157,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_GRANBULL]         = (TUTOR(MOVE_MEGA_PUNCH)
@@ -2935,9 +3177,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_QWILFISH]         = (TUTOR(MOVE_SWORDS_DANCE)
@@ -2949,6 +3193,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2962,6 +3207,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -2975,6 +3221,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -2990,6 +3237,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3004,6 +3252,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -3027,6 +3276,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -3049,6 +3299,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -3064,6 +3315,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3076,6 +3328,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3088,6 +3341,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3102,6 +3356,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3117,6 +3372,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3128,6 +3384,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
@@ -3138,6 +3395,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
 
@@ -3153,6 +3411,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -3166,6 +3425,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -3179,6 +3439,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -3189,6 +3450,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3200,6 +3462,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3211,6 +3474,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3223,6 +3487,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3236,6 +3501,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -3251,6 +3517,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3264,8 +3531,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_SMEARGLE]         = (0),
@@ -3280,6 +3549,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -3293,6 +3563,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3311,6 +3582,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)),
@@ -3327,7 +3599,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_MAGBY]            = (TUTOR(MOVE_MEGA_PUNCH)
@@ -3341,6 +3615,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3362,10 +3637,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_BLISSEY]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -3385,9 +3662,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_RAIKOU]           = (TUTOR(MOVE_BODY_SLAM)
@@ -3399,6 +3678,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3411,8 +3691,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
@@ -3425,6 +3707,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -3437,6 +3720,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -3447,6 +3731,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -3463,6 +3748,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
@@ -3478,6 +3764,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -3491,6 +3778,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -3506,6 +3794,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
@@ -3522,6 +3811,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3539,6 +3829,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3556,6 +3847,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3574,6 +3866,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -3591,6 +3884,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3610,6 +3904,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -3628,6 +3923,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3647,6 +3943,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3666,6 +3963,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -3681,6 +3979,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3693,6 +3992,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3706,6 +4006,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3720,6 +4021,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3734,6 +4036,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3749,6 +4052,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3767,6 +4071,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3780,6 +4085,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -3792,6 +4098,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -3804,6 +4111,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3817,6 +4125,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3835,6 +4144,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3848,6 +4158,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3863,6 +4174,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3879,6 +4191,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -3890,6 +4203,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -3900,6 +4214,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -3910,6 +4225,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -3920,8 +4236,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_VOLTREAN]          = (TUTOR(MOVE_DOUBLE_EDGE) //| TUTOR(MOVE_HEAT_WAVE)???
@@ -3930,9 +4248,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_SHROOMISH]        = (TUTOR(MOVE_SWORDS_DANCE)
@@ -3942,6 +4262,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -3957,6 +4278,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -3977,11 +4299,13 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_RUFFLET]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -3989,6 +4313,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4001,6 +4326,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ROCK_SLIDE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4014,6 +4340,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -4024,6 +4351,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
@@ -4036,6 +4364,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4050,6 +4379,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4068,10 +4398,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_DELCATTY]         = (TUTOR(MOVE_BODY_SLAM)
@@ -4085,10 +4417,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_PSYCHU]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -4104,9 +4438,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_BALTOY]           = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -4117,6 +4453,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -4130,6 +4467,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -4147,11 +4485,13 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_TORKOAL]          = (TUTOR(MOVE_BODY_SLAM)
@@ -4162,6 +4502,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -4181,6 +4522,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4194,10 +4536,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_WHISCASH]         = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -4207,10 +4551,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_LUVDISC]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -4220,6 +4566,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -4232,6 +4579,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -4245,6 +4593,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -4255,6 +4604,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_MILOTIC]          = (TUTOR(MOVE_BODY_SLAM)
@@ -4265,6 +4615,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)),
 
     [SPECIES_CARVANHA]         = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -4273,6 +4624,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -4283,6 +4635,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -4294,6 +4647,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4305,6 +4659,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4317,6 +4672,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4335,6 +4691,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4352,6 +4709,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FISSURE)
@@ -4364,7 +4722,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_MANECTRIC]        = (TUTOR(MOVE_BODY_SLAM)
@@ -4374,7 +4734,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_NUMEL]            = (TUTOR(MOVE_BODY_SLAM)
@@ -4385,6 +4747,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -4400,6 +4763,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
@@ -4414,8 +4778,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_EELEKTRIK]        = (TUTOR(MOVE_BODY_SLAM)
@@ -4426,8 +4792,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_EELEKTROSS]       = (TUTOR(MOVE_BODY_SLAM)
@@ -4438,9 +4806,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_BRONZOR]          = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -4451,6 +4821,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
@@ -4463,6 +4834,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4475,6 +4847,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4488,6 +4861,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4504,6 +4878,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4522,6 +4897,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4538,6 +4914,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4552,6 +4929,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4567,6 +4945,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4578,6 +4957,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -4588,6 +4968,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4599,6 +4980,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4618,6 +5000,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4636,6 +5019,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4647,6 +5031,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4659,6 +5044,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4672,6 +5058,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -4688,6 +5075,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -4706,6 +5094,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -4718,6 +5107,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -4736,6 +5126,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -4756,6 +5147,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -4777,6 +5169,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -4793,6 +5186,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4807,6 +5201,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4820,6 +5215,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -4833,6 +5229,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4849,6 +5246,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4866,6 +5264,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4880,6 +5279,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -4890,6 +5290,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -4900,6 +5301,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)),
 
@@ -4916,6 +5318,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -4931,6 +5334,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -4944,6 +5348,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -4956,6 +5361,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4972,6 +5378,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -4989,6 +5396,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -5002,6 +5410,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5015,6 +5424,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5036,6 +5446,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5052,6 +5463,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5063,6 +5475,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
@@ -5072,6 +5485,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
 
@@ -5083,6 +5497,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)),
@@ -5095,6 +5510,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -5108,6 +5524,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
@@ -5123,6 +5540,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
@@ -5138,6 +5556,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5152,6 +5571,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5166,6 +5586,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5178,6 +5599,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
@@ -5192,6 +5614,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5207,6 +5630,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5228,6 +5652,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5248,6 +5673,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5273,12 +5699,14 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_REGICE]           = (TUTOR(MOVE_MEGA_PUNCH)
@@ -5299,12 +5727,14 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_REGISTEEL]        = (TUTOR(MOVE_MEGA_PUNCH)
@@ -5324,11 +5754,13 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_KYOGRE]           = (TUTOR(MOVE_BODY_SLAM)
@@ -5341,6 +5773,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5362,6 +5795,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5380,6 +5814,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -5396,6 +5831,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -5413,6 +5849,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -5432,6 +5869,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5454,6 +5892,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5468,6 +5907,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
@@ -5480,6 +5920,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)),
@@ -5505,6 +5946,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -5524,8 +5966,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_TINKATUFF]        = (TUTOR(MOVE_BODY_SLAM)
@@ -5537,8 +5981,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_TINKATON]         = (TUTOR(MOVE_BODY_SLAM)
@@ -5550,9 +5996,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_DEOXYS_ATTACK]    = (TUTOR(MOVE_MEGA_PUNCH)
@@ -5571,6 +6019,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5593,6 +6042,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5615,6 +6065,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -5627,6 +6078,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)),
 
@@ -5642,7 +6094,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_FROSLASS]         = (TUTOR(MOVE_BODY_SLAM)
@@ -5654,6 +6108,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -5671,10 +6126,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_GLACEON]          = (TUTOR(MOVE_BODY_SLAM)
@@ -5684,6 +6141,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5696,6 +6154,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -5711,6 +6170,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -5725,6 +6185,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -5735,6 +6196,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5752,9 +6214,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_MAGMORTAR]         = (TUTOR(MOVE_MEGA_PUNCH)
@@ -5768,6 +6232,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -5780,7 +6245,9 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
-                                | TUTOR(MOVE_SWAGGER)),
+                                | TUTOR(MOVE_BIDE)
+                                | TUTOR(MOVE_SWAGGER)
+                                | TUTOR(MOVE_WILD_CHARGE)),
 
     [SPECIES_LARVESTA]          = (TUTOR(MOVE_DOUBLE_EDGE)
                                 | TUTOR(MOVE_CURSE)
@@ -5788,9 +6255,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FURY_CUTTER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
     [SPECIES_VOLCARONA]         = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -5799,9 +6268,11 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FURY_CUTTER)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEAT_WAVE)),
 
     [SPECIES_MISMAGIUS]        = (TUTOR(MOVE_DOUBLE_EDGE)
@@ -5812,6 +6283,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5825,6 +6297,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5837,6 +6310,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5850,6 +6324,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -5866,6 +6341,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -5885,6 +6361,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_FISSURE)
@@ -5907,6 +6384,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -5923,6 +6401,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5940,6 +6419,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5957,6 +6437,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -5976,6 +6457,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -5993,6 +6475,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)),
 
@@ -6005,6 +6488,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_ROLLOUT)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
@@ -6021,6 +6505,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -6036,6 +6521,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -6048,6 +6534,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -6063,10 +6550,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_DUNLONG]          = (TUTOR(MOVE_BODY_SLAM)
@@ -6080,10 +6569,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_WYRDEER]          = (TUTOR(MOVE_BODY_SLAM)
@@ -6095,8 +6586,10 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_WHISMUR]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -6112,10 +6605,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_LOUDRED]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -6133,10 +6628,12 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_EXPLOUD]          = (TUTOR(MOVE_MEGA_PUNCH)
@@ -6154,11 +6651,13 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_FISSURE)
+                                | TUTOR(MOVE_WILD_CHARGE)
                                 | TUTOR(MOVE_HEADBUTT)),
 
     [SPECIES_FOMANTIS]         = (TUTOR(MOVE_SWORDS_DANCE)
@@ -6167,6 +6666,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -6180,6 +6680,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -6195,6 +6696,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_HEADBUTT)
                                 | TUTOR(MOVE_HEAT_WAVE)),
@@ -6207,6 +6709,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
                                 | TUTOR(MOVE_HEADBUTT)
@@ -6224,6 +6727,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -6240,6 +6744,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_HEADBUTT)),
@@ -6260,6 +6765,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
@@ -6273,6 +6779,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_POISON_JAB)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -6290,6 +6797,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -6309,6 +6817,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_PSYCH_UP)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -6323,6 +6832,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)),
@@ -6335,6 +6845,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -6347,6 +6858,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -6360,6 +6872,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -6374,6 +6887,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SUBSTITUTE)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_DEFENSE_CURL)
                                 | TUTOR(MOVE_ZEN_HEADBUTT)
@@ -6394,6 +6908,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_FURY_CUTTER)
@@ -6413,6 +6928,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -6433,6 +6949,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_FOCUS_PUNCH)
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_SWAGGER)
                                 | TUTOR(MOVE_ACROBATICS)
                                 | TUTOR(MOVE_POISON_JAB)
@@ -6453,6 +6970,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -6472,6 +6990,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
@@ -6491,6 +7010,7 @@ static const u64 sTutorLearnsets[] =
                                 | TUTOR(MOVE_SNORE)
                                 | TUTOR(MOVE_ICY_WIND)
                                 | TUTOR(MOVE_ENDURE)
+                                | TUTOR(MOVE_BIDE)
                                 | TUTOR(MOVE_METAL_CLAW)
                                 | TUTOR(MOVE_ICE_BALL)
                                 | TUTOR(MOVE_SWAGGER)
