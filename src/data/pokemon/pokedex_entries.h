@@ -5166,7 +5166,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_FOMANTIS] =
     {
-        .categoryName = _("SICKLE GRASS"),
+        .categoryName = _("SICKLE"),
         .height = 3,
         .weight = 15,
         .description = gFomantisPokedexText,
@@ -5177,7 +5177,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_LURANTIS] =
     {
-        .categoryName = _("BLOOM SICKLE"),
+        .categoryName = _("SICKLE"),
         .height = 9,
         .weight = 185,
         .description = gLurantisPokedexText,
@@ -5199,7 +5199,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_MANDIBUZZ] =
     {
-        .categoryName = _("BONE VULTURE"),
+        .categoryName = _("VULTURE"),
         .height = 12,
         .weight = 395,
         .description = gMandibuzzPokedexText,
@@ -5210,7 +5210,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_MIENFOO] =
     {
-        .categoryName = _("MARTIAL ARTS"),
+        .categoryName = _("WUSHU"),
         .height = 9,
         .weight = 200,
         .description = gMienfooPokedexText,
