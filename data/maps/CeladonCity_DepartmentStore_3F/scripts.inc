@@ -18,6 +18,28 @@ CeladonDept3_EventScript_Directory::
 	msgbox CeladonDeptStore3F_Text_Directory, MSGBOX_SIGN
 	end
 
+CeladonCity_DepartmentStore_3F_EventScript_TMClerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart CeladonCity_DepartmentStore_3F_Pokemart_TMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+CeladonCity_DepartmentStore_3F_Pokemart_TMs:
+	.2byte ITEM_TM_DIG
+	.2byte ITEM_TM_BRICK_BREAK
+	.2byte ITEM_TM_FIRE_BLAST
+	.2byte ITEM_TM_THUNDER
+	.2byte ITEM_TM_BLIZZARD
+	.2byte ITEM_TM_HYPER_BEAM
+	.2byte ITEM_NONE
+	release
+	end
+
 CeladonDeptStore3F_Text_Youngster:
 	.string "I can't decide which POKéMON I\n"
 	.string "should use this TM on…$"

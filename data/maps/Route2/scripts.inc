@@ -22,6 +22,11 @@ Route2_EventScript_Doug::
 	msgbox Route2_Text_BugCatcherDoug_AfterBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route2_EventScript_BugManiac_Corbyn::
+	trainerbattle_single TRAINER_CORBYN Route2_Text_CorbynSeen, Route2_Text_CorbynBeaten
+	msgbox Route2_Text_CorbynAfter, MSGBOX_AUTOCLOSE
+	end
+
 Route2_EventScript_Sign::
 	msgbox Route2_Text_Sign, MSGBOX_SIGN
 	end
@@ -70,6 +75,28 @@ Route2_Text_BugCatcherDoug_AfterBattle:
 	.string "Bug POKéMON squish like plush toys\n"
 	.string "when you squeeze their bellies.\p"
 	.string "I love how they feel!$"
+
+Route2_Text_CorbynSeen:
+	.string "Hey! Don't step there!\p"
+	.string "This path reminds me of\n"
+	.string "VIRIDIAN FOREST…\p"
+	.string "The trees, the shade…\n"
+	.string "the BUG POKéMON everywhere!\p"
+	.string "I could stay there forever.\n"
+	.string "Let me show you why!$"
+
+Route2_Text_CorbynBeaten:
+	.string "No… even here…\n"
+	.string "I lost…$"
+
+Route2_Text_CorbynAfter:
+	.string "VIRIDIAN FOREST is special.\p"
+	.string "The air feels different.\n"
+	.string "Alive, somehow.\p"
+	.string "Bug POKéMON thrive there.\n"
+	.string "It's their paradise.\p"
+	.string "I come here when I miss it…$"
+
 
 Route2_Text_Sign:
 	.string "ROUTE 2\p"

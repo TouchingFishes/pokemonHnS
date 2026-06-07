@@ -104,16 +104,12 @@ BlackthornCity_EventScript_BlackBelt::
 	msgbox BlackBeltText_VoicesInMyHead, MSGBOX_NPC
 	end
 
-BlackthornCity_EventScript_CoolTrainerF::
-	msgbox BlackthornCooltrainerF1Text, MSGBOX_NPC
-	end
-
 BlackthornCity_EventScript_Youngster::
 	msgbox BlackthornYoungsterText, MSGBOX_NPC
 	end
 
-BlackthornCity_EventScript_CoolTrainerF2::
-	msgbox BlackthornCooltrainerF2Text, MSGBOX_NPC
+BlackthornCity_EventScript_CoolTrainerF::
+	msgbox BlackthornCooltrainerFText, MSGBOX_NPC
 	end
 
 BlackthornCity_EventScript_CitySign::
@@ -208,10 +204,7 @@ BlackthornGrampsGrantsEntryText:
 BlackBeltText_VoicesInMyHead:
 	.string "Arooo! Voices in my head!\p"
 	.string "Huh? I'm listening to my radio!$"
-
-BlackthornCooltrainerF1Text:
-	.string "Are you going to make your POKéMON\n"
-	.string "remember some moves?$"
+	
 
 BlackthornYoungsterText:
 	.string "Dragon masters all come from the city\n"
@@ -239,9 +232,12 @@ BlackthornCity_SantosSaturdayText:
 BlackthornCity_SantosNopeText:
 	.string "SANTOS: No.$"
 
-BlackthornCooltrainerF2Text:
+BlackthornCooltrainerFText:
 	.string "Wow, you came through the ICE PATH?\p"
-	.string "You must be a real hotshot trainer!$"
+	.string "You must be a real hotshot trainer!"
+	.string "...\p"
+	.string "Did you come here to make your\n"
+	.string "POKéMON remember some moves?$"
 
 BlackthornCitySignText:
 	.string "BLACKTHORN CITY\p"

@@ -269,15 +269,21 @@ OlivineCity_EventScript_RetiredCaptain::
     lock
     faceplayer
     goto_if_set FLAG_GOT_CAPTAIN_TROPIUS, OlivineCity_EventScript_RetiredCaptainAfter
-    msgbox OlivineCity_Text_RetiredCaptainIntro, MSGBOX_DEFAULT
+    msgbox OlivineCity_Text_RetiredCaptainIntro, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, NO, OlivineCity_EventScript_RetiredCaptainDeclined
     closemessage
     getpartysize
-	goto_if_eq VAR_RESULT, PARTY_SIZE, VioletCity_PokeCenter_Text_ElmsAideFullParty
+	goto_if_eq VAR_RESULT, PARTY_SIZE, OlivineCity_EventScript_RetiredCaptainPartyFull
     msgbox OlivineCity_Text_RetiredCaptainGift, MSGBOX_DEFAULT
-    givemon SPECIES_TROPIUS, 15, ITEM_NONE
+    givemon SPECIES_TROPIUS, 18, ITEM_NONE
     msgbox OlivineCity_Text_RetiredCaptainGiftDone, MSGBOX_DEFAULT
     setflag FLAG_GOT_CAPTAIN_TROPIUS
     closemessage
+    release
+    end
+
+OlivineCity_EventScript_RetiredCaptainDeclined::
+    msgbox OlivineCity_Text_RetiredCaptainDeclined, MSGBOX_DEFAULT
     release
     end
 
@@ -304,57 +310,66 @@ OlivineCity_EventScript_Tropius::
     end
 
 OlivineCity_Text_Tropius:
-    .string "A large dinosaur-like\n"
-    .string "POKéMON stands by the\l"
-    .string "apartments, gazing out at\n"
-    .string "the open sea.\l"
-    .string "It turns to look at you\n"
-    .string "with bright, eager eyes.\l"
-    .string "It lets out a low rumble\n"
-    .string "and spreads its wings\l"
-    .string "as if to say--\n"
-    .string "Let's go already!$"
+	.string "A large dinosaur-like\n"
+	.string "POKéMON stands by the apartments,\n"
+	.string "gazing out at the sea.\p"
+	.string "The ocean breeze passes through\n"
+	.string "the leaves on its neck.\p"
+	.string "It closes its eyes for a moment…\p"
+	.string "Then turns to you slowly.\p"
+	.string "Its gaze is bright, but calm.\p"
+	.string "It lets out a soft, steady rumble.\p"
+	.string "It gently lowers its wings\n"
+	.string "and settles into place.\p"
+	.string "It seems to say:\p"
+	.string "…I've seen enough of the world.\n"
+	.string "This is a good place to rest.$"
 
 OlivineCity_Text_RetiredCaptainIntro:
-    .string "Heh, you've got the look\n"
-    .string "of a traveler about you.\l"
-    .string "I was the same once.\n"
-    .string "Sailed every sea there\l"
-    .string "is to sail. JOHTO,\n"
-    .string "HOENN, you name it.\l"
-    .string "But these old legs are\n"
-    .string "done with adventure.\l"
-    .string "My TROPIUS, though...\n"
-    .string "that's another story.\l"
-    .string "She paces the docks\n"
-    .string "every single morning.\l"
-    .string "Still wants to see the\n"
-    .string "world, bless her heart.\l"
-    .string "How about it, kid?\n"
-    .string "Take her with you.$"
+	.string "Heh… you've got the look\n"
+	.string "of a traveler about you.\p"
+	.string "I used to be the same.\n"
+	.string "Sailed every sea there is…\n"
+	.string "JOHTO, HOENN… everywhere.\p"
+	.string "But these old legs?\n"
+	.string "They're done with adventure.\p"
+	.string "My old partner still isn't, though.\p"
+	.string "See that TROPIUS next to me?\n"
+	.string "She's not alone anymore.\p"
+	.string "Her younger sibling hatched\n"
+	.string "not long ago.\p"
+	.string "Full of energy. Always tugging\n"
+	.string "at the sails, wanting to fly.\p"
+	.string "I can't take them anymore…\n"
+	.string "but maybe you can.\p"
+	.string "What do you say, kid?\n"
+	.string "Take the little one with you.$"
 
 OlivineCity_Text_RetiredCaptainGift:
-    .string "Go on, she won't bite.\n"
-    .string "Probably.$"
+	.string "Heh… careful now.\n"
+	.string "It's still learning the winds.$"
+
+OlivineCity_Text_RetiredCaptainDeclined:
+    .string "Heh… I get it.\p"
+    .string "Not every sailor is ready to\n"
+    .string "carry another soul aboard.$"
 
 OlivineCity_Text_RetiredCaptainGiftDone:
-    .string "Treat her well, kid.\n"
-    .string "And see some of the\l"
-    .string "world for me, yeah?$"
+	.string "Good… good.\p"
+	.string "Let it see the world properly.\n"
+	.string "That's all an old sailor can ask.$"
 
 OlivineCity_Text_RetiredCaptainPartyFull:
-    .string "Hah, a full crew already!\n"
-    .string "Come back when you've\l"
-    .string "got room for one more.\n"
-    .string "TROPIUS isn't going\l"
-    .string "anywhere... unlike me,\n"
-    .string "back in the day.$"
+	.string "Hah! A full crew already?\p"
+	.string "Come back when you've got\n"
+	.string "room for one more.\p"
+	.string "That little one's got nowhere\n"
+	.string "else to be… for now.$"
 
 OlivineCity_Text_RetiredCaptainAfter:
-    .string "TROPIUS keeping up\n"
-    .string "with you out there?\l"
-    .string "Good. She always did\n"
-    .string "hate standing still.$"
+	.string "That young TROPIUS doing alright?\p"
+	.string "Good.\n"
+	.string "It was born to move forward.$"
 
 OlivineCity_Text_SuperNerdFossils:
     .string "Have you heard the rumors\n"

@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LilycoveCity_DepartmentStoreRooftop_EventScript_SubstituteTutor",
+      "script": "Gate_Route40_TrainerHill_Courtyard_EventScript_SubstituteTutor",
       "flag": "0"
     }
   ],
@@ -34,14 +34,14 @@
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_ROUTE40",
-      "dest_warp_id": "9"
+      "dest_warp_id": "0"
     },
     {
       "x": 7,
       "y": 1,
       "elevation": 0,
       "dest_map": "MAP_ROUTE40",
-      "dest_warp_id": "10"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

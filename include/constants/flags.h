@@ -477,7 +477,7 @@
 #define FLAG_MOVE_TUTOR_TAUGHT_SUBSTITUTE    0x1B7
 #define FLAG_MOVE_TUTOR_TAUGHT_FOCUS_PUNCH   0x1B8
 #define FLAG_MOVE_TUTOR_TAUGHT_DOUBLE_EDGE   0x1B9
-#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA
+#define FLAG_MOVE_TUTOR_TAUGHT_EXPLOSION     0x1BA //unused
 #define FLAG_DEFEATED_REGIROCK               0x1BB
 #define FLAG_DEFEATED_REGICE                 0x1BC
 #define FLAG_DEFEATED_REGISTEEL              0x1BD
@@ -1241,7 +1241,7 @@
 #define FLAG_ITEM_ROUTE_31_POKEBALL                                 0x4A2 
 #define FLAG_ITEM_VIOLET_CITY_PECHA_BERRY                           0x4A3 
 #define FLAG_ITEM_VIOLET_CITY_RARE_CANDY                            0x4A4 
-#define FLAG_ITEM_VIOLET_CITY_HYPER_POTION                          0x4A5 
+#define FLAG_ITEM_VIOLET_CITY_TM_MIRROR_SHOT                        0x4A5 
 #define FLAG_EXP_SHARE                                              0x4A6 //EXP SHARE
 #define FLAG_ITEM_SPROUT_TOWER_PARALYZE_HEAL                        0x4A7 
 #define FLAG_ITEM_SPROUT_TOWER_X_DEFEND                             0x4A8 
@@ -1251,7 +1251,7 @@
 #define FLAG_ITEM_DOME_FOSSIL                                       0x4AC 
 #define FLAG_ITEM_OLD_AMBER                                         0x4AD 
 #define FLAG_ITEM_GS_BALL                                           0x4AE 
-#define FLAG_GARBAGEFLAG3                                           0x4AF 
+#define FLAG_ITEM_STORMY_BEACH_TM_BEAT_UP                           0x4AF
 #define FLAG_ITEM_ROUTE_32_GREATBALL                                0x4B0 
 #define FLAG_ITEM_ROUTE_32_GREATBALL2                               0x4B1 
 #define FLAG_ITEM_ROUTE_32_POTION                                   0x4B2 

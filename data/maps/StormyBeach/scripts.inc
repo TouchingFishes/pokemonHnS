@@ -6,6 +6,10 @@ StormyBeach_EventScript_HexManiacTammy::
 	msgbox StormyBeach_Text_TammyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+StormyBeach_EventScript_Item_TM_Beat_Up::
+	finditem ITEM_TM_BEAT_UP
+	end
+
 StormyBeach_Text_TammyIntro:
 	.string "The storm whispers… can you\n"
 	.string "hear it?\p"

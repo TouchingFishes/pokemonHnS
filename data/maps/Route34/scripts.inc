@@ -40,7 +40,6 @@ Route34_EventScript_OfficerKeith::
 	msgbox Route34_Text_OfficerKeith_After, MSGBOX_AUTOCLOSE
 	end
 
-
 Route34_EventScript_PokefanMBrandon::
 	trainerbattle_single TRAINER_BRANDON Route34_Text_PokefanBrandon_Seen, Route34_Text_PokefanBrandon_Beaten
 	msgbox Route34_Text_PokefanBrandon_After, MSGBOX_AUTOCLOSE
@@ -59,6 +58,11 @@ Route34_EventScript_Jenn::
 Route34_EventScript_Kate::
 	trainerbattle_single TRAINER_KATE Route34_Text_CooltrainerKate_Seen, Route34_Text_CooltrainerKate_Beaten
 	msgbox Route34_Text_CooltrainerKate_After, MSGBOX_AUTOCLOSE
+	end
+
+Route34_EventScript_BreederF_Amber::
+	trainerbattle_single TRAINER_AMBER, Route34_Text_AmberIntro, Route34_Text_AmberDefeat
+	msgbox Route34_Text_AmberPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route34_EventScript_Sign1::
@@ -229,6 +233,21 @@ Route34_Text_CooltrainerKate_After:
 	.string "We never expected anyone to find\n"
 	.string "us here. You sure startled us.$"
 
+Route34_Text_AmberIntro:
+	.string "Oh! I just came back from the\n"
+	.string "DAY-CARE with my little ones!\p"
+	.string "They were so excited… I hope\n"
+	.string "they don't hold me back!$"
+
+Route34_Text_AmberDefeat:
+	.string "Oh no… I guess I still have\n"
+	.string "a lot to learn as a breeder!$"
+
+Route34_Text_AmberPostBattle:
+	.string "I leave my POKéMON at the DAY-CARE\n"
+	.string "so they can grow strong and happy.\p"
+	.string "Baby POKéMON are just the cutest…\n"
+	.string "I could watch them all day!$"
 
 Route34_Text_Sign_DayCare:
 	.string "DAY-CARE\p"

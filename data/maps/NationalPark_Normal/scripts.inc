@@ -68,19 +68,21 @@ NationalPark_EventScript_LadyVanillite::
     lock
     faceplayer
     goto_if_set FLAG_GOT_VANILLITE_FROM_LADY, NationalPark_EventScript_LadyVanilliteAfter
-
-    msgbox NationalPark_Text_LadyVanilliteIntro, MSGBOX_DEFAULT
+    msgbox NationalPark_Text_LadyVanilliteIntro, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, NO, NationalPark_EventScript_LadyVanilliteDeclined
     closemessage
-
     getpartysize
 	goto_if_eq VAR_RESULT, PARTY_SIZE, NationalPark_EventScript_LadyVanillitePartyFull
-
     msgbox NationalPark_Text_LadyVanilliteGift, MSGBOX_DEFAULT
     givemon SPECIES_VANILLITE, 10, ITEM_NONE
     msgbox NationalPark_Text_LadyVanilliteGiftDone, MSGBOX_DEFAULT
-
     setflag FLAG_GOT_VANILLITE_FROM_LADY
     closemessage
+    release
+    end
+
+NationalPark_EventScript_LadyVanilliteDeclined::
+    msgbox NationalPark_Text_LadyVanilliteDeclined, MSGBOX_DEFAULT
     release
     end
 
@@ -137,29 +139,63 @@ NationalPark_Normal_Text_Persian:
 	.string "PERSIAN: Fufushaa!$"
 
 NationalPark_Text_LadyVanilliteIntro:
-    .string "Oh my, it's such a warm and\n"
-    .string "lovely day.\p"
-    .string "I do adore the sunshine… but\n"
-    .string "one must stay cool, too.$"
+	.string "Oh my, it's such a warm and\n"
+	.string "lovely day.\p"
+	.string "The sunlight here is simply\n"
+	.string "divine, don't you think?\p"
+	.string "...\p"
+	.string "Though I must admit,\n"
+	.string "it can be a touch overwhelming.\p"
+	.string "One must take care to stay cool\n"
+	.string "while enjoying it.\p"
+	.string "...\p"
+	.string "You look rather warm yourself. Would\n"
+	.string "you like something to cool you down?$"
 
 NationalPark_Text_LadyVanilliteGift:
-    .string "Here, this Pokémon will help\n"
-    .string "you beat the heat.$"
+	.string "You seem like someone who\n"
+	.string "could use a little relief.\p"
+	.string "...\p"
+	.string "Here, this Pokémon will help\n"
+	.string "you beat the heat.\p"
+	.string "Do take good care of it.$"
+
+NationalPark_Text_LadyVanilliteDeclined:
+	.string "Oh… I see.\p"
+	.string "Not everyone welcomes a little\n"
+	.string "bit of cold comfort.\p"
+	.string "The heat can be comforting,\n"
+	.string "in its own way, I suppose.$"
 
 NationalPark_Text_LadyVanilliteGiftDone:
-    .string "Isn't it precious?\p"
-    .string "It will keep you refreshed\n"
-    .string "even under the bright sun.$"
+	.string "Isn't it precious?\p"
+	.string "It has such a gentle nature,\n"
+	.string "despite the chill it carries.\p"
+	.string "...\p"
+	.string "It will keep you refreshed\n"
+	.string "even under the brightest sun.\p"
+	.string "A most delightful companion\n"
+	.string "for days like these.$"
 
 NationalPark_Text_LadyVanillitePartyFull:
-    .string "Oh dear, your party is full.\n"
-    .string "Do come back after making\n"
-    .string "some space.$"
+	.string "Oh dear… it seems your party\n"
+	.string "is quite full.\p"
+	.string "...\p"
+	.string "I would hate to send this little\n"
+	.string "one away carelessly.\p"
+	.string "Please do come back after\n"
+	.string "making some space.$"
 
 NationalPark_Text_LadyVanilliteAfter:
-    .string "That little one loves the\n"
-    .string "sun, in its own way.\p"
-    .string "Take care not to overheat!$"
+	.string "That little one loves the sun,\n"
+	.string "in its own peculiar way.\p"
+	.string "...\p"
+	.string "It keeps cool even as the world\n"
+	.string "warms around it.\p"
+	.string "A charming contrast, don't you\n"
+	.string "think?\p"
+	.string "Do take care not to overheat.$"
+
 
 NationalPark_Normal_EventScript_Jack::
 	trainerbattle_single TRAINER_JACK NationalPark_Normal_Text_SchoolboyJack1_Seen, NationalPark_Normal_Text_SchoolboyJack1_Beaten

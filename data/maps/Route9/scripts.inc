@@ -32,9 +32,9 @@ Route9_EventScript_Tim::
 	msgbox Route9_Text_HikerTimAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route9_EventScript_Sidney::
-	trainerbattle_single TRAINER_SIDNEY Route9_Text_HikerSidneySeen, Route9_Text_HikerSidneyBeaten
-	msgbox Route9_Text_HikerSidneyAfter, MSGBOX_AUTOCLOSE
+Route9_EventScript_Dallas::
+	trainerbattle_single TRAINER_DALLAS Route9_Text_HikerDallasSeen, Route9_Text_HikerDallasBeaten
+	msgbox Route9_Text_HikerDallasAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route9_EventScript_Sign::
@@ -98,14 +98,14 @@ Route9_Text_HikerTimBeaten:
 Route9_Text_HikerTimAfter:
 	.string "Battles are about concentration.$"
 
-Route9_Text_HikerSidneySeen:
+Route9_Text_HikerDallasSeen:
 	.string "I'll tell you a secret.\p"
 	.string "But first, we battle!$"
 
-Route9_Text_HikerSidneyBeaten:
+Route9_Text_HikerDallasBeaten:
 	.string "Oh, dang! I lost that…$"
 
-Route9_Text_HikerSidneyAfter:
+Route9_Text_HikerDallasAfter:
 	.string "The POWER PLANT is across a small\n"
 	.string "river.$"
 

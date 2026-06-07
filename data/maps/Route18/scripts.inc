@@ -17,6 +17,11 @@ Route18_EventScript_Bob::
 	msgbox Route18_Text_BirdKeeperBobAfterBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route18_EventScript_AceTrainerF_Alyssa::
+	trainerbattle_single TRAINER_ALYSSA Route18_Text_AlyssaSeen, Route18_Text_AlyssaBeaten
+	msgbox Route18_Text_AlyssaAfter, MSGBOX_AUTOCLOSE
+	end
+
 Route18_EventScript_Sign::
 	msgbox Route18_Text_Sign, MSGBOX_SIGN
 	end
@@ -43,6 +48,31 @@ Route18_Text_BirdKeeperBobAfterBattle:
 	.string "If you don't have a BICYCLE,\n"
 	.string "you're not allowed to use the\l"
 	.string "shortcut.$"
+
+Route18_Text_AlyssaSeen:
+	.string "Hold it right there.\p"
+	.string "You've got a certain look\n"
+	.string "about you.\p"
+	.string "...\p"
+	.string "Confidence.\n"
+	.string "Style.\p"
+	.string "...\p"
+	.string "Let's see if your battling\n"
+	.string "matches it.$"
+
+Route18_Text_AlyssaBeaten:
+	.string "Oh…?\p"
+	.string "Now that was impressive.$"
+
+Route18_Text_AlyssaAfter:
+	.string "Strength isn't just power.\p"
+	.string "It's how you carry yourself.\n"
+	.string "How you adapt.\p"
+	.string "...\p"
+	.string "You've got both.\p"
+	.string "...\p"
+	.string "Keep refining that style.\n"
+	.string "You'll stand out anywhere.$"
 
 Route18_Text_Sign:
 	.string "ROUTE 18\p"

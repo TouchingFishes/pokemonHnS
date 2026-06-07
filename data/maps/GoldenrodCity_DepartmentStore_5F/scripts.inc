@@ -84,6 +84,29 @@ GoldenrodDeptStore5_EventScript_Receptionist_Already::
 	release
 	end
 
+GoldenrodDeptStore_Text_5F_EventScript_Clerk::
+	lock
+	faceplayer
+	message gText_HowMayIServeYou
+	waitmessage
+	pokemart GoldenrodDeptStore_Text_5F_Pokemart_TMs
+	msgbox gText_PleaseComeAgain, MSGBOX_DEFAULT
+	release
+	end
+
+	.align 2
+GoldenrodDeptStore_Text_5F_Pokemart_TMs:
+	.2byte ITEM_TM_PROTECT
+	.2byte ITEM_TM_SAFEGUARD
+	.2byte ITEM_TM_REFLECT
+	.2byte ITEM_TM_LIGHT_SCREEN
+	.2byte ITEM_TM_FIRE_PUNCH
+	.2byte ITEM_TM_THUNDER_PUNCH
+	.2byte ITEM_TM_ICE_PUNCH
+	.2byte ITEM_TM_FALSE_SWIPE
+	.2byte ITEM_NONE
+	release
+	end
 
 
 GoldenrodDeptStore_Text_5FReceptionistOhYourMon:

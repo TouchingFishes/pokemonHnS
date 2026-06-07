@@ -385,7 +385,8 @@
     "Gate_FuchsiaCity_Route18",
     "Route12_House",
     "Route4_PokemonCenter",
-    "Route25_BillsHouse"
+    "Route25_BillsHouse",
+    "KameHouse"
   ],
   "gMapGroup_Dungeons": [
     "DarkCave_SouthSide",

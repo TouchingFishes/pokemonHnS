@@ -118,8 +118,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VioletCity_EventScript_ItemHyperPotion",
-      "flag": "FLAG_ITEM_VIOLET_CITY_HYPER_POTION"
+      "script": "VioletCity_EventScript_TM_MirrorShot",
+      "flag": "FLAG_ITEM_VIOLET_CITY_TM_MIRROR_SHOT"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
@@ -240,8 +240,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HAUNTER",
-      "x": 19,
-      "y": 9,
+      "x": 13,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,

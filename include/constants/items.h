@@ -375,26 +375,26 @@
 #define ITEM_TM48 336
 #define ITEM_TM49 337
 #define ITEM_TM50 338
-#define ITEM_TM51 339 //Mirror Shot
+#define ITEM_TM51 339 //Mirror Shot - Violet City done
 #define ITEM_TM52 340 //Flame Charge
-#define ITEM_TM53 341 //Ice Punch - Goldenrod Mart
-#define ITEM_TM54 342 //Mimic - Mahogany City
+#define ITEM_TM53 341 //Ice Punch - Goldenrod Mart done
+#define ITEM_TM54 342 //Mimic - Mahogany City done
 #define ITEM_TM55 343 //Grass Knot - Celadon Gym
 #define ITEM_TM56 344 //Charge Beam - 
 #define ITEM_TM57 345 //Venoshock
 #define ITEM_TM58 346 //Rock Blast
 #define ITEM_TM59 347 //Energy Ball - Route 26
-#define ITEM_TM60 348 //Swift - Union Cave
-#define ITEM_TM61 349 //Mud Slap - Violet City
+#define ITEM_TM60 348 //Swift - Union Cave done
+#define ITEM_TM61 349 //Mud Slap - Cherrygrove Bay done
 #define ITEM_TM62 350 //Sleep Talk
-#define ITEM_TM63 351 //Avalanche
-#define ITEM_TM64 352 //Beat Up
+#define ITEM_TM63 351 //Avalanche - Ice Path by Swinub done
+#define ITEM_TM64 352 //Beat Up - Stormy Beach done
 #define ITEM_TM65 353 //Cosmic Power - Ruins of Alph
-#define ITEM_TM66 354 //Signal Beam - Route 27
+#define ITEM_TM66 354 //Signal Beam - Route 27 done
 #define ITEM_TM67 355 //Sweet Scent - Ilex Forest - Route 34 Gate House done
 #define ITEM_TM68 356 //Fire Punch - Goldenrod Mart done
-#define ITEM_TM69 357 //Zap Cannon - Power Plant
-#define ITEM_TM70 358 //False Swipe - Should be buyable somewhere
+#define ITEM_TM69 357 //Zap Cannon - Power Plant done
+#define ITEM_TM70 358 //False Swipe - Goldenrod Mart done
 #define ITEM_TM71 359 //Thunder Punch - Goldenrod Mart done
 #define ITEM_TM72 360 //Dream Eater - Viridian City done
 #define ITEM_TM73 361 //Pounce - Bugsy's TM, Azalea Gym done

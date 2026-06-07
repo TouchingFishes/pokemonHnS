@@ -37,7 +37,7 @@ Route10_PowerPlantBackRoom_EventScript_ManagerCheckPart::
 	removeitem ITEM_MACHINE_PART
 	msgbox Route10_PowerPlantBackRoom_Text_ManagerThatsThePart, MSGBOX_DEFAULT
 	msgbox Route10_PowerPlantBackRoom_Text_ManagerTakeThisTM, MSGBOX_DEFAULT
-	giveitem ITEM_TM_THUNDER
+	giveitem ITEM_TM_ZAP_CANNON
 	msgbox Route10_PowerPlantBackRoom_Text_ManagerTM07IsZapCannon, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_KANTO_ROCKET_STORY_STATE, 7
@@ -84,11 +84,11 @@ Route10_PowerPlantBackRoom_Text_ManagerTakeThisTM:
 	.string "Here! Take this TM as a reward!$"
 
 Route10_PowerPlantBackRoom_Text_ManagerTM07IsZapCannon:
-	.string "MANAGER: That TM is THUNDER.\p"
-	.string "It's a powerful technique!\p"
+	.string "MANAGER: That TM is ZAP CANNON.\p"
+	.string "It's a truly powerful technique!\p"
 	.string "It's not what anyone would\n"
 	.string "consider accurate, but it packs a\l"
-	.string "wallop!$"
+	.string "wallop and paralyzes its target!$"
 
 Route10_PowerPlantBackRoom_Text_ManagerMyBelovedGenerator:
 	.string "MANAGER: My beloved generator!\p"

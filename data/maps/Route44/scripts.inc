@@ -42,6 +42,11 @@ Route44_EventScript_Cybil::
 	msgbox Route44_Text_CooltrainerfCybilAfter, MSGBOX_AUTOCLOSE
 	end
 
+Route44_EventScript_Lady_Sarah::
+    trainerbattle_single TRAINER_SARAH Route44_Text_LadySarahSeen, Route44_Text_LadySarahBeaten
+    msgbox Route44_Text_LadySarahAfter, MSGBOX_AUTOCLOSE
+    end
+
 Route44_EventScript_Sign1::
 	msgbox Route44_Text_Sign1, MSGBOX_SIGN
 	end
@@ -154,6 +159,24 @@ Route44_Text_CooltrainerfCybilAfter:
     .string "many battles.\p"
     .string "I battled a lot to become what I\n"
     .string "am today--an elite.$"
+
+Route44_Text_LadySarahSeen:
+    .string "Oh… a challenger?\p"
+    .string "How delightful.\p"
+    .string "Do be gentle, won't you?\n"
+    .string "I so dislike unpleasant battles.$"
+
+Route44_Text_LadySarahBeaten:
+    .string "Ah… how gracefully you fight.\p"
+    .string "I concede with no regrets.$"
+
+Route44_Text_LadySarahAfter:
+    .string "Battles need not be harsh to be\n"
+    .string "meaningful.\p"
+    .string "A calm heart and steady hand…\n"
+    .string "that is true elegance.\p"
+    .string "I do hope our encounter brought\n"
+    .string "you a measure of peace.$"
 
 Route44_Text_Sign1:
     .string "ROUTE 44\n"

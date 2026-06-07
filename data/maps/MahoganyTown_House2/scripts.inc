@@ -24,7 +24,6 @@ MahoganyTownHouse2_EventScript_ReceivedBulletSeedFinite::
 	release
 	end
 
-
 MahoganyTownHouse2_Text_MimicGive:
 	.string "Ah, young one!\p"
 	.string "I am also a young one, yet I mimic\n"

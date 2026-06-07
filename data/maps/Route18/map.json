@@ -20,17 +20,22 @@
     },
     {
       "map": "MAP_ROUTE17",
-      "offset": 0,
+      "offset": 30,
       "direction": "up"
+    },
+    {
+      "map": "MAP_ROUTE21",
+      "offset": -21,
+      "direction": "left"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
-      "x": 40,
-      "y": 12,
+      "x": 71,
+      "y": 17,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_RIGHT",
       "movement_range_x": 7,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -40,10 +45,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",
-      "x": 45,
-      "y": 16,
+      "x": 75,
+      "y": 12,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 7,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -52,21 +57,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PSYCHU",
-      "x": 35,
-      "y": 12,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DODRIO",
-      "x": 32,
+      "x": 63,
       "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
@@ -79,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DODRIO",
-      "x": 35,
+      "x": 65,
       "y": 13,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
@@ -91,29 +83,29 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PSYCHU",
-      "x": 33,
-      "y": 13,
+      "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_F",
+      "x": 19,
+      "y": 8,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_INVISIBLE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
+      "movement_range_x": 7,
+      "movement_range_y": 4,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
+      "script": "Route18_EventScript_AceTrainerF_Alyssa",
       "flag": "0"
     }
   ],
   "warp_events": [
     {
-      "x": 48,
+      "x": 78,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GATE_FUCHSIA_CITY_ROUTE18",
       "dest_warp_id": "1"
     },
     {
-      "x": 41,
+      "x": 71,
       "y": 9,
       "elevation": 0,
       "dest_map": "MAP_GATE_FUCHSIA_CITY_ROUTE18",
@@ -126,7 +118,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 52,
+      "x": 82,
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

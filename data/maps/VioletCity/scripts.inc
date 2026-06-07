@@ -230,8 +230,8 @@ VioletCity_EventScript_ItemPechaBerry::
 	finditem ITEM_PECHA_BERRY
 	end
 
-VioletCity_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+VioletCity_EventScript_TM_MirrorShot::
+	finditem ITEM_TM_MIRROR_SHOT
 	end
 
 VioletCity_Movement_Earl_Spin:

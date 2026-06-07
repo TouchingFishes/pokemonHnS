@@ -39,6 +39,20 @@ CherrygroveBay_EventScript_ExpertMudSlap_After:
 	release
 	end
 
+CherrygroveBay_EventScript_Tuber::
+	lock
+	faceplayer
+	msgbox CherrygroveBay_Text_Tuber, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
+CherrygroveBay_Text_Tuber:
+.string "Whee! The water's so nice!\p"
+.string "I could play here all day!\p"
+.string "Hey, hey!\n"
+.string "Do you wanna play too?$"
+
 CherrygroveBay_Text_TylerIntro:
 	.string "The sea's my turf!\n"
 	.string "Try to keep up with me!$"
