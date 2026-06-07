@@ -1204,6 +1204,15 @@ static void Cmd_accuracycheck(void)
             if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && IS_MOVE_PHYSICAL(move))
                 calc = (calc * 80) / 100; // 1.2 hustle loss
 
+        if (gBattleMons[gBattlerAttacker].ability == ABILITY_VICTORY_STAR)
+            calc = (calc * 110) / 100;
+
+        // Ally check (same side)
+        u8 partner = GetBattlerAtPosition(BATTLE_PARTNER(gBattlerAttacker));
+
+        if (gBattleMons[partner].ability == ABILITY_VICTORY_STAR && gBattleMons[partner].hp != 0 && partner != gBattlerAttacker)
+            calc = (calc * 110) / 100;
+
         if (gBattleMons[gBattlerTarget].item == ITEM_ENIGMA_BERRY)
         {
             holdEffect = gEnigmaBerries[gBattlerTarget].holdEffect;

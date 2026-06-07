@@ -6854,8 +6854,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_ROCKY_CARGO && moveType == TYPE_ROCK)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
-        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    //if (attacker->ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
+    //    gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_STICKY_TONGUE && (move == MOVE_LICK || move == MOVE_WRAP))
+        gBattleMovePower = (250 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_ILLUMINATE && moveType == TYPE_ELECTRIC)
         gBattleMovePower = (110 * gBattleMovePower) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
@@ -6875,7 +6877,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_CACOPHONY && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_UPROAR || gCurrentMove == MOVE_HYPER_VOICE || gCurrentMove == MOVE_BUG_BUZZ)
-        || gCurrentMove == MOVE_BOOMBURST )
+         || gCurrentMove == MOVE_BOOMBURST )
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_RECKLESS && (gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL || gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL_IF_MISS 
          || gBattleMoves[gCurrentMove].effect == EFFECT_DOUBLE_EDGE))
@@ -7138,6 +7140,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (attacker->ability == ABILITY_TINTED_LENS && (gMoveResultFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE))
                 damage = (damage * 2);
             
+            // Sniper triggered
+            if (attacker->ability == ABILITY_SNIPER && (gCritMultiplier == 2))
+                damage = (damage * 2);
+
             // Multiscale triggered
             if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)
                 damage /= 2;
@@ -7189,6 +7195,9 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             damage = (15 * damage) / 10;
 
         if (attacker->ability == ABILITY_TINTED_LENS && (gMoveResultFlags & MOVE_RESULT_NOT_VERY_EFFECTIVE))
+            damage = (damage * 2);
+
+        if (attacker->ability == ABILITY_SNIPER && (gCritMultiplier == 2))
             damage = (damage * 2);
         
         if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)

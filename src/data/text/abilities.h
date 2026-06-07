@@ -78,7 +78,7 @@ static const u8 sShellArmorDescription[] = _("Blocks critical hits.");
 static const u8 sCacophonyDescription[] = _("Boosts sound-based moves.");
 static const u8 sAirLockDescription[] = _("Negates weather effects.");
 static const u8 sTransistorDescription[] = _("Ups ELECTRIC-type moves.");
-static const u8 sDragonsMawDescription[] = _("Ups DRAGON-type moves.");
+static const u8 sStickyTongueDescription[] = _("Ups LICKITUNG'S LICK.");
 static const u8 sMultitypeDescription[] = _("Ups type moves with items.");
 static const u8 sGalvanizeDescription[] = _("NORMAL moves become ELECTRIC.");
 static const u8 sSnowWarningDescription[] = _("Summons hail in battle.");
@@ -113,8 +113,8 @@ static const u8 sAerilateDescription[] = _("NORMAL moves become FLYING.");
 static const u8 sIronFistDescription[] = _("Boosts punching moves.");
 static const u8 sWeakArmorDescription[] = _("Its stats change when hit.");
 static const u8 sRecklessDescription[] = _("Boosts recoil moves.");
-static const u8 sDefiantDescription[] = _("Lowered stats up ATTACK.");
-static const u8 sCompetitiveDescription[] = _("Lowered stats up SP. ATK.");
+static const u8 sSniperDescription[] = _("Boosts critical hits.");
+static const u8 sVictoryStarDescription[] = _("Ups accuracy on its side.");
 
 
 
@@ -199,7 +199,7 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_CACOPHONY] = _("CACOPHONY"),
     [ABILITY_AIR_LOCK] = _("AIR LOCK"),
     [ABILITY_TRANSISTOR] = _("TRANSISTOR"),
-    [ABILITY_DRAGONS_MAW] = _("DRAGON'S MAW"),
+    [ABILITY_STICKY_TONGUE] = _("SUPER TONGUE"),
     [ABILITY_MULTITYPE] = _("MULTITYPE"),
     [ABILITY_GALVANIZE] = _("GALVANIZE"),
     [ABILITY_SNOW_WARNING] = _("SNOW WARNING"),
@@ -231,8 +231,8 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_IRON_FIST] = _("IRON FIST"),
     [ABILITY_WEAK_ARMOR] = _("WEAK ARMOR"),
     [ABILITY_RECKLESS] = _("RECKLESS"),
-    [ABILITY_DEFIANT] = _("DEFIANT"),
-    [ABILITY_COMPETITIVE] = _("COMPETITIVE"),
+    [ABILITY_SNIPER] = _("SNIPER"),
+    [ABILITY_VICTORY_STAR] = _("VICTORY STAR"),
 };
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
@@ -316,7 +316,7 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_CACOPHONY] = sCacophonyDescription,
     [ABILITY_AIR_LOCK] = sAirLockDescription,
     [ABILITY_TRANSISTOR] = sTransistorDescription,
-    [ABILITY_DRAGONS_MAW] = sDragonsMawDescription,
+    [ABILITY_STICKY_TONGUE] = sStickyTongueDescription,
     [ABILITY_MULTITYPE] = sMultitypeDescription,
     [ABILITY_GALVANIZE] = sGalvanizeDescription,
     [ABILITY_SNOW_WARNING] = sSnowWarningDescription,
@@ -348,6 +348,6 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_IRON_FIST] = sIronFistDescription,
     [ABILITY_WEAK_ARMOR] = sWeakArmorDescription,
     [ABILITY_RECKLESS] = sRecklessDescription,
-    [ABILITY_DEFIANT] = sDefiantDescription,
-    [ABILITY_COMPETITIVE] = sCompetitiveDescription
+    [ABILITY_SNIPER] = sSniperDescription,
+    [ABILITY_VICTORY_STAR] = sVictoryStarDescription
 };
