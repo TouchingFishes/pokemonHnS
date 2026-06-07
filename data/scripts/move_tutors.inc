@@ -1,33 +1,13 @@
 SlateportCity_PokemonFanClub_EventScript_SwaggerTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, SlateportCity_PokemonFanClub_EventScript_SwaggerTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_SWAGGER
 	msgbox MoveTutor_Text_SwaggerTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
 	msgbox MoveTutor_Text_SwaggerWhichMon, MSGBOX_DEFAULT
 	setvar VAR_0x8005, TUTOR_MOVE_SWAGGER
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_SwaggerDeclined
-	removemoney 5000, 0
-	goto MoveTutor_EventScript_SwaggerTaught
-	end
-
-SlateportCity_PokemonFanClub_EventScript_SwaggerTutorFinite::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_SWAGGER, MoveTutor_EventScript_SwaggerTaught
-	msgbox MoveTutor_Text_SwaggerTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_SwaggerDeclined
-	msgbox MoveTutor_Text_SwaggerWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_SWAGGER
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_SwaggerDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_SWAGGER
+	removemoney 2500, 0
 	goto MoveTutor_EventScript_SwaggerTaught
 	end
 
@@ -44,33 +24,13 @@ MoveTutor_EventScript_SwaggerTaught::
 MauvilleCity_EventScript_RolloutTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, MauvilleCity_EventScript_RolloutTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
 	msgbox MoveTutor_Text_RolloutTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
 	msgbox MoveTutor_Text_RolloutWhichMon, MSGBOX_DEFAULT
 	setvar VAR_0x8005, TUTOR_MOVE_ROLLOUT
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RolloutDeclined
-	removemoney 5000, 0
-	goto MoveTutor_EventScript_RolloutTaught
-	end
-
-MauvilleCity_EventScript_RolloutTutorFinite::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT, MoveTutor_EventScript_RolloutTaught
-	msgbox MoveTutor_Text_RolloutTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_RolloutDeclined
-	msgbox MoveTutor_Text_RolloutWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_ROLLOUT
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_RolloutDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_ROLLOUT
+	removemoney 2500, 0
 	goto MoveTutor_EventScript_RolloutTaught
 	end
 
@@ -87,33 +47,13 @@ MoveTutor_EventScript_RolloutTaught::
 VerdanturfTown_PokemonCenter_1F_EventScript_FuryCutterTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, VerdanturfTown_PokemonCenter_1F_EventScript_FuryCutterTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER
 	msgbox MoveTutor_Text_FuryCutterTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FuryCutterDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FuryCutterDeclined
 	msgbox MoveTutor_Text_FuryCutterWhichMon, MSGBOX_DEFAULT
 	setvar VAR_0x8005, TUTOR_MOVE_FURY_CUTTER
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FuryCutterDeclined
-	removemoney 5000, 0
-	goto MoveTutor_EventScript_FuryCutterTaught
-	end
-
-VerdanturfTown_PokemonCenter_1F_EventScript_FuryCutterTutorFinite::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER, MoveTutor_EventScript_FuryCutterTaught
-	msgbox MoveTutor_Text_FuryCutterTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FuryCutterDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FuryCutterDeclined
-	msgbox MoveTutor_Text_FuryCutterWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_FURY_CUTTER
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FuryCutterDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER
+	removemoney 3500, 0
 	goto MoveTutor_EventScript_FuryCutterTaught
 	end
 
@@ -153,33 +93,13 @@ MoveTutor_EventScript_TriAttackTaught::
 FallarborTown_Mart_EventScript_MetronomeTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, FallarborTown_Mart_EventScript_MetronomeTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_METRONOME
 	msgbox MoveTutor_Text_MetronomeTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined
 	msgbox MoveTutor_Text_MetronomeWhichMon, MSGBOX_DEFAULT
 	setvar VAR_0x8005, TUTOR_MOVE_METRONOME
 	call MoveTutor_EventScript_OpenPartyMenu
 	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MetronomeDeclined
-	removemoney 5000, 0
-	goto MoveTutor_EventScript_MetronomeTaught
-	end
-
-FallarborTown_Mart_EventScript_MetronomeTutorFinite::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_METRONOME, MoveTutor_EventScript_MetronomeTaught
-	msgbox MoveTutor_Text_MetronomeTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_MetronomeDeclined
-	msgbox MoveTutor_Text_MetronomeWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_METRONOME
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_MetronomeDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_METRONOME
+	removemoney 2500, 0
 	goto MoveTutor_EventScript_MetronomeTaught
 	end
 
@@ -466,6 +386,52 @@ MoveTutor_EventScript_MegaKickDeclined::
 
 MoveTutor_EventScript_MegaKickTaught::
 	msgbox MoveTutor_Text_MegaKickTaught, MSGBOX_DEFAULT
+	release
+	end
+
+RockTunnel_EventScript_RockSlideTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_RockSlideTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_RockSlideDeclined
+	msgbox MoveTutor_Text_RockSlideWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_ROCK_SLIDE
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, EventScript_RockSlideDeclined
+	removemoney 7500, 0
+	goto EventScript_RockSlideTaught
+	end
+
+EventScript_RockSlideDeclined::
+	msgbox MoveTutor_Text_RockSlideDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+EventScript_RockSlideTaught::
+	msgbox MoveTutor_Text_RockSlideTaught, MSGBOX_DEFAULT
+	release
+	end
+
+LakeOfRage_EventScript_IcyWindTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_IcyWindTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_IcyWindDeclined
+	msgbox MoveTutor_Text_IcyWindWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_ICY_WIND
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_IcyWindDeclined
+	removemoney 5000, 0
+	goto MoveTutor_EventScript_IcyWindTaught
+	end
+
+MoveTutor_EventScript_IcyWindDeclined::
+	msgbox MoveTutor_Text_IcyWindDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_IcyWindTaught::
+	msgbox MoveTutor_Text_IcyWindTaught, MSGBOX_DEFAULT
 	release
 	end
 

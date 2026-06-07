@@ -13,20 +13,25 @@ MoveTutor_Text_SwaggerTeach:
 	.string "my step like that when the CHAIRMAN\l"
 	.string "chewed me out.\p"
 	.string "That took the swagger out of my step.\p"
-	.string "If you'd like, I'll teach the move\n"
-	.string "SWAGGER to a POKéMON of yours.$"
+	.string "But hey-I'll pass it on to you!\p"
+	.string "For just ¥2500, I can teach your\n"
+	.string "POKéMON the move SWAGGER.\p"
+	.string "What do you say?$"
 
 MoveTutor_Text_SwaggerDeclined:
-	.string "What, no? Can't you get into\n"
-	.string "the spirit of things?$"
+	.string "What, no?\n"
+	.string "C'mon, get into the spirit!$"
 
 MoveTutor_Text_SwaggerWhichMon:
-	.string "All right, which POKéMON wants to\n"
-	.string "learn how to SWAGGER?$"
+	.string "All right!\n"
+	.string "Which POKéMON wants to learn how\l"
+	.string "to SWAGGER?$"
 
 MoveTutor_Text_SwaggerTaught:
-	.string "I'll just praise my POKéMON from now\n"
-	.string "on without the swagger.$"
+	.string "Heh… maybe I don't need swagger\n"
+	.string "to praise my POKéMON.\p"
+	.string "But yours?\n"
+	.string "It's got style now!$"
 
 MoveTutor_Text_RolloutTeach:
 	.string "Did you know that you can go from\n"
@@ -37,38 +42,45 @@ MoveTutor_Text_RolloutTeach:
 	.string "Do you think your POKéMON will\n"
 	.string "want to roll, too?\p"
 	.string "I can teach one the move ROLLOUT\n"
-	.string "if you'd like.$"
+	.string "for just ¥2500.\p"
+	.string "What do you say?$"
 
 MoveTutor_Text_RolloutDeclined:
-	.string "You don't need to be shy about it.\n"
-	.string "Let's roll!$"
+	.string "Aw… you don't need to be shy about it.\n"
+	.string "We'll roll together another time!$"
 
 MoveTutor_Text_RolloutWhichMon:
-	.string "Ehehe, sure thing! It'd be great if\n"
-	.string "the POKéMON looked like me.$"
+	.string "Ehehe, sure thing!\n"
+	.string "Which POKéMON should learn to roll?$"
 
 MoveTutor_Text_RolloutTaught:
 	.string "Rolling around in the grass makes me\n"
-	.string "happy. Come on, let's roll!$"
+	.string "so happy!\p"
+	.string "Come on… let's roll!$"
 
 MoveTutor_Text_FuryCutterTeach:
 	.string "There's a move that gets stronger\n"
 	.string "when you keep using it in a row.\p"
 	.string "It's a BUG-type move, and it is\n"
 	.string "wickedly cool.\p"
-	.string "It's called FURY CUTTER.\n"
-	.string "Want me to teach it to a POKéMON?$"
+	.string "It's called FURY CUTTER.\p"
+	.string "I'll teach it to your POKéMON for\n"
+	.string "just ¥3500.\p"
+	.string "Want me to teach it?$"
 
 MoveTutor_Text_FuryCutterDeclined:
-	.string "We're not on the same wavelength.$"
+	.string "Heh… guess we're not on the same\n"
+	.string "wavelength.$"
 
 MoveTutor_Text_FuryCutterWhichMon:
 	.string "Yay!\n"
 	.string "Show me which POKéMON I should teach.$"
 
 MoveTutor_Text_FuryCutterTaught:
-	.string "I get a thrill watching to see if\n"
-	.string "the move keeps hitting in succession!$"
+	.string "I get a thrill watching it build up\n"
+	.string "hit after hit!\p"
+	.string "Keep it going, and it'll get\n"
+	.string "stronger every time!$"
 
 MoveTutor_TriAttackTeach:
 	.string "Ah! A TRAINER! Excellent timing!\p"
@@ -118,12 +130,14 @@ MoveTutor_Text_MetronomeTeach:
 	.string "you waggle a finger?\p"
 	.string "If you want, I can teach your POKéMON\n"
 	.string "the move METRONOME.\p"
+	.string "It'll cost just ¥2500…\n"
+	.string "Not magic, but close enough!\p"
 	.string "Money won't appear, but your POKéMON\n"
 	.string "will waggle a finger. Yes?$"
 
 MoveTutor_Text_MetronomeDeclined:
-	.string "Okay. I'll be here if you change\n"
-	.string "your mind.$"
+	.string "Okay… I guess I'll just keep\n"
+	.string "wishing for free money…$"
 
 MoveTutor_Text_MetronomeWhichMon:
 	.string "Okay! I'll teach it!\n"
@@ -552,3 +566,58 @@ MoveTutor_Text_MegaKickTaught:
     .string "You should run before you're seen\n"
     .string "by the deluded nitwit who trains\l"
     .string "only simple punching over there.$"
+
+MoveTutor_Text_RockSlideTeach:
+    .string "Whoa… careful where you step.\n"
+    .string "These tunnels aren't exactly stable.\p"
+    .string "You ever think about it?\n"
+    .string "All this rock above your head…\p"
+    .string "One rumble and then…\n"
+    .string "WAAAAAAAAAH!\p"
+    .string "Boulders crashing down from the\n"
+    .string "dark!\p"
+    .string "…Heh. You don't seem scared at all.\p"
+    .string "Tell you what…\n"
+    .string "for ¥7500, I can teach your POKéMON\l"
+    .string "ROCK SLIDE.\p"
+    .string "Want to try it?$"
+
+MoveTutor_Text_RockSlideDeclined:
+    .string "Oh… so you are scared after all.$"
+
+MoveTutor_Text_RockSlideWhichMon:
+    .string "Heh! Which POKéMON should I teach\n"
+    .string "ROCK SLIDE?$"
+
+MoveTutor_Text_RockSlideTaught:
+    .string "Just imagine those rocks crashing\n"
+    .string "down on your opponent!\p"
+    .string "…Might be a little scary to use it\n"
+    .string "in this tunnel, though…$"
+
+MoveTutor_Text_IcyWindTeach:
+	.string "Ah… the lake still rages, even now.\p"
+	.string "But do you feel it?\n"
+	.string "A wind drifts here from the east.\p"
+	.string "Cold… steady…\n"
+	.string "It calms even the restless water.\p"
+	.string "I have studied that wind for many years.\p"
+	.string "It slows battles… softens movement…\n"
+	.string "yet never truly harms.\p"
+	.string "For ¥5000, I can teach your POKéMON\n"
+	.string "the move ICY WIND.\p"
+	.string "Will you listen to the wind?$"
+
+MoveTutor_Text_IcyWindDeclined:
+	.string "Hm…\n"
+	.string "Then you do not yet hear the wind.$"
+
+MoveTutor_Text_IcyWindWhichMon:
+	.string "Good…\n"
+	.string "Which POKéMON will learn to feel\n"
+	.string "the eastern wind?$"
+
+MoveTutor_Text_IcyWindTaught:
+	.string "The wind will follow it now.\p"
+	.string "Slow the world… and you will see\n"
+	.string "its shape more clearly.$"
