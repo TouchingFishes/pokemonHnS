@@ -3572,8 +3572,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Timothy1[] = { //ExpertM
     }
 };
 
-//MORIMOTO
-static const struct TrainerMonNoItemCustomMoves sParty_Timothy2[] = { //ExpertMGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Morimoto[] = { //ExpertMGroup
     {
     .iv = 210,
     .lvl = 65,
@@ -3612,8 +3612,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_Timothy2[] = { //ExpertMG
     }
 };
 
-//LEON
-static const struct TrainerMonNoItemCustomMoves sParty_Timothy3[] = { //ExpertMGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Leon[] = { //ExpertMGroup
     {
     .iv = 210,
     .lvl = 65,
@@ -3652,8 +3652,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_Timothy3[] = { //ExpertMG
     }
 };
 
-//SHAUN
-static const struct TrainerMonNoItemCustomMoves sParty_Timothy4[] = { //ExpertMGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Shaun[] = { //ExpertMGroup
     {
     .iv = 210,
     .lvl = 65,
@@ -3692,8 +3692,8 @@ static const struct TrainerMonNoItemCustomMoves sParty_Timothy4[] = { //ExpertMG
     }
 };
 
-//YURI
-static const struct TrainerMonNoItemCustomMoves sParty_Timothy5[] = { //ExpertMGroup
+
+static const struct TrainerMonNoItemCustomMoves sParty_Yuri[] = { //ExpertMGroup
     {
     .iv = 210,
     .lvl = 65,
