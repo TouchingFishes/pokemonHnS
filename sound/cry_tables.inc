@@ -444,6 +444,48 @@ gCryTable::
 	cry Cry_Lucario
 	cry Cry_Nohface
 	cry Cry_Kitsunoh
+	cry Cry_Klink
+	cry Cry_Klang
+	cry Cry_Klinklang
+	cry Cry_Spoink
+	cry Cry_Grumpig
+	cry Cry_Pancham
+	cry Cry_Pangoro
+	cry Cry_Trapinch
+	cry Cry_Vibrava
+	cry Cry_Flygon
+	cry Cry_Emolga
+	cry Cry_Dudunsparce
+	cry Cry_Flittle
+	cry Cry_Espathra
+	cry Cry_Sandile
+	cry Cry_Krokorok
+	cry Cry_Krookodile
+	cry Cry_Darumaka
+	cry Cry_Darmanitan
+	cry Cry_Darmanitan_Trance
+	cry Cry_Cacnea
+	cry Cry_Cacturne
+	cry Cry_Finneon
+	cry Cry_Lumineon
+	cry Cry_Roggenrola
+	cry Cry_Boldore
+	cry Cry_Gigalith
+	cry Cry_Sableye
+	cry Cry_Gemgeist
+	cry Cry_Mawile
+	cry Cry_Bitemare
+	cry Cry_Cubchoo
+	cry Cry_Beartic
+	cry Cry_Spheal
+	cry Cry_Sealeo
+	cry Cry_Walrein
+	cry Cry_Litwick
+	cry Cry_Lampent
+	cry Cry_Chandelure
+	cry Cry_Bagon
+	cry Cry_Shelgon
+	cry Cry_Salamence
 	cry Cry_Turtwig
 	cry Cry_Grotle
 	cry Cry_Torterra
@@ -453,6 +495,7 @@ gCryTable::
 	cry Cry_Piplup
 	cry Cry_Prinplup
 	cry Cry_Empoleon
+	cry Cry_Ramnarok
 
 	.align 2
 gCryTable_Reverse::
@@ -900,6 +943,48 @@ gCryTable_Reverse::
 	cry_reverse Cry_Lucario
 	cry_reverse Cry_Nohface
 	cry_reverse Cry_Kitsunoh
+	cry_reverse Cry_Klink
+	cry_reverse Cry_Klang
+	cry_reverse Cry_Klinklang
+	cry_reverse Cry_Spoink
+	cry_reverse Cry_Grumpig
+	cry_reverse Cry_Pancham
+	cry_reverse Cry_Pangoro
+	cry_reverse Cry_Trapinch
+	cry_reverse Cry_Vibrava
+	cry_reverse Cry_Flygon
+	cry_reverse Cry_Emolga
+	cry_reverse Cry_Dudunsparce
+	cry_reverse Cry_Flittle
+	cry_reverse Cry_Espathra
+	cry_reverse Cry_Sandile
+	cry_reverse Cry_Krokorok
+	cry_reverse Cry_Krookodile
+	cry_reverse Cry_Darumaka
+	cry_reverse Cry_Darmanitan
+	cry_reverse Cry_Darmanitan_Trance
+	cry_reverse Cry_Cacnea
+	cry_reverse Cry_Cacturne
+	cry_reverse Cry_Finneon
+	cry_reverse Cry_Lumineon
+	cry_reverse Cry_Roggenrola
+	cry_reverse Cry_Boldore
+	cry_reverse Cry_Gigalith
+	cry_reverse Cry_Sableye
+	cry_reverse Cry_Gemgeist
+	cry_reverse Cry_Mawile
+	cry_reverse Cry_Bitemare
+	cry_reverse Cry_Cubchoo
+	cry_reverse Cry_Beartic
+	cry_reverse Cry_Spheal
+	cry_reverse Cry_Sealeo
+	cry_reverse Cry_Walrein
+	cry_reverse Cry_Litwick
+	cry_reverse Cry_Lampent
+	cry_reverse Cry_Chandelure
+	cry_reverse Cry_Bagon
+	cry_reverse Cry_Shelgon
+	cry_reverse Cry_Salamence
 	cry_reverse Cry_Turtwig
 	cry_reverse Cry_Grotle
 	cry_reverse Cry_Torterra
@@ -909,3 +994,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Piplup
 	cry_reverse Cry_Prinplup
 	cry_reverse Cry_Empoleon
+	cry_reverse Cry_Meganium
+	cry_reverse Cry_Typhlosion
+	cry_reverse Cry_Feraligatr
+	cry_reverse Cry_Ramnarok
+	cry_reverse Cry_RamnarokRadiant
