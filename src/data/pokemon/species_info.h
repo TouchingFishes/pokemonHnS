@@ -1455,7 +1455,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseDefense_old  = 80,
         .baseSpeed     = 30,
         .baseSpAttack  = 60,
-        .baseSpDefense =110,
+        .baseSpDefense =110, //+30
         .baseSpDefense_old = 80,
         .types = { TYPE_BUG, TYPE_GRASS },
         .catchRate = 75,
@@ -1634,14 +1634,14 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_PERSIAN] =
+    [SPECIES_PERSIAN] = //modified
     {
         .baseHP        = 65,
-        .baseAttack    = 95,
+        .baseAttack    = 95, //+25
         .baseAttack_old = 70,
         .baseDefense   = 60,
         .baseSpeed     = 115,
-        .baseSpAttack  = 80,
+        .baseSpAttack  = 80, //+15
         .baseSpAttack_old = 65,
         .baseSpDefense = 65,
         .types = { TYPE_NORMAL, TYPE_NORMAL },
@@ -1696,7 +1696,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GOLDUCK] = //modified
+    [SPECIES_GOLDUCK] =
     {
         .baseHP        = 80,
         .baseAttack    = 82,
@@ -1704,8 +1704,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed     = 85,
         .baseSpAttack  = 95,
         .baseSpDefense = 80,
-        .types = { TYPE_WATER, TYPE_PSYCHIC }, //changed
-        .types_old = { TYPE_WATER, TYPE_WATER },
+        .types = { TYPE_WATER, TYPE_WATER },
         .catchRate = 75,
         .expYield = 174,
         .evYield_HP        = 0,
@@ -1757,12 +1756,12 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_PRIMEAPE] =
+    [SPECIES_PRIMEAPE] = //modified
     {
         .baseHP        = 65,
         .baseAttack    = 105,
         .baseDefense   = 60,
-        .baseSpeed     = 105,
+        .baseSpeed     = 105, //+10
         .baseSpeed_old = 95,
         .baseSpAttack  = 60,
         .baseSpDefense = 70,
@@ -3307,19 +3306,19 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_LICKITUNG] =
+    [SPECIES_LICKITUNG] = //modified
     {
-        .baseHP        = 110, // +20
+        .baseHP        = 105, // +15
         .baseHP_old    = 90,
         .baseAttack    = 55,
         .baseDefense   = 75,
         .baseSpeed     = 30,
         .baseSpAttack  = 90, // +30
         .baseSpAttack_old = 60,
-        .baseSpDefense = 75,
+        .baseSpDefense = 85, //+10
         .types = { TYPE_NORMAL, TYPE_NORMAL },
         .catchRate = 45,
-        .expYield = 127,
+        .expYield = 147, //+20
         .evYield_HP        = 2,
         .evYield_Attack    = 0,
         .evYield_Defense   = 0,
@@ -3329,11 +3328,11 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .itemCommon = ITEM_NONE,
         .itemRare   = ITEM_NONE,
         .genderRatio = PERCENT_FEMALE(50),
-        .eggCycles = 20,
+        .eggCycles = 25, //+5
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = { EGG_GROUP_MONSTER, EGG_GROUP_MONSTER },
-        .abilities = {ABILITY_OWN_TEMPO, ABILITY_OBLIVIOUS},
+        .abilities = {ABILITY_CLOUD_NINE, ABILITY_NONE},
         .safariZoneFleeRate = 0,
         .bodyColor = BODY_COLOR_PINK,
         .noFlip = FALSE,
