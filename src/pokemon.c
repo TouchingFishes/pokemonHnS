@@ -7135,8 +7135,6 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     //    gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_STICKY_TONGUE && (move == MOVE_LICK || move == MOVE_WRAP))
         gBattleMovePower = (250 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_ILLUMINATE && moveType == TYPE_ELECTRIC)
-        gBattleMovePower = (110 * gBattleMovePower) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
@@ -7150,6 +7148,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (type == TYPE_WATER && attacker->ability == ABILITY_TORRENT && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (type == TYPE_BUG && attacker->ability == ABILITY_SWARM && attacker->hp <= (attacker->maxHP / 3))
+        gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (type == TYPE_ELECTRIC && attacker->ability == ABILITY_ILLUMINATE && attacker->hp <= (attacker->maxHP / 3))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
