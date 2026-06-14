@@ -2702,16 +2702,16 @@ const u8 gDudunsparcePokedexText[] = _(
     "can reach lengths of over six miles.");
 
 const u8 gFlittlePokedexText[] = _(
-    "It inflates its flotation sac, keeping its\n"
-    "face above water in order to watch for\n"
-    "prey movement. It swims by rotating its\n"
-    "two tails like a screw.");
+    "FLITTLE's toes levitate about half\n"
+    "an inch above the ground because of\n"
+    "the psychic power emitted from the\n"
+    "frills on the POKéMON's belly.");
 
 const u8 gEspathraPokedexText[] = _(
-    "Its flotation sac developed as a result\n"
-    "of pursuing aquatic prey. It can double\n"
-    "as a rubber raft. It assists in the rescues\n"
-    "of drowning people.");
+    "It immobilizes opponents by\n"
+    "bathing them in psychic power from its\n"
+    "large eyes. Despite its appearance, it\n"
+    "has a vicious temperament.");
 
 const u8 gSandilePokedexText[] = _(
     "It conceals itself in the sand and\n"

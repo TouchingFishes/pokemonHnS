@@ -994,8 +994,4 @@ gCryTable_Reverse::
 	cry_reverse Cry_Piplup
 	cry_reverse Cry_Prinplup
 	cry_reverse Cry_Empoleon
-	cry_reverse Cry_Meganium
-	cry_reverse Cry_Typhlosion
-	cry_reverse Cry_Feraligatr
 	cry_reverse Cry_Ramnarok
-	cry_reverse Cry_RamnarokRadiant
