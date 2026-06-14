@@ -15175,6 +15175,20 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Justin[] = { //FisherGro
 };
 
 
+static const struct TrainerMonNoItemDefaultMoves sParty_Alec[] = { //FisherGroup
+    {
+    .iv = 0,
+    .lvl = 8,
+    .species = SPECIES_REMORAID,
+    },
+    {
+    .iv = 0,
+    .lvl = 8,
+    .species = SPECIES_REMORAID,
+    },
+};
+
+
 static const struct TrainerMonNoItemDefaultMoves sParty_Matthew[] = { //FisherGroup
     {
     .iv = 0,
@@ -24778,6 +24792,222 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Piplup7[] = { //Rival
     .iv = 255,
     .lvl = 70,
     .species = SPECIES_EMPOLEON,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_FLASH_CANNON, MOVE_DRILL_PECK},
+    },
+};
+
+//Rival Bagon
+static const struct TrainerMonNoItemDefaultMoves sParty_Rival_Bagon1[] = { //RivalGroup
+    {
+    .iv = 0,
+    .lvl = 5,
+    .species = SPECIES_BAGON,
+    },
+};
+static const struct TrainerMonNoItemDefaultMoves sParty_Rival_Bagon2[] = { //RivalGroup
+    {
+    .iv = 0,
+    .lvl = 15,
+    .species = SPECIES_REMORAID,
+    },
+    {
+    .iv = 0,
+    .lvl = 16,
+    .species = SPECIES_GASTLY,
+    },
+    {
+    .iv = 0,
+    .lvl = 18,
+    .species = SPECIES_BAGON,
+    },
+};
+static const struct TrainerMonNoItemCustomMoves sParty_Rival_Bagon3[] = { //RivalGroup
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_REMORAID,
+    .moves = {MOVE_NIGHT_SHADE, MOVE_DISABLE, MOVE_ASTONISH, MOVE_LEER},
+    },
+    {
+    .iv = 0,
+    .lvl = 23,
+    .species = SPECIES_KADABRA,
+    .moves = {MOVE_CONFUSION, MOVE_DISABLE, MOVE_TELEPORT, MOVE_THUNDER_PUNCH},
+    },
+    {
+    .iv = 0,
+    .lvl = 22,
+    .species = SPECIES_GASTLY,
+    .moves = {MOVE_BITE, MOVE_CONFUSE_RAY, MOVE_POISON_STING, MOVE_GUST},
+    },
+    {
+    .iv = 0,
+    .lvl = 24,
+    .species = SPECIES_BAGON,
+    .moves = {MOVE_PECK, MOVE_ICE_PUNCH, MOVE_BUBBLE_BEAM, MOVE_MUD_SLAP},
+    },
+};
+static const struct TrainerMonNoItemCustomMoves sParty_Rival_Bagon4[] = { //RivalGroup
+    {
+    .iv = 100,
+    .lvl = 39,
+    .species = SPECIES_SNEASEL,
+    .moves = {MOVE_FAINT_ATTACK, MOVE_DOUBLE_TEAM, MOVE_QUICK_ATTACK, MOVE_BRICK_BREAK},
+    },
+    {
+    .iv = 100,
+    .lvl = 39,
+    .species = SPECIES_OCTILLERY,
+    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_HOWL, MOVE_QUICK_ATTACK},
+    },
+    {
+    .iv = 100,
+    .lvl = 38,
+    .species = SPECIES_KADABRA,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_DISABLE, MOVE_FIRE_PUNCH},
+    },
+    {
+    .iv = 100,
+    .lvl = 39,
+    .species = SPECIES_HAUNTER,
+    .moves = {MOVE_SHADOW_BALL, MOVE_CURSE, MOVE_CONFUSE_RAY, MOVE_HYPNOSIS},
+    },
+    {
+    .iv = 100,
+    .lvl = 40,
+    .species = SPECIES_SHELGON,
+    .moves = {MOVE_ICE_PUNCH, MOVE_SURF, MOVE_METAL_CLAW, MOVE_DRILL_PECK},
+    },
+};
+static const struct TrainerMonItemCustomMoves sParty_Rival_Bagon5[] = { //RivalGroup
+    {
+    .iv = 100,
+    .lvl = 45,
+    .species = SPECIES_SNEASEL,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SLASH, MOVE_NIGHT_SLASH, MOVE_ROCK_SMASH, MOVE_AERIAL_ACE},
+    },
+    {
+    .iv = 100,
+    .lvl = 45,
+    .species = SPECIES_MAGNETON,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_SLASH, MOVE_ROCK_TOMB, MOVE_QUICK_ATTACK, MOVE_AERIAL_ACE},
+    },
+    {
+    .iv = 100,
+    .lvl = 46,
+    .species = SPECIES_OCTILLERY,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SPARK, MOVE_BITE, MOVE_IRON_DEFENSE, MOVE_QUICK_ATTACK},
+    },
+    {
+    .iv = 100,
+    .lvl = 46,
+    .species = SPECIES_ALAKAZAM,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_DISABLE, MOVE_FIRE_PUNCH},
+    },
+    {
+    .iv = 100,
+    .lvl = 47,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_NONE,
+    .moves = {MOVE_SHADOW_BALL, MOVE_HYPNOSIS, MOVE_THUNDER_PUNCH, MOVE_DREAM_EATER},
+    },
+    {
+    .iv = 100,
+    .lvl = 48,
+    .species = SPECIES_SALAMENCE,
+    .heldItem = ITEM_MYSTIC_WATER,
+    .moves = {MOVE_SURF, MOVE_BLIZZARD, MOVE_FLASH_CANNON, MOVE_DRILL_PECK},
+    },
+};
+static const struct TrainerMonItemCustomMoves sParty_Rival_Bagon6[] = { //RivalGroup
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_WEAVILE,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICE_PUNCH, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK},
+    },
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_MAGNEZONE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE},
+    },
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_KUJINOUGHT,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_BITE, MOVE_IRON_TAIL},
+    },
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_ALAKAZAM,
+    .heldItem = ITEM_TWISTED_SPOON,
+    .moves = {MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH},
+    },
+    {
+    .iv = 255,
+    .lvl = 64,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_SPELL_TAG,
+    .moves = {MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP, MOVE_ICE_PUNCH},
+    },
+    {
+    .iv = 255,
+    .lvl = 66,
+    .species = SPECIES_SALAMENCE,
+    .heldItem = ITEM_QUICK_CLAW,
+    .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_FLASH_CANNON, MOVE_DRILL_PECK},
+    },
+};
+static const struct TrainerMonItemCustomMoves sParty_Rival_Bagon7[] = { //RivalGroup
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_WEAVILE,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .moves = {MOVE_NIGHT_SLASH, MOVE_ICE_PUNCH, MOVE_AERIAL_ACE, MOVE_BRICK_BREAK},
+    },
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_MAGNEZONE,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_X_SCISSOR, MOVE_ROCK_TOMB, MOVE_EARTHQUAKE, MOVE_AERIAL_ACE},
+    },
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_KUJINOUGHT,
+    .heldItem = ITEM_CHARCOAL,
+    .moves = {MOVE_THUNDERBOLT, MOVE_FLAMETHROWER, MOVE_BITE, MOVE_IRON_TAIL},
+    },
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_ALAKAZAM,
+    .heldItem = ITEM_TWISTED_SPOON,
+    .moves = {MOVE_PSYCHIC, MOVE_ICE_PUNCH, MOVE_THUNDER_PUNCH, MOVE_FIRE_PUNCH},
+    },
+    {
+    .iv = 255,
+    .lvl = 68,
+    .species = SPECIES_GENGAR,
+    .heldItem = ITEM_SPELL_TAG,
+    .moves = {MOVE_SHADOW_BALL, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP, MOVE_ICE_PUNCH},
+    },
+    {
+    .iv = 255,
+    .lvl = 70,
+    .species = SPECIES_SALAMENCE,
     .heldItem = ITEM_QUICK_CLAW,
     .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_FLASH_CANNON, MOVE_DRILL_PECK},
     },

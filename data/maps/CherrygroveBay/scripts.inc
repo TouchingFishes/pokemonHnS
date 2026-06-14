@@ -21,6 +21,11 @@ CherrygroveBay_EventScript_BeautyVeronica::
 	msgbox CherrygroveBay_Text_VeronicaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+CherrygroveBay_EventScript_FisherAlec::
+	trainerbattle_single TRAINER_ALEC, CherrygroveBay_Text_AlecIntro, CherrygroveBay_Text_AlecDefeat
+	msgbox CherrygroveBay_Text_AlecPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 CherrygroveBay_EventScript_ExpertMudSlap::
 	lock
 	faceplayer
@@ -48,10 +53,10 @@ CherrygroveBay_EventScript_Tuber::
 	end
 
 CherrygroveBay_Text_Tuber:
-.string "Whee! The water's so nice!\p"
-.string "I could play here all day!\p"
-.string "Hey, hey!\n"
-.string "Do you wanna play too?$"
+	.string "Whee! The water's so nice!\p"
+	.string "I could play here all day!\p"
+	.string "Hey, hey!\n"
+	.string "Do you wanna play too?$"
 
 CherrygroveBay_Text_TylerIntro:
 	.string "The sea's my turf!\n"
@@ -61,7 +66,7 @@ CherrygroveBay_Text_TylerDefeat:
 	.string "Whoa… too fast…$"
 
 CherrygroveBay_Text_TylerPostBattle:
-	.string "My Wartortle and I swim every\n"
+	.string "My WARTORTLE and I swim every\n"
 	.string "day together.\p"
 	.string "It's crazy fast… I can barely\n"
 	.string "keep up sometimes!$"
@@ -89,15 +94,15 @@ CherrygroveBay_Text_LeahDefeat:
 	.string "Oh! Was the tide against me?$"
 
 CherrygroveBay_Text_LeahPostBattle:
-	.string "My Corsola loves days like\n"
+	.string "My CORSOLA loves days like\n"
 	.string "this.\p"
 	.string "Warm sun, calm waves…\n"
-	.string "Cherrygrove Bay is perfect!$"
+	.string "CHERRYGROVE BAY is perfect!$"
 
 CherrygroveBay_Text_VeronicaIntro:
 	.string "This warmth is perfect for my\n"
 	.string "complexion.\p"
-	.string "Let’s see if you can keep up.$"
+	.string "Let's see if you can keep up.$"
 
 CherrygroveBay_Text_VeronicaDefeat:
 	.string "Oh my… I lost my glow.$"
@@ -117,7 +122,21 @@ CherrygroveBay_Text_ExpertMudSlap_Intro:
 	.string "but it can turn the tide.$"
 
 CherrygroveBay_Text_ExpertMudSlap_After:
-	.string "Lowering your foe's accuracy\n"
+	.string "Lowering your foe's ACCURACY\n"
 	.string "can create openings.\p"
-	.string "Use your Pokémon's moves\n"
+	.string "Use your POKéMON's moves\n"
 	.string "with cunning, not just force.$"
+
+CherrygroveBay_Text_AlecIntro:
+	.string "The sea's full of surprises!\p"
+	.string "My REMORAID and I never miss\n"
+	.string "a good catch!$"
+
+CherrygroveBay_Text_AlecDefeat:
+	.string "Ack! My aim was off!$"
+
+CherrygroveBay_Text_AlecPostBattle:
+	.string "REMORAID may be small, but\n"
+	.string "it's got incredible accuracy!\p"
+	.string "Watching it fire shots across\n"
+	.string "the water never gets old!$"

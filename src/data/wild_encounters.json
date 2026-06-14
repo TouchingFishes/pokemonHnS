@@ -36202,7 +36202,7 @@
               {
                 "min_level": 7,
                 "max_level": 7,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_EKANS"
               },
               {
                 "min_level": 6,
@@ -36212,7 +36212,7 @@
               {
                 "min_level": 6,
                 "max_level": 6,
-                "species": "SPECIES_HOOTHOOT"
+                "species": "SPECIES_EKANS"
               },
               {
                 "min_level": 6,
@@ -58808,12 +58808,12 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
@@ -58823,7 +58823,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 40,
@@ -58833,22 +58833,22 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_REMORAID"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 45,
+                "max_level": 45,
                 "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 35,
+                "max_level": 35,
                 "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_KRABBY"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_OCTILLERY"
               }
             ]
           }
@@ -59027,12 +59027,12 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
@@ -59042,7 +59042,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_STARYU"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 40,
@@ -59052,22 +59052,22 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_STARYU"
+                "species": "SPECIES_REMORAID"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 45,
+                "max_level": 45,
                 "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_STARYU"
+                "min_level": 35,
+                "max_level": 35,
+                "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_KRABBY"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_OCTILLERY"
               }
             ]
           }
@@ -68266,12 +68266,12 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
@@ -68281,7 +68281,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 40,
@@ -68291,22 +68291,22 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_REMORAID"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 45,
+                "max_level": 45,
                 "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 35,
+                "max_level": 35,
                 "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_KRABBY"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_OCTILLERY"
               }
             ]
           }
@@ -68450,12 +68450,12 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_KRABBY"
+                "species": "SPECIES_REMORAID"
               },
               {
                 "min_level": 20,
@@ -68465,7 +68465,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_KRABBY"
               },
               {
                 "min_level": 40,
@@ -68475,22 +68475,22 @@
               {
                 "min_level": 40,
                 "max_level": 40,
-                "species": "SPECIES_CORSOLA"
+                "species": "SPECIES_REMORAID"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 45,
+                "max_level": 45,
                 "species": "SPECIES_KINGLER"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
+                "min_level": 35,
+                "max_level": 35,
                 "species": "SPECIES_CORSOLA"
               },
               {
-                "min_level": 40,
-                "max_level": 40,
-                "species": "SPECIES_KRABBY"
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_OCTILLERY"
               }
             ]
           }

@@ -43,8 +43,8 @@
 #define TRAINER_VIOLET                       39 //unused in johto
 #define TRAINER_AMBER                        40
 #define TRAINER_CORY                         41
-#define TRAINER_MOTO                         42 //unused in johto
-#define TRAINER_ROSE_5                       43 //unused in johto
+#define TRAINER_MOTO                         42
+#define TRAINER_ALEC                         43
 #define TRAINER_KRISE                        44
 #define TRAINER_GRUNT_16                     45
 #define TRAINER_RAYMOND                      46

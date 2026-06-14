@@ -2476,6 +2476,19 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_ALEC] =
+    {
+        .trainerClass = TRAINER_CLASS_FISHERMAN,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SUSPICIOUS_2,
+        .trainerPic = TRAINER_PIC_FISHERMAN,
+        .trainerName = _("ALEC"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Alec),
+    },
+
+
     [TRAINER_EVAN] =
     {
         .trainerClass = TRAINER_CLASS_FISHERMAN,
