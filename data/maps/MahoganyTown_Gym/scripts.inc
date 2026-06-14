@@ -141,12 +141,14 @@ MahoganyTown_Gym_Text_ReceivedBadge:
     .string "{PLAYER} received GLACIERBADGE.$"
 
 MahoganyTown_Gym_Text_GlacierBadgeSpeech:
-    .string "That BADGE will raise the SPECIAL\n"
-    .string "ATTACK of POKéMON.\p"
-    .string "It also lets your POKéMON use\n"
-    .string "WHIRLPOOL to get across\l"
-    .string "real whirlpools.\p"
-    .string "And this… This is a gift from me!$"
+    .string "That BADGE is proof that you have\n"
+    .string "endured the harshness of battle.\p"
+    .string "It will let your POKéMON use\n"
+    .string "WHIRLPOOL to carve a path through\l"
+    .string "even the most violent waters.\p"
+    .string "Remember… only those who withstand\n"
+    .string "the cold can truly grow strong.\p"
+    .string "And this… This is a gift from me.$"
 
 MahoganyTown_Gym_Text_HailSpeech:
     .string "That TM contains HAIL.\p"
