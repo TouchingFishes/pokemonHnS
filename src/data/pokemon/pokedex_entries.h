@@ -5408,7 +5408,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_EMOLGA] =
     {
-        .categoryName = _("SKY SQUIRREL"),
+        .categoryName = _("MOMONGA"),
         .height = 4,
         .weight = 50,
         .description = gEmolgaPokedexText,
@@ -5430,29 +5430,29 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_FLITTLE] =
     {
-        .categoryName = _("SEA WEASEL"),
-        .height = 7,
-        .weight = 295,
+        .categoryName = _("FRILL"),
+        .height = 2,
+        .weight = 15,
         .description = gFlittlePokedexText,
         .pokemonScale = 365,
-        .pokemonOffset = 12,
+        .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
     [NATIONAL_DEX_ESPATHRA] =
     {
-        .categoryName = _("SEA WEASEL"),
-        .height = 11,
-        .weight = 335,
+        .categoryName = _("OSTRICH"),
+        .height = 19,
+        .weight = 900,
         .description = gEspathraPokedexText,
-        .pokemonScale = 320,
-        .pokemonOffset = 7,
+        .pokemonScale = 356,
+        .pokemonOffset = 17,
         .trainerScale = 256,
         .trainerOffset = 0,
     },
     [NATIONAL_DEX_SANDILE] =
     {
-        .categoryName = _("DESERT CROCO"),
+        .categoryName = _("CROCODILE"),
         .height = 7,
         .weight = 152,
         .description = gSandilePokedexText,
@@ -5463,7 +5463,7 @@ const struct PokedexEntry gPokedexEntries[] =
     },
     [NATIONAL_DEX_KROKOROK] =
     {
-        .categoryName = _("DESERT CROCO"),
+        .categoryName = _("CROCODILE"),
         .height = 10,
         .weight = 334,
         .description = gKrokorokPokedexText,
