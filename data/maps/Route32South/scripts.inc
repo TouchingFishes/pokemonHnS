@@ -98,3 +98,4 @@ Route32South_Text_CarolinePostBattle:
 	.string "This quiet beach… and those\n"
 	.string "cherry blossoms…\n"
 	.string "they're simply perfect.$"
+

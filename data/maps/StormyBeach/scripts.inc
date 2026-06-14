@@ -26,3 +26,4 @@ StormyBeach_Text_TammyPostBattle:
 	.string "spirits drift away.\p"
 	.string "But the sea remembers… it\n"
 	.string "always remembers…$"
+

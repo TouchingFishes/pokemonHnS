@@ -282,3 +282,4 @@ Route40_EventScript_Tentacool::
 	waitmoncry
 	release
 	end
+

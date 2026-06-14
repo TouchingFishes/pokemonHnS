@@ -81,7 +81,7 @@ KiwameHouse_Text_UltimateTaught_Grass:
 	.string "Frenzy Plant does not simply\n"
 	.string "strike… it buries.\p"
 	.string "Let your foe be swallowed by\n"
-	.string "nature’s wrath…\p"
+	.string "nature's wrath…\p"
 	.string "But remember-once awakened,\n"
 	.string "it does not easily rest.$"
 
@@ -113,4 +113,6 @@ KiwameHouse_Text_UltimateTaught:
 	.string "demands a heavy cost.\p"
 	.string "Strike at the perfect moment,\n"
 	.string "and victory will be yours.$"
+
+
 	
