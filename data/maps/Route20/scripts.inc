@@ -10,6 +10,10 @@ Route20_EventScript_ShellBell::
 	finditem ITEM_SHELL_BELL
 	end
 
+Route20_EventScript_TMFlameCharge::
+	finditem ITEM_TM_FLAME_CHARGE
+	end
+
 Route20_OnTransition:
 	callnative SetTimeBasedEncounters
 	end

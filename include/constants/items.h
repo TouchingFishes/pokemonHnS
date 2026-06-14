@@ -376,14 +376,14 @@
 #define ITEM_TM49 337
 #define ITEM_TM50 338
 #define ITEM_TM51 339 //Mirror Shot - Violet City done
-#define ITEM_TM52 340 //Flame Charge
+#define ITEM_TM52 340 //Flame Charge - Route 20 done
 #define ITEM_TM53 341 //Ice Punch - Goldenrod Mart done
 #define ITEM_TM54 342 //Mimic - Mahogany City done
 #define ITEM_TM55 343 //Grass Knot - Celadon Gym
 #define ITEM_TM56 344 //Charge Beam - 
 #define ITEM_TM57 345 //Venoshock
 #define ITEM_TM58 346 //Rock Blast
-#define ITEM_TM59 347 //Energy Ball - Route 26
+#define ITEM_TM59 347 //Energy Ball - Route 26 done
 #define ITEM_TM60 348 //Swift - Union Cave done
 #define ITEM_TM61 349 //Mud Slap - Cherrygrove Bay done
 #define ITEM_TM62 350 //Sleep Talk
@@ -398,7 +398,7 @@
 #define ITEM_TM71 359 //Thunder Punch - Goldenrod Mart done
 #define ITEM_TM72 360 //Dream Eater - Viridian City done
 #define ITEM_TM73 361 //Pounce - Bugsy's TM, Azalea Gym done
-#define ITEM_TM74 362 //Dragonbreath - Claire's TM, Blackthorn (?)
+#define ITEM_TM74 362 //Dragonbreath - 
 #define ITEM_TM75 363 //Nightmare - Route 31
 #define ITEM_HM01 364
 #define ITEM_HM02 365

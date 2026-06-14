@@ -7,6 +7,10 @@ Route26_OnTransition:
 	callnative SetTimeBasedEncounters
 	end
 
+Route26_EventScript_TMEnergyBall::
+	finditem ITEM_TM_ENERGY_BALL
+	end
+
 Route26_EventScript_Jake::
 	trainerbattle_single TRAINER_JAKE Route26_Text_CooltrainermJakeSeen, Route26_Text_CooltrainermJakeBeaten
 	msgbox Route26_Text_CooltrainermJakeAfter, MSGBOX_AUTOCLOSE
