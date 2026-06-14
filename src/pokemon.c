@@ -2194,9 +2194,9 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_KITSUNOH - 1]   = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_KLINK - 1]       = ANIM_CIRCULAR_STRETCH_TWICE,
     [SPECIES_KLANG - 1]       = ANIM_CIRCULAR_STRETCH_TWICE,
-    [SPECIES_KLINKLANG - 1]  = ANIM_CIRCULAR_STRETCH_TWICE,
-    [SPECIES_SPOINK - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
-    [SPECIES_GRUMPIG - 1]    = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_KLINKLANG - 1]   = ANIM_CIRCULAR_STRETCH_TWICE,
+    [SPECIES_SPOINK - 1]      = ANIM_H_JUMPS_V_STRETCH_TWICE,
+    [SPECIES_GRUMPIG - 1]     = ANIM_H_JUMPS_V_STRETCH,
     [SPECIES_PANCHAM - 1]     = ANIM_H_STRETCH,
     [SPECIES_PANGORO - 1]     = ANIM_BACK_AND_LUNGE,
     [SPECIES_TRAPINCH - 1]    = ANIM_V_SHAKE,
@@ -2204,7 +2204,7 @@ static const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_FLYGON - 1]      = ANIM_ZIGZAG_SLOW,
     [SPECIES_EMOLGA - 1]      = ANIM_V_SQUISH_AND_BOUNCE_SLOW,
     [SPECIES_DUDUNSPARCE - 1] = ANIM_V_SQUISH_AND_BOUNCE,
-    [SPECIES_FLITTLE - 1]      = ANIM_GROW_VIBRATE,
+    [SPECIES_FLITTLE - 1]     = ANIM_GROW_VIBRATE,
     [SPECIES_ESPATHRA - 1]    = ANIM_H_JUMPS_V_STRETCH,
     [SPECIES_SANDILE - 1]     = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_KROKOROK - 1]    = ANIM_V_STRETCH,
@@ -6938,9 +6938,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (gSaveBlock2Ptr->optionStyle == 0)
         if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
             gBattleMovePower /= 2;
+        if (defender->ability == ABILITY_MAGMA_ARMOR && type == TYPE_WATER)
+            gBattleMovePower /= 8;
     if (gSaveBlock2Ptr->optionStyle == 1)
         if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
             spAttack /= 2;
+        if (defender->ability == ABILITY_MAGMA_ARMOR && type == TYPE_WATER)
+            spAttack /= 8;
     if ((defender->ability != ABILITY_NONE) 
     && (gSaveBlock2Ptr->optionsDifficulty == 2) 
     && (side == B_SIDE_PLAYER) 
