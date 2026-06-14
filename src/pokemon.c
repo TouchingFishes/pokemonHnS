@@ -7127,6 +7127,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         attack = (150 * attack) / 100;
     if (attacker->ability == ABILITY_TRANSISTOR && moveType == TYPE_ELECTRIC)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_PSI_CONDUIT && moveType == TYPE_PSYCHIC)
+        gBattleMovePower = (175 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_MINDS_EYE && moveType == TYPE_GHOST)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_ROCKY_CARGO && moveType == TYPE_ROCK)

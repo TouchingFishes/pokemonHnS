@@ -424,7 +424,7 @@ bool8 TryRunFromBattle(u8 battler)
         gProtectStructs[battler].fleeType = FLEE_ITEM;
         effect++;
     }
-    else if (gBattleMons[battler].ability == ABILITY_RUN_AWAY)
+    else if (gBattleMons[battler].ability == ABILITY_SKITTISH)
     {
         if (InBattlePyramid())
         {
@@ -433,14 +433,14 @@ bool8 TryRunFromBattle(u8 battler)
             speedVar = (gBattleMons[battler].speed * pyramidMultiplier) / (gBattleMons[BATTLE_OPPOSITE(battler)].speed) + (gBattleStruct->runTries * 30);
             if (speedVar > (Random() & 0xFF))
             {
-                gLastUsedAbility = ABILITY_RUN_AWAY;
+                gLastUsedAbility = ABILITY_SKITTISH;
                 gProtectStructs[battler].fleeType = FLEE_ABILITY;
                 effect++;
             }
         }
         else
         {
-            gLastUsedAbility = ABILITY_RUN_AWAY;
+            gLastUsedAbility = ABILITY_SKITTISH;
             gProtectStructs[battler].fleeType = FLEE_ABILITY;
             effect++;
         }
@@ -2038,7 +2038,7 @@ u8 AtkCanceller_UnableToUseMove(void)
                 else
                 {
                     u8 toSub;
-                    if (gBattleMons[gBattlerAttacker].ability == ABILITY_EARLY_BIRD)
+                    if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKITTISH)
                         toSub = 2;
                     else
                         toSub = 1;

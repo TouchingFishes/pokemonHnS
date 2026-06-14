@@ -4801,7 +4801,7 @@ u8 IsRunningFromBattleImpossible(void)
         return BATTLE_RUN_SUCCESS;
     if (gBattleTypeFlags & BATTLE_TYPE_LINK)
         return BATTLE_RUN_SUCCESS;
-    if (gBattleMons[gActiveBattler].ability == ABILITY_RUN_AWAY)
+    if (gBattleMons[gActiveBattler].ability == ABILITY_SKITTISH)
         return BATTLE_RUN_SUCCESS;
 
     side = GetBattlerSide(gActiveBattler);
