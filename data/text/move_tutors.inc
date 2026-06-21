@@ -621,3 +621,35 @@ MoveTutor_Text_IcyWindTaught:
 	.string "The wind will follow it now.\p"
 	.string "Slow the world… and you will see\n"
 	.string "its shape more clearly.$"
+
+MoveTutor_Text_FocusBlastTeach:
+	.string "…Listen closely.\p"
+	.string "Out here, where the sea meets\n"
+	.string "the cliffs, there is no room for\l"
+	.string "distractions.\p"
+	.string "Power must be gathered…\n"
+	.string "then released all at once.\p"
+	.string "That is the essence of\n"
+	.string "FOCUS BLAST.\p"
+	.string "It is not an easy technique.\n"
+	.string "But in the right moment…\l"
+	.string "it decides everything.\p"
+	.string "I can teach it to your POKéMON\n"
+	.string "for ¥20000.\p"
+	.string "Will you learn to strike with\n"
+	.string "true focus?$"
+
+MoveTutor_Text_FocusBlastDeclined:
+	.string "…I see.\p"
+	.string "Then return when your focus\n"
+	.string "is stronger.$"
+
+MoveTutor_Text_FocusBlastWhichMon:
+	.string "Good.\p"
+	.string "Which POKéMON will learn to\n"
+	.string "gather its strength?$"
+
+MoveTutor_Text_FocusBlastTaught:
+	.string "Do not waste that power.\p"
+	.string "FOCUS BLAST demands patience…\n"
+	.string "and perfect timing.$"

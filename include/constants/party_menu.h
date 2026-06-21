@@ -49,7 +49,8 @@
 #define TUTOR_MOVE_HEAT_WAVE       34
 #define TUTOR_MOVE_BIDE            35
 #define TUTOR_MOVE_WILD_CHARGE     36
-#define TUTOR_MOVE_COUNT           37
+#define TUTOR_MOVE_FOCUS_BLAST     37
+#define TUTOR_MOVE_COUNT           38
 
 #define PARTY_LAYOUT_SINGLE          0
 #define PARTY_LAYOUT_DOUBLE          1

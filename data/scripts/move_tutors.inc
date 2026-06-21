@@ -435,6 +435,29 @@ MoveTutor_EventScript_IcyWindTaught::
 	release
 	end
 
+CeruleanCape_EventScript_FocusBlastTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_FocusBlastTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_FocusBlastDeclined
+	msgbox MoveTutor_Text_FocusBlastWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_FOCUS_BLAST
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_FocusBlastDeclined
+	removemoney 20000, 0
+	goto MoveTutor_EventScript_FocusBlastTaught
+	end
+
+MoveTutor_EventScript_FocusBlastDeclined::
+	msgbox MoveTutor_Text_FocusBlastDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_FocusBlastTaught::
+	msgbox MoveTutor_Text_FocusBlastTaught, MSGBOX_DEFAULT
+	release
+	end
+
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate
