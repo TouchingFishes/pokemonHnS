@@ -3340,6 +3340,7 @@ const union {
     } },
 
     [SPECIES_KINGLER] = { .learnset = {
+        .DYNAMIC_PUNCH = TRUE,
         .WATER_PULSE = TRUE,
         .TOXIC = TRUE,
         .HAIL = TRUE,

@@ -40,7 +40,7 @@
 #define TRAINER_JEFFREY                      36
 #define TRAINER_GRUNT_33                     37
 #define TRAINER_NORMAN                       38
-#define TRAINER_VIOLET                       39 //unused in johto
+#define TRAINER_VIOLET                       39
 #define TRAINER_AMBER                        40
 #define TRAINER_CORY                         41
 #define TRAINER_MOTO                         42
@@ -88,7 +88,7 @@
 #define TRAINER_EVAN                         84
 #define TRAINER_OSCAR                        85
 #define TRAINER_AUBREE                       86 //unused in johto
-#define TRAINER_WILTON_5                     87 //unused in johto
+#define TRAINER_HUNTER                       87
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
 #define TRAINER_BARNEY                       90
@@ -101,7 +101,7 @@
 #define TRAINER_SHANNON                      97
 #define TRAINER_MICHELLE                     98
 #define TRAINER_CAROLINE                     99
-#define TRAINER_JULIE                       100 //unused in johto
+#define TRAINER_JULIE                       100
 #define TRAINER_ERICK                       101 //?
 #define TRAINER_ERIK                        102
 #define TRAINER_ERIN                        103
@@ -125,8 +125,8 @@
 #define TRAINER_GRUNT_21                    121
 #define TRAINER_GRUNT_22                    122
 #define TRAINER_GRUNT_23                    123
-#define TRAINER_MELISSA                     124 //unused in johto
-#define TRAINER_DALLAS                      125 //unused in johto
+#define TRAINER_MELISSA                     124
+#define TRAINER_DALLAS                      125
 #define TRAINER_SHIRLEY                     126
 #define TRAINER_ARIANA_1                    127
 #define TRAINER_CONNIE                      128
@@ -138,7 +138,7 @@
 #define TRAINER_MONIKA                      134
 #define TRAINER_ROMAN                       135
 #define TRAINER_WINSTON_1                   136
-#define TRAINER_COLTON                      137 //until here
+#define TRAINER_COLTON                      137
 #define TRAINER_GARRET                      138
 #define TRAINER_WINSTON_2                   139
 #define TRAINER_WINSTON_3                   140
@@ -281,7 +281,7 @@
 #define TRAINER_ARCHER_5                    277
 #define TRAINER_PETREL_2                    278
 #define TRAINER_PROTON_2                    279
-#define TRAINER_UNUSEDNAME_2                280
+#define TRAINER_FOSTER                      280
 #define TRAINER_GEORGIA                     281
 #define TRAINER_BLUE_2                      282
 #define TRAINER_KAREN_3                     283
