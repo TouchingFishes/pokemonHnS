@@ -77,10 +77,6 @@ Route27_EventScript_Item_SolarBeam::
     finditem ITEM_TM_SOLAR_BEAM
     end
 
-Route27_EventScript_Item_SignalBeam::
-    finditem ITEM_TM_SIGNAL_BEAM
-    end
-
 Route27_EventScript_Fatman::
     msgbox Route27_Text_FisherMessage, MSGBOX_NPC
     end

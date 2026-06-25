@@ -178,6 +178,24 @@ VioletCity_EventScript_Rattata::
 	release
 	end
 
+VioletCity_EventScript_Clefairy::
+	lock
+	faceplayer
+	waitse
+	playmoncry SPECIES_CLEFAIRY, CRY_MODE_NORMAL
+	msgbox VioletCity_Text_Clefairy, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+VioletCity_EventScript_Schoolboy::
+	lock
+	faceplayer
+	msgbox VioletCity_Text_Schoolboy, MSGBOX_DEFAULT
+	closemessage
+	release
+	end
+
 VioletCity_EventScript_ElmCall_Trigger::
 	lock
 	pokenavcall VioletCity_Text_Elm_Call
@@ -451,6 +469,16 @@ VioletCity_Text_Youngster:
 	.string "If you touch it, it squirms\n"
 	.string "and dances! Cool!$"
 
+VioletCity_Text_Schoolboy:
+	.string "CLEFAIRY is an evolved POKéMON.\p"
+	.string "I was amazed by PROF.ELM's\n"
+	.string "findings.\p" 
+	.string "He's so famous for his research\n"
+	.string "on POKéMON evolution.\p"
+	.string "…sigh…\p"
+	.string "I wish I could be a researcher\n"
+	.string "like him…$"
+
 VioletCity_Text_Sign:
 	.string "VIOLET CITY\p"
 	.string "The City of Nostalgic Scents$"
@@ -473,8 +501,11 @@ VioletCity_Text_Pichu:
 VioletCity_Text_Bellsprout:
 	.string "BELLSPROUT: Sprouuuut.$"
 
+VioletCity_Text_Clefairy:
+	.string "CLEFAIRY: Pyuuu-Paaaah.$"
+
 VioletCity_Text_Rattata:
-	.string "RATTATA: RATTATARATTA!$"
+	.string "RATTATA: Rattataratta!$"
 
 VioletCity_Text_Elm_Call:
 	.string "PROF.ELM: Hello, {PLAYER}? We\n"

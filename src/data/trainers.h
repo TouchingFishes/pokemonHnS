@@ -1690,6 +1690,32 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_HUNTER] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("HUNTER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Hunter),
+    },
+
+
+    [TRAINER_FOSTER] =
+    {
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("FOSTER"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Foster),
+    },
+
+
     [TRAINER_GRUNT] = //unused
     {
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
@@ -2394,7 +2420,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Josh),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Josh),
     },
 
 
@@ -4501,19 +4527,6 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_KIM] =
-    {
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
-        .trainerPic = TRAINER_CLASS_AROMA_LADY,
-        .trainerName = _("KIM"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Kim),
-    },
-
-
     [TRAINER_CINDY] =
     {
         .trainerClass = TRAINER_CLASS_PICNICKER,
@@ -4872,6 +4885,45 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Quentin),
+    },
+
+
+    [TRAINER_KIM] =
+    {
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
+        .trainerPic = TRAINER_CLASS_AROMA_LADY,
+        .trainerName = _("KIM"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Kim),
+    },
+
+
+    [TRAINER_VIOLET] =
+    {
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
+        .trainerPic = TRAINER_CLASS_AROMA_LADY,
+        .trainerName = _("VIOLET"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Violet),
+    },
+
+
+    [TRAINER_MELISSA] =
+    {
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_1,
+        .trainerPic = TRAINER_CLASS_AROMA_LADY,
+        .trainerName = _("MELISSA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Melissa),
     },
 
 

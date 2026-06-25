@@ -129,6 +129,53 @@ CeladonCity_Gym_Text_BeautyJuliaAfter:
 	.string "How do I go about becoming\n"
 	.string "ladylike like ERIKA?$"
 
+CeladonCity_Gym_EventScript_Violet::
+	trainerbattle_single TRAINER_VIOLET, CeladonCity_Gym_Text_VioletSeen, CeladonCity_Gym_Text_VioletBeaten
+	msgbox CeladonCity_Gym_Text_VioletAfter, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Gym_Text_VioletSeen:
+	.string "Oh! A challenger?\p"
+	.string "I was just imagining a warm\n"
+	.string "tropical breeze…\p"
+	.string "Palm trees, bright sun, and\n"
+	.string "POKéMON full of life!\p"
+	.string "Let me show you how vibrant\n"
+	.string "they can be!$"
+
+CeladonCity_Gym_Text_VioletBeaten:
+	.string "Oh… the tide turned…$"
+
+CeladonCity_Gym_Text_VioletAfter:
+	.string "GRASS POKéMON remind me of\n"
+	.string "lush islands far away.\p"
+	.string "Strong sunlight, gentle rain…\n"
+	.string "they thrive in places like that.\p"
+	.string "Battling you felt like a sudden\n"
+	.string "storm rolling in.$"
+
+CeladonCity_Gym_EventScript_Melissa::
+	trainerbattle_single TRAINER_MELISSA, CeladonCity_Gym_Text_MelissaSeen, CeladonCity_Gym_Text_MelissaBeaten
+	msgbox CeladonCity_Gym_Text_MelissaAfter, MSGBOX_AUTOCLOSE
+	end
+
+CeladonCity_Gym_Text_MelissaSeen:
+	.string "Oh… do you smell that?\p"
+	.string "A gentle fragrance drifting\n"
+	.string "through the air…\p"
+	.string "Let me show you how soothing\n"
+	.string "and dangerous it can be.$"
+
+CeladonCity_Gym_Text_MelissaBeaten:
+	.string "Ah… your scent overpowered mine…$"
+
+CeladonCity_Gym_Text_MelissaAfter:
+	.string "Battles are not just about force.\p"
+	.string "Aroma can calm… or confuse…\n"
+	.string "even the fiercest POKéMON.\p"
+	.string "Take a deep breath.\n"
+	.string "You may notice more than before.$"
+
 CeladonCity_Gym_EventScript_Jo::
 	trainerbattle_double TRAINER_JO_AND_ZOE, CeladonCity_Gym_Text_TwinsJoAndZoe1Seen, CeladonCity_Gym_Text_TwinsJoAndZoe1Beaten, Route104_Text_GinaNotEnoughMons
 	special GetPlayerBigGuyGirlString

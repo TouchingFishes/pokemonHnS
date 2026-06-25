@@ -13,7 +13,7 @@ ViridianCity_Gym_EventScript_Blue::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox ViridianCity_Gym_Text_LeaderBlue_After, MSGBOX_DEFAULT
-	giveitem ITEM_TM_BULK_UP
+	giveitem ITEM_TM_EARTHQUAKE
 	setflag FLAG_BADGE16_GET
 	setflag FLAG_DEFEATED_VIRIDIAN_GYM
 	addvar VAR_NUM_BADGES, 1
@@ -77,10 +77,18 @@ ViridianCity_Gym_Text_ReceivedEarthBadge:
 
 ViridianCity_Gym_Text_LeaderBlue_After:
 	.string "BLUE: …\p"
-	.string "All right, I was wrong. You're the\n"
-	.string "real deal. You are a good trainer.\p"
-	.string "But I'm going to beat you someday.\p"
+	.string "All right. I was wrong.\n"
+	.string "You're the real deal.\p"
+	.string "It's rare to meet such a gifted trainer…\n"
+	.string "Take this TM.\p"
+	.string "That's EARTHQUAKE.\n"
+	.string "No gimmicks. Just raw power.\p"
+	.string "Use it right, and nothing's\n"
+	.string "standing in your way.\p"
+	.string "But don't get comfortable.\n"
+	.string "I'm still going to beat you someday.\p"
 	.string "Don't you forget it!$"
+
 
 ViridianCity_Gym_Text_LeaderBlue_Epilogue:
 	.string "BLUE: Listen, you.\p"

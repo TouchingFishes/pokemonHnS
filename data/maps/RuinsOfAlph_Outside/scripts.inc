@@ -30,6 +30,16 @@ RuinsOfAlph_Outside_EventScript_Nathan::
 	msgbox RuinsOfAlph_Outside_Text_PsychicNathan_After, MSGBOX_AUTOCLOSE
 	end
 
+RuinsOfAlph_Outside_EventScript_Hunter::
+	trainerbattle_single TRAINER_HUNTER, RuinsOfAlph_Outside_Text_HunterSeen, RuinsOfAlph_Outside_Text_HunterBeaten
+	msgbox RuinsOfAlph_Outside_Text_HunterAfter, MSGBOX_AUTOCLOSE
+	end
+
+RuinsOfAlph_Outside_EventScript_Foster::
+	trainerbattle_single TRAINER_FOSTER, RuinsOfAlph_Outside_Text_FosterSeen, RuinsOfAlph_Outside_Text_FosterBeaten
+	msgbox RuinsOfAlph_Outside_Text_FosterAfter, MSGBOX_AUTOCLOSE
+	end
+
 RuinsOfAlph_Outside_EventScript_Youngster1::
 	lock
 	faceplayer
@@ -83,6 +93,10 @@ RuinsOfAlph_Outside_EventScript_Sign3::
 	release
 	end
 
+RuinsOfAlph_Outside_EventScript_TmCosmicPower::
+	finditem ITEM_TM_COSMIC_POWER
+	end
+
 RuinsOfAlph_Outside_Text_Scientist:
 	.string "Hm? That's a POKéDEX, isn't it?\n"
 	.string "May I see it?\p"
@@ -124,6 +138,41 @@ RuinsOfAlph_Outside_Text_PsychicNathan_Beaten:
 
 RuinsOfAlph_Outside_Text_PsychicNathan_After:
 	.string "I like thinking here.$"
+
+RuinsOfAlph_Outside_Text_HunterSeen:
+	.string "Hey! Stop right there!\p"
+	.string "You felt it too, didn't you?\n"
+	.string "That strange presence in the air…\p"
+	.string "If you want to pass, you'll have to\n"
+	.string "prove you understand their power!$"
+
+RuinsOfAlph_Outside_Text_HunterBeaten:
+	.string "The patterns… they slipped away…$"
+
+RuinsOfAlph_Outside_Text_HunterAfter:
+	.string "Those symbols… they shift when\n"
+	.string "you're not looking.\p"
+	.string "I've seen it! I swear I have!\p"
+	.string "The UNOWN… they're the key to\n"
+	.string "everything here.\p"
+	.string "If you arrange them just right…\n"
+	.string "something incredible will happen…$"
+
+RuinsOfAlph_Outside_Text_FosterSeen:
+	.string "These ruins aren't silent…\p"
+	.string "You just have to listen closely.\p"
+	.string "Every mark, every crack…\n"
+	.string "it all means something.\p"
+	.string "Show me you can read them!$"
+
+RuinsOfAlph_Outside_Text_FosterBeaten:
+	.string "I misread the signs…$"
+
+RuinsOfAlph_Outside_Text_FosterAfter:
+	.string "The UNOWN aren't random.\p"
+	.string "They're letters… messages.\p"
+	.string "We're standing inside\n"
+	.string "a language.$"
 
 RuinsOfAlph_Outside_Text_MysteryChamberSign:
 	.string "MYSTERY STONE PANEL CHAMBER$"

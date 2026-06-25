@@ -5,11 +5,9 @@ Route34IlexForestGate_EventScript_SweetScentGirl::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_SWEET_SCENT, Route34IlexForestGate_EventScript_ReceivedSweetScent
-
 	msgbox Route34IlexForestGate_Text_SweetFragranceTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_SWEET_SCENT
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-
 	setflag FLAG_RECEIVED_TM_SWEET_SCENT
 	release
 	end
@@ -25,12 +23,12 @@ Route34IlexForestGate_EventScript_ReceivedSweetScentFinite::
 	release
 	end
 
-Route34IlexForestGate_EventScript_Butterfree::
+Route34IlexForestGate_EventScript_Masquerain::
 	lock
 	faceplayer
 	waitse
-	playmoncry SPECIES_BUTTERFREE, CRY_MODE_NORMAL
-	msgbox Route34IlexForestGate_Text_Butterfree, MSGBOX_DEFAULT
+	playmoncry SPECIES_MASQUERAIN, CRY_MODE_NORMAL
+	msgbox Route34IlexForestGate_Text_Masquerain, MSGBOX_DEFAULT
 	waitmoncry
 	release
 	end
@@ -39,7 +37,7 @@ Route34IlexForestGate_Text_SweetFragranceTakeThis:
 	.string "The air near the forest feels\n"
 	.string "alive, doesn't it?\p"
 	.string "A gentle, sweet scent can draw\n"
-	.string "Pokémon out from hiding.\p"
+	.string "POKéMON out from hiding.\p"
 	.string "Take this, and try it for\n"
 	.string "yourself.$"
 
@@ -59,5 +57,5 @@ Route34IlexForestGate_Text_Lass:
 	.string "I think that it must be a\n"
 	.string "GRASS-type POKéMON.$"
 
-Route34IlexForestGate_Text_Butterfree:
-	.string "BUTTERFREE: Freeh!$"
+Route34IlexForestGate_Text_Masquerain:
+	.string "MASQUERAIN: Kyuu-kikiki!$"

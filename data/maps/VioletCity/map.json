@@ -45,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BOY",
-      "x": 28,
-      "y": 25,
+      "x": 36,
+      "y": 39,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -84,8 +84,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 10,
-      "y": 27,
+      "x": 11,
+      "y": 22,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -330,16 +330,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CLEFAIRY",
       "x": 7,
       "y": 36,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "VioletCity_EventScript_Bellsprout",
+      "script": "VioletCity_EventScript_Clefairy",
       "flag": "FLAG_DAY_POKEMON"
     },
     {
@@ -756,6 +756,32 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "VioletCity_EventScript_Lotad",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "x": 6,
+      "y": 36,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VioletCity_EventScript_Schoolboy",
+      "flag": "FLAG_DAY_POKEMON"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAGE",
+      "x": 26,
+      "y": 24,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "VioletCity_EventScript_BideTutor",
       "flag": "0"
     }
   ],

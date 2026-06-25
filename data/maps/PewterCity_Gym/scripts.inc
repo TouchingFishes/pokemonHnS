@@ -18,7 +18,6 @@ PewterCity_Gym_EventScript_Brock::
 	waitmessage
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox PewterCity_Gym_Text_Brock_FightDone, MSGBOX_DEFAULT
-	giveitem ITEM_TM_EARTHQUAKE
 	setflag FLAG_BADGE09_GET
 	setflag FLAG_DEFEATED_PEWTER_GYM
 	addvar VAR_NUM_BADGES, 1
@@ -65,8 +64,17 @@ PewterCity_Gym_Text_Brock_BoulderBadge:
 PewterCity_Gym_Text_Brock_FightDone:
 	.string "BROCK: The world is huge. There are\n"
 	.string "still many strong trainers like you.\p"
+	.string "Normally, I'd pass along a TM as proof\n"
+	.string "of your victory… but not this time.\p"
+	.string "There's a man in the PEWTER CITY\n"
+	.string "who studies ancient POKéMON.\p"
+	.string "He knows techniques I can't teach,\n"
+	.string "moves drawn from the distant past.\p"
+	.string "If you've got an interest in that,\n"
+	.string "you should pay him a visit.\p"
 	.string "Just wait and see. I'm going to become\n"
 	.string "a lot stronger too.$"
+
 
 PewterCity_Gym_Text_CamperJerry_Seen:
 	.string "The trainers of this GYM use ROCK-type\n"

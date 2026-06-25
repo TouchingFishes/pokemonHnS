@@ -66,10 +66,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
-      "x": 77,
-      "y": 27,
+      "x": 76,
+      "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP_LEFT_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
       "movement_range_x": 7,
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -271,19 +271,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route27_EventScript_Item_SolarBeam",
       "flag": "FLAG_ITEM_ROUTE27_SOLARBEAM"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 76,
-      "y": 26,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route27_EventScript_Item_SignalBeam",
-      "flag": "FLAG_ITEM_ROUTE27_TM_SIGNAL_BEAM"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BIRD_KEEPER",

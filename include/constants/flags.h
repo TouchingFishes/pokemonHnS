@@ -470,7 +470,7 @@
 #define FLAG_SHOWN_OLD_SEA_MAP               0x1B0
 #define FLAG_ITEM_ROUTE20_TM_FLAME_CHARGE    0x1B1
 #define FLAG_ITEM_ROUTE26_TM_ENERGY_BALL     0x1B2
-#define FLAG_MOVE_TUTOR_TAUGHT_FURY_CUTTER   0x1B3 //unused
+#define FLAG_ITEM_ALPH_TM_COSMIC_POWER       0x1B3
 #define FLAG_MOVE_TUTOR_TAUGHT_TRI_ATTACK    0x1B4 //unused
 #define FLAG_MOVE_TUTOR_TAUGHT_METRONOME     0x1B5 //unused
 #define FLAG_MOVE_TUTOR_TAUGHT_ACROBATICS    0x1B6 //unused
@@ -1155,7 +1155,7 @@
 #define FLAG_ITEM_ROUTE27_MOONSTONE                                 0x44E
 #define FLAG_ITEM_ROUTE27_SOLARBEAM                                 0x44F
 #define FLAG_ITEM_ROUTE27_RARECANDY                                 0x450
-#define FLAG_ITEM_ROUTE27_TM_SIGNAL_BEAM                            0x451
+#define FLAG_GOT_TM_SIGNAL_BEAM                                     0x451
 #define FLAG_ITEM_TOHJOFALLS_HEART_SCALE                            0x452
 #define FLAG_ITEM_VICTORYROAD1_MAX_REVIVE                           0x453
 #define FLAG_ITEM_VICTORYROAD1_FULL_HEAL                            0x454
