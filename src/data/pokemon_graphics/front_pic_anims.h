@@ -5318,13 +5318,13 @@ static const union AnimCmd sAnim_Lucario_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-static const union AnimCmd sAnim_Nohface_1[] =
+static const union AnimCmd sAnim_Greavard_1[] =
 {
     ANIMCMD_FRAME(1, 40),
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
-static const union AnimCmd sAnim_Kitsunoh_1[] =
+static const union AnimCmd sAnim_Houndstone_1[] =
 {
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
@@ -5449,10 +5449,12 @@ static const union AnimCmd sAnim_Emolga_1[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd sAnim_Dudunsparce_1[] =
+static const union AnimCmd sAnim_Mimikyu_1[] =
 {
-    ANIMCMD_FRAME(0, 40),
-    ANIMCMD_FRAME(1, 40),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_FRAME(1, 20),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 
@@ -6338,8 +6340,8 @@ SINGLE_ANIMATION(Zangoose);
 SINGLE_ANIMATION(Seviper);
 SINGLE_ANIMATION(Riolu);
 SINGLE_ANIMATION(Lucario);
-SINGLE_ANIMATION(Nohface);
-SINGLE_ANIMATION(Kitsunoh);
+SINGLE_ANIMATION(Greavard);
+SINGLE_ANIMATION(Houndstone);
 SINGLE_ANIMATION(Klink);
 SINGLE_ANIMATION(Klang);
 SINGLE_ANIMATION(Klinklang);
@@ -6351,7 +6353,7 @@ SINGLE_ANIMATION(Trapinch);
 SINGLE_ANIMATION(Vibrava);
 SINGLE_ANIMATION(Flygon);
 SINGLE_ANIMATION(Emolga);
-SINGLE_ANIMATION(Dudunsparce);
+SINGLE_ANIMATION(Mimikyu);
 SINGLE_ANIMATION(Flittle);
 SINGLE_ANIMATION(Espathra);
 SINGLE_ANIMATION(Sandile);
@@ -6893,8 +6895,8 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_SEVIPER] = sAnims_Seviper,
     [SPECIES_RIOLU] = sAnims_Riolu,
     [SPECIES_LUCARIO] = sAnims_Lucario,
-    [SPECIES_NOHFACE] = sAnims_Nohface,
-    [SPECIES_KITSUNOH] = sAnims_Kitsunoh,
+    [SPECIES_GREAVARD] = sAnims_Greavard,
+    [SPECIES_HOUNDSTONE] = sAnims_Houndstone,
     [SPECIES_KLINK] = sAnims_Klink,
     [SPECIES_KLANG] = sAnims_Klang,
     [SPECIES_KLINKLANG] = sAnims_Klinklang,
@@ -6906,7 +6908,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[] =
     [SPECIES_VIBRAVA] = sAnims_Vibrava,
     [SPECIES_FLYGON] = sAnims_Flygon,
     [SPECIES_EMOLGA] = sAnims_Emolga,
-    [SPECIES_DUDUNSPARCE] = sAnims_Dudunsparce,
+    [SPECIES_MIMIKYU] = sAnims_Mimikyu,
     [SPECIES_FLITTLE] = sAnims_Flittle,
     [SPECIES_ESPATHRA] = sAnims_Espathra,
     [SPECIES_SANDILE] = sAnims_Sandile,

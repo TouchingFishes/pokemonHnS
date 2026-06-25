@@ -6568,7 +6568,7 @@ static const u16 sLucarioLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sNohfaceLevelUpLearnset_Original[] = {
+static const u16 sGreavardLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE(1, MOVE_SCRATCH),
     LEVEL_UP_MOVE(5, MOVE_CURSE),
     LEVEL_UP_MOVE(10, MOVE_PAIN_SPLIT),
@@ -6579,7 +6579,7 @@ static const u16 sNohfaceLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sKitsunohLevelUpLearnset_Original[] = {
+static const u16 sHoundstoneLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE(1, MOVE_FAKE_OUT),
     LEVEL_UP_MOVE(5, MOVE_TRICK),
     LEVEL_UP_MOVE(10, MOVE_SHADOW_BALL),
@@ -6773,7 +6773,7 @@ static const u16 sEmolgaLevelUpLearnset_Original[] = {
     LEVEL_UP_END
 };
 
-static const u16 sDudunsparceLevelUpLearnset_Original[] = {
+static const u16 sMimikyuLevelUpLearnset_Original[] = {
     LEVEL_UP_MOVE( 1, MOVE_RAGE),
     LEVEL_UP_MOVE( 1, MOVE_FLAIL),
     LEVEL_UP_MOVE( 6, MOVE_DEFENSE_CURL),

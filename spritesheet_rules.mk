@@ -2307,10 +2307,10 @@ $(OBJEVENTGFXDIR)/pokemon/riolu.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/lucario.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/nohface.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/greavard.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/kitsunoh.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/houndstone.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/klink.4bpp: %.4bpp: %.png
@@ -2346,7 +2346,7 @@ $(OBJEVENTGFXDIR)/pokemon/flygon.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/pokemon/emolga.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/pokemon/dudunsparce.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/pokemon/mimikyu.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/pokemon/flittle.4bpp: %.4bpp: %.png

@@ -2617,17 +2617,17 @@ const u8 gLucarioPokedexText[] = _(
     "to LUCARIO, since it can detect Auras.\n"
     "Even foes it could not otherwise see.");
 
-const u8 gNohfacePokedexText[] = _(
-    "It waits for someone to become its friend.\n"
-    "Unfortunately, befriending it is very\n"
-    "difficult, because years of waiting for a\n"
-    "friend have made it bitter.");
+const u8 gGreavardPokedexText[] = _(
+    "This friendly POKéMON doesn't like\n"
+    "being alone. Pay it even the\n"
+    "slightest bit of attention, and it will\n"
+    "follow you forever.");
 
-const u8 gKitsunohPokedexText[] = _(
-    "KITSUNOH is seldom seen in old ruins.\n"
-    "Most people think its existence is\n"
-    "nothing more than an old tale. Even those\n"
-    "who think it exists, have never seen it.");
+const u8 gHoundstonePokedexText[] = _(
+    "HOUNDSTONE spends most of its\n"
+    "time sleeping in graveyards. Among all\n"
+    "the dog POKéMON, this one is most\n"
+    "loyal to its master.");
 
 const u8 gKlinkPokedexText[] = _(
     "Two bodies comprise a fixed pair.\n"
@@ -2695,11 +2695,11 @@ const u8 gEmolgaPokedexText[] = _(
     "electric shocks from the pouches on its\n"
     "cheeks and makes a meal of them.");
 
-const u8 gDudunsparcePokedexText[] = _(
-    "This POKéMON uses its hard tail to\n"
-    "make its nest by boring holes into\n"
-    "bedrock deep underground. The nest\n"
-    "can reach lengths of over six miles.");
+const u8 gMimikyuPokedexText[] = _(
+    "A lonely POKéMON, it hides its terrifying\n"
+    "appearance beneath an old rag so it can\n"
+    "get closer to people and other POKéMON.\n"
+    "Its actual appearance is unknown.");
 
 const u8 gFlittlePokedexText[] = _(
     "FLITTLE's toes levitate about half\n"

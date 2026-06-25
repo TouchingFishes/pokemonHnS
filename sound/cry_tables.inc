@@ -442,8 +442,8 @@ gCryTable::
 	cry Cry_Seviper
 	cry Cry_Riolu
 	cry Cry_Lucario
-	cry Cry_Nohface
-	cry Cry_Kitsunoh
+	cry Cry_Greavard
+	cry Cry_Houndstone
 	cry Cry_Klink
 	cry Cry_Klang
 	cry Cry_Klinklang
@@ -455,7 +455,7 @@ gCryTable::
 	cry Cry_Vibrava
 	cry Cry_Flygon
 	cry Cry_Emolga
-	cry Cry_Dudunsparce
+	cry Cry_Mimikyu
 	cry Cry_Flittle
 	cry Cry_Espathra
 	cry Cry_Sandile
@@ -941,8 +941,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Seviper
 	cry_reverse Cry_Riolu
 	cry_reverse Cry_Lucario
-	cry_reverse Cry_Nohface
-	cry_reverse Cry_Kitsunoh
+	cry_reverse Cry_Greavard
+	cry_reverse Cry_Houndstone
 	cry_reverse Cry_Klink
 	cry_reverse Cry_Klang
 	cry_reverse Cry_Klinklang
@@ -954,7 +954,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Vibrava
 	cry_reverse Cry_Flygon
 	cry_reverse Cry_Emolga
-	cry_reverse Cry_Dudunsparce
+	cry_reverse Cry_Mimikyu
 	cry_reverse Cry_Flittle
 	cry_reverse Cry_Espathra
 	cry_reverse Cry_Sandile

@@ -644,8 +644,8 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/zangoose.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/seviper.aif sound/direct_sound_samples/cries/seviper.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/riolu.aif sound/direct_sound_samples/cries/riolu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/lucario.aif sound/direct_sound_samples/cries/lucario.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/nohface.aif sound/direct_sound_samples/cries/nohface.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/kitsunoh.aif sound/direct_sound_samples/cries/kitsunoh.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/greavard.aif sound/direct_sound_samples/cries/greavard.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/houndstone.aif sound/direct_sound_samples/cries/houndstone.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/klink.aif sound/direct_sound_samples/cries/klink.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/klang.aif sound/direct_sound_samples/cries/klang.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/klinklang.aif sound/direct_sound_samples/cries/klinklang.bin --compress
@@ -657,7 +657,7 @@ tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/trapinch.aif sound/direct
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/vibrava.aif sound/direct_sound_samples/cries/vibrava.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/flygon.aif sound/direct_sound_samples/cries/flygon.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/emolga.aif sound/direct_sound_samples/cries/emolga.bin --compress
-tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/dudunsparce.aif sound/direct_sound_samples/cries/dudunsparce.bin --compress
+tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/mimikyu.aif sound/direct_sound_samples/cries/mimikyu.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/flittle.aif sound/direct_sound_samples/cries/flittle.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/espathra.aif sound/direct_sound_samples/cries/espathra.bin --compress
 tools/aif2pcm/aif2pcm sound/direct_sound_samples/cries/sandile.aif sound/direct_sound_samples/cries/sandile.bin --compress

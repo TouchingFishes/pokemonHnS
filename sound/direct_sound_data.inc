@@ -2155,12 +2155,12 @@ Cry_Lucario::
 	.incbin "sound/direct_sound_samples/cries/lucario.bin"
 
 	.align 2
-Cry_Nohface::
-	.incbin "sound/direct_sound_samples/cries/nohface.bin"
+Cry_Greavard::
+	.incbin "sound/direct_sound_samples/cries/greavard.bin"
 
 	.align 2
-Cry_Kitsunoh::
-	.incbin "sound/direct_sound_samples/cries/kitsunoh.bin"
+Cry_Houndstone::
+	.incbin "sound/direct_sound_samples/cries/houndstone.bin"
 
 	.align 2
 Cry_Klink::
@@ -2207,8 +2207,8 @@ Cry_Emolga::
 	.incbin "sound/direct_sound_samples/cries/emolga.bin"
 
 	.align 2
-Cry_Dudunsparce::
-	.incbin "sound/direct_sound_samples/cries/dudunsparce.bin"
+Cry_Mimikyu::
+	.incbin "sound/direct_sound_samples/cries/mimikyu.bin"
 
 	.align 2
 Cry_Flittle::

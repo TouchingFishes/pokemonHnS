@@ -1156,7 +1156,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Valerie3[] = { //HexMani
     {
     .iv = 50,
     .lvl = 62,
-    .species = SPECIES_GALLADE,
+    .species = SPECIES_HOUNDSTONE,
     },
     {
     .iv = 50,
@@ -13559,32 +13559,32 @@ static const struct TrainerMonNoItemCustomMoves sParty_Alexa[] = { //Cooltrainer
     {
     .iv = 0,
     .lvl = 64,
-    .species = SPECIES_CLEFABLE,
-    .moves = {MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_LIGHT_SCREEN, MOVE_REFLECT}
+    .species = SPECIES_MANDIBUZZ,
+    .moves = {MOVE_DARK_PULSE, MOVE_BONE_RUSH, MOVE_TOXIC, MOVE_SOFT_BOILED}
     },
     {
     .iv = 0,
     .lvl = 66,
-    .species = SPECIES_WIGGLYTUFF,
-    .moves = {MOVE_HYPER_VOICE, MOVE_DIG, MOVE_SING, MOVE_ATTRACT}
+    .species = SPECIES_GRUMPIG,
+    .moves = {MOVE_PSYCHIC, MOVE_CALM_MIND, MOVE_SHOCK_WAVE, MOVE_ICY_WIND}
     },
     {
     .iv = 0,
     .lvl = 64,
-    .species = SPECIES_GRANBULL,
-    .moves = {MOVE_DOUBLE_EDGE, MOVE_AERIAL_ACE, MOVE_CRUNCH, MOVE_BRICK_BREAK}
+    .species = SPECIES_HOUNDSTONE,
+    .moves = {MOVE_DOUBLE_EDGE, MOVE_SHADOW_CLAW, MOVE_CRUNCH, MOVE_DIG}
     },
     {
     .iv = 0,
     .lvl = 66,
-    .species = SPECIES_TAUROS,
-    .moves = {MOVE_HEAD_SMASH, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_BLIZZARD}
+    .species = SPECIES_MANTINE,
+    .moves = {MOVE_WATER_SPOUT, MOVE_ICE_BEAM, MOVE_BOUNCE, MOVE_SCALD}
     },
     {
     .iv = 0,
     .lvl = 67,
-    .species = SPECIES_CHANSEY,
-    .moves = {MOVE_SEISMIC_TOSS, MOVE_SING, MOVE_SOFT_BOILED, MOVE_TOXIC}
+    .species = SPECIES_TAUROS,
+    .moves = {MOVE_HEAD_SMASH, MOVE_DOUBLE_EDGE, MOVE_EARTHQUAKE, MOVE_BLIZZARD}
     },
 };
 
@@ -20752,7 +20752,7 @@ static const struct TrainerMonItemCustomMoves sParty_Morty[] = { //LeaderGroup
     {
     .iv = 100,
     .lvl = 23,
-    .species = SPECIES_NOHFACE,
+    .species = SPECIES_GREAVARD,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SWORDS_DANCE, MOVE_QUICK_ATTACK, MOVE_SLASH, MOVE_SHADOW_BALL}
     },
@@ -20784,7 +20784,7 @@ static const struct TrainerMonItemCustomMoves sParty_Morty2[] = { //LeaderGroup
     {
     .iv = 255,
     .lvl = 63,
-    .species = SPECIES_KITSUNOH,
+    .species = SPECIES_HOUNDSTONE,
     .heldItem = ITEM_SILK_SCARF,
     .moves = {MOVE_SWORDS_DANCE, MOVE_QUICK_ATTACK, MOVE_SLASH, MOVE_SHADOW_BALL}
     },

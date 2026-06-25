@@ -3310,21 +3310,21 @@ extern const u32 gMonStillFrontPic_Lucario[];
 extern const u8 gMonIcon_Lucario[];
 extern const u8 gMonFootprint_Lucario[];
 
-extern const u32 gMonFrontPic_Nohface[];
-extern const u32 gMonPalette_Nohface[];
-extern const u32 gMonBackPic_Nohface[];
-extern const u32 gMonShinyPalette_Nohface[];
-extern const u32 gMonStillFrontPic_Nohface[];
-extern const u8 gMonIcon_Nohface[];
-extern const u8 gMonFootprint_Nohface[];
+extern const u32 gMonFrontPic_Greavard[];
+extern const u32 gMonPalette_Greavard[];
+extern const u32 gMonBackPic_Greavard[];
+extern const u32 gMonShinyPalette_Greavard[];
+extern const u32 gMonStillFrontPic_Greavard[];
+extern const u8 gMonIcon_Greavard[];
+extern const u8 gMonFootprint_Greavard[];
 
-extern const u32 gMonFrontPic_Kitsunoh[];
-extern const u32 gMonPalette_Kitsunoh[];
-extern const u32 gMonBackPic_Kitsunoh[];
-extern const u32 gMonShinyPalette_Kitsunoh[];
-extern const u32 gMonStillFrontPic_Kitsunoh[];
-extern const u8 gMonIcon_Kitsunoh[];
-extern const u8 gMonFootprint_Kitsunoh[];
+extern const u32 gMonFrontPic_Houndstone[];
+extern const u32 gMonPalette_Houndstone[];
+extern const u32 gMonBackPic_Houndstone[];
+extern const u32 gMonShinyPalette_Houndstone[];
+extern const u32 gMonStillFrontPic_Houndstone[];
+extern const u8 gMonIcon_Houndstone[];
+extern const u8 gMonFootprint_Houndstone[];
 
 extern const u32 gMonFrontPic_Klink[];
 extern const u32 gMonPalette_Klink[];
@@ -3414,13 +3414,13 @@ extern const u32 gMonStillFrontPic_Emolga[];
 extern const u8 gMonIcon_Emolga[];
 extern const u8 gMonFootprint_Emolga[];
 
-extern const u32 gMonFrontPic_Dudunsparce[];
-extern const u32 gMonPalette_Dudunsparce[];
-extern const u32 gMonBackPic_Dudunsparce[];
-extern const u32 gMonShinyPalette_Dudunsparce[];
-extern const u32 gMonStillFrontPic_Dudunsparce[];
-extern const u8 gMonIcon_Dudunsparce[];
-extern const u8 gMonFootprint_Dudunsparce[];
+extern const u32 gMonFrontPic_Mimikyu[];
+extern const u32 gMonPalette_Mimikyu[];
+extern const u32 gMonBackPic_Mimikyu[];
+extern const u32 gMonShinyPalette_Mimikyu[];
+extern const u32 gMonStillFrontPic_Mimikyu[];
+extern const u8 gMonIcon_Mimikyu[];
+extern const u8 gMonFootprint_Mimikyu[];
 
 extern const u32 gMonFrontPic_Flittle[];
 extern const u32 gMonPalette_Flittle[];
