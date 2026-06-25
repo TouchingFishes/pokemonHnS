@@ -312,6 +312,7 @@ const u16 gEggMoves[] = {
               MOVE_COVET,
               MOVE_LEAF_BLADE,
               MOVE_MUD_SLAP,
+              MOVE_FAINT_ATTACK,
               MOVE_MIRROR_MOVE,
               MOVE_GUST,
               MOVE_QUICK_ATTACK,
