@@ -458,6 +458,57 @@ MoveTutor_EventScript_FocusBlastTaught::
 	release
 	end
 
+VioletCity_EventScript_BideTutor::
+	lock
+	faceplayer
+	msgbox MoveTutor_Text_BideTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_BideDeclined
+	msgbox MoveTutor_Text_BideWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_BIDE
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_BideDeclined
+	removemoney 2500, 0
+	goto MoveTutor_EventScript_BideTaught
+	end
+
+MoveTutor_EventScript_BideDeclined::
+	msgbox MoveTutor_Text_BideDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_BideTaught::
+	msgbox MoveTutor_Text_BideTaught, MSGBOX_DEFAULT
+	release
+	end
+
+PewterCity_EventScript_AncientPowerTutor::
+	lock
+	faceplayer
+	goto_if_unset FLAG_DEFEATED_PEWTER_GYM, PewterCity_EventScript_AncientPowerTutor_NotReady
+	msgbox MoveTutor_Text_AncientPowerTeach, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_AncientPowerDeclined
+	msgbox MoveTutor_Text_AncientPowerWhichMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, TUTOR_MOVE_ANCIENT_POWER
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_AncientPowerDeclined
+	goto MoveTutor_EventScript_AncientPowerTaught
+	end
+
+PewterCity_EventScript_AncientPowerTutor_NotReady::
+	msgbox MoveTutor_Text_AncientPowerNotReady, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_AncientPowerDeclined::
+	msgbox MoveTutor_Text_AncientPowerDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+MoveTutor_EventScript_AncientPowerTaught::
+	msgbox MoveTutor_Text_AncientPowerTaught, MSGBOX_DEFAULT
+	release
+	end
+
 MoveTutor_EventScript_OpenPartyMenu::
 	special ChooseMonForMoveTutor
 	waitstate

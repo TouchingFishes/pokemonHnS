@@ -653,3 +653,71 @@ MoveTutor_Text_FocusBlastTaught:
 	.string "Do not waste that power.\p"
 	.string "FOCUS BLAST demands patience…\n"
 	.string "and perfect timing.$"
+
+MoveTutor_Text_BideTeach:
+	.string "The waters around SPROUT TOWER…\n"
+	.string "they are never truly still.\p"
+	.string "Even when calm, they gather\n"
+	.string "strength beneath the surface.\p"
+	.string "A POKéMON must learn the same.\p"
+	.string "To endure… to wait… and then\n"
+	.string "return all it has received.\p"
+	.string "This is the way of BIDE.\p"
+	.string "For a humble donation of 2500,\n"
+	.string "shall I teach it to your POKéMON?$"
+
+MoveTutor_Text_BideDeclined:
+	.string "Patience cannot be rushed.\p"
+	.string "Return when you are ready\n"
+	.string "to wait.$"
+
+MoveTutor_Text_BideWhichMon:
+	.string "Very well…\p"
+	.string "Which POKéMON will learn\n"
+	.string "to endure in silence?$"
+
+MoveTutor_Text_BideTaught:
+	.string "Remember…\p"
+	.string "Power is not always shown\n"
+	.string "in the moment.\p"
+	.string "Those who wait… strike\n"
+	.string "with greater force.$"
+
+MoveTutor_Text_AncientPowerTeach:
+	.string "Ah… a discerning visitor.\p"
+	.string "These fossils you see in our MUSEUM\n"
+	.string "are relics of a far older world.\p"
+	.string "Though ages have passed,\n"
+	.string "their power has not faded.\p"
+	.string "The PEWTER GYM LEADER, BROCK,\n"
+	.string "is a dear friend of mine,\l"
+	.string "a gentleman of admirable taste\l"
+	.string "in such ancient matters.\p"
+	.string "You have proven yourself against\n"
+	.string "him…\p"
+	.string "Perhaps you are ready to inherit\n"
+	.string "the power I seek to remember.\p"
+	.string "Shall I teach your POKéMON\n"
+	.string "ANCIENT POWER?$"
+
+MoveTutor_Text_AncientPowerDeclined:
+	.string "I see…\p"
+	.string "Not all are inclined to heed\n"
+	.string "the call of antiquity.$"
+
+MoveTutor_Text_AncientPowerWhichMon:
+	.string "Very good.\p"
+	.string "Which POKéMON shall be entrusted\n"
+	.string "with this ancient force?$"
+
+MoveTutor_Text_AncientPowerTaught:
+	.string "Power from another age…\p"
+	.string "May it guide you forward.$"
+
+MoveTutor_Text_AncientPowerNotReady:
+	.string "Ah… a curious visitor.\p"
+	.string "Our MUSEUM's exhibits hold great power,\n"
+	.string "but not all are ready to wield it.\p"
+	.string "Prove your strength against BROCK,\n"
+	.string "then return.$"
+
