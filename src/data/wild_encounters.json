@@ -35668,9 +35668,9 @@
                 "species": "SPECIES_NATU"
               },
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_NATU"
+                "min_level": 14,
+                "max_level": 19,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 20,
@@ -35852,9 +35852,9 @@
                 "species": "SPECIES_NATU"
               },
               {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_NATU"
+                "min_level": 14,
+                "max_level": 19,
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 20,
@@ -36520,7 +36520,7 @@
               {
                 "min_level": 4,
                 "max_level": 8,
-                "species": "SPECIES_MAKUHITA"
+                "species": "SPECIES_MACHOP"
               },
               {
                 "min_level": 6,
@@ -36832,18 +36832,18 @@
               },
               {
                 "min_level": 7,
-                "max_level": 9,
+                "max_level": 10,
                 "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 7,
                 "max_level": 10,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_EKANS"
               },
               {
                 "min_level": 6,
                 "max_level": 9,
-                "species": "SPECIES_EKANS"
+                "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 6,
@@ -36853,7 +36853,7 @@
               {
                 "min_level": 8,
                 "max_level": 10,
-                "species": "SPECIES_HOPPIP"
+                "species": "SPECIES_GEODUDE"
               },
               {
                 "min_level": 7,
@@ -36863,7 +36863,7 @@
               {
                 "min_level": 9,
                 "max_level": 11,
-                "species": "SPECIES_SPEAROW"
+                "species": "SPECIES_FOMANTIS"
               },
               {
                 "min_level": 7,
@@ -36873,7 +36873,7 @@
               {
                 "min_level": 8,
                 "max_level": 13,
-                "species": "SPECIES_SPEAROW"
+                "species": "SPECIES_FOMANTIS"
               },
               {
                 "min_level": 8,
@@ -39055,7 +39055,7 @@
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 15,
@@ -39065,12 +39065,12 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_SPOINK"
               },
               {
-                "min_level": 18,
-                "max_level": 21,
-                "species": "SPECIES_MILTANK"
+                "min_level": 17,
+                "max_level": 20,
+                "species": "SPECIES_MAGNEMITE"
               },
               {
                 "min_level": 18,
@@ -39078,9 +39078,9 @@
                 "species": "SPECIES_TAUROS"
               },
               {
-                "min_level": 14,
-                "max_level": 17,
-                "species": "SPECIES_DODUO"
+                "min_level": 18,
+                "max_level": 21,
+                "species": "SPECIES_MILTANK"
               },
               {
                 "min_level": 12,
@@ -39154,7 +39154,7 @@
               {
                 "min_level": 17,
                 "max_level": 19,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 20,
@@ -39164,7 +39164,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_SPOINK"
               },
               {
                 "min_level": 18,
