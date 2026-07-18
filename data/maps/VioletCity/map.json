@@ -149,8 +149,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
-      "x": 20,
-      "y": 15,
+      "x": 18,
+      "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -162,7 +162,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BELLSPROUT",
-      "x": 26,
+      "x": 25,
       "y": 10,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -822,8 +822,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 6,
-      "y": 32,
+      "x": 7,
+      "y": 31,
       "elevation": 0,
       "dest_map": "MAP_VIOLET_CITY_HOUSE2",
       "dest_warp_id": "0"

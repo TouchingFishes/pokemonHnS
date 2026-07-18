@@ -2018,3 +2018,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MahoganyTown_House2/scripts.inc"
 
 	.include "data/maps/KameHouse/scripts.inc"
+
+	.include "data/maps/Gate_Route39_OlivineCity/scripts.inc"

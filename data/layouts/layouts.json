@@ -4946,7 +4946,7 @@
       "name": "Route32_Layout",
       "width": 42,
       "height": 103,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Route32",
       "border_filepath": "data/layouts/Route32/border.bin",
       "blockdata_filepath": "data/layouts/Route32/map.bin"
@@ -4966,7 +4966,7 @@
       "name": "Route34_Layout",
       "width": 80,
       "height": 90,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Goldenrod",
       "border_filepath": "data/layouts/Route34/border.bin",
       "blockdata_filepath": "data/layouts/Route34/map.bin"
@@ -4976,7 +4976,7 @@
       "name": "Route35_Layout",
       "width": 40,
       "height": 49,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Goldenrod",
       "border_filepath": "data/layouts/Route35/border.bin",
       "blockdata_filepath": "data/layouts/Route35/map.bin"
@@ -4986,7 +4986,7 @@
       "name": "Route36_Layout",
       "width": 66,
       "height": 30,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_VioletCity",
       "border_filepath": "data/layouts/Route36/border.bin",
       "blockdata_filepath": "data/layouts/Route36/map.bin"
@@ -4995,8 +4995,8 @@
       "id": "LAYOUT_ROUTE37",
       "name": "Route37_Layout",
       "width": 44,
-      "height": 41,
-      "primary_tileset": "gTileset_Johto_General",
+      "height": 82,
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Ecruteak_City",
       "border_filepath": "data/layouts/Route37/border.bin",
       "blockdata_filepath": "data/layouts/Route37/map.bin"
@@ -5006,7 +5006,7 @@
       "name": "Route38_Layout",
       "width": 52,
       "height": 50,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Route38_Farmland",
       "border_filepath": "data/layouts/Route38/border.bin",
       "blockdata_filepath": "data/layouts/Route38/map.bin"
@@ -5016,7 +5016,7 @@
       "name": "Route39_Layout",
       "width": 40,
       "height": 54,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Route38_Farmland",
       "border_filepath": "data/layouts/Route39/border.bin",
       "blockdata_filepath": "data/layouts/Route39/map.bin"
@@ -5046,7 +5046,7 @@
       "name": "Route42_Layout",
       "width": 76,
       "height": 26,
-      "primary_tileset": "gTileset_Johto_NorthEast",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_MahoganyTown",
       "border_filepath": "data/layouts/Route42/border.bin",
       "blockdata_filepath": "data/layouts/Route42/map.bin"
@@ -5066,7 +5066,7 @@
       "name": "Route44_Layout",
       "width": 78,
       "height": 36,
-      "primary_tileset": "gTileset_Johto_NorthEast",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_CianwoodCity",
       "border_filepath": "data/layouts/Route44/border.bin",
       "blockdata_filepath": "data/layouts/Route44/map.bin"
@@ -5096,7 +5096,7 @@
       "name": "VioletCity_Layout",
       "width": 54,
       "height": 55,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_VioletCity",
       "border_filepath": "data/layouts/VioletCity/border.bin",
       "blockdata_filepath": "data/layouts/VioletCity/map.bin"
@@ -5116,7 +5116,7 @@
       "name": "GoldenrodCity_Layout",
       "width": 58,
       "height": 46,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Goldenrod",
       "border_filepath": "data/layouts/GoldenrodCity/border.bin",
       "blockdata_filepath": "data/layouts/GoldenrodCity/map.bin"
@@ -5126,7 +5126,7 @@
       "name": "EcruteakCity_Layout",
       "width": 66,
       "height": 61,
-      "primary_tileset": "gTileset_Johto_NorthWest",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_Ecruteak_City",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
@@ -5156,7 +5156,7 @@
       "name": "Mahoganytown_Layout",
       "width": 44,
       "height": 28,
-      "primary_tileset": "gTileset_Johto_NorthEast",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_MahoganyTown",
       "border_filepath": "data/layouts/Mahoganytown/border.bin",
       "blockdata_filepath": "data/layouts/Mahoganytown/map.bin"
@@ -8786,7 +8786,7 @@
       "name": "CherrygroveBay_Layout",
       "width": 51,
       "height": 91,
-      "primary_tileset": "gTileset_Johto_General",
+      "primary_tileset": "gTileset_Johto_South",
       "secondary_tileset": "gTileset_CherrygroveCity",
       "border_filepath": "data/layouts/CherrygroveBay/border.bin",
       "blockdata_filepath": "data/layouts/CherrygroveBay/map.bin"
@@ -8890,6 +8890,16 @@
       "secondary_tileset": "gTileset_House_Lab",
       "border_filepath": "data/layouts/KameHouse/border.bin",
       "blockdata_filepath": "data/layouts/KameHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_GATE_ROUTE39_OLIVINE_CITY",
+      "name": "Gate_Route39_OlivineCity_Layout",
+      "width": 15,
+      "height": 12,
+      "primary_tileset": "gTileset_Johto_Building",
+      "secondary_tileset": "gTileset_Gate_Standard",
+      "border_filepath": "data/layouts/Gate_Route39_OlivineCity/border.bin",
+      "blockdata_filepath": "data/layouts/Gate_Route39_OlivineCity/map.bin"
     }
   ]
 }

@@ -70,8 +70,8 @@
 #define TRAINER_CHARLIE                      66
 #define TRAINER_RICKY_2                      67 //unused in johto
 #define TRAINER_RICKY_3                      68 //unused in johto
-#define TRAINER_RICKY_4                      69 //unused in johto
-#define TRAINER_RICKY_5                      70 //unused in johto
+#define TRAINER_MICKY                        69
+#define TRAINER_JORDAN                       70
 #define TRAINER_RANDALL                      71
 #define TRAINER_PARKER                       72
 #define TRAINER_GEORGE                       73
@@ -106,15 +106,15 @@
 #define TRAINER_ERIK                        102
 #define TRAINER_ERIN                        103
 #define TRAINER_ERNEST                      104
-#define TRAINER_PATRICIA                    105 //unused in johto
-#define TRAINER_KINDRA                      106 //unused in johto
-#define TRAINER_TAMMY                       107 //unused in johto
+#define TRAINER_PATRICIA                    105 //unused in johto kindra as a name is unused
+#define TRAINER_MERCY                       106
+#define TRAINER_TAMMY                       107
 #define TRAINER_VALERIE_1                   108 //unused in johto
 #define TRAINER_TASHA                       109 //unused in johto
 #define TRAINER_VALERIE_2                   110 //unused in johto
 #define TRAINER_VALERIE_3                   111 //unused in johto
-#define TRAINER_VALERIE_4                   112 //unused in johto
-#define TRAINER_VALERIE_5                   113 //unused in johto //sheila is an unsued name
+#define TRAINER_VALERY                      112 //unused in johto
+#define TRAINER_AMALA                       113
 #define TRAINER_GRUNT_18                    114
 #define TRAINER_KIPP                        115
 #define TRAINER_WAI                         116

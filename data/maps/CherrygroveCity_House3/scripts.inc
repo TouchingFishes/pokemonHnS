@@ -22,6 +22,6 @@ CherrygroveCity_EvolutionHouse_Text_Youngster:
 	.string "battle and change their form.$"
 
 CherrygroveCity_EvolutionHouse_Text_Lass:
-	.string "POKéMON change?\p"
+	.string "POKéMON change their form!?\p"
 	.string "I would be shocked if one did\n"
 	.string "that!$"

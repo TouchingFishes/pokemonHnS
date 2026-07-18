@@ -1244,7 +1244,7 @@ const struct Trainer gTrainers[] = {
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = ITEM_DEFAULT_MOVES(sParty_Victoria),
+        .party = ITEM_CUSTOM_MOVES(sParty_Victoria),
     },
 
 
@@ -2346,6 +2346,19 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_MICKY] =
+    {
+        .trainerClass = TRAINER_CLASS_BUG_CATCHER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_BUG_CATCHER,
+        .trainerName = _("MICKY"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Micky),
+    },
+
+
     [TRAINER_ROB] =
     {
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
@@ -2421,6 +2434,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Josh),
+    },
+
+
+    [TRAINER_VALERY] =
+    {
+        .trainerClass = TRAINER_CLASS_BUG_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_BUG_MANIAC,
+        .trainerName = _("VALERY"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Valery),
     },
 
 
@@ -3461,6 +3487,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Amber),
+    },
+
+
+    [TRAINER_AMALA] =
+    {
+        .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_GIRL_2,
+        .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
+        .trainerName = _("AMALA"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Amala),
     },
 
 
@@ -4657,6 +4696,18 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_JORDAN] =
+    {
+        .trainerClass = TRAINER_CLASS_CAMPER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerName = _("JORDAN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jordan),
+    },
+
     [TRAINER_TODD] =
     {
         .trainerClass = TRAINER_CLASS_CAMPER,
@@ -5106,6 +5157,19 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Martha),
+    },
+
+
+    [TRAINER_MERCY] =
+    {
+        .trainerClass = TRAINER_CLASS_CHANNELER,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
+        .trainerPic = TRAINER_PIC_CHANNELER,
+        .trainerName = _("MERCY"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Mercy),
     },
 
 
@@ -5568,7 +5632,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_POLICEMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
-        .trainerPic = TRAINER_PIC_POLICEMAN,
+        .trainerPic = TRAINER_PIC_OFFICER,
         .trainerName = _("KEITH"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5581,7 +5645,7 @@ const struct Trainer gTrainers[] = {
     {
         .trainerClass = TRAINER_CLASS_POLICEMAN,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_2,
-        .trainerPic = TRAINER_PIC_POLICEMAN,
+        .trainerPic = TRAINER_PIC_OFFICER,
         .trainerName = _("DIRK"),
         .items = {},
         .doubleBattle = FALSE,
@@ -5648,7 +5712,7 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
         .trainerPic = TRAINER_PIC_LEADER_BUGSY,
         .trainerName = _("BUGSY"),
-        .items = {ITEM_POTION, ITEM_POTION, ITEM_NONE, ITEM_NONE},
+        .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
         .party = ITEM_CUSTOM_MOVES(sParty_Bugsy),

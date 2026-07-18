@@ -141,10 +141,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_FURRET",
-      "x": 26,
-      "y": 34,
+      "x": 46,
+      "y": 38,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -167,8 +167,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SENTRET",
-      "x": 26,
-      "y": 17,
+      "x": 27,
+      "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 5,
@@ -192,7 +192,7 @@
       "flag": "FLAG_DAY_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GASTLY",
       "x": 14,
       "y": 7,
       "elevation": 0,
@@ -533,6 +533,20 @@
       "y": 43,
       "elevation": 0,
       "dest_map": "MAP_OLIVINE_CITY_POKEMON_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 19,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_GATE_ROUTE39_OLIVINE_CITY",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_GATE_ROUTE39_OLIVINE_CITY",
       "dest_warp_id": "0"
     }
   ],

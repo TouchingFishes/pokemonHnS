@@ -328,6 +328,7 @@
 #define MAP_ROUTE27_HOUSE                         (25 | (22 << 8))
 #define MAP_MT_SILVER_POKEMON_CENTER              (26 | (22 << 8))
 #define MAP_KIWAME_HOUSE                          (27 | (22 << 8))
+#define MAP_GATE_ROUTE39_OLIVINE_CITY             (28 | (22 << 8))
 
 // gMapGroup_IndoorKantoRoutes
 #define MAP_ROUTE26_HOUSE1                (0 | (23 << 8))
@@ -1036,6 +1037,6 @@
 
 #define MAP_GROUPS_COUNT 32
 
-// static const u8 MAP_GROUP_COUNT[] = {75, 5, 5, 6, 5, 29, 9, 10, 6, 7, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 28, 29, 95, 0, 27, 126, 113, 126, 74, 97, 0};
+// static const u8 MAP_GROUP_COUNT[] = {75, 5, 5, 6, 5, 29, 9, 10, 6, 7, 6, 5, 5, 7, 6, 9, 7, 18, 10, 12, 1, 7, 29, 29, 95, 0, 27, 126, 113, 126, 74, 97, 0};
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

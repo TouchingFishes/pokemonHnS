@@ -291,7 +291,7 @@ MahoganyTown_Text_Lass:
 
 MahoganyTown_Text_Sign:
     .string "MAHOGANY TOWN\p"
-    .string "Welcome to the Home of the Ninja$"
+    .string "Welcome to calm amongst pines$"
 
 MahoganyTown_Text_RagecandybarSign:
     .string "While visiting MAHOGANY TOWN, try\n"

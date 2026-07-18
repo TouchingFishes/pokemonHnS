@@ -1297,7 +1297,7 @@
 #define FLAG_ITEM_ROUTE35_BIG_NUGGET                                0x4DA 
 #define FLAG_ITEM_NATIONAL_PARK_SOOTHE_BELL                         0x4DB 
 #define FLAG_ITEM_NATIONAL_PARK_TM_DIG                              0x4DC 
-#define FLAG_ITEM_ECRUTEAK_RARE_CANDY                               0x4DD 
+#define FLAG_ITEM_ROUTE37_GRASS_KNOT                                0x4DD
 #define FLAG_ITEM_BELLCHIME_BIG_MUSHROOM                            0x4DE 
 #define FLAG_ITEM_TIN_TOWER_3F_FULL_HEAL                            0x4DF 
 #define FLAG_ITEM_TIN_TOWER_4F_ULTRA_BALL                           0x4E0 

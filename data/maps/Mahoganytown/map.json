@@ -33,7 +33,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_1",
       "x": 7,
-      "y": 13,
+      "y": 12,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -44,8 +44,8 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_F",
-      "x": 24,
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_1",
+      "x": 22,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
@@ -71,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
-      "x": 10,
+      "x": 11,
       "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -123,7 +123,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_DELIBIRD",
-      "x": 8,
+      "x": 9,
       "y": 16,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -158,7 +158,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
+      "x": 11,
       "y": 19,
       "elevation": 0,
       "dest_map": "MAP_MAHOGANY_TOWN_GYM",
@@ -632,7 +632,7 @@
     },
     {
       "type": "sign",
-      "x": 12,
+      "x": 13,
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

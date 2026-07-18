@@ -114,10 +114,10 @@ CherrygroveBay_Text_VeronicaPostBattle:
 	.string "prefer relaxing in the warmth.$"
 
 CherrygroveBay_Text_ExpertMudSlap_Intro:
-	.string "Battles aren't just about\n"
-	.string "power.\p"
 	.string "A clever trainer uses every\n"
 	.string "tool at their disposal.\p"
+	.string "You know. Even fighting dirty\n"
+	.string "has its merits.\p"
 	.string "Take this. It may seem simple,\n"
 	.string "but it can turn the tide.$"
 

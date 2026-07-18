@@ -127,19 +127,6 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
-      "x": 19,
-      "y": 15,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EcruteakCity_EventScript_Item_RareCandy",
-      "flag": "FLAG_ITEM_ECRUTEAK_RARE_CANDY"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_VULPIX",
       "x": 30,
       "y": 37,
@@ -231,8 +218,8 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISDREAVUS",
-      "x": 19,
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHUPPET",
+      "x": 47,
       "y": 55,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_LEFT_AND_RIGHT",
@@ -257,7 +244,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GASTLY",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHUPPET",
       "x": 26,
       "y": 53,
       "elevation": 0,
@@ -283,7 +270,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_GENGAR",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDSTONE",
       "x": 7,
       "y": 55,
       "elevation": 0,
@@ -297,8 +284,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_POLIWAG",
-      "x": 48,
-      "y": 26,
+      "x": 52,
+      "y": 28,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -310,8 +297,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_POLIWHIRL",
-      "x": 52,
-      "y": 28,
+      "x": 48,
+      "y": 20,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 0,
@@ -335,7 +322,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHUPPET",
       "x": 58,
       "y": 37,
       "elevation": 0,
@@ -348,7 +335,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHUPPET",
       "x": 57,
       "y": 31,
       "elevation": 0,
@@ -361,7 +348,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISMAGIUS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_BANETTE",
       "x": 57,
       "y": 26,
       "elevation": 0,
@@ -426,7 +413,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_MISDREAVUS",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SHUPPET",
       "x": 11,
       "y": 29,
       "elevation": 0,
@@ -558,7 +545,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
       "x": 10,
-      "y": 34,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -570,8 +557,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LIGHT_SPRITE",
-      "x": 12,
-      "y": 34,
+      "x": 13,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
