@@ -230,44 +230,26 @@ IlexForest_EventScript_BugcatcherWayne::
 IlexForest_EventScript_HeadbuttMoveTutor::
 	lock
 	faceplayer
-	goto_if_set FLAG_FINITE_TMS, IlexForest_EventScript_HeadbuttTutorFinite
-	clearflag FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT
 	msgbox MoveTutor_Text_HeadbuttTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
+	goto_if_eq VAR_RESULT, NO, EventScript_HeadbuttDeclined
 	msgbox MoveTutor_Text_HeadbuttWhichMon, MSGBOX_DEFAULT
 	setvar VAR_0x8005, TUTOR_MOVE_HEADBUTT
 	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_HeadbuttDeclined
-	goto MoveTutor_EventScript_HeadbuttTaught
+	goto_if_eq VAR_RESULT, FALSE, EventScript_HeadbuttDeclined
+	removemoney 2000, 0
+	setflag FLAG_GET_HEADBUTT
+	goto EventScript_HeadbuttTaught
 	end
 
-IlexForest_EventScript_HeadbuttTutorFinite::
-	lock
-	faceplayer
-	goto_if_set FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT, MoveTutor_EventScript_HeadbuttTaught
-	msgbox MoveTutor_Text_HeadbuttTeach, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
-	call MoveTutor_EventScript_CanOnlyBeLearnedOnceFinite
-	goto_if_eq VAR_RESULT, NO, MoveTutor_EventScript_HeadbuttDeclined
-	msgbox MoveTutor_Text_HeadbuttWhichMon, MSGBOX_DEFAULT
-	setvar VAR_0x8005, TUTOR_MOVE_HEADBUTT
-	call MoveTutor_EventScript_OpenPartyMenu
-	goto_if_eq VAR_RESULT, 0, MoveTutor_EventScript_HeadbuttDeclined
-	setflag FLAG_MOVE_TUTOR_TAUGHT_HEADBUTT
-	goto MoveTutor_EventScript_HeadbuttTaught
-	end
-
-MoveTutor_EventScript_HeadbuttDeclined::
+EventScript_HeadbuttDeclined::
 	msgbox MoveTutor_Text_HeadbuttDeclined, MSGBOX_DEFAULT
 	release
 	end
 
-MoveTutor_EventScript_HeadbuttTaught::
-	setflag FLAG_GET_HEADBUTT
+EventScript_HeadbuttTaught::
 	msgbox MoveTutor_Text_HeadbuttTaught, MSGBOX_DEFAULT
 	release
 	end
-
 
 IlexForest_EventScript_Shrine::
 	lock
@@ -742,23 +724,26 @@ IlexForest_Text_CharcoalMasterTalkAfter:
 
 MoveTutor_Text_HeadbuttTeach:
 	.string "What am I doing?\p"
-	.string "I'm shaking trees using HEADBUTT.\p"
-	.string "Do you think your POKéMON will\n"
-	.string "want to HEADBUTT, too?\p"
-	.string "I can teach one the move HEADBUTT\n"
-	.string "if you'd like. It's fun!$"
-	
+	.string "I'm knocking POKéMON out of trees\n"
+	.string "using HEADBUTT.\p"
+	.string "For ¥2000, I'll teach your\n"
+	.string "POKéMON the move HEADBUTT.\p"
+	.string "You'll be shaking trees before\n"
+	.string "you know it!$"
+
 MoveTutor_Text_HeadbuttWhichMon:
-	.string "Ehehe, sure thing! It'd be great if\n"
-	.string "the POKéMON looked like me.$"
+	.string "Heh! Which POKéMON wants to\n"
+	.string "learn HEADBUTT?$"
 
 MoveTutor_Text_HeadbuttDeclined:
-	.string "You don't need to be shy about it.\n"
-	.string "Let's butt heads!$"
+	.string "That's a shame.\p"
+	.string "Come back if you ever feel like\n"
+	.string "butting heads with a few trees!$"
 
 MoveTutor_Text_HeadbuttTaught:
-	.string "Rattle trees with HEADBUTT.\n"
-	.string "Sometimes, sleeping POKéMON fall out.$"
+	.string "Now go rattle some trees!\p"
+	.string "You never know what sleepy\n"
+	.string "POKéMON might come tumbling out.$"
 
 IlexForest_Text_Lass:
 	.string "Did something happen to the\n"

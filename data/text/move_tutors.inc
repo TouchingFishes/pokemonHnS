@@ -663,7 +663,7 @@ MoveTutor_Text_BideTeach:
 	.string "To endure… to wait… and then\n"
 	.string "return all it has received.\p"
 	.string "This is the way of BIDE.\p"
-	.string "For a humble donation of 2500,\n"
+	.string "For a humble donation of ¥2500,\n"
 	.string "shall I teach it to your POKéMON?$"
 
 MoveTutor_Text_BideDeclined:
