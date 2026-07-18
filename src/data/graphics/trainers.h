@@ -43,8 +43,8 @@ const u32 gTrainerPalette_Proton[] = INCBIN_U32("graphics/trainers/front_pics/pr
 const u32 gTrainerFrontPic_HexManiac[] = INCBIN_U32("graphics/trainers/front_pics/hex_maniac.4bpp.lz");
 const u32 gTrainerPalette_HexManiac[] = INCBIN_U32("graphics/trainers/front_pics/hex_maniac.gbapal.lz");
 
-const u32 gTrainerFrontPic_AromaLady[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.4bpp.lz");
-const u32 gTrainerPalette_AromaLady[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.gbapal.lz");
+const u32 gTrainerFrontPic_Officer[] = INCBIN_U32("graphics/trainers/front_pics/officer.4bpp.lz");
+const u32 gTrainerPalette_Officer[] = INCBIN_U32("graphics/trainers/front_pics/officer.gbapal.lz");
 
 const u32 gTrainerFrontPic_RuinManiac[] = INCBIN_U32("graphics/trainers/front_pics/ruin_maniac.4bpp.lz");
 const u32 gTrainerPalette_RuinManiac[] = INCBIN_U32("graphics/trainers/front_pics/ruin_maniac.gbapal.lz");
@@ -304,8 +304,8 @@ const u32 gTrainerFrontPic_Tate[] = INCBIN_U32("graphics/trainers/front_pics/lea
 
 const u32 gTrainerFrontPic_Liza[] = INCBIN_U32("graphics/trainers/front_pics/leader_liza.4bpp.lz");
 
-const u32 gTrainerFrontPic_AromaLady_Em[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.4bpp.lz");
-const u32 gTrainerPalette_AromaLady_Em[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.gbapal.lz");
+const u32 gTrainerFrontPic_AromaLady[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.4bpp.lz");
+const u32 gTrainerPalette_AromaLady[] = INCBIN_U32("graphics/trainers/front_pics/aroma_lady.gbapal.lz");
 
 const u32 gTrainerFrontPic_TuberF[] = INCBIN_U32("graphics/trainers/front_pics/tuber_f.4bpp.lz");
 const u32 gTrainerPalette_TuberF[] = INCBIN_U32("graphics/trainers/front_pics/tuber_f.gbapal.lz");

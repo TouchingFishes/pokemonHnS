@@ -58,7 +58,7 @@ static const union AnimCmd *const sAnims_HexManiac[] ={
     sAnim_GeneralFrame0,
 };
 
-static const union AnimCmd *const sAnims_AromaLady[] ={
+static const union AnimCmd *const sAnims_Officer[] ={
     sAnim_GeneralFrame0,
 };
 
@@ -382,6 +382,10 @@ static const union AnimCmd *const sAnims_Liza[] ={
     sAnim_GeneralFrame0,
 };
 
+static const union AnimCmd *const sAnims_AromaLady[] ={
+    sAnim_GeneralFrame0,
+};
+
 static const union AnimCmd *const sAnims_TuberF[] ={
     sAnim_GeneralFrame0,
 };
@@ -547,7 +551,7 @@ const union AnimCmd *const *const gTrainerFrontAnimsPtrTable[] =
     [TRAINER_PIC_MR_FUJI] = sAnims_MrFuji,
     [TRAINER_PIC_PROTON] = sAnims_Proton,
     [TRAINER_PIC_HEX_MANIAC] = sAnims_HexManiac,
-    [TRAINER_PIC_POLICEMAN] = sAnims_AromaLady,
+    [TRAINER_PIC_OFFICER] = sAnims_Officer,
     [TRAINER_PIC_RUIN_MANIAC] = sAnims_RuinManiac,
     [TRAINER_PIC_FIREBREATHER] = sAnims_FireBreather,
     [TRAINER_PIC_ENGINEER] = sAnims_Engineer,

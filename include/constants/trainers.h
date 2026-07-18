@@ -31,7 +31,7 @@
 #define TRAINER_PIC_MR_FUJI                         12
 #define TRAINER_PIC_PROTON                          13
 #define TRAINER_PIC_HEX_MANIAC                      14
-#define TRAINER_PIC_POLICEMAN                       15
+#define TRAINER_PIC_OFFICER                       15
 #define TRAINER_PIC_RUIN_MANIAC                     16
 #define TRAINER_PIC_FIREBREATHER                    17
 #define TRAINER_PIC_ENGINEER                        18
