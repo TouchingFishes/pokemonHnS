@@ -703,7 +703,7 @@
 #define FLAG_HIDE_CINNABAR_BLAINE  0x28F 
 #define FLAG_HIDE_DOJO_BLAINE  0x290 
 #define FLAG_HIDE_DOJO_BLUE  0x291 
-#define FLAG_GOT_VANILLITE_FROM_LADY  0x296
+#define FLAG_GOT_VANILLITE_FROM_LADY  0x293
 #define FLAG_SHINY_STARTER_1  0x294 // Flag for shiny starters, Cyndaquil
 #define FLAG_SHINY_STARTER_2  0x295 // Flag for shiny starters, Chikorita
 #define FLAG_SHINY_STARTER_3  0x296 // Flag for shiny starters, Totodile
