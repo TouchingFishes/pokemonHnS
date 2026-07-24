@@ -7149,8 +7149,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_TECHNICIAN && gBattleMovePower <= 60)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_CACOPHONY && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_UPROAR || gCurrentMove == MOVE_HYPER_VOICE || gCurrentMove == MOVE_BUG_BUZZ)
-         || gCurrentMove == MOVE_BOOMBURST )
+    if (attacker->ability == ABILITY_CACOPHONY && (gCurrentMove == MOVE_SNORE || gCurrentMove == MOVE_UPROAR || gCurrentMove == MOVE_HYPER_VOICE || gCurrentMove == MOVE_BUG_BUZZ
+         || gCurrentMove == MOVE_BOOMBURST ))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_RECKLESS && (gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL || gBattleMoves[gCurrentMove].effect == EFFECT_RECOIL_IF_MISS 
          || gBattleMoves[gCurrentMove].effect == EFFECT_DOUBLE_EDGE))
