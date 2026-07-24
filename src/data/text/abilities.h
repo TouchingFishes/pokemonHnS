@@ -1,6 +1,6 @@
 #include "constants/abilities.h"
 static const u8 sNoneDescription[] = _("");
-static const u8 sStenchDescription[] = _("Helps repel wild POKéMON.");
+static const u8 sStenchDescription[] = _("Repels and flinches foes.");
 static const u8 sDrizzleDescription[] = _("Summons rain in battle.");
 static const u8 sSpeedBoostDescription[] = _("Gradually boosts SPEED.");
 static const u8 sBattleArmorDescription[] = _("Blocks critical hits.");
