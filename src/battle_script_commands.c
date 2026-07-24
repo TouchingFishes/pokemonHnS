@@ -1946,6 +1946,15 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
                     i += 3;
                     continue;
                 }
+                
+                else if ((TYPE_EFFECT_DEF_TYPE(i) == TYPE_GHOST)
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
+                    //Scrappy bypasses Ghost's immunity to Normal / Fighting
+                    i += 3;
+                    continue;
+                }
 
                 else if (GetTypeEffectivenessRandom(TYPE_EFFECT_ATK_TYPE(i)) == moveType)
                 {
@@ -1968,6 +1977,15 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
                 {
                     if (gBattleMons[defender].status2 & STATUS2_FORESIGHT)
                         break;
+                    i += 3;
+                    continue;
+                }
+
+                else if ((TYPE_EFFECT_DEF_TYPE_OLD(i) == TYPE_GHOST)
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
+                    //Scrappy bypasses Ghost's immunity to Normal / Fighting
                     i += 3;
                     continue;
                 }
