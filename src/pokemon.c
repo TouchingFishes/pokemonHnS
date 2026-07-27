@@ -12416,7 +12416,14 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
 
     if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
     && (species == SPECIES_ARBOK 
-    || species == SPECIES_PARASECT 
+    || species == SPECIES_PARASECT
+    || species == SPECIES_BRAVIARY
+    || species == SPECIES_GREAVARD
+    || species == SPECIES_HOUNDSTONE
+    || species == SPECIES_SABLEYE
+    || species == SPECIES_GEMGEIST
+    || species == SPECIES_MARILL
+    || species == SPECIES_AZUMARILL 
     || species == SPECIES_GOLDUCK
     || species == SPECIES_KINGLER
     || species == SPECIES_MEGANIUM
