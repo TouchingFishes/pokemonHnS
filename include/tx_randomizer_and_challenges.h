@@ -73,6 +73,10 @@
 #define TX_MODE_TYPE_EFFECTIVENESS 0
 #define TX_FEATURES_SHINY_COLORS 0
 
+#define TX_MODE_NATURES 0 //off
+#define TX_MODE_PHYSICAL_SPECIAL_SPLIT 0 //off
+#define TX_IGNORE_EV_CAP 1 //on
+
 // randomization types
 #define TX_RANDOM_T_WILD_POKEMON    0
 #define TX_RANDOM_T_TRAINER         1

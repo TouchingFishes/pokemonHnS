@@ -3521,7 +3521,8 @@ static void MoveSelectionDisplaySplitIcon(void){
 	u32 moveCategory;
 
 	moveInfo = (struct ChooseMoveStruct*)(&gBattleBufferA[gActiveBattler][MAX_BATTLERS_COUNT]);
-    moveCategory = gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].category;
+    moveCategory = GetBattleMoveCategory(gBattleMoves[move]);
+    //moveCategory = gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].category;
     if (gSaveBlock2Ptr->optionStyle == 0)
         {
         LoadPalette(sSplitIcons_Pal, 10 * 0x10, 0x20);

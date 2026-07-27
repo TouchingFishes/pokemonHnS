@@ -1181,6 +1181,9 @@ struct SaveBlock1
         u8 tx_Mode_TypeEffectiveness:1; //unused in HnS
         u8 NuzlockeEncounterFlags[12]; //
         u8 tx_Nuzlocke_RareCandy:1; //new for HnS 1.2
+        u8 tx_Mode_Natures:1; //new for this hack
+        u8 tx_Mode_PhysicalSpecialSplit:1; //new for this hack
+        u8 tx_Mode_IgnoreEVCap:1; //new for this hack
 };
 
 extern struct SaveBlock1* gSaveBlock1Ptr;

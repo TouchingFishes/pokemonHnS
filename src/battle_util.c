@@ -712,6 +712,17 @@ static const u16 sSoundMovesTable[] =
     MOVE_UPROAR, MOVE_METAL_SOUND, MOVE_GRASS_WHISTLE, MOVE_HYPER_VOICE, SOUND_MOVES_END
 };
 
+u8 GetBattleMoveCategory(u16 move)
+{
+    if (gBattleMoves[move].category == MOVE_CATEGORY_STATUS)
+        return MOVE_CATEGORY_STATUS;
+
+    if (!gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit)
+        return IS_TYPE_PHYSICAL(gBattleMoves[move].type) ? MOVE_CATEGORY_PHYSICAL : MOVE_CATEGORY_SPECIAL;
+
+    return gBattleMoves[move].category;
+}
+
 u8 GetBattlerForBattleScript(u8 caseId)
 {
     u8 ret = 0;

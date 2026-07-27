@@ -9122,7 +9122,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         if (evChange > 0) // Increasing EV (HP or Atk)
                         {
                             // Has EV increase limit already been reached?
-                            if (evCount >= MAX_TOTAL_EVS)
+                            if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && evCount >= MAX_TOTAL_EVS)
                                 return TRUE;
                             if (dataSigned >= EV_ITEM_RAISE_LIMIT)
                                 break;
@@ -9133,7 +9133,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             else
                                 temp2 = evChange;
 
-                            if (evCount + temp2 > MAX_TOTAL_EVS)
+                            if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && evCount + temp2 > MAX_TOTAL_EVS)
                                 temp2 += MAX_TOTAL_EVS - (evCount + temp2);
 
                             dataSigned += temp2;
@@ -9352,7 +9352,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                         if (evChange > 0) // Increasing EV
                         {
                             // Has EV increase limit already been reached?
-                            if (evCount >= MAX_TOTAL_EVS)
+                            if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && evCount >= MAX_TOTAL_EVS)
                                 return TRUE;
                             if (dataSigned >= EV_ITEM_RAISE_LIMIT)
                                 break;
@@ -9363,7 +9363,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
                             else
                                 temp2 = evChange;
 
-                            if (evCount + temp2 > MAX_TOTAL_EVS)
+                            if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && evCount + temp2 > MAX_TOTAL_EVS)
                                 temp2 += MAX_TOTAL_EVS - (evCount + temp2);
 
                             dataSigned += temp2;
@@ -10144,6 +10144,8 @@ u16 ModifyStatByNature(u8 nature, u16 stat, u8 statIndex)
     // Don't modify HP, Accuracy, or Evasion by nature
     if (statIndex <= STAT_HP || statIndex > NUM_NATURE_STATS)
         return stat;
+    if (!gSaveBlock1Ptr->tx_Mode_Natures)
+        return stat;
 
     switch (gNatureStatTable[nature][statIndex - 1])
     {
@@ -10245,7 +10247,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
 
     for (i = 0; i < NUM_STATS; i++)
     {
-        if (totalEVs >= MAX_TOTAL_EVS)
+        if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && totalEVs >= MAX_TOTAL_EVS)
             break;
 
         if (CheckPartyHasHadPokerus(mon, 0))
@@ -10291,7 +10293,7 @@ void MonGainEVs(struct Pokemon *mon, u16 defeatedSpecies)
         if (holdEffect == HOLD_EFFECT_MACHO_BRACE)
             evIncrease *= 5;
 
-        if (totalEVs + (s16)evIncrease > MAX_TOTAL_EVS)
+        if (!gSaveBlock1Ptr->tx_Mode_IgnoreEVCap && totalEVs + (s16)evIncrease > MAX_TOTAL_EVS)
             evIncrease = ((s16)evIncrease + MAX_TOTAL_EVS) - (totalEVs + evIncrease);
 
         if (evs[i] + (s16)evIncrease > MAX_PER_STAT_EVS)

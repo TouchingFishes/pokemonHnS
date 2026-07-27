@@ -53,6 +53,9 @@ enum
     //MENUITEM_MODE_MODERN_TYPES,
     MENUITEM_MODE_NEW_STATS,
     //MENUITEM_MODE_NEW_LEGENDARIES,
+    MENUITEM_MODE_NATURES,
+    MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT,
+    MENUITEM_MODE_IGNORE_EV_CAP,
     MENUITEM_MODE_NEXT,
     MENUITEM_MODE_COUNT,
 };
@@ -372,6 +375,9 @@ struct // MENU_MODE
     [MENUITEM_MODE_NEW_CITRUS]            = {DrawChoices_Mode_New_Citrus,           ProcessInput_Options_Two},
     [MENUITEM_MODE_MODERN_MOVES]          = {DrawChoices_Mode_Modern_Moves,         ProcessInput_Options_Two},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {DrawChoices_Mode_Legendary_Abilities,  ProcessInput_Options_Two},
+    [MENUITEM_MODE_NATURES]               = {DrawChoices_Mode_Natures,           ProcessInput_Options_Two},
+    [MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {DrawChoices_Mode_PhysicalSpecialSplit,         ProcessInput_Options_Two},
+    [MENUITEM_MODE_IGNORE_EV_CAP]         = {DrawChoices_Mode_IgnoreEVCap,  ProcessInput_Options_Two},
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = {DrawChoices_Mode_New_Legendaries,      ProcessInput_Options_Two},
     //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = {DrawChoices_Mode_New_Effectiveness,    ProcessInput_Options_Two},
     [MENUITEM_MODE_NEXT]                  = {NULL, NULL},
@@ -486,6 +492,9 @@ static const u8 sText_NewStats[]            = _("{COLOR 3}{SHADOW 3}POKéMON STA
 static const u8 sText_Sturdy[]              = _("STURDY");
 static const u8 sText_Modern_Moves[]        = _("{PKMN} MOVEPOOL");
 static const u8 sText_Legendary_Abilities[] = _("LEGEN. ABILITIES");
+static const u8 sText_Natures[]             = _("NATURES");
+static const u8 sText_PhysicalSpecialSplit[] = _("{PKMN} MOVE SPLIT");
+static const u8 sText_IgnoreEVCap[]         = _("NO EV CAP");
 static const u8 sText_New_Legendaries[]     = _("{COLOR 3}{SHADOW 3}EXTRA LEGEND.");
 static const u8 sText_New_Effectiveness[]   = _("TYPE CHART");
 static const u8 sText_Next[]                = _("NEXT");
@@ -505,6 +514,9 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     [MENUITEM_MODE_NEW_STATS]                 = sText_NewStats,
     [MENUITEM_MODE_MODERN_MOVES]              = sText_Modern_Moves,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]       = sText_Legendary_Abilities,
+    [MENUITEM_MODE_NATURES]                   = sText_Natures,
+    [MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = sText_PhysicalSpecialSplit,
+    [MENUITEM_MODE_IGNORE_EV_CAP]             = sText_IgnoreEVCap,
     //[MENUITEM_MODE_NEW_LEGENDARIES]           = sText_New_Legendaries,
     //[MENUITEM_MODE_NEW_EFFECTIVENESS]         = sText_New_Effectiveness,
     [MENUITEM_MODE_NEXT]                      = sText_Next,
@@ -676,6 +688,9 @@ static bool8 CheckConditions(int selection)
             case MENUITEM_MODE_STURDY:                    return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_MODERN_MOVES:              return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_LEGENDARY_ABILITIES:       return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_NATURES:                   return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT:    return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_IGNORE_EV_CAP:             return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             //case MENUITEM_MODE_NEW_LEGENDARIES:           return FALSE;
             //case MENUITEM_MODE_NEW_EFFECTIVENESS:         return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
         default:       return FALSE;
@@ -1456,6 +1471,11 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_Sturdy                      = TX_MODE_STURDY;
         gSaveBlock1Ptr->tx_Mode_Modern_Moves                = TX_MODE_MODERN_MOVES;
         gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = TX_MODE_LEGENDARY_ABILITIES;
+
+        gSaveBlock1Ptr->tx_Mode_Natures                     = TX_MODE_NATURES;
+        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = TX_MODE_PHYSICAL_SPECIAL_SPLIT;
+        gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = TX_IGNORE_EV_CAP;
+
         gSaveBlock1Ptr->tx_Mode_New_Legendaries             = TX_MODE_NEW_LEGENDARIES;
         //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = TX_MODE_TYPE_EFFECTIVENESS;
 
@@ -1530,6 +1550,9 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = gSaveBlock1Ptr->tx_Mode_Sturdy;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]    = gSaveBlock1Ptr->tx_Mode_Legendary_Abilities;
+        sOptions->sel_mode[MENUITEM_MODE_NATURES]                = gSaveBlock1Ptr->tx_Mode_Natures;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit;
+        sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]          = gSaveBlock1Ptr->tx_Mode_IgnoreEVCap;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]        = gSaveBlock1Ptr->tx_Mode_New_Legendaries;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]      = gSaveBlock1Ptr->tx_Mode_TypeEffectiveness;
         //MENU FEATURES
@@ -1885,6 +1908,9 @@ void SaveData_TxRandomizerAndChallenges(void)
     gSaveBlock1Ptr->tx_Mode_Sturdy                      = sOptions->sel_mode[MENUITEM_MODE_STURDY]; 
     gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
     gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]; 
+    gSaveBlock1Ptr->tx_Mode_Natures                     = sOptions->sel_mode[MENUITEM_MODE_NATURES]; 
+    gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]; 
+    gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]; 
     //gSaveBlock1Ptr->tx_Mode_New_Legendaries             = sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]; 
     //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS];
     //MENU FEAUTRES
@@ -3008,6 +3034,63 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
     else
     {
         gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1; //They do now
+    }
+
+    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
+}
+
+static void DrawChoices_Mode_Natures(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_MODE_NATURES);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    if (selection == 0)
+    {
+        gSaveBlock1Ptr->tx_Mode_Natures = 0;
+    }
+    else
+    {
+        gSaveBlock1Ptr->tx_Mode_Natures = 1;
+    }
+
+    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
+}
+
+static void DrawChoices_Mode_PhysicalSpecialSplit(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    if (selection == 0)
+    {
+        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 0;
+    }
+    else
+    {
+        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 1;
+    }
+
+    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
+}
+
+static void DrawChoices_Mode_IgnoreEVCap(int selection, int y)
+{
+    bool8 active = CheckConditions(MENUITEM_MODE_IGNORE_EV_CAP);
+    u8 styles[2] = {0};
+    styles[selection] = 1;
+
+    if (selection == 0)
+    {
+        gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 0;
+    }
+    else
+    {
+        gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 1;
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
