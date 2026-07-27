@@ -6218,7 +6218,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_GIRAFARIG] =
+    [SPECIES_GIRAFARIG] = //modified
     {
         .baseHP        = 70,
         .baseAttack    = 85, //+5
@@ -6229,8 +6229,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpAttack  = 95, //+5
         .baseSpAttack_old = 90,
         .baseSpDefense = 65,
-        .types = { TYPE_DARK, TYPE_PSYCHIC }, //changed
-        .types_old = { TYPE_NORMAL, TYPE_PSYCHIC },
+        .types = { TYPE_NORMAL, TYPE_PSYCHIC },
         .catchRate = 60,
         .expYield = 149,
         .evYield_HP        = 0,
@@ -7834,8 +7833,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .baseSpeed          = 120,
         .baseSpAttack       = 105,
         .baseSpDefense      = 85,
-        .types = { TYPE_GRASS, TYPE_DARK }, //changed
-        .types_old = { TYPE_GRASS, TYPE_GRASS },
+        .types = { TYPE_GRASS, TYPE_GRASS },
         .catchRate = 45,
         .expYield = 208,
         .evYield_HP        = 0,
