@@ -48,10 +48,10 @@ gText_Birch_LockDifficulty::
 
 gText_Birch_Challenge::
 	.string "Oh, is that so?\p"
-	.string "All right, with that clear…\n"
-	.string "Do you expect any CHALLENGES\l"
-	.string "in your journey?\p"
-	.string "And what's your name?$"
+	.string "All right, before we begin,\n"
+	.string "let's tailor your adventure\l"
+	.string "to your liking.\p"
+	.string "After that, I'll ask your name.$"
 
 gText_Birch_WhatsYourName::
 	.string "Now, what did you say your name.\n"
