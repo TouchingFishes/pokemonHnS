@@ -51,7 +51,7 @@ enum
     MENUITEM_MODE_SURVIVE_POISON,
     //MENUITEM_MODE_NEW_EFFECTIVENESS,
     //MENUITEM_MODE_MODERN_TYPES,
-    //MENUITEM_MODE_NEW_STATS,
+    MENUITEM_MODE_NEW_STATS,
     //MENUITEM_MODE_NEW_LEGENDARIES,
     MENUITEM_MODE_NEXT,
     MENUITEM_MODE_COUNT,
@@ -368,7 +368,7 @@ struct // MENU_MODE
     [MENUITEM_MODE_MINTS]                 = {DrawChoices_Mode_Mints,                ProcessInput_Options_Two},
     //[MENUITEM_MODE_MODERN_TYPES]          = {DrawChoices_Mode_Modern_Types,         ProcessInput_Options_Two},
     [MENUITEM_MODE_FAIRY_TYPES]           = {DrawChoices_Mode_Fairy_Types,          ProcessInput_Options_Two},
-    //[MENUITEM_MODE_NEW_STATS]             = {DrawChoices_Mode_New_Stats,            ProcessInput_Options_Two},
+    [MENUITEM_MODE_NEW_STATS]             = {DrawChoices_Mode_New_Stats,            ProcessInput_Options_Two},
     [MENUITEM_MODE_NEW_CITRUS]            = {DrawChoices_Mode_New_Citrus,           ProcessInput_Options_Two},
     [MENUITEM_MODE_MODERN_MOVES]          = {DrawChoices_Mode_Modern_Moves,         ProcessInput_Options_Two},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {DrawChoices_Mode_Legendary_Abilities,  ProcessInput_Options_Two},
@@ -502,7 +502,7 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     [MENUITEM_MODE_NEW_CITRUS]                = sText_NewCitrus,
     //[MENUITEM_MODE_MODERN_TYPES]              = sText_ModernTypes,
     [MENUITEM_MODE_FAIRY_TYPES]               = sText_FairyTypes,
-    //[MENUITEM_MODE_NEW_STATS]                 = sText_NewStats,
+    [MENUITEM_MODE_NEW_STATS]                 = sText_NewStats,
     [MENUITEM_MODE_MODERN_MOVES]              = sText_Modern_Moves,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]       = sText_Legendary_Abilities,
     //[MENUITEM_MODE_NEW_LEGENDARIES]           = sText_New_Legendaries,
@@ -672,7 +672,7 @@ static bool8 CheckConditions(int selection)
             case MENUITEM_MODE_SURVIVE_POISON:            return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             //case MENUITEM_MODE_MODERN_TYPES:              return FALSE;
             case MENUITEM_MODE_FAIRY_TYPES:               return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
-            //case MENUITEM_MODE_NEW_STATS:                 return FALSE;
+            case MENUITEM_MODE_NEW_STATS:                 return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_STURDY:                    return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_MODERN_MOVES:              return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_LEGENDARY_ABILITIES:       return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
@@ -792,8 +792,8 @@ static const u8 sText_Description_Mode_New_Citrus_Off[]           = _("SITRUS BE
 static const u8 sText_Description_Mode_New_Citrus_On[]            = _("SITRUS BERRY restores 25% of\ntotal HP. Same as GEN IV and up.");
 static const u8 sText_Description_Mode_Modern_Types_Off[]         = _("Original {PKMN} typings. Doesn't include\n{PKMN} that got added to FAIRY in GEN VI.");
 static const u8 sText_Description_Mode_Modern_Types_On[]          = _("{PKMN} have modified typings\nto make them more viable.");
-static const u8 sText_Description_Mode_Fairy_Types_Off[]          = _("Affected {PKMN} keep their\n classic, pre-balance types."); //FAIRY TYPE isn't added to {PKMN} \nthat got it in GEN VI.
-static const u8 sText_Description_Mode_Fairy_Types_On[]           = _("Affected {PKMN} use this game's\n changed types."); //FAIRY TYPE is added / changed to\ncertain {PKMN}, as in GEN VI.
+static const u8 sText_Description_Mode_Fairy_Types_Off[]          = _("Affected {PKMN} keep their\n lassic, pre-balance types."); //FAIRY TYPE isn't added to {PKMN} \nthat got it in GEN VI.
+static const u8 sText_Description_Mode_Fairy_Types_On[]           = _("Affected {PKMN} use this game's\nchanged types."); //FAIRY TYPE is added / changed to\ncertain {PKMN}, as in GEN VI.
 static const u8 sText_Description_Mode_New_Stats_Off[]            = _("Original GEN III {PKMN} stats.");
 static const u8 sText_Description_Mode_New_Stats_On[]             = _("Modified stats to make certain\n{PKMN} more viable.");
 static const u8 sText_Description_Mode_Sturdy_Off[]               = _("STURDY works as in GEN III. Only\nnegates OHKO moves (GUILLOTINE, etc.)");
@@ -819,7 +819,7 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_NEW_CITRUS]            = {sText_Description_Mode_New_Citrus_Off,         sText_Description_Mode_New_Citrus_On,         sText_Empty,                                        sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_MODERN_TYPES]          = {sText_Description_Mode_Modern_Types_Off,       sText_Description_Mode_Modern_Types_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_FAIRY_TYPES]           = {sText_Description_Mode_Fairy_Types_Off,        sText_Description_Mode_Fairy_Types_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    //[MENUITEM_MODE_NEW_STATS]             = {sText_Description_Mode_New_Stats_Off,          sText_Description_Mode_New_Stats_On,          sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_NEW_STATS]             = {sText_Description_Mode_New_Stats_Off,          sText_Description_Mode_New_Stats_On,          sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_STURDY]                = {sText_Description_Mode_Sturdy_Off,             sText_Description_Mode_Sturdy_On,             sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MODERN_MOVES]          = {sText_Description_Mode_Modern_Moves_Off,       sText_Description_Mode_Modern_Moves_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {sText_Description_Mode_Leg_Abilities_Off,      sText_Description_Mode_Leg_Abilities_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
@@ -1036,7 +1036,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_NEW_CITRUS]            = sText_Empty,
     //[MENUITEM_MODE_MODERN_TYPES]          = sText_Description_Disabled_Feature,
     [MENUITEM_MODE_FAIRY_TYPES]           = sText_Empty,
-    //[MENUITEM_MODE_NEW_STATS]             = sText_Description_Disabled_Feature,
+    [MENUITEM_MODE_NEW_STATS]             = sText_Empty,
     [MENUITEM_MODE_MODERN_MOVES]          = sText_Empty,
     [MENUITEM_MODE_NEXT]                  = sText_Empty,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = sText_Empty,
@@ -1526,7 +1526,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]             = gSaveBlock1Ptr->tx_Mode_New_Citrus;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]           = gSaveBlock1Ptr->tx_Mode_Modern_Types;
         sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]            = gSaveBlock1Ptr->tx_Mode_Fairy_Types;
-        //sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]              = gSaveBlock1Ptr->tx_Mode_New_Stats;
+        sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]              = gSaveBlock1Ptr->tx_Mode_New_Stats;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = gSaveBlock1Ptr->tx_Mode_Sturdy;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]    = gSaveBlock1Ptr->tx_Mode_Legendary_Abilities;
@@ -1881,7 +1881,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     gSaveBlock1Ptr->tx_Mode_New_Citrus                  = sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]; 
     //gSaveBlock1Ptr->tx_Mode_Modern_Types                = sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]; 
     gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]; 
-    //gSaveBlock1Ptr->tx_Mode_New_Stats                   = sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]; 
+    gSaveBlock1Ptr->tx_Mode_New_Stats                   = sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]; 
     gSaveBlock1Ptr->tx_Mode_Sturdy                      = sOptions->sel_mode[MENUITEM_MODE_STURDY]; 
     gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
     gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]; 
@@ -2314,8 +2314,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0;
         sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]               = !TX_MODE_FAIRY_TYPES;
         gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1;
-        //sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]                 = TX_MODE_NEW_STATS;
-        //gSaveBlock1Ptr->tx_Mode_New_Stats = 0;
+        sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]                 = !TX_MODE_NEW_STATS;
+        gSaveBlock1Ptr->tx_Mode_New_Stats = 1;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                    = !TX_MODE_STURDY;
         gSaveBlock1Ptr->tx_Mode_Sturdy = 1;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]              = !TX_MODE_MODERN_MOVES;
@@ -3014,7 +3014,7 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
     DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
 }
 
-/*static void DrawChoices_Mode_New_Stats(int selection, int y)
+static void DrawChoices_Mode_New_Stats(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MODE_NEW_STATS);
     u8 styles[2] = {0};
@@ -3029,9 +3029,9 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_New_Stats = 1; //New stats
     }
 
-    //DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
-    //DrawOptionMenuChoice(sText_Encounters_Modern_Long, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
-}*/
+    DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_Encounters_Modern_Long, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
+}
 
 static void DrawChoices_Mode_Sturdy(int selection, int y)
 {
