@@ -2337,9 +2337,9 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
     {
         //sOptions->sel_mode[MENUITEM_MODE_ALTERNATE_SPAWNS]          = tx_Mode_AlternateSpawns;
         //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0;
-        sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = !TX_MODE_INFINITE_TMS;
+        sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = 0;
         gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 0;
-        FlagClear (FLAG_FINITE_TMS);
+        FlagSet (FLAG_FINITE_TMS);
         sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = !TX_MODE_SURVIVE_POISON;
         gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]               = !TX_MODE_NEW_SYNCHRONIZE;
@@ -2362,11 +2362,11 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]       = !TX_MODE_LEGENDARY_ABILITIES;
         gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1;
 
-        sOptions->sel_mode[MENUITEM_MODE_NATURES]                   = !TX_MODE_STURDY;
+        sOptions->sel_mode[MENUITEM_MODE_NATURES]                   = 0;
         gSaveBlock1Ptr->tx_Mode_Natures = 0;
-        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = !TX_MODE_MODERN_MOVES;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = 0;
         gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 0;
-        sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]             = !TX_MODE_LEGENDARY_ABILITIES;
+        sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]             = 1;
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 1;
 
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]           = TX_MODE_NEW_LEGENDARIES;
