@@ -12416,7 +12416,8 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
 {
     u8 type;
 
-    if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
+    //if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
+    if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 0) 
     && (species == SPECIES_ARBOK 
     || species == SPECIES_PARASECT
     || species == SPECIES_BRAVIARY
@@ -12458,10 +12459,10 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     || species == SPECIES_IGGLYBUFF
     || species == SPECIES_TOGEPI
     || species == SPECIES_TOGETIC
-    || species == SPECIES_MARILL
-    || species == SPECIES_AZUMARILL
     || species == SPECIES_SNUBBULL
     || species == SPECIES_GRANBULL
+    //|| species == SPECIES_MARILL
+    //|| species == SPECIES_AZUMARILL
     || species == SPECIES_RALTS
     || species == SPECIES_KIRLIA
     || species == SPECIES_GARDEVOIR

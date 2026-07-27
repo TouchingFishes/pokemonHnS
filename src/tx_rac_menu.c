@@ -320,6 +320,9 @@ static void DrawChoices_Mode_Mints(int selection, int y);
 static void DrawChoices_Mode_New_Citrus(int selection, int y);
 static void DrawChoices_Mode_Modern_Types(int selection, int y);
 static void DrawChoices_Mode_Fairy_Types(int selection, int y);
+static void DrawChoices_Mode_Natures(int selection, int y);
+static void DrawChoices_Mode_PhysicalSpecialSplit(int selection, int y);
+static void DrawChoices_Mode_IgnoreEVCap(int selection, int y);
 static void DrawChoices_Mode_New_Stats(int selection, int y);
 static void DrawChoices_Mode_Sturdy(int selection, int y);
 static void DrawChoices_Mode_Modern_Moves(int selection, int y);
@@ -488,7 +491,7 @@ static const u8 sText_Mints[]               = _("NATURE MINTS");
 static const u8 sText_NewCitrus[]           = _("SITRUS BERRY");
 static const u8 sText_ModernTypes[]         = _("{COLOR 3}{SHADOW 3}POKéMON TYPES");
 static const u8 sText_FairyTypes[]          = _("TYPE CHANGES"); //was: ADD FAIRY TYPE
-static const u8 sText_NewStats[]            = _("{COLOR 3}{SHADOW 3}POKéMON STATS");
+static const u8 sText_NewStats[]            = _("{PKMN} STATS");
 static const u8 sText_Sturdy[]              = _("STURDY");
 static const u8 sText_Modern_Moves[]        = _("{PKMN} MOVEPOOL");
 static const u8 sText_Legendary_Abilities[] = _("LEGEN. ABILITIES");
@@ -817,6 +820,12 @@ static const u8 sText_Description_Mode_Modern_Moves_Off[]         = _("No new MO
 static const u8 sText_Description_Mode_Modern_Moves_On[]          = _("13 new MOVES, and improved MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
 static const u8 sText_Description_Mode_Leg_Abilities_Off[]        = _("PRESSURE stays as the main\nability of some legendaries.");
 static const u8 sText_Description_Mode_Leg_Abilities_On[]         = _("Legendaries have PRESSURE changed\nfor a better ability.");
+static const u8 sText_Description_Mode_Natures_Off[]              = _("{PKMN} have no NATURE effects.\nStats are unaffected by NATURES.");
+static const u8 sText_Description_Mode_Natures_On[]               = _("{PKMN} have NATURE effects,\nchanging their stat growth.");
+static const u8 sText_Description_Mode_PhysicalSpecialSplit_Off[] = _("Moves use the original GEN III\nphysical and special categories.");
+static const u8 sText_Description_Mode_PhysicalSpecialSplit_On[]  = _("Moves are split by their actual\ncategory, as in later generations.");
+static const u8 sText_Description_Mode_IgnoreEVCap_Off[]          = _("{PKMN} follow the standard\nEV limit rules.");
+static const u8 sText_Description_Mode_IgnoreEVCap_On[]           = _("{PKMN} can gain EVs beyond the\nstandard limit.");
 static const u8 sText_Description_Mode_New_Legendaries_Off[]      = _("No extra legendaries are added.");
 static const u8 sText_Description_Mode_New_Legendaries_On[]       = _("Extra legendaries from GEN I and II\nare added via ingame events.");
 static const u8 sText_Description_Mode_New_Effectiveness_Original[]  = _("Original type effectiveness\nfor all types.");
@@ -838,6 +847,10 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_STURDY]                = {sText_Description_Mode_Sturdy_Off,             sText_Description_Mode_Sturdy_On,             sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MODERN_MOVES]          = {sText_Description_Mode_Modern_Moves_Off,       sText_Description_Mode_Modern_Moves_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {sText_Description_Mode_Leg_Abilities_Off,      sText_Description_Mode_Leg_Abilities_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_NATURES]                = {sText_Description_Mode_Natures_Off,           sText_Description_Mode_Natures_On,            sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {sText_Description_Mode_PhysicalSpecialSplit_Off, sText_Description_Mode_PhysicalSpecialSplit_On, sText_Empty,                                   sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_IGNORE_EV_CAP]          = {sText_Description_Mode_IgnoreEVCap_Off,       sText_Description_Mode_IgnoreEVCap_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
+
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = {sText_Description_Mode_New_Legendaries_Off,    sText_Description_Mode_New_Legendaries_On,    sText_Empty,                                        sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = {sText_Description_Mode_New_Effectiveness_Original,    sText_Description_Mode_New_Effectiveness_Modern,    sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_NEXT]                  = {sText_Description_Mode_Next,                   sText_Empty,                                  sText_Empty,                                        sText_Empty,                                        sText_Empty},
@@ -2325,7 +2338,7 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         //sOptions->sel_mode[MENUITEM_MODE_ALTERNATE_SPAWNS]          = tx_Mode_AlternateSpawns;
         //gSaveBlock1Ptr->tx_Mode_AlternateSpawns = 0;
         sOptions->sel_mode[MENUITEM_MODE_INFINITE_TMS]              = !TX_MODE_INFINITE_TMS;
-        gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 1;
+        gSaveBlock1Ptr->tx_Mode_InfiniteTMs = 0;
         FlagClear (FLAG_FINITE_TMS);
         sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]            = !TX_MODE_SURVIVE_POISON;
         gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
@@ -2348,6 +2361,14 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_Modern_Moves = 1;
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]       = !TX_MODE_LEGENDARY_ABILITIES;
         gSaveBlock1Ptr->tx_Mode_Legendary_Abilities = 1;
+
+        sOptions->sel_mode[MENUITEM_MODE_NATURES]                   = !TX_MODE_STURDY;
+        gSaveBlock1Ptr->tx_Mode_Natures = 0;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = !TX_MODE_MODERN_MOVES;
+        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 0;
+        sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]             = !TX_MODE_LEGENDARY_ABILITIES;
+        gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 1;
+
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]           = TX_MODE_NEW_LEGENDARIES;
         //gSaveBlock1Ptr->tx_Mode_New_Legendaries = 0;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]         = TX_MODE_TYPE_EFFECTIVENESS;
