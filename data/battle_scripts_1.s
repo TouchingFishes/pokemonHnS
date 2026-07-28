@@ -4235,6 +4235,26 @@ BattleScript_FlashFireBoost::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_MagmaArmorActivates::
+	attackstring
+	pause B_WAIT_TIME_SHORT
+	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
+	setstatchanger STAT_DEF, 2, FALSE
+	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_MagmaArmorEnd
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScriptMagmaArmorAnim
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_EMPTY, BattleScript_MagmaArmorEnd
+	pause B_WAIT_TIME_SHORT
+	goto BattleScriptMagmaArmorPrint
+BattleScriptMagmaArmorAnim:
+	setgraphicalstatchangevalues
+	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+BattleScriptMagmaArmorPrint:
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_LONG_TIME
+BattleScript_MagmaArmorEnd:
+	orbyte gMoveResultFlags, MOVE_RESULT_DOESNT_AFFECT_FOE
+	goto BattleScript_MoveEnd	
+
 BattleScript_AbilityPreventsPhasingOut::
 	pause B_WAIT_TIME_SHORT
 	printstring STRINGID_PKMNANCHORSITSELFWITH

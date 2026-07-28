@@ -2847,6 +2847,13 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         effect = 1;
                     }
                     break;
+                case ABILITY_MAGMA_ARMOR:
+                    if (moveType == TYPE_WATER && gBattleMoves[move].power != 0)
+                    {
+                        gBattlescriptCurrInstr = BattleScript_MagmaArmorActivates;
+                        effect = 1;
+                    }
+                    break;
                 case ABILITY_SAP_SIPPER:
                     if (moveType == TYPE_GRASS && gBattleMoves[move].power != 0)
                     {
