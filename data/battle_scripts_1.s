@@ -4250,7 +4250,7 @@ BattleScriptMagmaArmorAnim:
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
 BattleScriptMagmaArmorPrint:
 	printfromtable gStatUpStringIds
-	waitmessage B_WAIT_LONG_TIME
+	waitmessage B_WAIT_TIME_LONG
 BattleScript_MagmaArmorEnd:
 	orbyte gMoveResultFlags, MOVE_RESULT_DOESNT_AFFECT_FOE
 	goto BattleScript_MoveEnd	
