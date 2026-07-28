@@ -4241,14 +4241,14 @@ BattleScript_MagmaArmorActivates::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
 	setstatchanger STAT_DEF, 2, FALSE
 	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_MagmaArmorEnd
-	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScriptMagmaArmorAnim
+	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MagmaArmorAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_EMPTY, BattleScript_MagmaArmorEnd
 	pause B_WAIT_TIME_SHORT
-	goto BattleScriptMagmaArmorPrint
-BattleScriptMagmaArmorAnim:
+	goto BattleScript_MagmaArmorPrint
+BattleScript_MagmaArmorAnim:
 	setgraphicalstatchangevalues
 	playanimation BS_TARGET, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
-BattleScriptMagmaArmorPrint:
+BattleScript_MagmaArmorPrint:
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_MagmaArmorEnd:
