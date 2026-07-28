@@ -337,6 +337,7 @@ static void Task_HandleCancelParticipationYesNoInput(u8);
 // static bool8 CanLearnTutorMove(u16, u8);
 static u16 GetTutorMove(u8);
 static bool8 ShouldUseChooseMonText(void);
+static bool8 FieldMoveMeetsRequirements(u8);
 static void SetPartyMonFieldSelectionActions(struct Pokemon *, u8);
 static u8 GetPartyMenuActionsTypeInBattle(struct Pokemon *);
 static u8 GetPartySlotEntryStatus(s8);
@@ -2660,6 +2661,47 @@ static void SetPartyMonSelectionActions(struct Pokemon *mons, u8 slotId, u8 acti
     }
 }
 
+static bool8 FieldMoveMeetsRequirements(u8 fieldMove)
+{
+    bool8 hasBadge;
+    u16 hmItem;
+
+    if (fieldMove > FIELD_MOVE_WATERFALL)
+        return TRUE; //stuff like dig, milk drink, sweet scent etc.
+
+    switch (fieldMove)
+    {
+        case FIELD_MOVE_FLASH:
+            hasBadge = FlagGet(FLAG_BADGE01_GET);
+            break;
+        case FIELD_MOVE_CUT:
+            hasBadge = FlagGet(FLAG_BADGE02_GET);
+            break;
+        case FIELD_MOVE_STRENGTH:
+            hasBadge = FlagGet(FLAG_BADGE03_GET);
+            break;
+        case FIELD_MOVE_ROCK_SMASH:
+        case FIELD_MOVE_SURF:
+            hasBadge = FlagGet(FLAG_BADGE04_GET);
+            break;
+        case FIELD_MOVE_FLY:
+            hasBadge = FlagGet(FLAG_BADGE05_GET);
+            break;
+        case FIELD_MOVE_DIVE:
+            hasBadge = FlagGet(FLAG_BADGE07_GET);
+            break;
+        case FIELD_MOVE_WATERFALL:
+            hasBadge = FlagGet(FLAG_BADGE08_GET);
+            break;
+        default:
+            hasBadge = FALSE;
+            break; 
+    }
+
+    hmItem = MoveToHM(sFieldMoves[fieldMove]);
+    return (hasBadge && hmItem != 0 && CheckBagHasItem(hmItem, 1));
+}
+
 static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
 {
     u8 i, j;
@@ -2679,7 +2721,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
                 {
                     if (GetMonData(&mons[slotId], i + MON_DATA_MOVE1) == sFieldMoves[j])
                     {
-                        
+                        if (!FieldMoveMeetsRequirements(j))
+                            break;
+
                         if (sFieldMoves[j] == MOVE_FLY)
                             hasFlyAlread = TRUE;
                         if (sFieldMoves[j] == MOVE_FLASH)
@@ -2689,9 +2733,9 @@ static void SetPartyMonFieldSelectionActions(struct Pokemon *mons, u8 slotId)
                     }
                 }
             }
-            if (CheckBagHasItem(ITEM_HM02, 1) && (sPartyMenuInternal->numActions < 5) && !hasFlyAlread)
+            if (CheckBagHasItem(ITEM_HM02, 1) && (sPartyMenuInternal->numActions < 5) && !hasFlyAlread && FlagGet(FLAG_BADGE05_GET))
                 AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 5 + MENU_FIELD_MOVES);
-            if (CheckBagHasItem(ITEM_HM05, 1) && (sPartyMenuInternal->numActions < 5) && !hasFlashAlready)
+            if (CheckBagHasItem(ITEM_HM05, 1) && (sPartyMenuInternal->numActions < 5) && !hasFlashAlready && FlagGet(FLAG_BADGE01_GET))
                 AppendToList(sPartyMenuInternal->actions, &sPartyMenuInternal->numActions, 1 + MENU_FIELD_MOVES);
         }
         else
