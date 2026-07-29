@@ -1144,6 +1144,55 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     return sum;
 }
 
+//16 + 1 = 17 (BADGE_COUNT is only 8, this should probably get fixed)
+static const u8 sBadgeCountLevelTable[17] =
+{
+    [0] = 4,
+    [1] = 8,
+    [2] = 12,
+    [3] = 16,
+    [4] = 20,
+    [5] = 24,
+    [6] = 28,
+    [7] = 32,
+    [8] = 36,
+    [9] = 40,
+    [10] = 43,
+    [11] = 46,
+    [12] = 49,
+    [13] = 52,
+    [14] = 55,
+    [15] = 58,
+    [16] = 61,
+}
+
+//TODO: This somehow needs to scale with all 16 Badges, since NUM_BADGES is only 8
+u8 GetBadgeCount(void)
+{
+    u8 badgeCount = 0;
+    u32 i;
+
+    return badgeCount;
+}
+
+u8 ResolveTrainerMonLevel(u8 lvlField)
+{
+    if (lvlField > MAX_LEVEL)
+    {
+        s16 offest = (s16)lvlField - LEVEL_BASED_ON_BADGE;
+        s16 result = (s16)sBadgeCountLevelTable[GetBadgeCount()] + offset;
+
+        if (result < 1)
+            result = 1;
+        if (result > MAX_LEVEL)
+            result = MAX_LEVEL;
+
+        return (u8) result;
+    }
+
+    return lvlField; //literalLevel, remains untouched
+}
+
 u8 GetScaledLevel(u8 lvl)
 {
     u8 badgeCount = 0;

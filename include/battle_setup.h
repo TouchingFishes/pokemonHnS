@@ -52,6 +52,8 @@ void BattleSetup_StartTrainerBattle(void);
 void BattleSetup_StartRematchBattle(void);
 void ShowTrainerIntroSpeech(void);
 u8 GetScaledLevel(u8 lvl);
+u8 GetBadgeCount(void);
+u8 ResolveTrainerMonLevel(u8 lvlField);
 const u8 *BattleSetup_GetScriptAddrAfterBattle(void);
 const u8 *BattleSetup_GetTrainerPostBattleScript(void);
 void ShowTrainerCantBattleSpeech(void);
