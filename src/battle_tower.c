@@ -917,15 +917,15 @@ struct
         .level = 35,
         .nature = NATURE_ADAMANT,
         .evs = {252, 0, 0, 0, 6, 252},
-        .moves = {MOVE_BLIZZARD, MOVE_THUNDER_WAVE, MOVE_FLAMETHROWER, MOVE_QUICK_ATTACK}
+        .moves = {MOVE_BLIZZARD, MOVE_THUNDER_WAVE, MOVE_FLAMETHROWER, MOVE_DRAGON_BREATH}
     },
     {
-        .species = SPECIES_CHARIZARD,
+        .species = SPECIES_AERODACTYL,
         .fixedIV = MAX_PER_STAT_IVS,
         .level = 36,
         .nature = NATURE_ADAMANT,
         .evs = {0, 252, 0, 0, 252, 6},
-        .moves = {MOVE_FLAMETHROWER, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
+        .moves = {MOVE_ROCK_SLIDE, MOVE_WING_ATTACK, MOVE_DOUBLE_TEAM, MOVE_STEEL_WING}
     }
 };
 
