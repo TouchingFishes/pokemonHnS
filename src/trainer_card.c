@@ -34,10 +34,8 @@
 #include "constants/union_room.h"
 #include "constants/flags.h"
 
-// --- extra badges on the trainer card (local to this file) ---
 #define NUM_BADGES_FRONT 8                // keep front page at 8
-#define NUM_BADGES_EXTRA 8                // badges 9–16
-#define NUM_BADGES_TOTAL (NUM_BADGES + NUM_BADGES_EXTRA)
+
 
 // Kanto (badges 9–16) flags (order is shown left-to-right on card back)
 static const u16 sKantoGymFlags[NUM_BADGES_EXTRA] = {

@@ -1366,6 +1366,8 @@
 #define FLAG_BADGE07_GET                             (SYSTEM_FLAGS + 0xD)
 #define FLAG_BADGE08_GET                             (SYSTEM_FLAGS + 0xE)
 #define NUM_BADGES                                   (1 + FLAG_BADGE08_GET - FLAG_BADGE01_GET)
+#define NUM_BADGES_EXTRA                             8
+#define NUM_BADGES_TOTAL                             (NUM_BADGES + NUM_BADGES_EXTRA)
 
 // Towns and Cities
 #define FLAG_VISITED_NEWBARK_TOWN                (SYSTEM_FLAGS + 0xF)

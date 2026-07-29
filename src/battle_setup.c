@@ -1173,8 +1173,7 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
 //Resere 101 - 255 for this; real level never reaches that range
 #define LEVEL_BASED_ON_BADGE 200
 
-//16 + 1 = 17 (BADGE_COUNT is only 8, this should probably get fixed)
-static const u8 sBadgeCountLevelTable[17] =
+static const u8 sBadgeCountLevelTable[NUM_BADGES_TOTAL + 1] =
 {
     [0] = 4,
     [1] = 8,
@@ -1198,10 +1197,12 @@ static const u8 sBadgeCountLevelTable[17] =
 //TODO: This somehow needs to scale with all 16 Badges, since NUM_BADGES is only 8
 u8 GetBadgeCount(void)
 {
-    u8 badgeCount = 0;
-    u32 i;
+    u16 badgeCount = VarGet(VAR_NUM_BADGES);
+    
+    if (badgeCount > NUM_BADGES_TOTAL)
+        badgeCount = NUM_BADGES_TOTAL;
 
-    return badgeCount;
+    return (u8)badgeCount;
 }
 
 u8 ResolveTrainerMonLevel(u8 lvlField)
