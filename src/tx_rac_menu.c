@@ -2364,7 +2364,7 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
 
         sOptions->sel_mode[MENUITEM_MODE_NATURES]                   = 0;
         gSaveBlock1Ptr->tx_Mode_Natures = 0;
-        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = 1;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = 0;
         gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 1;
         sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]             = 1;
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 1;
