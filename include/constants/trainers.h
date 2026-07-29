@@ -474,5 +474,7 @@
 // Pokémon.
 #define F_TRAINER_PARTY_CUSTOM_MOVESET (1 << 0)
 #define F_TRAINER_PARTY_HELD_ITEM      (1 << 1)
+#define F_TRAINER_PARTY_LEVEL_SCALED   (1 << 2) //.lvl may be LEVEL_BASED_ON_BADGE + or - offset
+#define F_TRAINER_PARTY_CUSTOM_ABILITY (1 << 3) //ability num field for party struct
 
 #endif  // GUARD_TRAINERS_H

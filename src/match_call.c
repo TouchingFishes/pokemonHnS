@@ -1806,17 +1806,29 @@ static void PopulateSpeciesFromTrainerParty(int matchCallId, u8 *destStr)
     switch (gTrainers[trainerId].partyFlags)
     {
     case 0:
+    case F_TRAINER_PARTY_LEVEL_SCALED:
     default:
         speciesName = gSpeciesNames[party.NoItemDefaultMoves[monId].species];
         break;
     case F_TRAINER_PARTY_CUSTOM_MOVESET:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_LEVEL_SCALED:
         speciesName = gSpeciesNames[party.NoItemCustomMoves[monId].species];
         break;
     case F_TRAINER_PARTY_HELD_ITEM:
+    case F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED:
         speciesName = gSpeciesNames[party.ItemDefaultMoves[monId].species];
         break;
     case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED:
         speciesName = gSpeciesNames[party.ItemCustomMoves[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED:
+        speciesName = gSpeciesNames[party.NoItemCustomMovesAbility[monId].species];
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED:
+        speciesName = gSpeciesNames[party.ItemCustomMovesAbility[monId].species];
         break;
     }
 

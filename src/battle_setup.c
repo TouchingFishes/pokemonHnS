@@ -1104,45 +1104,74 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     switch (gTrainers[opponentId].partyFlags)
     {
     case 0:
+    case F_TRAINER_PARTY_LEVEL_SCALED:
         {
             const struct TrainerMonNoItemDefaultMoves *party;
             party = gTrainers[opponentId].party.NoItemDefaultMoves;
             for (i = 0; i < count; i++)
                 //sum += party[i].lvl;
-                sum += GetScaledLevel(party[i].lvl); //difficulty
-        }
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
+        } 
         break;
     case F_TRAINER_PARTY_CUSTOM_MOVESET:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_LEVEL_SCALED:
         {
             const struct TrainerMonNoItemCustomMoves *party;
             party = gTrainers[opponentId].party.NoItemCustomMoves;
             for (i = 0; i < count; i++)
                 //sum += party[i].lvl;
-                sum += GetScaledLevel(party[i].lvl); //difficulty
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
         }
         break;
     case F_TRAINER_PARTY_HELD_ITEM:
+    case F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED:
         {
             const struct TrainerMonItemDefaultMoves *party;
             party = gTrainers[opponentId].party.ItemDefaultMoves;
             for (i = 0; i < count; i++)
                 //sum += party[i].lvl;
-                sum += GetScaledLevel(party[i].lvl); //difficulty
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
         }
         break;
     case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED:
         {
             const struct TrainerMonItemCustomMoves *party;
             party = gTrainers[opponentId].party.ItemCustomMoves;
             for (i = 0; i < count; i++)
                 //sum += party[i].lvl;
-                sum += GetScaledLevel(party[i].lvl); //difficulty
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
+        }
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED:
+        {
+            const struct TrainerMonNoItemCustomMovesAbilities *party;
+            party = gTrainers[opponentId].party.NoItemCustomMovesAbility;
+            for (i = 0; i < count; i++)
+                //sum += party[i].lvl;
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
+        }
+        break;
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY:
+    case F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED:
+        {
+            const struct TrainerMonItemCustomMovesAbilities *party;
+            party = gTrainers[opponentId].party.ItemCustomMovesAbility;
+            for (i = 0; i < count; i++)
+                //sum += party[i].lvl;
+                sum += GetScaledLevel(ResolveTrainerMonLevel(party[i].lvl)); //difficulty
         }
         break;
     }
 
     return sum;
 }
+
+//Any .lvl value above MAX_LEVEL (100) isn't a literal level - it's 
+//LEVEL_BASED_ON_BADGE plus / minus a small offset, e.g LEVEL_BASED_ON_BADGE - 2.
+//Resere 101 - 255 for this; real level never reaches that range
+#define LEVEL_BASED_ON_BADGE 200
 
 //16 + 1 = 17 (BADGE_COUNT is only 8, this should probably get fixed)
 static const u8 sBadgeCountLevelTable[17] =
@@ -1164,7 +1193,7 @@ static const u8 sBadgeCountLevelTable[17] =
     [14] = 55,
     [15] = 58,
     [16] = 61,
-}
+};
 
 //TODO: This somehow needs to scale with all 16 Badges, since NUM_BADGES is only 8
 u8 GetBadgeCount(void)
@@ -1179,7 +1208,7 @@ u8 ResolveTrainerMonLevel(u8 lvlField)
 {
     if (lvlField > MAX_LEVEL)
     {
-        s16 offest = (s16)lvlField - LEVEL_BASED_ON_BADGE;
+        s16 offset = (s16)lvlField - LEVEL_BASED_ON_BADGE;
         s16 result = (s16)sBadgeCountLevelTable[GetBadgeCount()] + offset;
 
         if (result < 1)

@@ -74,10 +74,43 @@ struct TrainerMonItemCustomMoves
     u16 moves[MAX_MON_MOVES];
 };
 
+struct TrainerMonNoItemCustomMovesAbilities
+{
+    u16 iv;
+    u8 lvl;
+    u16 species;
+    u8 abilityNum;
+    u16 moves[MAX_MON_MOVES];
+};
+
+struct TrainerMonItemCustomMovesAbilities
+{
+    u16 iv;
+    u8 lvl;
+    u16 species;
+    u16 heldItem;
+    u8 abilityNum;
+    u16 moves[MAX_MON_MOVES];
+};
+
 #define NO_ITEM_DEFAULT_MOVES(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = 0
 #define NO_ITEM_CUSTOM_MOVES(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET
 #define ITEM_DEFAULT_MOVES(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM
 #define ITEM_CUSTOM_MOVES(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM
+
+//New Level Scaling Structs - same layouts as above but level may hold LEVEL_BASED_ON_BADGE and an offset
+#define NO_ITEM_DEFAULT_MOVES_LVL_SCALED(party) { .NoItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_LEVEL_SCALED
+#define NO_ITEM_CUSTOM_MOVES_LVL_SCALED(party) { .NoItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_LEVEL_SCALED
+#define ITEM_DEFAULT_MOVES_LVL_SCALED(party) { .ItemDefaultMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED
+#define ITEM_CUSTOM_MOVES_LVL_SCALED(party) { .ItemCustomMoves = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_LEVEL_SCALED
+
+//Ability Selection
+#define NO_ITEM_CUSTOM_MOVES_ABILITY(party) { .NoItemCustomMovesAbility = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY
+#define ITEM_CUSTOM_MOVES_ABILITY(party) { .ItemCustomMovesAbility = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY
+
+//LevelScaling and Abilities
+#define NO_ITEM_CUSTOM_MOVES_ABILITY_LVL_SCALED(party) { .NoItemCustomMovesAbility = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED
+#define ITEM_CUSTOM_MOVES_ABILITY_LVL_SCALED(party) { .ItemCustomMovesAbility = party }, .partySize = ARRAY_COUNT(party), .partyFlags = F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM | F_TRAINER_PARTY_CUSTOM_ABILITY | F_TRAINER_PARTY_LEVEL_SCALED
 
 union TrainerMonPtr
 {
@@ -85,6 +118,8 @@ union TrainerMonPtr
     const struct TrainerMonNoItemCustomMoves *NoItemCustomMoves;
     const struct TrainerMonItemDefaultMoves *ItemDefaultMoves;
     const struct TrainerMonItemCustomMoves *ItemCustomMoves;
+    const struct TrainerMonNoItemCustomMovesAbilities *NoItemCustomMovesAbility;
+    const struct TrainerMonItemCustomMovesAbilities *ItemCustomMovesAbility;
 };
 
 struct Trainer
