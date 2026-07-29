@@ -2439,10 +2439,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 if (gSaveBlock1Ptr->tx_Random_Trainer) //tx_randomizer_and_challenges
                 {
                     species = GetSpeciesRandomSeeded(partyData[i].species, TX_RANDOM_T_TRAINER, trainerNum);
-                    CreateMon(&party[i], species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
                 else
-                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -2460,10 +2460,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 if (gSaveBlock1Ptr->tx_Random_Trainer) //tx_randomizer_and_challenges
                 {
                     species = GetSpeciesRandomSeeded(partyData[i].species, TX_RANDOM_T_TRAINER, trainerNum);
-                    CreateMon(&party[i], species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
                 else
-                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -2497,10 +2497,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 if (gSaveBlock1Ptr->tx_Random_Trainer) //tx_randomizer_and_challenges
                 {
                     species = GetSpeciesRandomSeeded(partyData[i].species, TX_RANDOM_T_TRAINER, trainerNum);
-                    CreateMon(&party[i], species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
                 else
-                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                     helditem = GetMonData(&party[i], MON_DATA_HELD_ITEM);
@@ -2565,10 +2565,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 if (gSaveBlock1Ptr->tx_Random_Trainer) //tx_randomizer_and_challenges
                 {
                     species = GetSpeciesRandomSeeded(partyData[i].species, TX_RANDOM_T_TRAINER, trainerNum);
-                    CreateMon(&party[i], species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 }
                 else
-                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(partyData[i].lvl), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                    CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                     helditem = GetMonData(&party[i], MON_DATA_HELD_ITEM);
 
@@ -2720,6 +2720,11 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 else
                     CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
 
+                //in case abilityNum is 1 and points to ABILITY_NONE
+                u8 abilityNum = partyData[i].abilityNum;
+                if (abilityNum && GetAbilityBySpecies(partyData[i].species, 1) == ABILITY_NONE)
+                    abilityNum = 0;    
+
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNum);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
@@ -2759,7 +2764,13 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 else
                     CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 
+                u8 abilityNum = partyData[i].abilityNum;
+                if (abilityNum && GetAbilityBySpecies(partyData[i].species, 1) == ABILITY_NONE)
+                    abilityNum = 0;    
+
+                //in case abilityNum is 1 and points to ABILITY_NONE
                 SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNum);
+
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                     helditem = GetMonData(&party[i], MON_DATA_HELD_ITEM);
 
