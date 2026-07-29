@@ -12431,8 +12431,8 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     || species == SPECIES_NOCTOWL
     || species == SPECIES_SUNFLORA
     || species == SPECIES_STANTLER
-    || species == SPECIES_GROVYLE
-    || species == SPECIES_SCEPTILE
+    //|| species == SPECIES_GROVYLE
+    //|| species == SPECIES_SCEPTILE
     || species == SPECIES_MASQUERAIN
     || species == SPECIES_DELCATTY
     || species == SPECIES_LARVICID

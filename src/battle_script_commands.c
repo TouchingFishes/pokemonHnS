@@ -1329,8 +1329,7 @@ static void Cmd_critcalc(void)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_POISON_TAIL)
                 + (holdEffect == HOLD_EFFECT_SCOPE_LENS)
                 + 2 * (holdEffect == HOLD_EFFECT_LUCKY_PUNCH && gBattleMons[gBattlerAttacker].species == SPECIES_CHANSEY)
-                + 2 * (holdEffect == HOLD_EFFECT_STICK && gBattleMons[gBattlerAttacker].species == SPECIES_FARFETCHD);
-                + 2 * (holdEffect == HOLD_EFFECT_STICK && gBattleMons[gBattlerAttacker].species == SPECIES_MLLOY);
+                + 2 * (holdEffect == HOLD_EFFECT_STICK && (gBattleMons[gBattlerAttacker].species == SPECIES_FARFETCHD || gBattleMons[gBattlerAttacker].species == SPECIES_MLLOY));
 
     if (critChance >= ARRAY_COUNT(sCriticalHitChance))
         critChance = ARRAY_COUNT(sCriticalHitChance) - 1;
@@ -1918,7 +1917,7 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
     moveType = CheckAbilityChangeMoveType(move);
 
     // check stab & adaptability here
-    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
+    if (IS_BATTLER_OF_TYPE(attacker, moveType) && gBattleMons[attacker].ability == ABILITY_ADAPTABILITY)
     {
         gBattleMoveDamage = gBattleMoveDamage * 20;
         gBattleMoveDamage = gBattleMoveDamage / 10;
