@@ -1662,7 +1662,12 @@ static void Cmd_typecalc(void)
         moveType = CheckAbilityChangeMoveType(gCurrentMove);
 
     // check stab
-    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
+    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType) && gBattleMons[gBattlerAttacker].ability == ABILITY_ADAPTABILITY)
+    {
+        gBattleMoveDamage = gBattleMoveDamage * 20;
+        gBattleMoveDamage = gBattleMoveDamage / 10;
+    }
+    else if (IS_BATTLER_OF_TYPE(gBattlerAttacker, moveType))
     {
         gBattleMoveDamage = gBattleMoveDamage * 15;
         gBattleMoveDamage = gBattleMoveDamage / 10;
@@ -8033,13 +8038,13 @@ static void Cmd_confuseifrepeatingattackends(void)
 
 static void Cmd_setmultihitcounter(void)
 {   
-    if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
-    {
-        gMultiHitCounter = 5;
-    }
-    else if (gBattlescriptCurrInstr[1])
+    if (gBattlescriptCurrInstr[1])
     {
         gMultiHitCounter = gBattlescriptCurrInstr[1];
+    }
+    else if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
+    {
+        gMultiHitCounter = 5;
     }
     else
     {

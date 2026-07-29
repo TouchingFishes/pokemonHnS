@@ -70,7 +70,7 @@ VictoryRoadKanto_1F_Silver_Battle_Cyndaquil::
 	return
 
 VictoryRoadKanto_1F_Silver_Battle_Charmander::
-	trainerbattle_no_intro TRAINER_RIVAL_CHIMCHAR_5, VictoryRoad_Text_RivalDefeat
+	trainerbattle_no_intro TRAINER_RIVAL_CHARMANDER_5, VictoryRoad_Text_RivalDefeat
 	return
 
 VictoryRoadKanto_1F_Silver_Battle_Torchic::
