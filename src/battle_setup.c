@@ -1194,7 +1194,6 @@ static const u8 sBadgeCountLevelTable[NUM_BADGES_TOTAL + 1] =
     [16] = 61,
 };
 
-//TODO: This somehow needs to scale with all 16 Badges, since NUM_BADGES is only 8
 u8 GetBadgeCount(void)
 {
     u16 badgeCount = VarGet(VAR_NUM_BADGES);

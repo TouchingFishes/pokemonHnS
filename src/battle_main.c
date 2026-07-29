@@ -2725,7 +2725,7 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 if (abilityNum && GetAbilityBySpecies(partyData[i].species, 1) == ABILITY_NONE)
                     abilityNum = 0;    
 
-                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNum);
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &abilityNum);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -2764,12 +2764,12 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum, bool8 fir
                 else
                     CreateMon(&party[i], partyData[i].species, GetScaledLevel(ResolveTrainerMonLevel(partyData[i].lvl)), fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
                 
+                //in case abilityNum is 1 and points to ABILITY_NONE
                 u8 abilityNum = partyData[i].abilityNum;
                 if (abilityNum && GetAbilityBySpecies(partyData[i].species, 1) == ABILITY_NONE)
                     abilityNum = 0;    
 
-                //in case abilityNum is 1 and points to ABILITY_NONE
-                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &partyData[i].abilityNum);
+                SetMonData(&party[i], MON_DATA_ABILITY_NUM, &abilityNum);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                     helditem = GetMonData(&party[i], MON_DATA_HELD_ITEM);
