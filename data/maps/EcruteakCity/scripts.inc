@@ -1,5 +1,5 @@
 .set LOCALID_ECRUTEAK_GRAMPS, 4
-.set LOCALID_ECRUTEK_SILVER, 33
+.set LOCALID_ECRUTEK_SILVER, 32
 
 EcruteakCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, EcruteakCity_OnTransition
