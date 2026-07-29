@@ -477,4 +477,10 @@
 #define F_TRAINER_PARTY_LEVEL_SCALED   (1 << 2) //.lvl may be LEVEL_BASED_ON_BADGE + or - offset
 #define F_TRAINER_PARTY_CUSTOM_ABILITY (1 << 3) //ability num field for party struct
 
+//Any .lvl value above MAX_LEVEL (100) isn't a literal level - it's 
+//LEVEL_BASED_ON_BADGE plus / minus a small offset, e.g LEVEL_BASED_ON_BADGE - 2.
+//Resere 101 - 255 for this; real level never reaches that range
+//NOTE: If offset is 55 or higher it IS GOING to cause weird behaviour!
+#define LEVEL_BASED_ON_BADGE 200
+
 #endif  // GUARD_TRAINERS_H

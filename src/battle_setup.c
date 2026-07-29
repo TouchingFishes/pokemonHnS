@@ -1168,11 +1168,6 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
     return sum;
 }
 
-//Any .lvl value above MAX_LEVEL (100) isn't a literal level - it's 
-//LEVEL_BASED_ON_BADGE plus / minus a small offset, e.g LEVEL_BASED_ON_BADGE - 2.
-//Resere 101 - 255 for this; real level never reaches that range
-#define LEVEL_BASED_ON_BADGE 200
-
 static const u8 sBadgeCountLevelTable[NUM_BADGES_TOTAL + 1] =
 {
     [0] = 4,
