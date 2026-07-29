@@ -5939,9 +5939,9 @@ static void VblankCb_TourneyTree(void)
 
 static void SetFacilityTrainerAndMonPtrs(void)
 {
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gBattleFrontierMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gBattleFrontierMonsSplit;
     gFacilityTrainers = gBattleFrontierTrainers;
 }

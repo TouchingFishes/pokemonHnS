@@ -386,14 +386,14 @@ static void SetRentalsToOpponentParty(void)
     u8 i;
 
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gBattleFrontierMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gBattleFrontierMonsSplit;
     else
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gSlateportBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gSlateportBattleTentMonsSplit;
 
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)
@@ -419,17 +419,17 @@ static void SetPlayerAndOpponentParties(void)
 
     if (gSaveBlock2Ptr->frontier.lvlMode == FRONTIER_LVL_TENT)
     {
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gSlateportBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gSlateportBattleTentMonsSplit;
         monLevel = TENT_MIN_LEVEL;
     }
     else
     {
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gBattleFrontierMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gBattleFrontierMonsSplit;
         if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_50)
             monLevel = FRONTIER_MAX_LEVEL_OPEN;
@@ -549,9 +549,9 @@ static void GenerateInitialRentalMons(void)
     else
         factoryBattleMode = FRONTIER_MODE_SINGLES;
 
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gBattleFrontierMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gBattleFrontierMonsSplit;
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_50)
     {
@@ -625,9 +625,9 @@ static void GetOpponentMostCommonMonType(void)
     u8 typeCounts[NUMBER_OF_MON_TYPES];
     u8 mostCommonTypes[2];
 
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gBattleFrontierMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gBattleFrontierMonsSplit;
 
     // Count the number of times each type occurs in the opponent's party.
@@ -678,9 +678,9 @@ static void GetOpponentBattleStyle(void)
     u8 stylePoints[FACTORY_NUM_STYLES];
 
     count = 0;
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gBattleFrontierMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gBattleFrontierMonsSplit;
     for (i = 0; i < FACTORY_NUM_STYLES; i++)
         stylePoints[i] = 0;
@@ -737,14 +737,14 @@ static void RestorePlayerPartyHeldItems(void)
     u8 i;
 
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_TENT)
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gBattleFrontierMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gBattleFrontierMonsSplit;
     else
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gSlateportBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gSlateportBattleTentMonsSplit;
 
     for (i = 0; i < FRONTIER_PARTY_SIZE; i++)

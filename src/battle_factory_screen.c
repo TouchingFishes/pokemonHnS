@@ -1745,9 +1745,9 @@ static void CreateFrontierFactorySelectableMons(u8 firstMonId)
     u8 challengeNum = gSaveBlock2Ptr->frontier.factoryWinStreaks[battleMode][lvlMode] / 7;
     u8 rentalRank = 0;
 
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gBattleFrontierMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gBattleFrontierMonsSplit;
     if (gSaveBlock2Ptr->frontier.lvlMode != FRONTIER_LVL_50)
         level = 50;
@@ -1788,9 +1788,9 @@ static void CreateSlateportTentSelectableMons(u8 firstMonId)
     u8 friendship = 0;
     u32 otId = 0;
 
-    if (gSaveBlock2Ptr->optionStyle == 1) //off
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
         gFacilityTrainerMons = gSlateportBattleTentMons;
-    else if (gSaveBlock2Ptr->optionStyle == 0) //on
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
         gFacilityTrainerMons = gSlateportBattleTentMonsSplit;
     
     otId = T1_READ_32(gSaveBlock2Ptr->playerTrainerId);

@@ -529,7 +529,7 @@ struct SaveBlock2
              u16 optionsfollowerEnable:1;
              bool8 optionsautoRun;
              u16 optionsDisableMatchCall:1;
-             u16 optionStyle:1;
+             u16 optionNoPhysicalSpecialSplit:1;
              u16 optionsDifficulty:2;
              u16 optionTypeEffective:1;
              u16 optionsFishing:1;

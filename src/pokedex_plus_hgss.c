@@ -5641,7 +5641,7 @@ static void PrintStatsScreen_Moves_Bottom(u8 taskId)
         PrintStatsScreenTextSmall(WIN_STATS_MOVES_BOTTOM, gStringVar1, moves_x + 45, moves_y);
         //Physical/Special Split from BE
         DestroySplitIcon();
-        if (gSaveBlock2Ptr->optionStyle == 0)
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
             ShowSplitIcon(gBattleMoves[move].category);
         //Accuracy
         if (gBattleMoves[move].accuracy == 0)

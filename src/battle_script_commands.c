@@ -1195,10 +1195,10 @@ static void Cmd_accuracycheck(void)
             calc = (calc * 130) / 100; // 1.3 compound eyes boost
         if (WEATHER_HAS_EFFECT && gBattleMons[gBattlerTarget].ability == ABILITY_SAND_VEIL && gBattleWeather & B_WEATHER_SANDSTORM)
             calc = (calc * 80) / 100; // 1.2 sand veil loss
-        if (gSaveBlock2Ptr->optionStyle == 1)
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
             if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && IS_TYPE_PHYSICAL(type))
                 calc = (calc * 80) / 100; // 1.2 hustle loss
-        if (gSaveBlock2Ptr->optionStyle == 0)
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
             if (gBattleMons[gBattlerAttacker].ability == ABILITY_HUSTLE && IS_MOVE_PHYSICAL(move))
                 calc = (calc * 80) / 100; // 1.2 hustle loss
 
@@ -2499,7 +2499,7 @@ static void Cmd_datahpupdate(void)
                 // Record damage for Shell Bell
                 if (gSpecialStatuses[gActiveBattler].shellBellDmg == 0 && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE))
                     gSpecialStatuses[gActiveBattler].shellBellDmg = gHpDealt;
-                if (gSaveBlock2Ptr->optionStyle == 0)
+                if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
                     if (IS_MOVE_PHYSICAL(gCurrentMove) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAIN_SPLIT)
                     {
                         gProtectStructs[gActiveBattler].physicalDmg = gHpDealt;
@@ -2530,7 +2530,7 @@ static void Cmd_datahpupdate(void)
                             gSpecialStatuses[gActiveBattler].specialBattlerId = gBattlerTarget;
                         }
                     }
-                if (gSaveBlock2Ptr->optionStyle == 1)
+                if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
                     if (IS_TYPE_PHYSICAL(moveType) && !(gHitMarker & HITMARKER_PASSIVE_DAMAGE) && gCurrentMove != MOVE_PAIN_SPLIT)
                     {
                         gProtectStructs[gActiveBattler].physicalDmg = gHpDealt;

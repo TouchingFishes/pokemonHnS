@@ -4163,7 +4163,7 @@ static void PrintMoveDetails(u16 move)
     {
         if (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES)
         {
-            if (gSaveBlock2Ptr->optionStyle == 0)
+            if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
                 ShowSplitIcon(gBattleMoves[move].category);
             PrintMovePowerAndAccuracy(move);
             PrintTextOnWindow(windowId, gMoveDescriptionPointers[move - 1], 6, 1, 0, 0);

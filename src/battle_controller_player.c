@@ -3523,12 +3523,12 @@ static void MoveSelectionDisplaySplitIcon(void){
 	moveInfo = (struct ChooseMoveStruct*)(&gBattleBufferA[gActiveBattler][MAX_BATTLERS_COUNT]);
     moveCategory = GetBattleMoveCategory(moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]);
     //moveCategory = gBattleMoves[moveInfo->moves[gMoveSelectionCursor[gActiveBattler]]].category;
-    if (gSaveBlock2Ptr->optionStyle == 0)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
         {
         LoadPalette(sSplitIcons_Pal, 10 * 0x10, 0x20);
         BlitBitmapToWindow(B_WIN_PSS_ICON, sSplitIcons_Gfx + 0x80 * moveCategory, 0, 0, 16, 16);
         }
-    else if (gSaveBlock2Ptr->optionStyle == 1)
+    else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
         {
         LoadPalette(sSplitIconsEmpty_Pal, 10 * 0x10, 0x20);
         BlitBitmapToWindow(B_WIN_PSS_ICON, sSplitIconsEmpty_Gfx + 0x80 * moveCategory, 0, 0, 16, 16);

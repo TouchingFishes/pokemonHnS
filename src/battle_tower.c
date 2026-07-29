@@ -3424,9 +3424,9 @@ u8 SetFacilityPtrsGetLevel(void)
     else
     {
         gFacilityTrainers = gBattleFrontierTrainers;
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gBattleFrontierMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gBattleFrontierMonsSplit;
         return GetFrontierEnemyMonLevel(gSaveBlock2Ptr->frontier.lvlMode);
     }
@@ -3522,34 +3522,34 @@ static u8 SetTentPtrsGetLevel(void)
     if (facility == FRONTIER_FACILITY_FACTORY)
     {
         gFacilityTrainers = gSlateportBattleTentTrainers;
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gSlateportBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gSlateportBattleTentMonsSplit;
     }
     else if (facility == FRONTIER_FACILITY_PALACE)
     {
         gFacilityTrainers = gVerdanturfBattleTentTrainers;
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gVerdanturfBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gVerdanturfBattleTentMonsSplit;
     }
     else if (facility == FRONTIER_FACILITY_ARENA)
     {
         gFacilityTrainers = gFallarborBattleTentTrainers;
         
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gFallarborBattleTentMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gFallarborBattleTentMonsSplit;
     }
     else
     {
         gFacilityTrainers = gBattleFrontierTrainers;
-        if (gSaveBlock2Ptr->optionStyle == 1) //off
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1) //off
             gFacilityTrainerMons = gBattleFrontierMons;
-        else if (gSaveBlock2Ptr->optionStyle == 0) //on
+        else if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0) //on
             gFacilityTrainerMons = gBattleFrontierMonsSplit;
     }
 

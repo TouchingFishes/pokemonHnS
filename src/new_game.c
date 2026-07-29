@@ -104,7 +104,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsAutorunDive = 1;
     gSaveBlock2Ptr->optionsAutorunSurf = 1;
     gSaveBlock2Ptr->optionsDisableMatchCall = 0;
-    gSaveBlock2Ptr->optionStyle = 0;
+    gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 0;
     gSaveBlock2Ptr->optionTypeEffective = 0;
     gSaveBlock2Ptr->optionsFishing = 1;
     gSaveBlock2Ptr->optionsFastIntro = 1;

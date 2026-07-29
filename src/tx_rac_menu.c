@@ -1564,7 +1564,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
         sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]    = gSaveBlock1Ptr->tx_Mode_Legendary_Abilities;
         sOptions->sel_mode[MENUITEM_MODE_NATURES]                = gSaveBlock1Ptr->tx_Mode_Natures;
-        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = !gSaveBlock2Ptr->optionNoPhysicalSpecialSplit;
         sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]          = gSaveBlock1Ptr->tx_Mode_IgnoreEVCap;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]        = gSaveBlock1Ptr->tx_Mode_New_Legendaries;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]      = gSaveBlock1Ptr->tx_Mode_TypeEffectiveness;
@@ -1922,7 +1922,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
     gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = sOptions->sel_mode[MENUITEM_MODE_LEGENDARY_ABILITIES]; 
     gSaveBlock1Ptr->tx_Mode_Natures                     = sOptions->sel_mode[MENUITEM_MODE_NATURES]; 
-    gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]; 
+    gSaveBlock2Ptr->optionNoPhysicalSpecialSplit        = !sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]; 
     gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]; 
     //gSaveBlock1Ptr->tx_Mode_New_Legendaries             = sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]; 
     //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS];
@@ -2364,8 +2364,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
 
         sOptions->sel_mode[MENUITEM_MODE_NATURES]                   = 0;
         gSaveBlock1Ptr->tx_Mode_Natures = 0;
-        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = 0;
-        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 0;
+        sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = 1;
+        gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 1;
         sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]             = 1;
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap = 1;
 
@@ -3088,11 +3088,11 @@ static void DrawChoices_Mode_PhysicalSpecialSplit(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 0;
+        gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 1;
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit = 1;
+        gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 0;
     }
 
     DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);

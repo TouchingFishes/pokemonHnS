@@ -875,7 +875,7 @@ void CB2_InitOptionPlusMenu(void)
 
         sOptions->sel_battle[MENUITEM_BATTLE_FAST_INTRO]        = gSaveBlock2Ptr->optionsFastIntro;
         sOptions->sel_battle[MENUITEM_BATTLE_FAST_BATTLES]      = gSaveBlock2Ptr->optionsFastBattle;
-        sOptions->sel_battle[MENUITEM_BATTLE_SPLIT]             = gSaveBlock2Ptr->optionStyle;
+        sOptions->sel_battle[MENUITEM_BATTLE_SPLIT]             = gSaveBlock2Ptr->optionNoPhysicalSpecialSplit;
         sOptions->sel_battle[MENUITEM_BATTLE_TYPE_EFFECTIVE]    = gSaveBlock2Ptr->optionTypeEffective;
         sOptions->sel_battle[MENUITEM_BATTLE_LR_RUN]            = gSaveBlock2Ptr->optionsLRtoRun;
         sOptions->sel_battle[MENUITEM_BATTLE_BALL_PROMPT]       = gSaveBlock2Ptr->optionsBallPrompt;
@@ -1115,7 +1115,7 @@ static void Task_OptionMenuSave(u8 taskId)
 
     gSaveBlock2Ptr->optionsFastIntro        = sOptions->sel_battle[MENUITEM_BATTLE_FAST_INTRO];
     gSaveBlock2Ptr->optionsFastBattle       = sOptions->sel_battle[MENUITEM_BATTLE_FAST_BATTLES];
-    gSaveBlock2Ptr->optionStyle             = sOptions->sel_battle[MENUITEM_BATTLE_SPLIT];
+    gSaveBlock2Ptr->optionNoPhysicalSpecialSplit             = sOptions->sel_battle[MENUITEM_BATTLE_SPLIT];
     gSaveBlock2Ptr->optionTypeEffective     = sOptions->sel_battle[MENUITEM_BATTLE_TYPE_EFFECTIVE];
     gSaveBlock2Ptr->optionsLRtoRun          = sOptions->sel_battle[MENUITEM_BATTLE_LR_RUN];
     gSaveBlock2Ptr->optionsBallPrompt       = sOptions->sel_battle[MENUITEM_BATTLE_BALL_PROMPT];
@@ -1724,11 +1724,11 @@ static void DrawChoices_Style(int selection, int y)
 
     if (selection == 0)
     {
-        gSaveBlock2Ptr->optionStyle = 0; //Phy / sp split on
+        gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 0; //Phy / sp split on
     }
     else
     {
-        gSaveBlock2Ptr->optionStyle = 1; //Phy / sp split off
+        gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 1; //Phy / sp split off
     }
 
     DrawOptionMenuChoice(gText_BattleSceneOn, 104, y, styles[0], active);

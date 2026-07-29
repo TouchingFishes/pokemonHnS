@@ -6797,7 +6797,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     // Apply type-bonus hold item
     for (i = 0; i < ARRAY_COUNT(sHoldEffectToType); i++)
     {
-        if (gSaveBlock2Ptr->optionStyle == 1)
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
             if (attackerHoldEffect == sHoldEffectToType[i][0]
                 && type == sHoldEffectToType[i][1])
             {
@@ -6807,7 +6807,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
                     spAttack = (spAttack * (attackerHoldEffectParam + 100)) / 100;
                 break;
             }
-        if (gSaveBlock2Ptr->optionStyle == 0)
+        if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
             if (attackerHoldEffect == sHoldEffectToType[i][0]
                 && type == sHoldEffectToType[i][1])
             {
@@ -6925,10 +6925,10 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         spDefense *= 1.25;
     }
     // Apply abilities / field sports
-    if (gSaveBlock2Ptr->optionStyle == 0)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
         if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
             gBattleMovePower /= 2;
-    if (gSaveBlock2Ptr->optionStyle == 1)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
         if (defender->ability == ABILITY_THICK_FAT && (type == TYPE_FIRE || type == TYPE_ICE))
             spAttack /= 2;
     if ((defender->ability != ABILITY_NONE) 
@@ -7170,7 +7170,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     // Self-destruct / Explosion cut defense in half
     if (gBattleMoves[gCurrentMove].effect == EFFECT_EXPLOSION)
         defense /= 2;
-    if (gSaveBlock2Ptr->optionStyle == 0)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
         if (IS_MOVE_PHYSICAL(gCurrentMove))
         {
             if (gCritMultiplier == 2)
@@ -7222,7 +7222,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (damage == 0)
                 damage = 1;
         }
-    if (gSaveBlock2Ptr->optionStyle == 1)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
         if (IS_TYPE_PHYSICAL(type))
         {
             if (gCritMultiplier == 2)
@@ -7278,7 +7278,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     if (type == TYPE_MYSTERY)
         damage = 0; // is ??? type. does 0 damage.
 
-    if (gSaveBlock2Ptr->optionStyle == 0)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
         if (IS_MOVE_SPECIAL(gCurrentMove))
         {
             if (gCritMultiplier == 2)
@@ -7323,7 +7323,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
                 damage /= 2;
         }
 
-    if (gSaveBlock2Ptr->optionStyle == 1)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
         if (IS_TYPE_SPECIAL(type))
         {
             if (gCritMultiplier == 2)
@@ -7425,7 +7425,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         }
 
     // Are effects of weather negated with cloud nine or air lock
-    if (gSaveBlock2Ptr->optionStyle == 0)
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
         if (WEATHER_HAS_EFFECT2)
         {
             // Rain weakens Fire, boosts Water
