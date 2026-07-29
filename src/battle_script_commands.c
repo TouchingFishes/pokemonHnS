@@ -1503,7 +1503,6 @@ static void ModulateDmgByType(u8 multiplier)
 }
 
 
-//ABILITY_SCRAPPY probably goes here
 s32 GetTypeEffectiveness(struct Pokemon *mon, u8 moveType) {
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
     u8 type1 = GetTypeBySpecies(species, 1);
@@ -1695,6 +1694,13 @@ static void Cmd_typecalc(void)
                     i += 3;
                     continue;
                 }
+                else if (TYPE_EFFECT_DEF_TYPE(i) == TYPE_GHOST
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
+                    i += 3;
+                    continue;
+                }
                 else if (GetTypeEffectivenessRandom(TYPE_EFFECT_ATK_TYPE(i)) == moveType)
                 {
                     // check type1
@@ -1716,6 +1722,13 @@ static void Cmd_typecalc(void)
                 {
                     if (gBattleMons[gBattlerTarget].status2 & STATUS2_FORESIGHT)
                         break;
+                    i += 3;
+                    continue;
+                }
+                else if (TYPE_EFFECT_DEF_TYPE_OLD(i) == TYPE_GHOST
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
                     i += 3;
                     continue;
                 }
@@ -1953,7 +1966,7 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
                 
                 else if ((TYPE_EFFECT_DEF_TYPE(i) == TYPE_GHOST)
                     && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
-                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                    && gBattleMons[attacker].ability == ABILITY_SCRAPPY)
                 {
                     //Scrappy bypasses Ghost's immunity to Normal / Fighting
                     i += 3;
@@ -1987,7 +2000,7 @@ u8 TypeCalc(u16 move, u8 attacker, u8 defender)
 
                 else if ((TYPE_EFFECT_DEF_TYPE_OLD(i) == TYPE_GHOST)
                     && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
-                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                    && gBattleMons[attacker].ability == ABILITY_SCRAPPY)
                 {
                     //Scrappy bypasses Ghost's immunity to Normal / Fighting
                     i += 3;
@@ -5293,6 +5306,14 @@ static void Cmd_typecalc2(void)
                     }
                 }
 
+                if (TYPE_EFFECT_DEF_TYPE(i) == TYPE_GHOST
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
+                    i += 3;
+                    continue;
+                }
+
                 if (GetTypeEffectivenessRandom(TYPE_EFFECT_ATK_TYPE(i)) == moveType)
                 {
                     // check type1
@@ -5353,6 +5374,14 @@ static void Cmd_typecalc2(void)
                         i += 3;
                         continue;
                     }
+                }
+
+                if (TYPE_EFFECT_DEF_TYPE_OLD(i) == TYPE_GHOST
+                    && (moveType == TYPE_NORMAL || moveType == TYPE_FIGHTING)
+                    && gBattleMons[gBattlerAttacker].ability == ABILITY_SCRAPPY)
+                {
+                    i += 3;
+                    continue;
                 }
 
                 if (GetTypeEffectivenessRandom(TYPE_EFFECT_ATK_TYPE_OLD(i)) == moveType)
