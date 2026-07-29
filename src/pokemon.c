@@ -12415,7 +12415,7 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     //if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
     if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 0) 
     && (species == SPECIES_ARBOK 
-    || species == SPECIES_PARASECT
+    //|| species == SPECIES_PARASECT
     || species == SPECIES_BRAVIARY
     || species == SPECIES_GREAVARD
     || species == SPECIES_HOUNDSTONE
@@ -12423,21 +12423,21 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     || species == SPECIES_GEMGEIST
     || species == SPECIES_MARILL
     || species == SPECIES_AZUMARILL 
-    || species == SPECIES_GOLDUCK
-    || species == SPECIES_KINGLER
-    || species == SPECIES_MEGANIUM
-    || species == SPECIES_TYPHLOSION
-    || species == SPECIES_FERALIGATR
-    || species == SPECIES_NOCTOWL
-    || species == SPECIES_SUNFLORA
-    || species == SPECIES_STANTLER
+    //|| species == SPECIES_GOLDUCK
+    //|| species == SPECIES_KINGLER
+    //|| species == SPECIES_MEGANIUM
+    //|| species == SPECIES_TYPHLOSION
+    //|| species == SPECIES_FERALIGATR
+    //|| species == SPECIES_NOCTOWL
+    //|| species == SPECIES_SUNFLORA
+    //|| species == SPECIES_STANTLER
     //|| species == SPECIES_GROVYLE
     //|| species == SPECIES_SCEPTILE
-    || species == SPECIES_MASQUERAIN
-    || species == SPECIES_DELCATTY
-    || species == SPECIES_LARVICID
-    || species == SPECIES_PENDRAGON
-    || species == SPECIES_LUVDISC
+    //|| species == SPECIES_MASQUERAIN
+    //|| species == SPECIES_DELCATTY
+    //|| species == SPECIES_LARVICID
+    //|| species == SPECIES_PENDRAGON
+    //|| species == SPECIES_LUVDISC
     || species == SPECIES_ELECTIVIRE))
     {
         if (typeNum == 1)
@@ -12457,14 +12457,11 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     || species == SPECIES_TOGETIC
     || species == SPECIES_SNUBBULL
     || species == SPECIES_GRANBULL
-    //|| species == SPECIES_MARILL
-    //|| species == SPECIES_AZUMARILL
+    || species == SPECIES_MARILL
+    || species == SPECIES_AZUMARILL
     || species == SPECIES_RALTS
     || species == SPECIES_KIRLIA
     || species == SPECIES_GARDEVOIR
-    || species == SPECIES_VANILLITE
-    || species == SPECIES_TALONFLAME
-    || species == SPECIES_DEINO
     || species == SPECIES_CORSOREEF))
     {
         if (typeNum == 1)
