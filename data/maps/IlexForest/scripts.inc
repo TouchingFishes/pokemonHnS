@@ -230,6 +230,8 @@ IlexForest_EventScript_BugcatcherWayne::
 IlexForest_EventScript_HeadbuttMoveTutor::
 	lock
 	faceplayer
+	checkmoney 2000, 0
+	goto_if_eq VAR_RESULT, FALSE, EventScript_HeadbuttNoMoney
 	msgbox MoveTutor_Text_HeadbuttTeach, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_HeadbuttDeclined
 	msgbox MoveTutor_Text_HeadbuttWhichMon, MSGBOX_DEFAULT
@@ -239,6 +241,11 @@ IlexForest_EventScript_HeadbuttMoveTutor::
 	removemoney 2000, 0
 	setflag FLAG_GET_HEADBUTT
 	goto EventScript_HeadbuttTaught
+	end
+
+EventScript_HeadbuttNoMoney::
+	msgbox MoveTutor_Text_HeadbuttNoMoney, MSGBOX_DEFAULT
+	release
 	end
 
 EventScript_HeadbuttDeclined::
@@ -744,6 +751,10 @@ MoveTutor_Text_HeadbuttTaught:
 	.string "Now go rattle some trees!\p"
 	.string "You never know what sleepy\n"
 	.string "POKéMON might come tumbling out.$"
+
+MoveTutor_Text_HeadbuttNoMoney:
+	.string "You don't have enough money.\p"
+	.string "Come back when you've got ¥2000.$"
 
 IlexForest_Text_Lass:
 	.string "Did something happen to the\n"
