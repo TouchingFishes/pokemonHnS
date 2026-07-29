@@ -1068,6 +1068,8 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_MODERN_MOVES]          = sText_Empty,
     [MENUITEM_MODE_NEXT]                  = sText_Empty,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = sText_Empty,
+    [MENUITEM_MODE_NATURES]               = sText_Empty,
+    [MENUITEM_MODE_IGNORE_EV_CAP]         = sText_Empty,
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = sText_Description_Disabled_Feature,
     //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = sText_Empty,
 };
@@ -1486,7 +1488,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = TX_MODE_LEGENDARY_ABILITIES;
 
         gSaveBlock1Ptr->tx_Mode_Natures                     = TX_MODE_NATURES;
-        gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = TX_MODE_PHYSICAL_SPECIAL_SPLIT;
+        //gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = TX_MODE_PHYSICAL_SPECIAL_SPLIT;
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = TX_IGNORE_EV_CAP;
 
         gSaveBlock1Ptr->tx_Mode_New_Legendaries             = TX_MODE_NEW_LEGENDARIES;
