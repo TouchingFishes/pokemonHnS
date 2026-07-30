@@ -12431,7 +12431,7 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
     u8 type;
     const struct SpeciesInfo *info = &gSpeciesInfo[species];
 
-    swtich (gSaveBlock1Ptr->tx_Mode_TypeMode)
+    switch (gSaveBlock1Ptr->tx_Mode_TypeMode)
     {
         case 1: //altered
             if (info->types_new[0] || info->types_new[1])
@@ -12454,8 +12454,9 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
                 type = (typeNum == 1) ? info->types_fairy[0] : info->types_fairy[1];
             else 
                 type = (typeNum == 1) ? info->types[0] : info->types[1];
-        case 1: //vanilla
-        case default:
+            break;
+        case 0: //vanilla
+        default:
             type = (typeNum == 1) ? info->types[0] : info->types[1];
             break;
 

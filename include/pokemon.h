@@ -343,7 +343,6 @@ struct SpeciesInfo
             u8 types_fairy[2];
             u8 types_new_fairy[2];
             u8 abilities_old[2];
-            u8 types_new[2];
             u8 catchRate_hard;
 };
 

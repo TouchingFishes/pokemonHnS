@@ -2363,7 +2363,7 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_New_Citrus = 1;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]              = TX_MODE_MODERN_TYPES;
         //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0;
-        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]               = !TX_MODE_TYPE_MODE; //altered no FAIRY types as default
+        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]                 = 1; //altered no FAIRY types as default
         gSaveBlock1Ptr->tx_Mode_TypeMode = 1;
         sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]                 = !TX_MODE_NEW_STATS;
         gSaveBlock1Ptr->tx_Mode_New_Stats = 1;

@@ -418,7 +418,7 @@ static u8 GetSel_SurvivePoison(void)      { return gSaveBlock1Ptr->tx_Mode_Poiso
 static u8 GetSel_Synchronize(void)        { return gSaveBlock1Ptr->tx_Mode_Synchronize       ? 1 : 0; }
 static u8 GetSel_Mints(void)              { return gSaveBlock1Ptr->tx_Mode_Mints             ? 1 : 0; }
 static u8 GetSel_NewCitrus(void)          { return gSaveBlock1Ptr->tx_Mode_New_Citrus        ? 1 : 0; }
-static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_TypeMode          ? 1 : 0; }
+static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_TypeMode;                  }
 static u8 GetSel_Sturdy(void)             { return gSaveBlock1Ptr->tx_Mode_Sturdy            ? 1 : 0; }
 static u8 GetSel_ModernMoves(void)        { return gSaveBlock1Ptr->tx_Mode_Modern_Moves      ? 1 : 0; }
 static u8 GetSel_LegendaryAbilities(void) { return gSaveBlock1Ptr->tx_Mode_Legendary_Abilities ? 1 : 0; }
@@ -681,6 +681,13 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
         int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
                                      rightStyle, TEXT_SKIP_DRAW, sText_Modern);
+        break;
+    }
+    case 4: // TYPE CHANGES
+    {
+        u8 v = GetSel_FairyTypes();
+        if (v > 3) v = 0;
+        Viewer_DrawSingleValueRow(visRow, sText_FairyTypes_Label, sText_TypeMode_Strings[v], selected);
         break;
     }
     default:

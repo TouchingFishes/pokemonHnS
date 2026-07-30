@@ -2431,7 +2431,7 @@ static void InitDomeTrainers(void)
             const struct SpeciesInfo *info = &gSpeciesInfo[domeMonSpecies];
             u8 t1, t2;
             
-            swtich (gSaveBlock1Ptr->tx_Mode_TypeMode)
+            switch (gSaveBlock1Ptr->tx_Mode_TypeMode)
             {
                 case 1: //altered
                     if (info->types_new[0] || info->types_new[1])
@@ -2478,9 +2478,13 @@ static void InitDomeTrainers(void)
                         t1 = info->types[0];
                         t2 = info->types[1];
                     }
+                    break;
                 case 0: //vanilla
-                case default:
-                    type = (typeNum == 1) ? info->types[0] : info->types[1];
+                default:
+                    {
+                        t1 = info->types[0];
+                        t2 = info->types[1];
+                    }
                     break;
 
             }
