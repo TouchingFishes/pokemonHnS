@@ -12477,12 +12477,12 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
 
 static bool8 IsConditionalFairyTypeMove(u16 move) 
 {
-    return (move == MOVE_PLAY_ROUGH || move == MOVE_CHARM || move == MOVE_SWEET_KISS || move == MOVE_MOONLIGHT)
+    return (move == MOVE_PLAY_ROUGH || move == MOVE_CHARM || move == MOVE_SWEET_KISS || move == MOVE_MOONLIGHT);
 }
 
 u8 GetMoveType(u16 move)
 {
-    if (IsConditionalFairyTypeMove(move) && gSaveBlock1Ptr->tx_Mode_Type >= 2)
+    if (IsConditionalFairyTypeMove(move) && gSaveBlock1Ptr->tx_Mode_TypeMode >= 2)
         return TYPE_FAIRY;
 
     return gBattleMoves[move].type;

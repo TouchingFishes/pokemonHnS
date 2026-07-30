@@ -587,6 +587,7 @@ u16 GetSpeciesRandomSeeded(u16 species, u8 type, u16 additionalOffset);
 u16 GetRandomMove(u16 input_move, u16 species);
 u8 GetRandomType(void);
 u8 EvolutionBlockedByEvoLimit(u16 species);
+u8 GetMoveType(u16 move);
 
 //Moves learned on evolution
 u16 MonTryLearningNewMoveEvolution(struct Pokemon *mon, bool8 firstMove);
