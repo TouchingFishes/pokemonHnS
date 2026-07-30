@@ -5283,7 +5283,7 @@ static void Task_HandleStatsScreenInput(u8 taskId)
         else
             {
             gTasks[taskId].data[5] = 0;
-            SetTypeIconPosAndPal(gBattleMoves[move].type, moves_x + 146, moves_y + 17, 0);
+            SetTypeIconPosAndPal(GetMoveType(move), moves_x + 146, moves_y + 17, 0);
             SetSpriteInvisibility(1, TRUE);
             }
 
@@ -5507,7 +5507,7 @@ static void PrintStatsScreen_Moves_Top(u8 taskId)
     //Draw move type icon
     if (gTasks[taskId].data[5] == 0)
     {
-        SetTypeIconPosAndPal(gBattleMoves[move].type, moves_x + 146, moves_y + 17, 0);
+        SetTypeIconPosAndPal(GetMoveType(move), moves_x + 146, moves_y + 17, 0);
         SetSpriteInvisibility(1, TRUE); 
     }
     else

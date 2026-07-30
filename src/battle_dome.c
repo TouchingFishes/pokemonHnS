@@ -2947,7 +2947,7 @@ static int GetTypeEffectivenessPoints(int move, int targetSpecies, int mode)
     defType1 = GetTypeBySpecies(targetSpecies, 1);
     defType2 = GetTypeBySpecies(targetSpecies, 2);
     defAbility = GetAbilityBySpecies(targetSpecies, 0);
-    moveType = gBattleMoves[move].type;
+    moveType = GetMoveType(move);
 
     if (defAbility == ABILITY_LEVITATE && moveType == TYPE_GROUND)
     {

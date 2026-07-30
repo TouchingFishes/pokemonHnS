@@ -1363,7 +1363,7 @@ static void Cmd_damagecalc(void)
 
 u8 CheckAbilityChangeMoveType(u16 move) // handles move type change
 {
-    u8 moveType = gBattleMoves[move].type;
+    u8 moveType = GetMoveType(move);
     u8 ability  = gBattleMons[gBattlerAttacker].ability;
 
     if (moveType == TYPE_NORMAL && gBattleMoves[move].power != 0)
@@ -1411,7 +1411,7 @@ u8 CheckAbilityChangeMoveType(u16 move) // handles move type change
 // see also AI_TypeDisplay below AI_TypeCalc
 u8 DisplayMoveTypeChange(u16 move)
 {
-    u8 moveType = gBattleMoves[move].type;
+    u8 moveType = GetMoveType(move);
     u8 ability  = gBattleMons[gActiveBattler].ability;
 
     if (moveType == TYPE_NORMAL && gBattleMoves[move].power != 0)

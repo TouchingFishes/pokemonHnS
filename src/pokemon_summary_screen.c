@@ -4360,7 +4360,7 @@ static void SetMoveTypeIcons(void)
                 type |= 0xC0;
                 SetTypeSpritePosAndPal(type & 0x3F, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
             } else {
-                SetTypeSpritePosAndPal(gBattleMoves[summary->moves[i]].type, 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
+                SetTypeSpritePosAndPal(GetMoveType(summary->moves[i]), 85, 32 + (i * 16), i + SPRITE_ARR_ID_TYPE);
             }
         }
         else
@@ -4407,7 +4407,7 @@ static void SetNewMoveTypeIcon(void)
                 type |= 0xC0;
                 SetTypeSpritePosAndPal(type & 0x3F, 85, 96, SPRITE_ARR_ID_TYPE + 4);
             } else {
-                SetTypeSpritePosAndPal(gBattleMoves[sMonSummaryScreen->newMove].type, 85, 96, SPRITE_ARR_ID_TYPE + 4);
+                SetTypeSpritePosAndPal(GetMoveType(sMonSummaryScreen->newMove), 85, 96, SPRITE_ARR_ID_TYPE + 4);
             }
         else
             SetTypeSpritePosAndPal(NUMBER_OF_MON_TYPES + gContestMoves[sMonSummaryScreen->newMove].contestCategory, 85, 96, SPRITE_ARR_ID_TYPE + 4);
