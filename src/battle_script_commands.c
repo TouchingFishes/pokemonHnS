@@ -341,6 +341,9 @@ static void Cmd_removeattackerstatus1(void);
 static void Cmd_finishaction(void);
 static void Cmd_finishturn(void);
 static void Cmd_trainerslideout(void);
+static void Cmd_acrobaticsdamagecalculation(void);
+static void Cmd_venoshockdamagecalculation(void);
+static void Cmd_heavyslamdamagecalculation(void);
 
 extern u8 gMaxPartyLevel;
 
@@ -601,7 +604,10 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_removeattackerstatus1,                   //0xF5
     Cmd_finishaction,                            //0xF6
     Cmd_finishturn,                              //0xF7
-    Cmd_trainerslideout                          //0xF8
+    Cmd_trainerslideout,                         //0xF8
+    Cmd_acrobaticsdamagecalculation,             //0xF9
+    Cmd_venoshockdamagecalculation,              //0xFA
+    Cmd_heavyslamdamagecalculation               //0xFB
 };
 
 struct StatFractions
@@ -1129,6 +1135,8 @@ static bool8 AccuracyCalcHelper(u16 move)
     gHitMarker &= ~HITMARKER_IGNORE_UNDERWATER;
 
     if ((WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_RAIN) && gBattleMoves[move].effect == EFFECT_THUNDER)
+     || (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_RAIN) && gBattleMoves[move].effect == EFFECT_HURRICANE)
+     || (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_HAIL) && gBattleMoves[move].effect == EFFECT_BLIZZARD)
      || (gBattleMoves[move].effect == EFFECT_ALWAYS_HIT || gBattleMoves[move].effect == EFFECT_VITAL_THROW))
     {
         JumpIfMoveFailed(7, move);
@@ -1186,6 +1194,8 @@ static void Cmd_accuracycheck(void)
         moveAcc = gBattleMoves[move].accuracy;
         // check Thunder on sunny weather
         if (WEATHER_HAS_EFFECT && gBattleWeather & B_WEATHER_SUN && gBattleMoves[move].effect == EFFECT_THUNDER)
+            moveAcc = 50;
+        if (WEATHER_HAS_EFFECT && gBattleWeather & B_WEATHER_SUN && gBattleMoves[move].effect == EFFECT_HURRICANE)
             moveAcc = 50;
 
         calc = sAccuracyStageRatios[buff].dividend * moveAcc;
@@ -10445,6 +10455,59 @@ static void Cmd_weightdamagecalculation(void)
         gDynamicBasePower = 120;
 
     gBattlescriptCurrInstr++;
+}
+
+static const u16 sWeightRatioToDamageTable[] =
+{
+    5, 120,
+    4, 100,
+    3, 80,
+    2, 60,
+    0, 40,
+};
+
+static void Cmd_acrobaticsdamagecalculation(void)
+{
+    if (gBattleMons[gBattlerAttacker].item == ITEM_NONE)
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power * 2;
+    else
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power;
+
+    gBattlescriptCurrInstr++; 
+}
+
+static void Cmd_venoshockdamagecalculation(void)
+{
+    if (gBattleMons[gBattlerTarget].status1 & STATUS1_PSN_ANY)
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power * 2;
+    else
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power;
+
+    gBattlescriptCurrInstr++; 
+
+}
+
+static void Cmd_heavyslamdamagecalculation(void)
+{
+    s32 i;
+    u16 attackerWeight = GetPokedexHeightWeight(SpeciesToNationalPokedexNum(gBattleMons[gBattlerAttacker].species), 1);
+    u16 targetWeight = GetPokedexHeightWeight(SpeciesToNationalPokedexNum(gBattleMons[gBattlerTarget].species), 1);
+    u32 ratio;
+
+    if (targetWeight == 0)
+        targetWeight == 1;
+    ratio = attackerWeight / targetWeight;
+
+    for (i = 0; i < ARRAY_COUNT(sWeightRatioToDamageTable); i += 2)
+    {
+        if (ratio >= sWeightRatioToDamageTable[i])
+        {
+            gDynamicBasePower = sWeightRatioToDamageTable[i + 1];
+            break;
+        }
+    }
+
+    gBattlescriptCurrInstr++; 
 }
 
 static void Cmd_assistattackselect(void)

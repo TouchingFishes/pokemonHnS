@@ -1253,6 +1253,18 @@
 	.byte \position
 	.endm
 
+	.macro acrobaticsdamagecalculation
+	.byte 0xf9
+	.endm
+
+	.macro venoshockdamagecalculation
+	.byte 0xfa
+	.endm
+
+	.macro heavyslamdamagecalculation
+	.byte 0xfb
+	.endm
+
 @ various command changed to more readable macros
 	.macro cancelmultiturnmoves battler:req
 	various \battler, VARIOUS_CANCEL_MULTI_TURN_MOVES

@@ -232,6 +232,13 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectCalmMind               @ EFFECT_CALM_MIND
 	.4byte BattleScript_EffectDragonDance            @ EFFECT_DRAGON_DANCE
 	.4byte BattleScript_EffectCamouflage             @ EFFECT_CAMOUFLAGE
+	.4byte BattleScript_EffectBlizzard	             @ EFFECT_BLIZZARD
+	.4byte BattleScript_EffectHurricane	             @ EFFECT_HURRICANE
+	.4byte BattleScript_EffectAcrobatics             @ EFFECT_ACROBATICS
+	.4byte BattleScript_EffectVenoshock	             @ EFFECT_VENOSHOCK
+	.4byte BattleScript_EffectHeavySlam	             @ EFFECT_HEAVY_SLAM
+	.4byte BattleScript_EffectSpeedUpHit             @ EFFECT_SPEED_UP_HIT
+	.4byte BattleScript_EffectSpecialAttackUpHit   	 @ EFFECT_SPECIAL_ATTACK_UP_HIT
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -1771,6 +1778,14 @@ BattleScript_EffectAttackUpHit::
 	setmoveeffect MOVE_EFFECT_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
 
+BattleScript_EffectSpecialAttackUpHit::
+	setmoveeffect MOVE_EFFECT_SP_ATK_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
+BattleScript_EffectSpeedUpHit::
+	setmoveeffect MOVE_EFFECT_SPD_PLUS_1 | MOVE_EFFECT_AFFECTS_USER
+	goto BattleScript_EffectHit
+
 BattleScript_EffectAllStatsUpHit::
 	setmoveeffect MOVE_EFFECT_ALL_STATS_UP | MOVE_EFFECT_AFFECTS_USER
 	goto BattleScript_EffectHit
@@ -1921,6 +1936,16 @@ BattleScript_SolarBeamOnFirstTurn::
 
 BattleScript_EffectThunder::
 	setmoveeffect MOVE_EFFECT_PARALYSIS
+	orword gHitMarker, HITMARKER_IGNORE_ON_AIR
+	goto BattleScript_EffectHit
+
+BattleScript_EffectHurricane::
+	setmoveeffect MOVE_EFFECT_CONFUSION
+	orword gHitMarker, HITMARKER_IGNORE_ON_AIR
+	goto BattleScript_EffectHit
+
+BattleScript_EffectBlizzard::
+	setmoveeffect MOVE_EFFECT_FREEZE
 	orword gHitMarker, HITMARKER_IGNORE_ON_AIR
 	goto BattleScript_EffectHit
 
@@ -2567,6 +2592,30 @@ BattleScript_EffectLowKick::
 	attackstring
 	ppreduce
 	weightdamagecalculation
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	goto BattleScript_HitFromCritCalc
+
+BattleScript_EffectAcrobatics::
+	attackcanceler
+	attackstring
+	ppreduce
+	acrobaticsdamagecalculation
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	goto BattleScript_HitFromCritCalc
+
+BattleScript_EffectVenoshock::
+	attackcanceler
+	attackstring
+	ppreduce
+	venoshockdamagecalculation
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	goto BattleScript_HitFromCritCalc
+
+BattleScript_EffectHeavySlam::
+	attackcanceler
+	attackstring
+	ppreduce
+	heavyslamdamagecalculation
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
 	goto BattleScript_HitFromCritCalc
 
