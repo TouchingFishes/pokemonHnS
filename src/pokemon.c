@@ -6737,6 +6737,18 @@ void DeleteFirstMoveAndGiveMoveToBoxMon(struct BoxPokemon *boxMon, u16 move)
     (var) /= (gStatStageRatios)[(mon)->statStages[(statIndex)]][1];                 \
 }
 
+static bool8 IsBattlerLastToMove(u8 battlerId)
+{
+    u8 i;
+    for (i = gCurrentTurnActionNumber + 1; i < gBattlersCount; i++)
+    {
+        u8 nextBattler = gBattlerByTurnOrder[i];
+        if (IsBattlerAlive(nextBattler) && !(gAbsentBattlerFlags & gBitTable[nextBattler]))
+            return FALSE;
+    }
+    return TRUE;
+}
+
 s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *defender, u32 move, u16 sideStatus, u16 powerOverride, u8 typeOverride, u8 battlerIdAtk, u8 battlerIdDef)
 {
     u32 i;
@@ -7123,10 +7135,16 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = (150 * gBattleMovePower) / 100;
     if (attacker->ability == ABILITY_ROCKY_CARGO && moveType == TYPE_ROCK)
         gBattleMovePower = (150 * gBattleMovePower) / 100;
+    if ((attacker->ability == ABILITY_GALVANIZE || attacker->ability == ABILITY_AERILATE
+        || attacker->ability == ABILITY_CHITINIZE || attacker->ability == ABILITY_IMMOLATE) 
+        && gBattleMoves[gCurrentMove].type == TYPE_NORMAL && gBattleMovePower != 0)
+        gBattleMovePower = (120 * gBattleMovePower) / 100;
     //if (attacker->ability == ABILITY_DRAGONS_MAW && moveType == TYPE_DRAGON)
     //    gBattleMovePower = (150 * gBattleMovePower) / 100;
-    if (attacker->ability == ABILITY_STICKY_TONGUE && (move == MOVE_LICK || move == MOVE_WRAP))
-        gBattleMovePower = (250 * gBattleMovePower) / 100;
+    //if (attacker->ability == ABILITY_STICKY_TONGUE && (move == MOVE_LICK || move == MOVE_WRAP))
+    //    gBattleMovePower = (250 * gBattleMovePower) / 100;
+    if (attacker->ability == ABILITY_ANALYTIC && IsBattlerLastToMove(battlerIdAtk))
+        gBattleMovePower = (130 * gBattleMovePower) / 100;
     if (defender->ability == ABILITY_MARVEL_SCALE && defender->status1)
         defense = (150 * defense) / 100;
     if (type == TYPE_ELECTRIC && AbilityBattleEffects(ABILITYEFFECT_FIELD_SPORT, 0, 0, ABILITYEFFECT_MUD_SPORT, 0))
@@ -7411,7 +7429,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             
             // Sniper triggered
             if (attacker->ability == ABILITY_SNIPER && (gCritMultiplier == 2))
-                damage = (damage * 2);
+                damage = (15 * damage) / 10;
 
             // Multiscale triggered
             if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)
@@ -7467,7 +7485,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             damage = (damage * 2);
 
         if (attacker->ability == ABILITY_SNIPER && (gCritMultiplier == 2))
-            damage = (damage * 2);
+            damage = (15 * damage) / 10;
         
         if (defender->ability == ABILITY_MULTISCALE && defender->hp == defender->maxHP)
                 damage /= 2;
