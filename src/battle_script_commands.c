@@ -1624,7 +1624,7 @@ u8 getHiddenPowerType(void)
     if (type == TYPE_MYSTERY && gSaveBlock1Ptr->tx_Mode_TypeMode >= 2)
         type = TYPE_FAIRY;
     else if (type == TYPE_MYSTERY)
-        type++;
+        TYPE_DRAGON;
     return type;
 }
 
@@ -1643,7 +1643,7 @@ u8 getHiddenPowerType2(void)
     if (type == TYPE_MYSTERY && gSaveBlock1Ptr->tx_Mode_TypeMode >= 2)
         type = TYPE_FAIRY;
     else if (type == TYPE_MYSTERY)
-        type++;
+        TYPE_DRAGON;
     return type;
 }
 

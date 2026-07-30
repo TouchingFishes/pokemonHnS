@@ -6755,13 +6755,14 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     s32 damage = 0;
     s32 damageHelper;
     u8 type;
+    u8 itemBoostType;
     u16 attack, defense;
     u16 spAttack, spDefense;
     u8 defenderHoldEffect;
     u8 defenderHoldEffectParam;
     u8 attackerHoldEffect;
     u8 attackerHoldEffectParam;
-    u32 moveType = gBattleMoves[gCurrentMove].type;
+    u32 moveType = GetMoveType(gCurrentMove);
     u8 side = GetBattlerSide(gBattlerTarget);
 
     if (!powerOverride)
@@ -6770,9 +6771,15 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         gBattleMovePower = powerOverride;
 
     if (!typeOverride)
+    {
         type = gBattleMoves[move].type;
+        itemBoostType = GetMoveType(move);
+    }
     else
+    {
         type = typeOverride & DYNAMIC_TYPE_MASK;
+        itemBoostType = typeOverride & DYNAMIC_TYPE_MASK;
+    }
 
     attack = attacker->attack;
     defense = defender->defense;
@@ -6821,7 +6828,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             }
         if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 0)
             if (attackerHoldEffect == sHoldEffectToType[i][0]
-                && type == sHoldEffectToType[i][1])
+                && itemBoostType == sHoldEffectToType[i][1])
             {
                 attack = (attack * (attackerHoldEffectParam + 100)) / 100;
                 spAttack = (spAttack * (attackerHoldEffectParam + 100)) / 100;
