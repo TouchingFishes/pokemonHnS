@@ -339,7 +339,9 @@ struct SpeciesInfo
  /* 0x03 */ u8 baseSpeed_old;
  /* 0x04 */ u8 baseSpAttack_old;
  /* 0x05 */ u8 baseSpDefense_old;
- /* 0x06 */ u8 types_old[2];
+ /* 0x06 */ u8 types_new[2];
+            u8 types_fairy[2];
+            u8 types_new_fairy[2];
             u8 abilities_old[2];
             u8 types_new[2];
             u8 catchRate_hard;

@@ -270,6 +270,16 @@ static const u8 sTypeName_Dragon[]   = _("DRAGON");
 static const u8 sTypeName_Dark[]     = _("DARK");
 static const u8 sTypeName_Fairy[]    = _("FAIRY");
 
+// TypeMode
+static const u8 sText_TypeMode_Vanilla[] =          _("VANILLA");
+static const u8 sText_TypeMode_Altered[] =          _("ALTERED");
+static const u8 sText_TypeMode_VanillaFairy[] =     _("FAIRY");
+static const u8 sText_TypeMode_AlteredFairy[] =     _("FAIRY ALT");
+static const u8 *const sText_TypeMode_Strings[] =
+{
+    sText_TypeMode_Vanilla, sText_TypeMode_Altered, sText_TypeMode_VanillaFairy, sText_TypeMode_AlteredFairy
+};
+
 // Display "OFF" when value is out of range
 static const u8 sText_TypeOff[] = _("OFF");
 
@@ -408,7 +418,7 @@ static u8 GetSel_SurvivePoison(void)      { return gSaveBlock1Ptr->tx_Mode_Poiso
 static u8 GetSel_Synchronize(void)        { return gSaveBlock1Ptr->tx_Mode_Synchronize       ? 1 : 0; }
 static u8 GetSel_Mints(void)              { return gSaveBlock1Ptr->tx_Mode_Mints             ? 1 : 0; }
 static u8 GetSel_NewCitrus(void)          { return gSaveBlock1Ptr->tx_Mode_New_Citrus        ? 1 : 0; }
-static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_Fairy_Types       ? 1 : 0; }
+static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_TypeMode          ? 1 : 0; }
 static u8 GetSel_Sturdy(void)             { return gSaveBlock1Ptr->tx_Mode_Sturdy            ? 1 : 0; }
 static u8 GetSel_ModernMoves(void)        { return gSaveBlock1Ptr->tx_Mode_Modern_Moves      ? 1 : 0; }
 static u8 GetSel_LegendaryAbilities(void) { return gSaveBlock1Ptr->tx_Mode_Legendary_Abilities ? 1 : 0; }

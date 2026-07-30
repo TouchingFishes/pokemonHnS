@@ -44,7 +44,7 @@ enum
     MENUITEM_MODE_SYNCHRONIZE,
     MENUITEM_MODE_STURDY,
     MENUITEM_MODE_NEW_CITRUS,
-    MENUITEM_MODE_FAIRY_TYPES,
+    MENUITEM_MODE_TYPE_MODE,
     MENUITEM_MODE_LEGENDARY_ABILITIES,
     MENUITEM_MODE_INFINITE_TMS,
     MENUITEM_MODE_MINTS,
@@ -373,7 +373,7 @@ struct // MENU_MODE
     [MENUITEM_MODE_STURDY]                = {DrawChoices_Mode_Sturdy,               ProcessInput_Options_Two},
     [MENUITEM_MODE_MINTS]                 = {DrawChoices_Mode_Mints,                ProcessInput_Options_Two},
     //[MENUITEM_MODE_MODERN_TYPES]          = {DrawChoices_Mode_Modern_Types,         ProcessInput_Options_Two},
-    [MENUITEM_MODE_FAIRY_TYPES]           = {DrawChoices_Mode_Fairy_Types,          ProcessInput_Options_Two},
+    [MENUITEM_MODE_TYPE_MODE]           = {DrawChoices_Mode_Fairy_Types,          ProcessInput_Options_Four},
     [MENUITEM_MODE_NEW_STATS]             = {DrawChoices_Mode_New_Stats,            ProcessInput_Options_Two},
     [MENUITEM_MODE_NEW_CITRUS]            = {DrawChoices_Mode_New_Citrus,           ProcessInput_Options_Two},
     [MENUITEM_MODE_MODERN_MOVES]          = {DrawChoices_Mode_Modern_Moves,         ProcessInput_Options_Two},
@@ -513,7 +513,7 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     [MENUITEM_MODE_MINTS]                     = sText_Mints,
     [MENUITEM_MODE_NEW_CITRUS]                = sText_NewCitrus,
     //[MENUITEM_MODE_MODERN_TYPES]              = sText_ModernTypes,
-    [MENUITEM_MODE_FAIRY_TYPES]               = sText_FairyTypes,
+    [MENUITEM_MODE_TYPE_MODE]               = sText_FairyTypes,
     [MENUITEM_MODE_NEW_STATS]                 = sText_NewStats,
     [MENUITEM_MODE_MODERN_MOVES]              = sText_Modern_Moves,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]       = sText_Legendary_Abilities,
@@ -562,6 +562,14 @@ static const u8 sText_EvolutionMethods[] =          _("EVO LINES");
 static const u8 sText_TypeEff[] =                   _("EFFECTIVENESS");
 static const u8 sText_Items[] =                     _("ITEMS");
 static const u8 sText_Chaos[] =                     _("CHAOS MODE");
+static const u8 sText_TypeMode_Vanilla[] =          _("VANILLA");
+static const u8 sText_TypeMode_Altered[] =          _("ALTERED");
+static const u8 sText_TypeMode_VanillaFairy[] =     _("FAIRY");
+static const u8 sText_TypeMode_AlteredFairy[] =     _("FAIRY ALT");
+static const u8 *const sText_TypeMode_Strings[] =
+{
+    sText_TypeMode_Vanilla, sText_TypeMode_Altered, sText_TypeMode_VanillaFairy, sText_TypeMode_AlteredFairy
+};
 static const u8 *const sOptionMenuItemsNamesRandom[MENUITEM_RANDOM_COUNT] =
 {
     [MENUITEM_RANDOM_OFF_ON]                    = sText_Randomizer,
@@ -686,7 +694,7 @@ static bool8 CheckConditions(int selection)
             case MENUITEM_MODE_NEW_CITRUS:                return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_SURVIVE_POISON:            return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             //case MENUITEM_MODE_MODERN_TYPES:              return FALSE;
-            case MENUITEM_MODE_FAIRY_TYPES:               return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_TYPE_MODE:               return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_NEW_STATS:                 return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_STURDY:                    return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_MODERN_MOVES:              return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
@@ -792,45 +800,47 @@ static bool8 CheckConditions(int selection)
 static const u8 sText_Empty[]               = _("");
 static const u8 sText_Description_Save[]    = _("Save choices and continue...");
 
-static const u8 sText_Description_Mode_Gamemode_Classic[]         = _("Recommended settings.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
-static const u8 sText_Description_Mode_Gamemode_Modern[]          = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
-static const u8 sText_Description_Mode_Gamemode_Custom[]          = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
+static const u8 sText_Description_Mode_Gamemode_Classic[]               = _("Recommended settings.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
+static const u8 sText_Description_Mode_Gamemode_Modern[]                = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
+static const u8 sText_Description_Mode_Gamemode_Custom[]                = _("Choose your own rules.\n{COLOR 7}{COLOR 8}NOTE: All selections are PERMANENT.");
 //static const u8 sText_Description_Mode_AlternateSpawns_Vanilla[]        = _("Use VANILLA wild encounters.\nUnchanged from the original.");
 //static const u8 sText_Description_Mode_AlternateSpawns_Postgame[]       = _("VANILLA, but after becoming champion,\nall 423 {PKMN} will be available.");
 //static const u8 sText_Description_Mode_AlternateSpawns_Modern[]         = _("Use MODERN wild encounters.\nAll 423 {PKMN} will be available.");
-static const u8 sText_Description_Mode_InfiniteTMs_On[]           = _("TMs are reusable.\nMay unbalance game.");
-static const u8 sText_Description_Mode_InfiniteTMs_Off[]          = _("TMs are not reusable.\nLike in the original.");
-static const u8 sText_Description_Mode_SurvivePoison_On[]         = _("Your {PKMN} will survive the POISON\nstatus with 1HP.");
-static const u8 sText_Description_Mode_SurvivePoison_Off[]        = _("Your {PKMN} will faint if they are\nPOISONED.");
-static const u8 sText_Description_Mode_Synchronize_Old[]          = _("SYNCHRONIZE works as in GEN III.\n50% chance to copy nature.");
-static const u8 sText_Description_Mode_Synchronize_New[]          = _("SYNCHRONIZE works as in GEN VIII+.\n100% chance to copy nature.");
-static const u8 sText_Description_Mode_Mints_Off[]                = _("Mints are not availabe ingame until\nfinishing the game.");
-static const u8 sText_Description_Mode_Mints_On[]                 = _("Mints can be bought at PRETTY PETAL\nFLOWER SHOP after the 4th medal.");
-static const u8 sText_Description_Mode_New_Citrus_Off[]           = _("SITRUS BERRY restores 30HP.\nSame as GEN III.");
-static const u8 sText_Description_Mode_New_Citrus_On[]            = _("SITRUS BERRY restores 25% of\ntotal HP. Same as GEN IV and up.");
-static const u8 sText_Description_Mode_Modern_Types_Off[]         = _("Original {PKMN} typings. Doesn't include\n{PKMN} that got added to FAIRY in GEN VI.");
-static const u8 sText_Description_Mode_Modern_Types_On[]          = _("{PKMN} have modified typings\nto make them more viable.");
-static const u8 sText_Description_Mode_Fairy_Types_Off[]          = _("Affected {PKMN} keep their\n lassic, pre-balance types."); //FAIRY TYPE isn't added to {PKMN} \nthat got it in GEN VI.
-static const u8 sText_Description_Mode_Fairy_Types_On[]           = _("Affected {PKMN} use this game's\nchanged types."); //FAIRY TYPE is added / changed to\ncertain {PKMN}, as in GEN VI.
-static const u8 sText_Description_Mode_New_Stats_Off[]            = _("Original GEN III {PKMN} stats.");
-static const u8 sText_Description_Mode_New_Stats_On[]             = _("Modified stats to make certain\n{PKMN} more viable.");
-static const u8 sText_Description_Mode_Sturdy_Off[]               = _("STURDY works as in GEN III. Only\nnegates OHKO moves (GUILLOTINE, etc.)");
-static const u8 sText_Description_Mode_Sturdy_On[]                = _("STURDY works as in GEN V+.\n{PKMN} survive lethal hits with 1HP.");
-static const u8 sText_Description_Mode_Modern_Moves_Off[]         = _("No new MOVES, and original MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
-static const u8 sText_Description_Mode_Modern_Moves_On[]          = _("13 new MOVES, and improved MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
-static const u8 sText_Description_Mode_Leg_Abilities_Off[]        = _("PRESSURE stays as the main\nability of some legendaries.");
-static const u8 sText_Description_Mode_Leg_Abilities_On[]         = _("Legendaries have PRESSURE changed\nfor a better ability.");
-static const u8 sText_Description_Mode_Natures_Off[]              = _("{PKMN} have no NATURE effects.\nStats are unaffected by NATURES.");
-static const u8 sText_Description_Mode_Natures_On[]               = _("{PKMN} have NATURE effects,\nchanging their stat growth.");
-static const u8 sText_Description_Mode_PhysicalSpecialSplit_Off[] = _("Moves use the original GEN III\nphysical and special categories.");
-static const u8 sText_Description_Mode_PhysicalSpecialSplit_On[]  = _("Moves are split by their actual\ncategory, as in later generations.");
-static const u8 sText_Description_Mode_IgnoreEVCap_Off[]          = _("{PKMN} follow the standard\nEV limit rules.");
-static const u8 sText_Description_Mode_IgnoreEVCap_On[]           = _("{PKMN} can gain EVs beyond the\nstandard limit.");
-static const u8 sText_Description_Mode_New_Legendaries_Off[]      = _("No extra legendaries are added.");
-static const u8 sText_Description_Mode_New_Legendaries_On[]       = _("Extra legendaries from GEN I and II\nare added via ingame events.");
-static const u8 sText_Description_Mode_New_Effectiveness_Original[]  = _("Original type effectiveness\nfor all types.");
-static const u8 sText_Description_Mode_New_Effectiveness_Modern[]    = _("New and balanced type effectiveness\nfor certain types.");
-static const u8 sText_Description_Mode_Next[]                     = _("Continue to Features options.");
+static const u8 sText_Description_Mode_InfiniteTMs_On[]                 = _("TMs are reusable.\nMay unbalance game.");
+static const u8 sText_Description_Mode_InfiniteTMs_Off[]                = _("TMs are not reusable.\nLike in the original.");
+static const u8 sText_Description_Mode_SurvivePoison_On[]               = _("Your {PKMN} will survive the POISON\nstatus with 1HP.");
+static const u8 sText_Description_Mode_SurvivePoison_Off[]              = _("Your {PKMN} will faint if they are\nPOISONED.");
+static const u8 sText_Description_Mode_Synchronize_Old[]                = _("SYNCHRONIZE works as in GEN III.\n50% chance to copy nature.");
+static const u8 sText_Description_Mode_Synchronize_New[]                = _("SYNCHRONIZE works as in GEN VIII+.\n100% chance to copy nature.");
+static const u8 sText_Description_Mode_Mints_Off[]                      = _("Mints are not availabe ingame until\nfinishing the game.");
+static const u8 sText_Description_Mode_Mints_On[]                       = _("Mints can be bought at PRETTY PETAL\nFLOWER SHOP after the 4th medal.");
+static const u8 sText_Description_Mode_New_Citrus_Off[]                 = _("SITRUS BERRY restores 30HP.\nSame as GEN III.");
+static const u8 sText_Description_Mode_New_Citrus_On[]                  = _("SITRUS BERRY restores 25% of\ntotal HP. Same as GEN IV and up.");
+static const u8 sText_Description_Mode_Modern_Types_Off[]               = _("Original {PKMN} typings. Doesn't include\n{PKMN} that got added to FAIRY in GEN VI.");
+static const u8 sText_Description_Mode_Modern_Types_On[]                = _("{PKMN} have modified typings\nto make them more viable.");
+static const u8 sText_Description_Mode_Fairy_TypeMode_Vanilla[]         = _("{PKMN} keep their classic,\noriginal, pre-balance types."); //FAIRY TYPE isn't added to {PKMN} \nthat got it in GEN VI.
+static const u8 sText_Description_Mode_Fairy_TypeMode_Altered[]         = _("Affected {PKMN} use this game's\nchanged types. Recommended Option."); //FAIRY TYPE is added / changed to\ncertain {PKMN}, as in GEN VI.
+static const u8 sText_Description_Mode_Fairy_TypeMode_VanillaFairy[]    = _("FAIRY TYPE is added to certain\n{PKMN}, as in GEN VI. Nerfs DRAGONs"); //
+static const u8 sText_Description_Mode_Fairy_TypeMode_AlteredFairy[]    = _("FAIRY TYPE is added to certain\n{PKMN}, types also got changed"); //FAIRY TYPE is added / changed to\ncertain {PKMN}, as in GEN VI.
+static const u8 sText_Description_Mode_New_Stats_Off[]                  = _("Original GEN III {PKMN} stats.");
+static const u8 sText_Description_Mode_New_Stats_On[]                   = _("Modified stats to make certain\n{PKMN} more viable.");
+static const u8 sText_Description_Mode_Sturdy_Off[]                     = _("STURDY works as in GEN III. Only\nnegates OHKO moves (GUILLOTINE, etc.)");
+static const u8 sText_Description_Mode_Sturdy_On[]                      = _("STURDY works as in GEN V+.\n{PKMN} survive lethal hits with 1HP.");
+static const u8 sText_Description_Mode_Modern_Moves_Off[]               = _("No new MOVES, and original MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
+static const u8 sText_Description_Mode_Modern_Moves_On[]                = _("13 new MOVES, and improved MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
+static const u8 sText_Description_Mode_Leg_Abilities_Off[]              = _("PRESSURE stays as the main\nability of some legendaries.");
+static const u8 sText_Description_Mode_Leg_Abilities_On[]               = _("Legendaries have PRESSURE changed\nfor a better ability.");
+static const u8 sText_Description_Mode_Natures_Off[]                    = _("{PKMN} have no NATURE effects.\nStats are unaffected by NATURES.");
+static const u8 sText_Description_Mode_Natures_On[]                     = _("{PKMN} have NATURE effects,\nchanging their stat growth.");
+static const u8 sText_Description_Mode_PhysicalSpecialSplit_Off[]       = _("Moves use the original GEN III\nphysical and special categories.");
+static const u8 sText_Description_Mode_PhysicalSpecialSplit_On[]        = _("Moves are split by their actual\ncategory, as in later generations.");
+static const u8 sText_Description_Mode_IgnoreEVCap_Off[]                = _("{PKMN} follow the standard\nEV limit rules.");
+static const u8 sText_Description_Mode_IgnoreEVCap_On[]                 = _("{PKMN} can gain EVs beyond the\nstandard limit.");
+static const u8 sText_Description_Mode_New_Legendaries_Off[]            = _("No extra legendaries are added.");
+static const u8 sText_Description_Mode_New_Legendaries_On[]             = _("Extra legendaries from GEN I and II\nare added via ingame events.");
+static const u8 sText_Description_Mode_New_Effectiveness_Original[]     = _("Original type effectiveness\nfor all types.");
+static const u8 sText_Description_Mode_New_Effectiveness_Modern[]       = _("New and balanced type effectiveness\nfor certain types.");
+static const u8 sText_Description_Mode_Next[]                           = _("Continue to Features options.");
 
 static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
 {
@@ -842,7 +852,7 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_MINTS]                 = {sText_Description_Mode_Mints_Off,              sText_Description_Mode_Mints_On,              sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_NEW_CITRUS]            = {sText_Description_Mode_New_Citrus_Off,         sText_Description_Mode_New_Citrus_On,         sText_Empty,                                        sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_MODERN_TYPES]          = {sText_Description_Mode_Modern_Types_Off,       sText_Description_Mode_Modern_Types_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    [MENUITEM_MODE_FAIRY_TYPES]           = {sText_Description_Mode_Fairy_Types_Off,        sText_Description_Mode_Fairy_Types_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_TYPE_MODE]           = {sText_Description_Mode_Fairy_TypeMode_Vanilla, sText_Description_Mode_Fairy_TypeMode_Altered, sText_Description_Mode_Fairy_TypeMode_VanillaFairy, sText_Description_Mode_Fairy_TypeMode_AlteredFairy, sText_Empty},
     [MENUITEM_MODE_NEW_STATS]             = {sText_Description_Mode_New_Stats_Off,          sText_Description_Mode_New_Stats_On,          sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_STURDY]                = {sText_Description_Mode_Sturdy_Off,             sText_Description_Mode_Sturdy_On,             sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MODERN_MOVES]          = {sText_Description_Mode_Modern_Moves_Off,       sText_Description_Mode_Modern_Moves_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
@@ -1063,7 +1073,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_MINTS]                 = sText_Empty,
     [MENUITEM_MODE_NEW_CITRUS]            = sText_Empty,
     //[MENUITEM_MODE_MODERN_TYPES]          = sText_Description_Disabled_Feature,
-    [MENUITEM_MODE_FAIRY_TYPES]           = sText_Empty,
+    [MENUITEM_MODE_TYPE_MODE]           = sText_Empty,
     [MENUITEM_MODE_NEW_STATS]             = sText_Empty,
     [MENUITEM_MODE_MODERN_MOVES]          = sText_Empty,
     [MENUITEM_MODE_NEXT]                  = sText_Empty,
@@ -1481,7 +1491,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_Mints                       = TX_MODE_MINTS;
         gSaveBlock1Ptr->tx_Mode_New_Citrus                  = TX_MODE_NEW_CITRUS;
         gSaveBlock1Ptr->tx_Mode_Modern_Types                = TX_MODE_MODERN_TYPES;
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = TX_MODE_FAIRY_TYPES;
+        gSaveBlock1Ptr->tx_Mode_TypeMode                    = TX_MODE_TYPE_MODE;
         gSaveBlock1Ptr->tx_Mode_New_Stats                   = TX_MODE_NEW_STATS;
         gSaveBlock1Ptr->tx_Mode_Sturdy                      = TX_MODE_STURDY;
         gSaveBlock1Ptr->tx_Mode_Modern_Moves                = TX_MODE_MODERN_MOVES;
@@ -1560,7 +1570,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_MINTS]                  = gSaveBlock1Ptr->tx_Mode_Mints;
         sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]             = gSaveBlock1Ptr->tx_Mode_New_Citrus;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]           = gSaveBlock1Ptr->tx_Mode_Modern_Types;
-        sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]            = gSaveBlock1Ptr->tx_Mode_Fairy_Types;
+        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]            = gSaveBlock1Ptr->tx_Mode_TypeMode;
         sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]              = gSaveBlock1Ptr->tx_Mode_New_Stats;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = gSaveBlock1Ptr->tx_Mode_Sturdy;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
@@ -1918,7 +1928,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     gSaveBlock1Ptr->tx_Mode_Mints                       = sOptions->sel_mode[MENUITEM_MODE_MINTS]; 
     gSaveBlock1Ptr->tx_Mode_New_Citrus                  = sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]; 
     //gSaveBlock1Ptr->tx_Mode_Modern_Types                = sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]; 
-    gSaveBlock1Ptr->tx_Mode_Fairy_Types                 = sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]; 
+    gSaveBlock1Ptr->tx_Mode_TypeMode                    = sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]; 
     gSaveBlock1Ptr->tx_Mode_New_Stats                   = sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]; 
     gSaveBlock1Ptr->tx_Mode_Sturdy                      = sOptions->sel_mode[MENUITEM_MODE_STURDY]; 
     gSaveBlock1Ptr->tx_Mode_Modern_Moves                = sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]; 
@@ -2353,8 +2363,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_New_Citrus = 1;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]              = TX_MODE_MODERN_TYPES;
         //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0;
-        sOptions->sel_mode[MENUITEM_MODE_FAIRY_TYPES]               = !TX_MODE_FAIRY_TYPES;
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1;
+        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]               = !TX_MODE_TYPE_MODE; //altered no FAIRY types as default
+        gSaveBlock1Ptr->tx_Mode_TypeMode = 1;
         sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]                 = !TX_MODE_NEW_STATS;
         gSaveBlock1Ptr->tx_Mode_New_Stats = 1;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                    = !TX_MODE_STURDY;
@@ -3046,21 +3056,9 @@ static void DrawChoices_Mode_New_Citrus(int selection, int y)
 
 static void DrawChoices_Mode_Fairy_Types(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_MODE_FAIRY_TYPES);
-    u8 styles[2] = {0};
-    styles[selection] = 1;
-
-    if (selection == 0)
-    {
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 0; //Pkmn who have fairy since GEN VI don't have it
-    }
-    else
-    {
-        gSaveBlock1Ptr->tx_Mode_Fairy_Types = 1; //They do now
-    }
-
-    DrawOptionMenuChoice(sText_Off, 104, y, styles[0], active);
-    DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
+    bool8 active = CheckConditions(MENUITEM_MODE_TYPE_MODE);
+    gSaveBlock1Ptr->tx_Mode_TypeMode = selection;
+    DrawChoices_Options_Four(sText_TypeMode_Strings, selection, y, active);
 }
 
 static void DrawChoices_Mode_Natures(int selection, int y)

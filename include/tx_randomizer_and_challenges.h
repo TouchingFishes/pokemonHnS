@@ -60,7 +60,7 @@
 #define TX_MODE_MINTS 0
 #define TX_MODE_NEW_CITRUS 0
 #define TX_MODE_MODERN_TYPES 0
-#define TX_MODE_FAIRY_TYPES 0
+#define TX_MODE_TYPE_MODE 1 //default: altered vanilla types
 #define TX_MODE_NEW_STATS 0
 #define TX_MODE_STURDY 0
 #define TX_MODE_MODERN_MOVES 0

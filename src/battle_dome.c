@@ -2426,66 +2426,67 @@ static void InitDomeTrainers(void)
             rankingScores[i] += statValues[STAT_SPDEF];
             rankingScores[i] += statValues[STAT_SPEED];
             rankingScores[i] += statValues[STAT_HP];
-            if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
-                && (species == SPECIES_ARBOK 
-                || species == SPECIES_PARASECT 
-                || species == SPECIES_GOLDUCK
-                || species == SPECIES_KINGLER
-                || species == SPECIES_MEGANIUM
-                || species == SPECIES_TYPHLOSION
-                || species == SPECIES_FERALIGATR
-                || species == SPECIES_NOCTOWL
-                || species == SPECIES_SUNFLORA
-                || species == SPECIES_STANTLER
-                || species == SPECIES_GROVYLE
-                || species == SPECIES_SCEPTILE
-                || species == SPECIES_MASQUERAIN
-                || species == SPECIES_DELCATTY
-                || species == SPECIES_LARVICID
-                || species == SPECIES_PENDRAGON
-                || species == SPECIES_LUVDISC
-                || species == SPECIES_ELECTIVIRE))
-                {
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[0]];
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[1]];
-                }
-            else if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 0) 
-                && (species == SPECIES_JIGGLYPUFF 
-                || species == SPECIES_WIGGLYTUFF
-                || species == SPECIES_CLEFAIRY
-                || species == SPECIES_CLEFABLE
-                || species == SPECIES_MR_MIME
-                || species == SPECIES_CLEFFA
-                || species == SPECIES_IGGLYBUFF
-                || species == SPECIES_TOGEPI
-                || species == SPECIES_TOGETIC
-                || species == SPECIES_MARILL
-                || species == SPECIES_AZUMARILL
-                || species == SPECIES_SNUBBULL
-                || species == SPECIES_GRANBULL
-                || species == SPECIES_RALTS
-                || species == SPECIES_KIRLIA
-                || species == SPECIES_GARDEVOIR
-                || species == SPECIES_VANILLITE
-                || species == SPECIES_TALONFLAME
-                || species == SPECIES_DEINO
-                || species == SPECIES_CORSOREEF))
-                {
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[0]];
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_old[1]];
-                }
-            else if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 1) 
-                && (species == SPECIES_SNUBBULL 
-                || species == SPECIES_GRANBULL))
-                {
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_new[0]];
-                    monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types_new[1]];
-                }
-            else
+            
+            u16 domeMonSpecies = gFacilityTrainerMons[DOME_MONS[i][j]].species;
+            const struct SpeciesInfo *info = &gSpeciesInfo[domeMonSpecies];
+            u8 t1, t2;
+            
+            swtich (gSaveBlock1Ptr->tx_Mode_TypeMode)
             {
-                monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types[0]];
-                monTypesBits |= gBitTable[gSpeciesInfo[gFacilityTrainerMons[DOME_MONS[i][j]].species].types[1]];
+                case 1: //altered
+                    if (info->types_new[0] || info->types_new[1])
+                    {
+                        t1 = info->types_new[0];
+                        t2 = info->types_new[1];
+                    }
+                    else 
+                    {
+                        t1 = info->types[0];
+                        t2 = info->types[1];
+                    }
+                    break;
+                case 2: //vanilla + fairy
+                    if (info->types_fairy[0] || info->types_fairy[1])
+                    {
+                        t1 = info->types_fairy[0];
+                        t2 = info->types_fairy[1];
+                    }
+                    else 
+                    {
+                        t1 = info->types[0];
+                        t2 = info->types[1];
+                    }
+                    break;
+                case 3: //altered + fairy
+                    if (info->types_new_fairy[0] || info->types_new_fairy[1])
+                    {
+                        t1 = info->types_new_fairy[0];
+                        t2 = info->types_new_fairy[1];
+                    }
+                    else if (info->types_new[0] || info->types_new[1])
+                    {
+                        t1 = info->types_new[0];
+                        t2 = info->types_new[1];
+                    }
+                    else if (info->types_fairy[0] || info->types_fairy[1])
+                    {
+                        t1 = info->types_fairy[0];
+                        t2 = info->types_fairy[1];
+                    }
+                    else 
+                    {
+                        t1 = info->types[0];
+                        t2 = info->types[1];
+                    }
+                case 0: //vanilla
+                case default:
+                    type = (typeNum == 1) ? info->types[0] : info->types[1];
+                    break;
+
             }
+            monTypesBits |= gBitTable[t1];
+            monTypesBits |= gBitTable[t2];
+            
         }
 
         for (monTypesCount = 0, j = 0; j < 32; j++)

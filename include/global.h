@@ -1167,7 +1167,7 @@ struct SaveBlock1
         u8 tx_Mode_Mints:1;
         u8 tx_Mode_New_Citrus:1;
         u8 tx_Mode_Modern_Types:1; //unused in HnS
-        u8 tx_Mode_Fairy_Types:1;
+        u8 tx_Mode_Fairy_Types:1; //unused in HnS replaced by tx_Mode_TypeMode
         u8 tx_Mode_New_Stats:1; //unused in HnS
         u8 tx_Mode_Sturdy:1;
         u8 tx_Mode_Modern_Moves:1;
@@ -1182,7 +1182,7 @@ struct SaveBlock1
         u8 NuzlockeEncounterFlags[12]; //
         u8 tx_Nuzlocke_RareCandy:1; //new for HnS 1.2
         u8 tx_Mode_Natures:1; //new for this hack
-        u8 tx_Mode_PhysicalSpecialSplit:1; //new for this hack
+        u8 tx_Mode_TypeMode:2; //new for this hack
         u8 tx_Mode_IgnoreEVCap:1; //new for this hack
 };
 

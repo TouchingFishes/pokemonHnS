@@ -12429,79 +12429,36 @@ u16 PickRandomStarter(u16 *speciesList, u8 starterId)
 u8 GetTypeBySpecies(u16 species, u8 typeNum)
 {
     u8 type;
+    const struct SpeciesInfo *info = &gSpeciesInfo[species];
 
-    //if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 0) 
-    if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 0) 
-    && (species == SPECIES_ARBOK 
-    //|| species == SPECIES_PARASECT
-    || species == SPECIES_BRAVIARY
-    || species == SPECIES_GREAVARD
-    || species == SPECIES_HOUNDSTONE
-    || species == SPECIES_SABLEYE
-    || species == SPECIES_GEMGEIST
-    || species == SPECIES_MARILL
-    || species == SPECIES_AZUMARILL 
-    //|| species == SPECIES_GOLDUCK
-    //|| species == SPECIES_KINGLER
-    //|| species == SPECIES_MEGANIUM
-    //|| species == SPECIES_TYPHLOSION
-    //|| species == SPECIES_FERALIGATR
-    //|| species == SPECIES_NOCTOWL
-    //|| species == SPECIES_SUNFLORA
-    //|| species == SPECIES_STANTLER
-    //|| species == SPECIES_GROVYLE
-    //|| species == SPECIES_SCEPTILE
-    //|| species == SPECIES_MASQUERAIN
-    //|| species == SPECIES_DELCATTY
-    //|| species == SPECIES_LARVICID
-    //|| species == SPECIES_PENDRAGON
-    //|| species == SPECIES_LUVDISC
-    || species == SPECIES_ELECTIVIRE))
+    swtich (gSaveBlock1Ptr->tx_Mode_TypeMode)
     {
-        if (typeNum == 1)
-            type = gSpeciesInfo[species].types_old[0];
-        else
-            type = gSpeciesInfo[species].types_old[1];
-    }
-    else if ((gSaveBlock1Ptr->tx_Mode_Fairy_Types == 0) 
-    && (species == SPECIES_JIGGLYPUFF 
-    || species == SPECIES_WIGGLYTUFF
-    || species == SPECIES_CLEFAIRY
-    || species == SPECIES_CLEFABLE
-    || species == SPECIES_MR_MIME
-    || species == SPECIES_CLEFFA
-    || species == SPECIES_IGGLYBUFF
-    || species == SPECIES_TOGEPI
-    || species == SPECIES_TOGETIC
-    || species == SPECIES_SNUBBULL
-    || species == SPECIES_GRANBULL
-    || species == SPECIES_MARILL
-    || species == SPECIES_AZUMARILL
-    || species == SPECIES_RALTS
-    || species == SPECIES_KIRLIA
-    || species == SPECIES_GARDEVOIR
-    || species == SPECIES_CORSOREEF))
-    {
-        if (typeNum == 1)
-            type = gSpeciesInfo[species].types_old[0];
-        else
-            type = gSpeciesInfo[species].types_old[1];
-    }
-    else if ((gSaveBlock1Ptr->tx_Mode_Modern_Types == 1) 
-    && (species == SPECIES_SNUBBULL
-    || species == SPECIES_GRANBULL))
-    {
-        if (typeNum == 1)
-            type = gSpeciesInfo[species].types_new[0];
-        else
-            type = gSpeciesInfo[species].types_new[1];
-    }
-    else
-    {
-        if (typeNum == 1)
-            type = gSpeciesInfo[species].types[0];
-        else
-            type = gSpeciesInfo[species].types[1];
+        case 1: //altered
+            if (info->types_new[0] || info->types_new[1])
+                type = (typeNum == 1) ? info->types_new[0] : info->types_new[1];
+            else 
+                type = (typeNum == 1) ? info->types[0] : info->types[1];
+            break;
+        case 2: //vanilla + fairy
+            if (info->types_fairy[0] || info->types_fairy[1])
+                type = (typeNum == 1) ? info->types_fairy[0] : info->types_fairy[1];
+            else 
+                type = (typeNum == 1) ? info->types[0] : info->types[1];
+            break;
+        case 3: //altered + fairy
+            if (info->types_new_fairy[0] || info->types_new_fairy[1])
+                type = (typeNum == 1) ? info->types_new_fairy[0] : info->types_new_fairy[1];
+            else if (info->types_new[0] || info->types_new[1])
+                type = (typeNum == 1) ? info->types_new[0] : info->types_new[1];
+            else if (info->types_fairy[0] || info->types_fairy[1])
+                type = (typeNum == 1) ? info->types_fairy[0] : info->types_fairy[1];
+            else 
+                type = (typeNum == 1) ? info->types[0] : info->types[1];
+        case 1: //vanilla
+        case default:
+            type = (typeNum == 1) ? info->types[0] : info->types[1];
+            break;
+
     }
 
     if (!gSaveBlock1Ptr->tx_Random_Type)
