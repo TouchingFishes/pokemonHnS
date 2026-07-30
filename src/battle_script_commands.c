@@ -10495,7 +10495,7 @@ static void Cmd_heavyslamdamagecalculation(void)
     u32 ratio;
 
     if (targetWeight == 0)
-        targetWeight == 1;
+        targetWeight = 1;
     ratio = attackerWeight / targetWeight;
 
     for (i = 0; i < ARRAY_COUNT(sWeightRatioToDamageTable); i += 2)
