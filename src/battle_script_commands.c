@@ -1621,8 +1621,10 @@ u8 getHiddenPowerType(void)
     // Subtract 3 instead of 1 below because 2 types are excluded (TYPE_NORMAL and TYPE_MYSTERY)
     // The final + 1 skips past Normal, and the following conditional skips TYPE_MYSTERY
     u8 type = ((NUMBER_OF_MON_TYPES - 3) * typeBits) / 63 + 1;
-    if (type == TYPE_MYSTERY)
+    if (type == TYPE_MYSTERY && gSaveBlock1Ptr->tx_Mode_TypeMode >= 2)
         type = TYPE_FAIRY;
+    else if (type == TYPE_MYSTERY)
+        type = TYPE_DRAGON;
     return type;
 }
 
@@ -1638,8 +1640,10 @@ u8 getHiddenPowerType2(void)
     // Subtract 3 instead of 1 below because 2 types are excluded (TYPE_NORMAL and TYPE_MYSTERY)
     // The final + 1 skips past Normal, and the following conditional skips TYPE_MYSTERY
     u8 type = ((NUMBER_OF_MON_TYPES - 3) * typeBits) / 63 + 1;
-    if (type == TYPE_MYSTERY)
+    if (type == TYPE_MYSTERY && gSaveBlock1Ptr->tx_Mode_TypeMode >= 2)
         type = TYPE_FAIRY;
+    else if (type == TYPE_MYSTERY)
+        type = TYPE_DRAGON;
     return type;
 }
 
