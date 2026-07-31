@@ -497,8 +497,12 @@ PokemonLeague_ChampionsRoom_Movement_PlayerLooksAround:
 	step_end
 
 PokemonLeague_ChampionsRoom_Movement_ChallengerApproach:
-	walk_in_place_faster_down
-	delay_16
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
 	face_player
 	step_end
 
