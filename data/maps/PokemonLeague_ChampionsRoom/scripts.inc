@@ -269,7 +269,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightLance::
 	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_LanceGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightClair::
@@ -280,7 +280,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightClair::
 	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CLAIR_2, PokemonLeague_ChampionsRoom_Text_ClairGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightWinona::
@@ -291,7 +291,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightWinona::
 	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_WINONA_5, PokemonLeague_ChampionsRoom_Text_WinonaGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightNorman::
@@ -302,7 +302,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightNorman::
 	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_NORMAN_5, PokemonLeague_ChampionsRoom_Text_NormanGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightCynthia::
@@ -313,7 +313,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightCynthia::
 	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CYNTHIA, PokemonLeague_ChampionsRoom_Text_CynthiaGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightDrake::
@@ -324,7 +324,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightDrake::
 	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_DrakeGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightSteven::
@@ -335,7 +335,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightSteven::
 	msgbox PokemonLeague_ChampionsRoom_Text_StevenGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_STEVEN2, PokemonLeague_ChampionsRoom_Text_StevenGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_StevenGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightYama::
@@ -346,7 +346,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightYama::
 	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_MASTER_YAMA, PokemonLeague_ChampionsRoom_Text_YamaGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightBato::
@@ -357,7 +357,7 @@ PokemonLeague_ChampionsRoom_EventScript_FightBato::
 	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_BATO, PokemonLeague_ChampionsRoom_Text_BatoGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletOutro, MSGBOX_DEFAULT
-	releaseall
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightGiovanni::
@@ -368,8 +368,20 @@ PokemonLeague_ChampionsRoom_EventScript_FightGiovanni::
 	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GIOVANNI, PokemonLeague_ChampionsRoom_Text_GiovanniGauntletDefeat
 	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort::
+	addobject LOCALID_LEAGUE_OAK
+	applymovement LOCALID_LEAGUE_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
+	waitmovement 0
+	msgbox PokemonLeague_ChampionsRoom_Text_OakGauntletEscort, MSGBOX_DEFAULT
+	closemessage
+	setvar VAR_LEAGUE_STATE, 6
+	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
 	releaseall
 	end
+
 
 PokemonLeague_ChampionsRoom_EventScript_AdjustPlayerFacingEast::
 	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_AdjustPlayerFacingEast
@@ -807,5 +819,22 @@ PokemonLeague_ChampionsRoom_Text_GauntletComplete:
 	.string "There is no doubt now.\p"
 	.string "You are truly worthy of being called\n"
 	.string "a CHAMPION.$"
+
+PokemonLeague_ChampionsRoom_Text_OakGauntletEscort:
+	.string "OAK: Well done, {PLAYER}.\p"
+	.string "You have successfully defended your\n"
+	.string "title as POKéMON CHAMPION.\p"
+	.string "But I suspect you already know that\n"
+	.string "your work here is far from finished.\p"
+	.string "There are trainers who have come from\n"
+	.string "far and wide to test themselves\l"
+	.string "against the very best.\p"
+	.string "And now, they would like to test\n"
+	.string "themselves against you.\p"
+	.string "I will accompany you to the next\n"
+	.string "room, where your next challenger\l"
+	.string "will be waiting.\p"
+	.string "Take a moment to prepare yourself.\n"
+	.string "This will be quite an examination.$"
 
 
