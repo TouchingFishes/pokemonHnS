@@ -31,35 +31,9 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F_WATER",
-      "x": 15,
-      "y": 66,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WALK_SEQUENCE_UP_RIGHT_LEFT_DOWN",
-      "movement_range_x": 6,
-      "movement_range_y": 3,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "CherrygroveBay_EventScript_SwimmerFLeah",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_DRAGON_TAMER",
-      "x": 21,
-      "y": 84,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherrygroveBay_EventScript_DragonTamerZander",
-      "flag": "0"
-    },
-    {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M_WATER",
-      "x": 19,
-      "y": 44,
+      "x": 21,
+      "y": 43,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WALK_LEFT_AND_RIGHT",
       "movement_range_x": 5,
@@ -71,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "x": 21,
-      "y": 31,
+      "x": 19,
+      "y": 27,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 5,
@@ -93,19 +67,6 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CherrygroveBay_EventScript_ExpertMudSlap",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_CORSOLA",
-      "x": 30,
-      "y": 63,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
-      "movement_range_x": 1,
-      "movement_range_y": 1,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherryGroveCity_EventScript_Corsola",
       "flag": "0"
     },
     {
@@ -240,8 +201,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_WOOPER",
-      "x": 9,
-      "y": 56,
+      "x": 48,
+      "y": 33,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 0,
@@ -252,22 +213,22 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_LASS",
       "x": 10,
-      "y": 38,
+      "y": 35,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "CherrygroveBay_EventScript_Tuber",
+      "script": "CherrygroveBay_EventScript_Lass",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
       "x": 28,
-      "y": 38,
+      "y": 37,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -275,6 +236,32 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CherrygroveBay_EventScript_FisherAlec",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_VOLTREAN",
+      "x": 7,
+      "y": 53,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CherryGroveCity_EventScript_Corsola",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_FISHER",
+      "x": 21,
+      "y": 52,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CherrygroveBay_EventScript_FisherMatthew",
       "flag": "0"
     }
   ],

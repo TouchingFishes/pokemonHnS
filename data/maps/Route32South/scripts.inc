@@ -1,25 +1,23 @@
 Route32South_MapScripts::
 	.byte 0
 
-Route32South_EventScript_FisherMatthew::
-	trainerbattle_single TRAINER_MATTHEW, Route32South_Text_MatthewIntro, Route32South_Text_MatthewDefeat
-	msgbox Route32South_Text_MatthewPostBattle, MSGBOX_AUTOCLOSE
-	end
+Route32South_EventScript_SwimmerFLeah::
+trainerbattle_single TRAINER_LEAH, Route32South_Text_LeahIntro, Route32South_Text_LeahDefeat
+	msgbox Route32South_Text_LeahPostBattle, MSGBOX_AUTOCLOSE
+	end	
 
-Route32South_Text_MatthewIntro:
-	.string "Patience is key when you're\n"
-	.string "fishing.\p"
-	.string "Let's see if you've got the\n"
-	.string "same patience in battle.$"
+Route32South_Text_LeahIntro:
+	.string "Isn't the sunshine lovely?\n"
+	.string "The water feels just right!$"
 
-Route32South_Text_MatthewDefeat:
-	.string "Ah… got away…$"
+Route32South_Text_LeahDefeat:
+	.string "Oh! Was the tide against me?$"
 
-Route32South_Text_MatthewPostBattle:
-	.string "Sometimes the big catch slips\n"
-	.string "right through your fingers.\p"
-	.string "That's no reason to give up,\n"
-	.string "though.$"
+Route32South_Text_LeahPostBattle:
+	.string "My CORSOLA loves days like\n"
+	.string "this.\p"
+	.string "Warm sun, calm waves…\n"
+	.string "CHERRYGROVE BAY is perfect!$"
 
 Route32South_EventScript_SwimmerFMary::
 	trainerbattle_single TRAINER_MARY, Route32South_Text_MaryIntro, Route32South_Text_MaryDefeat
@@ -98,4 +96,24 @@ Route32South_Text_CarolinePostBattle:
 	.string "This quiet beach… and those\n"
 	.string "cherry blossoms…\n"
 	.string "they're simply perfect.$"
+
+Route32South_EventScript_DragonTamerZander::
+	trainerbattle_single TRAINER_ZANDER, Route32South_DragonTamerZander_Text_Intro, Route32South_DragonTamerZander_Text_Defeat
+	msgbox Route32South_DragonTamerZander_Text_PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route32South_DragonTamerZander_Text_Intro:
+	.string "Look up.\n"
+	.string "Someday, dragons will rule the\n"
+	.string "sky above us.\p"
+	.string "Until then… I train.$"
+
+Route32South_DragonTamerZander_Text_Defeat:
+	.string "So high… yet still outflown.$"
+
+Route32South_DragonTamerZander_Text_PostBattle:
+	.string "When dragons fly, the sky feels\n"
+	.string "endless.\p"
+	.string "That's why I train to reach\n"
+	.string "those heights.$"
 

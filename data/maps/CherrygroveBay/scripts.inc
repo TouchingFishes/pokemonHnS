@@ -6,16 +6,6 @@ CherrygroveBay_EventScript_SwimmerMTyler::
 	msgbox CherrygroveBay_Text_TylerPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-CherrygroveBay_EventScript_DragonTamerZander::
-	trainerbattle_single TRAINER_ZANDER, CherrygroveBay_DragonTamerZander_Text_Intro, CherrygroveBay_DragonTamerZander_Text_Defeat
-	msgbox CherrygroveBay_DragonTamerZander_Text_PostBattle, MSGBOX_AUTOCLOSE
-	end
-
-CherrygroveBay_EventScript_SwimmerFLeah::
-	trainerbattle_single TRAINER_LEAH, CherrygroveBay_Text_LeahIntro, CherrygroveBay_Text_LeahDefeat
-	msgbox CherrygroveBay_Text_LeahPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 CherrygroveBay_EventScript_BeautyVeronica::
 	trainerbattle_single TRAINER_VERONICA, CherrygroveBay_Text_VeronicaIntro, CherrygroveBay_Text_VeronicaDefeat
 	msgbox CherrygroveBay_Text_VeronicaPostBattle, MSGBOX_AUTOCLOSE
@@ -25,16 +15,19 @@ CherrygroveBay_EventScript_FisherAlec::
 	trainerbattle_single TRAINER_ALEC, CherrygroveBay_Text_AlecIntro, CherrygroveBay_Text_AlecDefeat
 	msgbox CherrygroveBay_Text_AlecPostBattle, MSGBOX_AUTOCLOSE
 	end
+	
+CherrygroveBay_EventScript_FisherMatthew::
+	trainerbattle_single TRAINER_MATTHEW, CherrygroveBay_Text_MatthewIntro, CherrygroveBay_Text_MatthewDefeat
+	msgbox CherrygroveBay_Text_MatthewPostBattle, MSGBOX_AUTOCLOSE
+	end
 
 CherrygroveBay_EventScript_ExpertMudSlap::
 	lock
 	faceplayer
 	goto_if_set FLAG_RECEIVED_TM_MUD_SLAP, CherrygroveBay_EventScript_ExpertMudSlap_After
-
 	msgbox CherrygroveBay_Text_ExpertMudSlap_Intro, MSGBOX_DEFAULT
 	giveitem ITEM_TM_MUD_SLAP
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
-
 	setflag FLAG_RECEIVED_TM_MUD_SLAP
 	release
 	end
@@ -44,19 +37,18 @@ CherrygroveBay_EventScript_ExpertMudSlap_After:
 	release
 	end
 
-CherrygroveBay_EventScript_Tuber::
+CherrygroveBay_EventScript_Lass::
 	lock
 	faceplayer
-	msgbox CherrygroveBay_Text_Tuber, MSGBOX_DEFAULT
+	msgbox CherrygroveBay_Text_Lass, MSGBOX_DEFAULT
 	closemessage
 	release
 	end
 
-CherrygroveBay_Text_Tuber:
+CherrygroveBay_Text_Lass:
 	.string "Whee! The water's so nice!\p"
 	.string "I could play here all day!\p"
-	.string "Hey, hey!\n"
-	.string "Do you wanna play too?$"
+	.string "Hey, hey!$"
 
 CherrygroveBay_Text_TylerIntro:
 	.string "The sea's my turf!\n"
@@ -70,34 +62,6 @@ CherrygroveBay_Text_TylerPostBattle:
 	.string "day together.\p"
 	.string "It's crazy fast… I can barely\n"
 	.string "keep up sometimes!$"
-
-CherrygroveBay_DragonTamerZander_Text_Intro:
-	.string "Look up.\n"
-	.string "Someday, dragons will rule the\n"
-	.string "sky above us.\p"
-	.string "Until then… I train.$"
-
-CherrygroveBay_DragonTamerZander_Text_Defeat:
-	.string "So high… yet still outflown.$"
-
-CherrygroveBay_DragonTamerZander_Text_PostBattle:
-	.string "When dragons fly, the sky feels\n"
-	.string "endless.\p"
-	.string "That's why I train to reach\n"
-	.string "those heights.$"
-
-CherrygroveBay_Text_LeahIntro:
-	.string "Isn't the sunshine lovely?\n"
-	.string "The water feels just right!$"
-
-CherrygroveBay_Text_LeahDefeat:
-	.string "Oh! Was the tide against me?$"
-
-CherrygroveBay_Text_LeahPostBattle:
-	.string "My CORSOLA loves days like\n"
-	.string "this.\p"
-	.string "Warm sun, calm waves…\n"
-	.string "CHERRYGROVE BAY is perfect!$"
 
 CherrygroveBay_Text_VeronicaIntro:
 	.string "This warmth is perfect for my\n"
@@ -140,3 +104,18 @@ CherrygroveBay_Text_AlecPostBattle:
 	.string "it's got incredible accuracy!\p"
 	.string "Watching it fire shots across\n"
 	.string "the water never gets old!$"
+
+CherrygroveBay_Text_MatthewIntro:
+	.string "Patience is key when you're\n"
+	.string "fishing.\p"
+	.string "Let's see if you've got the\n"
+	.string "same patience in battle.$"
+
+CherrygroveBay_Text_MatthewDefeat:
+	.string "Ah… got away…$"
+
+CherrygroveBay_Text_MatthewPostBattle:
+	.string "Sometimes the big catch slips\n"
+	.string "right through your fingers.\p"
+	.string "That's no reason to give up,\n"
+	.string "though.$"
