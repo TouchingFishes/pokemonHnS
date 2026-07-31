@@ -4510,15 +4510,10 @@ static bool8 IsHPRecoveryItem(u16 item)
 
     if (item == ITEM_ENIGMA_BERRY)
         effect = gSaveBlock1Ptr->enigmaBerry.itemEffect;
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 0) && (item != ITEM_ENIGMA_BERRY))
-        effect = gItemEffectTable_OldSitrus[item - ITEM_POTION];
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 1) && (item != ITEM_ENIGMA_BERRY))
+    else
         effect = gItemEffectTable[item - ITEM_POTION];
 
-    if (effect[4] & ITEM4_HEAL_HP)
-        return TRUE;
-    else
-        return FALSE;
+    return effect[4] & ITEM4_HEAL_HP;
 }
 
 static void GetMedicineItemEffectMessage(u16 item)
@@ -4867,9 +4862,7 @@ void ItemUseCB_PPRecovery(u8 taskId, TaskFunc task)
 
     if (item == ITEM_ENIGMA_BERRY)
         effect = gSaveBlock1Ptr->enigmaBerry.itemEffect;
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 0) && (item != ITEM_ENIGMA_BERRY))
-        effect = gItemEffectTable_OldSitrus[item - ITEM_POTION];
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 1) && (item != ITEM_ENIGMA_BERRY))
+    else
         effect = gItemEffectTable[item - ITEM_POTION];
 
     if (!(effect[4] & ITEM4_HEAL_PP_ONE))
@@ -5586,9 +5579,7 @@ u8 GetItemEffectType(u16 item)
     // Read the item's effect properties.
     if (item == ITEM_ENIGMA_BERRY)
         itemEffect = gSaveBlock1Ptr->enigmaBerry.itemEffect;
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 0) && (item != ITEM_ENIGMA_BERRY))
-        itemEffect = gItemEffectTable_OldSitrus[item - ITEM_POTION];
-    else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 1) && (item != ITEM_ENIGMA_BERRY))
+    else
         itemEffect = gItemEffectTable[item - ITEM_POTION];
 
     if ((itemEffect[0] & (ITEM0_DIRE_HIT | ITEM0_X_ATTACK)) || itemEffect[1] || itemEffect[2] || (itemEffect[3] & ITEM3_GUARD_SPEC))

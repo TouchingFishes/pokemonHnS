@@ -1165,10 +1165,10 @@ struct SaveBlock1
         u8 tx_Features_Unlimited_WT:1; //unused in HnS
         u8 tx_Mode_Synchronize:1;
         u8 tx_Mode_Mints:1;
-        u8 tx_Mode_New_Citrus:1;
+        u8 tx_Mode_SandHailBuffs:1;
         u8 tx_Mode_Modern_Types:1; //unused in HnS
-        u8 tx_Mode_Fairy_Types:1; //unused in HnS replaced by tx_Mode_TypeMode
-        u8 tx_Mode_New_Stats:1; //unused in HnS
+        u8 tx_Mode_Fairy_Types:1; //replaced by tx_Mode_TypeMode
+        u8 tx_Mode_New_Stats:1;
         u8 tx_Mode_Sturdy:1;
         u8 tx_Mode_Modern_Moves:1;
         u8 tx_Mode_Legendary_Abilities:1;

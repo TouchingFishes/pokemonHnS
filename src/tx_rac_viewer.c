@@ -117,7 +117,7 @@ static const u8 sText_InfiniteTMs_Label[]   = _("REUSABLE TMS");
 static const u8 sText_SurvivePoison_Label[] = _("SURVIVE POISON");
 static const u8 sText_Synchronize_Label[]   = _("SYNCHRONIZE");
 static const u8 sText_Mints_Label[]         = _("NATURE MINTS");
-static const u8 sText_NewCitrus_Label[]     = _("SITRUS BERRY");
+static const u8 sText_SandHailBuffs_Label[] = _("WEATHER BUFFS");
 static const u8 sText_FairyTypes_Label[]    = _("ADD FAIRY TYPE");
 static const u8 sText_Sturdy_Label[]        = _("STURDY");
 static const u8 sText_ModernMoves_Label[]   = _("{PKMN} MOVEPOOL");
@@ -417,7 +417,7 @@ static u8 GetSel_InfiniteTMs(void)        { return gSaveBlock1Ptr->tx_Mode_Infin
 static u8 GetSel_SurvivePoison(void)      { return gSaveBlock1Ptr->tx_Mode_PoisonSurvive     ? 1 : 0; }
 static u8 GetSel_Synchronize(void)        { return gSaveBlock1Ptr->tx_Mode_Synchronize       ? 1 : 0; }
 static u8 GetSel_Mints(void)              { return gSaveBlock1Ptr->tx_Mode_Mints             ? 1 : 0; }
-static u8 GetSel_NewCitrus(void)          { return gSaveBlock1Ptr->tx_Mode_New_Citrus        ? 1 : 0; }
+static u8 GetSel_SandHailBuffs(void)      { return gSaveBlock1Ptr->tx_Mode_SandHailBuffs     ? 1 : 0; }
 static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_TypeMode;                  }
 static u8 GetSel_Sturdy(void)             { return gSaveBlock1Ptr->tx_Mode_Sturdy            ? 1 : 0; }
 static u8 GetSel_ModernMoves(void)        { return gSaveBlock1Ptr->tx_Mode_Modern_Moves      ? 1 : 0; }
@@ -529,7 +529,7 @@ static const struct ViewerBoolRow sBoolRows[] = {
     { sText_ModernMoves_Label,   GetSel_ModernMoves        },
     { sText_Synchronize_Label,   GetSel_Synchronize        },
     { sText_Sturdy_Label,        GetSel_Sturdy             },
-    { sText_NewCitrus_Label,     GetSel_NewCitrus          },
+    { sText_SandHailBuffs_Label, GetSel_SandHailBuffs      },
     { sText_FairyTypes_Label,    GetSel_FairyTypes         },
     { sText_LegendaryAbils_Label,GetSel_LegendaryAbilities },
     { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
@@ -672,8 +672,8 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
         const int y = visRow * 16;
         Viewer_ClearRow(visRow, selected);
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
-                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_NewCitrus_Label);
-        u8 sel = GetSel_NewCitrus();
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_SandHailBuffs_Label);
+        u8 sel = GetSel_SandHailBuffs();
         const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "ORIGINAL"
         const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "MODERN"
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,

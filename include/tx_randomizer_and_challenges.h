@@ -58,7 +58,7 @@
 #define TX_FEATURES_UNLIMITED_WT 0
 #define TX_MODE_NEW_SYNCHRONIZE 0
 #define TX_MODE_MINTS 0
-#define TX_MODE_NEW_CITRUS 0
+#define TX_MODE_SAND_HAIL_BUFFS 0
 #define TX_MODE_MODERN_TYPES 0
 #define TX_MODE_TYPE_MODE 1 //default: altered vanilla types
 #define TX_MODE_NEW_STATS 0

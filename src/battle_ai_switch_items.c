@@ -870,22 +870,23 @@ static bool8 ShouldUseItem(void)
 
         if (i != 0 && validMons > (gBattleResources->battleHistory->itemsNo - i) + 1)
             continue;
+
         item = gBattleResources->battleHistory->trainerItems[i];
+
         if (item == ITEM_NONE)
             continue;
-        if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0)
-            if (gItemEffectTable_OldSitrus[item - ITEM_POTION] == NULL)
-                continue;
-        else if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1)
-            if (gItemEffectTable[item - ITEM_POTION] == NULL)
-                continue;
 
         if (item == ITEM_ENIGMA_BERRY)
+        {
             itemEffects = gSaveBlock1Ptr->enigmaBerry.itemEffect;
-        else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 0) && (item != ITEM_ENIGMA_BERRY))
-            itemEffects = gItemEffectTable_OldSitrus[item - ITEM_POTION];
-        else if ((gSaveBlock1Ptr->tx_Mode_New_Citrus == 1) && (item != ITEM_ENIGMA_BERRY))
+        }
+        else
+        {
             itemEffects = gItemEffectTable[item - ITEM_POTION];
+
+            if (itemEffects == NULL)
+                continue;
+        }
 
         *(gBattleStruct->AI_itemType + gActiveBattler / 2) = GetAI_ItemType(item, itemEffects);
 

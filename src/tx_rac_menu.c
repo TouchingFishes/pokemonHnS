@@ -43,7 +43,7 @@ enum
     MENUITEM_MODE_MODERN_MOVES,
     MENUITEM_MODE_SYNCHRONIZE,
     MENUITEM_MODE_STURDY,
-    MENUITEM_MODE_NEW_CITRUS,
+    MENUITEM_MODE_SAND_HAIL_BUFFS,
     MENUITEM_MODE_TYPE_MODE,
     MENUITEM_MODE_LEGENDARY_ABILITIES,
     MENUITEM_MODE_INFINITE_TMS,
@@ -317,7 +317,7 @@ static void DrawChoices_Features_Rtc_Type(int selection, int y);
 static void DrawChoices_Features_Unlimited_WT(int selection, int y);
 static void DrawChoices_Mode_Synchronize(int selection, int y);
 static void DrawChoices_Mode_Mints(int selection, int y);
-static void DrawChoices_Mode_New_Citrus(int selection, int y);
+static void DrawChoices_Mode_Sand_Hail_Buffs(int selection, int y);
 static void DrawChoices_Mode_Modern_Types(int selection, int y);
 static void DrawChoices_Mode_Fairy_Types(int selection, int y);
 static void DrawChoices_Mode_Natures(int selection, int y);
@@ -373,14 +373,14 @@ struct // MENU_MODE
     [MENUITEM_MODE_STURDY]                = {DrawChoices_Mode_Sturdy,               ProcessInput_Options_Two},
     [MENUITEM_MODE_MINTS]                 = {DrawChoices_Mode_Mints,                ProcessInput_Options_Two},
     //[MENUITEM_MODE_MODERN_TYPES]          = {DrawChoices_Mode_Modern_Types,         ProcessInput_Options_Two},
-    [MENUITEM_MODE_TYPE_MODE]           = {DrawChoices_Mode_Fairy_Types,          ProcessInput_Options_Four},
+    [MENUITEM_MODE_TYPE_MODE]             = {DrawChoices_Mode_Fairy_Types,          ProcessInput_Options_Four},
     [MENUITEM_MODE_NEW_STATS]             = {DrawChoices_Mode_New_Stats,            ProcessInput_Options_Two},
-    [MENUITEM_MODE_NEW_CITRUS]            = {DrawChoices_Mode_New_Citrus,           ProcessInput_Options_Two},
+    [MENUITEM_MODE_SAND_HAIL_BUFFS]       = {DrawChoices_Mode_Sand_Hail_Buffs,      ProcessInput_Options_Two},
     [MENUITEM_MODE_MODERN_MOVES]          = {DrawChoices_Mode_Modern_Moves,         ProcessInput_Options_Two},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {DrawChoices_Mode_Legendary_Abilities,  ProcessInput_Options_Two},
-    [MENUITEM_MODE_NATURES]               = {DrawChoices_Mode_Natures,           ProcessInput_Options_Two},
+    [MENUITEM_MODE_NATURES]               = {DrawChoices_Mode_Natures,              ProcessInput_Options_Two},
     //[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {DrawChoices_Mode_PhysicalSpecialSplit,         ProcessInput_Options_Two},
-    [MENUITEM_MODE_IGNORE_EV_CAP]         = {DrawChoices_Mode_IgnoreEVCap,  ProcessInput_Options_Two},
+    [MENUITEM_MODE_IGNORE_EV_CAP]         = {DrawChoices_Mode_IgnoreEVCap,          ProcessInput_Options_Two},
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = {DrawChoices_Mode_New_Legendaries,      ProcessInput_Options_Two},
     //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = {DrawChoices_Mode_New_Effectiveness,    ProcessInput_Options_Two},
     [MENUITEM_MODE_NEXT]                  = {NULL, NULL},
@@ -488,7 +488,7 @@ static const u8 sText_InfiniteTMs[]         = _("REUSABLE TMS");
 static const u8 sText_Poison[]              = _("SURVIVE POISON");
 static const u8 sText_Synchronize[]         = _("SYNCHRONIZE");
 static const u8 sText_Mints[]               = _("NATURE MINTS");
-static const u8 sText_NewCitrus[]           = _("SITRUS BERRY");
+static const u8 sText_SandHailBuffs[]       = _("WEATHER BUFFS");
 static const u8 sText_ModernTypes[]         = _("{COLOR 3}{SHADOW 3}POKéMON TYPES");
 static const u8 sText_FairyTypes[]          = _("TYPE CHANGES"); //was: ADD FAIRY TYPE
 static const u8 sText_NewStats[]            = _("{PKMN} STATS");
@@ -511,9 +511,9 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     [MENUITEM_MODE_SYNCHRONIZE]               = sText_Synchronize,
     [MENUITEM_MODE_STURDY]                    = sText_Sturdy,
     [MENUITEM_MODE_MINTS]                     = sText_Mints,
-    [MENUITEM_MODE_NEW_CITRUS]                = sText_NewCitrus,
+    [MENUITEM_MODE_SAND_HAIL_BUFFS]           = sText_SandHailBuffs,
     //[MENUITEM_MODE_MODERN_TYPES]              = sText_ModernTypes,
-    [MENUITEM_MODE_TYPE_MODE]               = sText_FairyTypes,
+    [MENUITEM_MODE_TYPE_MODE]                 = sText_FairyTypes,
     [MENUITEM_MODE_NEW_STATS]                 = sText_NewStats,
     [MENUITEM_MODE_MODERN_MOVES]              = sText_Modern_Moves,
     [MENUITEM_MODE_LEGENDARY_ABILITIES]       = sText_Legendary_Abilities,
@@ -691,7 +691,7 @@ static bool8 CheckConditions(int selection)
             case MENUITEM_MODE_MINTS:                     return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_SYNCHRONIZE:               return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1; //changed to 1 so it only locks the options for the first mode (classic, gonna be recommended)
             case MENUITEM_MODE_INFINITE_TMS:              return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
-            case MENUITEM_MODE_NEW_CITRUS:                return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_SAND_HAIL_BUFFS:           return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_SURVIVE_POISON:            return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             //case MENUITEM_MODE_MODERN_TYPES:              return FALSE;
             case MENUITEM_MODE_TYPE_MODE:               return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
@@ -814,8 +814,8 @@ static const u8 sText_Description_Mode_Synchronize_Old[]                = _("SYN
 static const u8 sText_Description_Mode_Synchronize_New[]                = _("SYNCHRONIZE works as in GEN VIII+.\n100% chance to copy nature.");
 static const u8 sText_Description_Mode_Mints_Off[]                      = _("Mints are not availabe ingame until\nfinishing the game.");
 static const u8 sText_Description_Mode_Mints_On[]                       = _("Mints can be bought at PRETTY PETAL\nFLOWER SHOP after the 4th medal.");
-static const u8 sText_Description_Mode_New_Citrus_Off[]                 = _("SITRUS BERRY restores 30HP.\nSame as GEN III.");
-static const u8 sText_Description_Mode_New_Citrus_On[]                  = _("SITRUS BERRY restores 25% of\ntotal HP. Same as GEN IV and up.");
+static const u8 sText_Description_Mode_SandHailBuffs_Off[]              = _("SANDSTORM and HAIL do not buff\nstats. Same as GEN III.");
+static const u8 sText_Description_Mode_SandHailBuffs_On[]               = _("SANDSTORM and HAIL buff stats.\nLike in more recent GENs.");
 static const u8 sText_Description_Mode_Modern_Types_Off[]               = _("Original {PKMN} typings. Doesn't include\n{PKMN} that got added to FAIRY in GEN VI.");
 static const u8 sText_Description_Mode_Modern_Types_On[]                = _("{PKMN} have modified typings\nto make them more viable.");
 static const u8 sText_Description_Mode_Fairy_TypeMode_Vanilla[]         = _("{PKMN} keep their classic,\noriginal, pre-balance types."); //FAIRY TYPE isn't added to {PKMN} \nthat got it in GEN VI.
@@ -850,14 +850,14 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_SURVIVE_POISON]        = {sText_Description_Mode_SurvivePoison_Off,      sText_Description_Mode_SurvivePoison_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_SYNCHRONIZE]           = {sText_Description_Mode_Synchronize_Old,        sText_Description_Mode_Synchronize_New,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MINTS]                 = {sText_Description_Mode_Mints_Off,              sText_Description_Mode_Mints_On,              sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    [MENUITEM_MODE_NEW_CITRUS]            = {sText_Description_Mode_New_Citrus_Off,         sText_Description_Mode_New_Citrus_On,         sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_SAND_HAIL_BUFFS]       = {sText_Description_Mode_SandHailBuffs_Off,      sText_Description_Mode_SandHailBuffs_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_MODERN_TYPES]          = {sText_Description_Mode_Modern_Types_Off,       sText_Description_Mode_Modern_Types_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    [MENUITEM_MODE_TYPE_MODE]           = {sText_Description_Mode_Fairy_TypeMode_Vanilla, sText_Description_Mode_Fairy_TypeMode_Altered, sText_Description_Mode_Fairy_TypeMode_VanillaFairy, sText_Description_Mode_Fairy_TypeMode_AlteredFairy, sText_Empty},
+    [MENUITEM_MODE_TYPE_MODE]             = {sText_Description_Mode_Fairy_TypeMode_Vanilla, sText_Description_Mode_Fairy_TypeMode_Altered, sText_Description_Mode_Fairy_TypeMode_VanillaFairy, sText_Description_Mode_Fairy_TypeMode_AlteredFairy, sText_Empty},
     [MENUITEM_MODE_NEW_STATS]             = {sText_Description_Mode_New_Stats_Off,          sText_Description_Mode_New_Stats_On,          sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_STURDY]                = {sText_Description_Mode_Sturdy_Off,             sText_Description_Mode_Sturdy_On,             sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MODERN_MOVES]          = {sText_Description_Mode_Modern_Moves_Off,       sText_Description_Mode_Modern_Moves_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {sText_Description_Mode_Leg_Abilities_Off,      sText_Description_Mode_Leg_Abilities_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    [MENUITEM_MODE_NATURES]                = {sText_Description_Mode_Natures_Off,           sText_Description_Mode_Natures_On,            sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_NATURES]               = {sText_Description_Mode_Natures_Off,            sText_Description_Mode_Natures_On,            sText_Empty,                                        sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {sText_Description_Mode_PhysicalSpecialSplit_Off, sText_Description_Mode_PhysicalSpecialSplit_On, sText_Empty,                                   sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_IGNORE_EV_CAP]          = {sText_Description_Mode_IgnoreEVCap_Off,       sText_Description_Mode_IgnoreEVCap_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
 
@@ -1071,9 +1071,9 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_SYNCHRONIZE]           = sText_Empty,
     [MENUITEM_MODE_STURDY]                = sText_Empty,
     [MENUITEM_MODE_MINTS]                 = sText_Empty,
-    [MENUITEM_MODE_NEW_CITRUS]            = sText_Empty,
+    [MENUITEM_MODE_SAND_HAIL_BUFFS]       = sText_Empty,
     //[MENUITEM_MODE_MODERN_TYPES]          = sText_Description_Disabled_Feature,
-    [MENUITEM_MODE_TYPE_MODE]           = sText_Empty,
+    [MENUITEM_MODE_TYPE_MODE]             = sText_Empty,
     [MENUITEM_MODE_NEW_STATS]             = sText_Empty,
     [MENUITEM_MODE_MODERN_MOVES]          = sText_Empty,
     [MENUITEM_MODE_NEXT]                  = sText_Empty,
@@ -1489,7 +1489,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = TX_MODE_SURVIVE_POISON;
         gSaveBlock1Ptr->tx_Mode_Synchronize                 = TX_MODE_NEW_SYNCHRONIZE;
         gSaveBlock1Ptr->tx_Mode_Mints                       = TX_MODE_MINTS;
-        gSaveBlock1Ptr->tx_Mode_New_Citrus                  = TX_MODE_NEW_CITRUS;
+        gSaveBlock1Ptr->tx_Mode_SandHailBuffs               = TX_MODE_SAND_HAIL_BUFFS;
         gSaveBlock1Ptr->tx_Mode_Modern_Types                = TX_MODE_MODERN_TYPES;
         gSaveBlock1Ptr->tx_Mode_TypeMode                    = TX_MODE_TYPE_MODE;
         gSaveBlock1Ptr->tx_Mode_New_Stats                   = TX_MODE_NEW_STATS;
@@ -1568,9 +1568,9 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]         = gSaveBlock1Ptr->tx_Mode_PoisonSurvive;  
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]            = gSaveBlock1Ptr->tx_Mode_Synchronize;
         sOptions->sel_mode[MENUITEM_MODE_MINTS]                  = gSaveBlock1Ptr->tx_Mode_Mints;
-        sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]             = gSaveBlock1Ptr->tx_Mode_New_Citrus;
+        sOptions->sel_mode[MENUITEM_MODE_SAND_HAIL_BUFFS]        = gSaveBlock1Ptr->tx_Mode_SandHailBuffs;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]           = gSaveBlock1Ptr->tx_Mode_Modern_Types;
-        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]            = gSaveBlock1Ptr->tx_Mode_TypeMode;
+        sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]              = gSaveBlock1Ptr->tx_Mode_TypeMode;
         sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]              = gSaveBlock1Ptr->tx_Mode_New_Stats;
         sOptions->sel_mode[MENUITEM_MODE_STURDY]                 = gSaveBlock1Ptr->tx_Mode_Sturdy;
         sOptions->sel_mode[MENUITEM_MODE_MODERN_MOVES]           = gSaveBlock1Ptr->tx_Mode_Modern_Moves;
@@ -1926,7 +1926,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     gSaveBlock1Ptr->tx_Mode_PoisonSurvive               = sOptions->sel_mode[MENUITEM_MODE_SURVIVE_POISON]; 
     gSaveBlock1Ptr->tx_Mode_Synchronize                 = sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]; 
     gSaveBlock1Ptr->tx_Mode_Mints                       = sOptions->sel_mode[MENUITEM_MODE_MINTS]; 
-    gSaveBlock1Ptr->tx_Mode_New_Citrus                  = sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]; 
+    gSaveBlock1Ptr->tx_Mode_SandHailBuffs               = sOptions->sel_mode[MENUITEM_MODE_SAND_HAIL_BUFFS]; 
     //gSaveBlock1Ptr->tx_Mode_Modern_Types                = sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]; 
     gSaveBlock1Ptr->tx_Mode_TypeMode                    = sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]; 
     gSaveBlock1Ptr->tx_Mode_New_Stats                   = sOptions->sel_mode[MENUITEM_MODE_NEW_STATS]; 
@@ -2359,8 +2359,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         sOptions->sel_mode[MENUITEM_MODE_MINTS]                     = !TX_MODE_MINTS;
         gSaveBlock1Ptr->tx_Mode_Mints = 1;
         FlagSet (FLAG_MINTS_ENABLED);
-        sOptions->sel_mode[MENUITEM_MODE_NEW_CITRUS]                = !TX_MODE_NEW_CITRUS;
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 1;
+        sOptions->sel_mode[MENUITEM_MODE_SAND_HAIL_BUFFS]           = 1;
+        gSaveBlock1Ptr->tx_Mode_SandHailBuffs = 1;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]              = TX_MODE_MODERN_TYPES;
         //gSaveBlock1Ptr->tx_Mode_Modern_Types = 0;
         sOptions->sel_mode[MENUITEM_MODE_TYPE_MODE]                 = 1; //altered no FAIRY types as default
@@ -3016,19 +3016,19 @@ static void DrawChoices_Mode_Mints(int selection, int y)
     DrawOptionMenuChoice(sText_On, GetStringRightAlignXOffset(1, sText_On, 198), y, styles[1], active);
 }
 
-static void DrawChoices_Mode_New_Citrus(int selection, int y)
+static void DrawChoices_Mode_Sand_Hail_Buffs(int selection, int y)
 {
-    bool8 active = CheckConditions(MENUITEM_MODE_NEW_CITRUS);
+    bool8 active = CheckConditions(MENUITEM_MODE_SAND_HAIL_BUFFS);
     u8 styles[2] = {0};
     styles[selection] = 1;
 
     if (selection == 0)
     {
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 0; //No new citrus, old citrus
+        gSaveBlock1Ptr->tx_Mode_SandHailBuffs = 0; //No Def / SDef Buffs by Hail / Sand
     }
     else
     {
-        gSaveBlock1Ptr->tx_Mode_New_Citrus = 1; //Yes new citrus
+        gSaveBlock1Ptr->tx_Mode_SandHailBuffs = 1; //Def / SDef Buffs by Hail / Sand
     }
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);

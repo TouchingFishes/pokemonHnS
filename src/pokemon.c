@@ -7184,8 +7184,19 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
          || gCurrentMove == MOVE_AIR_SLASH || gCurrentMove == MOVE_NIGHT_SLASH || gCurrentMove == MOVE_PSYCHO_CUT || gCurrentMove == MOVE_RAZOR_LEAF  || gCurrentMove == MOVE_SLASH
          || gCurrentMove == MOVE_AIR_CUTTER  || gCurrentMove == MOVE_CUT  || gCurrentMove == MOVE_FURY_CUTTER))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
+
     if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SANDSTORM) && attacker->ability == ABILITY_SAND_FORCE && (type == TYPE_ROCK || type == TYPE_GROUND || type == TYPE_STEEL))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
+    //also includes abilities
+    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SANDSTORM) && ((defender->type1 == TYPE_ROCK || defender->type2 == TYPE_ROCK) 
+        || ((defender->ability == ABILITY_SAND_VEIL) || (defender->ability == ABILITY_SAND_STREAM) || (defender->ability == ABILITY_SAND_FORCE))) 
+        && gSaveBlock1Ptr->tx_Mode_SandHailBuffs == 1)
+        spDefense = (150 * spDefense) / 100;
+    //also includes abilities
+    if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_HAIL) && ((defender->type1 == TYPE_ICE || defender->type2 == TYPE_ICE)
+        || ((defender->ability == ABILITY_SLUSH_RUSH) || (defender->ability == ABILITY_SNOW_WARNING) || (defender->ability == ABILITY_ICE_BODY)))
+        && gSaveBlock1Ptr->tx_Mode_SandHailBuffs == 1)
+        defense = (150 * defense) / 100;
 
     if ((attacker->species == SPECIES_SPINDA) && ((Random() % 100) <= 2))
         gBattleMovePower = (200 * gBattleMovePower) / 100;
@@ -8958,9 +8969,8 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     // Skip using the item if it won't do anything
     if (!ITEM_HAS_EFFECT(item))
         return TRUE;
-    if (gItemEffectTable[item - ITEM_POTION] == NULL && item != ITEM_ENIGMA_BERRY && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1))
-        return TRUE;
-    else if (gItemEffectTable_OldSitrus[item - ITEM_POTION] == NULL && item != ITEM_ENIGMA_BERRY && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0))
+
+    if (gItemEffectTable[item - ITEM_POTION] == NULL && item != ITEM_ENIGMA_BERRY)
         return TRUE;
 
     // Get item effect
@@ -8973,10 +8983,7 @@ bool8 PokemonUseItemEffects(struct Pokemon *mon, u16 item, u8 partyIndex, u8 mov
     }
     else
     {
-        if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0)
-            itemEffect = gItemEffectTable_OldSitrus[item - ITEM_POTION];
-        else if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1)
-            itemEffect = gItemEffectTable[item - ITEM_POTION];
+        itemEffect = gItemEffectTable[item - ITEM_POTION];
     }
 
     // Do item effect
@@ -9481,10 +9488,7 @@ bool8 HealStatusConditions(struct Pokemon *mon, u32 battlePartyId, u32 healMask,
 
 u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit)
 {
-    const u8 *temp;
-    const u8 *temp2;
     const u8 *itemEffect;
-    const u8 *itemEffect2;
     u8 offset;
     int i;
     u8 j;
@@ -9492,25 +9496,13 @@ u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit)
 
     offset = ITEM_EFFECT_ARG_START;
 
-    temp = gItemEffectTable[itemId - ITEM_POTION];
-    temp2 = gItemEffectTable_OldSitrus[itemId - ITEM_POTION];
+    itemEffect = gItemEffectTable[itemId - ITEM_POTION];
 
-    if (!temp && itemId != ITEM_ENIGMA_BERRY && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1))
-        return 0;
-    else if (!temp2 && itemId != ITEM_ENIGMA_BERRY && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0))
+    if (!itemEffect && itemId != ITEM_ENIGMA_BERRY)
         return 0;
 
-    if ((itemId == ITEM_ENIGMA_BERRY) && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1))
-    {
-        temp = gEnigmaBerries[gActiveBattler].itemEffect;
-    }
-    else if ((itemId == ITEM_ENIGMA_BERRY) && (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0))
-    {
-        temp2 = gEnigmaBerries[gActiveBattler].itemEffect;
-    }
-
-    itemEffect = temp;
-    itemEffect2 = temp;
+    if (itemId == ITEM_ENIGMA_BERRY)
+        itemEffect = gEnigmaBerries[gActiveBattler].itemEffect;
 
     for (i = 0; i < ITEM_EFFECT_ARG_START; i++)
     {
@@ -9524,12 +9516,9 @@ u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit)
                 return 0;
             break;
         case 4:
-            if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1)
-                effectFlags = itemEffect[4];
-            else if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0)
-                effectFlags = itemEffect2[4];
+            effectFlags = itemEffect[4];
             if (effectFlags & ITEM4_PP_UP)
-                effectFlags &= ~(ITEM4_PP_UP);
+                effectFlags &= ~ITEM4_PP_UP;
             j = 0;
             while (effectFlags)
             {
@@ -9569,10 +9558,7 @@ u8 GetItemEffectParamOffset(u16 itemId, u8 effectByte, u8 effectBit)
             }
             break;
         case 5:
-            if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1)
-                effectFlags = itemEffect[5];
-            else if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0)
-                effectFlags = itemEffect2[5];
+            effectFlags = itemEffect[5];
             j = 0;
             while (effectFlags)
             {
@@ -9630,12 +9616,7 @@ u8 *UseStatIncreaseItem(u16 itemId)
             itemEffect = gSaveBlock1Ptr->enigmaBerry.itemEffect;
     }
     else
-    {
-        if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 0)
-            itemEffect = gItemEffectTable_OldSitrus[itemId - ITEM_POTION];
-        else if (gSaveBlock1Ptr->tx_Mode_New_Citrus == 1)
-            itemEffect = gItemEffectTable[itemId - ITEM_POTION];
-    }
+        itemEffect = gItemEffectTable[itemId - ITEM_POTION];
 
     gPotentialItemEffectBattler = gBattlerInMenuId;
 
