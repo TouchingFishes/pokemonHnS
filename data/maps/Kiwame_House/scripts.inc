@@ -114,5 +114,3 @@ KiwameHouse_Text_UltimateTaught:
 	.string "Strike at the perfect moment,\n"
 	.string "and victory will be yours.$"
 
-
-	

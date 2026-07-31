@@ -714,7 +714,7 @@
 #define FLAG_CHOSE_HOENN_STARTERS     0x29B
 #define FLAG_CHOSE_SINNOH_STARTERS    0x29C
 #define FLAG_RECEIVED_TM_SWEET_SCENT  0x29D
-#define FLAG_UNUSED_0x29E  0x29E // Unused Flag
+#define FLAG_BERRY_MASTER_INTRO       0x29E
 #define FLAG_UNUSED_0x29F  0x29F // Unused Flag
 #define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
 #define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
