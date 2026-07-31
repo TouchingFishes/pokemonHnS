@@ -5557,6 +5557,7 @@ const union {
         .ATTRACT = TRUE,
         .ICE_PUNCH = TRUE,
         .MIMIC = TRUE,
+        .FLAME_CHARGE = TRUE,
         .ROCK_BLAST = TRUE,
         .SWIFT = TRUE,
         .MUD_SLAP = TRUE,
