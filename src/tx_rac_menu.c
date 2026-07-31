@@ -563,9 +563,9 @@ static const u8 sText_TypeEff[] =                   _("EFFECTIVENESS");
 static const u8 sText_Items[] =                     _("ITEMS");
 static const u8 sText_Chaos[] =                     _("CHAOS MODE");
 static const u8 sText_TypeMode_Vanilla[] =          _("VANILLA");
-static const u8 sText_TypeMode_Altered[] =          _("ALTERED");
+static const u8 sText_TypeMode_Altered[] =          _("V+");
 static const u8 sText_TypeMode_VanillaFairy[] =     _("FAIRY");
-static const u8 sText_TypeMode_AlteredFairy[] =     _("FAIRY ALT");
+static const u8 sText_TypeMode_AlteredFairy[] =     _("F+");
 static const u8 *const sText_TypeMode_Strings[] =
 {
     sText_TypeMode_Vanilla, sText_TypeMode_Altered, sText_TypeMode_VanillaFairy, sText_TypeMode_AlteredFairy
