@@ -307,6 +307,136 @@ PokemonLeague_ChampionsRoom_Movement_MaryLeft:
 	walk_fast_up
 	step_end
 
+PokemonLeague_ChampionsRoom_EventScript_GauntletEntry::
+	msgbox PokemonLeague_ChampionsRoom_Text_GauntletIntro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EvenScript_PickChallenger
+	end
+
+PokemonLeague_ChampionsRoom_EvenScript_PickChallenger::
+	random 12
+	switch VAR_RESULT
+	case 0, PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	case 1, PokemonLeague_ChampionsRoom_EvenScript_TrySlotClair
+	case 2, PokemonLeague_ChampionsRoom_EvenScript_TrySlotWinona
+	case 3, PokemonLeague_ChampionsRoom_EvenScript_TrySlotNorman
+	case 4, PokemonLeague_ChampionsRoom_EvenScript_TrySlotCynthia
+	case 5, PokemonLeague_ChampionsRoom_EvenScript_TrySlotDrake
+	case 6, PokemonLeague_ChampionsRoom_EvenScript_TrySlotSteven
+	case 7, PokemonLeague_ChampionsRoom_EvenScript_TrySlotYama
+	case 8, PokemonLeague_ChampionsRoom_EvenScript_TrySlotBato
+	case 9, PokemonLeague_ChampionsRoom_EvenScript_TrySlotGiovanni
+	case 10, PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	case 11, PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance::
+	goto PokemonLeague_ChampionsRoom_EventScript_FightLance
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotClair::
+	goto_if_not_defeated TRAINER_CLAIR_2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightClair
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotWinona::
+	goto_if_not_defeated TRAINER_CLAIR_2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightWinona
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotNorman::
+	goto_if_not_defeated TRAINER_CLAIR_2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightNorman
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotCynthia::
+	goto_if_not_defeated TRAINER_CLAIR_2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightCynthia
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotDrake::
+	goto_if_not_defeated TRAINER_CLAIR_2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightDrake
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotSteven::
+	goto_if_not_defeated TRAINER_STEVEN2 PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightSteven
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotYama::
+	goto_if_not_defeated TRAINER_YAMA PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightYama
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotBato::
+	goto_if_not_defeated TRAINER_BATO PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightBato
+
+PokemonLeague_ChampionsRoom_EvenScript_TrySlotGiovanni::
+	goto_if_not_defeated TRAINER_GIOVANNI PokemonLeague_ChampionsRoom_EvenScript_TrySlotLance
+	goto PokemonLeague_ChampionsRoom_EvenScript_FightGiovanni
+
+PokemonLeague_ChampionsRoom_EventScript_FightLance::
+	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LANCE, PokemonLeague_ChampionsRoom_Text_LanceGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightClair::
+	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CLAIR_2, PokemonLeague_ChampionsRoom_Text_ClairGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightWinona::
+	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WINONA_5, PokemonLeague_ChampionsRoom_Text_WinonaGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightNorman::
+	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_NORMAN_5, PokemonLeague_ChampionsRoom_Text_NormanGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightCynthia::
+	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CYNTHIA, PokemonLeague_ChampionsRoom_Text_CynthiaGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightDrake::
+	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_DRAKE, PokemonLeague_ChampionsRoom_Text_DrakeGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightSteven::
+	msgbox PokemonLeague_ChampionsRoom_Text_StevenGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_STEVEN2, PokemonLeague_ChampionsRoom_text_StevenGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_text_StevenGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightYama::
+	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_YAMA, PokemonLeague_ChampionsRoom_Text_YamaGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightBato::
+	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_BATO, PokemonLeague_ChampionsRoom_Text_BatoGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
+PokemonLeague_ChampionsRoom_EventScript_FightGiovanni::
+	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GIOVANNI, PokemonLeague_ChampionsRoom_Text_GiovanniGauntletDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletOutro, MSGBOX_DEFAULT
+	releaseall
+	end
+
 PokemonLeague_ChampionsRoom_Text_RematchBattleIntro:
     .string "LANCE: Welcome back!\p"
     .string "You've proven yourself in JOHTO,\p"
@@ -415,4 +545,198 @@ PokemonLeague_ChampionsRoom_Text_MaryNoInterview:
 PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview:
     .string "MARY: Come on! You can't blow off\n"
     .string "the interview AGAIN!$"
+
+PokemonLeague_ChampionsRoom_Text_GauntletIntro:
+	.string "So you've conquered the LEAGUE…\p"
+	.string "But the road of a true CHAMPION\n"
+	.string "doesn't end there.\p"
+	.string "Beyond these doors, powerful trainers\n"
+	.string "await you.\p"
+	.string "Each one has stood among the world's\n"
+	.string "strongest.\p"
+	.string "If you wish to call yourself a CHAMPION,\n"
+	.string "prove you can defeat them all!$"
+
+PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro:
+	.string "LANCE: So, we meet again.\p"
+	.string "You have already proven yourself\n"
+	.string "worthy of the title CHAMPION.\p"
+	.string "But a title is merely a title.\p"
+	.string "Let us see whether your strength\n"
+	.string "can withstand the power of DRAGON\n"
+	.string "POKéMON once more!$"
+
+PokemonLeague_ChampionsRoom_Text_LanceGauntletDefeat:
+	.string "LANCE: Incredible!\p"
+	.string "Your strength has grown beyond\n"
+	.string "what I imagined.$"
+
+PokemonLeague_ChampionsRoom_Text_LanceGauntletOutro:
+	.string "LANCE: I have no doubt now.\p"
+	.string "You truly belong among the world's\n"
+	.string "greatest trainers.$"
+
+PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro:
+	.string "CLAIR: Hmph. So you're the CHAMPION\n"
+	.string "everyone keeps talking about.\p"
+	.string "Don't expect me to be impressed\n"
+	.string "just because you defeated me before.\p"
+	.string "This time, I'll show you what a true\n"
+	.string "DRAGON MASTER can do!$"
+
+PokemonLeague_ChampionsRoom_Text_ClairGauntletDefeat:
+	.string "CLAIR: What?! Again?!\p"
+	.string "I refuse to believe you're this strong!$"
+
+PokemonLeague_ChampionsRoom_Text_ClairGauntletOutro:
+	.string "CLAIR: …Fine.\p"
+	.string "I'll admit it.\n"
+	.string "You've earned your place here.$"
+
+PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro:
+	.string "WINONA: The winds carried word of\n"
+	.string "your victory to me.\p"
+	.string "Yet even the strongest winds can\n"
+	.string "change direction without warning.\p"
+	.string "Let us take to the skies once more.\p"
+	.string "Show me how high a CHAMPION can fly!$"
+
+PokemonLeague_ChampionsRoom_Text_WinonaGauntletDefeat:
+	.string "WINONA: The wind has shifted…\p"
+	.string "And once again, you stand above me.$"
+
+PokemonLeague_ChampionsRoom_Text_WinonaGauntletOutro:
+	.string "WINONA: Magnificent.\p"
+	.string "Your spirit soars higher than ever.$"
+
+PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro:
+	.string "NORMAN: A CHAMPION should never\n"
+	.string "become complacent.\p"
+	.string "Strength must be tested constantly,\n"
+	.string "or it will begin to fade.\p"
+	.string "Come.\n"
+	.string "Let us see how strong you've become.$"
+
+PokemonLeague_ChampionsRoom_Text_NormanGauntletDefeat:
+	.string "NORMAN: I see…\p"
+	.string "Your training has brought you\n"
+	.string "considerably farther than before.$"
+
+PokemonLeague_ChampionsRoom_Text_NormanGauntletOutro:
+	.string "NORMAN: Excellent.\p"
+	.string "Continue challenging yourself.\n"
+	.string "That is how true strength is built.$"
+
+PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro:
+	.string "CYNTHIA: Oh, how wonderful!\p"
+	.string "I've been hoping we'd meet again.\p"
+	.string "There are few things I enjoy more\n"
+	.string "than discovering what makes a\n"
+	.string "great trainer truly great.\p"
+	.string "Shall we discover it together?$"
+
+PokemonLeague_ChampionsRoom_Text_CynthiaGauntletDefeat:
+	.string "CYNTHIA: Ah… extraordinary.\p"
+	.string "You've grown even stronger since\n"
+	.string "our last battle.$"
+
+PokemonLeague_ChampionsRoom_Text_CynthiaGauntletOutro:
+	.string "CYNTHIA: What a fascinating battle.\p"
+	.string "I wonder how much farther you can go.\n"
+	.string "I certainly hope we meet again.$"
+
+PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro:
+	.string "DRAKE: Ahoy, CHAMPION!\p"
+	.string "The sea has taught me one thing:\n"
+	.string "no matter how calm it looks,\n"
+	.string "a storm can rise at any moment.\p"
+	.string "Let's see what kind of storm\n"
+	.string "you can bring!$"
+
+PokemonLeague_ChampionsRoom_Text_DrakeGauntletDefeat:
+	.string "DRAKE: Ha! What a battle!\p"
+	.string "You've got some serious power\n"
+	.string "behind you, kid!$"
+
+PokemonLeague_ChampionsRoom_Text_DrakeGauntletOutro:
+	.string "DRAKE: Keep sailing forward, CHAMPION.\p"
+	.string "There's always another horizon\n"
+	.string "waiting beyond the last one.$"
+
+PokemonLeague_ChampionsRoom_Text_StevenGauntletIntro:
+	.string "STEVEN: I was curious when I heard\n"
+	.string "that you had entered the gauntlet.\p"
+	.string "A CHAMPION should never stop seeking\n"
+	.string "new challenges.\p"
+	.string "Let us test the strength you've\n"
+	.string "gathered on your journey.$"
+
+PokemonLeague_ChampionsRoom_Text_StevenGauntletDefeat:
+	.string "STEVEN: Fascinating…\p"
+	.string "Your strength continues to develop\n"
+	.string "like a precious stone under pressure.$"
+
+PokemonLeague_ChampionsRoom_Text_StevenGauntletOutro:
+	.string "STEVEN: Wonderful.\p"
+	.string "A battle like this reminds me why\n"
+	.string "I became a trainer in the first place.$"
+
+PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro:
+	.string "YAMA: So, you are the CHAMPION.\p"
+	.string "I've heard enough stories about you\n"
+	.string "to know that ordinary training\n"
+	.string "won't be enough.\p"
+	.string "Come, then.\n"
+	.string "Show me what you've got.$"
+
+PokemonLeague_ChampionsRoom_Text_YamaGauntletDefeat:
+	.string "YAMA: Hah!\p"
+	.string "Your strength speaks louder than\n"
+	.string "any story I've heard.$"
+
+PokemonLeague_ChampionsRoom_Text_YamaGauntletOutro:
+	.string "YAMA: That's the kind of battle\n"
+	.string "a warrior remembers.$"
+
+PokemonLeague_ChampionsRoom_Text_BatoGauntletIntro:
+	.string "BATO: A CHAMPION at last!\p"
+	.string "But titles and trophies mean little\n"
+	.string "when the battle actually begins.\p"
+	.string "Let us see what lies beneath\n"
+	.string "that proud title of yours!$"
+
+PokemonLeague_ChampionsRoom_Text_BatoGauntletDefeat:
+	.string "BATO: Hah! You've got more fight\n"
+	.string "in you than I expected!$"
+
+PokemonLeague_ChampionsRoom_Text_BatoGauntletOutro:
+	.string "BATO: Now that's a battle worth\n"
+	.string "remembering.$"
+
+PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro:
+	.string "GIOVANNI: So… the CHAMPION has come\n"
+	.string "to test himself against me.\p"
+	.string "How predictable.\p"
+	.string "Power is not inherited.\n"
+	.string "It is seized by those capable\n"
+	.string "of wielding it.\p"
+	.string "Come, then.\n"
+	.string "Let us see who truly possesses it.$"
+
+PokemonLeague_ChampionsRoom_Text_GiovanniGauntletDefeat:
+	.string "GIOVANNI: Hmph…\p"
+	.string "It seems your reputation was not\n"
+	.string "entirely undeserved.$"
+
+PokemonLeague_ChampionsRoom_Text_GiovanniGauntletOutro:
+	.string "GIOVANNI: Enjoy your victory.\p"
+	.string "There will always be someone\n"
+	.string "stronger waiting beyond it.$"
+
+PokemonLeague_ChampionsRoom_Text_GauntletComplete:
+	.string "You have overcome every challenger.\p"
+	.string "There is no doubt now.\p"
+	.string "You are truly worthy of being called\n"
+	.string "a CHAMPION.$"
+
 
