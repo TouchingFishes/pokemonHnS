@@ -19504,7 +19504,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Chow[] = { //SageGroup
 static const struct TrainerMonNoItemDefaultMoves sParty_Nico[] = { //SageGroup
     {
     .iv = 0,
-    .lvl = 3,
+    .lvl = 2,
     .species = SPECIES_BELLSPROUT,
     },
     {
@@ -19514,7 +19514,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Nico[] = { //SageGroup
     },
     {
     .iv = 0,
-    .lvl = 3,
+    .lvl = 2,
     .species = SPECIES_BELLSPROUT,
     },
 };
