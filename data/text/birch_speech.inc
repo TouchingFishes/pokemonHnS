@@ -51,6 +51,7 @@ gText_Birch_Challenge::
 	.string "All right, before we begin,\n"
 	.string "let's tailor your adventure\l"
 	.string "to your liking.\p"
+	.string "Please take your time with this.\n"
 	.string "After that, I'll ask your name.$"
 
 gText_Birch_WhatsYourName::
