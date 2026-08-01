@@ -5234,13 +5234,12 @@ static const union AnimCmd sAnim_Exploud_1[] =
 };
 static const union AnimCmd sAnim_Fomantis_1[] =
 {
-    ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
     ANIMCMD_FRAME(0, 15),
     ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(0, 25),
     ANIMCMD_FRAME(1, 15),
-    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
 static const union AnimCmd sAnim_Lurantis_1[] =
