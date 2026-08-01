@@ -710,8 +710,8 @@ AzaleaTown_Gym_Text_HiveBadgeSpeech:
 
 AzaleaTown_Gym_Text_PounceSpeech:
 	.string "TM73 contains POUNCE!\p"
-	.string "It's not just an attack-it's a\n"
-	.string "hunter's strike.\p"
+	.string "This move is like a tricky\n"
+	.string "hunter's ambush strike.\p"
 	.string "The user leaps in a flash,\n"
 	.string "slamming into the foe and\n"
 	.string "lowering their SPEED!\p"
@@ -766,8 +766,8 @@ AzaleaTown_Gym_Text_BugCatcherAlAfter:
 AzaleaTown_Gym_Text_BugManiacJoshSeen:
 	.string "You saved all the SLOWPOKE?\n"
 	.string "Whew, you're mighty!\p"
-	.string "But my grown-up POKéMON are\n"
-	.string "pretty tough too!$"
+	.string "But my incredible POKéMON\n"
+	.string "are even mightier!$"
 
 AzaleaTown_Gym_Text_BugManiacJoshBeaten:
 	.string "Urrgggh!$"
