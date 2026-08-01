@@ -1170,23 +1170,23 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
 
 static const u8 sBadgeCountLevelTable[NUM_BADGES_TOTAL + 1] =
 {
-    [0] = 4,
-    [1] = 8,
-    [2] = 12,
-    [3] = 16,
-    [4] = 20,
-    [5] = 24,
-    [6] = 28,
-    [7] = 32,
-    [8] = 36,
-    [9] = 40,
-    [10] = 43,
-    [11] = 46,
-    [12] = 49,
-    [13] = 52,
-    [14] = 55,
-    [15] = 58,
-    [16] = 61,
+    [0] = 4,    //0 Badges
+    [1] = 8,    //1 Badge
+    [2] = 12,   //2 Badges
+    [3] = 16,   //3 Badges
+    [4] = 20,   //4 Badges
+    [5] = 24,   //5 Badges
+    [6] = 28,   //6 Badges
+    [7] = 32,   //7 Badges
+    [8] = 36,   //8 Badges
+    [9] = 40,   //9 Badges
+    [10] = 43,  //10 Badges
+    [11] = 46,  //11 Badges
+    [12] = 49,  //12 Badges
+    [13] = 52,  //13 Badges
+    [14] = 55,  //14 Badges
+    [15] = 58,  //15 Badges
+    [16] = 61,  //16 Badges
 };
 
 u8 GetBadgeCount(void)

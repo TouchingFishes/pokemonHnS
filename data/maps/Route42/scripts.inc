@@ -166,7 +166,7 @@ Route42_EventScript_Tully::
 	msgbox Route42_Text_FisherTullyAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route42_EventScript_Ben::
+Route42_EventScript_Benjamin::
 	trainerbattle_single TRAINER_BENJAMIN Route42_Text_HikerBenjaminSeen, Route42_Text_HikerBenjaminBeaten
 	msgbox Route42_Text_HikerBenjaminAfter, MSGBOX_AUTOCLOSE
 	end
