@@ -13194,12 +13194,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Lola[] = { //Cooltrainer
 static const struct TrainerMonNoItemDefaultMoves sParty_Kate[] = { //CooltrainerFGroup
     {
     .iv = 0,
-    .lvl = 36,
+    .lvl = LEVEL_BASED_ON_BADGE+5,
     .species = SPECIES_CORSOLA,
     },
     {
     .iv = 0,
-    .lvl = 38,
+    .lvl = LEVEL_BASED_ON_BADGE+7,
     .species = SPECIES_CORSOREEF,
     },
 };
@@ -13208,12 +13208,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Kate[] = { //Cooltrainer
 static const struct TrainerMonNoItemDefaultMoves sParty_Irene[] = { //CooltrainerFGroup
     {
     .iv = 0,
-    .lvl = 32,
+    .lvl = LEVEL_BASED_ON_BADGE+5,
     .species = SPECIES_SHELLDER,
     },
     {
     .iv = 0,
-    .lvl = 34,
+    .lvl = LEVEL_BASED_ON_BADGE+7,
     .species = SPECIES_CLOYSTER,
     },
 };
@@ -13452,12 +13452,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cybil[] = { //Cooltraine
 static const struct TrainerMonNoItemDefaultMoves sParty_Jenn[] = { //CooltrainerFGroup
     {
     .iv = 0,
-    .lvl = 34,
+    .lvl = LEVEL_BASED_ON_BADGE+7,
     .species = SPECIES_STARYU,
     },
     {
     .iv = 0,
-    .lvl = 36,
+    .lvl = LEVEL_BASED_ON_BADGE+9,
     .species = SPECIES_STARMIE,
     },
 };
@@ -17252,17 +17252,17 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Vincent[] = { //Guitaris
 static const struct TrainerMonNoItemDefaultMoves sParty_Su[] = { //GuitaristGroup
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = LEVEL_BASED_ON_BADGE+3,
     .species = SPECIES_GRIMER,
     },
     {
     .iv = 0,
-    .lvl = 25,
+    .lvl = LEVEL_BASED_ON_BADGE+3,
     .species = SPECIES_GRIMER,
     },
     {
     .iv = 0,
-    .lvl = 27,
+    .lvl = LEVEL_BASED_ON_BADGE+5,
     .species = SPECIES_ELECTABUZZ,
     }
 };
@@ -22211,6 +22211,52 @@ static const struct TrainerMonItemCustomMoves sParty_Koga2[] = { //EliteFourGrou
 
 
 static const struct TrainerMonItemCustomMoves sParty_Lance[] = { //EliteFourGroup
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_EELEKTROSS,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_THUNDERBOLT, MOVE_DRAGON_CLAW, MOVE_FLAMETHROWER, MOVE_HYPER_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_HAXORUS,
+    .heldItem = ITEM_SILK_SCARF,
+    .moves = {MOVE_DRAGON_CLAW, MOVE_X_SCISSOR, MOVE_BRICK_BREAK, MOVE_HYPER_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 57,
+    .species = SPECIES_LUCARIO,
+    .heldItem = ITEM_BLACK_BELT,
+    .moves = {MOVE_PSYCHIC, MOVE_AURA_SPHERE, MOVE_EXTREME_SPEED, MOVE_HYPER_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_DRAGON_FANG,
+    .moves = {MOVE_OUTRAGE, MOVE_THUNDER, MOVE_FIRE_BLAST, MOVE_BLIZZARD}
+    },
+    {
+    .iv = 255,
+    .lvl = 58,
+    .species = SPECIES_AERODACTYL,
+    .heldItem = ITEM_SITRUS_BERRY,
+    .moves = {MOVE_AERIAL_ACE, MOVE_HEAD_SMASH, MOVE_EARTHQUAKE, MOVE_HYPER_BEAM}
+    },
+    {
+    .iv = 255,
+    .lvl = 59,
+    .species = SPECIES_DRAGONITE,
+    .heldItem = ITEM_LIECHI_BERRY,
+    .moves = {MOVE_TWISTER, MOVE_DRAGON_DANCE, MOVE_EARTHQUAKE, MOVE_EXTREME_SPEED}
+    },
+};
+
+
+static const struct TrainerMonItemCustomMoves sParty_LanceAlt[] = { //EliteFourGroup
     {
     .iv = 255,
     .lvl = 57,
