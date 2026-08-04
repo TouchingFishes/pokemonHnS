@@ -20,7 +20,7 @@ ChampionRoom_OnFrame::
 ChampionRoom_CloseDoor::
 	lock
 	setflag FLAG_TEMP_2
-	setflag FLAG_HIDE_CHAMPION_GAUNTLET_CHALLENGER
+	setflag FLAG_HIDE_CHAMPION_CHALLENGER
 	special DrawWholeMapView
 	applymovement OBJ_EVENT_ID_PLAYER, ChamionRoom_Movement_Enter
 	waitmovement 0
@@ -54,6 +54,11 @@ PokemonLeague_ChampionsRoom_EventScript_Lance::
 	msgbox PokemonLeague_ChampionsRoom_Text_BattleIntro, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
+	goto_if_set FLAG_CHOSE_JOHTO_STARTERS, PokemonLeague_ChampionsRoom_EventScript_Lance1UsesCharizard
+	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague_ChampionsRoom_Text_BattleWin
+	goto PokemonLeague_ChampionsRoom_EventScript_LanceOnDefeatJohto
+
+PokemonLeague_ChampionsRoom_EventScript_Lance1UsesCharizard::
 	trainerbattle_no_intro TRAINER_LANCE_1, PokemonLeague_ChampionsRoom_Text_BattleWin
 	goto PokemonLeague_ChampionsRoom_EventScript_LanceOnDefeatJohto
 
@@ -61,6 +66,11 @@ PokemonLeague_ChampionsRoom_EventScript_LanceRematch::
 	msgbox PokemonLeague_ChampionsRoom_Text_RematchBattleIntro, MSGBOX_DEFAULT
 	setflag FLAG_TEMP_3
 	setflag FLAG_TEMP_5
+	goto_if_set FLAG_CHOSE_JOHTO_STARTERS, PokemonLeague_ChampionsRoom_EventScript_Lance2UsesCharizard
+	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_BattleWin
+	goto PokemonLeague_ChampionsRoom_EventScript_LanceOnDefeatKanto
+
+PokemonLeague_ChampionsRoom_EventScript_Lance2UsesCharizard::
 	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_BattleWin
 	goto PokemonLeague_ChampionsRoom_EventScript_LanceOnDefeatKanto
 
@@ -193,13 +203,14 @@ PokemonLeague_ChampionsRoom_EventScript_LanceOnDefeatKanto::
 	delay 60
 	msgbox PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview, MSGBOX_DEFAULT
 	closemessage
-	setflag FLAG_CHAMPION_GAUNTLET_UNLOCKED
+	setflag FLAG_CHAMPION_CHALLENGER_UNLOCKED
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
 	releaseall
 	end
 
-PokemonLeague_ChampionsRoom_EventScript_GauntletEntry::
+PokemonLeague_ChampionsRoom_EventScript_ChallengerEntry::
+	goto_if_unset FLAG_CHAMPION_CHALLENGER_UNLOCKED, ChampionRoom_Trigger
 	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, PokemonLeague_ChampionsRoom_Movement_PlayerLooksAround
 	waitmovement 0
@@ -266,10 +277,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightLance::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_LanceGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_LanceGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_LanceChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_LanceChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_LanceChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightClair::
@@ -277,10 +288,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightClair::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_CLAIR_2, PokemonLeague_ChampionsRoom_Text_ClairGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_ClairGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_ClairChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CLAIR_2, PokemonLeague_ChampionsRoom_Text_ClairChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_ClairChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightWinona::
@@ -288,10 +299,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightWinona::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_WINONA_5, PokemonLeague_ChampionsRoom_Text_WinonaGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_WinonaGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_WinonaChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WINONA_5, PokemonLeague_ChampionsRoom_Text_WinonaChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_WinonaChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightNorman::
@@ -299,10 +310,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightNorman::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_NORMAN_5, PokemonLeague_ChampionsRoom_Text_NormanGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_NormanGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_NormanChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_NORMAN_5, PokemonLeague_ChampionsRoom_Text_NormanChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_NormanChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightCynthia::
@@ -310,10 +321,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightCynthia::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_CYNTHIA, PokemonLeague_ChampionsRoom_Text_CynthiaGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CYNTHIA, PokemonLeague_ChampionsRoom_Text_CynthiaChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_CynthiaChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightDrake::
@@ -321,10 +332,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightDrake::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_DrakeGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_DrakeGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_DrakeChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_LANCE_2, PokemonLeague_ChampionsRoom_Text_DrakeChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_DrakeChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightSteven::
@@ -332,10 +343,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightSteven::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_StevenGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_STEVEN2, PokemonLeague_ChampionsRoom_Text_StevenGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_StevenGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_StevenChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_STEVEN2, PokemonLeague_ChampionsRoom_Text_StevenChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_StevenChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightYama::
@@ -343,10 +354,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightYama::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_MASTER_YAMA, PokemonLeague_ChampionsRoom_Text_YamaGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_YamaGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_YamaChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MASTER_YAMA, PokemonLeague_ChampionsRoom_Text_YamaChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_YamaChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightBato::
@@ -354,10 +365,10 @@ PokemonLeague_ChampionsRoom_EventScript_FightBato::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_BATO, PokemonLeague_ChampionsRoom_Text_BatoGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_BatoGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_BatoChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_BATO, PokemonLeague_ChampionsRoom_Text_BatoChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_BatoChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
 PokemonLeague_ChampionsRoom_EventScript_FightGiovanni::
@@ -365,17 +376,17 @@ PokemonLeague_ChampionsRoom_EventScript_FightGiovanni::
 	addobject LOCALID_LEAGUE_CHALLENGER
 	applymovement LOCALID_LEAGUE_CHALLENGER, PokemonLeague_ChampionsRoom_Movement_ChallengerApproach
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_GIOVANNI, PokemonLeague_ChampionsRoom_Text_GiovanniGauntletDefeat
-	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniGauntletOutro, MSGBOX_DEFAULT
-	goto PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort
+	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniChallengerIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GIOVANNI, PokemonLeague_ChampionsRoom_Text_GiovanniChallengerDefeat
+	msgbox PokemonLeague_ChampionsRoom_Text_GiovanniChallengerOutro, MSGBOX_DEFAULT
+	goto PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort
 	end
 
-PokemonLeague_ChampionsRoom_EventScript_GauntletVictoryEscort::
+PokemonLeague_ChampionsRoom_EventScript_ChallengerVictoryEscort::
 	addobject LOCALID_LEAGUE_OAK
 	applymovement LOCALID_LEAGUE_OAK, PokemonLeague_ChampionsRoom_Movement_OakEnter
 	waitmovement 0
-	msgbox PokemonLeague_ChampionsRoom_Text_OakGauntletEscort, MSGBOX_DEFAULT
+	msgbox PokemonLeague_ChampionsRoom_Text_OakChallengerEscort, MSGBOX_DEFAULT
 	closemessage
 	setvar VAR_LEAGUE_STATE, 6
 	warpsilent MAP_POKEMON_LEAGUE_HALL_OF_FAME, 0
@@ -627,7 +638,7 @@ PokemonLeague_ChampionsRoom_Text_RematchMaryNoInterview:
     .string "MARY: Come on! You can't blow off\n"
     .string "the interview AGAIN!$"
 
-PokemonLeague_ChampionsRoom_Text_GauntletIntro:
+PokemonLeague_ChampionsRoom_Text_ChallengerIntro:
 	.string "So you've conquered the LEAGUE…\p"
 	.string "But the road of a true CHAMPION\n"
 	.string "doesn't end there.\p"
@@ -638,7 +649,7 @@ PokemonLeague_ChampionsRoom_Text_GauntletIntro:
 	.string "If you wish to call yourself a CHAMPION,\n"
 	.string "prove you can defeat them all!$"
 
-PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_LanceChallengerIntro:
 	.string "LANCE: So, we meet again.\p"
 	.string "You have already proven yourself\n"
 	.string "worthy of the title CHAMPION.\p"
@@ -647,17 +658,17 @@ PokemonLeague_ChampionsRoom_Text_LanceGauntletIntro:
 	.string "can withstand the power of DRAGON\n"
 	.string "POKéMON once more!$"
 
-PokemonLeague_ChampionsRoom_Text_LanceGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_LanceChallengerDefeat:
 	.string "LANCE: Incredible!\p"
 	.string "Your strength has grown beyond\n"
 	.string "what I imagined.$"
 
-PokemonLeague_ChampionsRoom_Text_LanceGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_LanceChallengerOutro:
 	.string "LANCE: I have no doubt now.\p"
 	.string "You truly belong among the world's\n"
 	.string "greatest trainers.$"
 
-PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_ClairChallengerIntro:
 	.string "CLAIR: Hmph. So you're the CHAMPION\n"
 	.string "everyone keeps talking about.\p"
 	.string "Don't expect me to be impressed\n"
@@ -665,16 +676,16 @@ PokemonLeague_ChampionsRoom_Text_ClairGauntletIntro:
 	.string "This time, I'll show you what a true\n"
 	.string "DRAGON MASTER can do!$"
 
-PokemonLeague_ChampionsRoom_Text_ClairGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_ClairChallengerDefeat:
 	.string "CLAIR: What?! Again?!\p"
 	.string "I refuse to believe you're this strong!$"
 
-PokemonLeague_ChampionsRoom_Text_ClairGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_ClairChallengerOutro:
 	.string "CLAIR: …Fine.\p"
 	.string "I'll admit it.\n"
 	.string "You've earned your place here.$"
 
-PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_WinonaChallengerIntro:
 	.string "WINONA: The winds carried word of\n"
 	.string "your victory to me.\p"
 	.string "Yet even the strongest winds can\n"
@@ -682,15 +693,15 @@ PokemonLeague_ChampionsRoom_Text_WinonaGauntletIntro:
 	.string "Let us take to the skies once more.\p"
 	.string "Show me how high a CHAMPION can fly!$"
 
-PokemonLeague_ChampionsRoom_Text_WinonaGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_WinonaChallengerDefeat:
 	.string "WINONA: The wind has shifted…\p"
 	.string "And once again, you stand above me.$"
 
-PokemonLeague_ChampionsRoom_Text_WinonaGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_WinonaChallengerOutro:
 	.string "WINONA: Magnificent.\p"
 	.string "Your spirit soars higher than ever.$"
 
-PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_NormanChallengerIntro:
 	.string "NORMAN: A CHAMPION should never\n"
 	.string "become complacent.\p"
 	.string "Strength must be tested constantly,\n"
@@ -698,17 +709,17 @@ PokemonLeague_ChampionsRoom_Text_NormanGauntletIntro:
 	.string "Come.\n"
 	.string "Let us see how strong you've become.$"
 
-PokemonLeague_ChampionsRoom_Text_NormanGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_NormanChallengerDefeat:
 	.string "NORMAN: I see…\p"
 	.string "Your training has brought you\n"
 	.string "considerably farther than before.$"
 
-PokemonLeague_ChampionsRoom_Text_NormanGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_NormanChallengerOutro:
 	.string "NORMAN: Excellent.\p"
 	.string "Continue challenging yourself.\n"
 	.string "That is how true strength is built.$"
 
-PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_CynthiaChallengerIntro:
 	.string "CYNTHIA: Oh, how wonderful!\p"
 	.string "I've been hoping we'd meet again.\p"
 	.string "There are few things I enjoy more\n"
@@ -716,17 +727,17 @@ PokemonLeague_ChampionsRoom_Text_CynthiaGauntletIntro:
 	.string "great trainer truly great.\p"
 	.string "Shall we discover it together?$"
 
-PokemonLeague_ChampionsRoom_Text_CynthiaGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_CynthiaChallengerDefeat:
 	.string "CYNTHIA: Ah… extraordinary.\p"
 	.string "You've grown even stronger since\n"
 	.string "our last battle.$"
 
-PokemonLeague_ChampionsRoom_Text_CynthiaGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_CynthiaChallengerOutro:
 	.string "CYNTHIA: What a fascinating battle.\p"
 	.string "I wonder how much farther you can go.\n"
 	.string "I certainly hope we meet again.$"
 
-PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_DrakeChallengerIntro:
 	.string "DRAKE: Ahoy, CHAMPION!\p"
 	.string "The sea has taught me one thing:\n"
 	.string "no matter how calm it looks,\n"
@@ -734,35 +745,35 @@ PokemonLeague_ChampionsRoom_Text_DrakeGauntletIntro:
 	.string "Let's see what kind of storm\n"
 	.string "you can bring!$"
 
-PokemonLeague_ChampionsRoom_Text_DrakeGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_DrakeChallengerDefeat:
 	.string "DRAKE: Ha! What a battle!\p"
 	.string "You've got some serious power\n"
 	.string "behind you, kid!$"
 
-PokemonLeague_ChampionsRoom_Text_DrakeGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_DrakeChallengerOutro:
 	.string "DRAKE: Keep sailing forward, CHAMPION.\p"
 	.string "There's always another horizon\n"
 	.string "waiting beyond the last one.$"
 
-PokemonLeague_ChampionsRoom_Text_StevenGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_StevenChallengerIntro:
 	.string "STEVEN: I was curious when I heard\n"
-	.string "that you had entered the gauntlet.\p"
+	.string "that you had entered the challenger.\p"
 	.string "A CHAMPION should never stop seeking\n"
 	.string "new challenges.\p"
 	.string "Let us test the strength you've\n"
 	.string "gathered on your journey.$"
 
-PokemonLeague_ChampionsRoom_Text_StevenGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_StevenChallengerDefeat:
 	.string "STEVEN: Fascinating…\p"
 	.string "Your strength continues to develop\n"
 	.string "like a precious stone under pressure.$"
 
-PokemonLeague_ChampionsRoom_Text_StevenGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_StevenChallengerOutro:
 	.string "STEVEN: Wonderful.\p"
 	.string "A battle like this reminds me why\n"
 	.string "I became a trainer in the first place.$"
 
-PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_YamaChallengerIntro:
 	.string "YAMA: So, you are the CHAMPION.\p"
 	.string "I've heard enough stories about you\n"
 	.string "to know that ordinary training\n"
@@ -770,31 +781,31 @@ PokemonLeague_ChampionsRoom_Text_YamaGauntletIntro:
 	.string "Come, then.\n"
 	.string "Show me what you've got.$"
 
-PokemonLeague_ChampionsRoom_Text_YamaGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_YamaChallengerDefeat:
 	.string "YAMA: Hah!\p"
 	.string "Your strength speaks louder than\n"
 	.string "any story I've heard.$"
 
-PokemonLeague_ChampionsRoom_Text_YamaGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_YamaChallengerOutro:
 	.string "YAMA: That's the kind of battle\n"
 	.string "a warrior remembers.$"
 
-PokemonLeague_ChampionsRoom_Text_BatoGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_BatoChallengerIntro:
 	.string "BATO: A CHAMPION at last!\p"
 	.string "But titles and trophies mean little\n"
 	.string "when the battle actually begins.\p"
 	.string "Let us see what lies beneath\n"
 	.string "that proud title of yours!$"
 
-PokemonLeague_ChampionsRoom_Text_BatoGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_BatoChallengerDefeat:
 	.string "BATO: Hah! You've got more fight\n"
 	.string "in you than I expected!$"
 
-PokemonLeague_ChampionsRoom_Text_BatoGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_BatoChallengerOutro:
 	.string "BATO: Now that's a battle worth\n"
 	.string "remembering.$"
 
-PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro:
+PokemonLeague_ChampionsRoom_Text_GiovanniChallengerIntro:
 	.string "GIOVANNI: So… the CHAMPION has come\n"
 	.string "to test himself against me.\p"
 	.string "How predictable.\p"
@@ -804,23 +815,23 @@ PokemonLeague_ChampionsRoom_Text_GiovanniGauntletIntro:
 	.string "Come, then.\n"
 	.string "Let us see who truly possesses it.$"
 
-PokemonLeague_ChampionsRoom_Text_GiovanniGauntletDefeat:
+PokemonLeague_ChampionsRoom_Text_GiovanniChallengerDefeat:
 	.string "GIOVANNI: Hmph…\p"
 	.string "It seems your reputation was not\n"
 	.string "entirely undeserved.$"
 
-PokemonLeague_ChampionsRoom_Text_GiovanniGauntletOutro:
+PokemonLeague_ChampionsRoom_Text_GiovanniChallengerOutro:
 	.string "GIOVANNI: Enjoy your victory.\p"
 	.string "There will always be someone\n"
 	.string "stronger waiting beyond it.$"
 
-PokemonLeague_ChampionsRoom_Text_GauntletComplete:
+PokemonLeague_ChampionsRoom_Text_ChallengerComplete:
 	.string "You have overcome every challenger.\p"
 	.string "There is no doubt now.\p"
 	.string "You are truly worthy of being called\n"
 	.string "a CHAMPION.$"
 
-PokemonLeague_ChampionsRoom_Text_OakGauntletEscort:
+PokemonLeague_ChampionsRoom_Text_OakChallengerEscort:
 	.string "OAK: Well done, {PLAYER}.\p"
 	.string "You have successfully defended your\n"
 	.string "title as POKéMON CHAMPION.\p"

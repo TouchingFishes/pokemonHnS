@@ -1351,7 +1351,7 @@
 #define FLAG_SYS_POKEMON_GET                         (SYSTEM_FLAGS + 0x0) // FLAG_0x860
 #define FLAG_SYS_POKEDEX_GET                         (SYSTEM_FLAGS + 0x1)
 #define FLAG_SYS_POKENAV_GET                         (SYSTEM_FLAGS + 0x2)
-#define FLAG_CHAMPION_GAUNTLET_UNLOCKED              (SYSTEM_FLAGS + 0x3) // Set after beating Lance's Kanto rematch
+#define FLAG_CHAMPION_CHALLENGER_UNLOCKED            (SYSTEM_FLAGS + 0x3) // Set after beating Lance's Kanto rematch
 #define FLAG_SYS_GAME_CLEAR                          (SYSTEM_FLAGS + 0x4)
 #define FLAG_SYS_CHAT_USED                           (SYSTEM_FLAGS + 0x5)
 #define FLAG_UNLOCKED_TRENDY_SAYINGS                 (SYSTEM_FLAGS + 0x6)
@@ -1404,7 +1404,7 @@
 #define FLAG_SYS_CRUISE_MODE                        (SYSTEM_FLAGS + 0x2D)
 
 #define FLAG_SYS_BUG_CONTEST_MODE                   (SYSTEM_FLAGS + 0x2E) 
-#define FLAG_HIDE_CHAMPION_GAUNTLET_CHALLENGER      (SYSTEM_FLAGS + 0x2F) // Unused Flag
+#define FLAG_HIDE_CHAMPION_CHALLENGER               (SYSTEM_FLAGS + 0x2F) // Unused Flag
 
 #define FLAG_SYS_TV_HOME                            (SYSTEM_FLAGS + 0x30)
 #define FLAG_SYS_TV_WATCH                           (SYSTEM_FLAGS + 0x31)
