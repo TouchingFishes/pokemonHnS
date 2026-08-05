@@ -198,8 +198,21 @@ NationalPark_Text_LadyVanilliteAfter:
 
 
 NationalPark_Normal_EventScript_Jack::
-	trainerbattle_single TRAINER_JACK NationalPark_Normal_Text_SchoolboyJack1_Seen, NationalPark_Normal_Text_SchoolboyJack1_Beaten
+	trainerbattle_single TRAINER_JACK, NationalPark_Normal_Text_SchoolboyJack1_Seen, NationalPark_Normal_Text_SchoolboyJack1_Beaten, NationalPark_Normal_EventScript_TryRegisterJack
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, NationalPark_Normal_EventScript_RematchJack
 	msgbox NationalPark_Normal_Text_SchoolboyJack_After, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_Normal_EventScript_RematchJack::
+	trainerbattle_rematch TRAINER_JACK, NationalPark_Normal_Text_JackRematchIntro, NationalPark_Normal_Text_JackRematchDefeat
+	msgbox NationalPark_Normal_Text_JackPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+NationalPark_Normal_EventScript_TryRegisterJack::
+	msgbox NationalPark_Normal_Text_JackRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_JACK
+	release
 	end
 
 NationalPark_Normal_EventScript_Beverly::
@@ -239,6 +252,29 @@ NationalPark_Normal_Text_SchoolboyJack_After:
 	.string "For example…\p"
 	.string "There are 50 kinds of TMs.\p"
 	.string "Traded POKéMON level up faster.$"
+
+NationalPark_Normal_Text_JackRegisterPrompt:
+	.string "That battle taught me a lot!\p"
+	.string "I'd like to show you what I've\n"
+	.string "learned the next time we meet.\p"
+	.string "Can I get your number?$"
+
+NationalPark_Normal_Text_JackRematchIntro:
+	.string "Oh, it's you!\p"
+	.string "I've been studying and training\n"
+	.string "since our last battle.\p"
+	.string "I think I'm ready to show you\n"
+	.string "what I've learned!$"
+
+NationalPark_Normal_Text_JackRematchDefeat:
+	.string "I studied so hard…\p"
+	.string "But I still couldn't win!$"
+
+NationalPark_Normal_Text_JackPostRematch:
+	.string "I learned even more from that\n"
+	.string "battle!\p"
+	.string "I'll keep studying until I can\n"
+	.string "finally surprise you!$"
 
 NationalPark_Normal_Text_PokefanFBeverly1_Seen:
 	.string "My POKéMON are simply darling.\p"

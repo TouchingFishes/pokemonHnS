@@ -17,8 +17,21 @@ Route32_EventScript_FisherJustin::
 	end
 
 Route32_EventScript_FisherRalph::
-	trainerbattle_single TRAINER_RALPH Route32_Text_FisherRalph1_Seen, Route32_Text_FisherRalph1_Beaten
+	trainerbattle_single TRAINER_RALPH, Route32_Text_FisherRalph1_Seen, Route32_Text_FisherRalph1_Beaten, Route32_EventScript_TryRegisterRalph
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route32_EventScript_RematchRalph
 	msgbox Route32_Text_FisherRalph1_After, MSGBOX_AUTOCLOSE
+	end
+
+Route32_EventScript_RematchRalph::
+	trainerbattle_rematch TRAINER_RALPH, Route32_Text_RalphRematchIntro, Route32_Text_RalphRematchDefeat
+	msgbox Route32_Text_RalphPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route32_EventScript_TryRegisterRalph::
+	msgbox Route32_Text_RalphRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_RALPH
+	release
 	end
 
 Route32_EventScript_FisherHenry::
@@ -42,8 +55,21 @@ Route32_EventScript_CamperRoland::
 	end
 
 Route32_EventScript_PicnickerLiz::
-	trainerbattle_single TRAINER_LIZ Route32_Text_PicnickerLiz1_Seen, Route32_Text_PicnickerLiz1_Beaten
+	trainerbattle_single TRAINER_LIZ, Route32_Text_PicnickerLiz1_Seen, Route32_Text_PicnickerLiz1_Beaten, Route32_EventScript_TryRegisterLiz
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route32_EventScript_RematchLiz
 	msgbox Route32_Text_PicnickerLiz1_After, MSGBOX_AUTOCLOSE
+	end
+
+Route32_EventScript_RematchLiz::
+	trainerbattle_rematch TRAINER_LIZ, Route32_Text_LizRematchIntro, Route32_Text_LizRematchDefeat
+	msgbox Route32_Text_LizPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route32_EventScript_TryRegisterLiz::
+	msgbox Route32_Text_LizRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_LIZ
+	release
 	end
 
 Route32_EventScript_BirdkeeperPeter::
@@ -402,6 +428,27 @@ Route32_Text_FisherRalph1_After:
 	.string "passion.\p"
 	.string "POKéMON are lifelong friends!$"
 
+Route32_Text_RalphRegisterPrompt:
+	.string "Hey! You're a good trainer!\p"
+	.string "I'd like to have another battle\n"
+	.string "with you sometime.\p"
+	.string "Can I get your number?$"
+
+Route32_Text_RalphRematchIntro:
+	.string "Well, well! Fancy seeing you here!\p"
+	.string "I've been out fishing and training\n"
+	.string "my POKéMON since we last met.\p"
+	.string "Let's see what I've reeled in!$"
+
+Route32_Text_RalphRematchDefeat:
+	.string "What a catch…\n"
+	.string "And it's another loss for me!$"
+
+Route32_Text_RalphPostRematch:
+	.string "That was a fine battle!\p"
+	.string "I'll keep fishing and training.\n"
+	.string "Maybe next time I'll land a win!$"
+
 Route32_Text_FisherHenry_Seen:
 	.string "My POKéMON? Freshly caught!$"
 
@@ -458,6 +505,27 @@ Route32_Text_PicnickerLiz1_Beaten:
 
 Route32_Text_PicnickerLiz1_After:
 	.string "I was having a nice chat too.$"
+
+Route32_Text_LizRegisterPrompt:
+	.string "Hey! You're a really good trainer!\p"
+	.string "I'd love to have another battle\n"
+	.string "with you sometime.\p"
+	.string "Can I get your number?$"
+
+Route32_Text_LizRematchIntro:
+	.string "Oh, it's you!\p"
+	.string "I've been waiting for another\n"
+	.string "chance to battle you!\p"
+	.string "This time, I'm ready for you!$"
+
+Route32_Text_LizRematchDefeat:
+	.string "Oh, no! I lost again!\p"
+	.string "I thought I was ready this time…$"
+
+Route32_Text_LizPostRematch:
+	.string "That was so much fun!\p"
+	.string "I'll keep training until I can\n"
+	.string "finally beat you!$"
 
 Route32_Text_BirdKeeperPeter_Seen:
 	.string "That BADGE! It's from VIOLET CITY!\n"

@@ -2359,7 +2359,7 @@ static bool8 IsTrainerReadyForRematch_(const struct RematchTrainer *table, u16 t
 
 static bool32 CanAccessFinalRematchTier(void)
 {
-    return (FlagGet(FLAG_IS_CHAMPION) && GetBadgeCount >= FINAL_REMATCH_TIER_BADGE_REQUIRED);
+    return (GetBadgeCount() >= FINAL_REMATCH_TIER_BADGE_REQUIRED);
 }
 
 static u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 firstBattleTrainerId)
@@ -2376,7 +2376,7 @@ static u16 GetRematchTrainerIdFromTable(const struct RematchTrainer *table, u16 
     {
         if (trainerEntry->trainerIds[i] == 0) // previous entry was this trainer's last one
             return trainerEntry->trainerIds[i - 1];
-        if (i == FINAL_REMATCH_TIER_INDEX && !CanAccessFinalRematchTier)
+        if (i == FINAL_REMATCH_TIER_INDEX && !CanAccessFinalRematchTier())
             return trainerEntry->trainerIds[i - 1]; //capped at tier2 until player is champ AND has 9th badge
         if (!HasTrainerBeenFought(trainerEntry->trainerIds[i]))
             return trainerEntry->trainerIds[i];

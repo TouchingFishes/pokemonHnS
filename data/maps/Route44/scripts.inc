@@ -8,9 +8,22 @@ Route44_OnTransition:
 	end
 
 Route44_EventScript_Wilton::
-	trainerbattle_single TRAINER_WILTON Route44_Text_FisherWilton1Seen, Route44_Text_FisherWilton1Beaten
-	msgbox Route44_Text_FisherWiltonHugePoliwag, MSGBOX_AUTOCLOSE
-	end
+    trainerbattle_single TRAINER_WILTON, Route44_Text_FisherWilton1Seen, Route44_Text_FisherWilton1Beaten, Route44_EventScript_TryRegisterWilton
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route44_EventScript_RematchWilton
+    msgbox Route44_Text_FisherWiltonHugePoliwag, MSGBOX_AUTOCLOSE
+    end
+
+Route44_EventScript_RematchWilton::
+    trainerbattle_rematch TRAINER_WILTON, Route44_Text_WiltonRematchIntro, Route44_Text_WiltonRematchDefeat
+    msgbox Route44_Text_WiltonPostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route44_EventScript_TryRegisterWilton::
+    msgbox Route44_Text_WiltonRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_WILTON
+    release
+    end
 
 Route44_EventScript_Edgar::
 	trainerbattle_single TRAINER_EDGAR Route44_Text_FisherEdgarSeen, Route44_Text_FisherEdgarBeaten
@@ -18,8 +31,21 @@ Route44_EventScript_Edgar::
 	end
 
 Route44_EventScript_Vance::
-	trainerbattle_single TRAINER_VANCE Route44_Text_BirdKeeperVance1Seen, Route44_Text_BirdKeeperVance1Beaten
+	trainerbattle_single TRAINER_VANCE, Route44_Text_BirdKeeperVance1Seen, Route44_Text_BirdKeeperVance1Beaten, Route44_EventScript_TryRegisterVance
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route44_EventScript_RematchVance
 	msgbox Route44_Text_BirdKeeperVanceBirds, MSGBOX_AUTOCLOSE
+	end
+
+Route44_EventScript_RematchVance::
+	trainerbattle_rematch TRAINER_VANCE, Route44_Text_VanceRematchIntro, Route44_Text_VanceRematchDefeat
+	msgbox Route44_Text_VancePostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route44_EventScript_TryRegisterVance::
+	msgbox Route44_Text_VanceRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_VANCE
+	release
 	end
 
 Route44_EventScript_Phil::
@@ -81,6 +107,29 @@ Route44_Text_FisherWiltonHugePoliwag:
     .string "I swear it must've been\n"
     .string "16 feet long!$"
 
+Route44_Text_WiltonRegisterPrompt:
+    .string "You've got some real fishing skill!\p"
+    .string "I'd like to battle you again\n"
+    .string "sometime.\p"
+    .string "Can I get your number?$"
+
+Route44_Text_WiltonRematchIntro:
+    .string "Ah, there you are!\p"
+    .string "I've been spending plenty of time\n"
+    .string "fishing since our last battle.\p"
+    .string "And my SEAKING has gotten even\n"
+    .string "bigger! Just you wait and see!$"
+
+Route44_Text_WiltonRematchDefeat:
+    .string "Oh, no!\p"
+    .string "Even my enormous SEAKING couldn't\n"
+    .string "pull off a win!$"
+
+Route44_Text_WiltonPostRematch:
+    .string "What a battle!\p"
+    .string "My SEAKING is still growing,\n"
+    .string "so don't think I'm giving up!$"
+
 Route44_Text_FisherEdgarSeen:
     .string "I fish until I can't anymore.\p"
     .string "I also battle until I drop.\p"
@@ -106,6 +155,27 @@ Route44_Text_BirdKeeperVanceBirds:
     .string "the three legendary bird POKéMON.\p"
     .string "I heard there are other legendary\n"
     .string "birds, though.$"
+
+Route44_Text_VanceRegisterPrompt:
+	.string "You're quite a trainer!\p"
+	.string "I'd like to battle you again\n"
+	.string "sometime.\p"
+	.string "Can I get your number?$"
+
+Route44_Text_VanceRematchIntro:
+	.string "Oh! It's you!\p"
+	.string "I've been studying legendary\n"
+	.string "bird POKéMON since we last met!\p"
+	.string "Let's see how much I've learned!$"
+
+Route44_Text_VanceRematchDefeat:
+	.string "Whew! You're still hot stuff!$"
+
+Route44_Text_VancePostRematch:
+	.string "ARTICUNO, ZAPDOS and MOLTRES…\p"
+	.string "They're not the only legendary\n"
+	.string "POKéMON worth studying.\p"
+	.string "I'll keep searching for more!$"
 
 Route44_Text_PsychicPhilSeen:
     .string "I'm gonna win, for sure!$"

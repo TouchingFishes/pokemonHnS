@@ -38,8 +38,21 @@ Route35_EventScript_JugglerIrwin::
 	end
 
 Route35_EventScript_BugCatcherArnie::
-	trainerbattle_single TRAINER_ARNIE Route35_Text_BugCatcherArnieSeen, Route35_Text_BugCatcherArnieBeaten
+	trainerbattle_single TRAINER_ARNIE, Route35_Text_BugCatcherArnieSeen, Route35_Text_BugCatcherArnieBeaten, Route35_EventScript_TryRegisterArnie
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route35_EventScript_RematchArnie
 	msgbox Route35_Text_BugCatcherArnieAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route35_EventScript_RematchArnie::
+	trainerbattle_rematch TRAINER_ARNIE, Route35_Text_ArnieRematchIntro, Route35_Text_ArnieRematchDefeat
+	msgbox Route35_Text_ArniePostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route35_EventScript_TryRegisterArnie::
+	msgbox Route35_Text_ArnieRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ARNIE
+	release
 	end
 
 Route35_EventScript_FirebreatherWalt::
@@ -53,9 +66,22 @@ Route35_EventScript_PolicemanDirk::
 	end
 
 Route35_EventScript_GuitaristSu::
-	trainerbattle_single TRAINER_SU Route35_Text_SuSeenText, Route35_Text_SuBeatenText
-    msgbox Route35_Text_SuAfterBattleText, MSGBOX_AUTOCLOSE
-    end
+	trainerbattle_single TRAINER_SU, Route35_Text_SuSeenText, Route35_Text_SuBeatenText, Route35_EventScript_TryRegisterSu
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route35_EventScript_RematchSu
+	msgbox Route35_Text_SuAfterBattleText, MSGBOX_AUTOCLOSE
+	end
+
+Route35_EventScript_RematchSu::
+	trainerbattle_rematch TRAINER_SU, Route35_Text_SuRematchIntro, Route35_Text_SuRematchDefeat
+	msgbox Route35_Text_SuPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route35_EventScript_TryRegisterSu::
+	msgbox Route35_Text_SuRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_SU
+	release
+	end
 
 Route35_EventScript_BreederM_Cory::
 	trainerbattle_single TRAINER_CORY, Route35_Text_CoryIntro, Route35_Text_CoryDefeat
@@ -158,7 +184,7 @@ Route35_Text_JugglerIrwinAfter:
 	.string "But your prowess electrified me!$"
 
 Route35_Text_BugCatcherArnieSeen:
-	.string "I'll go anywhere if bug POKéMON\n"
+	.string "I'll go anywhere if BUG POKéMON\n"
 	.string "appear there.$"
 
 Route35_Text_BugCatcherArnieBeaten:
@@ -171,6 +197,29 @@ Route35_Text_BugCatcherArnieAfter:
 Route35_Text_BugCatcherArnieYanma:
 	.string "Wow… Look at all those YANMA!\p"
 	.string "I'm so blown away, I can't move.$"
+
+Route35_Text_ArnieRegisterPrompt:
+	.string "You're a pretty interesting trainer!\p"
+	.string "I'd like to see how my BUG POKéMON\n"
+	.string "match up against you again.\p"
+	.string "Can I get your number?$"
+
+Route35_Text_ArnieRematchIntro:
+	.string "I've been traveling all over\n"
+	.string "looking for rare BUG POKéMON!\p"
+	.string "I've learned a lot since our last\n"
+	.string "battle.\p"
+	.string "Let's see how my POKéMON have grown!$"
+
+Route35_Text_ArnieRematchDefeat:
+	.string "Huh? I shouldn't have lost that\n"
+	.string "again…$"
+
+Route35_Text_ArniePostRematch:
+	.string "Every battle teaches me something\n"
+	.string "new about raising BUG POKéMON.\p"
+	.string "I'll keep searching for stronger\n"
+	.string "bugs wherever I go!$"
 
 Route35_Text_FirebreatherWaltSeen:
 	.string "I'm practicing my fire breathing.$"
@@ -207,6 +256,30 @@ Route35_Text_SuBeatenText:
 Route35_Text_SuAfterBattleText:
     .string "Sometimes, escaping the city\n"
     .string "is the best way to find your rhythm.$"
+
+Route35_Text_SuRegisterPrompt:
+	.string "You're pretty good!\p"
+	.string "I'd like to battle you again\n"
+	.string "sometime.\p"
+	.string "Can I get your number?$"
+
+Route35_Text_SuRematchIntro:
+	.string "Ah... there you are.\p"
+	.string "I've been relaxing by the berry\n"
+	.string "trees and practicing my music.\p"
+	.string "Let's see if I can find my rhythm\n"
+	.string "in battle, too.$"
+
+Route35_Text_SuRematchDefeat:
+	.string "Hmm... I still couldn't find\n"
+	.string "the right rhythm.$"
+
+Route35_Text_SuPostRematch:
+	.string "That battle gave me a new idea\n"
+	.string "for a song…\p"
+	.string "I'd like to battle you again when\n"
+	.string "I've found the right rhythm.\p"
+	.string "Can I get your number?$"
 
 Route35_Text_CoryIntro:
 	.string "I just picked up my POKéMON from\n"

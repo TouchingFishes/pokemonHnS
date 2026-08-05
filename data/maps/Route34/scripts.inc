@@ -26,13 +26,39 @@ Route34_EventScript_CollectorIan::
 	end
 
 Route34_EventScript_CamperTodd::
-	trainerbattle_single TRAINER_TODD Route34_Text_CamperTodd_Seen, Route34_Text_CamperTodd_Beaten
+	trainerbattle_single TRAINER_TODD, Route34_Text_CamperTodd_Seen, Route34_Text_CamperTodd_Beaten, Route34_EventScript_TryRegisterTodd
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route34_EventScript_RematchTodd
 	msgbox Route34_Text_CamperTodd_After, MSGBOX_AUTOCLOSE
 	end
 
+Route34_EventScript_RematchTodd::
+	trainerbattle_rematch TRAINER_TODD, Route34_Text_ToddRematchIntro, Route34_Text_ToddRematchDefeat
+	msgbox Route34_Text_ToddPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route34_EventScript_TryRegisterTodd::
+	msgbox Route34_Text_ToddRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TODD
+	release
+	end
+
 Route34_EventScript_PicnickerGina::
-	trainerbattle_single TRAINER_GINA Route34_Text_PicnickerGina_Seen, Route34_Text_PicnickerGina_Beaten
+	trainerbattle_single TRAINER_GINA, Route34_Text_PicnickerGina_Seen, Route34_Text_PicnickerGina_Beaten, Route34_EventScript_TryRegisterGina
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route34_EventScript_RematchGina
 	msgbox Route34_Text_PicnickerGina_After, MSGBOX_AUTOCLOSE
+	end
+
+Route34_EventScript_RematchGina::
+	trainerbattle_rematch TRAINER_GINA, Route34_Text_GinaRematchIntro, Route34_Text_GinaRematchDefeat
+	msgbox Route34_Text_GinaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route34_EventScript_TryRegisterGina::
+	msgbox Route34_Text_GinaRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_GINA
+	release
 	end
 
 Route34_EventScript_OfficerKeith::
@@ -133,6 +159,28 @@ Route34_Text_CamperTodd_After:
 	.string "Maybe I should take one to DAY-CARE,\n"
 	.string "or maybe use some items…$"
 
+Route34_Text_ToddRegisterPrompt:
+	.string "I need to figure out where I went\n"
+	.string "wrong with my training.\p"
+	.string "A rematch with you could help me\n"
+	.string "work it out.\p"
+	.string "Can I get your number?$"
+
+Route34_Text_ToddRematchIntro:
+	.string "I've been working hard on my\n"
+	.string "POKéMON training since we met!\p"
+	.string "I've tried some new techniques,\n"
+	.string "too.\p"
+	.string "Let's see if they paid off!$"
+
+Route34_Text_ToddRematchDefeat:
+	.string "Did I still mess up my training?$"	
+
+Route34_Text_ToddPostRematch:
+	.string "Maybe I need to train even harder.\p"
+	.string "I'll figure out what works best\n"
+	.string "for my POKéMON!$"
+
 Route34_Text_PicnickerGina_Seen:
 	.string "Are you a TRAINER?\p"
 	.string "Let's have a practice battle.$"
@@ -143,6 +191,28 @@ Route34_Text_PicnickerGina_Beaten:
 Route34_Text_PicnickerGina_After:
 	.string "You're too strong to be a\n"
 	.string "practice partner.$"
+
+Route34_Text_GinaRegisterPrompt:
+	.string "You're definitely not just a\n"
+	.string "practice partner anymore!\p"
+	.string "I'd really like another chance\n"
+	.string "to battle you.\p"
+	.string "Can I get your number?$"
+
+Route34_Text_GinaRematchIntro:
+	.string "It's time for another practice\n"
+	.string "battle!\p"
+	.string "I've been training hard since we\n"
+	.string "last met.\p"
+	.string "This time, I'll be ready for you!$"
+
+Route34_Text_GinaRematchDefeat:
+	.string "Oh, no! I still can't win…$"
+
+Route34_Text_GinaPostRematch:
+	.string "I guess I need even more practice!\p"
+	.string "But battling you is a great way\n"
+	.string "to improve!$"
 
 Route34_Text_OfficerKeith_Seen:
 	.string "Who goes there?\n"

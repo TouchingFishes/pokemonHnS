@@ -8,8 +8,21 @@ Route31_OnTransition:
 	end
 
 Route31_EventScript_Bugcatcher_Wade::
-	trainerbattle_single TRAINER_WADE, Route31_Text_BugCatcherWade1_Seen, Route31_Text_BugCatcherWade1_Beaten
+	trainerbattle_single TRAINER_WADE, Route31_Text_BugCatcherWade1_Seen, Route31_Text_BugCatcherWade1_Beaten, Route31_EventScript_TryRegisterWade
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route31_EventScript_RematchWade
 	msgbox Route31_Text_BugCatcherWade1_After, MSGBOX_AUTOCLOSE
+	end
+
+Route31_EventScript_RematchWade::
+	trainerbattle_rematch TRAINER_WADE, Route31_Text_WadeRematchIntro, Route31_Text_WadeRematchDefeat
+	msgbox Route31_Text_WadePostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route31_EventScript_TryRegisterWade::
+	msgbox Route31_Text_WadeRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_WADE
+	release
 	end
 
 Route31_EventScript_Lady_Priscilla::
@@ -109,6 +122,28 @@ Route31_Text_BugCatcherWade1_After:
 	.string "you have six with you.\p"
 	.string "If you catch one, it'll go to\n"
 	.string "your BOX automatically.$"
+
+Route31_Text_WadeRegisterPrompt:
+	.string "Hey! You're a pretty good trainer!\p"
+	.string "I'd like to battle you again sometime.\p"
+	.string "Can I get your number?$"
+
+Route31_Text_WadeRematchIntro:
+	.string "Oh, it's you!\p"
+	.string "I've been raising my BUG POKéMON\n"
+	.string "since our last battle.\p"
+	.string "Let's see how much stronger\n"
+	.string "we've become!$"
+
+Route31_Text_WadeRematchDefeat:
+	.string "Nooo! My BUG POKéMON lost again!\p"
+	.string "I guess we've still got more\n"
+	.string "training to do…$"
+
+Route31_Text_WadePostRematch:
+	.string "That was a great battle!\p"
+	.string "I'll keep training my BUG POKéMON\n"
+	.string "until we can beat you!$"
 
 Route31_Text_PriscillaSeen:
 	.string "Oh! Do be careful!\p"
