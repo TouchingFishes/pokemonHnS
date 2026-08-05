@@ -55,8 +55,21 @@ Route30_EventScript_Youngster_Joey_Fighting::
 
 
 Route30_EventScript_Youngster_Joey::
-	trainerbattle_single TRAINER_JOEY, Route30_Text_YoungsterJoey1Seen, Route30_Text_YoungsterJoey1Beaten
+	trainerbattle_single TRAINER_JOEY, Route30_Text_YoungsterJoey1Seen, Route30_Text_YoungsterJoey1Beaten, Route30_EventScript_TryRegisterJoey
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route30_EventScript_RematchJoey
 	msgbox Route30_Text_YoungsterJoey1After, MSGBOX_AUTOCLOSE
+	end
+
+Route30_EventScript_RematchJoey::
+	trainerbattle_rematch TRAINER_JOEY, Route30_Text_JoeyRematchIntro, Route30_Text_JoeyRematchDefeat
+	msgbox Route30_Text_JoeyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route30_EventScript_TryRegisterJoey::
+	msgbox Route30_Text_JoeyRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_JOEY
+	release
 	end
 
 Route30_EventScript_Youngster_Mikey::
@@ -147,6 +160,27 @@ Route30_Text_YoungsterMikeyAfter:
 	.string "really tough.\p"
 	.string "I'm going to battle other\n"
 	.string "people to get better.$"
+
+Route30_Text_JoeyRegisterPrompt:
+	.string "Hey, you were pretty strong!\p"
+	.string "Let's keep battling so I can get\n"
+	.string "stronger too!\p"
+	.string "Can I get your number?$"
+
+Route30_Text_JoeyRematchIntro:
+	.string "Hey! I knew we'd battle again!\p"
+	.string "I've been training hard since\n"
+	.string "last time. Let's go, {PLAYER}!$"
+
+Route30_Text_JoeyPostRematch:
+	.string "Whoa! You beat me again!\p"
+	.string "I'll keep training until I can\n"
+	.string "finally beat you!$"
+
+Route30_Text_JoeyRematchDefeat:
+	.string "Aw, man! I lost again!\p"
+	.string "I really thought I had you this\n"
+	.string "time…$"
 
 Route30_Text_BugCatcherDonSeen:
 	.string "Instead of a bug POKéMON,\n"

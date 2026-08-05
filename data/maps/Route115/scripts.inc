@@ -107,7 +107,7 @@ Route115_EventScript_Hector::
 	end
 
 Route115_EventScript_Kyra::
-	trainerbattle_single TRAINER_KYRA, Route115_Text_KyraIntro, Route115_Text_KyraDefeat
+	trainerbattle_single TRAINER_ROSE, Route115_Text_KyraIntro, Route115_Text_KyraDefeat
 	msgbox Route115_Text_KyraPostBattle, MSGBOX_AUTOCLOSE
 	end
 

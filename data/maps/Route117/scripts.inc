@@ -221,7 +221,7 @@ Route117_EventScript_Melina::
 	end
 
 Route117_EventScript_Brandi::
-	trainerbattle_single TRAINER_BRANDI, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
+	trainerbattle_single TRAINER_MELINA, Route117_Text_BrandiIntro, Route117_Text_BrandiDefeat
 	msgbox Route117_Text_BrandiPostBattle, MSGBOX_AUTOCLOSE
 	end
 

@@ -66,7 +66,7 @@
       "movement_range_y": 4,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route43_EventScript_Ben",
+      "script": "Route43_EventScript_Benjamin",
       "flag": "0"
     },
     {

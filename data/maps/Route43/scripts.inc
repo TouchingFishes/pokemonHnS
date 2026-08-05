@@ -8,9 +8,9 @@ Route43_MapScript_OnTransition::
 	callnative SetTimeBasedEncounters
 	end
 
-Route43_EventScript_Ben::
-	trainerbattle_single TRAINER_BEN Route43_Text_PokemaniacBenSeen, Route43_Text_PokemaniacBenBeaten
-	msgbox Route43_Text_PokemaniacBenAfter, MSGBOX_AUTOCLOSE
+Route43_EventScript_Benjamin::
+	trainerbattle_single TRAINER_BENJAMIN Route43_Text_PokemaniacBenjaminSeen, Route43_Text_PokemaniacBenjaminBeaten
+	msgbox Route43_Text_PokemaniacBenjaminAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route43_EventScript_Brent::
@@ -50,15 +50,15 @@ Route43_EventScript_Item_Max_Ether::
 	finditem ITEM_MAX_ETHER
 	end
 
-Route43_Text_PokemaniacBenSeen:
+Route43_Text_PokemaniacBenjaminSeen:
     .string "I love POKéMON!\p"
     .string "That's why I started--and why I'll\n"
     .string "keep on collecting POKéMON!$"
 
-Route43_Text_PokemaniacBenBeaten:
+Route43_Text_PokemaniacBenjaminBeaten:
     .string "How could you do this to me?$"
 
-Route43_Text_PokemaniacBenAfter:
+Route43_Text_PokemaniacBenjaminAfter:
     .string "What else do I like besides\n"
     .string "POKéMON?\p"
     .string "MARY on the radio. I bet she's\n"

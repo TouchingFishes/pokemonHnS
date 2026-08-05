@@ -166,9 +166,9 @@ Route42_EventScript_Tully::
 	msgbox Route42_Text_FisherTullyAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route42_EventScript_Benjamin::
-	trainerbattle_single TRAINER_BENJAMIN Route42_Text_HikerBenjaminSeen, Route42_Text_HikerBenjaminBeaten
-	msgbox Route42_Text_HikerBenjaminAfter, MSGBOX_AUTOCLOSE
+Route42_EventScript_Ben::
+	trainerbattle_single TRAINER_BEN Route42_Text_HikerBenSeen, Route42_Text_HikerBenBeaten
+	msgbox Route42_Text_HikerBenAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route42_EventScript_Shane::
@@ -214,15 +214,15 @@ Route42_Text_FisherTullyAfter:
 	.string "caught myself.\p"
 	.string "That's the best part of fishing!$"
 
-Route42_Text_HikerBenjaminSeen:
+Route42_Text_HikerBenSeen:
 	.string "Ah, it's good to be outside!\n"
 	.string "I feel so free!$"
 
-Route42_Text_HikerBenjaminBeaten:
+Route42_Text_HikerBenBeaten:
 	.string "Gahahah! That was a good\n"
 	.string "battle!$"
 
-Route42_Text_HikerBenjaminAfter:
+Route42_Text_HikerBenAfter:
 	.string "Losing feels insignificant\n"
 	.string "if you look up at the big sky!$"
 

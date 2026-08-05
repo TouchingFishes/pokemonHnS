@@ -121,7 +121,7 @@ DewfordTown_Gym_EventScript_CheckLaura::
 	goto_if_not_defeated TRAINER_LAURA, DewfordTown_Gym_EventScript_CheckBrenden
 	addvar VAR_0x8000, 1
 DewfordTown_Gym_EventScript_CheckBrenden::
-	goto_if_not_defeated TRAINER_BRENDEN, DewfordTown_Gym_EventScript_CheckCristian
+	goto_if_not_defeated TRAINER_LAURA, DewfordTown_Gym_EventScript_CheckCristian
 	addvar VAR_0x8000, 1
 DewfordTown_Gym_EventScript_CheckCristian::
 	goto_if_not_defeated TRAINER_HARVEY, DewfordTown_Gym_EventScript_CheckLilith
@@ -218,7 +218,7 @@ DewfordTown_Gym_EventScript_LauraBrightenRoom::
 	end
 
 DewfordTown_Gym_EventScript_Brenden::
-	trainerbattle_single TRAINER_BRENDEN, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat, DewfordTown_Gym_EventScript_BrendenBrightenRoom
+	trainerbattle_single TRAINER_LAURA, DewfordTown_Gym_Text_BrendenIntro, DewfordTown_Gym_Text_BrendenDefeat, DewfordTown_Gym_EventScript_BrendenBrightenRoom
 	msgbox DewfordTown_Gym_Text_BrendenPostBattle, MSGBOX_AUTOCLOSE
 	end
 

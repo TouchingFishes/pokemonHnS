@@ -214,7 +214,7 @@ Route110_EventScript_Anthony::
 	end
 
 Route110_EventScript_Benjamin::
-	trainerbattle_single TRAINER_BENJAMIN_1, Route110_Text_BenjaminIntro, Route110_Text_BenjaminDefeated, Route110_EventScript_BenjaminRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_BENJAMIN, Route110_Text_BenjaminIntro, Route110_Text_BenjaminDefeated, Route110_EventScript_BenjaminRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route110_EventScript_BenjaminRematch
 	msgbox Route110_Text_BenjaminPostBattle, MSGBOX_DEFAULT
@@ -225,12 +225,12 @@ Route110_EventScript_BenjaminRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
 	msgbox Route110_Text_BenjaminRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_BENJAMIN_1
+	register_matchcall TRAINER_BENJAMIN
 	release
 	end
 
 Route110_EventScript_BenjaminRematch::
-	trainerbattle_rematch TRAINER_BENJAMIN_1, Route110_Text_BenjaminRematchIntro, Route110_Text_BenjaminRematchDefeated
+	trainerbattle_rematch TRAINER_BENJAMIN, Route110_Text_BenjaminRematchIntro, Route110_Text_BenjaminRematchDefeated
 	msgbox Route110_Text_BenjaminRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 

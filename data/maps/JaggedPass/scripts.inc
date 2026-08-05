@@ -142,7 +142,7 @@ JaggedPass_EventScript_EthanRematch::
 	end
 
 JaggedPass_EventScript_Julio::
-	trainerbattle_single TRAINER_JULIO, JaggedPass_Text_JulioIntro, JaggedPass_Text_JulioDefeat
+	trainerbattle_single TRAINER_NAOKO, JaggedPass_Text_JulioIntro, JaggedPass_Text_JulioDefeat
 	msgbox JaggedPass_Text_JulioPostBattle, MSGBOX_AUTOCLOSE
 	end
 
