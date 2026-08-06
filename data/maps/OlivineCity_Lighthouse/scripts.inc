@@ -54,8 +54,21 @@ OlivineLighthouse_Text_1FPokefanF:
 @2nd floor==============================================================================================================================
 
 OlivineLighthouse_EventScript_Huey::
-	trainerbattle_single TRAINER_HUEY, OlivineLighthouse_Text_SailorHueySeen, OlivineLighthouse_Text_SailorHueyBeaten
+	trainerbattle_single TRAINER_HUEY, OlivineLighthouse_Text_SailorHueySeen, OlivineLighthouse_Text_SailorHueyBeaten, OlivineLighthouse_EventScript_TryRegisterHuey
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, OlivineLighthouse_EventScript_RematchHuey
 	msgbox OlivineLighthouse_Text_SailorHueyAfter, MSGBOX_AUTOCLOSE
+	end
+
+OlivineLighthouse_EventScript_RematchHuey::
+	trainerbattle_rematch TRAINER_HUEY, OlivineLighthouse_Text_HueyRematchIntro, OlivineLighthouse_Text_HueyRematchDefeat
+	msgbox OlivineLighthouse_Text_HueyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+OlivineLighthouse_EventScript_TryRegisterHuey::
+	msgbox OlivineLighthouse_Text_HueyRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_HUEY
+	release
 	end
 
 OlivineLighthouse_EventScript_GentlemanAlfred::
@@ -74,6 +87,30 @@ OlivineLighthouse_Text_SailorHueyBeaten:
 OlivineLighthouse_Text_SailorHueyAfter:
 	.string "What power! How would you like\n"
 	.string "to sail the seas with me?$"
+
+OlivineLighthouse_Text_HueyRegisterPrompt:
+	.string "Ha! You're the kind of trainer\n"
+	.string "I'd gladly sail with!\p"
+	.string "Let's battle again whenever our\n"
+	.string "paths cross.\p"
+	.string "Can I get your number?$"
+
+OlivineLighthouse_Text_HueyRematchIntro:
+	.string "Ahoy! I was hoping I'd run into\n"
+	.string "you again!\p"
+	.string "My crew and I have been training\n"
+	.string "hard out on the open sea.\p"
+	.string "Let's have ourselves another fight!$"
+
+OlivineLighthouse_Text_HueyRematchDefeat:
+	.string "Urf!\p"
+	.string "You're still too much for me!$"
+
+OlivineLighthouse_Text_HueyPostRematch:
+	.string "That's the kind of battle that\n"
+	.string "gets a sailor's blood pumping!\p"
+	.string "I'll keep training until the day\n"
+	.string "I can finally weather your storm!$"
 
 OlivineLighthouse_Text_GentlemanAlfredSeen:
 	.string "Hm? This is no place\n"

@@ -162,13 +162,26 @@ Route42_Text_EusineWontGiveUp:
 
 
 Route42_EventScript_Tully::
-	trainerbattle_single TRAINER_TULLY Route42_Text_FisherTullySeen, Route42_Text_FisherTullyBeaten
+	trainerbattle_single TRAINER_TULLY, Route42_Text_FisherTullySeen, Route42_Text_FisherTullyBeaten, Route42_EventScript_TryRegisterTully
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route42_EventScript_RematchTully
 	msgbox Route42_Text_FisherTullyAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route42_EventScript_Ben::
-	trainerbattle_single TRAINER_BEN Route42_Text_HikerBenSeen, Route42_Text_HikerBenBeaten
-	msgbox Route42_Text_HikerBenAfter, MSGBOX_AUTOCLOSE
+Route42_EventScript_RematchTully::
+	trainerbattle_rematch TRAINER_TULLY, Route42_Text_TullyRematchIntro, Route42_Text_TullyRematchDefeat
+	msgbox Route42_Text_TullyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route42_EventScript_TryRegisterTully::
+	msgbox Route42_Text_TullyRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TULLY
+	release
+	end
+
+Route42_EventScript_Benjamin::
+	trainerbattle_single TRAINER_BENJAMIN Route42_Text_HikerBenjaminSeen, Route42_Text_HikerBenjaminBeaten
+	msgbox Route42_Text_HikerBenjaminAfter, MSGBOX_AUTOCLOSE
 	end
 
 Route42_EventScript_Shane::
@@ -214,15 +227,38 @@ Route42_Text_FisherTullyAfter:
 	.string "caught myself.\p"
 	.string "That's the best part of fishing!$"
 
-Route42_Text_HikerBenSeen:
+Route42_Text_TullyRegisterPrompt:
+	.string "You really know how to raise\n"
+	.string "your POKéMON!\p"
+	.string "I'd like to see how far the ones\n"
+	.string "I've caught can go.\p"
+	.string "Can I get your number?$"
+
+Route42_Text_TullyRematchIntro:
+	.string "Every one of these POKéMON was\n"
+	.string "caught by me!\p"
+	.string "We've been training hard together.\p"
+	.string "Let's see if we're any closer to\n"
+	.string "becoming CHAMPIONS!$"
+
+Route42_Text_TullyRematchDefeat:
+	.string "What?\p"
+	.string "We've still got a long way to go!$"
+
+Route42_Text_TullyPostRematch:
+	.string "I'm not giving up.\p"
+	.string "I'll become CHAMP using only the\n"
+	.string "POKéMON I've caught myself!$"
+
+Route42_Text_HikerBenjaminSeen:
 	.string "Ah, it's good to be outside!\n"
 	.string "I feel so free!$"
 
-Route42_Text_HikerBenBeaten:
+Route42_Text_HikerBenjaminBeaten:
 	.string "Gahahah! That was a good\n"
 	.string "battle!$"
 
-Route42_Text_HikerBenAfter:
+Route42_Text_HikerBenjaminAfter:
 	.string "Losing feels insignificant\n"
 	.string "if you look up at the big sky!$"
 

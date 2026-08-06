@@ -12,9 +12,22 @@ Route45_EventScript_Michael::
 	end
 
 Route45_EventScript_Parry::
-	trainerbattle_single TRAINER_PARRY Route45_Text_HikerParrySeen, Route45_Text_HikerParryBeaten
-	msgbox Route45_Text_HikerParryAfter, MSGBOX_AUTOCLOSE
-	end
+    trainerbattle_single TRAINER_PARRY, Route45_Text_HikerParrySeen, Route45_Text_HikerParryBeaten, Route45_EventScript_TryRegisterParry
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route45_EventScript_RematchParry
+    msgbox Route45_Text_HikerParryAfter, MSGBOX_AUTOCLOSE
+    end
+
+Route45_EventScript_RematchParry::
+    trainerbattle_rematch TRAINER_PARRY, Route45_Text_ParryRematchIntro, Route45_Text_ParryRematchDefeat
+    msgbox Route45_Text_ParryPostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route45_EventScript_TryRegisterParry::
+    msgbox Route45_Text_ParryRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_PARRY
+    release
+    end
 
 Route45_EventScript_Timothy::
 	trainerbattle_single TRAINER_TIMOTHY Route45_Text_HikerTimothySeen, Route45_Text_HikerTimothyBeaten
@@ -97,6 +110,30 @@ Route45_Text_HikerParryAfter:
     .string "I'm not much good at thinking,\n"
     .string "see?\p"
     .string "So, I just plow ahead with power!$"
+
+Route45_Text_ParryRegisterPrompt:
+    .string "Wahahah! That was a great battle!\p"
+    .string "I'd like to test our strength\n"
+    .string "against each other again.\p"
+    .string "Can I get your number?$"
+
+Route45_Text_ParryRematchIntro:
+    .string "There you are!\p"
+    .string "I've been climbing mountains and\n"
+    .string "training my POKéMON every day!\p"
+    .string "Let's see how much stronger we've\n"
+    .string "become!$"
+
+Route45_Text_ParryRematchDefeat:
+    .string "Wahahah!\p"
+    .string "I charged ahead again and still\n"
+    .string "came up short!$"
+
+Route45_Text_ParryPostRematch:
+    .string "Maybe someday I'll learn some\n"
+    .string "fancy strategies.\p"
+    .string "But for now, I'll keep trusting\n"
+    .string "the power of my POKéMON!$"
 
 
 Route45_Text_HikerTimothySeen:

@@ -18,8 +18,21 @@ Route46_EventScript_Ted::
 	end
 
 Route46_EventScript_Erin::
-	trainerbattle_single TRAINER_ERIN, Route46_Text_PicnickerErinSeen, Route46_Text_PicnickerErinBeaten
+	trainerbattle_single TRAINER_ERIN, Route46_Text_PicnickerErinSeen, Route46_Text_PicnickerErinBeaten, Route46_EventScript_TryRegisterErin
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route46_EventScript_RematchErin
 	msgbox Route46_Text_PicnickerErinAfterBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route46_EventScript_RematchErin::
+	trainerbattle_rematch TRAINER_ERIN, Route46_Text_ErinRematchIntro, Route46_Text_ErinRematchDefeat
+	msgbox Route46_Text_ErinPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route46_EventScript_TryRegisterErin::
+	msgbox Route46_Text_ErinRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ERIN
+	release
 	end
 
 Route46_EventScript_Sign::
@@ -68,6 +81,29 @@ Route46_Text_PicnickerErinAfterBattle:
 	.string "I've been to many GYMS, but the\n"
 	.string "GYM in GOLDENROD is my favorite.\p"
 	.string "It's filled with pretty flowers!$"
+
+Route46_Text_ErinRegisterPrompt:
+	.string "That was a great battle!\p"
+	.string "I'd love to travel and battle\n"
+	.string "with you again sometime.\p"
+	.string "Can I get your number?$"
+
+Route46_Text_ErinRematchIntro:
+	.string "Hi again!\p"
+	.string "My POKéMON and I have been\n"
+	.string "traveling and training together.\p"
+	.string "Let's see how much we've grown!$"
+
+Route46_Text_ErinRematchDefeat:
+	.string "Oh, rats!\p"
+	.string "I guess we still have more\n"
+	.string "traveling to do!$"
+
+Route46_Text_ErinPostRematch:
+	.string "Every journey teaches you\n"
+	.string "something new.\p"
+	.string "I'll keep raising my POKéMON and\n"
+	.string "making wonderful memories!$"
 
 Route46_Text_PicnickerErin2Beaten:
 	.string "Aww… I keep losing all the time!\p"

@@ -166,13 +166,39 @@ Route36_Movement_RockSmashGuy:
 	step_end
 
 Route36_EventScript_Mark::
-	trainerbattle_single TRAINER_MARK Route36_Text_PsychicMarkSeen, Route36_Text_PsychicMarkBeaten
+	trainerbattle_single TRAINER_MARK, Route36_Text_PsychicMarkSeen, Route36_Text_PsychicMarkBeaten, Route36_EventScript_TryRegisterMark
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route36_EventScript_RematchMark
 	msgbox Route36_Text_PsychicMarkAfter, MSGBOX_AUTOCLOSE
 	end
 
-Route36_EventScript_Schoolboy::
-	trainerbattle_single TRAINER_ALAN Route36_Text_SchoolboyAlan1Seen, Route36_Text_SchoolboyAlan1Beaten
+Route36_EventScript_RematchMark::
+	trainerbattle_rematch TRAINER_MARK, Route36_Text_MarkRematchIntro, Route36_Text_MarkRematchDefeat
+	msgbox Route36_Text_MarkPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route36_EventScript_TryRegisterMark::
+	msgbox Route36_Text_MarkRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_MARK
+	release
+	end
+
+Route36_EventScript_SchoolboyAlan::
+	trainerbattle_single TRAINER_ALAN, Route36_Text_SchoolboyAlan1Seen, Route36_Text_SchoolboyAlan1Beaten, Route36_EventScript_TryRegisterAlan
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route36_EventScript_RematchAlan
 	msgbox Route36_Text_SchoolboyAlanAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route36_EventScript_RematchAlan::
+	trainerbattle_rematch TRAINER_ALAN, Route36_Text_AlanRematchIntro, Route36_Text_AlanRematchDefeat
+	msgbox Route36_Text_AlanPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route36_EventScript_TryRegisterAlan::
+	msgbox Route36_Text_AlanRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_ALAN
+	release
 	end
 
 Route36_EventScript_Sign::
@@ -261,6 +287,29 @@ Route36_Text_PsychicMarkAfter:
 	.string "I'd be strong if only I could tell\n"
 	.string "what my opponent was thinking.$"
 
+Route36_Text_MarkRegisterPrompt:
+	.string "I couldn't read your thoughts at all!\p"
+	.string "I need another chance to understand\n"
+	.string "what's going on in your head.\p"
+	.string "Can I get your number?$"
+
+Route36_Text_MarkRematchIntro:
+	.string "I've been practicing my psychic\n"
+	.string "abilities since we last met.\p"
+	.string "This time, I'll read your thoughts\n"
+	.string "before you make a move!$"
+
+Route36_Text_MarkRematchDefeat:
+	.string "I misread you again!\p"
+	.string "Your thoughts are impossible to\n"
+	.string "predict!$"
+
+Route36_Text_MarkPostRematch:
+	.string "I still can't tell what you're\n"
+	.string "thinking…\p"
+	.string "Perhaps that's exactly what makes\n"
+	.string "you such a strong trainer.$"
+
 Route36_Text_SchoolboyAlan1Seen:
 	.string "Thanks to my studies, I'm ready\n"
 	.string "for any POKéMON!$"
@@ -272,6 +321,28 @@ Route36_Text_SchoolboyAlanAfter:
 	.string "Darn. I study five hours a day too.\p"
 	.string "There's more to learning than just\n"
 	.string "reading books.$"
+
+Route36_Text_AlanRegisterPrompt:
+	.string "I've learned that books aren't\n"
+	.string "enough to become a great trainer.\p"
+	.string "I'd like some more real battle\n"
+	.string "experience with you.\p"
+	.string "Can I get your number?$"
+
+Route36_Text_AlanRematchIntro:
+	.string "I've been studying, but I've also\n"
+	.string "been getting more battle experience!\p"
+	.string "Let's see if all that extra practice\n"
+	.string "has paid off!$"
+
+Route36_Text_AlanRematchDefeat:
+	.string "Oops! Another computation error?!$"
+
+Route36_Text_AlanPostRematch:
+	.string "I guess there's still more to learn\n"
+	.string "outside of the classroom.\p"
+	.string "I'll keep studying and battling!\p"
+	.string "Someday, I'll figure it all out.$"
 
 Route36_Text_MeetArthur:
 	.string "ARTHUR: Who are you?\n"

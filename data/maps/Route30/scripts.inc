@@ -146,21 +146,6 @@ Route30_Text_YoungsterJoey1After:
 	.string "No! I'm sticking with this one\n"
 	.string "no matter what!$"
 
-Route30_Text_YoungsterMikeySeen:
-	.string "You're a POKéMON trainer,\n"
-	.string "right?\p"
-	.string "Then you have to battle!$"
-
-Route30_Text_YoungsterMikeyBeaten:
-	.string "That's strange.\n"
-	.string "I won before.$"
-
-Route30_Text_YoungsterMikeyAfter:
-	.string "Becoming a good trainer is\n"
-	.string "really tough.\p"
-	.string "I'm going to battle other\n"
-	.string "people to get better.$"
-
 Route30_Text_JoeyRegisterPrompt:
 	.string "Hey, you were pretty strong!\p"
 	.string "Let's keep battling so I can get\n"
@@ -181,6 +166,21 @@ Route30_Text_JoeyRematchDefeat:
 	.string "Aw, man! I lost again!\p"
 	.string "I really thought I had you this\n"
 	.string "time…$"
+
+Route30_Text_YoungsterMikeySeen:
+	.string "You're a POKéMON trainer,\n"
+	.string "right?\p"
+	.string "Then you have to battle!$"
+
+Route30_Text_YoungsterMikeyBeaten:
+	.string "That's strange.\n"
+	.string "I won before.$"
+
+Route30_Text_YoungsterMikeyAfter:
+	.string "Becoming a good trainer is\n"
+	.string "really tough.\p"
+	.string "I'm going to battle other\n"
+	.string "people to get better.$"
 
 Route30_Text_BugCatcherDonSeen:
 	.string "Instead of a bug POKéMON,\n"

@@ -13,13 +13,39 @@ Route38_EventScript_Toby::
 	end
 
 Route38_EventScript_Chad::
-	trainerbattle_single TRAINER_CHAD, Route38_Text_SchoolboyChad1Seen, Route38_Text_SchoolboyChad1Beaten
+	trainerbattle_single TRAINER_CHAD, Route38_Text_SchoolboyChad1Seen, Route38_Text_SchoolboyChad1Beaten, Route38_EventScript_TryRegisterChad
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route38_EventScript_RematchChad
 	msgbox Route38_Text_SchoolboyChadAfter, MSGBOX_AUTOCLOSE
 	end
 
+Route38_EventScript_RematchChad::
+	trainerbattle_rematch TRAINER_CHAD, Route38_Text_ChadRematchIntro, Route38_Text_ChadRematchDefeat
+	msgbox Route38_Text_ChadPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route38_EventScript_TryRegisterChad::
+	msgbox Route38_Text_ChadRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_CHAD
+	release
+	end
+
 Route38_EventScript_Dana::
-	trainerbattle_single TRAINER_DANA, Route38_Text_LassDana1Seen, Route38_Text_LassDana1Beaten
+	trainerbattle_single TRAINER_DANA, Route38_Text_LassDana1Seen, Route38_Text_LassDana1Beaten, Route38_EventScript_TryRegisterDana
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route38_EventScript_RematchDana
 	msgbox Route38_Text_LassDanaAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route38_EventScript_RematchDana::
+	trainerbattle_rematch TRAINER_DANA, Route38_Text_DanaRematchIntro, Route38_Text_DanaRematchDefeat
+	msgbox Route38_Text_DanaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route38_EventScript_TryRegisterDana::
+	msgbox Route38_Text_DanaRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_DANA
+	release
 	end
 
 Route38_EventScript_Valerie::
@@ -82,6 +108,27 @@ Route38_Text_SchoolboyChadAfter:
 	.string "So when I do get to play,\n"
 	.string "I really concentrate.$"
 
+Route38_Text_ChadRegisterPrompt:
+	.string "Battling you taught me a lot!\p"
+	.string "I'd like to try out more of what\n"
+	.string "I learn against you.\p"
+	.string "Can I get your number?$"
+
+Route38_Text_ChadRematchIntro:
+	.string "I've learned a few more tricks\n"
+	.string "since our last battle!\p"
+	.string "I've been waiting to try them\n"
+	.string "out on you!$"
+
+Route38_Text_ChadRematchDefeat:
+	.string "I guess I still have\n"
+	.string "more studying to do.$"
+
+Route38_Text_ChadPostRematch:
+	.string "Books can teach you a lot,\n"
+	.string "but battles teach you even more!\p"
+	.string "I'll keep learning from both.$"
+
 Route38_Text_LassDana1Seen:
 	.string "You seem to be good at\n"
 	.string "POKéMON.\p"
@@ -96,6 +143,30 @@ Route38_Text_LassDanaAfter:
 	.string "I know something good!\p"
 	.string "MOOMOO FARM's milk is\n"
 	.string "famous for its flavor.$"
+
+Route38_Text_DanaRegisterPrompt:
+	.string "Your advice was easy to understand,\n"
+	.string "even without you saying a word!\p"
+	.string "I'd like to battle you again and\n"
+	.string "learn some more.\p"
+	.string "Can I get your number?$"
+
+Route38_Text_DanaRematchIntro:
+	.string "I've been practicing the things\n"
+	.string "I learned from our last battle.\p"
+	.string "Would you mind giving me another\n"
+	.string "lesson?$"
+
+Route38_Text_DanaRematchDefeat:
+	.string "I still have a lot to\n"
+	.string "learn...$"
+
+Route38_Text_DanaPostRematch:
+	.string "Thanks!\p"
+	.string "Every time we battle, I notice\n"
+	.string "something new.\p"
+	.string "I'll keep practicing until I can\n"
+	.string "surprise you someday!$"
 
 Route38_Text_BeautyValerieSeen:
 	.string "Hi! Aren't you a cute\n"

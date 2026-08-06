@@ -256,23 +256,65 @@ Route39_Text_SailorEugeneAfter:
 	.string "those long voyages.$"
 
 Route39_EventScript_Derek::
-	trainerbattle_single TRAINER_DEREK, Route39_Text_PokefanMDerekSeen, Route39_Text_PokefanMDerekBeaten
+	trainerbattle_single TRAINER_DEREK, Route39_Text_PokefanMDerekSeen, Route39_Text_PokefanMDerekBeaten, Route39_EventScript_TryRegisterDerek
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route39_EventScript_RematchDerek
 	msgbox Route39_Text_PokefanMDerekAfter, MSGBOX_AUTOCLOSE
+	end
+
+Route39_EventScript_RematchDerek::
+	trainerbattle_rematch TRAINER_DEREK, Route39_Text_DerekRematchIntro, Route39_Text_DerekRematchDefeat
+	msgbox Route39_Text_DerekPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route39_EventScript_TryRegisterDerek::
+	msgbox Route39_Text_DerekRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_DEREK
+	release
 	end
 
 Route39_Text_PokefanMDerekSeen:
 	.string "This is a good time to brag\n"
-	.string "about my GRANBULL!$"
+	.string "about my GRANBULL!\p"
+	.string "Just look at how amazing my\n"
+	.string "favorite POKéMON is!$"
 
 Route39_Text_PokefanMDerekBeaten:
-	.string "I had no time to show off\n"
-	.string "GRANBULL$"
+	.string "Nooo!\p"
+	.string "I didn't even get to show off\n"
+	.string "GRANBULL!$"
 
 Route39_Text_PokefanMDerekAfter:
-	.string "I'm not listening to your\n"
-	.string "bragging!\p"
-	.string "We POKé FANS have a policy\n"
-	.string "of not listening to bragging!$"
+	.string "GRANBULL may not be everyone's\n"
+	.string "favorite POKéMON.\p"
+	.string "But to me, it's the best one!\p"
+	.string "That's what being a POKé FAN is\n"
+	.string "all about!$"
+
+Route39_Text_DerekRegisterPrompt:
+	.string "You seem to understand how\n"
+	.string "special a POKéMON can be.\p"
+	.string "I'd love to show you more of my\n"
+	.string "GRANBULL's strength someday.\p"
+	.string "Can I get your number?$"
+
+Route39_Text_DerekRematchIntro:
+	.string "There you are!\p"
+	.string "I've trained my GRANBULL even\n"
+	.string "more since our last battle!\p"
+	.string "Prepare yourself for a true\n"
+	.string "POKé FAN's masterpiece!$"
+
+Route39_Text_DerekRematchDefeat:
+	.string "Oh no!\p"
+	.string "GRANBULL was amazing, wasn't it?\p"
+	.string "It just wasn't enough this time!$"
+
+Route39_Text_DerekPostRematch:
+	.string "A true POKé FAN doesn't stop\n"
+	.string "loving their favorite POKéMON.\p"
+	.string "Winning is great, but sharing\n"
+	.string "their greatness is even better!$"
 
 Route39_EventScript_Ruth::
 	trainerbattle_single TRAINER_RUTH, Route39_Text_PokefanFRuthSeen, Route39_Text_PokefanFRuthBeaten

@@ -92,9 +92,22 @@ Route27_EventScript_Brian::
 	end
 
 Route27_EventScript_Reena::
-	trainerbattle_single TRAINER_REENA Route27_Text_CooltrainerfReenaSeen, Route27_Text_CooltrainerfReenaBeaten
-	msgbox Route27_Text_CooltrainerfReenaAfter, MSGBOX_AUTOCLOSE
-	end
+    trainerbattle_single TRAINER_REENA, Route27_Text_CooltrainerfReenaSeen, Route27_Text_CooltrainerfReenaBeaten, Route27_EventScript_TryRegisterReena
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route27_EventScript_RematchReena
+    msgbox Route27_Text_CooltrainerfReenaAfter, MSGBOX_AUTOCLOSE
+    end
+
+Route27_EventScript_RematchReena::
+    trainerbattle_rematch TRAINER_REENA, Route27_Text_ReenaRematchIntro, Route27_Text_ReenaRematchDefeat
+    msgbox Route27_Text_ReenaPostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route27_EventScript_TryRegisterReena::
+    msgbox Route27_Text_ReenaRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_REENA
+    release
+    end
 
 Route27_EventScript_Megan::
 	trainerbattle_single TRAINER_MEGAN Route27_Text_CooltrainerfMeganSeen, Route27_Text_CooltrainerfMeganBeaten
@@ -107,9 +120,22 @@ Route27_EventScript_Gilbert::
 	end
 
 Route27_EventScript_Jose::
-	trainerbattle_single TRAINER_JOSE Route27_Text_BirdKeeperJoseSeen, Route27_Text_BirdKeeperJoseBeaten
-	msgbox Route27_Text_BirdKeeperJoseAfter, MSGBOX_AUTOCLOSE
-	end
+    trainerbattle_single TRAINER_JOSE, Route27_Text_BirdKeeperJoseSeen, Route27_Text_BirdKeeperJoseBeaten, Route27_EventScript_TryRegisterJose
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route27_EventScript_RematchJose
+    msgbox Route27_Text_BirdKeeperJoseAfter, MSGBOX_AUTOCLOSE
+    end
+
+Route27_EventScript_RematchJose::
+    trainerbattle_rematch TRAINER_JOSE, Route27_Text_JoseRematchIntro, Route27_Text_JoseRematchDefeat
+    msgbox Route27_Text_JosePostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route27_EventScript_TryRegisterJose::
+    msgbox Route27_Text_JoseRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_JOSE
+    release
+    end
 
 Route27_EventScript_Monika::
 	trainerbattle_single TRAINER_MONIKA Route27_Text_MonikaSeen, Route27_Text_MonikaBeaten
@@ -168,6 +194,30 @@ Route27_Text_CooltrainerfReenaAfter:
     .string "You're just a kid, but you're not\n"
     .string "to be underestimated either.$"
 
+Route27_Text_ReenaRegisterPrompt:
+    .string "You have a lot of talent for a\n"
+    .string "young trainer.\p"
+    .string "I'd like to battle you again and\n"
+    .string "see how much you've grown.\p"
+    .string "Can I get your number?$"
+
+Route27_Text_ReenaRematchIntro:
+    .string "I knew we'd meet again.\p"
+    .string "I've continued training in these\n"
+    .string "wild areas.\p"
+    .string "Let's see if I've improved since\n"
+    .string "our last battle.$"
+
+Route27_Text_ReenaRematchDefeat:
+    .string "You're still ahead of me.\p"
+    .string "I won't underestimate you again.$"
+
+Route27_Text_ReenaPostRematch:
+    .string "Strength isn't just about power.\p"
+    .string "It's about knowing your Pokémon\n"
+    .string "and trusting their abilities.\p"
+    .string "I'll remember that.$"
+
 Route27_Text_CooltrainerfMeganSeen:
     .string "It's rare to see anyone come here.\p"
     .string "Are you training on your own?$"
@@ -207,6 +257,32 @@ Route27_Text_BirdKeeperJoseBeaten:
 Route27_Text_BirdKeeperJoseAfter:
     .string "BIRD KEEPERS like me mimic bird\n"
     .string "whistles to command POKéMON.$"
+
+Route27_Text_JoseRegisterPrompt:
+    .string "Tweet! Tweet!\p"
+    .string "Your POKéMON and you seem to\n"
+    .string "understand each other well.\p"
+    .string "I'd like to learn from another\n"
+    .string "battle.\p"
+    .string "Can I get your number?$"
+
+Route27_Text_JoseRematchIntro:
+    .string "Tweet! Tweet! Tetweet!\p"
+    .string "My birds and I have practiced new\n"
+    .string "calls since we last met.\p"
+    .string "Let's see if we can communicate\n"
+    .string "better in battle!$"
+
+Route27_Text_JoseRematchDefeat:
+    .string "Tweet...\p"
+    .string "I suppose my birds still have more\n"
+    .string "to learn.$"
+
+Route27_Text_JosePostRematch:
+    .string "A trainer and POKéMON become\n"
+    .string "stronger by understanding each\n"
+    .string "other.\p"
+    .string "I'll keep listening to my birds!$"
 
 Route27_Text_MonikaSeen:
 	.string "You there.\p"

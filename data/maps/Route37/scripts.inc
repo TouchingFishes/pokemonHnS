@@ -29,8 +29,21 @@ Route37_EventScript_Greg::
 	end
 
 Route37_EventScript_BreederFAmala::
-	trainerbattle_single TRAINER_AMALA, Route37_Text_BreederFAmala_Seen, Route37_Text_BreederFAmala_Beaten
+	trainerbattle_single TRAINER_AMALA, Route37_Text_BreederFAmala_Seen, Route37_Text_BreederFAmala_Beaten, Route37_EventScript_TryRegisterAmala
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route37_EventScript_RematchAmala
 	msgbox Route37_Text_BreederFAmala_After, MSGBOX_AUTOCLOSE
+	end
+
+Route37_EventScript_RematchAmala::
+	trainerbattle_rematch TRAINER_AMALA, Route37_Text_AmalaRematchIntro, Route37_Text_AmalaRematchDefeat
+	msgbox Route37_Text_AmalaPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route37_EventScript_TryRegisterAmala::
+	msgbox Route37_Text_AmalaRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_AMALA
+	release
 	end
 
 Route37_EventScript_ChannelerMercy::
@@ -160,6 +173,31 @@ Route37_Text_BreederFAmala_After:
 	.string "making them stronger.\p"
 	.string "The trust you build together is\n"
 	.string "what wins the toughest battles.$"
+
+Route37_Text_AmalaRegisterPrompt:
+	.string "Your POKéMON seem very happy\n"
+	.string "with you.\p"
+	.string "I'd love to see how your bond\n"
+	.string "continues to grow.\p"
+	.string "Can I get your number?$"
+
+Route37_Text_AmalaRematchIntro:
+	.string "It's wonderful to see you again!\p"
+	.string "I've spent time caring for my\n"
+	.string "POKéMON and learning more about\n"
+	.string "what they need.\p"
+	.string "Let's see how our partners have\n"
+	.string "grown!$"
+
+Route37_Text_AmalaRematchDefeat:
+	.string "What a beautiful battle.\p"
+	.string "Your POKéMON trust you completely.$"
+
+Route37_Text_AmalaPostRematch:
+	.string "A strong trainer isn't someone who\n"
+	.string "only gives commands.\p"
+	.string "A strong trainer understands their\n"
+	.string "POKéMON and grows with them.$"
 
 Route37_Text_ChannelerMercy_Seen:
 	.string "Can you feel it?\p"

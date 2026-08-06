@@ -178,8 +178,8 @@
 #define TRAINER_CHAD                        174
 #define TRAINER_TONY_2                      175
 #define TRAINER_TONY_3                      176
-#define TRAINER_BEN_2                       177 //unused
-#define TRAINER_BEN_3                       178 //unused
+#define TRAINER_EDWIN_2                     177 //unused
+#define TRAINER_EDWIN_3                     178 //unused
 #define TRAINER_TAKAO                       179
 #define TRAINER_JASMINE_1_3                 180
 #define TRAINER_KIYO                        181
@@ -324,7 +324,7 @@
 #define TRAINER_JOSH                        320
 #define TRAINER_TOMMY                       321
 #define TRAINER_JOEY                        322
-#define TRAINER_BEN                         323
+#define TRAINER_EDWIN                       323
 #define TRAINER_QUINCY                      324
 #define TRAINER_KATELYNN                    325 //unused in hns
 #define TRAINER_RIVAL_TOTODILE_3            326

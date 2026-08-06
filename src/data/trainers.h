@@ -1872,42 +1872,42 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_BENJAMIN] =
+    [TRAINER_EDWIN] =
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin),
     },
 
 
-    [TRAINER_BENJAMIN_2] =
+    [TRAINER_EDWIN_2] =
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin2),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin2),
     },
 
 
-    [TRAINER_BENJAMIN_3] =
+    [TRAINER_EDWIN_3] =
     {
         .trainerClass = TRAINER_CLASS_COLLECTOR,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
         .trainerPic = TRAINER_PIC_COLLECTOR,
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("EDWIN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin3),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Edwin3),
     },
 
 
@@ -2837,6 +2837,45 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_CUSTOM_MOVES(sParty_Josh),
+    },
+
+
+    [TRAINER_KOJI] =
+    {
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("KOJI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji),
+    },
+
+
+    [TRAINER_KOJI_2] =
+    {
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("KOJI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji2),
+    },
+
+
+    [TRAINER_KOJI_3] =
+    {
+        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
+        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerName = _("KOJI"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji3),
     },
 
 
@@ -4413,16 +4452,16 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_BEN] =
+    [TRAINER_BENJAMIN] =
     {
         .trainerClass = TRAINER_CLASS_HIKER,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SUSPICIOUS_2,
         .trainerPic = TRAINER_PIC_HIKER,
-        .trainerName = _("BENJ"),
+        .trainerName = _("BENJAMIN"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Ben),
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Benjamin),
     },
 
 
@@ -5950,19 +5989,6 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Masa),
-    },
-
-
-    [TRAINER_KOJI] =
-    {
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_SAGE,
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
-        .trainerName = _("KOJI"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Koji),
     },
 
 

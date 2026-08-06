@@ -422,7 +422,7 @@
 #define FLAG_REMATCH_ABIGAIL                 0x183
 #define FLAG_REMATCH_BRENT                   0x184
 #define FLAG_REMATCH_KATELYN                 0x185
-#define FLAG_REMATCH_BENJAMIN                0x186
+#define FLAG_REMATCH_EDWIN                0x186
 #define FLAG_REMATCH_PAOLO                   0x187
 #define FLAG_REMATCH_NICOLAS                 0x188
 #define FLAG_REMATCH_ROBERT                  0x189

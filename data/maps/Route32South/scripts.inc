@@ -59,10 +59,22 @@ Route32South_Text_MarcelPostBattle:
 	.string "understanding what grows nearby.$"
 
 Route32South_EventScript_Tiffany::
-	trainerbattle_single TRAINER_TIFFANY Route32South_Text_PicnickerTiffanySeen, Route32South_Text_PicnickerTiffanyBeaten
+	trainerbattle_single TRAINER_TIFFANY, Route32South_Text_PicnickerTiffanySeen, Route32South_Text_PicnickerTiffanyBeaten, Route32South_EventScript_TryRegisterTiffany
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route32South_EventScript_RematchTiffany
 	msgbox Route32South_Text_PicnickerTiffanyWantsPicnic, MSGBOX_AUTOCLOSE
 	end
 
+Route32South_EventScript_RematchTiffany::
+	trainerbattle_rematch TRAINER_TIFFANY, Route32South_Text_TiffanyRematchIntro, Route32South_Text_TiffanyRematchDefeat
+	msgbox Route32South_Text_TiffanyPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route32South_EventScript_TryRegisterTiffany::
+	msgbox Route32South_Text_TiffanyRegisterPrompt, MSGBOX_DEFAULT
+	register_matchcall TRAINER_TIFFANY
+	release
+	end
 Route32South_Text_PicnickerTiffanySeen:
     .string "Are you going to STARSHOAL CAVE too?\p"
     .string "Let's play for a little while!$"
@@ -73,6 +85,28 @@ Route32South_Text_PicnickerTiffanyBeaten:
 Route32South_Text_PicnickerTiffanyWantsPicnic:
     .string "I'm having a picnic with POKéMON.\p"
     .string "Won't you join us?$"
+
+Route32South_Text_TiffanyRegisterPrompt:
+	.string "That was lots of fun!\p"
+	.string "Let's have another battle the next\n"
+	.string "time you're out this way.\p"
+	.string "Can I get your number?$"
+
+Route32South_Text_TiffanyRematchIntro:
+	.string "Hi again!\p"
+	.string "My POKéMON and I have been having\n"
+	.string "lots of fun together.\p"
+	.string "Let's play another round!$"
+
+Route32South_Text_TiffanyRematchDefeat:
+	.string "Oops!\p"
+	.string "I got carried away again!$"
+
+Route32South_Text_TiffanyPostRematch:
+	.string "Battles are always more fun when\n"
+	.string "everyone's smiling.\p"
+	.string "Next time, let's have another\n"
+	.string "picnic afterward!$"
 
 Route32South_EventScript_ArtistCaroline::
 	trainerbattle_single TRAINER_CAROLINE, Route32South_Text_CarolineIntro, Route32South_Text_CarolineDefeat
@@ -98,9 +132,22 @@ Route32South_Text_CarolinePostBattle:
 	.string "they're simply perfect.$"
 
 Route32South_EventScript_DragonTamerZander::
-	trainerbattle_single TRAINER_ZANDER, Route32South_DragonTamerZander_Text_Intro, Route32South_DragonTamerZander_Text_Defeat
+	trainerbattle_single TRAINER_ZANDER, Route32South_DragonTamerZander_Text_Intro, Route32South_DragonTamerZander_Text_Defeat, Route32South_EventScript_TryRegisterZander
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, Route32South_EventScript_RematchZander
 	msgbox Route32South_DragonTamerZander_Text_PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route32South_EventScript_RematchZander::
+	trainerbattle_rematch TRAINER_ZANDER, Route32South_DragonTamerZander_Text_RematchIntro, Route32South_DragonTamerZander_Text_RematchDefeat
+	msgbox Route32South_DragonTamerZander_Text_PostRematch, MSGBOX_AUTOCLOSE
+	end
+
+Route32South_EventScript_TryRegisterZander::
+	msgbox Route32South_DragonTamerZander_Text_RegisterPrompt, MSGBOX_DEFAULT
+register_matchcall TRAINER_ZANDER
+release
+end
 
 Route32South_DragonTamerZander_Text_Intro:
 	.string "Look up.\n"
@@ -116,4 +163,27 @@ Route32South_DragonTamerZander_Text_PostBattle:
 	.string "endless.\p"
 	.string "That's why I train to reach\n"
 	.string "those heights.$"
+
+Route32South_DragonTamerZander_Text_RegisterPrompt:
+	.string "Few trainers inspire me to train\n"
+	.string "harder than you.\p"
+	.string "When we meet again, let our dragons\n"
+	.string "cross paths once more.\p"
+	.string "Can I get your number?$"
+
+Route32South_DragonTamerZander_Text_RematchIntro:
+	.string "The sky still lies beyond my reach…\p"
+	.string "But each battle brings me closer.\p"
+	.string "Show me how much farther I have\n"
+	.string "to climb.$"
+
+Route32South_DragonTamerZander_Text_RematchDefeat:
+	.string "Even dragons must keep\n"
+	.string "reaching higher…$"
+
+Route32South_DragonTamerZander_Text_PostRematch:
+	.string "One day my dragons will soar\n"
+	.string "without limits.\p"
+	.string "Until then… I will continue\n"
+	.string "to train.$"
 

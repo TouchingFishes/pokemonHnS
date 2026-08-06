@@ -8,15 +8,41 @@ Route43_MapScript_OnTransition::
 	callnative SetTimeBasedEncounters
 	end
 
-Route43_EventScript_Benjamin::
-	trainerbattle_single TRAINER_BENJAMIN Route43_Text_PokemaniacBenjaminSeen, Route43_Text_PokemaniacBenjaminBeaten
-	msgbox Route43_Text_PokemaniacBenjaminAfter, MSGBOX_AUTOCLOSE
-	end
+Route43_EventScript_Koji::
+    trainerbattle_single TRAINER_KOJI, Route43_Text_BugManiacKojiSeen, Route43_Text_BugManiacKojiBeaten, Route43_EventScript_TryRegisterKoji
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route43_EventScript_RematchKoji
+    msgbox Route43_Text_BugManiacKojiAfter, MSGBOX_AUTOCLOSE
+    end
+
+Route43_EventScript_RematchKoji::
+    trainerbattle_rematch TRAINER_KOJI, Route43_Text_KojiRematchIntro, Route43_Text_KojiRematchDefeat
+    msgbox Route43_Text_KojiPostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route43_EventScript_TryRegisterKoji::
+    msgbox Route43_Text_KojiRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_KOJI
+    release
+    end
 
 Route43_EventScript_Brent::
-	trainerbattle_single TRAINER_BRENT Route43_Text_PokemaniacBrentSeen, Route43_Text_PokemaniacBrentBeaten
-	msgbox Route43_Text_PokemaniacBrentAfter, MSGBOX_AUTOCLOSE
-	end
+    trainerbattle_single TRAINER_BRENT, Route43_Text_PokemaniacBrentSeen, Route43_Text_PokemaniacBrentBeaten, Route43_EventScript_TryRegisterBrent
+    specialvar VAR_RESULT, ShouldTryRematchBattle
+    goto_if_eq VAR_RESULT, TRUE, Route43_EventScript_RematchBrent
+    msgbox Route43_Text_PokemaniacBrentAfter, MSGBOX_AUTOCLOSE
+    end
+
+Route43_EventScript_RematchBrent::
+    trainerbattle_rematch TRAINER_BRENT, Route43_Text_BrentRematchIntro, Route43_Text_BrentRematchDefeat
+    msgbox Route43_Text_BrentPostRematch, MSGBOX_AUTOCLOSE
+    end
+
+Route43_EventScript_TryRegisterBrent::
+    msgbox Route43_Text_BrentRegisterPrompt, MSGBOX_DEFAULT
+    register_matchcall TRAINER_BRENT
+    release
+    end
 
 Route43_EventScript_Ron::
 	trainerbattle_single TRAINER_RON Route43_Text_PokemaniacRonSeen, Route43_Text_PokemaniacRonBeaten
@@ -50,30 +76,87 @@ Route43_EventScript_Item_Max_Ether::
 	finditem ITEM_MAX_ETHER
 	end
 
-Route43_Text_PokemaniacBenjaminSeen:
-    .string "I love POKéMON!\p"
-    .string "That's why I started--and why I'll\n"
-    .string "keep on collecting POKéMON!$"
+Route43_Text_BugManiacKojiSeen:
+    .string "Amazing!\p"
+    .string "Have you ever seen BUG POKéMON\n"
+    .string "with such beautiful colors?$"
 
-Route43_Text_PokemaniacBenjaminBeaten:
-    .string "How could you do this to me?$"
+Route43_Text_BugManiacKojiBeaten:
+    .string "Incredible!\p"
+    .string "Your POKéMON shine brighter than\n"
+    .string "the rarest BUG POKéMON!$"
 
-Route43_Text_PokemaniacBenjaminAfter:
-    .string "What else do I like besides\n"
-    .string "POKéMON?\p"
-    .string "MARY on the radio. I bet she's\n"
-    .string "cute!$"
+Route43_Text_BugManiacKojiAfter:
+    .string "Every BUG POKéMON has its own\n"
+    .string "unique colors and patterns.\p"
+    .string "That's what makes studying them\n"
+    .string "so fascinating!$"
+
+Route43_Text_KojiRegisterPrompt:
+    .string "Your POKéMON have something\n"
+    .string "special about them.\p"
+    .string "I'd love to study their strength\n"
+    .string "in another battle.\p"
+    .string "Can I get your number?$"
+
+Route43_Text_KojiRematchIntro:
+    .string "There you are!\p"
+    .string "Since our last battle, I've been\n"
+    .string "searching for even more unusual\n"
+    .string "BUG POKéMON!\p"
+    .string "Now let me show you what I found!$"
+
+Route43_Text_KojiRematchDefeat:
+    .string "Wonderful!\p"
+    .string "Your POKéMON are just as\n"
+    .string "remarkable as rare BUG POKéMON!$"
+
+Route43_Text_KojiPostRematch:
+    .string "Strength isn't the only thing that\n"
+    .string "makes a POKéMON special.\p"
+    .string "Their colors, their habits, and\n"
+    .string "their personalities all matter.\p"
+    .string "That's why BUG POKéMON are amazing!$"
 
 Route43_Text_PokemaniacBrentSeen:
-    .string "Hey! Do you have any rare\n"
-    .string "POKéMON?$"
+    .string "Hey! Do you like unusual\n"
+    .string "POKéMON?\p"
+    .string "I've been studying Pokémon with\n"
+    .string "the strangest habits!$"
 
 Route43_Text_PokemaniacBrentBeaten:
-    .string "Oh, my poor POKéMON! Darlings!$"
+    .string "Oh, my poor POKéMON!\p"
+    .string "They tried their best!$"
 
 Route43_Text_PokemaniacBrentAfter:
-    .string "I'd be happy just to own a single\n"
-    .string "rare POKéMON.$"
+    .string "Some POKéMON are amazing because\n"
+    .string "of their strength.\p"
+    .string "Others are amazing because of\n"
+    .string "their strange personalities.\p"
+    .string "That's what makes them special!$"
+
+Route43_Text_BrentRegisterPrompt:
+    .string "Your POKéMON are fascinating!\p"
+    .string "I'd love to test some of my\n"
+    .string "unusual POKéMON against you.\p"
+    .string "Can I get your number?$"
+
+Route43_Text_BrentRematchIntro:
+    .string "Ah! It's you!\p"
+    .string "I've discovered even more rare\n"
+    .string "and unusual POKéMON since we met!\p"
+    .string "Their abilities might surprise you!$"
+
+Route43_Text_BrentRematchDefeat:
+    .string "Amazing!\p"
+    .string "My rare POKéMON were wonderful,\n"
+    .string "but yours were better!$"
+
+Route43_Text_BrentPostRematch:
+    .string "A POKéMON doesn't have to be\n"
+    .string "powerful to be incredible.\p"
+    .string "The little things that make them\n"
+    .string "different are what I love most!$"
 
 Route43_Text_PokemaniacRonSeen:
     .string "Would you get this?\p"
