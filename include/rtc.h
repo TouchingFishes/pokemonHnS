@@ -15,6 +15,15 @@
 #define RTC_ERR_INVALID_MINUTE 0x0400
 #define RTC_ERR_INVALID_SECOND 0x0800
 
+#define WEEKDAY_SUNDAY         0
+#define WEEKDAY_MONDAY         1
+#define WEEKDAY_TUESDAY        2
+#define WEEKDAY_WEDNESDAY      3
+#define WEEKDAY_THURSDAY       4
+#define WEEKDAY_FRIDAY         5
+#define WEEKDAY_SATURDAY       6
+
+
 #define RTC_ERR_FLAG_MASK      0x0FF0
 
 extern struct Time gLocalTime;

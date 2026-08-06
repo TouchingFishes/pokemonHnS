@@ -955,6 +955,18 @@ u16 GetWeekCount(void)
     return weekCount;
 }
 
+u8 GetWeekDay(void)
+{
+    return gLocalTime.days % 7;
+}
+
+void SetChosenWeekDay(void)
+{
+    u8 chosen = gSpecialVar_0x8004;
+    u8 current = GetWeekDay();
+    gLocalTime.days += (chosen + 7 - current) % 7;
+}
+
 u8 GetLeadMonFriendshipScore(void)
 {
     struct Pokemon *pokemon = &gPlayerParty[GetLeadMonIndex()];

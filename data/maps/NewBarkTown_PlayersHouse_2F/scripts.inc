@@ -53,3 +53,8 @@ NewBarkTown_PlayersHouse_2F_Text_NES:
     .string "{PLAYER} played with the NES.\p"
     .string "…Okay!\n"
     .string "It's time to go!$"
+
+PlayersHouse_2F_Text_OversleptWhatDay:
+	.string "Huh…? I totally overslept!\p"
+	.string "Wait…\n"
+	.string "what day is it again?$"

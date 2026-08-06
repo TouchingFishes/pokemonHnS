@@ -70,6 +70,7 @@ PlayersHouse_2F_EventScript_WallClock::
 	msgbox PlayersHouse_2F_Text_ClockIsStopped, MSGBOX_DEFAULT
 	call PlayersHouse_2F_EventScript_SetWallClock
 	delay 30
+	call PlayerHouse_2F_EventScript_AskWeekDay
 	setvar VAR_GARBAGEVAR, 6
 	setflag FLAG_SET_WALL_CLOCK
 	setflag FLAG_GARBAGEFLAG
@@ -81,6 +82,18 @@ PlayersHouse_2F_EventScript_WallClock::
 	removeobject VAR_0x8008
 	releaseall
 	end
+
+PlayerHouse_2F_EventScript_AskWeekDay::
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerHouse_2F_Movement_QuestionMark
+	waitmovement 0
+	msgbox PlayersHouse_2F_Text_OversleptWhatDay, MSGBOX_DEFAULT
+	closemessage
+PlayerHouse_2F_EventScript_AskWeekDay_Loop::
+	multichoice 20, 0, MULTI_DAYS_OF_WEEK, FALSE
+	goto_if_eq VAR_RESULT, 7, PlayerHouse_2F_EventScript_AskWeekDay_Loop
+	copyvar VAR_0x8004, VAR_RESULT
+	special SetChosenWeekDay
+	return
 
 PlayersHouse_2F_EventScript_MomComesUpstairsMale::
 	setvar VAR_0x8008, LOCALID_MOM_2F
@@ -150,6 +163,10 @@ PlayersHouse_2F_Movement_MomExitsFemale:
 	walk_left
 	walk_up
 	delay_8
+	step_end
+
+PlayerHouse_2F_Movement_QuestionMark:
+	emote_question_mark
 	step_end
 
 PlayersHouse_1F_EventScript_SetWatchedBroadcast::

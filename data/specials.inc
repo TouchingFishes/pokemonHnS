@@ -274,6 +274,8 @@ gSpecials::
 	def_special DoInGameTradeScene
 	def_special GetTradeSpecies
 	def_special GetWeekCount
+	def_special SetChosenWeekDay
+	def_special GetWeekDay
 	def_special RetrieveLotteryNumber
 	def_special PickLotteryCornerTicket
 	def_special ShowBerryBlenderRecordWindow
