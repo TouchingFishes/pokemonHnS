@@ -89,7 +89,7 @@ PlayerHouse_2F_EventScript_AskWeekDay::
 	msgbox PlayersHouse_2F_Text_OversleptWhatDay, MSGBOX_DEFAULT
 	closemessage
 PlayerHouse_2F_EventScript_AskWeekDay_Loop::
-	multichoice 20, 0, MULTI_DAYS_OF_WEEK, FALSE
+	multichoice 20, 0, MULTI_DAYS_OF_WEEK, TRUE
 	goto_if_eq VAR_RESULT, 7, PlayerHouse_2F_EventScript_AskWeekDay_Loop
 	copyvar VAR_0x8004, VAR_RESULT
 	special SetChosenWeekDay

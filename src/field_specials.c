@@ -957,7 +957,10 @@ u16 GetWeekCount(void)
 
 u8 GetWeekDay(void)
 {
-    return gLocalTime.days % 7;
+    s16 day = gLocalTime.days % 7;
+    if (day < 0)
+        day += 7;
+    return (u8)day;
 }
 
 void SetChosenWeekDay(void)
