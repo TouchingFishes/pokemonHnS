@@ -33,6 +33,67 @@ OlivineBay_EventScript_Rocker::
 	release
 	end
 
+OlivineBay_EventScript_ShellBellExpert::
+	lock
+	faceplayer
+	checkitem ITEM_SHOAL_SALT, 4
+	goto_if_eq VAR_RESULT, FALSE, OlivineBay_EventScript_NotEnoughShoalSaltOrShells
+	checkitem ITEM_SHOAL_SHELL, 4
+	goto_if_eq VAR_RESULT, FALSE, OlivineBay_EventScript_NotEnoughShoalSaltOrShells
+	msgbox OlivineBay_Text_WouldYouLikeShellBell, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, OlivineBay_EventScript_DeclineShellBell
+	checkitemspace ITEM_SHELL_BELL
+	call_if_eq VAR_RESULT, FALSE, OlivineBay_EventScript_CheckSpaceWillBeFreed
+	goto_if_eq VAR_RESULT, 2, OlivineBay_EventScript_NoRoomForShellBell
+	msgbox OlivineBay_Text_MakeShellBellRightAway, MSGBOX_DEFAULT
+	removeitem ITEM_SHOAL_SALT, 4
+	removeitem ITEM_SHOAL_SHELL, 4
+	giveitem ITEM_SHELL_BELL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull  @ Never FALSE, we already made sure there will be room in the bag.
+	msgbox OlivineBay_Text_ExplainShellBell, MSGBOX_DEFAULT
+	setflag FLAG_TEMP_2  @ Not read. Perhaps meant to stop him from re-explaining the Shell Bell if multiple are received in one sitting.
+	release
+	end
+
+@ If the bag is full, check if a slot will be freed when 4 Shoal Salt or Shells are given
+OlivineBay_EventScript_CheckSpaceWillBeFreed::
+	checkitem ITEM_SHOAL_SALT, 5
+	goto_if_eq VAR_RESULT, TRUE, OlivineBay_EventScript_CheckSpaceWillBeFreedShells
+	return
+
+OlivineBay_EventScript_CheckSpaceWillBeFreedShells::
+	checkitem ITEM_SHOAL_SHELL, 5
+	goto_if_eq VAR_RESULT, TRUE, OlivineBay_EventScript_NoSpaceWillBeFreed
+	return
+
+OlivineBay_EventScript_NoSpaceWillBeFreed::
+	setvar VAR_RESULT, 2
+	return
+
+OlivineBay_EventScript_NoRoomForShellBell::
+	msgbox OlivineBay_Text_NoSpaceInYourBag, MSGBOX_DEFAULT
+	release
+	end
+
+OlivineBay_EventScript_NotEnoughShoalSaltOrShells::
+	checkitem ITEM_SHOAL_SALT
+	goto_if_eq VAR_RESULT, TRUE, OlivineBay_EventScript_HasSomeShoalSaltOrShell
+	checkitem ITEM_SHOAL_SHELL
+	goto_if_eq VAR_RESULT, TRUE, OlivineBay_EventScript_HasSomeShoalSaltOrShell
+	msgbox OlivineBay_Text_AreYouPlanningOnGoingInThere, MSGBOX_DEFAULT
+	release
+	end
+
+OlivineBay_EventScript_HasSomeShoalSaltOrShell::
+	msgbox OlivineBay_Text_BringMe4ShoalSaltAndShells, MSGBOX_DEFAULT
+	release
+	end
+
+OlivineBay_EventScript_DeclineShellBell::
+	msgbox OlivineBay_Text_WantedToMakeShellBell, MSGBOX_DEFAULT
+	release
+	end
+
 OlivineBay_EventScript_Roman::
 	trainerbattle_single TRAINER_ROMAN OlivineBay_Text_RomanSeen, OlivineBay_Text_RomanBeaten
 	msgbox OlivineBay_Text_RomanAfter, MSGBOX_AUTOCLOSE
@@ -56,6 +117,10 @@ OlivineBay_EventScript_Matt::
 OlivineBay_EventScript_Colton::
 	trainerbattle_single TRAINER_COLTON OlivineBay_Text_ColtonSeen, OlivineBay_Text_ColtonBeaten
 	msgbox OlivineBay_Text_ColtonAfter, MSGBOX_AUTOCLOSE
+	end
+
+OlivineBay_EventScript_ShoalSalt::
+	finditem ITEM_SHOAL_SALT
 	end
 
 OlivineBay_Text_Fisher:
@@ -269,4 +334,55 @@ OlivineBay_Text_ColtonAfter:
 	.string "Short battles, quick swims…\n"
 	.string "that's how I like it.\p"
 	.string "Alright, back in the water!$"
+
+OlivineBay_Text_AreYouPlanningOnGoingInThere:
+	.string "Are you planning on exploring\n"
+	.string "all of JOHTO's coast?\p"
+	.string "How about bringing me back some\n"
+	.string "SHOAL SALT and SHOAL SHELLS?\p"
+	.string "You can find them around the sea\n"
+	.string "do not forget that SHOAL SHELLS\p"
+	.string "tend to be located near CHERRYGROVE\n"
+	.string "CITY. While SHOAL SALT can be found\l"
+	.string "here.\p"
+	.string "I can make you something good if\n"
+	.string "you bring me the ingredients.$"
+
+OlivineBay_Text_BringMe4ShoalSaltAndShells:
+	.string "If you bring me four each of the\n"
+	.string "SHOAL SALT and SHOAL SHELLS,\l"
+	.string "I can make you a SHELL BELL…\p"
+	.string "You can get those ingredients\n"
+	.string "every day.$"
+
+OlivineBay_Text_WouldYouLikeShellBell:
+	.string "Oh, hey! SHOAL SALT and SHOAL SHELLS!\n"
+	.string "And enough of them, too!\p"
+	.string "Would you like me to make you\n"
+	.string "a SHELL BELL with them?$"
+
+OlivineBay_Text_MakeShellBellRightAway:
+	.string "All righty, then! I'll make you\n"
+	.string "a SHELL BELL right away.\p"
+	.string "… … … … … … … …\n"
+	.string "… … … … … … … …\p"
+	.string "There! Done!$"
+
+OlivineBay_Text_ExplainShellBell:
+	.string "Have a POKéMON hold on to that.\n"
+	.string "It'll love it, that's for certain.\p"
+	.string "Why, the SHELL BELL's chime…\n"
+	.string "It's simply sublime!\p"
+	.string "You can get its ingredients every day,\n"
+	.string "so I can make you more.$"
+
+OlivineBay_Text_WantedToMakeShellBell:
+	.string "Oh… Is that so…\n"
+	.string "I wanted to make a SHELL BELL…$"
+
+OlivineBay_Text_NoSpaceInYourBag:
+	.string "You don't have space in your BAG\n"
+	.string "if I were to make it for you.\p"
+	.string "You should make room and come back\n"
+	.string "for a SHELL BELL.$"
 	

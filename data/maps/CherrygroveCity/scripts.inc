@@ -321,6 +321,10 @@ CherryGroveCity_Silver_AfterBattle::
 	release
 	end
 
+CherrygroveCity_EventScript_ShoalShell::
+	finditem ITEM_SHOAL_SHELL
+	end
+
 CherrygroveCity_Text_GuideGentIntro:
 	.string "You're a rookie trainer,\n"
 	.string "aren't you? I can tell!\p"

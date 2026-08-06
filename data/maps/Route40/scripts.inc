@@ -283,3 +283,7 @@ Route40_EventScript_Tentacool::
 	release
 	end
 
+Route40_EventScript_ShoalSalt::
+	finditem ITEM_SHOAL_SALT
+	end
+

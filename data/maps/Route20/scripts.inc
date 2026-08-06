@@ -6,8 +6,8 @@ Route20_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SetTimeEncounters
 	.byte 0
 
-Route20_EventScript_ShellBell::
-	finditem ITEM_SHELL_BELL
+Route20_EventScript_TMChargeBeam::
+	finditem ITEM_TM_CHARGE_BEAM
 	end
 
 Route20_EventScript_TMFlameCharge::

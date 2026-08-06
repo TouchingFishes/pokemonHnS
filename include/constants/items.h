@@ -380,7 +380,7 @@
 #define ITEM_TM53 341 //Ice Punch - Goldenrod Mart done
 #define ITEM_TM54 342 //Mimic - Mahogany City done
 #define ITEM_TM55 343 //Grass Knot -
-#define ITEM_TM56 344 //Charge Beam - 
+#define ITEM_TM56 344 //Charge Beam - Route 20
 #define ITEM_TM57 345 //Venoshock - Route 11 (from Polished)
 #define ITEM_TM58 346 //Rock Blast
 #define ITEM_TM59 347 //Energy Ball - Route 26 done

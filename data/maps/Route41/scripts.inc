@@ -310,6 +310,10 @@ Route41_EventScript_TentacruelAttack4::
 	release
 	end
 
+Route41_EventScript_ShoalSalt::
+	finditem ITEM_SHOAL_SALT
+	end
+
 Route41_Text_Tentacruel:
 	.string "TENTACRUEL: Cruooo...$"
 

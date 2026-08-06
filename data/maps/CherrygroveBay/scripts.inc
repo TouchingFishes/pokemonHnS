@@ -45,6 +45,10 @@ CherrygroveBay_EventScript_Lass::
 	release
 	end
 
+CherrygroveBay_EventScript_ShoalShell::
+	finditem ITEM_SHOAL_SHELL
+	end
+
 CherrygroveBay_Text_Lass:
 	.string "Whee! The water's so nice!\p"
 	.string "I could play here all day!\p"

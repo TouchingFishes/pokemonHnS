@@ -145,9 +145,13 @@ Route32South_EventScript_RematchZander::
 
 Route32South_EventScript_TryRegisterZander::
 	msgbox Route32South_DragonTamerZander_Text_RegisterPrompt, MSGBOX_DEFAULT
-register_matchcall TRAINER_ZANDER
-release
-end
+	register_matchcall TRAINER_ZANDER
+	release
+	end
+
+Route32South_EventScript_ShoalShell::
+	finditem ITEM_SHOAL_SHELL
+	end
 
 Route32South_DragonTamerZander_Text_Intro:
 	.string "Look up.\n"

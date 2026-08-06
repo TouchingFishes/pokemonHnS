@@ -419,6 +419,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CherryGroveCity_EventScript_Kingler",
       "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 13,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route40_EventScript_ShoalSalt",
+      "flag": "FLAG_ITEM_OLIVINE_BAY_SHOAL_SALT"
     }
   ],
   "warp_events": [
