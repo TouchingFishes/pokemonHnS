@@ -130,7 +130,19 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomsIntro::
 	releaseall
 	end
 
-
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall::
+	lockall
+	specialvar VAR_RESULT, TryMomPurchase
+	goto_if_eq VAR_RESULT, ITEM_NONE, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_End
+	setflag FLAG_DAILY_MOM_ITEM_GIFT
+	bufferitemname STR_VAR_1, VAR_RESULT
+	pokenavcall NewBarkTown_PlayersHouse_1F_EventScript_MomCallBoughItem
+	waitmessage
+	delay 30
+	closemessage
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_End::
+	releaseall
+	end
 
 NewBarkTown_PlayersHouse_1F_EventScript_GivePokeGear::
 	playfanfare MUS_OBTAIN_ITEM
@@ -282,3 +294,13 @@ NewBarkTown_PlayersHouse_1F_Text_MomStoppedSaving:
 	.string "All right.\p"
 	.string "I'll leave your prize money\n"
 	.string "with you from now on.$"
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomCallBoughItem:
+	.string "MOM: Hi, {PLAYER}!\p"
+	.string "While I was out shopping,\n"
+	.string "I found something useful.\p"
+	.string "I bought a {STR_VAR_1} with\n"
+	.string "some of your savings.\p"
+	.string "Don't worry, it was a bargain!\p"
+	.string "I'll have it ready for you\n"
+	.string "when you get back home.$"

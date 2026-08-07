@@ -9,6 +9,8 @@
 #include "sprite.h"
 #include "strings.h"
 #include "decompress.h"
+#include "item.h"
+#include "tx_randomizer_and_challenges.h"
 
 #define MAX_MONEY 9999999
 
@@ -151,6 +153,61 @@ void WithdrawMomSavings(void)
 {
     AddMoney(&gSaveBlock1Ptr->money, GetMomSavings());
     SetMomSavings(0);
+}
+
+//the items mom may purchase
+static const u16 sMomItemTable[] =
+{
+    ITEM_POTION,
+    ITEM_ANTIDOTE,
+    ITEM_PARALYZE_HEAL,
+    ITEM_AWAKENING,
+    ITEM_BURN_HEAL,
+    ITEM_SUPER_POTION,
+    ITEM_GREAT_BALL,
+    ITEM_FULL_HEAL,
+    ITEM_REPEL,
+    ITEM_ETHER,
+    ITEM_HYPER_POTION,
+    ITEM_ULTRA_BALL,
+    ITEM_REVIVE,
+    ITEM_NUGGET,
+    ITEM_RARE_CANDY,
+    ITEM_FULL_RESTORE,
+    ITEM_MAX_REVIVE,
+    ITEM_KINGS_ROCK,
+}; //18 entries, cheap -> pricey - 18 was chosen because the optionWindow is size 9 and tier maxes at 9 so 9 + 9 = 18
+
+u16 TryMomPurchase(void)
+{
+    u8 tier = GetCurrentBadgeCount(); // 0-8, Johto bagdes only
+    u8 window[9];
+    u8 count = 0;
+    u8 i;
+    u32 savings = GetMomSavings();
+
+    if (tier >= NUM_BADGES)
+        tier = 9; //owning all 8 Johto Badges unlocks the top window
+
+    for (i = 0; i < 9; i++)
+    {
+        u16 idx = tier + i;
+        u32 discounterPrice = ((ItemId_GetPrice(sMomItemTable[idx] * 9)) / 10); //10% off - mom is a shopper ;)
+
+        if (discounterPrice != 0 && discounterPrice <= savings && CheckPCHasSpace(sMomItemTable[idx], 1))
+            window[count++] = idx;
+    }
+
+    if (count == 0)
+        return ITEM_NONE; //nothing in her badge-tier is afforrdable or PC is full
+
+    {
+        u16 chosenItem = sMomItemTable[window[Random() % count]];
+        u32 discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10;
+        RemoveSavings(discountedPrice);
+        AddPCItem(chosenItem, 1);
+        return chosenItem;
+    }
 }
 
 bool8 IsEnoughForCostInVar0x8005(void)

@@ -359,6 +359,31 @@ u8 GetSSTidalLocation(s8 *mapGroup, s8 *mapNum, s16 *x, s16 *y)
     return SS_TIDAL_LOCATION_CURRENTS;
 }
 
+static EWRAM_DATA u8 sMomCallStepCounter = 0;
+
+bool32 ShouldDoMomItemCall(void)
+{
+    if (FlagGet(FLAG_DAILY_MOM_ITEM_GIFT))
+        return FALSE; //already fired today
+
+    switch (gMapHeader.mapType)
+    {
+    case MAP_TYPE_TOWN:
+    case MAP_TYPE_CITY:
+    case MAP_TYPE_ROUTE:
+    case MAP_TYPE_OCEAN_ROUTE:
+        break;
+    default:
+        return FALSE;
+    }
+
+    if (++sMomCallStepCounter < 10)
+        return FALSE;
+    sMomCallStepCounter = 0;
+
+    return (Random() % 40) == 0; // ~2.5% chance every 10 steps onbce eligible -> averages ~400 steps per day
+}
+
 bool32 ShouldDoWallyCall(void)
 {
     if (FlagGet(FLAG_ENABLE_FIRST_WALLY_POKENAV_CALL))

@@ -715,6 +715,11 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
     }
     if (TryStartMatchCall())
         return TRUE;
+    if (ShouldDoMomItemCall())
+    {
+        ScriptContext_SetupScript(NewBarkTown_PlayersHouse_1F_EventScript_MomCall);
+        return TRUE;
+    }
     return FALSE;
 }
 

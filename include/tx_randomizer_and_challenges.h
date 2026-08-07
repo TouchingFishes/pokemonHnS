@@ -100,6 +100,7 @@ bool8 IsPokecenterChallengeActivated(void);
 bool8 IsRandomItemsActivated(void);
 bool8 HMsOverwriteOptionActive(void);
 
+u8 GetCurrentBadgeCount(void);
 u8 NuzlockeFlagGet(u16 mapsec);
 u8 NuzlockeFlagSet(u16 mapsec);
 u8 NuzlockeFlagClear(u16 mapsec);
