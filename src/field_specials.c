@@ -1640,6 +1640,11 @@ void BufferLottoTicketNumber(void)
     }
 }
 
+void BufferMomSavingsAmount(void)
+{
+    ConvertIntToDecimalStringN(gStringVar1, GetMomSavings(), STR_CONV_MODE_LEFT_ALIGN, 7);
+}
+
 u16 GetMysteryGiftCardStat(void)
 {
     switch (gSpecialVar_Result)

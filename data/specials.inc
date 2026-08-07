@@ -356,6 +356,8 @@ gSpecials::
 	def_special HasAllHoennMons
 	def_special MonOTNameNotPlayer
 	def_special BufferLottoTicketNumber
+	def_special BufferMomSavingsAmount
+	def_special WithdrawMomSavings
 	def_special TryHideBattleTowerReporter
 	def_special DoesPartyHaveEnigmaBerry
 	def_special GenerateContestRand

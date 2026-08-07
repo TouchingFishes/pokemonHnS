@@ -6532,10 +6532,16 @@ static void Cmd_getmoneyreward(void)
     u32 money;
 
     if (gBattleOutcome == B_OUTCOME_WON) {
+        u32 savingsCut = 0;
         money = GetTrainerMoneyToGive(gTrainerBattleOpponent_A);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(gTrainerBattleOpponent_B);
-        AddMoney(&gSaveBlock1Ptr->money, money);
+        if (FlagGet(FLAG_MOM_IS_SAVING))
+        {
+            savingsCut = (money * MOM_SAVINGS_PERCENTAGE) / 100;
+            AddMomSavings(savingsCut);
+        }
+        AddMoney(&gSaveBlock1Ptr->money, money - savingsCut);
     }
 		else
 		{

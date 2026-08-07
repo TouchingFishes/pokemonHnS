@@ -1184,6 +1184,7 @@ struct SaveBlock1
         u8 tx_Mode_Natures:1; //new for this hack
         u8 tx_Mode_TypeMode:2; //new for this hack
         u8 tx_Mode_IgnoreEVCap:1; //new for this hack
+        u32 momSavings; //new for this hack
 };
 
 extern struct SaveBlock1* gSaveBlock1Ptr;

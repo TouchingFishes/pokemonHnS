@@ -120,6 +120,39 @@ void RemoveMoney(u32 *moneyPtr, u32 toSub)
     SetMoney(moneyPtr, toSet);
 }
 
+u32 GetMomSavings(void)
+{
+    return gSaveBlock1Ptr->momSavings;
+}
+
+void SetMomSavings(u32 newValue)
+{
+    if (newValue > MAX_MONEY)
+        newValue = MAX_MONEY;
+    gSaveBlock1Ptr->momSavings = newValue;
+}
+
+void AddMomSavings(u32 toAdd)
+{
+    u32 cur = GetMomSavings();
+    if (cur + toAdd < cur || cur + toAdd > MAX_MONEY) //overflow or cap
+        SetMomSavings(MAX_MONEY);
+    else
+        SetMomSavings(cur + toAdd);
+}
+
+void RemoveSavings(u32 toSub)
+{
+    u32 cur = GetMomSavings();
+    SetMomSavings(cur > toSub ? cur - toSub : 0);
+}
+
+void WithdrawMomSavings(void)
+{
+    AddMoney(&gSaveBlock1Ptr->money, GetMomSavings());
+    SetMomSavings(0);
+}
+
 bool8 IsEnoughForCostInVar0x8005(void)
 {
     return IsEnoughMoney(&gSaveBlock1Ptr->money, gSpecialVar_0x8005);

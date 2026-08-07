@@ -51,6 +51,51 @@ NewBarkTown_PlayersHouse_1F_MomEventScript_GoodLuck::
 
 NewBarkTown_PlayersHouse_1F_EventScript_Mom_Regular::
 	call PlayersHouse_1F_EventScript_MomHealsParty
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomSavings
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomSavings::
+	lock
+	faceplayer
+	special BufferMomSavingsAmount
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomCurrentlyHolding, MSGBOX_DEFAULT
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomWithdrawPrompt, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomWithdraw
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomWithdraw::
+	special WithdrawMomSavings
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomWithdrawDone, MSGBOX_DEFAULT
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomToggleSaving
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomToggleSaving::
+	goto_if_set FLAG_MOM_IS_SAVING, NewBarkTown_PlayersHouse_1F_EventScript_MomAskStopSaving
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomAskStartSaving, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving::
+	setflag FLAG_MOM_IS_SAVING
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomSavingsConfirm, MSGBOX_DEFAULT
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomAskStopSaving::
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomStopSavingPrompt, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStopSaving
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomStopSaving::
+	clearflag FLAG_MOM_IS_SAVING
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomStoppedSaving, MSGBOX_DEFAULT
 	release
 	end
 
@@ -208,3 +253,37 @@ NewBarkTown_PlayersHouse_1F_Text_MomLeaving:
 	.string "You need to work as a team.\p"
 	.string "Now, go on!\n"
 	.string "I'm behind you all the way!$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCurrentlyHolding:
+	.string "MOM: Hi, {PLAYER}!\p"
+	.string "By the way, I've saved\n"
+	.string "{STR_VAR_1} for you.$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomWithdrawPrompt:
+	.string "Would you like to take\n"
+	.string "your savings?$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomWithdrawDone:
+	.string "There you go!\p"
+	.string "I transferred everything\n"
+	.string "back to you.$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomAskStartSaving:
+	.string "Would you like me to keep\n"
+	.string "saving your prize money?$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomSavingsConfirm:
+	.string "OK!\p"
+	.string "I'll put away a little money\n"
+	.string "from every battle.\p"
+	.string "You can ask me for it\n"
+	.string "whenever you come home.$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomStopSavingPrompt:
+	.string "You want me to stop\n"
+	.string "saving your money?$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomStoppedSaving:
+	.string "All right.\p"
+	.string "I'll leave your prize money\n"
+	.string "with you from now on.$"

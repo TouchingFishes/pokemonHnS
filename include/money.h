@@ -15,6 +15,14 @@ void ChangeAmountInMoneyBox(int amount);
 void DrawMoneyBox(int amount, u8 x, u8 y);
 void HideMoneyBox(void);
 void AddMoneyLabelObject(u16 x, u16 y);
+u32 GetMomSavings(void);
+void SetMomSavings(u32 newValue);
+void AddMomSavings(u32 toAdd);
+void RemoveSavings(u32 toSub);
+void WithdrawMomSavings(void);
 void RemoveMoneyLabelObject(void);
+u16 TryMomPurchase(void);
+
+#define MOM_SAVINGS_PERCENTAGE 25 //determines how much Mom saves
 
 #endif // GUARD_MONEY_H
