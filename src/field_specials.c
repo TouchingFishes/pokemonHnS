@@ -71,6 +71,7 @@
 #include "constants/rgb.h"
 #include "constants/abilities.h"
 #include "constants/rgb.h"
+#include "money.h"
 
 #define TAG_ITEM_ICON 5500
 

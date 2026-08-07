@@ -136,7 +136,13 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomCall::
 	goto_if_eq VAR_RESULT, ITEM_NONE, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_End
 	setflag FLAG_DAILY_MOM_ITEM_GIFT
 	bufferitemname STR_VAR_1, VAR_RESULT
-	pokenavcall NewBarkTown_PlayersHouse_1F_EventScript_MomCallBoughItem
+	compare VAR_0x8006, TRUE
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Rare
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Rare::
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait::
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
 	waitmessage
 	delay 30
 	closemessage
@@ -295,12 +301,23 @@ NewBarkTown_PlayersHouse_1F_Text_MomStoppedSaving:
 	.string "I'll leave your prize money\n"
 	.string "with you from now on.$"
 
-NewBarkTown_PlayersHouse_1F_EventScript_MomCallBoughItem:
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem:
 	.string "MOM: Hi, {PLAYER}!\p"
 	.string "While I was out shopping,\n"
 	.string "I found something useful.\p"
 	.string "I bought a {STR_VAR_1} with\n"
 	.string "some of your savings.\p"
 	.string "Don't worry, it was a bargain!\p"
-	.string "I'll have it ready for you\n"
-	.string "when you get back home.$"
+	.string "I sent it to your PC.\n"
+	.string "Good luck on your Journey!$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem:
+    .string "MOM: Hi, {PLAYER}!\p"
+    .string "You won't believe what I found\n"
+    .string "while I was shopping!\p"
+    .string "I came across {STR_VAR_1}, and\n"
+    .string "I just couldn't pass it up.\p"
+    .string "I bought it with some of your\n"
+    .string "saved money. It's in your PC.\p"
+    .string "I'm sure you'll love it!\n"
+    .string "Come home sometime!$"

@@ -155,6 +155,12 @@ void WithdrawMomSavings(void)
     SetMomSavings(0);
 }
 
+#define MOM_RARE_ITEM_CHANCE 5 // percent chance mom finds a rare item and picks from its table instead
+
+static const u16 sMomItemProbabilities[] = { 30, 42, 53, 63, 72, 80, 87, 93, 100}; 
+//cumulative percentage, one per window slot - ondex 0 (cheapest item in current tier) is most likely
+// index 8 (priciest item in teat) is least likely. Ends at 100 so a roll always matches.
+
 //the items mom may purchase
 static const u16 sMomItemTable[] =
 {
@@ -178,36 +184,61 @@ static const u16 sMomItemTable[] =
     ITEM_KINGS_ROCK,
 }; //18 entries, cheap -> pricey - 18 was chosen because the optionWindow is size 9 and tier maxes at 9 so 9 + 9 = 18
 
+static const u16 sMomRareItemTable[] =
+{
+    ITEM_NUGGET,
+    ITEM_FIRE_STONE,
+    ITEM_THUNDER_STONE,
+    ITEM_WATER_STONE,
+    ITEM_MOON_STONE,
+    ITEM_SUN_STONE,
+    ITEM_RARE_CANDY,
+    ITEM_RARE_CANDY, //not sure what to put here
+}; //18 entries, cheap -> pricey - 18 was chosen because the optionWindow is size 9 and tier maxes at 9 so 9 + 9 = 18
+
 u16 TryMomPurchase(void)
 {
-    u8 tier = GetCurrentBadgeCount(); // 0-8, Johto bagdes only
-    u8 window[9];
-    u8 count = 0;
-    u8 i;
+    u8 tier;
+    u16 chosenItem;
     u32 savings = GetMomSavings();
+    u32 discountedPrice;
+    u32 rand, j;
 
+    gSpecialVar_0x8006 = FALSE; // side channel: did she buy from the rare table?
+
+    if (Random() % 100 < MOM_RARE_ITEM_CHANCE)
+    {
+        chosenItem = sMomRareItemTable[Random() % ARRAY_COUNT(sMomRareItemTable)];
+        discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10; //10% off - mom is a shopper ;)
+        if (discountedPrice == 0 || discountedPrice > savings || CheckPCHasSpace(chosenItem, 1))
+            return ITEM_NONE; // found something rare but couldn't afford it - no purchase this cycle
+
+        RemoveSavings(discountedPrice);
+        AddPCItem(chosenItem, 1);
+        gSpecialVar_0x8006 = TRUE;
+        return chosenItem;
+
+    }
+
+    tier = GetCurrentBadgeCount(); // 0-8, Johto bagdes only
     if (tier >= NUM_BADGES)
         tier = 9; //owning all 8 Johto Badges unlocks the top window
 
-    for (i = 0; i < 9; i++)
+    rand = Random() % 100;
+    for (j = 0; j < (s32)ARRAY_COUNT(sMomItemProbabilities); j++)
     {
-        u16 idx = tier + i;
-        u32 discounterPrice = ((ItemId_GetPrice(sMomItemTable[idx] * 9)) / 10); //10% off - mom is a shopper ;)
-
-        if (discounterPrice != 0 && discounterPrice <= savings && CheckPCHasSpace(sMomItemTable[idx], 1))
-            window[count++] = idx;
+        if (sMomItemProbabilities[j] > rand)
+            break;
     }
 
-    if (count == 0)
-        return ITEM_NONE; //nothing in her badge-tier is afforrdable or PC is full
+    chosenItem = sMomItemTable[tier + j];
+    discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10; //10% off - mom is a shopper ;)
+    if (discountedPrice == 0 || discountedPrice > savings || CheckPCHasSpace(chosenItem, 1))
+        return ITEM_NONE; // found something but couldn't afford it - no purchase this cycle
 
-    {
-        u16 chosenItem = sMomItemTable[window[Random() % count]];
-        u32 discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10;
-        RemoveSavings(discountedPrice);
-        AddPCItem(chosenItem, 1);
-        return chosenItem;
-    }
+    RemoveSavings(discountedPrice);
+    AddPCItem(chosenItem, 1);
+    return chosenItem;
 }
 
 bool8 IsEnoughForCostInVar0x8005(void)
