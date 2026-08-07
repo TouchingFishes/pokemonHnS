@@ -52,9 +52,6 @@ NewBarkTown_PlayersHouse_1F_MomEventScript_GoodLuck::
 NewBarkTown_PlayersHouse_1F_EventScript_Mom_Regular::
 	call PlayersHouse_1F_EventScript_MomHealsParty
 	goto NewBarkTown_PlayersHouse_1F_EventScript_MomSavings
-	release
-	end
-
 NewBarkTown_PlayersHouse_1F_EventScript_MomSavings::
 	lock
 	faceplayer
@@ -63,9 +60,7 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomSavings::
 	msgbox NewBarkTown_PlayersHouse_1F_Text_MomWithdrawPrompt, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomWithdraw
-	goto NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
-	release
-	end
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomToggleSaving
 
 NewBarkTown_PlayersHouse_1F_EventScript_MomWithdraw::
 	special WithdrawMomSavings
