@@ -142,7 +142,6 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomCall::
 NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Rare::
 	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem
 NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait::
-	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
 	waitmessage
 	delay 30
 	closemessage

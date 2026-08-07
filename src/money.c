@@ -11,6 +11,7 @@
 #include "decompress.h"
 #include "item.h"
 #include "tx_randomizer_and_challenges.h"
+#include "random.h"
 
 #define MAX_MONEY 9999999
 
@@ -194,7 +195,7 @@ static const u16 sMomRareItemTable[] =
     ITEM_SUN_STONE,
     ITEM_RARE_CANDY,
     ITEM_RARE_CANDY, //not sure what to put here
-}; //18 entries, cheap -> pricey - 18 was chosen because the optionWindow is size 9 and tier maxes at 9 so 9 + 9 = 18
+};
 
 u16 TryMomPurchase(void)
 {
@@ -210,7 +211,7 @@ u16 TryMomPurchase(void)
     {
         chosenItem = sMomRareItemTable[Random() % ARRAY_COUNT(sMomRareItemTable)];
         discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10; //10% off - mom is a shopper ;)
-        if (discountedPrice == 0 || discountedPrice > savings || CheckPCHasSpace(chosenItem, 1))
+        if (discountedPrice == 0 || discountedPrice > savings || !CheckPCHasSpace(chosenItem, 1))
             return ITEM_NONE; // found something rare but couldn't afford it - no purchase this cycle
 
         RemoveSavings(discountedPrice);
@@ -233,7 +234,7 @@ u16 TryMomPurchase(void)
 
     chosenItem = sMomItemTable[tier + j];
     discountedPrice = (ItemId_GetPrice(chosenItem) * 9) / 10; //10% off - mom is a shopper ;)
-    if (discountedPrice == 0 || discountedPrice > savings || CheckPCHasSpace(chosenItem, 1))
+    if (discountedPrice == 0 || discountedPrice > savings || !CheckPCHasSpace(chosenItem, 1))
         return ITEM_NONE; // found something but couldn't afford it - no purchase this cycle
 
     RemoveSavings(discountedPrice);
