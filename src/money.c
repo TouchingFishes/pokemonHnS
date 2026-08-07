@@ -152,8 +152,11 @@ void RemoveMomSavings(u32 toSub)
 
 void WithdrawMomSavings(void)
 {
-    AddMoney(&gSaveBlock1Ptr->money, GetMomSavings());
-    SetMomSavings(0);
+    u32 before = GetMoney(&gSaveBlock1Ptr->money);
+    u32 savings = GetMomSavings();
+    AddMoney(&gSaveBlock1Ptr->money, savings);
+    u32 actuallyAdded = GetMoney(&gSaveBlock1Ptr->money) - before;
+    SetMomSavings(savings - actuallyAdded);
 }
 
 #define MOM_RARE_ITEM_CHANCE 5 // percent chance mom finds a rare item and picks from its table instead

@@ -45,6 +45,17 @@ NewBarkTown_PlayersHouse_1F_MomEventScript_GoodLuck::
 	setflag FLAG_MOM_VISITED
 	clearflag FLAG_HIDE_ROUTE_30_NPCS
 	setvar VAR_NEWBARK_TOWN_STATE, 5
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomProposesSaving
+NewBarkTown_PlayersHouse_1F_EventScript_MomProposesSaving::
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomProposesSaving, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving::
+	setflag FLAG_MOM_IS_SAVING
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomSavingsConfirm, MSGBOX_DEFAULT
 	release
 	end
 
@@ -321,3 +332,10 @@ NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem:
     .string "saved money. It's in your PC.\p"
     .string "I'm sure you'll love it!\n"
     .string "Come home sometime!$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomProposesSaving:
+    .string "MOM: By the way, {PLAYER}...\p"
+    .string "Would you like me to save some\n"
+    .string "of your prize money?\p"
+    .string "It's good to have a little put\n"
+    .string "away for a rainy day.$"

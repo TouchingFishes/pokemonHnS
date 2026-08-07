@@ -397,9 +397,9 @@
 #define STRINGID_TARGETABILITYSTATRAISE     395
 #define STRINGID_TARGETABILITYSTATLOWER     396
 #define STRINGID_TARGETSTATWONTGOHIGHER     397
+#define STRINGID_MOMSAVEDMONEY              398
 
-
-#define BATTLESTRINGS_COUNT                 398
+#define BATTLESTRINGS_COUNT                 399
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

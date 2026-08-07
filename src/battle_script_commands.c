@@ -6530,9 +6530,9 @@ static void Cmd_getmoneyreward(void)
     AddMoney(&gSaveBlock1Ptr->money, moneyReward);
     PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 5, moneyReward);*/
     u32 money;
+    u32 savingsCut = 0;
 
     if (gBattleOutcome == B_OUTCOME_WON) {
-        u32 savingsCut = 0;
         money = GetTrainerMoneyToGive(gTrainerBattleOpponent_A);
         if (gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
             money += GetTrainerMoneyToGive(gTrainerBattleOpponent_B);
@@ -6542,6 +6542,7 @@ static void Cmd_getmoneyreward(void)
             AddMomSavings(savingsCut);
         }
         AddMoney(&gSaveBlock1Ptr->money, money - savingsCut);
+        money -= savingsCut;
     }
 		else
 		{
@@ -6568,7 +6569,9 @@ static void Cmd_getmoneyreward(void)
         RemoveMoney(&gSaveBlock1Ptr->money, money);
     }
 
+    gBattleCommunication[MULTISTRING_CHOOSER] = (savingsCut != 0);
     PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff1, 5, money);
+    PREPARE_WORD_NUMBER_BUFFER(gBattleTextBuff2, 5, savingsCut);
     gBattlescriptCurrInstr++;
 }
 
