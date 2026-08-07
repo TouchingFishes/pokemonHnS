@@ -144,7 +144,7 @@ void AddMomSavings(u32 toAdd)
         SetMomSavings(cur + toAdd);
 }
 
-void RemoveSavings(u32 toSub)
+void RemoveMomSavings(u32 toSub)
 {
     u32 cur = GetMomSavings();
     SetMomSavings(cur > toSub ? cur - toSub : 0);
@@ -158,7 +158,7 @@ void WithdrawMomSavings(void)
 
 #define MOM_RARE_ITEM_CHANCE 5 // percent chance mom finds a rare item and picks from its table instead
 
-static const u16 sMomItemProbabilities[] = { 30, 42, 53, 63, 72, 80, 87, 93, 100}; 
+static const u16 sMomItemProbabilities[] = { 30, 42, 53, 63, 72, 80, 87, 94, 100}; 
 //cumulative percentage, one per window slot - ondex 0 (cheapest item in current tier) is most likely
 // index 8 (priciest item in teat) is least likely. Ends at 100 so a roll always matches.
 
@@ -214,7 +214,7 @@ u16 TryMomPurchase(void)
         if (discountedPrice == 0 || discountedPrice > savings || !CheckPCHasSpace(chosenItem, 1))
             return ITEM_NONE; // found something rare but couldn't afford it - no purchase this cycle
 
-        RemoveSavings(discountedPrice);
+        RemoveMomSavings(discountedPrice);
         AddPCItem(chosenItem, 1);
         gSpecialVar_0x8006 = TRUE;
         return chosenItem;
@@ -237,7 +237,7 @@ u16 TryMomPurchase(void)
     if (discountedPrice == 0 || discountedPrice > savings || !CheckPCHasSpace(chosenItem, 1))
         return ITEM_NONE; // found something but couldn't afford it - no purchase this cycle
 
-    RemoveSavings(discountedPrice);
+    RemoveMomSavings(discountedPrice);
     AddPCItem(chosenItem, 1);
     return chosenItem;
 }

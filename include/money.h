@@ -18,7 +18,7 @@ void AddMoneyLabelObject(u16 x, u16 y);
 u32 GetMomSavings(void);
 void SetMomSavings(u32 newValue);
 void AddMomSavings(u32 toAdd);
-void RemoveSavings(u32 toSub);
+void RemoveMomSavings(u32 toSub);
 void WithdrawMomSavings(void);
 void RemoveMoneyLabelObject(void);
 u16 TryMomPurchase(void);
