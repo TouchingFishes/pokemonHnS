@@ -49,8 +49,17 @@ NewBarkTown_PlayersHouse_1F_MomEventScript_GoodLuck::
 NewBarkTown_PlayersHouse_1F_EventScript_MomProposesSaving::
 	msgbox NewBarkTown_PlayersHouse_1F_Text_MomProposesSaving, MSGBOX_YESNO
 	compare VAR_RESULT, YES
-	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
-	goto NewBarkTown_PlayersHouse_1F_EventScript_MomStopSaving
+	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStartSavingInitial
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomNowGo, MSGBOX_DEFAULT
+	release
+	end
+
+NewBarkTown_PlayersHouse_1F_EventScript_MomStartSavingInitial::
+	setflag FLAG_MOM_IS_SAVING
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomSavingsConfirm, MSGBOX_DEFAULT
+	msgbox NewBarkTown_PlayersHouse_1F_Text_MomNowGo, MSGBOX_DEFAULT
+	release
+	end
 
 NewBarkTown_PlayersHouse_1F_EventScript_Mom_Regular::
 	call PlayersHouse_1F_EventScript_MomHealsParty
@@ -266,9 +275,7 @@ NewBarkTown_PlayersHouse_1F_Text_MomLeaving:
 	.string "That does sound challenging...\p"
 	.string "Just be careful.\p"
 	.string "POKéMON are your friends.\n"
-	.string "You need to work as a team.\p"
-	.string "Now, go on!\n"
-	.string "I'm behind you all the way!$"
+	.string "You need to work as a team.$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomCurrentlyHolding:
 	.string "MOM: Hi, {PLAYER}!\p"
@@ -331,3 +338,7 @@ NewBarkTown_PlayersHouse_1F_Text_MomProposesSaving:
     .string "of your prize money?\p"
     .string "It's good to have a little put\n"
     .string "away for a rainy day.$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomNowGo:
+	.string "Now, go on!\n"
+	.string "I'm behind you all the way!$"
