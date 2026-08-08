@@ -12,6 +12,7 @@
 #include "gpu_regs.h"
 #include "menu.h"
 #include "dma3.h"
+#include "rtc.h"
 
 struct Pokenav_MainMenu
 {
@@ -47,6 +48,7 @@ static void SpriteCB_MoveLeftHeader(struct Sprite *);
 static void InitPokenavMainMenuResources(void);
 static void CreateLeftHeaderSprites(void);
 static void InitHelpBar(void);
+static void InitDayDisplay(void);
 static u32 LoopedTask_SlideMenuHeaderUp(s32);
 static u32 LoopedTask_SlideMenuHeaderDown(s32);
 static void DrawHelpBar(u32);
@@ -82,6 +84,17 @@ static const struct WindowTemplate sHelpBarWindowTemplate[] =
         .baseBlock = 0x36,
     },
     DUMMY_WIN_TEMPLATE
+};
+
+static const struct WindowTemplate sDayWindowTemplate = 
+{
+    .bg = 0,
+    .tilemapLeft = 22,
+    .tilemapTop = 2,
+    .width = 7,
+    .height = 2,
+    .paletteNum = 0,
+    .baseBlock = 0x50,
 };
 
 static const u8 *const sHelpBarTexts[HELPBAR_COUNT] =
@@ -357,6 +370,7 @@ static u32 LoopedTask_InitPokenavMenu(s32 state)
             return LT_PAUSE;
 
         InitHelpBar();
+        InitDayDisplay();
         return LT_INC_AND_PAUSE;
     case 3:
         if (IsDma3ManagerBusyWithBgCopy())
@@ -556,6 +570,20 @@ static void InitHelpBar(void)
     DrawHelpBar(menu->helpBarWindowId);
     PutWindowTilemap(menu->helpBarWindowId);
     CopyWindowToVram(menu->helpBarWindowId, COPYWIN_FULL);
+}
+
+static const u8 *const sWeekDayNamesForPokenav[] = {
+    gText_Sunday, gText_Monday, gText_Tuesday, gText_Wednesday,
+    gText_Thursday, gText_Friday, gText_Saturday,
+};
+
+static void InitDayDisplay(void)
+{
+    u32 windowId = AddWindow(&sDayWindowTemplate);
+    FillWindowPixelBuffer(windowId, PIXEL_FILL(4));
+    AddTextPrinterParameterized3(windowId, FONT_NORMAL, 2, 1, sHelpBarTextColors, 0, sWeekDayNamesForPokenav[GetWeekDay()]);
+    PutWindowTilemap(windowId);
+    CopyWindowToVram(windowId, COPYWIN_FULL);
 }
 
 void PrintHelpBarText(u32 textId)
