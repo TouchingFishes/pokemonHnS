@@ -89,12 +89,12 @@ static const struct WindowTemplate sHelpBarWindowTemplate[] =
 static const struct WindowTemplate sDayWindowTemplate = 
 {
     .bg = 0,
-    .tilemapLeft = 22,
-    .tilemapTop = 2,
+    .tilemapLeft = 19,
+    .tilemapTop = 0,
     .width = 7,
     .height = 2,
     .paletteNum = 0,
-    .baseBlock = 0x50,
+    .baseBlock = 0x58,
 };
 
 static const u8 *const sHelpBarTexts[HELPBAR_COUNT] =
