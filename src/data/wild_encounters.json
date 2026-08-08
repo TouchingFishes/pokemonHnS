@@ -34207,6 +34207,11 @@
               {
                 "min_level": 3,
                 "max_level": 4,
+                "species": "SPECIES_RATTATA"
+              },
+              {
+                "min_level": 3,
+                "max_level": 4,
                 "species": "SPECIES_CATERPIE"
               },
               {
@@ -34217,17 +34222,12 @@
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_SURSKIT"
-              },
-              {
-                "min_level": 3,
-                "max_level": 4,
                 "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 3,
                 "max_level": 4,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 4,
@@ -38095,7 +38095,7 @@
               {
                 "min_level": 11,
                 "max_level": 13,
-                "species": "SPECIES_VANILLITE"
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 12,
@@ -38279,7 +38279,7 @@
               {
                 "min_level": 11,
                 "max_level": 13,
-                "species": "SPECIES_RALTS"
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 12,
