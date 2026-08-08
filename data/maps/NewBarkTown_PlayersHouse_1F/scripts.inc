@@ -50,15 +50,7 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomProposesSaving::
 	msgbox NewBarkTown_PlayersHouse_1F_Text_MomProposesSaving, MSGBOX_YESNO
 	compare VAR_RESULT, YES
 	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving
-	release
-	end
-
-NewBarkTown_PlayersHouse_1F_EventScript_MomStartSaving::
-	setflag FLAG_MOM_IS_SAVING
-	msgbox NewBarkTown_PlayersHouse_1F_Text_MomSavingsConfirm, MSGBOX_DEFAULT
-	release
-	end
-
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomStopSaving
 
 NewBarkTown_PlayersHouse_1F_EventScript_Mom_Regular::
 	call PlayersHouse_1F_EventScript_MomHealsParty
