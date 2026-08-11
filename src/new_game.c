@@ -94,7 +94,7 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_FAST;
     gSaveBlock2Ptr->optionsWindowFrameType = 0;
     gSaveBlock2Ptr->optionsSound = OPTIONS_SOUND_STEREO;
-    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SHIFT; //HnS
+    gSaveBlock2Ptr->optionsBattleStyle = OPTIONS_BATTLE_STYLE_SET; //HnS
     gSaveBlock2Ptr->optionsBattleSceneOff = FALSE;
     gSaveBlock2Ptr->regionMapZoom = FALSE;
     gSaveBlock2Ptr->optionsDifficulty = 1;
@@ -104,8 +104,8 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsAutorunDive = 1;
     gSaveBlock2Ptr->optionsAutorunSurf = 1;
     gSaveBlock2Ptr->optionsDisableMatchCall = 0;
-    gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 0;
-    gSaveBlock2Ptr->optionTypeEffective = 0;
+    gSaveBlock2Ptr->optionNoPhysicalSpecialSplit = 1;
+    gSaveBlock2Ptr->optionTypeEffective = 1;
     gSaveBlock2Ptr->optionsFishing = 1;
     gSaveBlock2Ptr->optionsFastIntro = 1;
     gSaveBlock2Ptr->optionsFastBattle = 0; //HnS
@@ -117,12 +117,12 @@ static void SetDefaultOptions(void)
     gSaveBlock2Ptr->optionsFrontierTrainerBattleMusic = 3; //JOHTO ONLY BB
     gSaveBlock2Ptr->optionsSoundEffects = 2; //JOHTO ONLY BB
     gSaveBlock2Ptr->optionsSkipIntro = 1;
-    gSaveBlock2Ptr->optionsLRtoRun = 0;
-    gSaveBlock2Ptr->optionsBallPrompt = 0; //HnS
+    gSaveBlock2Ptr->optionsLRtoRun = 1;
+    gSaveBlock2Ptr->optionsBallPrompt = 1; //HnS
     gSaveBlock2Ptr->optionsUnitSystem = 0;
     gSaveBlock2Ptr->optionsMusicOnOff = 0;
-    gSaveBlock2Ptr->optionsNewBackgrounds = 1; //HnS
-    gSaveBlock2Ptr->optionsRunType = 1;
+    gSaveBlock2Ptr->optionsNewBackgrounds = 0; //HnS
+    gSaveBlock2Ptr->optionsRunType = 0;
     gSaveBlock2Ptr->optionsNewBattleUI= 0;
     gSaveBlock2Ptr->optionsGenOneRecharge= 0;
 }
