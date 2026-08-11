@@ -954,7 +954,7 @@ u8 LoadGameSave(u8 saveType)
         VarSet(VAR_TOHJO_FALLS_GIOVANNI_STATE, 0);
         VarSet(VAR_ROUTE22_GIOVANNI_STATE, 0);
         VarSet(VAR_ROUTE27_BAOBA_CALL, 0);
-        VarSet(VAR_UNUSED_HNS_VAR4, 0);
+        VarSet(VAR_WEEKDAY_OFFSET, 0);
         VarSet(VAR_UNUSED_HNS_VAR5, 0);
         VarSet(VAR_UNUSED_HNS_VAR6, 0);
         VarSet(VAR_UNUSED_HNS_VAR7, 0);

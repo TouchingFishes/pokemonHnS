@@ -983,7 +983,7 @@ u16 GetWeekCount(void)
 
 u8 GetWeekDay(void)
 {
-    s16 day = gLocalTime.days % 7;
+    s32 day = (gLocalTime.days + VarGet(VAR_WEEKDAY_OFFSET)) % 7;
     if (day < 0)
         day += 7;
     return (u8)day;
@@ -991,9 +991,11 @@ u8 GetWeekDay(void)
 
 void SetChosenWeekDay(void)
 {
-    u8 chosen = gSpecialVar_0x8004;
-    u8 current = GetWeekDay();
-    gLocalTime.days += (chosen + 7 - current) % 7;
+    u8 chosen = gSpecialVar_0x8004 % 7;
+    s32 raw = gLocalTime.days % 7; // weekday before any offset is applied
+    if (raw < 0)
+        raw += 7;
+    VarSet(VAR_WEEKDAY_OFFSET, (chosen + 7 - raw) % 7);
 }
 
 u8 GetLeadMonFriendshipScore(void)
