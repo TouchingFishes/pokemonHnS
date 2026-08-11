@@ -390,7 +390,7 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Rose3[] = { //AromaLadyG
     {
     .iv = 255,
     .lvl = LEVEL_BASED_ON_BADGE+2,
-    .species = SPECIES_TROPIUS,
+    .species = SPECIES_BRELOOM,
     },
     {
     .iv = 255,
@@ -3261,51 +3261,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jerry5[] = {
     .iv = 255,
     .lvl = 62,
     .species = SPECIES_NOCTOWL,
-    }
-};
-
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Karen3[] = {
-    {
-    .iv = 100,
-    .lvl = 37,
-    .species = SPECIES_SHROOMISH,
-    },
-    {
-    .iv = 100,
-    .lvl = 37,
-    .species = SPECIES_FRAXURE,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Karen4[] = {
-    {
-    .iv = 150,
-    .lvl = 44,
-    .species = SPECIES_BRELOOM,
-    },
-    {
-    .iv = 150,
-    .lvl = 45,
-    .species = SPECIES_FRAXURE,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Karen5[] = {
-    {
-    .iv = 255,
-    .lvl = 57,
-    .species = SPECIES_BRELOOM,
-    },
-    {
-    .iv = 255,
-    .lvl = 58,
-    .species = SPECIES_HAXORUS,
-    },
-    {
-    .iv = 255,
-    .lvl = 59,
-    .species = SPECIES_SUNFLORA,
     }
 };
 
@@ -21808,9 +21763,9 @@ static const struct TrainerMonItemCustomMoves sParty_Karen[] = { //EliteFourGrou
     {
     .iv = 255,
     .lvl = 55,
-    .species = SPECIES_GENGAR,
+    .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_NONE,
-    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP}
+    .moves = {MOVE_SHADOW_BALL, MOVE_MAGICAL_LEAF, MOVE_THUNDERBOLT, MOVE_CONFUSE_RAY}
     },
     {
     .iv = 255,
@@ -21854,9 +21809,9 @@ static const struct TrainerMonItemCustomMoves sParty_Karen2[] = { //EliteFourGro
     {
     .iv = 255,
     .lvl = 68,
-    .species = SPECIES_GENGAR,
+    .species = SPECIES_MISMAGIUS,
     .heldItem = ITEM_SCOPE_LENS,
-    .moves = {MOVE_SHADOW_BALL, MOVE_GIGA_DRAIN, MOVE_THUNDERBOLT, MOVE_WILL_O_WISP}
+    .moves = {MOVE_SHADOW_BALL, MOVE_MAGICAL_LEAF, MOVE_THUNDERBOLT, MOVE_POWER_GEM}
     },
     {
     .iv = 255,
