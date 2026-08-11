@@ -4165,14 +4165,20 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_FLAREON] =
+    [SPECIES_FLAREON] = //modified
     {
-        .baseHP        = 65,
-        .baseAttack    = 130,
-        .baseDefense   = 60,
-        .baseSpeed     = 65,
-        .baseSpAttack  = 95,
-        .baseSpDefense = 110,
+        .baseHP              = 95, //+30
+        .baseAttack          = 65, //-65
+        .baseDefense         = 65, //+5
+        .baseSpeed           = 60, //-5
+        .baseSpAttack        = 110, //+15
+        .baseSpDefense       = 130, //+20
+        .baseHP_old          = 65,
+        .baseAttack_old      = 130,
+        .baseDefense_old     = 60,
+        .baseSpeed_old       = 65,
+        .baseSpAttack_old    = 95,
+        .baseSpDefense_old   = 110,
         .types = { TYPE_FIRE, TYPE_FIRE },
         .catchRate = 45,
         .expYield = 198,
@@ -12350,11 +12356,13 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = FALSE,
     },
-    [SPECIES_LEAFEON] =
+    [SPECIES_LEAFEON] = //modified
     {
         .baseHP        = 65,
-        .baseAttack    = 110,
-        .baseDefense   = 130,
+        .baseAttack    = 130, //+20
+        .baseAttack_old = 110,
+        .baseDefense   = 110, //-20
+        .baseDefense_old = 130,
         .baseSpeed     = 95,
         .baseSpAttack  = 60,
         .baseSpDefense = 65,

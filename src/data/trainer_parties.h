@@ -24910,42 +24910,42 @@ static const struct TrainerMonItemCustomMoves sParty_Rival_Bagon7[] = { //RivalG
 static const struct TrainerMonItemCustomMoves sParty_Red[] = { //PkmnTrainer1Group
     {
     .iv = 255,
-    .lvl = 97,
+    .lvl = 100,
     .species = SPECIES_PIKACHU,
     .heldItem = ITEM_LIGHT_BALL,
     .moves = {MOVE_VOLT_TACKLE, MOVE_SURF, MOVE_IRON_TAIL, MOVE_DOUBLE_TEAM}
     },
     {
     .iv = 255,
-    .lvl = 83,
+    .lvl = 86,
     .species = SPECIES_SNORLAX,
     .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_BRICK_BREAK, MOVE_CURSE, MOVE_BODY_SLAM, MOVE_EARTHQUAKE}
     },
     {
     .iv = 255,
-    .lvl = 84,
+    .lvl = 86,
     .species = SPECIES_HERACROSS,
     .heldItem = ITEM_CHOICE_BAND,
     .moves = {MOVE_MEGAHORN, MOVE_BRICK_BREAK, MOVE_ROCK_SLIDE, MOVE_EARTHQUAKE}
     },
     {
     .iv = 255,
-    .lvl = 84,
+    .lvl = 85,
     .species = SPECIES_VAPOREON,
     .heldItem = ITEM_CHESTO_BERRY,
     .moves = {MOVE_SURF, MOVE_SHADOW_BALL, MOVE_ICE_BEAM, MOVE_REST}
     },
     {
     .iv = 255,
-    .lvl = 83,
+    .lvl = 85,
     .species = SPECIES_MEWTWO,
     .heldItem = ITEM_LUM_BERRY,
     .moves = {MOVE_THUNDERBOLT, MOVE_ICE_BEAM, MOVE_FLAMETHROWER, MOVE_PSYCHIC}
     },
     {
     .iv = 255,
-    .lvl = 85,
+    .lvl = 87,
     .species = SPECIES_CHARIZARD,
     .heldItem = ITEM_CHARCOAL,
     .moves = {MOVE_BLAST_BURN, MOVE_EARTHQUAKE, MOVE_DRAGON_CLAW, MOVE_HURRICANE}
