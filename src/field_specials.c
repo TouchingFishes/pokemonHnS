@@ -989,13 +989,17 @@ u8 GetWeekDay(void)
     return (u8)day;
 }
 
-void SetChosenWeekDay(void)
+void SetWeekDay(u8 weekDay)
 {
-    u8 chosen = gSpecialVar_0x8004 % 7;
-    s32 raw = gLocalTime.days % 7; // weekday before any offset is applied
+    s32 raw = gLocalTime.days % 7;
     if (raw < 0)
         raw += 7;
-    VarSet(VAR_WEEKDAY_OFFSET, (chosen + 7 - raw) % 7);
+    VarSet(VAR_WEEKDAY_OFFSET, (weekDay + 7 - raw) % 7);
+}
+
+void SetChosenWeekDay(void)
+{
+    SetWeekDay(gSpecialVar_0x8004);
 }
 
 u8 GetLeadMonFriendshipScore(void)

@@ -857,7 +857,11 @@ static void Task_SetClock_HandleConfirmInput(u8 taskId)
 
 static void Task_SetClock_Confirmed(u8 taskId)
 {
+    u8 weekDay = GetWeekDay();
+    
     RtcInitLocalTimeOffset(gTasks[taskId].tHours, gTasks[taskId].tMinutes);
+    SetWeekDay(weekDay); //gLocalTime.days is now 0 - this line re-anchors the offset
+    
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_SetClock_Exit;
 }
