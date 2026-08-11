@@ -414,7 +414,7 @@ void RtcResetFake(void)
 
 void RtcCalcTimeDifferenceFake(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
 {
-    u16 days = RtcGetDayCountFake(rtc);
+    u32 days = RtcGetDayCountFake(rtc);
     result->seconds = rtc->second - t->seconds;
     result->minutes = rtc->minute - t->minutes;
     result->hours = rtc->hour - t->hours;
