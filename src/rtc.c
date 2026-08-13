@@ -361,6 +361,9 @@ u32 RtcGetMinuteCount(void)
 
 u32 RtcGetLocalDayCount(void)
 {
+    if (gSaveBlock1Ptr->tx_Features_RTCType == 1)
+        return gSaveBlock2Ptr->fakeRTC.days;
+    
     return RtcGetDayCount(&sRtc);
 }
 
@@ -394,7 +397,6 @@ u16 RtcGetErrorStatusFake(void)
     return 0;
 }
 
-//unused should be removed
 void RtcGetInfoFake(struct SiiRtcInfo *rtc)
 {
     struct Time* time = GetFakeRtc();
