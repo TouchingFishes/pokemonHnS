@@ -638,10 +638,11 @@ enum {
 static void Task_ResetRtcScreen(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
-
+    u8 weekDay = GetWeekDay();
+    
     switch (tState)
     {
-    case MAINSTATE_FADE_IN:
+        case MAINSTATE_FADE_IN:
         BeginNormalPaletteFade(PALETTES_ALL, 1, 0x10, 0, RGB_WHITEALPHA);
         tState = MAINSTATE_CHECK_SAVE;
         break;
@@ -687,7 +688,6 @@ static void Task_ResetRtcScreen(u8 taskId)
                 // Time has been chosen, reset rtc and save
                 DestroyTask(tSubTaskId);
                 RtcReset();
-                u8 weekDay = GetWeekDay();
                 RtcCalcLocalTimeOffset(
                     gLocalTime.days,
                     gLocalTime.hours,
