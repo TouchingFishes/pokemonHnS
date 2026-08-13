@@ -369,6 +369,7 @@ struct Time* GetFakeRtc(void)
     return &gSaveBlock2Ptr->fakeRTC; 
 }
 
+//unused should be removed
 u16 ConvertDateToDayCountFake(u8 year, u8 month, u8 day)
 {
     // Since year, month, and day do not exist, let's use 'days'
@@ -377,7 +378,7 @@ u16 ConvertDateToDayCountFake(u8 year, u8 month, u8 day)
 
 
 
-
+//unused should be removed
 u16 RtcGetDayCountFake(struct SiiRtcInfo *rtc)
 {
     return rtc->day;
@@ -393,6 +394,7 @@ u16 RtcGetErrorStatusFake(void)
     return 0;
 }
 
+//unused should be removed
 void RtcGetInfoFake(struct SiiRtcInfo *rtc)
 {
     struct Time* time = GetFakeRtc();
@@ -414,7 +416,7 @@ void RtcResetFake(void)
 
 void RtcCalcTimeDifferenceFake(struct SiiRtcInfo *rtc, struct Time *result, struct Time *t)
 {
-    u32 days = RtcGetDayCountFake(rtc);
+    s32 days = GetFakeRtc()->days;
     result->seconds = rtc->second - t->seconds;
     result->minutes = rtc->minute - t->minutes;
     result->hours = rtc->hour - t->hours;
