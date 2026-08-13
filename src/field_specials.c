@@ -972,6 +972,7 @@ void SetHiddenItemFlag(void)
     FlagSet(gSpecialVar_0x8004);
 }
 
+//may need refactoring, currently only used in Hoenn, so its fine
 u16 GetWeekCount(void)
 {
     u16 weekCount = gLocalTime.days / 7;
@@ -992,6 +993,7 @@ u8 GetWeekDay(void)
 void SetWeekDay(u8 weekDay)
 {
     s32 raw = gLocalTime.days % 7;
+    weekDay %= 7;
     if (raw < 0)
         raw += 7;
     VarSet(VAR_WEEKDAY_OFFSET, (weekDay + 7 - raw) % 7);

@@ -687,11 +687,13 @@ static void Task_ResetRtcScreen(u8 taskId)
                 // Time has been chosen, reset rtc and save
                 DestroyTask(tSubTaskId);
                 RtcReset();
+                u8 weekDay = GetWeekDay();
                 RtcCalcLocalTimeOffset(
                     gLocalTime.days,
                     gLocalTime.hours,
                     gLocalTime.minutes,
                     gLocalTime.seconds);
+                SetWeekDay(weekDay);
                 gSaveBlock2Ptr->lastBerryTreeUpdate = gLocalTime;
                 VarSet(VAR_DAYS, gLocalTime.days);
                 DisableResetRTC();
