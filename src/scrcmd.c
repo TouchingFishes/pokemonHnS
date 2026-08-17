@@ -733,8 +733,10 @@ bool8 ScrCmd_initclock(struct ScriptContext *ctx)
 {
     u8 hour = VarGet(ScriptReadHalfword(ctx));
     u8 minute = VarGet(ScriptReadHalfword(ctx));
+    u8 weekDay = GetWeekDay();
 
     RtcInitLocalTimeOffset(hour, minute);
+    SetWeekDay(weekDay);
     return FALSE;
 }
 
