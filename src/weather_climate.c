@@ -275,7 +275,7 @@ void TryUpdateDynamicWeather(void)
 
 u8 GetRegionalWeather(u8 mapSecId, u8 mapType)
 {
-    u8 climate, pattern;
+    u8 climate;
     u32 slot;
 
     // Indoor, cave and underwater maps never get outdoor weather.
@@ -287,10 +287,6 @@ u8 GetRegionalWeather(u8 mapSecId, u8 mapType)
     climate = sMapSecClimates[mapSecId];
     if (climate == CLIMATE_NONE || climate >= NUM_CLIMATES)
         return WEATHER_NONE;
-
-    pattern = VarGet(VAR_WEATHER_PATTERN);
-    if (pattern >= NUM_WEATHER_PATTERNS)
-        pattern = WEATHER_PATTERN_CLEAR;
 
     RtcCalcLocalTime();
     slot = (gLocalTime.hours * 60 + gLocalTime.minutes) / WEATHER_SLOT_MINUTES;
