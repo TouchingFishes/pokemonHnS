@@ -634,11 +634,11 @@ enum {
 
 #define tState data[0]
 #define tSubTaskId data[1]
+#define tWeekDay data[2]
 
 static void Task_ResetRtcScreen(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
-    u8 weekDay = GetWeekDay();
     
     switch (tState)
     {
@@ -658,6 +658,7 @@ static void Task_ResetRtcScreen(u8 taskId)
             else
             {
                 RtcCalcLocalTime();
+                tWeekDay = GetWeekDay();
                 tSubTaskId = CreateTask(Task_ShowResetRtcPrompt, 80);
                 tState = MAINSTATE_START_SET_TIME;
             }
@@ -693,7 +694,7 @@ static void Task_ResetRtcScreen(u8 taskId)
                     gLocalTime.hours,
                     gLocalTime.minutes,
                     gLocalTime.seconds);
-                SetWeekDay(weekDay);
+                SetWeekDay(tWeekDay);
                 gSaveBlock2Ptr->lastBerryTreeUpdate = gLocalTime;
                 VarSet(VAR_DAYS, gLocalTime.days);
                 DisableResetRTC();
