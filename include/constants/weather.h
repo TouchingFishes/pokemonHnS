@@ -20,6 +20,31 @@
 #define WEATHER_ROUTE119_CYCLE          20
 #define WEATHER_ROUTE123_CYCLE          21
 
+// Dynamic Weather System Patterns
+// Global "what kind of day is it", stored in VAR_WEATHER_PATTERN, rerolled
+// daily from UpdatePerDay().
+
+#define WEATHER_PATTERN_CLEAR           0
+#define WEATHER_PATTERN_FAIR            1
+#define WEATHER_PATTERN_OVERCAST        2
+#define WEATHER_PATTERN_DRIZZLY         3
+#define WEATHER_PATTERN_RAINY           4
+#define WEATHER_PATTERN_STORMY          5
+#define NUM_WEATHER_PATTERNS            6
+
+// Per-region interpretation of the day's weather pattern
+#define CLIMATE_NONE                    0
+#define CLIMATE_JOHTO_INLAND_WARM       1
+#define CLIMATE_JOHTO_INLAND_COLD       2
+#define CLIMATE_JOHTO_COAST_WARM        3
+#define CLIMATE_JOHTO_COAST_COLD        4
+#define CLIMATE_KANTO_INLAND            5
+#define CLIMATE_KANTO_COAST             6
+#define CLIMATE_MOUNTAIN                7
+#define CLIMATE_FOREST                  8
+#define NUM_CLIMATES                    9
+
+
 // These are used in maps' coord_weather_event entries.
 // They are not a one-to-one mapping with the engine's
 // internal weather constants above.
