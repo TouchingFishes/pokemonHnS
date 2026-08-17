@@ -15,6 +15,7 @@
 #include "trig.h"
 #include "gpu_regs.h"
 #include "palette.h"
+#include "weather_climate.h"
 
 EWRAM_DATA static u8 sCurrentAbnormalWeather = 0;
 EWRAM_DATA static u16 sUnusedWeatherRelated = 0;
@@ -2546,7 +2547,15 @@ u8 GetSavedWeather(void)
 void SetSavedWeatherFromCurrMapHeader(void)
 {
     u8 oldWeather = gSaveBlock1Ptr->weather;
-    gSaveBlock1Ptr->weather = TranslateWeatherNum(gMapHeader.weather);
+    u8 newWeather = TranslateWeatherNum(gMapHeader.weather);
+
+    // Header that names a specific weather always wins. Only leftover hearders
+    // at WEATHER_NONE fall through to regional climate system.
+    if (newWeather == WEATHER_NONE)
+        newWeather = GetRegionalWeather(gMapHeader.regionMapSectionId, gMapHeader.mapType);
+
+    NoteResolvedWeather(newWeather);
+    gSaveBlock1Ptr->weather = newWeather;
     UpdateRainCounter(gSaveBlock1Ptr->weather, oldWeather);
 }
 

@@ -11,6 +11,7 @@
 #include "main.h"
 #include "overworld.h"
 #include "wallclock.h"
+#include "weather_climate.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
@@ -18,6 +19,7 @@ static void UpdatePerMinute(struct Time *localTime);
 static void InitTimeBasedEvents(void)
 {
     FlagSet(FLAG_SYS_CLOCK_SET);
+    RollDailyWeatherPattern();
     RtcCalcLocalTime();
     gSaveBlock2Ptr->lastBerryTreeUpdate = gLocalTime;
     VarSet(VAR_DAYS, gLocalTime.days);
@@ -44,6 +46,8 @@ static void UpdatePerDay(struct Time *localTime)
         ClearDailyFlags();
         UpdateDewfordTrendPerDay(daysSince);
         UpdateTVShowsPerDay(daysSince);
+        UpdateWeatherPerDay(daysSince);
+        RollDailyWeatherPattern();
         UpdateWeatherPerDay(daysSince);
         UpdatePartyPokerusTime(daysSince);
         UpdateMirageRnd(daysSince);

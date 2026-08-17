@@ -155,6 +155,7 @@ static void RunTimeBasedEvents(s16 *data)
         if (gMain.vblankCounter1 & TIME_UPDATE_INTERVAL)
         {
             DoTimeBasedEvents();
+            TryUpdateDynamicWeather();
             tState++;
         }
         break;

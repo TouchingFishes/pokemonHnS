@@ -7,6 +7,9 @@
 #include "constants/region_map_sections.h"
 #include "constants/vars.h"
 #include "constants/weather.h"
+#include "rtc.h"
+#include "field_weather.h"
+#include "global.fieldmap.h"
 
 // Odds out of 100 for each day's pattern. Must sum to 100.
 static const u8 sDailyPatternWeights[NUM_WEATHER_PATTERNS] =
@@ -84,9 +87,9 @@ static const u8 sClimateWeather[NUM_CLIMATES][NUM_WEATHER_PATTERNS] =
     [CLIMATE_FOREST] = {
         [WEATHER_PATTERN_CLEAR]     = WEATHER_SUNNY_CLOUDS,
         [WEATHER_PATTERN_FAIR]      = WEATHER_SHADE,
-        [WEATHER_PATTERN_OVERCAST]  = WEATHER_FOG_HORIZONTAL,
+        [WEATHER_PATTERN_OVERCAST]  = WEATHER_SHADE,
         [WEATHER_PATTERN_RAINY]     = WEATHER_RAIN,
-        [WEATHER_PATTERN_DRIZZLY]   = WEATHER_SHADE,
+        [WEATHER_PATTERN_DRIZZLY]   = WEATHER_FOG_HORIZONTAL,
         [WEATHER_PATTERN_STORMY]    = WEATHER_DOWNPOUR,
     },
 };
@@ -171,32 +174,15 @@ static const u8 sMapSecClimates[MAPSEC_SAFARI_ZONE_AREA6 + 1] =
     [MAPSEC_ROUTE_28]           = CLIMATE_MOUNTAIN,
 };
 
-u8 GetRegionalWeather(u8 mapSecId, u8 mapType)
-{
-    u8 climate, pattern;
+#define WEATHER_SLOT_MINUTES 120
+#define WEATHER_SLOTS_PER_DAY ((24 * 60) / WEATHER_SLOT_MINUTES)
 
-    // Indoor, cave and underwater maps never get outdoor weather.
-    if (!MapHasNaturalLight(mapType))
-        return WEATHER_NONE;
-    if (mapSecId >= ARRAY_COUNT(sMapSecClimates))
-        return WEATHER_NONE;
-
-    climate = sMapSecClimates[mapSecId];
-    if (climate == CLIMATE_NONE)
-        return WEATHER_NONE;
-
-    pattern = VarGet(VAR_WEATHER_PATTERN);
-    if (pattern >= NUM_WEATHER_PATTERNS)
-        pattern = WEATHER_PATTERN_CLEAR;
-
-    return sClimateWeather[climate][pattern];
-}
 
 void RollDailyWeatherPattern(void)
 {
     u32 roll = Random() % 100;
     u32 i;
-
+    
     for (i = 0; i < NUM_WEATHER_PATTERNS; i++)
     {
         if (roll < sDailyPatternWeights[i])
@@ -206,6 +192,108 @@ void RollDailyWeatherPattern(void)
         }
         roll -= sDailyPatternWeights[i];
     }
-
+    
     VarSet(VAR_WEATHER_PATTERN, WEATHER_PATTERN_CLEAR);
+}
+
+// Records what resolver last produced, so ticker can detect when a script
+// or coord event has taken ownership of weather.
+EWRAM_DATA static u8 sLastResolvedWeather = WEATHER_NONE;
+
+void NoteResolvedWeather(u8 weather)
+{
+    sLastResolvedWeather = weather;
+}
+
+// Integer mix: Deterministic in (day. slot, climate): the walk cannot be
+// rerolled by re-entering a map, and a whole day can be computed in advance.
+static u32 WeatherHash(u32 day, u32 slot, u32 climate)
+{
+    u32 h = day * 0x9E3779B1;
+    h ^= (slot + 1) * 0x85EBCA6B;
+    h ^= (climate + 1) * 0xC2B2AE35;
+    h ^= h >> 15;
+    h *= 0x2545F491;
+    h ^= h >> 13;
+    return h;
+}
+
+// The day's pattern sets a band on the intensity ladder; the slot wanders
+// within it, at most one rung per slot. Different climates hash differently,
+// so the coast can be getting it while inland has a break.
+static u8 GetWeatherRung(u8 climate, u32 slot)
+{
+    u8 pattern = VarGet(VAR_WEATHER_PATTERN);
+    u8 lo, hi, rung;
+    u32 i;
+    
+    if (pattern >= NUM_WEATHER_PATTERNS)
+    pattern = WEATHER_PATTERN_CLEAR;
+    
+    lo = (pattern > 0) ? pattern - 1 : 0;
+    hi = (pattern < NUM_WEATHER_PATTERNS - 1) ? pattern + 1 : NUM_WEATHER_PATTERNS - 1;
+    rung = pattern;
+    
+    for (i = 0; i <= slot; i++)
+    {
+        switch (WeatherHash(gLocalTime.days, i, climate) & 3)
+        {
+            case 0: if (rung > lo) rung--; break;
+            case 3: if (rung < hi) rung++; break;
+            default: break; //50% chance of weather holding
+        }
+    }
+    
+    return rung;
+}
+
+void TryUpdateDynamicWeather(void)
+{
+    u8 newWeather;
+    
+    // Maps whose header names a weather never participate.
+    if (gMapHeader.weather != WEATHER_NONE)
+    return;
+    
+    // If the live weather isn't what the resolver last produced, something
+    // else owns it, an ON_TRANSITION script, a coord event, a cutscene.
+    // Back off until next map load.
+    if (GetSavedWeather() != sLastResolvedWeather)
+    return;
+    
+    newWeather = GetRegionalWeather(gMapHeader.regionMapSectionId, gMapHeader.mapType);
+    
+    // SetNextWeather() has no idempotence guard, it re-arms the transition
+    // state machine and replays rain-stop SFX on every call. Only call it on
+    // an actual change.
+    if (newWeather == WEATHER_NONE || newWeather == sLastResolvedWeather)
+    return;
+    
+    sLastResolvedWeather = newWeather;
+    SetWeather(newWeather);
+}
+
+u8 GetRegionalWeather(u8 mapSecId, u8 mapType)
+{
+    u8 climate, pattern;
+    u32 slot;
+
+    // Indoor, cave and underwater maps never get outdoor weather.
+    if (!MapHasNaturalLight(mapType))
+        return WEATHER_NONE;
+    if (mapSecId >= ARRAY_COUNT(sMapSecClimates))
+        return WEATHER_NONE;
+
+    climate = sMapSecClimates[mapSecId];
+    if (climate == CLIMATE_NONE || climate >= NUM_CLIMATES)
+        return WEATHER_NONE;
+
+    pattern = VarGet(VAR_WEATHER_PATTERN);
+    if (pattern >= NUM_WEATHER_PATTERNS)
+        pattern = WEATHER_PATTERN_CLEAR;
+
+    RtcCalcLocalTime();
+    slot = (gLocalTime.hours * 60 + gLocalTime.minutes) / WEATHER_SLOT_MINUTES;
+
+    return sClimateWeather[climate][GetWeatherRung(climate, slot)];
 }
