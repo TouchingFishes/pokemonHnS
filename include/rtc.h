@@ -24,7 +24,7 @@
 #define WEEKDAY_SATURDAY       6
 
 #define WEEKDAY_BIT(day)        (1 << (day))
-#define WEEKDAYS_ALL            0x7F
+#define WEEKDAYS_ALL            ((1 << 7) - 1) //all seven weekday bits
 #define WEEKDAYS_WEEKEND        (WEEKDAY_BIT(WEEKDAY_SATURDAY) | WEEKDAY_BIT(WEEKDAY_SUNDAY))
 #define WEEKDAYS_WEEKDAYS       (WEEKDAYS_ALL & ~WEEKDAYS_WEEKEND)
 
