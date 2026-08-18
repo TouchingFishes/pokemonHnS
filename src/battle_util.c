@@ -3670,7 +3670,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                             gBattleMoveDamage = 1;
                         gBattleScripting.battler = battlerId;
                         gPotentialItemEffectBattler = battlerId;
-                        gActiveBattler = gBattlerAttacker - battlerId;
+                        gActiveBattler = gBattlerAttacker = battlerId;
                         BattleScriptExecute(BattleScript_BlackSludgeDmg);
                         effect = ITEM_HP_CHANGE;
                         RecordItemEffectBattle(battlerId, battlerHoldEffect);
@@ -4077,9 +4077,9 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
             if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
             && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
             && TARGET_TURN_DAMAGED
-            && gBattleMons[gBattlerAttacker].hp != 0
-            && (gBattleMons[gBattlerAttacker].statStages[STAT_ATK] < MAX_STAT_STAGE
-                || gBattleMons[gBattlerAttacker].statStages[STAT_SPATK] < MAX_STAT_STAGE))
+            && gBattleMons[gBattlerTarget].hp != 0
+            && (gBattleMons[gBattlerTarget].statStages[STAT_ATK] < MAX_STAT_STAGE
+                || gBattleMons[gBattlerTarget].statStages[STAT_SPATK] < MAX_STAT_STAGE))
             {
                 gLastUsedItem = defItem;
                 gPotentialItemEffectBattler = gBattlerTarget;
@@ -4091,6 +4091,8 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
             }
             break;
         }
+        if (effect != ITEM_NO_EFFECT)
+            break; //defender's item claimed this moveend step
         if (gBattleMoveDamage)
         {
             switch (atkHoldEffect)

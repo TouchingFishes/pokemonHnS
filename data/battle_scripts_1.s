@@ -4650,7 +4650,7 @@ BattleScript_WeaknessPolicySpAtk::
 	setbyte cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_ITEM
 	call BattleScript_StatUp
 BattleScript_WeaknessPolicyEnd::
-	removeitem BS_ATTACKER
+	removeitem BS_TARGET
 	return
 
 BattleScript_BerryFocusEnergyEnd2::
