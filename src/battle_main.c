@@ -678,7 +678,7 @@ const u8 gTypeEffectiveness[366] = //Gen 6 type chart. The "MODERN" TYPE CHART o
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
 };
 
-const u8 gTypeEffectiveness_Old[372] = //Gen 3 type effectiveness + (slightly nerfed) fairy type. The "ORIGINAL" TYPE CHART option
+const u8 gTypeEffectiveness_Old[369] = //Gen 3 type effectiveness + (slightly nerfed) fairy type. The "ORIGINAL" TYPE CHART option
 {
     TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,

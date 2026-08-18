@@ -189,6 +189,8 @@ static const u8 sText_Yes[]   = _("YES");
 static const u8 sText_No[]    = _("NO");
 static const u8 sText_Original[]  = _("ORIGINAL");
 static const u8 sText_Modern[]    = _("MODERN");
+static const u8 sText_TypeChart_Gen3[]  = _("GEN III");
+static const u8 sText_TypeChart_Gen6[]    = _("GEN VI");
 static const u8 sText_RTC[]     = _("RTC");
 static const u8 sText_FakeRTC[] = _("FAKE RTC");
 static const u8 sText_Frontier_Ban[]     = _("BAN");
@@ -548,7 +550,7 @@ static const struct ViewerBoolRow sBoolRows[] = {
     { sText_LegendaryAbils_Label,GetSel_LegendaryAbilities },
     { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
     { sText_Natures_Label,       GetSel_Natures            },
-//    { sText_TypeChart_Label,     GetSel_TypeChart          },
+    { sText_TypeChart_Label,     GetSel_TypeChart          },
     { sText_SurvivePoison_Label, GetSel_SurvivePoison      },
 };
 
@@ -685,7 +687,7 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
                                      rightStyle, TEXT_SKIP_DRAW, sText_Modern);
         break;
     }
-    case 3: // SITRUS BERRY
+    case 3: // SAND HAIL BUFFS
     {
         const int y = visRow * 16;
         Viewer_ClearRow(visRow, selected);
@@ -713,6 +715,22 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
         u8 v = GetSel_Natures();
         if (v > 2) v = 0;
         Viewer_DrawSingleValueRow(visRow, sText_Natures_Label, sText_Natures_Strings[v], selected);
+        break;
+    }
+    case 8: // TYPE EFFECTIVENESS
+    {
+        const int y = visRow * 16;
+        Viewer_ClearRow(visRow, selected);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
+                                     sColorLeftActive, TEXT_SKIP_DRAW, sText_TypeChart_Label);
+        u8 sel = GetSel_SandHailBuffs();
+        const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "GEN III"
+        const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "GEN VI"
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
+                                     leftStyle, TEXT_SKIP_DRAW, sText_TypeChart_Gen3);
+        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
+                                     rightStyle, TEXT_SKIP_DRAW, sText_TypeChart_Gen6);
         break;
     }
     default:
