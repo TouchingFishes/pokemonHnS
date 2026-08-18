@@ -256,6 +256,8 @@ static void DrawChoices_Options_Four(const u8 *const *const strings, int selecti
 static void DrawChoices_Options_Five(const u8 *const *const strings, int selection, int y, bool8 active);
 static void ReDrawAll(void);
 static void DrawBgWindowFrames(void);
+static void ApplyNaturesSetting(u8 sel);
+static u8 NaturesSettingFromSave(void);
 
 static void DrawChoices_Random_OffOn(int selection, int y, bool8 active);
 static void DrawChoices_Random_OffRandom(int selection, int y, bool8 active);
@@ -827,6 +829,7 @@ static const u8 sText_Description_Mode_Leg_Abilities_Off[]              = _("PRE
 static const u8 sText_Description_Mode_Leg_Abilities_On[]               = _("Legendaries have PRESSURE changed\nfor a better ability.");
 static const u8 sText_Description_Mode_Natures_Off[]                    = _("{PKMN} have no NATURE effects.\nStats are unaffected by NATURES.");
 static const u8 sText_Description_Mode_Natures_On[]                     = _("{PKMN} have NATURE effects,\nchanging their stat growth.");
+static const u8 sText_Description_Mode_Natures_OnMints[]                = _("NATURE effects on, and MINTS can be\nbought at the FLOWER SHOP early.");
 static const u8 sText_Description_Mode_PhysicalSpecialSplit_Off[]       = _("Moves use the original GEN III\nphysical and special categories.");
 static const u8 sText_Description_Mode_PhysicalSpecialSplit_On[]        = _("Moves are split by their actual\ncategory, as in later generations.");
 static const u8 sText_Description_Mode_IgnoreEVCap_Off[]                = _("{PKMN} follow the standard\nEV limit rules.");
@@ -1489,7 +1492,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_Modern_Moves                = TX_MODE_MODERN_MOVES;
         gSaveBlock1Ptr->tx_Mode_Legendary_Abilities         = TX_MODE_LEGENDARY_ABILITIES;
 
-        gSaveBlock1Ptr->tx_Mode_Natures                     = TX_MODE_NATURES;
+        ApplyNaturesSetting(TX_MODE_NATURES);
         //gSaveBlock1Ptr->tx_Mode_PhysicalSpecialSplit        = TX_MODE_PHYSICAL_SPECIAL_SPLIT;
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = TX_IGNORE_EV_CAP;
 

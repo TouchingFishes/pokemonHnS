@@ -116,7 +116,7 @@ static u16 sCurIndex;   // absolute row index on current page
 static const u8 sText_InfiniteTMs_Label[]   = _("REUSABLE TMS");
 static const u8 sText_SurvivePoison_Label[] = _("SURVIVE POISON");
 static const u8 sText_Synchronize_Label[]   = _("SYNCHRONIZE");
-static const u8 sText_Mints_Label[]         = _("NATURE MINTS");
+static const u8 sText_Mints_Label[]         = _("NATURES");
 static const u8 sText_SandHailBuffs_Label[] = _("WEATHER BUFFS");
 static const u8 sText_FairyTypes_Label[]    = _("ADD FAIRY TYPE");
 static const u8 sText_Sturdy_Label[]        = _("STURDY");
