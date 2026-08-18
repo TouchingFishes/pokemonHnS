@@ -4513,7 +4513,7 @@ static bool8 IsHPRecoveryItem(u16 item)
     else
         effect = gItemEffectTable[item - ITEM_POTION];
 
-    return effect[4] & ITEM4_HEAL_HP;
+    return effect[4] & ITEM4_HEAL_HP != 0;
 }
 
 static void GetMedicineItemEffectMessage(u16 item)
