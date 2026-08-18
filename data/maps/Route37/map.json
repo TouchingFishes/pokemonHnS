@@ -75,7 +75,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route37_EventScript_Sunny",
-      "flag": "0"
+      "flag": "FLAG_SUNDAY_OBJECTS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_NOCTOWL",

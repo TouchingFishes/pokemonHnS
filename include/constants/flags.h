@@ -715,14 +715,14 @@
 #define FLAG_CHOSE_SINNOH_STARTERS    0x29C
 #define FLAG_RECEIVED_TM_SWEET_SCENT  0x29D
 #define FLAG_BERRY_MASTER_INTRO       0x29E
-#define FLAG_UNUSED_0x29F  0x29F // Unused Flag
-#define FLAG_UNUSED_0x2A0  0x2A0 // Unused Flag
-#define FLAG_UNUSED_0x2A1  0x2A1 // Unused Flag
-#define FLAG_UNUSED_0x2A2  0x2A2 // Unused Flag
-#define FLAG_UNUSED_0x2A3  0x2A3 // Unused Flag
-#define FLAG_UNUSED_0x2A4  0x2A4 // Unused Flag
-#define FLAG_UNUSED_0x2A5  0x2A5 // Unused Flag
-#define FLAG_UNUSED_0x2A6  0x2A6 // Unused Flag
+#define FLAG_SUNDAY_OBJECTS           0x29F
+#define FLAG_MONDAY_OBJECTS           0x2A0
+#define FLAG_TUESDAY_OBJECTS          0x2A1
+#define FLAG_WEDNESDAY_OBJECTS        0x2A2
+#define FLAG_THURSDAY_OBJECTS         0x2A3
+#define FLAG_FRIDAY_OBJECTS           0x2A4
+#define FLAG_SATURDAY_OBJECTS         0x2A5
+#define FLAG_WEEKEND_OBJECTS          0x2A6
 #define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
 #define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
 #define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag

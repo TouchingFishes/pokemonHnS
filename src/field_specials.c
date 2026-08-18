@@ -1004,6 +1004,55 @@ void SetChosenWeekDay(void)
     SetWeekDay(gSpecialVar_0x8004);
 }
 
+struct WeekDayVisibility
+{
+    u8 dayMask;         // bit N set = may appear on weekday N
+    u16 hideFlag;       // rewritten on every map load; set = hidden
+    u16 requiresSet;    // 0 = ignore; else must be SET to appear
+    u16 requiresClear;  // 0 = ignore; else must be CLEAR to appear
+};
+
+static const struct  WeekDayVisibility sWeekDayVisibility[] =
+{
+    // Shared day-set flags - any number of objects may point at these
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_SUNDAY),       .hideFlag = FLAG_SUNDAY_OBJECTS      },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_MONDAY),       .hideFlag = FLAG_MONDAY_OBJECTS      },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_TUESDAY),      .hideFlag = FLAG_TUESDAY_OBJECTS     },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_WEDNESDAY),    .hideFlag = FLAG_WEDNESDAY_OBJECTS   },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_THURSDAY),     .hideFlag = FLAG_THURSDAY_OBJECTS    },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_FRIDAY),       .hideFlag = FLAG_FRIDAY_OBJECTS      },
+    { .dayMask = WEEKDAY_BIT(WEEKDAY_SATURDAY),     .hideFlag = FLAG_SATURDAY_OBJECTS    },
+    { .dayMask = WEEKDAYS_WEEKEND,                  .hideFlag = FLAG_WEEKEND_OBJECTS     },
+
+    // special encounters like LAPRAS or GEKOPON need their own rules (LAPRAS appears on fridays, GEKOPON on wednesdays)
+};
+
+void UpdateWeekDayObjectFlags(void)
+{
+    u32 i;
+    u8 todayBit;
+
+    // Before wall clock is set - hide everything
+    todayBit = FlagGet(FLAG_SYS_CLOCK_SET) ? (1 << GetWeekDay()) : 0;
+
+    for (i = 0; i < ARRAY_COUNT(sWeekDayVisibility); i++)
+    {
+        const struct WeekDayVisibility *rule = &sWeekDayVisibility[i];
+        bool8 visible = (rule->dayMask & todayBit) != 0;
+
+        if (visible && rule->requiresSet != 0 && !FlagGet(rule->requiresSet))
+            visible = FALSE;
+        if (visible && rule->requiresClear != 0 && FlagGet(rule->requiresClear))
+            visible = FALSE;
+
+        if (visible)
+            FlagClear(rule->hideFlag);
+        else
+            FlagSet(rule->hideFlag);
+    }
+}
+
+
 u8 GetLeadMonFriendshipScore(void)
 {
     struct Pokemon *pokemon = &gPlayerParty[GetLeadMonIndex()];
