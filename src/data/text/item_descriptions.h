@@ -449,9 +449,9 @@ static const u8 sTinyMushroomDesc[] = _(
     "at a cheap price.");
 
 static const u8 sBigMushroomDesc[] = _(
-    "A rare mushroom\n"
-    "that would sell at a\n"
-    "high price.");
+    "A rare mushroom.\n"
+    "Heals PARAS line.\n"
+    "Sells high.");
 
 static const u8 sPearlDesc[] = _(
     "A pretty pearl\n"
