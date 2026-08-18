@@ -1,7 +1,7 @@
 #ifndef GUARD_CONSTANTS_SPECIES_H
 #define GUARD_CONSTANTS_SPECIES_H
 
-#define SPECIES_SHINY_TAG 500
+#define SPECIES_SHINY_TAG (SPECIES_UNOWN_QMARK + 1) // currently 552, may go stale in the future
 
 #define SPECIES_NONE 0
 #define SPECIES_BULBASAUR 1
