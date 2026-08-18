@@ -192,7 +192,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPINARAK",
       "x": 44,
       "y": 7,
       "elevation": 0,
@@ -218,7 +218,7 @@
       "flag": "FLAG_NIGHT_POKEMON"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_HOUNDOUR",
+      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SPINARAK",
       "x": 54,
       "y": 12,
       "elevation": 0,
