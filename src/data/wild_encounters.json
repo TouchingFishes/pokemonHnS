@@ -33881,17 +33881,17 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_SPINARAK"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
                 "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_LEDYBA"
+                "species": "SPECIES_EMOLGA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_EMOLGA"
               }
             ]
           }
@@ -34307,17 +34307,17 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_SPINARAK"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
                 "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_LEDYBA"
+                "species": "SPECIES_EMOLGA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_EMOLGA"
               }
             ]
           },
@@ -34695,17 +34695,17 @@
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_SPINARAK"
-              },
-              {
-                "min_level": 10,
-                "max_level": 10,
                 "species": "SPECIES_LEDYBA"
               },
               {
                 "min_level": 10,
                 "max_level": 10,
-                "species": "SPECIES_LEDYBA"
+                "species": "SPECIES_EMOLGA"
+              },
+              {
+                "min_level": 10,
+                "max_level": 10,
+                "species": "SPECIES_EMOLGA"
               }
             ]
           },
