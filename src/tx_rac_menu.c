@@ -3150,7 +3150,7 @@ static void DrawChoices_Mode_New_Effectiveness(int selection, int y)
     }
 
     DrawOptionMenuChoice(sText_TypeChart_Gen3, 104, y, styles[0], active);
-    DrawOptionMenuChoice(sText_TypeChart_Gen6, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
+    DrawOptionMenuChoice(sText_TypeChart_Gen6, GetStringRightAlignXOffset(1, sText_TypeChart_Gen6, 198), y, styles[1], active);
 }
 
 static void DrawChoices_Mode_Legendary_Abilities(int selection, int y)
