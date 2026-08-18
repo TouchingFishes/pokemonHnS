@@ -723,12 +723,12 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
         Viewer_ClearRow(visRow, selected);
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 8, y + 1, 0, 0,
                                      sColorLeftActive, TEXT_SKIP_DRAW, sText_TypeChart_Label);
-        u8 sel = GetSel_SandHailBuffs();
+        u8 sel = GetSel_TypeChart();
         const u8 *leftStyle  = (sel == 0) ? sColorRightRed : sColorRightGray; // "GEN III"
         const u8 *rightStyle = (sel == 1) ? sColorRightRed : sColorRightGray; // "GEN VI"
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, 104, y, 0, 0,
                                      leftStyle, TEXT_SKIP_DRAW, sText_TypeChart_Gen3);
-        int xr = GetStringRightAlignXOffset(1, sText_Modern, 198);
+        int xr = GetStringRightAlignXOffset(1, sText_TypeChart_Gen6, 198);
         AddTextPrinterParameterized4(WIN_OPTIONS, FONT_NORMAL, xr, y, 0, 0,
                                      rightStyle, TEXT_SKIP_DRAW, sText_TypeChart_Gen6);
         break;
