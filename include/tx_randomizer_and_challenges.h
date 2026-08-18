@@ -57,7 +57,6 @@
 #define TX_FEATURES_RTC_TYPE 0
 #define TX_FEATURES_UNLIMITED_WT 0
 #define TX_MODE_NEW_SYNCHRONIZE 0
-#define TX_MODE_MINTS 0
 #define TX_MODE_SAND_HAIL_BUFFS 0
 #define TX_MODE_MODERN_TYPES 0
 #define TX_MODE_TYPE_MODE 1 //default: altered vanilla types
@@ -73,9 +72,15 @@
 #define TX_MODE_TYPE_EFFECTIVENESS 0
 #define TX_FEATURES_SHINY_COLORS 0
 
-#define TX_MODE_NATURES 0 //off
 #define TX_MODE_PHYSICAL_SPECIAL_SPLIT 0 //off
 #define TX_IGNORE_EV_CAP 1 //on
+
+// NATURES ladder - replaces the old seperate NATURES + MINTS toggles
+#define NATURES_OFF                 0
+#define NATURES_ON                  1
+#define NATURES_ON_MINTS            2
+
+#define TX_MODE_NATURES NATURES_OFF
 
 // randomization types
 #define TX_RANDOM_T_WILD_POKEMON    0
