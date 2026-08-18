@@ -821,7 +821,7 @@ static const u8 sText_Description_Mode_New_Stats_On[]                   = _("Mod
 static const u8 sText_Description_Mode_Sturdy_Off[]                     = _("STURDY works as in GEN III. Only\nnegates OHKO moves (GUILLOTINE, etc.)");
 static const u8 sText_Description_Mode_Sturdy_On[]                      = _("STURDY works as in GEN V+.\n{PKMN} survive lethal hits with 1HP.");
 static const u8 sText_Description_Mode_Modern_Moves_Off[]               = _("No new MOVES, and original MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
-static const u8 sText_Description_Mode_Modern_Moves_On[]                = _("13 new MOVES, and improved MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
+static const u8 sText_Description_Mode_Modern_Moves_On[]                = _("New MOVES, and improved MOVEPOOL\nfor all {PKMN} + new EGG and TUTOR MOVES.");
 static const u8 sText_Description_Mode_Leg_Abilities_Off[]              = _("PRESSURE stays as the main\nability of some legendaries.");
 static const u8 sText_Description_Mode_Leg_Abilities_On[]               = _("Legendaries have PRESSURE changed\nfor a better ability.");
 static const u8 sText_Description_Mode_Natures_Off[]                    = _("{PKMN} have no NATURE effects.\nStats are unaffected by NATURES.");
@@ -833,7 +833,7 @@ static const u8 sText_Description_Mode_IgnoreEVCap_Off[]                = _("{PK
 static const u8 sText_Description_Mode_IgnoreEVCap_On[]                 = _("{PKMN} can gain EVs beyond the\nstandard limit. Mirrors Stat Exp.");
 static const u8 sText_Description_Mode_New_Legendaries_Off[]            = _("No extra legendaries are added.");
 static const u8 sText_Description_Mode_New_Legendaries_On[]             = _("Extra legendaries from GEN I and II\nare added via ingame events.");
-static const u8 sText_Description_Mode_New_Effectiveness_Original[]     = _("GEN III type chart, STEEL resists\nGHOST and DARK. FAIRY doesn't resist BUG.");
+static const u8 sText_Description_Mode_New_Effectiveness_Original[]     = _("GEN III chart, STEEL resists GHOST\nand DARK. FAIRY doesn't resist BUG.");
 static const u8 sText_Description_Mode_New_Effectiveness_Modern[]       = _("GEN VI type chart. STEEL no longer\nresists GHOST and DARK.");
 static const u8 sText_Description_Mode_Next[]                           = _("Continue to Features options.");
 
