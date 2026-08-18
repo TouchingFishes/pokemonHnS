@@ -2736,8 +2736,10 @@ static void DrawChoices_Features_Rtc_Type(int selection, int y)
     DrawOptionMenuChoice(sText_Features_RTC_Fake_RTC, GetStringRightAlignXOffset(1, sText_Features_RTC_Fake_RTC, 198), y, styles[1], active);
 }
 
-static const u8 sText_Encounters_Vanilla_Long[]   = _("GEN III");
-static const u8 sText_Encounters_Modern_Long[]    = _("GEN VI");
+static const u8 sText_Encounters_Vanilla_Long[]   = _("ORIGINAL");
+static const u8 sText_Encounters_Modern_Long[]    = _("MODERN");
+static const u8 sText_TypeChart_Gen3[]            = _("GEN III");
+static const u8 sText_TypeChart_Gen6[]            = _("GEN VI");
 
 /*static void DrawChoices_Mode_AlternateSpawns(int selection, int y)
 {
@@ -3027,10 +3029,8 @@ static void DrawChoices_Mode_Fairy_Types(int selection, int y)
     DrawChoices_Options_Four(sText_TypeMode_Strings, selection, y, active);
 }
 
-static const u8 sText_Natures_Off[]     = _("OFF");
-static const u8 sText_Natures_On[]      = _("ON");
 static const u8 sText_Natures_OnMints[] = _("ON + MINTS");
-static const u8 *const sText_Natures_strings[] = {sText_Natures_Off, sText_Natures_On, sText_Natures_OnMints};
+static const u8 *const sText_Natures_strings[] = {sText_Off, sText_On, sText_Natures_OnMints};
 
 static void DrawChoices_Mode_Natures(int selection, int y)
 {
@@ -3149,8 +3149,8 @@ static void DrawChoices_Mode_New_Effectiveness(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1; //New type chart
     }
 
-    DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
-    DrawOptionMenuChoice(sText_Encounters_Modern_Long, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
+    DrawOptionMenuChoice(sText_TypeChart_Gen3, 104, y, styles[0], active);
+    DrawOptionMenuChoice(sText_TypeChart_Gen6, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
 }
 
 static void DrawChoices_Mode_Legendary_Abilities(int selection, int y)
