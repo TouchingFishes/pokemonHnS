@@ -419,7 +419,7 @@ static const s8 sCenterToCornerVecXs[8] ={-32, -16, -16, -32, -32};
 // 10 is ×1.0 TYPE_MUL_NORMAL
 // 05 is ×0.5 TYPE_MUL_NOT_EFFECTIVE
 // 00 is ×0.0 TYPE_MUL_NO_EFFECT
-const u8 gTypeEffectiveness[354] = //New type effectiveness from Modern Emerald 3.2+, NOT enabled in HnS.
+/* const u8 gTypeEffectiveness[354] = //New type effectiveness from Modern Emerald 3.2+, NOT enabled in HnS.
 {
     TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
@@ -549,9 +549,9 @@ const u8 gTypeEffectiveness[354] = //New type effectiveness from Modern Emerald 
     //End
     TYPE_FORESIGHT, TYPE_FORESIGHT, TYPE_MUL_NO_EFFECT,
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
-};
+}; */
 
-const u8 gTypeEffectiveness_Old[366] = //Gen 6 type chart, and it's the one read by HnS by default.
+const u8 gTypeEffectiveness[366] = //Gen 6 type chart. The "MODERN" TYPE CHART option.
 {
     TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
@@ -678,7 +678,7 @@ const u8 gTypeEffectiveness_Old[366] = //Gen 6 type chart, and it's the one read
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
 };
 
-/*const u8 gTypeEffectiveness_Old[372] = //Gen 3 type effectiveness + fairy type. Disabled.
+const u8 gTypeEffectiveness_Old[372] = //Gen 3 type effectiveness + (slightly nerfed) fairy type. The "ORIGINAL" TYPE CHART option
 {
     TYPE_NORMAL, TYPE_ROCK, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_NORMAL, TYPE_STEEL, TYPE_MUL_NOT_EFFECTIVE,
@@ -796,7 +796,7 @@ const u8 gTypeEffectiveness_Old[366] = //Gen 6 type chart, and it's the one read
     TYPE_FAIRY, TYPE_FIRE, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_FIGHTING, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_POISON, TYPE_FAIRY, TYPE_MUL_SUPER_EFFECTIVE,
-    TYPE_BUG, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
+    //TYPE_BUG, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE, FAIRY doesn't resist BUG anymore
     TYPE_DRAGON, TYPE_FAIRY, TYPE_MUL_NO_EFFECT,
     TYPE_DARK, TYPE_FAIRY, TYPE_MUL_NOT_EFFECTIVE,
     TYPE_STEEL, TYPE_FAIRY, TYPE_MUL_SUPER_EFFECTIVE,
@@ -804,7 +804,7 @@ const u8 gTypeEffectiveness_Old[366] = //Gen 6 type chart, and it's the one read
     TYPE_NORMAL, TYPE_GHOST, TYPE_MUL_NO_EFFECT,
     TYPE_FIGHTING, TYPE_GHOST, TYPE_MUL_NO_EFFECT,
     TYPE_ENDTABLE, TYPE_ENDTABLE, TYPE_MUL_NO_EFFECT
-};*/
+};
 
 const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1] =
 {

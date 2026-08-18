@@ -117,6 +117,7 @@ static const u8 sText_InfiniteTMs_Label[]   = _("REUSABLE TMS");
 static const u8 sText_SurvivePoison_Label[] = _("SURVIVE POISON");
 static const u8 sText_Synchronize_Label[]   = _("SYNCHRONIZE");
 static const u8 sText_Natures_Label[]       = _("NATURES");
+static const u8 sText_TypeChart_Label[]     = _("TYPE CHART");
 static const u8 sText_SandHailBuffs_Label[] = _("WEATHER BUFFS");
 static const u8 sText_FairyTypes_Label[]    = _("ADD FAIRY TYPE");
 static const u8 sText_Sturdy_Label[]        = _("STURDY");
@@ -438,6 +439,11 @@ static u8 GetSel_Randomizer(void)
         return 0;
 }
 
+static u8 GetSel_TypeChart(void)
+{
+    return gSaveBlock1Ptr->tx_Mode_TypeEffectiveness ? 1 : 0;
+}
+
 static u8 GetSel_Natures(void)
 {
     if (!gSaveBlock1Ptr->tx_Mode_Natures)
@@ -542,6 +548,7 @@ static const struct ViewerBoolRow sBoolRows[] = {
     { sText_LegendaryAbils_Label,GetSel_LegendaryAbilities },
     { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
     { sText_Natures_Label,       GetSel_Natures            },
+//    { sText_TypeChart_Label,     GetSel_TypeChart          },
     { sText_SurvivePoison_Label, GetSel_SurvivePoison      },
 };
 

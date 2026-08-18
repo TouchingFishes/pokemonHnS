@@ -48,7 +48,7 @@ enum
     MENUITEM_MODE_LEGENDARY_ABILITIES,
     MENUITEM_MODE_INFINITE_TMS,
     MENUITEM_MODE_SURVIVE_POISON,
-    //MENUITEM_MODE_NEW_EFFECTIVENESS,
+    MENUITEM_MODE_NEW_EFFECTIVENESS,
     //MENUITEM_MODE_MODERN_TYPES,
     MENUITEM_MODE_NEW_STATS,
     //MENUITEM_MODE_NEW_LEGENDARIES,
@@ -381,7 +381,7 @@ struct // MENU_MODE
     //[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {DrawChoices_Mode_PhysicalSpecialSplit,         ProcessInput_Options_Two},
     [MENUITEM_MODE_IGNORE_EV_CAP]         = {DrawChoices_Mode_IgnoreEVCap,          ProcessInput_Options_Two},
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = {DrawChoices_Mode_New_Legendaries,      ProcessInput_Options_Two},
-    //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = {DrawChoices_Mode_New_Effectiveness,    ProcessInput_Options_Two},
+    [MENUITEM_MODE_NEW_EFFECTIVENESS]     = {DrawChoices_Mode_New_Effectiveness,    ProcessInput_Options_Two},
     [MENUITEM_MODE_NEXT]                  = {NULL, NULL},
 };
 
@@ -518,7 +518,7 @@ static const u8 *const sOptionMenuItemsNamesMode[MENUITEM_MODE_COUNT] =
     //[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]    = sText_PhysicalSpecialSplit,
     [MENUITEM_MODE_IGNORE_EV_CAP]             = sText_IgnoreEVCap,
     //[MENUITEM_MODE_NEW_LEGENDARIES]           = sText_New_Legendaries,
-    //[MENUITEM_MODE_NEW_EFFECTIVENESS]         = sText_New_Effectiveness,
+    [MENUITEM_MODE_NEW_EFFECTIVENESS]         = sText_New_Effectiveness,
     [MENUITEM_MODE_NEXT]                      = sText_Next,
 };
 
@@ -699,7 +699,7 @@ static bool8 CheckConditions(int selection)
             //case MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT:    return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             case MENUITEM_MODE_IGNORE_EV_CAP:             return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
             //case MENUITEM_MODE_NEW_LEGENDARIES:           return FALSE;
-            //case MENUITEM_MODE_NEW_EFFECTIVENESS:         return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
+            case MENUITEM_MODE_NEW_EFFECTIVENESS:         return sOptions->sel_mode[MENUITEM_MODE_CLASSIC_MODERN] == 1;
         default:       return FALSE;
         }
     case MENU_FEATURES:
@@ -833,8 +833,8 @@ static const u8 sText_Description_Mode_IgnoreEVCap_Off[]                = _("{PK
 static const u8 sText_Description_Mode_IgnoreEVCap_On[]                 = _("{PKMN} can gain EVs beyond the\nstandard limit. Mirrors Stat Exp.");
 static const u8 sText_Description_Mode_New_Legendaries_Off[]            = _("No extra legendaries are added.");
 static const u8 sText_Description_Mode_New_Legendaries_On[]             = _("Extra legendaries from GEN I and II\nare added via ingame events.");
-static const u8 sText_Description_Mode_New_Effectiveness_Original[]     = _("Original type effectiveness\nfor all types.");
-static const u8 sText_Description_Mode_New_Effectiveness_Modern[]       = _("New and balanced type effectiveness\nfor certain types.");
+static const u8 sText_Description_Mode_New_Effectiveness_Original[]     = _("GEN III type chart, STEEL resists\nGHOST and DARK. FAIRY doesn't resist BUG.");
+static const u8 sText_Description_Mode_New_Effectiveness_Modern[]       = _("GEN VI type chart. STEEL no longer\nresists GHOST and DARK.");
 static const u8 sText_Description_Mode_Next[]                           = _("Continue to Features options.");
 
 static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
@@ -856,7 +856,7 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_IGNORE_EV_CAP]          = {sText_Description_Mode_IgnoreEVCap_Off,       sText_Description_Mode_IgnoreEVCap_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
 
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = {sText_Description_Mode_New_Legendaries_Off,    sText_Description_Mode_New_Legendaries_On,    sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = {sText_Description_Mode_New_Effectiveness_Original,    sText_Description_Mode_New_Effectiveness_Modern,    sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_NEW_EFFECTIVENESS]     = {sText_Description_Mode_New_Effectiveness_Original,    sText_Description_Mode_New_Effectiveness_Modern,    sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_NEXT]                  = {sText_Description_Mode_Next,                   sText_Empty,                                  sText_Empty,                                        sText_Empty,                                        sText_Empty},
 };
 
@@ -1074,7 +1074,7 @@ static const u8 *const sOptionMenuItemDescriptionsDisabledMode[MENUITEM_MODE_COU
     [MENUITEM_MODE_NATURES]               = sText_Empty,
     [MENUITEM_MODE_IGNORE_EV_CAP]         = sText_Empty,
     //[MENUITEM_MODE_NEW_LEGENDARIES]       = sText_Description_Disabled_Feature,
-    //[MENUITEM_MODE_NEW_EFFECTIVENESS]     = sText_Empty,
+    [MENUITEM_MODE_NEW_EFFECTIVENESS]     = sText_Empty,
 };
 
 // Disabled descriptions
@@ -1494,7 +1494,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = TX_IGNORE_EV_CAP;
 
         gSaveBlock1Ptr->tx_Mode_New_Legendaries             = TX_MODE_NEW_LEGENDARIES;
-        //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = TX_MODE_TYPE_EFFECTIVENESS;
+        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = TX_MODE_TYPE_EFFECTIVENESS;
 
         gSaveBlock1Ptr->tx_Features_RTCType                 = TX_FEATURES_RTC_TYPE;
         gSaveBlock1Ptr->tx_Features_ShinyChance             = TX_FEATURES_SHINY_CHANCE;
@@ -1570,7 +1570,7 @@ void CB2_InitTxRandomizerChallengesMenu(void)
         //sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = !gSaveBlock2Ptr->optionNoPhysicalSpecialSplit;
         sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]          = gSaveBlock1Ptr->tx_Mode_IgnoreEVCap;
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]        = gSaveBlock1Ptr->tx_Mode_New_Legendaries;
-        //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]      = gSaveBlock1Ptr->tx_Mode_TypeEffectiveness;
+        sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]      = gSaveBlock1Ptr->tx_Mode_TypeEffectiveness;
         //MENU FEATURES
         sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]               = gSaveBlock1Ptr->tx_Features_RTCType;
         sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]           = gSaveBlock1Ptr->tx_Features_ShinyChance;
@@ -1927,7 +1927,7 @@ void SaveData_TxRandomizerAndChallenges(void)
     //gSaveBlock2Ptr->optionNoPhysicalSpecialSplit        = !sOptions->sel_mode[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT]; 
     gSaveBlock1Ptr->tx_Mode_IgnoreEVCap                 = sOptions->sel_mode[MENUITEM_MODE_IGNORE_EV_CAP]; 
     //gSaveBlock1Ptr->tx_Mode_New_Legendaries             = sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]; 
-    //gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS];
+    gSaveBlock1Ptr->tx_Mode_TypeEffectiveness           = sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS];
     //MENU FEAUTRES
     gSaveBlock1Ptr->tx_Features_RTCType                     = sOptions->sel_features[MENUITEM_FEATURES_RTC_TYPE]; 
     gSaveBlock1Ptr->tx_Features_ShinyChance                 = sOptions->sel_features[MENUITEM_FEATURES_SHINY_CHANCE]; 
@@ -2370,8 +2370,8 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
 
         //sOptions->sel_mode[MENUITEM_MODE_NEW_LEGENDARIES]           = TX_MODE_NEW_LEGENDARIES;
         //gSaveBlock1Ptr->tx_Mode_New_Legendaries = 0;
-        //sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]         = TX_MODE_TYPE_EFFECTIVENESS;
-        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = 1;
+        sOptions->sel_mode[MENUITEM_MODE_NEW_EFFECTIVENESS]         = TX_MODE_TYPE_EFFECTIVENESS;
+        gSaveBlock1Ptr->tx_Mode_TypeEffectiveness = TX_MODE_TYPE_EFFECTIVENESS;
     }
 }
 
@@ -2736,8 +2736,8 @@ static void DrawChoices_Features_Rtc_Type(int selection, int y)
     DrawOptionMenuChoice(sText_Features_RTC_Fake_RTC, GetStringRightAlignXOffset(1, sText_Features_RTC_Fake_RTC, 198), y, styles[1], active);
 }
 
-static const u8 sText_Encounters_Vanilla_Long[]   = _("ORIGINAL");
-static const u8 sText_Encounters_Modern_Long[]    = _("MODERN");
+static const u8 sText_Encounters_Vanilla_Long[]   = _("GEN III");
+static const u8 sText_Encounters_Modern_Long[]    = _("GEN VI");
 
 /*static void DrawChoices_Mode_AlternateSpawns(int selection, int y)
 {
@@ -3134,7 +3134,7 @@ static void DrawChoices_Mode_Modern_Moves(int selection, int y)
     DrawOptionMenuChoice(sText_Encounters_Modern_Long, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
 }
 
-/*static void DrawChoices_Mode_New_Effectiveness(int selection, int y)
+static void DrawChoices_Mode_New_Effectiveness(int selection, int y)
 {
     bool8 active = CheckConditions(MENUITEM_MODE_NEW_EFFECTIVENESS);
     u8 styles[2] = {0};
@@ -3151,7 +3151,7 @@ static void DrawChoices_Mode_Modern_Moves(int selection, int y)
 
     DrawOptionMenuChoice(sText_Encounters_Vanilla_Long, 104, y, styles[0], active);
     DrawOptionMenuChoice(sText_Encounters_Modern_Long, GetStringRightAlignXOffset(1, sText_Encounters_Modern_Long, 198), y, styles[1], active);
-}*/
+}
 
 static void DrawChoices_Mode_Legendary_Abilities(int selection, int y)
 {

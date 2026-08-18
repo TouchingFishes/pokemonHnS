@@ -93,9 +93,8 @@ extern struct MultiPartnerMenuPokemon gMultiPartnerParty[MULTI_PARTY_SIZE];
 extern const struct SpriteTemplate gUnusedBattleInitSprite;
 extern const struct OamData gOamData_BattleSpriteOpponentSide;
 extern const struct OamData gOamData_BattleSpritePlayerSide;
-extern const u8 gTypeEffectiveness[354]; // 3 elements for each entry in the table (122 entries * 3 = 366). From Modern Emerald 3.2+. Not in use.
-extern const u8 gTypeEffectiveness_Old[366]; // Gen 6 type effectiveness. Default, used by HnS.
-//extern const u8 gTypeEffectiveness_Old[372]; //Gen 3 type effectiveness + fairy type. Disabled.
+extern const u8 gTypeEffectiveness_Old[366]; // Gen 6 type effectiveness. MODERN.
+extern const u8 gTypeEffectiveness_Old[369]; //Gen 3 type effectiveness + (slightly nerfed) FAIRY type. ORIGINAL.
 extern const u8 gTypeNames[NUMBER_OF_MON_TYPES][TYPE_NAME_LENGTH + 1];
 extern const struct TrainerMoney gTrainerMoneyTable[];
 extern const u8 gAbilityNames[][ABILITY_NAME_LENGTH + 1];
