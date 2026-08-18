@@ -3757,34 +3757,74 @@ static const struct TrainerMonNoItemCustomMoves sParty_Yuri[] = { //ExpertMGroup
 };
 
 
-static const struct TrainerMonItemDefaultMoves sParty_Marik[] = { //ExpertMGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Marik[] = { //ExpertMGroup
+    {
+    .iv = 210,
+    .lvl = 65,
+    .species = SPECIES_MAGNEZONE,
+    .moves = {MOVE_FAKE_OUT, MOVE_EARTHQUAKE, MOVE_OUTRAGE, MOVE_DIZZY_PUNCH}
+    },
+    {
+    .iv = 210,
+    .lvl = 67,
+    .species = SPECIES_ALTARIA,
+    .moves = {MOVE_SUPERPOWER, MOVE_FLAMETHROWER, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE}
+    },
+    {
+    .iv = 210,
+    .lvl = 69,
+    .species = SPECIES_EXPLOUD,
+    .moves = {MOVE_DRAGON_PULSE, MOVE_BLIZZARD, MOVE_FIRE_BLAST, MOVE_THUNDER}
+    },
+    {
+    .iv = 210,
+    .lvl = 70,
+    .species = SPECIES_ABSOL,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_BURNING_SAND, MOVE_DOUBLE_KICK, MOVE_BITE}
+    },
+    {
+    .iv = 210,
+    .lvl = 70,
+    .species = SPECIES_CLAYDOL,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER, MOVE_DOUBLE_KICK, MOVE_SHADOW_BALL}
+    },
+    {
+    .iv = 210,
+    .lvl = 70,
+    .species = SPECIES_DUSCLOPS,
+    .moves = {MOVE_QUICK_ATTACK, MOVE_HYDRO_PUMP, MOVE_DOUBLE_KICK, MOVE_BLIZZARD}
+    }
+};
+
+
+static const struct TrainerMonItemDefaultMoves sParty_Crafty[] = { //ExpertMGroup
     {
     .iv = 255,
-    .lvl = 48,
+    .lvl = LEVEL_BASED_ON_BADGE+15,
     .heldItem = ITEM_THICK_CLUB,
     .species = SPECIES_MAROWAK,
     },
     {
     .iv = 255,
-    .lvl = 46,
+    .lvl = LEVEL_BASED_ON_BADGE+15,
     .heldItem = ITEM_STICK,
     .species = SPECIES_MLLOY,
     },
     {
     .iv = 255,
-    .lvl = 44,
+    .lvl = LEVEL_BASED_ON_BADGE+15,
     .heldItem = ITEM_METAL_POWDER,
     .species = SPECIES_DITTO,
     },
     {
     .iv = 255,
-    .lvl = 44,
+    .lvl = LEVEL_BASED_ON_BADGE+15,
     .heldItem = ITEM_LUCKY_PUNCH,
     .species = SPECIES_CHANSEY,
     },
     {
     .iv = 255,
-    .lvl = 48,
+    .lvl = LEVEL_BASED_ON_BADGE+15,
     .heldItem = ITEM_BIG_MUSHROOM,
     .species = SPECIES_PARASECT,
     }
