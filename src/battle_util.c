@@ -3692,6 +3692,22 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     RecordItemEffectBattle(battlerId, battlerHoldEffect);
                 }
                 break;
+            case HOLD_EFFECT_BIG_MUSHROOM:
+                if ((gBattleMons[battlerId].species == SPECIES_PARAS
+                    || gBattleMons[battlerId].species == SPECIES_PARASECT)
+                    && gBattleMons[battlerId].hp < gBattleMons[battlerId].maxHP && !moveTurn)
+                {
+                    gBattleMoveDamage = gBattleMons[battlerId].maxHP / battlerHoldEffectParam;
+                    if (gBattleMoveDamage == 0)
+                        gBattleMoveDamage = 1;
+                    if (gBattleMons[battlerId].hp + gBattleMoveDamage > gBattleMons[battlerId].maxHP)
+                        gBattleMoveDamage = gBattleMons[battlerId].maxHP - gBattleMons[battlerId].hp;
+                    gBattleMoveDamage *= -1;
+                    BattleScriptExecute(BattleScript_ItemHealHP_End2);
+                    effect = ITEM_HP_CHANGE;
+                    RecordItemEffectBattle(battlerId, battlerHoldEffect);
+                }
+                break;
             case HOLD_EFFECT_CONFUSE_SPICY:
                 TRY_EAT_CONFUSE_BERRY(FLAVOR_SPICY);
                 break;
