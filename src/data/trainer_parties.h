@@ -3757,31 +3757,36 @@ static const struct TrainerMonNoItemCustomMoves sParty_Yuri[] = { //ExpertMGroup
 };
 
 
-static const struct TrainerMonNoItemDefaultMoves sParty_Marik[] = { //ExpertMGroup
+static const struct TrainerMonItemDefaultMoves sParty_Marik[] = { //ExpertMGroup
     {
-    .iv = 200,
+    .iv = 255,
     .lvl = 48,
-    .species = SPECIES_GLALIE,
+    .heldItem = ITEM_THICK_CLUB,
+    .species = SPECIES_MAROWAK,
     },
     {
-    .iv = 200,
+    .iv = 255,
     .lvl = 46,
-    .species = SPECIES_VANILLUXE,
+    .heldItem = ITEM_STICK,
+    .species = SPECIES_MLLOY,
     },
     {
-    .iv = 200,
+    .iv = 255,
     .lvl = 44,
-    .species = SPECIES_VOLTREAN,
+    .heldItem = ITEM_METAL_POWDER,
+    .species = SPECIES_DITTO,
     },
     {
-    .iv = 200,
+    .iv = 255,
     .lvl = 44,
-    .species = SPECIES_WHISCASH,
+    .heldItem = ITEM_LUCKY_PUNCH,
+    .species = SPECIES_CHANSEY,
     },
     {
-    .iv = 200,
+    .iv = 255,
     .lvl = 48,
-    .species = SPECIES_ARCANINE,
+    .heldItem = ITEM_BIG_MUSHROOM,
+    .species = SPECIES_PARASECT,
     }
 };
 
