@@ -416,7 +416,6 @@ static void Viewer_DrawSingleValueRow(u8 rowIndex, const u8 *label, const u8 *va
 static u8 GetSel_InfiniteTMs(void)        { return gSaveBlock1Ptr->tx_Mode_InfiniteTMs       ? 1 : 0; }
 static u8 GetSel_SurvivePoison(void)      { return gSaveBlock1Ptr->tx_Mode_PoisonSurvive     ? 1 : 0; }
 static u8 GetSel_Synchronize(void)        { return gSaveBlock1Ptr->tx_Mode_Synchronize       ? 1 : 0; }
-static u8 GetSel_Mints(void)              { return gSaveBlock1Ptr->tx_Mode_Mints             ? 1 : 0; }
 static u8 GetSel_SandHailBuffs(void)      { return gSaveBlock1Ptr->tx_Mode_SandHailBuffs     ? 1 : 0; }
 static u8 GetSel_FairyTypes(void)         { return gSaveBlock1Ptr->tx_Mode_TypeMode;                  }
 static u8 GetSel_Sturdy(void)             { return gSaveBlock1Ptr->tx_Mode_Sturdy            ? 1 : 0; }
@@ -706,7 +705,7 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
     {
         u8 v = GetSel_Natures();
         if (v > 2) v = 0;
-        Viewer_DrawSingleValueRow(visRow, sText_Natures_Label, sText_Natures_Label[v], selected);
+        Viewer_DrawSingleValueRow(visRow, sText_Natures_Label, sText_Natures_Strings[v], selected);
         break;
     }
     default:
