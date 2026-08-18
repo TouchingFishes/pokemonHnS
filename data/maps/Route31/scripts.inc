@@ -146,10 +146,8 @@ Route31_Text_WadePostRematch:
 	.string "until we can beat you!$"
 
 Route31_Text_PriscillaSeen:
-	.string "Oh! Do be careful!\p"
 	.string "My HOPPIP is drifting along\n"
 	.string "so gracefully today.\p"
-	.string "...\p"
 	.string "Would you care for a battle\n"
 	.string "while we enjoy the breeze?$"
 
@@ -160,7 +158,6 @@ Route31_Text_PriscillaBeaten:
 Route31_Text_PriscillaAfter:
 	.string "Watching HOPPIP float on the\n"
 	.string "wind is simply enchanting.\p"
-	.string "...\p"
 	.string "It goes wherever the breeze\n"
 	.string "takes it, without a worry.\p"
 	.string "Perhaps battling should feel\n"
