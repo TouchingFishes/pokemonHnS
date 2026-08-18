@@ -317,7 +317,6 @@ static void DrawChoices_Features_EasyFeebas(int selection, int y);
 static void DrawChoices_Features_Rtc_Type(int selection, int y);
 static void DrawChoices_Features_Unlimited_WT(int selection, int y);
 static void DrawChoices_Mode_Synchronize(int selection, int y);
-static void DrawChoices_Mode_Mints(int selection, int y);
 static void DrawChoices_Mode_Sand_Hail_Buffs(int selection, int y);
 static void DrawChoices_Mode_Modern_Types(int selection, int y);
 static void DrawChoices_Mode_Fairy_Types(int selection, int y);
@@ -809,8 +808,6 @@ static const u8 sText_Description_Mode_SurvivePoison_On[]               = _("You
 static const u8 sText_Description_Mode_SurvivePoison_Off[]              = _("Your {PKMN} will faint if they are\nPOISONED.");
 static const u8 sText_Description_Mode_Synchronize_Old[]                = _("SYNCHRONIZE works as in GEN III.\n50% chance to copy nature.");
 static const u8 sText_Description_Mode_Synchronize_New[]                = _("SYNCHRONIZE works as in GEN VIII+.\n100% chance to copy nature.");
-static const u8 sText_Description_Mode_Mints_Off[]                      = _("Mints are not availabe ingame until\nfinishing the game.");
-static const u8 sText_Description_Mode_Mints_On[]                       = _("Mints can be bought at PRETTY PETAL\nFLOWER SHOP after the 4th medal.");
 static const u8 sText_Description_Mode_SandHailBuffs_Off[]              = _("SANDSTORM and HAIL do not buff\nstats. Same as GEN III.");
 static const u8 sText_Description_Mode_SandHailBuffs_On[]               = _("SANDSTORM and HAIL buff stats.\nLike in more recent GENs.");
 static const u8 sText_Description_Mode_Modern_Types_Off[]               = _("Original {PKMN} typings. Doesn't include\n{PKMN} that got added to FAIRY in GEN VI.");
@@ -854,7 +851,7 @@ static const u8 *const sOptionMenuItemDescriptionsMode[MENUITEM_MODE_COUNT][5] =
     [MENUITEM_MODE_STURDY]                = {sText_Description_Mode_Sturdy_Off,             sText_Description_Mode_Sturdy_On,             sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_MODERN_MOVES]          = {sText_Description_Mode_Modern_Moves_Off,       sText_Description_Mode_Modern_Moves_On,       sText_Empty,                                        sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_LEGENDARY_ABILITIES]   = {sText_Description_Mode_Leg_Abilities_Off,      sText_Description_Mode_Leg_Abilities_On,      sText_Empty,                                        sText_Empty,                                        sText_Empty},
-    [MENUITEM_MODE_NATURES]               = {sText_Description_Mode_Natures_Off,            sText_Description_Mode_Natures_On,            sText_Empty,                                        sText_Empty,                                        sText_Empty},
+    [MENUITEM_MODE_NATURES]               = {sText_Description_Mode_Natures_Off,            sText_Description_Mode_Natures_On,            sText_Description_Mode_Natures_OnMints,             sText_Empty,                                        sText_Empty},
     //[MENUITEM_MODE_PHYSICAL_SPECIAL_SPLIT] = {sText_Description_Mode_PhysicalSpecialSplit_Off, sText_Description_Mode_PhysicalSpecialSplit_On, sText_Empty,                                   sText_Empty,                                        sText_Empty},
     [MENUITEM_MODE_IGNORE_EV_CAP]          = {sText_Description_Mode_IgnoreEVCap_Off,       sText_Description_Mode_IgnoreEVCap_On,        sText_Empty,                                        sText_Empty,                                        sText_Empty},
 
@@ -2349,7 +2346,6 @@ static void DrawChoices_Mode_Classic_Modern_Selector(int selection, int y)
         gSaveBlock1Ptr->tx_Mode_PoisonSurvive = 1;
         sOptions->sel_mode[MENUITEM_MODE_SYNCHRONIZE]               = !TX_MODE_NEW_SYNCHRONIZE;
         gSaveBlock1Ptr->tx_Mode_Synchronize = 1;
-        FlagSet (FLAG_MINTS_ENABLED);
         sOptions->sel_mode[MENUITEM_MODE_SAND_HAIL_BUFFS]           = 1;
         gSaveBlock1Ptr->tx_Mode_SandHailBuffs = 1;
         //sOptions->sel_mode[MENUITEM_MODE_MODERN_TYPES]              = TX_MODE_MODERN_TYPES;

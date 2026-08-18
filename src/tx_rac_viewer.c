@@ -116,7 +116,7 @@ static u16 sCurIndex;   // absolute row index on current page
 static const u8 sText_InfiniteTMs_Label[]   = _("REUSABLE TMS");
 static const u8 sText_SurvivePoison_Label[] = _("SURVIVE POISON");
 static const u8 sText_Synchronize_Label[]   = _("SYNCHRONIZE");
-static const u8 sText_Mints_Label[]         = _("NATURES");
+static const u8 sText_Natures_Label[]       = _("NATURES");
 static const u8 sText_SandHailBuffs_Label[] = _("WEATHER BUFFS");
 static const u8 sText_FairyTypes_Label[]    = _("ADD FAIRY TYPE");
 static const u8 sText_Sturdy_Label[]        = _("STURDY");
@@ -438,6 +438,15 @@ static u8 GetSel_Randomizer(void)
     else
         return 0;
 }
+
+static u8 GetSel_Natures(void)
+{
+    if (!gSaveBlock1Ptr->tx_Mode_Natures)
+        return 0; //OFF
+    return gSaveBlock1Ptr->tx_Mode_Mints ? 2 : 1; //ON + MINTS : ON
+}
+
+
 static u8 GetSel_Rand_Starter(void)        { return gSaveBlock1Ptr->tx_Random_Starter            ? 1 : 0; }
 static u8 GetSel_Rand_Wild(void)           { return gSaveBlock1Ptr->tx_Random_WildPokemon        ? 1 : 0; }
 static u8 GetSel_Rand_Trainer(void)        { return gSaveBlock1Ptr->tx_Random_Trainer            ? 1 : 0; }
@@ -533,7 +542,7 @@ static const struct ViewerBoolRow sBoolRows[] = {
     { sText_FairyTypes_Label,    GetSel_FairyTypes         },
     { sText_LegendaryAbils_Label,GetSel_LegendaryAbilities },
     { sText_InfiniteTMs_Label,   GetSel_InfiniteTMs        },
-    { sText_Mints_Label,         GetSel_Mints              },
+    { sText_Natures_Label,       GetSel_Natures            },
     { sText_SurvivePoison_Label, GetSel_SurvivePoison      },
 };
 
@@ -612,6 +621,9 @@ struct ViewerPage
     u16 count;
 };
 
+static const u8 sText_Natures_OnMints[] = _("ON + MINTS");
+static const u8 *const sText_Natures_Strings[] = {sText_Off, sText_On, sText_Natures_OnMints};
+
 // ---- Page 1 draw (simple bool rows) ----
 static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
 {
@@ -688,6 +700,13 @@ static void Viewer_DrawRow_Page1(u8 visRow, u16 idx)
         u8 v = GetSel_FairyTypes();
         if (v > 3) v = 0;
         Viewer_DrawSingleValueRow(visRow, sText_FairyTypes_Label, sText_TypeMode_Strings[v], selected);
+        break;
+    }
+    case 7: // NATURES
+    {
+        u8 v = GetSel_Natures();
+        if (v > 2) v = 0;
+        Viewer_DrawSingleValueRow(visRow, sText_Natures_Label, sText_Natures_Label[v], selected);
         break;
     }
     default:
