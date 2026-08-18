@@ -21841,14 +21841,14 @@ static const struct TrainerMonItemCustomMoves sParty_Karen2[] = { //EliteFourGro
 static const struct TrainerMonItemCustomMoves sParty_Koga[] = { //EliteFourGroup
     {
     .iv = 255,
-    .lvl = 50,
+    .lvl = 52,
     .species = SPECIES_MUK,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = {MOVE_MINIMIZE, MOVE_FIRE_BLAST, MOVE_SLUDGE_BOMB, MOVE_TOXIC}
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_MINIMIZE, MOVE_FIRE_BLAST, MOVE_GUNK_SHOT, MOVE_TOXIC}
     },
     {
     .iv = 255,
-    .lvl = 51,
+    .lvl = 50,
     .species = SPECIES_QWILFISH,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_SURF, MOVE_TOXIC, MOVE_PROTECT, MOVE_GUNK_SHOT}
@@ -21856,13 +21856,13 @@ static const struct TrainerMonItemCustomMoves sParty_Koga[] = { //EliteFourGroup
     {
     .iv = 255,
     .lvl = 52,
-    .species = SPECIES_DRAPION,
-    .heldItem = ITEM_LEFTOVERS,
-    .moves = {MOVE_CROSS_POISON, MOVE_CRUNCH, MOVE_DIG, MOVE_TOXIC}
+    .species = SPECIES_WEEZING,
+    .heldItem = ITEM_POISON_BARB,
+    .moves = {MOVE_THUNDERBOLT, MOVE_GUNK_SHOT, MOVE_TOXIC, MOVE_PROTECT}
     },
     {
     .iv = 255,
-    .lvl = 52,
+    .lvl = 51,
     .species = SPECIES_FORRETRESS,
     .heldItem = ITEM_NONE,
     .moves = {MOVE_ZAP_CANNON, MOVE_STEAMROLLER, MOVE_ROCK_SLIDE, MOVE_TOXIC}
