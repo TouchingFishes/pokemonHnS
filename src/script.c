@@ -356,6 +356,7 @@ void RunOnLoadMapScript(void)
 
 void RunOnTransitionMapScript(void)
 {
+    UpdateWeekDayObjectFlags();
     MapHeaderRunScriptType(MAP_SCRIPT_ON_TRANSITION);
 }
 

@@ -61,6 +61,7 @@ u32 RtcGetMinuteCount(void);
 u32 RtcGetLocalDayCount(void);
 u8 GetWeekDay(void);
 void SetWeekDay(u8 weekDay);
+void UpdateWeekDayObjectFlags(void);
 /*void RtcAdvanceTime(u32 hours, u32 minutes, u32 seconds);
 void RtcAdvanceTimeTo(u32 hour, u32 minute, u32 second);
 u16 ConvertDateToDayCountFake(u8 year, u8 month, u8 day);
