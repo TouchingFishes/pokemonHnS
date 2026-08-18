@@ -1237,6 +1237,16 @@ static void Cmd_accuracycheck(void)
         if (holdEffect == HOLD_EFFECT_EVASION_UP)
             calc = (calc * (100 - param)) / 100;
 
+        // Zoom Lens: attacker's item, only if it moves after the target
+        {
+            u8 atkHoldEffect = ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item);
+            u8 atkParam = ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item);
+
+            if (atkHoldEffect == HOLD_EFFECT_ZOOM_LENS
+            && GetBattlerTurnOrderNum(gBattlerAttacker) > GetBattlerTurnOrderNum(gBattlerTarget))
+                calc = (calc * (100 + atkParam)) / 100;
+        }
+
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_NO_GUARD || gBattleMons[gBattlerTarget].ability == ABILITY_NO_GUARD)
             calc = 100;
         
@@ -7894,7 +7904,12 @@ static void Cmd_stockpiletohpheal(void)
 
 static void Cmd_negativedamage(void)
 {
-    gBattleMoveDamage = -(gHpDealt / 2);
+    s32 drain = gHpDealt / 2;
+
+    if (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_BIG_ROOT)
+        drain = (drain * (100 + ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item))) / 100;
+
+    gBattleMoveDamage = -drain;
     if (gBattleMoveDamage == 0)
         gBattleMoveDamage = -1;
 
@@ -8115,6 +8130,10 @@ static void Cmd_setmultihitcounter(void)
     else if (gBattleMons[gBattlerAttacker].ability == ABILITY_SKILL_LINK)
     {
         gMultiHitCounter = 5;
+    }
+    else if (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_LOADED_DICE)
+    {
+        gMultiHitCounter = 4 + (Random() & 1); //4 or 5 hits
     }
     else
     {

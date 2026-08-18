@@ -7185,6 +7185,22 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
          || gCurrentMove == MOVE_AIR_CUTTER  || gCurrentMove == MOVE_CUT  || gCurrentMove == MOVE_FURY_CUTTER))
         gBattleMovePower = (150 * gBattleMovePower) / 100;
 
+    // Muscle Band / Wise Glasses
+    if (gSaveBlock2Ptr->optionNoPhysicalSpecialSplit == 1)
+    {
+        if (attackerHoldEffect == HOLD_EFFECT_MUSCLE_BAND && IS_TYPE_PHYSICAL(type))
+            gBattleMovePower = (gBattleMovePower * (100 + attackerHoldEffectParam)) / 10;
+        if (attackerHoldEffect == HOLD_EFFECT_WISE_GLASSES && IS_TYPE_SPECIAL(type))
+            gBattleMovePower = (gBattleMovePower * (100 + attackerHoldEffectParam)) / 10;
+    }
+    else
+    {
+        if (attackerHoldEffect == HOLD_EFFECT_MUSCLE_BAND && IS_MOVE_PHYSICAL(move))
+            gBattleMovePower = (gBattleMovePower * (100 + attackerHoldEffectParam)) / 10;
+        if (attackerHoldEffect == HOLD_EFFECT_WISE_GLASSES && IS_MOVE_SPECIAL(move))
+            gBattleMovePower = (gBattleMovePower * (100 + attackerHoldEffectParam)) / 10;        
+    }
+
     if (WEATHER_HAS_EFFECT && (gBattleWeather & B_WEATHER_SANDSTORM) && attacker->ability == ABILITY_SAND_FORCE && (type == TYPE_ROCK || type == TYPE_GROUND || type == TYPE_STEEL))
         gBattleMovePower = (130 * gBattleMovePower) / 100;
     //also includes abilities

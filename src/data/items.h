@@ -5182,6 +5182,102 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_Mints,
         .secondaryId = NATURE_TIMID,
     },
+    [ITEM_ROCKY_HELMET] =
+    {
+        .name = _("ROCKY HELMET"),
+        .itemId = ITEM_ROCKY_HELMET,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_ROCKY_HELMET,
+        .holdEffectParam = 6,       // maxHP / 6
+        .description = sRockyHelmetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_BLACK_SLUDGE] =
+    {
+        .name = _("BLACK SLUDGE"),
+        .itemId = ITEM_BLACK_SLUDGE,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
+        .holdEffectParam = 16,      // POISON heals maxHP/16; other los maxHP/8
+        .description = sBlackSludgeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_WEAKNESS_POLICY] =
+    {
+        .name = _("WEAK POLICY"),
+        .itemId = ITEM_WEAKNESS_POLICY,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_WEAKNESS_POLICY,
+        .holdEffectParam = 2,      // stat stages gainned
+        .description = sWeakPolicyDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_LOADED_DICE] =
+    {
+        .name = _("LOADED DICE"),
+        .itemId = ITEM_LOADED_DICE,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_LOADED_DICE,
+        .holdEffectParam = 0,
+        .description = sLoadedDiceDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_ZOOM_LENS] =
+    {
+        .name = _("ZOOM LENS"),
+        .itemId = ITEM_ZOOM_LENS,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_ZOOM_LENS,
+        .holdEffectParam = 20,      // +20% accuracy
+        .description = sZoomLensDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_WISE_GLASSES] =
+    {
+        .name = _("WISE GLASSES"),
+        .itemId = ITEM_WISE_GLASSES,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_WISE_GLASSES,
+        .holdEffectParam = 10,      // +10% special power
+        .description = sWiseGlassesDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_MUSCLE_BAND] =
+    {
+        .name = _("MUSCLE BAND"),
+        .itemId = ITEM_MUSCLE_BAND,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_MUSCLE_BAND,
+        .holdEffectParam = 10,      // +10% physical power
+        .description = sMuscleBandDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_BIG_ROOT] =
+    {
+        .name = _("BIG ROOT"),
+        .itemId = ITEM_BIG_ROOT,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_BIG_ROOT,
+        .holdEffectParam = 30,      // +30% drain
+        .description = sBigRootDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
 };
 
 const struct Item gItems2[] =
@@ -10166,5 +10262,101 @@ const struct Item gItems2[] =
         .type = 1,
         .fieldUseFunc = ItemUseOutOfBattle_Mints,
         .secondaryId = NATURE_TIMID,
+    },
+    [ITEM_ROCKY_HELMET] =
+    {
+        .name = _("ROCKY HELMET"),
+        .itemId = ITEM_ROCKY_HELMET,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_ROCKY_HELMET,
+        .holdEffectParam = 6,       // maxHP / 6
+        .description = sRockyHelmetDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_BLACK_SLUDGE] =
+    {
+        .name = _("BLACK SLUDGE"),
+        .itemId = ITEM_BLACK_SLUDGE,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
+        .holdEffectParam = 16,      // POISON heals maxHP/16; other los maxHP/8
+        .description = sBlackSludgeDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_WEAKNESS_POLICY] =
+    {
+        .name = _("WEAK POLICY"),
+        .itemId = ITEM_WEAKNESS_POLICY,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_WEAKNESS_POLICY,
+        .holdEffectParam = 2,      // stat stages gainned
+        .description = sWeakPolicyDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_LOADED_DICE] =
+    {
+        .name = _("LOADED DICE"),
+        .itemId = ITEM_LOADED_DICE,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_LOADED_DICE,
+        .holdEffectParam = 0,
+        .description = sLoadedDiceDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_ZOOM_LENS] =
+    {
+        .name = _("ZOOM LENS"),
+        .itemId = ITEM_ZOOM_LENS,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_ZOOM_LENS,
+        .holdEffectParam = 20,      // +20% accuracy
+        .description = sZoomLensDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_WISE_GLASSES] =
+    {
+        .name = _("WISE GLASSES"),
+        .itemId = ITEM_WISE_GLASSES,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_WISE_GLASSES,
+        .holdEffectParam = 10,      // +10% special power
+        .description = sWiseGlassesDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_MUSCLE_BAND] =
+    {
+        .name = _("MUSCLE BAND"),
+        .itemId = ITEM_MUSCLE_BAND,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_MUSCLE_BAND,
+        .holdEffectParam = 10,      // +10% physical power
+        .description = sMuscleBandDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+    },
+    [ITEM_BIG_ROOT] =
+    {
+        .name = _("BIG ROOT"),
+        .itemId = ITEM_BIG_ROOT,
+        .price = 4000,
+        .holdEffect = HOLD_EFFECT_BIG_ROOT,
+        .holdEffectParam = 30,      // +30% drain
+        .description = sBigRootDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
 };

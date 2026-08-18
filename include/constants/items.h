@@ -468,7 +468,17 @@
 #define ITEM_SERIOUS_MINT        421
 #define ITEM_TIMID_MINT          422
 
-#define ITEMS_COUNT              423
+// New Battle held items
+#define ITEM_ROCKY_HELMET        423
+#define ITEM_BLACK_SLUDGE        424
+#define ITEM_WEAKNESS_POLICY     425
+#define ITEM_LOADED_DICE         426
+#define ITEM_ZOOM_LENS           427
+#define ITEM_WISE_GLASSES        428
+#define ITEM_MUSCLE_BAND         429
+#define ITEM_BIG_ROOT            430
+
+#define ITEMS_COUNT              431
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
 // Its icon is defined at ITEMS_COUNT as the "return to field" arrow

@@ -3495,8 +3495,8 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
     int i = 0;
     u8 effect = ITEM_NO_EFFECT;
     u8 changedPP = 0;
-    u8 battlerHoldEffect, atkHoldEffect, UNUSED defHoldEffect;
-    u8 battlerHoldEffectParam, atkHoldEffectParam, UNUSED defHoldEffectParam;
+    u8 battlerHoldEffect, atkHoldEffect, defHoldEffect;
+    u8 battlerHoldEffectParam, atkHoldEffectParam, defHoldEffectParam;
     u16 atkItem, defItem;
 
     gLastUsedItem = gBattleMons[battlerId].item;
@@ -3643,6 +3643,38 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                     gPotentialItemEffectBattler = battlerId;
                     gActiveBattler = gBattlerAttacker = battlerId;
                     BattleScriptExecute(BattleScript_WhiteHerbEnd2);
+                }
+                break;
+            case HOLD_EFFECT_BLACK_SLUDGE:
+                if (!moveTurn)
+                {
+                    if (IS_BATTLER_OF_TYPE(battlerId, TYPE_POISON))
+                    {
+                        if (gBattleMons[battlerId].hp < gBattleMons[battlerId].maxHP)
+                        {
+                            gBattleMoveDamage = gBattleMons[battlerId].maxHP / battlerHoldEffectParam;
+                            if (gBattleMoveDamage == 0)
+                                gBattleMoveDamage = 1;
+                            if (gBattleMons[battlerId].hp + gBattleMoveDamage > gBattleMons[battlerId].maxHP)
+                                gBattleMoveDamage = gBattleMons[battlerId].maxHP - gBattleMons[battlerId].hp;
+                            gBattleMoveDamage *= -1;
+                            BattleScriptExecute(BattleScript_ItemHealHP_End2);
+                            effect = ITEM_HP_CHANGE;
+                            RecordItemEffectBattle(battlerId, battlerHoldEffect);
+                        }
+                    }
+                    else if (gBattleMons[battlerId].ability != ABILITY_MAGIC_GUARD)
+                    {
+                        gBattleMoveDamage = gBattleMons[battlerId].maxHP / (battlerHoldEffectParam / 2);
+                        if (gBattleMoveDamage == 0)
+                            gBattleMoveDamage = 1;
+                        gBattleScripting.battler = battlerId;
+                        gPotentialItemEffectBattler = battlerId;
+                        gActiveBattler = gBattlerAttacker - battlerId;
+                        BattleScriptExecute(BattleScript_BlackSludgeDmg);
+                        effect = ITEM_HP_CHANGE;
+                        RecordItemEffectBattle(battlerId, battlerHoldEffect);
+                    }
                 }
                 break;
             case HOLD_EFFECT_LEFTOVERS:
@@ -4019,6 +4051,46 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
         }
         break;
     case ITEMEFFECT_KINGSROCK_SHELLBELL:
+        switch (defHoldEffect)
+        {
+        case HOLD_EFFECT_ROCKY_HELMET:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && TARGET_TURN_DAMAGED
+            && gBattlerAttacker != gBattlerTarget
+            && gBattleMons[gBattlerAttacker].hp != 0
+            && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+            && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
+            && (gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT))
+            {
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / defHoldEffectParam;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_RockyHelmetActivates;
+                effect = ITEM_HP_CHANGE;
+            }
+            break;
+        case HOLD_EFFECT_WEAKNESS_POLICY:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+            && TARGET_TURN_DAMAGED
+            && gBattleMons[gBattlerAttacker].hp != 0
+            && (gBattleMons[gBattlerAttacker].statStages[STAT_ATK] < MAX_STAT_STAGE
+                || gBattleMons[gBattlerAttacker].statStages[STAT_SPATK] < MAX_STAT_STAGE))
+            {
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gEffectBattler = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_WeaknessPolicyActivates;
+                effect = ITEM_STATS_CHANGE;
+            }
+            break;
+        }
         if (gBattleMoveDamage)
         {
             switch (atkHoldEffect)

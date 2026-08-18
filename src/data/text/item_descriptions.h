@@ -1922,3 +1922,43 @@ static const u8 sHealingHeart[] = _(
     "This soft heart\n"
     "fully heals your\n"
     "POKéMON party.");
+
+static const u8 sRockyHelmetDesc[] = _(
+    "Hurts the foe if\n"
+    "it touches the\n"
+    "holder in battle.");
+
+static const u8 sBlackSludgeDesc[] = _(
+    "Restores HP of\n"
+    "POISON types.\n"
+    "Hurts all others.");
+
+static const u8 sWeakPolicyDesc[] = _(
+    "Sharply boosts\n"
+    "ATTACK and SP.ATK\n"
+    "if hit hard.");
+
+static const u8 sLoadedDiceDesc[] = _(
+    "Multi-strike\n"
+    "moves hit more\n"
+    "times than usual.");
+
+static const u8 sZoomLensDesc[] = _(
+    "Raises accuracy\n"
+    "if the holder\n"
+    "moves after all.");
+
+static const u8 sWiseGlassesDesc[] = _(
+    "A hold item that\n"
+    "slightly boosts\n"
+    "special moves.");
+
+static const u8 sMuscleBandDesc[] = _(
+    "A hold item that\n"
+    "slightly boosts\n"
+    "physical moves.");
+
+static const u8 sBigRootDesc[] = _(
+    "A hold item that\n"
+    "boosts HP gained\n"
+    "by draining moves.");

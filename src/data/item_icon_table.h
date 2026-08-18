@@ -463,6 +463,15 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_SASSY_MINT] = {gItemIcon_Mint, gItemIconPalette_PinkMint},
     [ITEM_SERIOUS_MINT] = {gItemIcon_Mint, gItemIconPalette_YellowMint},
     [ITEM_TIMID_MINT] = {gItemIcon_Mint, gItemIconPalette_GreenMint},
+    // New Battle held items
+    [ITEM_ROCKY_HELMET] = {gItemIcon_Mint, gItemIconPalette_LightBlueMint},
+    [ITEM_BLACK_SLUDGE] = {gItemIcon_Mint, gItemIconPalette_LightBlueMint},
+    [ITEM_WEAKNESS_POLICY] = {gItemIcon_Mint, gItemIconPalette_GreenMint},
+    [ITEM_LOADED_DICE] = {gItemIcon_Mint, gItemIconPalette_RedMint},
+    [ITEM_ZOOM_LENS] = {gItemIcon_Mint, gItemIconPalette_LightBlueMint},
+    [ITEM_WISE_GLASSES] = {gItemIcon_Mint, gItemIconPalette_LightBlueMint},
+    [ITEM_MUSCLE_BAND] = {gItemIcon_Mint, gItemIconPalette_BlueMint},
+    [ITEM_BIG_ROOT] = {gItemIcon_Mint, gItemIconPalette_PinkMint},
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };
