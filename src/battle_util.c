@@ -4119,6 +4119,7 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 gBattlescriptCurrInstr = BattleScript_ResistBerryActivates;
                 effect = ITEM_STATS_CHANGE;
             }
+            break;
         }
         if (effect != ITEM_NO_EFFECT)
             break; //defender's item claimed this moveend step

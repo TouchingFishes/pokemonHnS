@@ -4630,14 +4630,10 @@ BattleScript_BlackSludgeDmg::
 	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
 	printstring STRINGID_PKMNHURTBYITEM
 	waitmessage B_WAIT_TIME_LONG
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_DAMAGE
-	healthbarupdate BS_ATTACKER
-	datahpupdate BS_ATTACKER
-	tryfaintmon BS_ATTACKER
-	end2
+	goto BattleScript_DoTurnDmg
 
 BattleScript_ResistBerryActivates::
-	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
+	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
 	printstring STRINGID_BERRYWEAKENED
 	waitmessage B_WAIT_TIME_LONG
 	removeitem BS_TARGET
