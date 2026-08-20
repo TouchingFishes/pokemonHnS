@@ -137,6 +137,7 @@ struct SpecialStatus
     u32 ppNotAffectedByPressure:1;
     u32 faintedHasReplacement:1;
     u32 focusBanded:1;
+    u32 berryReduced:1;
     s32 shellBellDmg;
     s32 physicalDmg;
     s32 specialDmg;

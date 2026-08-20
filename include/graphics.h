@@ -5049,6 +5049,39 @@ extern const u32 gItemIconPalette_GreenMint[];
 extern const u32 gItemIconPalette_LightBlueMint[];
 extern const u32 gItemIconPalette_YellowMint[];
 
+// New Battle held items
+extern const u32 gItemIcon_RockyHelmet[];
+extern const u32 gItemIconPalette_RockyHelmet[];
+extern const u32 gItemIcon_WeaknessPolicy[];
+extern const u32 gItemIconPalette_WeaknessPolicy[];
+extern const u32 gItemIcon_BlackSludge[];
+extern const u32 gItemIconPalette_BlackSludge[];
+extern const u32 gItemIcon_LoadedDice[];
+extern const u32 gItemIconPalette_LoadedDice[];
+extern const u32 gItemIcon_ZoomLens[];
+extern const u32 gItemIconPalette_ZoomLens[];
+extern const u32 gItemIcon_WiseGlasses[];
+extern const u32 gItemIconPalette_WiseGlasses[];
+extern const u32 gItemIcon_MuscleBand[];
+extern const u32 gItemIconPalette_MuscleBand[];
+extern const u32 gItemIcon_BigRoot[];
+extern const u32 gItemIconPalette_BigRoot[];
+extern const u32 gItemIcon_Eviolite[];
+extern const u32 gItemIconPalette_Eviolite[];
+extern const u32 gItemIcon_LightClay[];
+extern const u32 gItemIconPalette_LightClay[];
+extern const u32 gItemIcon_IcyRock[];
+extern const u32 gItemIconPalette_IcyRock[];
+extern const u32 gItemIcon_HeatRock[];
+extern const u32 gItemIconPalette_HeatRock[];
+extern const u32 gItemIcon_SmoothRock[];
+extern const u32 gItemIconPalette_SmoothRock[];
+extern const u32 gItemIcon_DampRock[];
+extern const u32 gItemIconPalette_DampRock[];
+extern const u32 gItemIcon_StarlitShard[];
+extern const u32 gItemIconPalette_StarlitShard[];
+
+
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
 

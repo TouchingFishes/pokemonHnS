@@ -4636,6 +4636,13 @@ BattleScript_BlackSludgeDmg::
 	tryfaintmon BS_ATTACKER
 	end2
 
+BattleScript_ResistBerryActivates::
+	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
+	printstring STRINGID_BERRYWEAKENED
+	waitmessage B_WAIT_TIME_LONG
+	removeitem BS_TARGET
+	return
+
 BattleScript_WeaknessPolicyActivates::
 	playanimation BS_TARGET, B_ANIM_HELD_ITEM_EFFECT
 	setbyte sSTAT_ANIM_PLAYED, FALSE

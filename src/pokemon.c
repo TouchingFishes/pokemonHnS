@@ -6853,6 +6853,14 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         defense *= 2;
     if (attackerHoldEffect == HOLD_EFFECT_THICK_CLUB && (attacker->species == SPECIES_CUBONE || attacker->species == SPECIES_MAROWAK))
         attack *= 2;
+    
+    if (defenderHoldEffect == HOLD_EFFECT_EVIOLITE
+        && gEvolutionTable[defender->species][0].method != 0)
+    {
+        defense = (defense * (100 + defenderHoldEffectParam)) / 100;
+        spDefense = (spDefense * (100 + defenderHoldEffectParam)) / 100;
+    }
+
     if ((attackerHoldEffect == HOLD_EFFECT_FAIRY_POWER && moveType == TYPE_FAIRY) && attacker->ability == ABILITY_MULTITYPE)
     {
         attack *= 1.365;

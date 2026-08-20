@@ -2245,6 +2245,23 @@ static void Cmd_adjustnormaldamage(void)
         RecordItemEffectBattle(gBattlerTarget, holdEffect);
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
     }
+    if (holdEffect == HOLD_EFFECT_TYPE_RESIST
+        && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+        && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+        && gBattleMoves[gCurrentMove].power)
+    {
+        u8 moveType;
+        GET_MOVE_TYPE(gCurrentMove, moveType);
+
+        if (moveType == param)
+        {
+            gBattleMoveDamage = gBattleMoveDamage / 2;
+            if (gBattleMoveDamage == 0)
+                gBattleMoveDamage = 1;
+            gSpecialStatuses[gBattlerTarget].berryReduced = 1;
+            RecordItemEffectBattle(gBattlerTarget, holdEffect);
+        }
+    }
     if (gBattleMons[gBattlerTarget].ability == ABILITY_STURDY 
     && (gBattleMons[gBattlerTarget].maxHP == gBattleMons[gBattlerTarget].hp) 
     && (gSaveBlock1Ptr->tx_Mode_Sturdy == 1))
@@ -2298,6 +2315,23 @@ static void Cmd_adjustnormaldamage2(void)
     {
         RecordItemEffectBattle(gBattlerTarget, holdEffect);
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
+    }
+    if (holdEffect == HOLD_EFFECT_TYPE_RESIST
+        && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+        && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+        && gBattleMoves[gCurrentMove].power)
+    {
+        u8 moveType;
+        GET_MOVE_TYPE(gCurrentMove, moveType);
+
+        if (moveType == param)
+        {
+            gBattleMoveDamage = gBattleMoveDamage / 2;
+            if (gBattleMoveDamage == 0)
+                gBattleMoveDamage = 1;
+            gSpecialStatuses[gBattlerTarget].berryReduced = 1;
+            RecordItemEffectBattle(gBattlerTarget, holdEffect);
+        }
     }
     if (gBattleMons[gBattlerTarget].ability == ABILITY_STURDY 
     && (gBattleMons[gBattlerTarget].maxHP == gBattleMons[gBattlerTarget].hp) 
@@ -7669,7 +7703,9 @@ static void Cmd_setrain(void)
     {
         gBattleWeather = B_WEATHER_RAIN_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_RAIN;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_DAMP_ROCK)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
     }
     gBattlescriptCurrInstr++;
 }
@@ -7684,7 +7720,9 @@ static void Cmd_setreflect(void)
     else
     {
         gSideStatuses[GET_BATTLER_SIDE(gBattlerAttacker)] |= SIDE_STATUS_REFLECT;
-        gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].reflectTimer = 5;
+        gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].reflectTimer = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_LIGHT_CLAY)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
         gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].reflectBattlerId = gBattlerAttacker;
 
         if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE && CountAliveMonsInBattle(BATTLE_ALIVE_ATK_SIDE) == 2)
@@ -8422,7 +8460,9 @@ static void Cmd_setlightscreen(void)
     else
     {
         gSideStatuses[GET_BATTLER_SIDE(gBattlerAttacker)] |= SIDE_STATUS_LIGHTSCREEN;
-        gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].lightscreenTimer = 5;
+        gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].lightscreenTimer = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_LIGHT_CLAY)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
         gSideTimers[GET_BATTLER_SIDE(gBattlerAttacker)].lightscreenBattlerId = gBattlerAttacker;
 
         if (gBattleTypeFlags & BATTLE_TYPE_DOUBLE && CountAliveMonsInBattle(BATTLE_ALIVE_ATK_SIDE) == 2)
@@ -8542,7 +8582,9 @@ static void Cmd_setsandstorm(void)
     {
         gBattleWeather = B_WEATHER_SANDSTORM_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SANDSTORM;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_SMOOTH_ROCK)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
     }
     gBattlescriptCurrInstr++;
 }
@@ -9765,7 +9807,9 @@ static void Cmd_setsunny(void)
     {
         gBattleWeather = B_WEATHER_SUN_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_SUNLIGHT;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_HEAT_ROCK)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
     }
 
     gBattlescriptCurrInstr++;
@@ -10067,7 +10111,9 @@ static void Cmd_sethail(void)
     {
         gBattleWeather = B_WEATHER_HAIL_TEMPORARY;
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_STARTED_HAIL;
-        gWishFutureKnock.weatherDuration = 5;
+        gWishFutureKnock.weatherDuration = 
+            (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_ICY_ROCK)
+            ? ItemId_GetHoldEffectParam(gBattleMons[gBattlerAttacker].item) : 5;
     }
 
     gBattlescriptCurrInstr++;

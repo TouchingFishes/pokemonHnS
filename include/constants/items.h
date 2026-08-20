@@ -477,8 +477,15 @@
 #define ITEM_WISE_GLASSES        428
 #define ITEM_MUSCLE_BAND         429
 #define ITEM_BIG_ROOT            430
+#define ITEM_EVIOLITE            431
+#define ITEM_LIGHT_CLAY          432
+#define ITEM_ICY_ROCK            433
+#define ITEM_HEAT_ROCK           434
+#define ITEM_SMOOTH_ROCK         435
+#define ITEM_DAMP_ROCK           436
+#define ITEM_STARLIT_SHARD       437
 
-#define ITEMS_COUNT              431
+#define ITEMS_COUNT              438
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations
 // Its icon is defined at ITEMS_COUNT as the "return to field" arrow

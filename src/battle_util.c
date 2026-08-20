@@ -4106,6 +4106,19 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 effect = ITEM_STATS_CHANGE;
             }
             break;
+        case HOLD_EFFECT_TYPE_RESIST:
+            if (gSpecialStatuses[gBattlerTarget].berryReduced
+            && gBattleMons[gBattlerTarget].hp != 0)
+            {
+                gSpecialStatuses[gBattlerTarget].berryReduced = 0;
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gEffectBattler = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_ResistBerryActivates;
+                effect = ITEM_STATS_CHANGE;
+            }
         }
         if (effect != ITEM_NO_EFFECT)
             break; //defender's item claimed this moveend step

@@ -400,8 +400,9 @@
 #define STRINGID_MOMSAVEDMONEY              398
 #define STRINGID_ITEMHURTFOE                399
 #define STRINGID_PKMNHURTBYITEM             400
+#define STRINGID_BERRYWEAKENED              401
 
-#define BATTLESTRINGS_COUNT                 401
+#define BATTLESTRINGS_COUNT                 402
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

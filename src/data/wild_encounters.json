@@ -34029,12 +34029,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_RUFFLET"
-              },
-              {
-                "min_level": 2,
-                "max_level": 3,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 2,
@@ -34045,6 +34040,11 @@
                 "min_level": 2,
                 "max_level": 3,
                 "species": "SPECIES_LEDYBA"
+              },
+              {
+                "min_level": 2,
+                "max_level": 3,
+                "species": "SPECIES_JIGGLYPUFF"
               },
               {
                 "min_level": 2,
@@ -34059,7 +34059,7 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_LEDYBA"
+                "species": "SPECIES_JIGGLYPUFF"
               }
             ]
           },
@@ -34079,7 +34079,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_AIPOM"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 20,
@@ -34118,7 +34118,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 2,
@@ -34128,7 +34128,7 @@
               {
                 "min_level": 2,
                 "max_level": 2,
-                "species": "SPECIES_VULLABY"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 2,
@@ -34148,12 +34148,12 @@
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_RATTATA"
               },
               {
                 "min_level": 2,
                 "max_level": 3,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_RATTATA"
               },
               {
                 "min_level": 2,
@@ -34178,7 +34178,7 @@
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_AIPOM"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 20,

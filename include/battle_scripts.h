@@ -171,6 +171,7 @@ extern const u8 BattleScript_ColorChangeActivates[];
 extern const u8 BattleScript_RoughSkinActivates[];
 extern const u8 BattleScript_RockyHelmetActivates[];
 extern const u8 BattleScript_BlackSludgeDmg[];
+extern const u8 BattleScript_ResistBerryActivates[];
 extern const u8 BattleScript_WeaknessPolicyActivates[];
 extern const u8 BattleScript_CuteCharmActivates[];
 extern const u8 BattleScript_ApplySecondaryEffect[];
