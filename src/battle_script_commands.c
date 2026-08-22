@@ -2246,6 +2246,7 @@ static void Cmd_adjustnormaldamage(void)
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
+        && !gSpecialStatuses[gbattlerTarget].berryReduced
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
@@ -2317,6 +2318,7 @@ static void Cmd_adjustnormaldamage2(void)
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
+        && !gSpecialStatuses[gbattlerTarget].berryReduced
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
