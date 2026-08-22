@@ -3757,41 +3757,47 @@ static const struct TrainerMonNoItemCustomMoves sParty_Yuri[] = { //ExpertMGroup
 };
 
 
-static const struct TrainerMonNoItemCustomMoves sParty_Marik[] = { //ExpertMGroup
+static const struct TrainerMonItemCustomMoves sParty_Marik[] = { //ExpertMGroup
     {
     .iv = 210,
     .lvl = 65,
     .species = SPECIES_MAGNEZONE,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_FAKE_OUT, MOVE_EARTHQUAKE, MOVE_OUTRAGE, MOVE_DIZZY_PUNCH}
     },
     {
     .iv = 210,
     .lvl = 67,
     .species = SPECIES_ALTARIA,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_SUPERPOWER, MOVE_FLAMETHROWER, MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE}
     },
     {
     .iv = 210,
     .lvl = 69,
     .species = SPECIES_EXPLOUD,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_DRAGON_PULSE, MOVE_BLIZZARD, MOVE_FIRE_BLAST, MOVE_THUNDER}
     },
     {
     .iv = 210,
     .lvl = 70,
     .species = SPECIES_ABSOL,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_QUICK_ATTACK, MOVE_BURNING_SAND, MOVE_DOUBLE_KICK, MOVE_BITE}
     },
     {
     .iv = 210,
     .lvl = 70,
     .species = SPECIES_CLAYDOL,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_QUICK_ATTACK, MOVE_THUNDER, MOVE_DOUBLE_KICK, MOVE_SHADOW_BALL}
     },
     {
     .iv = 210,
     .lvl = 70,
     .species = SPECIES_DUSCLOPS,
+    .heldItem = ITEM_LEFTOVERS,
     .moves = {MOVE_QUICK_ATTACK, MOVE_HYDRO_PUMP, MOVE_DOUBLE_KICK, MOVE_BLIZZARD}
     }
 };
@@ -19476,8 +19482,8 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Martha[] = { //MediumGro
     },
     {
     .iv = 0,
-    .lvl = 23, //LITWICK
-    .species = SPECIES_HAUNTER,
+    .lvl = 23,
+    .species = SPECIES_LITWICK,
     },
     {
     .iv = 0,
