@@ -2246,7 +2246,7 @@ static void Cmd_adjustnormaldamage(void)
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
-        && !gSpecialStatuses[gbattlerTarget].berryReduced
+        && !gSpecialStatuses[gBattlerTarget].berryReduced
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
@@ -2318,7 +2318,7 @@ static void Cmd_adjustnormaldamage2(void)
         gSpecialStatuses[gBattlerTarget].focusBanded = 1;
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
-        && !gSpecialStatuses[gbattlerTarget].berryReduced
+        && !gSpecialStatuses[gBattlerTarget].berryReduced
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
@@ -7773,6 +7773,14 @@ static void Cmd_manipulatedamage(void)
         break;
     case DMG_DOUBLED:
         gBattleMoveDamage *= 2;
+        break;
+    case DMG_BIG_ROOT_DRAIN:
+        if (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_BIG_ROOT)
+        {
+            gBattleMoveDamage = (gBattleMoveDamage *
+                (100 + ItemId_GetHoldEffectParam(gBattleMons[gBattlerTarget].item))) / 100;
+        }
+        gBattleMoveDamage *= -1;
         break;
     }
 
