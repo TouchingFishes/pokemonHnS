@@ -4067,62 +4067,6 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
         }
         break;
     case ITEMEFFECT_KINGSROCK_SHELLBELL:
-        switch (defHoldEffect)
-        {
-        case HOLD_EFFECT_ROCKY_HELMET:
-            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
-            && TARGET_TURN_DAMAGED
-            && gBattlerAttacker != gBattlerTarget
-            && gBattleMons[gBattlerAttacker].hp != 0
-            && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
-            && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
-            && (gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT))
-            {
-                gLastUsedItem = defItem;
-                gPotentialItemEffectBattler = gBattlerTarget;
-                gBattleScripting.battler = gBattlerTarget;
-                gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / defHoldEffectParam;
-                if (gBattleMoveDamage == 0)
-                    gBattleMoveDamage = 1;
-                BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_RockyHelmetActivates;
-                effect = ITEM_HP_CHANGE;
-            }
-            break;
-        case HOLD_EFFECT_WEAKNESS_POLICY:
-            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
-            && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
-            && TARGET_TURN_DAMAGED
-            && gBattleMons[gBattlerTarget].hp != 0
-            && (gBattleMons[gBattlerTarget].statStages[STAT_ATK] < MAX_STAT_STAGE
-                || gBattleMons[gBattlerTarget].statStages[STAT_SPATK] < MAX_STAT_STAGE))
-            {
-                gLastUsedItem = defItem;
-                gPotentialItemEffectBattler = gBattlerTarget;
-                gBattleScripting.battler = gBattlerTarget;
-                gEffectBattler = gBattlerTarget;
-                BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_WeaknessPolicyActivates;
-                effect = ITEM_STATS_CHANGE;
-            }
-            break;
-        case HOLD_EFFECT_TYPE_RESIST:
-            if (gSpecialStatuses[gBattlerTarget].berryReduced
-            && gBattleMons[gBattlerTarget].hp != 0)
-            {
-                gSpecialStatuses[gBattlerTarget].berryReduced = 0;
-                gLastUsedItem = defItem;
-                gPotentialItemEffectBattler = gBattlerTarget;
-                gBattleScripting.battler = gBattlerTarget;
-                gEffectBattler = gBattlerTarget;
-                BattleScriptPushCursor();
-                gBattlescriptCurrInstr = BattleScript_ResistBerryActivates;
-                effect = ITEM_STATS_CHANGE;
-            }
-            break;
-        }
-        if (effect != ITEM_NO_EFFECT)
-            break; //defender's item claimed this moveend step
         if (gBattleMoveDamage)
         {
             switch (atkHoldEffect)
@@ -4177,6 +4121,61 @@ u8 ItemBattleEffects(u8 caseID, u8 battlerId, bool8 moveTurn)
                 break;
         }
         break;
+    case ITEMEFFECT_DEFENDER_ITEM:
+        switch (defHoldEffect)
+        {
+        case HOLD_EFFECT_ROCKY_HELMET:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && TARGET_TURN_DAMAGED
+            && gBattlerAttacker != gBattlerTarget
+            && gBattleMons[gBattlerAttacker].hp != 0
+            && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
+            && gBattleMons[gBattlerAttacker].ability != ABILITY_MAGIC_GUARD
+            && (gBattleMoves[gCurrentMove].flags & FLAG_MAKES_CONTACT))
+            {
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gBattleMoveDamage = gBattleMons[gBattlerAttacker].maxHP / defHoldEffectParam;
+                if (gBattleMoveDamage == 0)
+                    gBattleMoveDamage = 1;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_RockyHelmetActivates;
+                effect = ITEM_HP_CHANGE;
+            }
+            break;
+        case HOLD_EFFECT_WEAKNESS_POLICY:
+            if (!(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
+            && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
+            && TARGET_TURN_DAMAGED
+            && gBattleMons[gBattlerTarget].hp != 0
+            && (gBattleMons[gBattlerTarget].statStages[STAT_ATK] < MAX_STAT_STAGE
+                || gBattleMons[gBattlerTarget].statStages[STAT_SPATK] < MAX_STAT_STAGE))
+            {
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gEffectBattler = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_WeaknessPolicyActivates;
+                effect = ITEM_STATS_CHANGE;
+            }
+            break;
+        case HOLD_EFFECT_TYPE_RESIST:
+            if (gSpecialStatuses[gBattlerTarget].berryReduced
+            && gBattleMons[gBattlerTarget].hp != 0)
+            {
+                gSpecialStatuses[gBattlerTarget].berryReduced = 0;
+                gLastUsedItem = defItem;
+                gPotentialItemEffectBattler = gBattlerTarget;
+                gBattleScripting.battler = gBattlerTarget;
+                gEffectBattler = gBattlerTarget;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_ResistBerryActivates;
+                effect = ITEM_STATS_CHANGE;
+            }
+            break;
+        }
     }
 
     return effect;
