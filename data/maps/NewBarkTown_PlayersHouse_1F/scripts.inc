@@ -150,7 +150,28 @@ NewBarkTown_PlayersHouse_1F_EventScript_MomCall::
 	bufferitemname STR_VAR_1, VAR_RESULT
 	compare VAR_0x8006, TRUE
 	goto_if_eq NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Rare
+
+	random 5
+	switch VAR_RESULT
+	case 0, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item1
+	case 1, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item2
+	case 2, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item3
+	case 3, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item4
+	case 4, NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item5
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item1:
 	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item2:
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem2
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item3:
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem3
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item4:
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem4
+	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
+NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Item5:
+	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem5
 	goto NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Wait
 NewBarkTown_PlayersHouse_1F_EventScript_MomCall_Rare::
 	pokenavcall NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem
@@ -313,13 +334,49 @@ NewBarkTown_PlayersHouse_1F_Text_MomStoppedSaving:
 
 NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem:
 	.string "MOM: Hi, {PLAYER}!\p"
-	.string "While I was out shopping,\n"
-	.string "I found something useful.\p"
-	.string "I bought a {STR_VAR_1} with\n"
-	.string "some of your savings.\p"
-	.string "Don't worry, it was a bargain!\p"
-	.string "I sent it to your PC.\n"
-	.string "Good luck on your Journey!$"
+	.string "I've been thinking about you.\p"
+	.string "So when I saw a {STR_VAR_1} in the\n"
+	.string "shop, I decided to get it for you.\p"
+	.string "It's not much, but I hope it'll\n"
+	.string "come in handy.\p"
+	.string "Take good care of yourself, okay?$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem2:
+	.string "MOM: Hi, {PLAYER}!\p"
+	.string "You wouldn't believe the price I got\n"
+	.string "on this!\p"
+	.string "A {STR_VAR_1}, of all things!\p"
+	.string "It was such a good deal that I had\n"
+	.string "to buy it.\p"
+	.string "I used some of your savings, of course.\n"
+	.string "It's in your PC.$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem3:
+	.string "MOM: Hi, {PLAYER}!\p"
+	.string "I've been thinking about you.\p"
+	.string "So when I saw a {STR_VAR_1} in the\n"
+	.string "shop, I decided to get it for you.\p"
+	.string "It's not much, but I hope it'll\n"
+	.string "come in handy.\p"
+	.string "Take good care of yourself, okay?$!"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem4:
+	.string "MOM: Hello, {PLAYER}!\p"
+	.string "I found a {STR_VAR_1} while I was\n"
+	.string "out shopping today.\p"
+	.string "It looked like something you\n"
+	.string "could use, so I bought it for you.\p"
+	.string "You'll find it in your PC.\p"
+	.string "Take care out there!$"
+
+NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtItem5:
+	.string "MOM: Hi, {PLAYER}!\p"
+	.string "I did a little shopping today and\n"
+	.string "thought of you.\p"
+	.string "So I bought you a {STR_VAR_1}!\p"
+	.string "Don't worry, I didn't spend too\n"
+	.string "much of your savings.\p"
+	.string "It's been sent to your PC.$"
 
 NewBarkTown_PlayersHouse_1F_Text_MomCallBoughtRareItem:
     .string "MOM: Hi, {PLAYER}!\p"
