@@ -19296,12 +19296,12 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jin[] = { //SageGroup
 static const struct TrainerMonNoItemDefaultMoves sParty_Troy[] = { //SageGroup
     {
     .iv = 0,
-    .lvl = 7,
-    .species = SPECIES_MEDITITE,
+    .lvl = 6,
+    .species = SPECIES_BELLSPROUT,
     },
     {
     .iv = 0,
-    .lvl = 5,
+    .lvl = 6,
     .species = SPECIES_BELLSPROUT,
     },
 };
