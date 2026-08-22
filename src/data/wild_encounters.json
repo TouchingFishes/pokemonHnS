@@ -37327,33 +37327,33 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 7,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_CATERPIE"
               },
               {
-                "min_level": 5,
-                "max_level": 7,
-                "species": "SPECIES_WEEDLE"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_SEEDOT"
-              },
-              {
-                "min_level": 6,
-                "max_level": 8,
-                "species": "SPECIES_LOTAD"
-              },
-              {
                 "min_level": 7,
-                "max_level": 11,
-                "species": "SPECIES_ODDISH"
+                "max_level": 9,
+                "species": "SPECIES_WEEDLE"
               },
               {
                 "min_level": 8,
                 "max_level": 10,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 9,
+                "max_level": 13,
+                "species": "SPECIES_ODDISH"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
                 "species": "SPECIES_PIDGEY"
               },
               {
@@ -37368,12 +37368,12 @@
               },
               {
                 "min_level": 9,
-                "max_level": 10,
+                "max_level": 12,
                 "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 9,
-                "max_level": 11,
+                "max_level": 13,
                 "species": "SPECIES_PARAS"
               },
               {
@@ -37511,53 +37511,53 @@
             "encounter_rate": 5,
             "mons": [
               {
-                "min_level": 5,
-                "max_level": 8,
+                "min_level": 7,
+                "max_level": 9,
                 "species": "SPECIES_ODDISH"
-              },
-              {
-                "min_level": 5,
-                "max_level": 8,
-                "species": "SPECIES_HOOTHOOT"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_SEEDOT"
-              },
-              {
-                "min_level": 6,
-                "max_level": 11,
-                "species": "SPECIES_LOTAD"
-              },
-              {
-                "min_level": 6,
-                "max_level": 12,
-                "species": "SPECIES_VENONAT"
-              },
-              {
-                "min_level": 8,
-                "max_level": 12,
-                "species": "SPECIES_ZUBAT"
-              },
-              {
-                "min_level": 8,
-                "max_level": 10,
-                "species": "SPECIES_SURSKIT"
               },
               {
                 "min_level": 7,
                 "max_level": 9,
-                "species": "SPECIES_PARAS"
+                "species": "SPECIES_HOOTHOOT"
               },
               {
                 "min_level": 8,
-                "max_level": 11,
+                "max_level": 10,
+                "species": "SPECIES_SEEDOT"
+              },
+              {
+                "min_level": 8,
+                "max_level": 10,
+                "species": "SPECIES_LOTAD"
+              },
+              {
+                "min_level": 9,
+                "max_level": 13,
+                "species": "SPECIES_VENONAT"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_ZUBAT"
+              },
+              {
+                "min_level": 10,
+                "max_level": 12,
+                "species": "SPECIES_SURSKIT"
+              },
+              {
+                "min_level": 9,
+                "max_level": 13,
+                "species": "SPECIES_PARAS"
+              },
+              {
+                "min_level": 9,
+                "max_level": 13,
                 "species": "SPECIES_PSYDUCK"
               },
               {
                 "min_level": 8,
-                "max_level": 8,
+                "max_level": 10,
                 "species": "SPECIES_KROLUCADA"
               },
               {
@@ -37566,7 +37566,7 @@
                 "species": "SPECIES_PSYDUCK"
               },
               {
-                "min_level": 12,
+                "min_level": 10,
                 "max_level": 12,
                 "species": "SPECIES_KROLUCADA"
               }
