@@ -788,7 +788,7 @@ static const struct TrainerMonNoItemCustomMoves sParty_Josh[] = { //BugManiacGro
     .iv = 150,
     .lvl = 18,
     .species = SPECIES_LEDIAN,
-    .moves = {MOVE_COMET_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SILVER_WIND, MOVE_GUST}
+    .moves = {MOVE_MACH_PUNCH, MOVE_THUNDER_PUNCH, MOVE_SUPERSONIC, MOVE_GUST}
     }
 };
 

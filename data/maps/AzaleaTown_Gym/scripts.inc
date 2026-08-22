@@ -766,8 +766,8 @@ AzaleaTown_Gym_Text_BugCatcherAlAfter:
 AzaleaTown_Gym_Text_BugManiacJoshSeen:
 	.string "You saved all the SLOWPOKE?\n"
 	.string "Whew, you're mighty!\p"
-	.string "But my incredible POKéMON\n"
-	.string "are even mightier!$"
+	.string "But my incredible LEDIAN\n"
+	.string "rivals even BUGSY!$"
 
 AzaleaTown_Gym_Text_BugManiacJoshBeaten:
 	.string "Urrgggh!$"
