@@ -631,29 +631,29 @@ static const u8 sIapapaBerryDesc[] = _(
     "may confuse.");
 
 static const u8 sRazzBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RAZZ.");
+    "Weakens a super\n"
+    "effective FLYING\n"
+    "move. One use");
 
 static const u8 sBlukBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BLUK.");
+    "Weakens a super\n"
+    "effective DARK\n"
+    "move. One use");
 
 static const u8 sNanabBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NANAB.");
+    "Weakens a super\n"
+    "effective GROUND\n"
+    "move. One use");
 
 static const u8 sWepearBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WEPEAR.");
+    "Weakens a super\n"
+    "effective GHOST\n"
+    "move. One use");
 
 static const u8 sPinapBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PINAP.");
+    "Weakens a super\n"
+    "effective ICE\n"
+    "move. One use");
 
 static const u8 sPomegBerryDesc[] = _(
     "Makes a POKéMON\n"
@@ -686,49 +686,49 @@ static const u8 sTamatoBerryDesc[] = _(
     "base SPEED.");
 
 static const u8 sCornnBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow CORNN.");
+    "Weakens a super\n"
+    "effective WATER\n"
+    "move. One use");
 
 static const u8 sMagostBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow MAGOST.");
+    "Weakens a super\n"
+    "effective PSYCHIC\n"
+    "move. One use");
 
 static const u8 sRabutaBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow RABUTA.");
+    "Weakens a super\n"
+    "effective DRAGON\n"
+    "move. One use");
 
 static const u8 sNomelBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow NOMEL.");
+    "Weakens a super\n"
+    "effective ELECTRIC\n"
+    "move. One use");
 
 static const u8 sSpelonBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow SPELON.");
+    "Weakens a super\n"
+    "effective FIRE\n"
+    "move. One use");
 
 static const u8 sPamtreBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow PAMTRE.");
+    "Weakens a super\n"
+    "effective ROCK\n"
+    "move. One use");
 
 static const u8 sWatmelBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow WATMEL.");
+    "Weakens a super\n"
+    "effective POISON\n"
+    "move. One use");
 
 static const u8 sDurinBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow DURIN.");
+    "Weakens a super\n"
+    "effective FIGHTING\n"
+    "move. One use");
 
 static const u8 sBelueBerryDesc[] = _(
-    "{POKEBLOCK} ingredient.\n"
-    "Plant in loamy soil\n"
-    "to grow BELUE.");
+    "Weakens a super\n"
+    "effective STEEL\n"
+    "move. One use");
 
 static const u8 sLiechiBerryDesc[] = _(
     "A hold item that\n"
@@ -1959,9 +1959,9 @@ static const u8 sMuscleBandDesc[] = _(
     "physical moves.");
 
 static const u8 sBigRootDesc[] = _(
-    "A hold item that\n"
-    "boosts HP gained\n"
-    "by draining moves.");
+    "Boosts HP gained\n"
+    "by draining moves\n"
+    "and LEECH SEED.");
 
 static const u8 sEvioliteDesc[] = _(
     "Boosts defenses\n"
@@ -1971,27 +1971,27 @@ static const u8 sEvioliteDesc[] = _(
 static const u8 sLightClayDesc[] = _(
     "Extends REFLECT\n"
     "and LIGHT SCREEN\n"
-    "to eight turns.");
+    "to 8 turns.");
 
 static const u8 sIcyRockDesc[] = _(
     "Extends HAIL\n"
     "summoned by the\n"
-    "holder 8 turns.");
+    "holder 8 to turns.");
 
 static const u8 sHeatRockDesc[] = _(
     "Extends SUNLIGHT\n"
     "summoned by the\n"
-    "holder 8 turns.");
+    "holder 8 to turns.");
 
 static const u8 sSmoothRockDesc[] = _(
     "Extends SANDSTORM\n"
     "summoned by the\n"
-    "holder 8 turns.");
+    "holder 8 to turns.");
 
 static const u8 sDampRockDesc[] = _(
     "Extends RAIN\n"
     "summoned by the\n"
-    "holder 8 turns.");
+    "holder 8 to turns.");
 
 static const u8 sStarlitShardDesc[] = _(
     "A shard of falling\n"
