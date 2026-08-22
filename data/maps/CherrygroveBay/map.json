@@ -45,8 +45,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
-      "x": 19,
-      "y": 27,
+      "x": 17,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
       "movement_range_x": 5,
@@ -71,7 +71,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_VOLTREL",
-      "x": 37,
+      "x": 34,
       "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -201,8 +201,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 10,
-      "y": 35,
+      "x": 9,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
@@ -215,7 +215,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_FISHER",
       "x": 28,
-      "y": 37,
+      "y": 36,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
