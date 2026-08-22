@@ -1976,22 +1976,22 @@ static const u8 sLightClayDesc[] = _(
 static const u8 sIcyRockDesc[] = _(
     "Extends HAIL\n"
     "summoned by the\n"
-    "holder 8 to turns.");
+    "holder to 8 turns.");
 
 static const u8 sHeatRockDesc[] = _(
     "Extends SUNLIGHT\n"
     "summoned by the\n"
-    "holder 8 to turns.");
+    "holder to 8 turns.");
 
 static const u8 sSmoothRockDesc[] = _(
     "Extends SANDSTORM\n"
     "summoned by the\n"
-    "holder 8 to turns.");
+    "holder to 8 turns.");
 
 static const u8 sDampRockDesc[] = _(
     "Extends RAIN\n"
     "summoned by the\n"
-    "holder 8 to turns.");
+    "holder to 8 turns.");
 
 static const u8 sStarlitShardDesc[] = _(
     "A shard of falling\n"

@@ -4647,13 +4647,15 @@ BattleScript_WeaknessPolicyActivates::
 	setstatchanger STAT_ATK, 1, FALSE
 	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_WeaknessPolicySpAtk
 	setbyte cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_ITEM
-	call BattleScript_StatUp
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
 BattleScript_WeaknessPolicySpAtk::
-	jumpifstat BS_TARGET, CMP_EQUAL, STAT_ATK, MAX_STAT_STAGE,BattleScript_WeaknessPolicyEnd
+	jumpifstat BS_TARGET, CMP_EQUAL, STAT_SPATK, MAX_STAT_STAGE,BattleScript_WeaknessPolicyEnd
 	setstatchanger STAT_SPATK, 1, FALSE
 	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_WeaknessPolicyEnd
 	setbyte cMULTISTRING_CHOOSER, B_MSG_STAT_ROSE_ITEM
-	call BattleScript_StatUp
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
 BattleScript_WeaknessPolicyEnd::
 	removeitem BS_TARGET
 	return

@@ -2247,6 +2247,7 @@ static void Cmd_adjustnormaldamage(void)
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
         && !gSpecialStatuses[gBattlerTarget].berryReduced
+        && !(gBattleMons[gBattlerTarget].status2 & STATUS2_SUBSTITUTE)
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
@@ -2319,6 +2320,7 @@ static void Cmd_adjustnormaldamage2(void)
     }
     if (holdEffect == HOLD_EFFECT_TYPE_RESIST
         && !gSpecialStatuses[gBattlerTarget].berryReduced
+        && !(gBattleMons[gBattlerTarget].status2 & STATUS2_SUBSTITUTE)
         && (gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE)
         && !(gMoveResultFlags & MOVE_RESULT_NO_EFFECT)
         && gBattleMoves[gCurrentMove].power)
@@ -7780,7 +7782,7 @@ static void Cmd_manipulatedamage(void)
         gBattleMoveDamage *= 2;
         break;
     case DMG_BIG_ROOT_DRAIN:
-        if (ItemId_GetHoldEffect(gBattleMons[gBattlerAttacker].item) == HOLD_EFFECT_BIG_ROOT)
+        if (ItemId_GetHoldEffect(gBattleMons[gBattlerTarget].item) == HOLD_EFFECT_BIG_ROOT)
         {
             gBattleMoveDamage = (gBattleMoveDamage *
                 (100 + ItemId_GetHoldEffectParam(gBattleMons[gBattlerTarget].item))) / 100;
