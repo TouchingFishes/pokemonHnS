@@ -1934,9 +1934,9 @@ static const u8 sBlackSludgeDesc[] = _(
     "Hurts all others.");
 
 static const u8 sWeakPolicyDesc[] = _(
-    "Sharply boosts\n"
-    "ATTACK and SP.ATK\n"
-    "if hit hard.");
+    "Boosts ATTACK\n"
+    "and SP.ATK if hit\n"
+    "very effectively.");
 
 static const u8 sLoadedDiceDesc[] = _(
     "Multi-strike\n"
