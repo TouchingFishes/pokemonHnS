@@ -723,7 +723,7 @@
 #define FLAG_FRIDAY_OBJECTS           0x2A4
 #define FLAG_SATURDAY_OBJECTS         0x2A5
 #define FLAG_WEEKEND_OBJECTS          0x2A6
-#define FLAG_UNUSED_0x2A7  0x2A7 // Unused Flag
+#define FLAG_DEFEATED_ROUTE39_TAUROS  0x2A7
 #define FLAG_UNUSED_0x2A8  0x2A8 // Unused Flag
 #define FLAG_UNUSED_0x2A9  0x2A9 // Unused Flag
 #define FLAG_UNUSED_0x2AA  0x2AA // Unused Flag

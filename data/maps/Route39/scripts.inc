@@ -135,6 +135,49 @@ Route39_EventScript_BaobaIntro::
 	release
 	end
 
+Route39_EventScript_Tauros::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ROUTE39_TAUROS, Route39_EventScript_Tauros_Calm
+	msgbox Route39_Text_TaurosIdle, MSGBOX_YESNO
+	compare VAR_RESULT, YES
+	goto_if_eq Route39_EventScript_Tauros_GiveBerry
+	goto Route39_EventScript_Tauros_Attack
+Route39_EventScript_Tauros_GiveBerry::
+	checkitem ITEM_ORAN_BERRY, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq Route39_EventScript_Tauros_CalmWithBerry
+	msgbox Route39_Text_TaurosNoBerry, MSGBOX_DEFAULT
+	goto Route39_EventScript_Tauros_Attack
+Route39_EventScript_Tauros_CalmWithBerry::
+	removeitem ITEM_ORAN_BERRY, 1
+	msgbox Route39_Text_TaurosCalmed, MSGBOX_DEFAULT
+	release
+	end
+Route39_EventScript_Tauros_Attack::
+	msgbox Route39_Text_TaurosAngry, MSGBOX_DEFAULT
+	setwildbattle SPECIES_TAUROS, 25, ITEM_NONE
+	setflag FLAG_DEFEATED_ROUTE39_TAUROS
+	release
+	end
+Route39_EventScript_Tauros_Calm::
+	msgbox Route39_Text_TaurosCalm, MSGBOX_DEFAULT
+	release
+	end
+
+
+Route39_EventScript_TaurosGirl::
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ROUTE39_TAUROS, Route39_EventScript_TaurosGirl_After
+	msgbox Route39_Text_TaurosGirlWarning, MSGBOX_DEFAULT
+	release
+	end
+Route39_EventScript_TaurosGirl_After::
+	msgbox Route39_Text_TaurosGirlAfter, MSGBOX_DEFAULT
+	release
+	end
+
 Route39_Text_ChooseLegend::
 	.string "BAOBA: GOOD HEAVENS! Did that\n"
 	.string "shadow belong to a POKéMON?\p"
@@ -414,3 +457,52 @@ Route39_Text_TrainerTips:
 	.string "drop out of trees.\p"
 	.string "Use HEADBUTT on any tree\n"
 	.string "you see!$"
+
+Route39_Text_TaurosIdle:
+	.string "The TAUROS is\n"
+	.string "snorting heavily.\p"
+	.string "It eyes you with\n"
+	.string "wild intensity.\p"
+	.string "Give it a BERRY?$"
+
+Route39_Text_TaurosCalmed:
+	.string "The TAUROS eagerly\n"
+	.string "devours the BERRY.\p"
+	.string "Its breathing\n"
+	.string "slowly calms.$"
+
+Route39_Text_TaurosAngry:
+	.string "The TAUROS snaps!\p"
+	.string "It charges in a\n"
+	.string "blind rage!$"
+
+Route39_Text_TaurosNoBerry:
+	.string "You don't have a\n"
+	.string "BERRY.\p"
+	.string "The TAUROS huffs\n"
+	.string "angrily.$"
+
+Route39_Text_TaurosCalm:
+	.string "The TAUROS exhales\n"
+	.string "slowly.\p"
+	.string "It no longer sees\n"
+	.string "you as a threat.$"
+
+Route39_Text_TaurosGirlWarning:
+	.string "Hey!\p"
+	.string "That TAUROS is\n"
+	.string "dangerous!\p"
+	.string "It attacks anyone\n"
+	.string "who gets close.\p"
+	.string "Please...\n"
+	.string "Don't provoke it.$"
+
+Route39_Text_TaurosGirlAfter:
+	.string "You actually\n"
+	.string "stopped it...?\p"
+	.string "I've never seen\n"
+	.string "TAUROS calmly walk\n"
+	.string "away like that.\p"
+	.string "Maybe it just\n"
+	.string "needed someone\n"
+	.string "strong enough.$"
