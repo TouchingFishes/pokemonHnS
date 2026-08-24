@@ -408,8 +408,33 @@
 #define MOVE_POISON_JAB 403
 #define MOVE_HEAD_SMASH 404
 #define MOVE_BLOOD_MOON 405
+#define MOVE_NASTY_PLOT 406
+#define MOVE_ICE_FANG 407
+#define MOVE_FIRE_FANG 408
+#define MOVE_THUNDER_FANG 409
+#define MOVE_AQUA_TAIL 410
+#define MOVE_METEOR_BEAM 411
+#define MOVE_RAZOR_SHELL 412
+#define MOVE_PSYSHOCK 413
+#define MOVE_LEAF_STORM 414
+#define MOVE_BUG_BITE 415
+#define MOVE_HONE_CLAWS 416
+#define MOVE_FOUL_PLAY 417
+#define MOVE_POLTERGEIST 418
+#define MOVE_HEX 419
+#define MOVE_SLUDGE_WAVE 420
+#define MOVE_FROST_BREATH 421
+#define MOVE_MYSTIC_GLEAM 422 //DAZZLING_GLEAM but name is too long
+#define MOVE_PIXIE_KISS 423 //DRAINING_KISS also too long
+#define MOVE_SPIRIT_BREAK 424
+#define MOVE_DISARM_CHANT 425 //DISARMING_VOICE too long
+#define MOVE_DOE_EYES 426 //BABY_DOLL_EYES
+#define MOVE_MOONBLAST 427
+#define MOVE_FAIRY_WIND 428 //custom move, like ancient power
+#define MOVE_V_CREATE 429
+#define MOVE_SPECTRAL_HIT 430 //SPECTRAL_THIEF 
 
-#define MOVES_COUNT 406
+#define MOVES_COUNT 431
 
 // Used for checks for moves affected by Disable, Mimic, etc.
 #define MOVE_UNAVAILABLE 0xFFFF
