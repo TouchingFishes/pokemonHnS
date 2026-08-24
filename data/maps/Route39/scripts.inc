@@ -1,5 +1,7 @@
 .set LOCALID_R39_SHADOW, 17
 .set LOCALID_R39_BAOBA, 2
+.set LOCALID_R39_TAUROS, 22
+.set LOCALID_R39_TAUROSGIRL, 21
 
 Route39_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route39_OnTransition
@@ -139,29 +141,38 @@ Route39_EventScript_Tauros::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_ROUTE39_TAUROS, Route39_EventScript_Tauros_Calm
+	waitse
+	playmoncry SPECIES_TAUROS, CRY_MODE_ENCOUNTER
+	waitmoncry
 	msgbox Route39_Text_TaurosIdle, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq Route39_EventScript_Tauros_GiveBerry
-	goto Route39_EventScript_Tauros_Attack
-Route39_EventScript_Tauros_GiveBerry::
-	checkitem ITEM_ORAN_BERRY, 1
-	compare VAR_RESULT, TRUE
-	goto_if_eq Route39_EventScript_Tauros_CalmWithBerry
-	msgbox Route39_Text_TaurosNoBerry, MSGBOX_DEFAULT
-	goto Route39_EventScript_Tauros_Attack
-Route39_EventScript_Tauros_CalmWithBerry::
-	removeitem ITEM_ORAN_BERRY, 1
+	goto_if_eq VAR_RESULT, NO, Route39_EventScript_Tauros_Attack
+	checkitem ITEM_ORAN_BERRY
+	goto_if_eq VAR_RESULT, FALSE, Route39_EventScript_Tauros_NoBerry
+	removeitem ITEM_ORAN_BERRY
 	msgbox Route39_Text_TaurosCalmed, MSGBOX_DEFAULT
 	release
 	end
+Route39_EventScript_Tauros_NoBerry
+	msgbox Route39_Text_TaurosNoBerry, MSGBOX_DEFAULT
 Route39_EventScript_Tauros_Attack::
 	msgbox Route39_Text_TaurosAngry, MSGBOX_DEFAULT
-	setwildbattle SPECIES_TAUROS, 25, ITEM_NONE
+	closemessage
+	setvar VAR_LAST_TALKED, LOCALID_R39_TAUROS
+	setwildbattle SPECIES_TAUROS, 25, ITEM_MUSCLE_BAND
+	dowildbattle
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route39_EventScript_Tauros_Calm
+	goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, Route39_EventScript_Tauros_Defeated
 	setflag FLAG_DEFEATED_ROUTE39_TAUROS
 	release
 	end
 Route39_EventScript_Tauros_Calm::
 	msgbox Route39_Text_TaurosCalm, MSGBOX_DEFAULT
+	release
+	end
+
+Route39_EventScript_Tauros_Defeated::
+	removeobject LOCALID_R39_TAUROS
 	release
 	end
 
