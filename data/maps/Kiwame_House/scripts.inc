@@ -12,7 +12,7 @@ KiwameHouse_EventScript_UltimateKiwameHouse::
 	case 1, KiwameHouse_EventScript_FireChosen
 	case 2, KiwameHouse_EventScript_WaterChosen
 	case 3, KiwameHouse_EventScript_UltimateDeclined
-	case MULTI_B_PRESSED, NewBarkTown_Lab_EventScript_JohtoChosen
+	case MULTI_B_PRESSED, KiwameHouse_EventScript_UltimateDeclined
 
 KiwameHouse_EventScript_GrassChosen:
 	msgbox KiwameHouse_Text_UltimateWhichMon, MSGBOX_DEFAULT

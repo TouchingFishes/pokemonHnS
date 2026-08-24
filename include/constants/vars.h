@@ -175,7 +175,7 @@
 #define VAR_ROUTE27_BAOBA_CALL                           0x409B 
 #define VAR_WEEKDAY_OFFSET                               0x409C
 #define VAR_WEATHER_PATTERN                              0x409D 
-#define VAR_UNUSED_HNS_VAR6                              0x409E
+#define VAR_STARTER_REGION                               0x409E // 0 = Johto, 1 = Kanto, 2 = Hoenn, 3 = Sinnoh
 #define VAR_UNUSED_HNS_VAR7                              0x409F// HnS Vars end
 #define VAR_SLATEPORT_HARBOR_STATE                       0x40A0
 #define VAR_UNUSED_0x40A1                                0x40A1 
@@ -323,5 +323,10 @@
 #define VAR_TEMP_FRONTIER_TUTOR_ID         VAR_TEMP_E
 
 #define VAR_TEMP_TRANSFERRED_SPECIES  VAR_TEMP_1
+
+#define STARTER_REGION_JOHTO     0
+#define STARTER_REGION_KANTO     1
+#define STARTER_REGION_HOENN     2
+#define STARTER_REGION_SINNOH    3
 
 #endif // GUARD_CONSTANTS_VARS_H

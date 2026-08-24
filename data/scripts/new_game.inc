@@ -278,7 +278,7 @@ EventScript_ResetAllMapFlags::
 	setvar VAR_ROUTE27_BAOBA_CALL, 0
 	setvar VAR_WEEKDAY_OFFSET, 0
 	setvar VAR_WEATHER_PATTERN, 0
-	setvar VAR_UNUSED_HNS_VAR6, 0
+	setvar VAR_STARTER_REGION, 0
 	setvar VAR_UNUSED_HNS_VAR7, 0
 
 	additem ITEM_EXP_SHARE

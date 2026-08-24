@@ -63,9 +63,9 @@ VictoryRoadKanto_1F_EventScript_SilverEnterRight::
 
 
 VictoryRoadKanto_1F_Silver_Battle_Cyndaquil::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Charmander
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Torchic
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Chimchar
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, VictoryRoadKanto_1F_Silver_Battle_Charmander
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, VictoryRoadKanto_1F_Silver_Battle_Torchic
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, VictoryRoadKanto_1F_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_5, VictoryRoad_Text_RivalDefeat
 	return
 
@@ -82,9 +82,9 @@ VictoryRoadKanto_1F_Silver_Battle_Chimchar::
 	return
 
 VictoryRoadKanto_1F_Silver_Battle_Totodile::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Squirtle
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Mudkip
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Piplup
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, VictoryRoadKanto_1F_Silver_Battle_Squirtle
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, VictoryRoadKanto_1F_Silver_Battle_Mudkip
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, VictoryRoadKanto_1F_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_5, VictoryRoad_Text_RivalDefeat
 	return
 
@@ -101,9 +101,9 @@ VictoryRoadKanto_1F_Silver_Battle_Piplup::
 	return
 
 VictoryRoadKanto_1F_Silver_Battle_Chikorita::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Bulbasaur
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Treecko
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, VictoryRoadKanto_1F_Silver_Battle_Turtwig
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, VictoryRoadKanto_1F_Silver_Battle_Bulbasaur
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, VictoryRoadKanto_1F_Silver_Battle_Treecko
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, VictoryRoadKanto_1F_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_5, VictoryRoad_Text_RivalDefeat
 	return
 

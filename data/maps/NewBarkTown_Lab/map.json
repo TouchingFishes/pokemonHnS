@@ -50,7 +50,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NewBarkTown_Lab_EventScript_ChikoritaBall",
+      "script": "NewBarkTown_Lab_EventScript_GrassBall_Choice",
       "flag": "FLAG_HIDE_CHIKORITABALL"
     },
     {
@@ -63,7 +63,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NewBarkTown_Lab_EventScript_CyndaquilBall",
+      "script": "NewBarkTown_Lab_EventScript_FireBall_Choice",
       "flag": "FLAG_HIDE_CYNDAQUILBALL"
     },
     {
@@ -76,7 +76,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NewBarkTown_Lab_EventScript_TotodileBall",
+      "script": "NewBarkTown_Lab_EventScript_WaterBall_Choice",
       "flag": "FLAG_HIDE_TOTODILEBALL"
     },
     {

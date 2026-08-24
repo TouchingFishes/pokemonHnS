@@ -956,7 +956,7 @@ u8 LoadGameSave(u8 saveType)
         VarSet(VAR_ROUTE27_BAOBA_CALL, 0);
         VarSet(VAR_WEEKDAY_OFFSET, 0);
         VarSet(VAR_WEATHER_PATTERN, 0);
-        VarSet(VAR_UNUSED_HNS_VAR6, 0);
+        VarSet(VAR_STARTER_REGION, 0);
         VarSet(VAR_UNUSED_HNS_VAR7, 0);
         gSaveBlock1Ptr->versionId = 2;
     }

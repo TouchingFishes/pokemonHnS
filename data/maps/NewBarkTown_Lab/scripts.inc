@@ -148,16 +148,43 @@ NewBarkTown_Lab_EventScript_ElmRefused2::
 NewBarkTown_Lab_EventScript_ElmChooseStarterRegion:
 	message NewBarkTown_Lab_Text_ElmChooseAStarterRegion
 	waitmessage
+NewBarkTown_Lab_EventScript_RegionMenuReask:
+	message NewBarkTown_Lab_Text_ElmWhichRegionAgain
+	waitmessage
+NewBarkTown_Lab_EventScript_RegionMenu:
 	multichoice 20, 0, MULTI_STARTER_REGION_CHOICE, FALSE
 	switch VAR_RESULT
-	case 0, NewBarkTown_Lab_EventScript_JohtoChosen
-	case 1, NewBarkTown_Lab_EventScript_KantoChosen
-	case 2, NewBarkTown_Lab_EventScript_HoennChosen
-	case 3, NewBarkTown_Lab_EventScript_SinnohChosen
-	case MULTI_B_PRESSED, NewBarkTown_Lab_EventScript_JohtoChosen
+	case 0, NewBarkTown_Lab_EventScript_ConfirmJohto
+	case 1, NewBarkTown_Lab_EventScript_ConfirmKanto
+	case 2, NewBarkTown_Lab_EventScript_ConfirmHoenn
+	case 3, NewBarkTown_Lab_EventScript_ConfirmSinnoh
+	goto NewBarkTown_Lab_EventScript_RegionMenuReask
 
-NewBarkTown_Lab_EventScript_JohtoChosen:
-	setflag FLAG_CHOSE_JOHTO_STARTERS
+NewBarkTown_Lab_EventScript_ConfirmJohto:
+	msgbox NewBarkTown_Lab_Text_ConfirmJohto, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
+	setvar VAR_STARTER_REGION, 0
+	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
+
+NewBarkTown_Lab_EventScript_ConfirmKanto:
+	msgbox NewBarkTown_Lab_Text_ConfirmKanto, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
+	setvar VAR_STARTER_REGION, 1
+	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
+
+NewBarkTown_Lab_EventScript_ConfirmHoenn:
+	msgbox NewBarkTown_Lab_Text_ConfirmHoenn, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
+	setvar VAR_STARTER_REGION, 2
+	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
+
+NewBarkTown_Lab_EventScript_ConfirmSinnoh:
+	msgbox NewBarkTown_Lab_Text_ConfirmSinnoh, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
+	setvar VAR_STARTER_REGION, 3
+	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
+
+NewBarkTown_Lab_EventScript_ElmConfiguresChoice:
 	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -169,54 +196,6 @@ NewBarkTown_Lab_EventScript_JohtoChosen:
 	closemessage
 	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
 	waitmovement 0
-	delay 30
-	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
-
-NewBarkTown_Lab_EventScript_KantoChosen:
-	setflag FLAG_CHOSE_KANTO_STARTERS
-	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	delay 20
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
-	waitmovement 0
-	waitmovement 0
-	delay 10
-	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
-	waitmovement 0
-	delay 30
-	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
-
-NewBarkTown_Lab_EventScript_HoennChosen:
-	setflag FLAG_CHOSE_HOENN_STARTERS
-	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	delay 20
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
-	waitmovement 0
-	waitmovement 0
-	delay 10
-	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
-	waitmovement 0
-	delay 30   
-	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
-
-NewBarkTown_Lab_EventScript_SinnohChosen:
-	setflag FLAG_CHOSE_SINNOH_STARTERS
-	msgbox NewBarkTown_Lab_Text_ElmConfigureStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	delay 20
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_CheckEmail
-	waitmovement 0
-	waitmovement 0
-	delay 10
-	msgbox NewBarkTown_Lab_Text_ElmConfiguringStarterChoice, MSGBOX_DEFAULT
-	closemessage
-	applymovement LOCALID_ELM, NewBarkTown_Lab_Movement_ReturnFromEmail
-	waitmovement 0  
 	delay 30
 	goto NewBarkTown_Lab_EventScript_ElmChoosePokemon
 
@@ -250,6 +229,40 @@ NewBarkTown_Lab_EventScript_ChikoritaBall::
 	release
 	closemessage
 	end
+
+NewBarkTown_Lab_EventScript_GrassBall_Choice::
+	setvar VAR_STARTER_MON, 0
+	call NewBarkTown_Lab_EventScript_LoadStarterPreview
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_FireBall_Choice::
+	setvar VAR_STARTER_MON, 1
+	call NewBarkTown_Lab_EventScript_LoadStarterPreview
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_WaterBall_Choice::
+	setvar VAR_STARTER_MON, 2
+	call NewBarkTown_Lab_EventScript_LoadStarterPreview
+	msgbox NewBarkTown_Lab_Text_ChooseChikorita, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, NewBarkTown_Lab_EventScript_ChoseStarter
+	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_DeclinedStarter
+	end
+
+NewBarkTown_Lab_EventScript_LoadStarterPreview:
+	callnative DisableStaticRandomizer
+	callnative SetStarterSpeciesFromChoice
+	showmonpic PLAYER_STARTER_SPECIES, 10, 3
+	playmoncry PLAYER_STARTER_SPECIES, CRY_MODE_NORMAL
+	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
+	buffermoncategory STR_VAR_2, PLAYER_STARTER_SPECIES
+	return
+
 
 NewBarkTown_Lab_EventScript_ChikoritaBall_Choice::
 	callnative DisableStaticRandomizer
@@ -438,7 +451,7 @@ NewBarkTown_Lab_EventScript_ChoseStarter::
 	hidemonpic
 	removeobject VAR_LAST_TALKED
 	msgbox NewBarkTown_Lab_Text_ChoseStarter, MSGBOX_DEFAULT
-	givemon PLAYER_STARTER_SPECIES, 5
+	givemon PLAYER_STARTER_SPECIES, 5, ITEM_ORAN_BERRY
 	setflag FLAG_SYS_POKEMON_GET
 	playfanfare MUS_OBTAIN_ITEM
 	bufferspeciesname STR_VAR_1, PLAYER_STARTER_SPECIES
@@ -1068,6 +1081,31 @@ NewBarkTown_Lab_Text_ElmChooseAPokemon:
 NewBarkTown_Lab_Text_ElmWhereGoing:
 	.string "ELM: Wait! Where are you\n"
 	.string "going?$"
+
+NewBarkTown_Lab_Text_ConfirmJohto:
+	.string "The JOHTO trio, then:\n"
+	.string "CHIKORITA, CYNDAQUIL and TOTODILE.\p"
+	.string "shall I set that up?$"
+
+NewBarkTown_Lab_Text_ConfirmKanto:
+	.string "The KANTO trio, then:\n"
+	.string "BULBASAUR, CHARMANDER and SQUIRTLE.\p"
+	.string "shall I set that up?$"
+
+NewBarkTown_Lab_Text_ConfirmHoenn:
+	.string "The HOENN trio, then:\n"
+	.string "TREECKO, TORCHIC and MUDKIP.\p"
+	.string "shall I set that up?$"
+
+NewBarkTown_Lab_Text_ConfirmSinnoh:
+	.string "The JOHTO trio, then:\n"
+	.string "TURTWIG, CHIMCHAR and PIPLUP.\p"
+	.string "shall I set that up?$"
+
+NewBarkTown_Lab_Text_ElmWhichRegionAgain:
+	.string "Take your time, this decides which\n"
+	.string "POKéMON will journey with you.\p"
+	.string "Which region shall it be?$"
 
 NewBarkTown_Lab_Text_ChooseChikorita:
 	.string "ELM: So, you like {STR_VAR_1},\n"

@@ -77,9 +77,9 @@ IndigoPlateau_EventScript_SilverBeat::
 	end
 
 IndigoPlateau_Silver_Battle_Cyndaquil::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Charmander
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Torchic
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Chimchar
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, IndigoPlateau_Silver_Battle_Charmander
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, IndigoPlateau_Silver_Battle_Torchic
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, IndigoPlateau_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_7, IndigoPlateau_Text_RivalWin
 	return
 
@@ -96,9 +96,9 @@ IndigoPlateau_Silver_Battle_Chimchar::
 	return
 
 IndigoPlateau_Silver_Battle_Totodile::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Squirtle
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Mudkip
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Piplup
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, IndigoPlateau_Silver_Battle_Squirtle
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, IndigoPlateau_Silver_Battle_Mudkip
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, IndigoPlateau_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_7, IndigoPlateau_Text_RivalWin
 	return
 
@@ -115,9 +115,9 @@ IndigoPlateau_Silver_Battle_Piplup::
 	return
 
 IndigoPlateau_Silver_Battle_Chikorita::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, IndigoPlateau_Silver_Battle_Bulbasaur
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, IndigoPlateau_Silver_Battle_Treecko
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, IndigoPlateau_Silver_Battle_Turtwig
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, IndigoPlateau_Silver_Battle_Bulbasaur
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, IndigoPlateau_Silver_Battle_Treecko
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, IndigoPlateau_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_7, IndigoPlateau_Text_RivalWin
 	return
 

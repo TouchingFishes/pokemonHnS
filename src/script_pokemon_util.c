@@ -63,6 +63,30 @@ void HealPlayerParty(void)
     }
 }
 
+static const u16 sStarterTable[][3] =
+{
+    [STARTER_REGION_JOHTO] = { SPECIES_CHIKORITA, SPECIES_CYNDAQUIL, SPECIES_TOTODILE },
+    [STARTER_REGION_KANTO] = { SPECIES_BULBASAUR, SPECIES_CHARMANDER, SPECIES_SQUIRTLE },
+    [STARTER_REGION_HOENN] = { SPECIES_TREECKO, SPECIES_TORCHIC, SPECIES_MUDKIP },
+    [STARTER_REGION_SINNOH] = { SPECIES_TURTWIG, SPECIES_CHIMCHAR, SPECIES_PIPLUP },
+};
+
+u16 GetStarterForRegionAndSlot(u32 region, u32 slot)
+{
+    if (region >= ARRAY_COUNT(sStarterTable))
+        region = STARTER_REGION_JOHTO;
+    if (slot >= 3)
+        slot = 0;
+    return sStarterTable[region][slot];
+}
+
+// callnative. Reads VAR_STARTER_REGION and VAR_STARTER_MON (0 = GRASS, 1 = FIRE, 2 = WATER),
+// writes VAR_TEMP_2 - the var the lab script aliases as PLAYER_STARTER_SPECIES.
+void SetStarterSpeciesFromChoice(void)
+{
+    VarSet(VAR_TEMP_2, GetStarterForRegionAndSlot(VarGet(VAR_STARTER_REGION), VarGet(VAR_STARTER_MON)));
+}
+
 u8 ScriptGiveMon(u16 species, u8 level, u16 item, u32 unused1, u32 unused2, u8 unused3)
 {
     u16 nationalDexNum;

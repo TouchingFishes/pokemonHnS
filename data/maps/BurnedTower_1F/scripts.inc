@@ -139,9 +139,9 @@ BurnedTower_1F_EventScript_Silver::
 	end
 
 BurnedTower_1F_Silver_Battle_Cyndaquil::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Charmander
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Torchic
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Chimchar
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, BurnedTower_1F_Silver_Battle_Charmander
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, BurnedTower_1F_Silver_Battle_Torchic
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, BurnedTower_1F_Silver_Battle_Chimchar
 	trainerbattle_no_intro TRAINER_RIVAL_CYNDAQUIL_3, BurnedTowerSilver_WinText
 	return
 
@@ -158,9 +158,9 @@ BurnedTower_1F_Silver_Battle_Chimchar::
 	return
 
 BurnedTower_1F_Silver_Battle_Totodile::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Squirtle
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Mudkip
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Piplup
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, BurnedTower_1F_Silver_Battle_Squirtle
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, BurnedTower_1F_Silver_Battle_Mudkip
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, BurnedTower_1F_Silver_Battle_Piplup
 	trainerbattle_no_intro TRAINER_RIVAL_TOTODILE_3, BurnedTowerSilver_WinText
 	return
 
@@ -177,9 +177,9 @@ BurnedTower_1F_Silver_Battle_Piplup::
 	return
 
 BurnedTower_1F_Silver_Battle_Chikorita::
-	goto_if_set FLAG_CHOSE_KANTO_STARTERS, BurnedTower_1F_Silver_Battle_Bulbasaur
-	goto_if_set FLAG_CHOSE_HOENN_STARTERS, BurnedTower_1F_Silver_Battle_Treecko
-	goto_if_set FLAG_CHOSE_SINNOH_STARTERS, BurnedTower_1F_Silver_Battle_Turtwig
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_KANTO, BurnedTower_1F_Silver_Battle_Bulbasaur
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_HOENN, BurnedTower_1F_Silver_Battle_Treecko
+	goto_if_eq VAR_STARTER_REGION, STARTER_REGION_SINNOH, BurnedTower_1F_Silver_Battle_Turtwig
 	trainerbattle_no_intro TRAINER_RIVAL_CHIKORITA_3, BurnedTowerSilver_WinText
 	return
 
