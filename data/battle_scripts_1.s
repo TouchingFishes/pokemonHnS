@@ -238,7 +238,21 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectVenoshock	             @ EFFECT_VENOSHOCK
 	.4byte BattleScript_EffectHeavySlam	             @ EFFECT_HEAVY_SLAM
 	.4byte BattleScript_EffectSpeedUpHit             @ EFFECT_SPEED_UP_HIT
-	.4byte BattleScript_EffectSpecialAttackUpHit   	 @ EFFECT_SPECIAL_ATTACK_UP_HIT
+	.4byte BattleScript_EffectHit				   	 @ EFFECT_ALWAYS_CRIT
+	.4byte BattleScript_EffectHoneClaws			   	 @ EFFECT_HONE_CLAWS
+	.4byte BattleScript_EffectMeteorBeam		   	 @ EFFECT_METEOR_BEAM
+	.4byte BattleScript_EffectIceFang			   	 @ EFFECT_ICE_FANG
+	.4byte BattleScript_EffectFireFang			   	 @ EFFECT_FIRE_FANG
+	.4byte BattleScript_EffectThunderFang		   	 @ EFFECT_THUNDER_FANG
+	.4byte BattleScript_EffectHex				   	 @ EFFECT_HEX
+	.4byte BattleScript_EffectHit				   	 @ EFFECT_PSYSHOCK
+	.4byte BattleScript_EffectHit				   	 @ EFFECT_FOUL_PLAY
+	.4byte BattleScript_EffectVCreate			   	 @ EFFECT_V_CREATE
+	.4byte BattleScript_EffectSludgeWave		   	 @ EFFECT_SLUDGE_WAVE
+	.4byte BattleScript_EffectHit				   	 @ EFFECT_SPECTRAL_HIT
+
+
+
 
 BattleScript_EffectHit::
 	jumpifnotmove MOVE_SURF, BattleScript_HitFromAtkCanceler
@@ -326,6 +340,71 @@ BattleScript_CantMakeAsleep::
 BattleScript_EffectPoisonHit::
 	setmoveeffect MOVE_EFFECT_POISON
 	goto BattleScript_EffectHit
+
+BattleScript_EffectIceFang::
+	setmoveeffect MOVE_EFFECT_FREEZE
+	goto BattleScript_FangHit
+
+BattleScript_EffectFireFang::
+	setmoveeffect MOVE_EFFECT_BURN
+	goto BattleScript_FangHit
+
+BattleScript_EffectThunderFang::
+	setmoveeffect MOVE_EFFECT_PARALYSIS
+	goto BattleScript_FangHit
+
+BattleScript_FangHit::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	typecalc
+	adjustnormaldamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	setmoveeffect MOVE_EFFECT_FLINCH
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectSludgeWave::
+	setmoveeffect MOVE_EFFECT_SPD_MINUS_1
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	typecalc
+	adjustnormaldamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	setmoveeffect MOVE_EFFECT_POISON
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	goto BattleScript_MoveEnd
 
 BattleScript_EffectAbsorb::
 	attackcanceler
@@ -1840,6 +1919,21 @@ BattleScript_EffectSkullBash::
 BattleScript_SkullBashEnd::
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectMeteorBeam::
+	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
+	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
+	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SKULL_BASH
+	call BattleScriptFirstChargingTurn
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_MeteorBeamEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MeteorBeamEnd
+	setgraphicalstatchangevalues
+	playanimation BS_ATTACKER, B_ANIM_STATS_CHANGE, sB_ANIM_ARG1
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_MeteorBeamEnd::
+	goto BattleScript_MoveEnd
+
 BattleScript_EffectTwister::
 	jumpifnostatus3 BS_TARGET, STATUS3_ON_AIR, BattleScript_FlinchEffect
 	orword gHitMarker, HITMARKER_IGNORE_ON_AIR
@@ -2420,6 +2514,7 @@ BattleScript_EffectIngrain::
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectVCreate::
 BattleScript_EffectSuperpower::
 	setmoveeffect MOVE_EFFECT_ATK_DEF_DOWN | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
 	goto BattleScript_EffectHit
@@ -2611,6 +2706,14 @@ BattleScript_EffectVenoshock::
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
 	goto BattleScript_HitFromCritCalc
 
+BattleScript_EffectHex::
+	attackcanceler
+	attackstring
+	ppreduce
+	hexdamagecalculation
+	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	goto BattleScript_HitFromCritCalc
+
 BattleScript_EffectHeavySlam::
 	attackcanceler
 	attackstring
@@ -2795,6 +2898,31 @@ BattleScript_BulkUpTryDef::
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_BulkUpEnd::
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectHoneClaws::
+	attackcanceler
+	attackstring
+	ppreduce
+	jumpifstat BS_ATTACKER, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_BulkUpDoMoveAnim
+	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_ACC, MAX_STAT_STAGE, BattleScript_CantRaiseMultipleStats
+BattleScript_HoneClawsDoMoveAnim::
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_ACC, 0
+	setstatchanger STAT_ATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_HoneClawsTryAcc
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_HoneClawsTryAcc
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_HoneClawsTryAcc::
+	setstatchanger STAT_ACC, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_HoneClawsEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_HoneClawsEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_HoneClawsEnd::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectCalmMind::

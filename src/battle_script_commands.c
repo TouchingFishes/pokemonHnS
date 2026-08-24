@@ -343,6 +343,7 @@ static void Cmd_finishturn(void);
 static void Cmd_trainerslideout(void);
 static void Cmd_acrobaticsdamagecalculation(void);
 static void Cmd_venoshockdamagecalculation(void);
+static void Cmd_hexdamagecalculation(void);
 static void Cmd_heavyslamdamagecalculation(void);
 
 extern u8 gMaxPartyLevel;
@@ -607,7 +608,8 @@ void (* const gBattleScriptingCommandsTable[])(void) =
     Cmd_trainerslideout,                         //0xF8
     Cmd_acrobaticsdamagecalculation,             //0xF9
     Cmd_venoshockdamagecalculation,              //0xFA
-    Cmd_heavyslamdamagecalculation               //0xFB
+    Cmd_heavyslamdamagecalculation,              //0xFB
+    Cmd_hexdamagecalculation                     //0xFC
 };
 
 struct StatFractions
@@ -1341,6 +1343,17 @@ static void Cmd_critcalc(void)
         holdEffect = ItemId_GetHoldEffect(item);
 
     gPotentialItemEffectBattler = gBattlerAttacker;
+
+    if (gBattleMoves[gCurrentMove].effect == EFFECT_ALWAYS_CRIT
+     && gBattleMons[gBattlerTarget].ability != ABILITY_BATTLE_ARMOR
+     && gBattleMons[gBattlerTarget].ability != ABILITY_SHELL_ARMOR
+     && !(gStatuses3[gBattlerAttacker] & STATUS3_CANT_SCORE_A_CRIT)
+     && !(gBattleTypeFlags & (BATTLE_TYPE_WALLY_TUTORIAL | BATTLE_TYPE_FIRST_BATTLE)))
+    {
+        gCritMultiplier = 2;
+        gBattlescriptCurrInstr++;
+        return;
+    }
 
     critChance  = 2 * ((gBattleMons[gBattlerAttacker].status2 & STATUS2_FOCUS_ENERGY) != 0)
                 + (gBattleMoves[gCurrentMove].effect == EFFECT_HIGH_CRITICAL)
@@ -9259,6 +9272,7 @@ static bool8 IsTwoTurnsMove(u16 move)
      || gBattleMoves[move].effect == EFFECT_RAZOR_WIND
      || gBattleMoves[move].effect == EFFECT_SKY_ATTACK
      || gBattleMoves[move].effect == EFFECT_SOLAR_BEAM
+     || gBattleMoves[move].effect == EFFECT_METEOR_BEAM
      || gBattleMoves[move].effect == EFFECT_SEMI_INVULNERABLE
      || gBattleMoves[move].effect == EFFECT_BIDE)
         return TRUE;
@@ -9289,6 +9303,7 @@ static u8 AttacksThisTurn(u8 battlerId, u16 move) // Note: returns 1 if it's a c
      || gBattleMoves[move].effect == EFFECT_RAZOR_WIND
      || gBattleMoves[move].effect == EFFECT_SKY_ATTACK
      || gBattleMoves[move].effect == EFFECT_SOLAR_BEAM
+     || gBattleMoves[move].effect == EFFECT_METEOR_BEAM
      || gBattleMoves[move].effect == EFFECT_SEMI_INVULNERABLE
      || gBattleMoves[move].effect == EFFECT_BIDE)
     {
@@ -10570,6 +10585,17 @@ static void Cmd_acrobaticsdamagecalculation(void)
 static void Cmd_venoshockdamagecalculation(void)
 {
     if (gBattleMons[gBattlerTarget].status1 & STATUS1_PSN_ANY)
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power * 2;
+    else
+        gDynamicBasePower = gBattleMoves[gCurrentMove].power;
+
+    gBattlescriptCurrInstr++; 
+
+}
+
+static void Cmd_hexdamagecalculation(void)
+{
+    if (gBattleMons[gBattlerTarget].status1 != 0)
         gDynamicBasePower = gBattleMoves[gCurrentMove].power * 2;
     else
         gDynamicBasePower = gBattleMoves[gCurrentMove].power;

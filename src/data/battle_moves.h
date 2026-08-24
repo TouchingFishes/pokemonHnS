@@ -5634,7 +5634,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_ICE_FANG] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_UP_2, //ICE_FANG
+        .effect = EFFECT_ICE_FANG,
         .power = 65,
         .type = TYPE_ICE,
         .accuracy = 90,
@@ -5647,7 +5647,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_FIRE_FANG] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_UP_2, //FIRE_FANG
+        .effect = EFFECT_FIRE_FANG,
         .power = 65,
         .type = TYPE_FIRE,
         .accuracy = 90,
@@ -5660,7 +5660,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_THUNDER_FANG] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_UP_2, //THUNDER_FANG
+        .effect = EFFECT_THUNDER_FANG,
         .power = 65,
         .type = TYPE_ELECTRIC,
         .accuracy = 90,
@@ -5686,7 +5686,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_METEOR_BEAM] =
     {
-        .effect = EFFECT_BURN_HIT, //EFFECT_METEOR_BEAM
+        .effect = EFFECT_METEOR_BEAM,
         .power = 120,
         .type = TYPE_ROCK,
         .accuracy = 90,
@@ -5751,7 +5751,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_HONE_CLAWS] =
     {
-        .effect = EFFECT_SPECIAL_ATTACK_UP_2, //HONE_CLAWS
+        .effect = EFFECT_HONE_CLAWS,
         .power = 0,
         .type = TYPE_DARK,
         .accuracy = 0,
@@ -5777,20 +5777,20 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_POLTERGEIST] =
     {
-        .effect = EFFECT_ALWAYS_HIT, //POLTERGEIST
+        .effect = EFFECT_KNOCK_OFF,
         .power = 110,
         .type = TYPE_GHOST,
         .accuracy = 90,
         .pp = 5,
-        .secondaryEffectChance = 0,
+        .secondaryEffectChance = 50,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_SPECIAL,
+        .category= MOVE_CATEGORY_PHYSICAL,
     },
     [MOVE_HEX] =
     {
-        .effect = EFFECT_VENOSHOCK, //HEX
+        .effect = EFFECT_HEX,
         .power = 65,
         .type = TYPE_GHOST,
         .accuracy = 100,
@@ -5803,7 +5803,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     },
     [MOVE_FROST_BREATH] =
     {
-        .effect = EFFECT_VENOSHOCK, //ALWAYS_CRIT
+        .effect = EFFECT_ALWAYS_CRIT,
         .power = 50, //40
         .type = TYPE_ICE,
         .accuracy = 90,
@@ -5814,10 +5814,10 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
         .category= MOVE_CATEGORY_SPECIAL,
     },
-    [MOVE_SLUDGE_WAVE] = //like muddy water, more thematic
+    [MOVE_SLUDGE_WAVE] =
     {
-        .effect = EFFECT_SPEED_DOWN_HIT, //EFFECT_SPEED_DOWN_HIT + POISON
-        .power = 105, //90
+        .effect = EFFECT_SLUDGE_WAVE,
+        .power = 100,
         .type = TYPE_POISON,
         .accuracy = 85,
         .pp = 10,
