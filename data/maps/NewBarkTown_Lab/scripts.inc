@@ -164,25 +164,25 @@ NewBarkTown_Lab_EventScript_RegionMenu:
 NewBarkTown_Lab_EventScript_ConfirmJohto:
 	msgbox NewBarkTown_Lab_Text_ConfirmJohto, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
-	setvar VAR_STARTER_REGION, 0
+	setvar VAR_STARTER_REGION, STARTER_REGION_JOHTO
 	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
 
 NewBarkTown_Lab_EventScript_ConfirmKanto:
 	msgbox NewBarkTown_Lab_Text_ConfirmKanto, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
-	setvar VAR_STARTER_REGION, 1
+	setvar VAR_STARTER_REGION, STARTER_REGION_KANTO
 	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
 
 NewBarkTown_Lab_EventScript_ConfirmHoenn:
 	msgbox NewBarkTown_Lab_Text_ConfirmHoenn, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
-	setvar VAR_STARTER_REGION, 2
+	setvar VAR_STARTER_REGION, STARTER_REGION_HOENN
 	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
 
 NewBarkTown_Lab_EventScript_ConfirmSinnoh:
 	msgbox NewBarkTown_Lab_Text_ConfirmSinnoh, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, NewBarkTown_Lab_EventScript_RegionMenuReask
-	setvar VAR_STARTER_REGION, 3
+	setvar VAR_STARTER_REGION, STARTER_REGION_SINNOH
 	goto NewBarkTown_Lab_EventScript_ElmConfiguresChoice
 
 NewBarkTown_Lab_EventScript_ElmConfiguresChoice:
@@ -227,8 +227,8 @@ NewBarkTown_Lab_EventScript_GrassBall::
 	goto_if_set FLAG_SYS_POKEMON_GET, NewBarkTown_Lab_EventScript_ShouldntTouch
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 1, NewBarkTown_Lab_EventScript_GrassBall_Choice
 	msgbox NewBarkTown_Lab_Text_ShouldntTouch, MSGBOX_DEFAULT
-	release
 	closemessage
+	release
 	end
 
 NewBarkTown_Lab_EventScript_FireBall::
@@ -245,8 +245,8 @@ NewBarkTown_Lab_EventScript_WaterBall::
 	goto_if_set FLAG_SYS_POKEMON_GET, NewBarkTown_Lab_EventScript_ShouldntTouch
 	goto_if_eq VAR_NEWBARKTOWN_LABSTATE, 1, NewBarkTown_Lab_EventScript_WaterBall_Choice
 	msgbox NewBarkTown_Lab_Text_ShouldntTouch, MSGBOX_DEFAULT
-	release
 	closemessage
+	release
 	end
 
 NewBarkTown_Lab_EventScript_GrassBall_Choice::
