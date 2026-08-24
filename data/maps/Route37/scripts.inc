@@ -51,9 +51,9 @@ Route37_EventScript_ChannelerMercy::
 	msgbox Route37_Text_ChannelerMercy_After, MSGBOX_AUTOCLOSE
 	end
 
-Route37_EventScript_BugManiacValery::
-	trainerbattle_single TRAINER_VALERY, Route37_Text_BugManiacValery_Seen, Route37_Text_BugManiacValery_Beaten
-	msgbox Route37_Text_BugManiacValery_After, MSGBOX_AUTOCLOSE
+Route37_EventScript_BugManiacDale::
+	trainerbattle_single TRAINER_DALE, Route37_Text_BugManiacDale_Seen, Route37_Text_BugManiacDale_Beaten
+	msgbox Route37_Text_BugManiacDale_After, MSGBOX_AUTOCLOSE
 	end
 
 Route37_EventScript_CamperJordan::
@@ -216,18 +216,18 @@ Route37_Text_ChannelerMercy_After:
 	.string "Perhaps it hears voices that\n"
 	.string "we've long forgotten.$"
 
-Route37_Text_BugManiacValery_Seen:
+Route37_Text_BugManiacDale_Seen:
 	.string "Shh! Keep your voice down!\p"
 	.string "I'm waiting for a rare BUG\n"
 	.string "POKéMON to fall out of a tree.\p"
 	.string "Since you're here anyway,\n"
 	.string "let's battle while we wait!$"
 
-Route37_Text_BugManiacValery_Beaten:
+Route37_Text_BugManiacDale_Beaten:
 	.string "Aw, now I've scared them all\n"
 	.string "away...$"
 
-Route37_Text_BugManiacValery_After:
+Route37_Text_BugManiacDale_After:
 	.string "Headbutting trees is an art.\p"
 	.string "You never know whether a common\n"
 	.string "BUG or something truly rare will\l"

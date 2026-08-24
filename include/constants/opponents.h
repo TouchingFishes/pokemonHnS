@@ -87,7 +87,7 @@
 #define TRAINER_OWEN                         83
 #define TRAINER_EVAN                         84
 #define TRAINER_OSCAR                        85
-#define TRAINER_AUBREE                       86 //unused in johto
+#define TRAINER_AUBREE                       86
 #define TRAINER_HUNTER                       87
 #define TRAINER_WARREN                       88
 #define TRAINER_MARY                         89
@@ -113,7 +113,7 @@
 #define TRAINER_TASHA                       109 //unused in johto
 #define TRAINER_VALERIE_2                   110 //unused in johto
 #define TRAINER_VALERIE_3                   111 //unused in johto
-#define TRAINER_VALERY                      112 //unused in johto
+#define TRAINER_VALERY                      112 //unused in hns
 #define TRAINER_AMALA                       113
 #define TRAINER_GRUNT_18                    114
 #define TRAINER_KIPP                        115
@@ -342,7 +342,7 @@
 #define TRAINER_CLAUDE                      338 //unused in hns
 #define TRAINER_MASA                        339
 #define TRAINER_NED                         340
-#define TRAINER_DALE                        341 //unused in hns
+#define TRAINER_DALE                        341
 #define TRAINER_NOLAN                       342
 #define TRAINER_CYBIL                       343
 #define TRAINER_WADE                        344
@@ -508,7 +508,7 @@
 #define TRAINER_JONAS                       504 //unused in hns
 #define TRAINER_KAYLEY                      505 //unused in hns
 #define TRAINER_CLYDE                       506
-#define TRAINER_KELVIN                      507 //unused in hns
+#define TRAINER_KELVIN                      507
 #define TRAINER_MARLEY                      508
 #define TRAINER_REYNA                       509
 #define TRAINER_CHUCK_1                     510

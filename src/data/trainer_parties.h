@@ -793,12 +793,12 @@ static const struct TrainerMonNoItemCustomMoves sParty_Josh[] = { //BugManiacGro
 };
 
 
-static const struct TrainerMonNoItemCustomMoves sParty_Valery[] = { //BugManiacGroup
+static const struct TrainerMonNoItemCustomMoves sParty_Dale[] = { //BugManiacGroup
     {
     .iv = 100,
     .lvl = 19,
     .species = SPECIES_FOMANTIS,
-    .moves = {MOVE_RAZOR_LEAF, MOVE_CUT, MOVE_INGRAIN, MOVE_POUNCE}
+    .moves = {MOVE_RAZOR_LEAF, MOVE_CUT, MOVE_BEAT_UP, MOVE_POUNCE}
     },
     {
     .iv = 100,
@@ -5844,19 +5844,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Auron[] = {
     .iv = 0,
     .lvl = 33,
     .species = SPECIES_MACHAMP,
-    }
-};
-
-static const struct TrainerMonNoItemDefaultMoves sParty_Kelvin[] = {
-    {
-    .iv = 150,
-    .lvl = 33,
-    .species = SPECIES_MACHOKE,
-    },
-    {
-    .iv = 150,
-    .lvl = 33,
-    .species = SPECIES_TYNAMO,
     }
 };
 
@@ -17686,39 +17673,38 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Richardo[] = { //Burglar
     },
 };
 
-/*
-	next_list_item ; BURGLAR (3)
-	db "COREY@", TRAINERTYPE_NORMAL
-	db 25
-	dw KOFFING
-	db 28
-	dw MAGMAR
-	db 25
-	dw KOFFING
-	db 30
-	dw RAPIDASH
-	db -1 ; end
+static const struct TrainerMonNoItemDefaultMoves sParty_Kelvin[] = { //BurglarGroup
+    {
+    .iv = 150,
+    .lvl = 13,
+    .species = SPECIES_MEOWTH,
+    },
+    {
+    .iv = 150,
+    .lvl = 16,
+    .species = SPECIES_CYNDAQUIL,
+    }
+};
 
-	next_list_item ; BURGLAR (4)
-	db "RAMON@", TRAINERTYPE_MOVES
-	db 33 ;26
-	dw RAPIDASH
-	dw ROAR, EMBER, LEER, TAKE_DOWN
-	db 33 ;24
-	dw LUXRAY
-	dw BITE, SPARK, QUICK_ATTACK, HOWL
-	db -1 ; end
 
-	next_list_item ; BURGLAR (5)
-	db "ORSON@", TRAINERTYPE_NORMAL
-	db 13
-	dw MEOWTH
-	db 16
-	dw CYNDAQUIL
-	;db 15
-	;dw ZUBAT
-	db -1 ; end
-*/
+static const struct TrainerMonNoItemDefaultMoves sParty_Ramon[] = { //BurglarGroup somewhere in Kanto
+    {
+    .iv = 150,
+    .lvl = LEVEL_BASED_ON_BADGE+4,
+    .species = SPECIES_MANECTRIC,
+    },
+    {
+    .iv = 150,
+    .lvl = LEVEL_BASED_ON_BADGE+4,
+    .species = SPECIES_MANECTRIC,
+    },
+    {
+    .iv = 150,
+    .lvl = LEVEL_BASED_ON_BADGE+6,
+    .species = SPECIES_RAPIDASH,
+    }
+};
+
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Nard[] = { //Firebreather
     {

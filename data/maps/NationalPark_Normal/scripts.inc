@@ -230,6 +230,11 @@ NationalPark_Normal_EventScript_Krise::
 	msgbox NationalPark_Normal_Text_LassKrise_After, MSGBOX_AUTOCLOSE
 	end
 
+NationalPark_Normal_EventScript_Kelvin:: 
+	trainerbattle_single TRAINER_KELVIN, NationalPark_Normal_Text_Kelvin_Seen, NationalPark_Normal_Text_Kelvin_Beaten
+	msgbox NationalPark_Normal_Text_Kelvin_After, MSGBOX_AUTOCLOSE 
+	end
+
 NationalPark_Normal_EventScript_TM_Dig::
 	finditem ITEM_TM_DIG
 	end
@@ -310,6 +315,23 @@ NationalPark_Normal_Text_LassKrise_Beaten:
 NationalPark_Normal_Text_LassKrise_After:
 	.string "I thought you were staring at me\n"
 	.string "because I'm cute!$"
+
+NationalPark_Normal_Text_Kelvin_Seen: 
+	.string "This TM is mine!\p" 
+	.string "I found it fair and square!n"
+	.string "I'm going to sell it before anyone\n" 
+	.string "else does!$" 
+	
+NationalPark_Normal_Text_Kelvin_Beaten: 
+	.string "No! I can't waste any more time\n" 
+	.string "fighting you!$" 
+	
+NationalPark_Normal_Text_Kelvin_After: 
+	.string "Forget this!\p" 
+	.string "I'll just have to search for that\n" 
+	.string "TM myself.\p" 
+	.string "There's no way I'm leaving without\n" 
+	.string "that treasure!$"
 
 NationalPark_Normal_Text_Sign_RelaxationSquare:
 	.string "RELAXATION SQUARE\n"

@@ -2879,16 +2879,16 @@ const struct Trainer gTrainers[] = {
     },
 
 
-    [TRAINER_VALERY] =
+    [TRAINER_DALE] =
     {
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-        .trainerName = _("VALERY"),
+        .trainerName = _("DALE"),
         .items = {},
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_CUSTOM_MOVES(sParty_Valery),
+        .party = NO_ITEM_CUSTOM_MOVES(sParty_Dale),
     },
 
 
@@ -4762,6 +4762,19 @@ const struct Trainer gTrainers[] = {
     },
 
 
+    [TRAINER_KELVIN] =
+    {
+        .trainerClass = TRAINER_CLASS_BURGLAR,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
+        .trainerPic = TRAINER_PIC_BURGLAR,
+        .trainerName = _("KELVIN"),
+        .items = {},
+        .doubleBattle = FALSE,
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
+        .party = NO_ITEM_DEFAULT_MOVES(sParty_Kelvin),
+    },
+
+
     [TRAINER_EDDIE] =
     {
         .trainerClass = TRAINER_CLASS_BURGLAR,
@@ -5653,19 +5666,6 @@ const struct Trainer gTrainers[] = {
         .doubleBattle = FALSE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
         .party = NO_ITEM_DEFAULT_MOVES(sParty_Harvey),
-    },
-
-
-    [TRAINER_DALE] =
-    {
-        .trainerClass = TRAINER_CLASS_CAMPER,
-        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_HG_BOY_1,
-        .trainerPic = TRAINER_PIC_CAMPER,
-        .trainerName = _("DALE"),
-        .items = {},
-        .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Dale),
     },
 
 
