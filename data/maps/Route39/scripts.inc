@@ -152,7 +152,7 @@ Route39_EventScript_Tauros::
 	msgbox Route39_Text_TaurosCalmed, MSGBOX_DEFAULT
 	release
 	end
-Route39_EventScript_Tauros_NoBerry
+Route39_EventScript_Tauros_NoBerry::
 	msgbox Route39_Text_TaurosNoBerry, MSGBOX_DEFAULT
 Route39_EventScript_Tauros_Attack::
 	msgbox Route39_Text_TaurosAngry, MSGBOX_DEFAULT
