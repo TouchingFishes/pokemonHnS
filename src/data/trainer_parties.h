@@ -18988,15 +18988,6 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Harvey[] = { //CamperGro
     },
 };
 
-//TBD
-static const struct TrainerMonNoItemDefaultMoves sParty_Dale[] = { //CamperGroup
-    {
-    .iv = 0,
-    .lvl = 15,
-    .species = SPECIES_NIDORINO,
-    },
-};
-
 
 static const struct TrainerMonNoItemDefaultMoves sParty_Ted[] = { //CamperGroup
     {
