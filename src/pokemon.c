@@ -6758,7 +6758,7 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     u8 itemBoostType;
     u16 attack, defense;
     u16 spAttack, spDefense;
-    struct BattlePokemon *atkStatMon    // whose Attack stat + stages Foul Play reads
+    struct BattlePokemon *atkStatMon;   // whose Attack stat + stages Foul Play reads
     u8 spDefStatIndex;                  // which defensive stage Psyshock reads
     u8 defenderHoldEffect;
     u8 defenderHoldEffectParam;
