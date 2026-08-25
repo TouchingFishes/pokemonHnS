@@ -6758,6 +6758,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     u8 itemBoostType;
     u16 attack, defense;
     u16 spAttack, spDefense;
+    struct BattlePokemon *atkStatMon    // whose Attack stat + stages Foul Play reads
+    u8 spDefStatIndex;                  // which defensive stage Psyshock reads
     u8 defenderHoldEffect;
     u8 defenderHoldEffectParam;
     u8 attackerHoldEffect;
@@ -6785,6 +6787,22 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
     defense = defender->defense;
     spAttack = attacker->spAttack;
     spDefense = defender->spDefense;
+
+    atkStatMon = attacker;
+    spDefStatIndex = STAT_SPDEF;
+
+    // Foul Play uses target's Attack Stat, including the target's Attack stat stages
+    if (gBattleMoves[move].effect == EFFECT_FOUL_PLAY)
+    {
+        attack = defender->attack;
+        atkStatMon = defender;
+    }
+    // Psyshock is a special move that hits the targets's Physical Defense
+    if (gBattleMoves[move].effect == EFFECT_PSYSHOCK)
+    {
+        spDefense = defender->defense;
+        spDefStatIndex = STAT_DEF;
+    }
 
     // Get attacker hold item info
     if (attacker->item == ITEM_ENIGMA_BERRY)
@@ -7236,13 +7254,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (gCritMultiplier == 2)
             {
                 // Critical hit, if attacker has lost attack stat stages then ignore stat drop
-                if (attacker->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
-                    APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+                if (atkStatMon->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
+                    APPLY_STAT_MOD(damage, atkStatMon, attack, STAT_ATK)
                 else
                     damage = attack;
             }
             else
-                APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+                APPLY_STAT_MOD(damage, atkStatMon, attack, STAT_ATK)
 
             damage = damage * gBattleMovePower;
             damage *= (2 * attacker->level / 5 + 2);
@@ -7288,13 +7306,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (gCritMultiplier == 2)
             {
                 // Critical hit, if attacker has lost attack stat stages then ignore stat drop
-                if (attacker->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
-                    APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+                if (atkStatMon->statStages[STAT_ATK] > DEFAULT_STAT_STAGE)
+                    APPLY_STAT_MOD(damage, atkStatMon, attack, STAT_ATK)
                 else
                     damage = attack;
             }
             else
-                APPLY_STAT_MOD(damage, attacker, attack, STAT_ATK)
+                APPLY_STAT_MOD(damage, atkStatMon, attack, STAT_ATK)
 
             damage = damage * gBattleMovePower;
             damage *= (2 * attacker->level / 5 + 2);
@@ -7358,13 +7376,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (gCritMultiplier == 2)
             {
                 // Critical hit, if defender has gained sp. defense stat stages then ignore stat increase
-                if (defender->statStages[STAT_SPDEF] < DEFAULT_STAT_STAGE)
+                if (defender->statStages[spDefStatIndex] < DEFAULT_STAT_STAGE)
                     APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
                 else
                     damageHelper = spDefense;
             }
             else
-                APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
+                APPLY_STAT_MOD(damageHelper, defender, spDefense, spDefStatIndex)
 
             damage = (damage / damageHelper);
             damage /= 50;
@@ -7403,13 +7421,13 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
             if (gCritMultiplier == 2)
             {
                 // Critical hit, if defender has gained sp. defense stat stages then ignore stat increase
-                if (defender->statStages[STAT_SPDEF] < DEFAULT_STAT_STAGE)
+                if (defender->statStages[spDefStatIndex] < DEFAULT_STAT_STAGE)
                     APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
                 else
                     damageHelper = spDefense;
             }
             else
-                APPLY_STAT_MOD(damageHelper, defender, spDefense, STAT_SPDEF)
+                APPLY_STAT_MOD(damageHelper, defender, spDefense, spDefStatIndex)
 
             damage = (damage / damageHelper);
             damage /= 50;
