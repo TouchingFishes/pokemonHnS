@@ -238,6 +238,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectVenoshock	             @ EFFECT_VENOSHOCK
 	.4byte BattleScript_EffectHeavySlam	             @ EFFECT_HEAVY_SLAM
 	.4byte BattleScript_EffectSpeedUpHit             @ EFFECT_SPEED_UP_HIT
+	.4byte BattleScript_EffectSpecialAttackUpHit     @ EFFECT_SPECIAL_ATTACK_UP_HIT
 	.4byte BattleScript_EffectHit				   	 @ EFFECT_ALWAYS_CRIT
 	.4byte BattleScript_EffectHoneClaws			   	 @ EFFECT_HONE_CLAWS
 	.4byte BattleScript_EffectMeteorBeam		   	 @ EFFECT_METEOR_BEAM
