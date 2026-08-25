@@ -12489,7 +12489,9 @@ u8 GetTypeBySpecies(u16 species, u8 typeNum)
 
 static bool8 IsConditionalFairyTypeMove(u16 move) 
 {
-    return (move == MOVE_PLAY_ROUGH || move == MOVE_CHARM || move == MOVE_SWEET_KISS || move == MOVE_MOONLIGHT);
+    return (move == MOVE_PLAY_ROUGH || move == MOVE_CHARM || move == MOVE_SWEET_KISS || move == MOVE_MOONLIGHT
+            || move == MOVE_MYSTIC_GLEAM || move == MOVE_PIXIE_KISS || move == MOVE_SPIRIT_BREAK || move == MOVE_DISARM_CHANT
+            || move == MOVE_DOE_EYES || move == MOVE_MOONBLAST || move == MOVE_FAIRY_WIND);
 }
 
 u8 GetMoveType(u16 move)
