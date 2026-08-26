@@ -5810,17 +5810,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .category= MOVE_CATEGORY_SPECIAL,
     },
 
-    [MOVE_BUG_BITE] =
+    [MOVE_METAMORPH] =
     {
-        .effect = EFFECT_ACROBATICS, //BUG_BITE
-        .power = 60,
+        .effect = EFFECT_METAMORPH,
+        .power = 0,
         .type = TYPE_BUG,
-        .accuracy = 100,
-        .pp = 20,
+        .accuracy = 0,
+        .pp = 10,
         .secondaryEffectChance = 0,
-        .target = MOVE_TARGET_SELECTED,
+        .target = MOVE_TARGET_USER,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
+        .flags = FLAG_SNATCH_AFFECTED,
         .category= MOVE_CATEGORY_PHYSICAL,
     },
 
@@ -6020,17 +6020,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .category= MOVE_CATEGORY_PHYSICAL,
     },
 
-    [MOVE_SPECTRAL_HIT] =
+    [MOVE_BRAIN_FREEZE] =
     {
-        .effect = EFFECT_HIT, //EFFECT_SPECTRAL_HIT
-        .power = 90,
-        .type = TYPE_GHOST,
+        .effect = EFFECT_BRAIN_FREEZE,
+        .power = 85,
+        .type = TYPE_ICE,
         .accuracy = 100,
-        .pp = 10,
-        .secondaryEffectChance = 0,
+        .pp = 15,
+        .secondaryEffectChance = 15,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
-        .flags = FLAG_MAKES_CONTACT | FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
-        .category= MOVE_CATEGORY_PHYSICAL,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+        .category= MOVE_CATEGORY_SPECIAL,
     },
 };

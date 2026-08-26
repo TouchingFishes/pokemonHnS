@@ -422,6 +422,31 @@ gBattleAnims_Moves::
 	.4byte Move_POISON_JAB
 	.4byte Move_HEAD_SMASH
 	.4byte Move_BLOODMOON
+	.4byte Move_NASTY_PLOT
+	.4byte Move_ICE_FANG
+	.4byte Move_FIRE_FANG
+	.4byte Move_THUNDER_FANG
+	.4byte Move_AQUA_TAIL
+	.4byte Move_METEOR_BEAM
+	.4byte Move_RAZOR_SHELL
+	.4byte Move_PSYSHOCK
+	.4byte Move_LEAF_STORM
+	.4byte Move_METAMORPH
+	.4byte Move_HONE_CLAWS
+	.4byte Move_FOUL_PLAY
+	.4byte Move_POLTERGEIST
+	.4byte Move_HEX
+	.4byte Move_SLUDGE_WAVE
+	.4byte Move_FROST_BREATH
+	.4byte Move_MYSTIC_GLEAM
+	.4byte Move_PIXIE_KISS
+	.4byte Move_SPIRIT_BREAK
+	.4byte Move_DISARM_CHANT
+	.4byte Move_DOE_EYES
+	.4byte Move_MOONBLAST
+	.4byte Move_FAIRY_WIND
+	.4byte Move_V_CREATE
+	.4byte Move_BRAIN_FREEZE
 	.4byte Move_COUNT @ cannot be reached, because last move is Psycho Boost
 
 	.align 2
@@ -12685,3 +12710,79 @@ BloodMoonOnslaughtPlayer:
 	createsprite gRedExplosionSpriteTemplate, ANIM_TARGET, 4, 0, 5, 1, 0
 	delay 0
 	return
+
+Move_NASTY_PLOT:
+Move_ICE_FANG:
+Move_FIRE_FANG:
+Move_THUNDER_FANG:
+Move_AQUA_TAIL:
+Move_METEOR_BEAM:
+Move_RAZOR_SHELL:
+Move_PSYSHOCK:
+Move_LEAF_STORM:
+Move_HONE_CLAWS:
+Move_FOUL_PLAY:
+Move_POLTERGEIST:
+Move_HEX:
+Move_SLUDGE_WAVE:
+Move_FROST_BREATH:
+Move_MYSTIC_GLEAM:
+Move_PIXIE_KISS:
+Move_SPIRIT_BREAK:
+Move_DISARM_CHANT:
+Move_DOE_EYES:
+Move_MOONBLAST:
+Move_FAIRY_WIND:
+Move_V_CREATE:
+Move_BRAIN_FREEZE:
+	loadspritegfx ANIM_TAG_GOLD_RING
+	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
+	fadetobg BG_ICE
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 4, 0, 15
+	call PsybeamRings
+	call PsybeamRings
+	createvisualtask AnimTask_SwayMon, 5, 0, 6, 2048, 4, ANIM_TARGET
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(31, 18, 31)
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	call PsybeamRings
+	waitforvisualfinish
+	delay 1
+	clearmonbg ANIM_DEF_PARTNER
+	blendoff
+	restorebg
+	waitbgfadein
+	end
+
+Move_METAMORPH:
+	choosetwoturnanim MetamorphSetUp, MetamorphEmerge
+MetamorphEnd:
+	end
+MetamorphSetUp:
+	loopsewithpan SE_M_STRING_SHOT, SOUND_PAN_ATTACKER, 9, 6
+	createvisualtask AnimTask_ScaleMonAndRestore, 5, -4, -4, 14, ANIM_ATTACKER, 0
+	waitforvisualfinish
+	loopsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER, 28, 2
+	createvisualtask AnimTask_MetallicShine, 5, 0, 0, RGB_BLACK
+	waitforvisualfinish
+	goto MetamorphEnd
+
+MetamorphEmerge:
+	loadspritegfx ANIM_TAG_SPARKLE_2
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 3, 0, 12, 1
+	playsewithpan SE_M_HARDEN, SOUND_PAN_ATTACKER
+	waitforvisualfinish
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_BATTLERS, 3, 2, 0, 12, RGB_WHITE
+	playsewithpan SE_M_MORNING_SUN, SOUND_PAN_ATTACKER
+	delay 8
+	createsprite gGrantingStarsSpriteTemplate, ANIM_ATTACKER, 2, -15, 0, 0, 0, 32, 60
+	delay 8
+	waitforvisualfinish
+	goto MetamorphEnd
+

@@ -250,9 +250,8 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectHit				   	 @ EFFECT_FOUL_PLAY
 	.4byte BattleScript_EffectVCreate			   	 @ EFFECT_V_CREATE
 	.4byte BattleScript_EffectSludgeWave		   	 @ EFFECT_SLUDGE_WAVE
-	.4byte BattleScript_EffectHit				   	 @ EFFECT_SPECTRAL_HIT
-
-
+	.4byte BattleScript_EffectBrainFreeze		   	 @ EFFECT_BRAIN_FREEZE
+	.4byte BattleScript_EffectMetamorph			   	 @ EFFECT_METAMORPH
 
 
 BattleScript_EffectHit::
@@ -403,6 +402,33 @@ BattleScript_EffectSludgeWave::
 	waitmessage B_WAIT_TIME_LONG
 	seteffectwithchance
 	setmoveeffect MOVE_EFFECT_POISON
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectBrainFreeze::
+	setmoveeffect MOVE_EFFECT_CONFUSION
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	typecalc
+	adjustnormaldamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	setmoveeffect MOVE_EFFECT_FREEZE
 	seteffectwithchance
 	tryfaintmon BS_TARGET
 	goto BattleScript_MoveEnd
@@ -1923,7 +1949,7 @@ BattleScript_SkullBashEnd::
 BattleScript_EffectMeteorBeam::
 	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
 	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
-	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_SKULL_BASH
+	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_METEOR_BEAM
 	call BattleScriptFirstChargingTurn
 	setstatchanger STAT_SPATK, 1, FALSE
 	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_MeteorBeamEnd
@@ -1933,6 +1959,44 @@ BattleScript_EffectMeteorBeam::
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_MeteorBeamEnd::
+	goto BattleScript_MoveEnd
+
+BattleScript_EffectMetamorph::
+	jumpifstatus2 BS_ATTACKER, STATUS2_MULTIPLETURNS, BattleScript_TwoTurnMovesSecondTurn
+	jumpifword CMP_COMMON_BITS, gHitMarker, HITMARKER_NO_ATTACKSTRING, BattleScript_TwoTurnMovesSecondTurn
+	setbyte sTWOTURN_STRINGID, B_MSG_TURN1_METAMORPH
+	call BattleScriptFirstChargingTurn
+	goto BattleScript_MoveEnd
+BattleScript_EffectMetamorphSecondTurn::
+	attackcanceler
+	setmoveeffect MOVE_EFFECT_CHARGING
+	setbyte sB_ANIM_TURN, 1
+	clearstatusfromeffect BS_ATTACKER
+	orword gHitMarker, HITMARKER_NO_PPDEDUCT
+	attackstring
+	ppreduce
+	attackanimation
+	waitanimation
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	playstatchangeanimation BS_ATTACKER, BIT_ATK | BIT_SPATK | BIT_SPEED, STAT_CHANGE_MULTIPLE_STATS
+	setstatchanger STAT_ATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_MetamorphTrySpAtk
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MetamorphTrySpAtk
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_MetamorphTrySpAtk::
+	setstatchanger STAT_SPATK, 1, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_MetamorphTrySpeed
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MetamorphTrySpeed
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_MetamorphTrySpeed::
+	setstatchanger STAT_SPEED, 2, FALSE
+	statbuffchange MOVE_EFFECT_AFFECTS_USER | STAT_CHANGE_ALLOW_PTR, BattleScript_MetamorphEnd
+	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_MetamorphEnd
+	printfromtable gStatUpStringIds
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_MetamorphEnd::
 	goto BattleScript_MoveEnd
 
 BattleScript_EffectTwister::

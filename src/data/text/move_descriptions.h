@@ -2038,7 +2038,7 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_RAZOR_SHELL - 1] = sAvalancheDescription,
     [MOVE_PSYSHOCK - 1] = sGrassKnotDescription,
     [MOVE_LEAF_STORM - 1] = sEnergyBallDescription,
-    [MOVE_BUG_BITE - 1] = sMirrorShotDescription,
+    [MOVE_METAMORPH - 1] = sMirrorShotDescription,
     [MOVE_HONE_CLAWS - 1] = sHurricaneDescription,
     [MOVE_FOUL_PLAY - 1] = sDrillRunDescription,
     [MOVE_POLTERGEIST - 1] = sSteamrollerDescription,
@@ -2052,5 +2052,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_MOONBLAST - 1] = sAuraSphereDescription,
     [MOVE_FAIRY_WIND - 1] = sVenoshockDescription,
     [MOVE_V_CREATE - 1] = sShadowSneakDescription,
-    [MOVE_SPECTRAL_HIT - 1] = sPoisonJabDescription,
+    [MOVE_BRAIN_FREEZE - 1] = sPoisonJabDescription,
 };

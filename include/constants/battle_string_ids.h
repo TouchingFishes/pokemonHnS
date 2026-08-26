@@ -401,8 +401,10 @@
 #define STRINGID_ITEMHURTFOE                399
 #define STRINGID_PKMNHURTBYITEM             400
 #define STRINGID_BERRYWEAKENED              401
+#define STRINGID_PKMNGATHEREDLIGHT          402
+#define STRINGID_PKMNSPUNCOCOON             403
 
-#define BATTLESTRINGS_COUNT                 402
+#define BATTLESTRINGS_COUNT                 404
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -455,6 +457,8 @@
 #define B_MSG_TURN1_DIG         5
 #define B_MSG_TURN1_DIVE        6
 #define B_MSG_TURN1_BOUNCE      7
+#define B_MSG_TURN1_METEOR_BEAM 8
+#define B_MSG_TURN1_METAMORPH   9
 
 // gMoveWeatherChangeStringIds
 #define B_MSG_STARTED_RAIN      0

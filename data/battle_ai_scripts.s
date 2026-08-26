@@ -219,6 +219,10 @@ AI_CheckBadMove_CheckEffect:
 	if_effect EFFECT_WATER_SPORT, AI_CBM_WaterSport
 	if_effect EFFECT_CALM_MIND, AI_CBM_CalmMind
 	if_effect EFFECT_DRAGON_DANCE, AI_CBM_DragonDance
+	if_effect EFFECT_HONE_CLAWS, AI_CBM_BulkUp
+	if_effect EFFECT_V_CREATE, AI_CBM_HighRiskForDamage
+	if_effect EFFECT_METAMORPH, AI_CBM_HighRiskForDamage
+	if_effect EFFECT_METEOR_BEAM, AI_CBM_HighRiskForDamage
 	end
 
 AI_CBM_Sleep:
@@ -782,6 +786,15 @@ AI_CheckViability:
 	if_effect EFFECT_WATER_SPORT, AI_CV_WaterSport
 	if_effect EFFECT_CALM_MIND, AI_CV_SpDefUp
 	if_effect EFFECT_DRAGON_DANCE, AI_CV_DragonDance
+	if_effect EFFECT_ALWAYS_CRIT, AI_CV_HighCrit
+	if_effect EFFECT_HONE_CLAWS, AI_CV_AttackUp
+	if_effect EFFECT_ICE_FANG, AI_CV_SpeedDownFromChance
+	if_effect EFFECT_FIRE_FANG, AI_CV_SpeedDownFromChance
+	if_effect EFFECT_THUNDER_FANG, AI_CV_SpeedDownFromChance
+	if_effect EFFECT_BRAIN_FREEZE, AI_CV_SpeedDownFromChance
+	if_effect EFFECT_SLUDGE_WAVE, AI_CV_SpeedDownFromChance
+	if_effect EFFECT_V_CREATE, AI_CV_Superpower
+	if_effect EFFECT_METAMORPH, AI_CV_DragonDance
 	end
 
 AI_CV_Sleep:
@@ -2695,6 +2708,8 @@ AI_SetupFirstTurn_SetupEffectsToEncourage:
 	.byte EFFECT_BULK_UP
 	.byte EFFECT_CALM_MIND
 	.byte EFFECT_CAMOUFLAGE
+	.byte EFFECT_HONE_CLAWS
+	.byte EFFECT_METAMORPH
 	.byte -1
 
 @ ~60% chance to prefer moves that do 0 or 1 damage, or are in sIgnoredPowerfulMoveEffects
